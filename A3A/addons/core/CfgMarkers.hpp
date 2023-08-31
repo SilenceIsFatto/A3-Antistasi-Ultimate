@@ -60,4 +60,25 @@ class CfgMarkers
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_insurrection_ca.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_insurrection_ca.paa);
 	};
+
+		class a3u_flag_rebel: flag_NATO 
+	{
+		name = "Rebel";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_rebel_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_rebel_ca.paa);
+	};
+	class a3u_flag_udc: a3u_flag_rebel
+	{
+		name = "UDC";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_udc_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_udc_ca.paa);
+	};
+	class a3u_flag_uu: a3u_flag_rebel
+	{
+		name = "UU";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_combine_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_combine_ca.paa);
+	};
 };
+
+

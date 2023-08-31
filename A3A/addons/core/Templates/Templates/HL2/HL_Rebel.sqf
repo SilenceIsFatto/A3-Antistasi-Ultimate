@@ -8,7 +8,7 @@
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Pictures\Markers\marker_rebel_ca.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "Faction_CUP_NAPA"] call _fnc_saveToTemplate;
+["flagMarkerType", "a3u_flag_rebel"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["I_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["CUP_I_Hilux_armored_unarmed_NAPA", "HL_RES_DVP"]] call _fnc_saveToTemplate;

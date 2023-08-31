@@ -2,12 +2,14 @@
 //   Side Information   //
 //////////////////////////
 
+#include "..\..\..\script_component.hpp"
+
 ["name", "UDC"] call _fnc_saveToTemplate;
 ["spawnMarkerName", "United Defense Corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_US_F"] call _fnc_saveToTemplate;
-["flagTexture", "a3\data_f\flags\flag_us_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_USA"] call _fnc_saveToTemplate;
+["flagTexture", QPATHTOFOLDER(Templates\Templates\HL2\images\udc_flag_co.paa)] call _fnc_saveToTemplate;
+["flagMarkerType", "a3u_flag_udc"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
@@ -301,14 +303,14 @@ _sfLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_eliteLoadoutData set ["uniforms", ["CUP_U_B_GER_Tropentarn_1", "CUP_U_B_GER_Tropentarn_2", "CUP_U_B_GER_Tropentarn_3", "CUP_U_B_GER_Tropentarn_4",
-"CUP_U_B_GER_Tropentarn_5", "CUP_U_B_GER_Tropentarn_6", "CUP_U_B_GER_Tropentarn_7", "CUP_U_B_GER_Tropentarn_8"]];
-_eliteLoadoutData set ["vests", ["CUP_V_B_GER_PVest_Trop_RFL"]];
-_eliteLoadoutData set ["mgVests", ["CUP_V_B_GER_PVest_Trop_MG"]];
-_eliteLoadoutData set ["glVests", ["CUP_V_B_GER_PVest_Trop_Gren"]];
-_eliteLoadoutData set ["backpacks", ["CUP_B_GER_Pack_Tropentarn"]];
-_eliteLoadoutData set ["atBackpacks", ["B_Carryall_cbr"]];
-_eliteLoadoutData set ["helmets", ["CUP_H_Ger_M92_Cover_Trop", "CUP_H_Ger_M92_Cover_Trop_GG_CB", "CUP_H_Ger_M92_Cover_Trop_GG_CF", "CUP_H_Ger_M92_Cover_Trop_GG"]];
+_eliteLoadoutData set ["uniforms", ["CUP_U_B_GER_Flecktarn_1", "CUP_U_B_GER_Flecktarn_2", "CUP_U_B_GER_Flecktarn_3", "CUP_U_B_GER_Flecktarn_4",
+"CUP_U_B_GER_Flecktarn_5", "CUP_U_B_GER_Flecktarn_6", "CUP_U_B_GER_Flecktarn_7", "CUP_U_B_GER_Flecktarn_8"]];
+_eliteLoadoutData set ["vests", ["CUP_V_B_GER_PVest_Fleck_RFL"]];
+_eliteLoadoutData set ["mgVests", ["CUP_V_B_GER_PVest_Fleck_MG"]];
+_eliteLoadoutData set ["glVests", ["CUP_V_B_GER_PVest_Fleck_Gren"]];
+_eliteLoadoutData set ["backpacks", ["CUP_B_GER_Pack_Flecktarn"]];
+_eliteLoadoutData set ["atBackpacks", ["B_Carryall_green_F"]];
+_eliteLoadoutData set ["helmets", ["CUP_H_Ger_M92_Cover", "CUP_H_Ger_M92_Cover_GG_CB", "CUP_H_Ger_M92_Cover_GG_CF", "CUP_H_Ger_M92_Cover_GG"]];
 _eliteLoadoutData set ["binoculars", ["CUP_LRTV"]];
 
 
@@ -375,18 +377,18 @@ _eliteLoadoutData set ["sidearms", [
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militaryLoadoutData set ["uniforms", ["CUP_U_B_USMC_MCCUU_des_gloves", "CUP_U_B_USMC_MCCUU_des_roll_2", "CUP_U_B_USMC_MCCUU_des_roll_2_gloves", "CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves", "CUP_U_B_USMC_MCCUU_des_roll_pads_gloves", "CUP_U_B_USMC_MCCUU_des_roll_pads", "CUP_U_B_USMC_MCCUU_des_roll_gloves", "CUP_U_B_USMC_MCCUU_des_roll"]];
-_militaryLoadoutData set ["slUniforms", ["CUP_U_B_USMC_MCCUU_des_roll_2"]];
+_militaryLoadoutData set ["uniforms", ["CUP_U_B_USMC_MCCUU_gloves", "CUP_U_B_USMC_MCCUU_roll_2_gloves", "CUP_U_B_USMC_MCCUU_roll_2_pads", "CUP_U_B_USMC_MCCUU_roll_2_pads_gloves", "CUP_U_B_USMC_MCCUU_pads", "CUP_U_B_USMC_MCCUU_pads_gloves"]];
+_militaryLoadoutData set ["slUniforms", ["CUP_U_B_USMC_MCCUU_roll_2"]];
 _militaryLoadoutData set ["vests", ["CUP_V_B_Eagle_SPC_Rifleman"]];
 _militaryLoadoutData set ["mgVests", ["CUP_V_B_Eagle_SPC_MG"]];
 _militaryLoadoutData set ["medVests", ["CUP_V_B_Eagle_SPC_Corpsman"]];
 _militaryLoadoutData set ["slVests", ["CUP_V_B_Eagle_SPC_Officer"]];
 _militaryLoadoutData set ["glVests", ["CUP_V_B_Eagle_SPC_GL"]];
 _militaryLoadoutData set ["engVests", ['CUP_V_B_Eagle_SPC_AT']];
-_militaryLoadoutData set ["backpacks", ["B_Carryall_cbr", "CUP_B_USPack_Coyote"]];
-_militaryLoadoutData set ["slBackpacks", ["B_Kitbag_cbr"]];
-_militaryLoadoutData set ["atBackpacks", ["CUP_B_USPack_Coyote"]];
-_militaryLoadoutData set ["helmets", ["CUP_H_LWHv2_MARPAT_des", "CUP_H_LWHv2_MARPAT_des_comms", "CUP_H_USArmy_ECH_MARPAT_des", "CUP_H_USArmy_ECH_GCOVERED_Headset_MARPAT_des"]];
+_militaryLoadoutData set ["backpacks", ["B_AssaultPack_rgr"]];
+_militaryLoadoutData set ["slBackpacks", ["B_Kitbag_rgr"]];
+_militaryLoadoutData set ["atBackpacks", ["CUP_B_USMC_MOLLE"]];
+_militaryLoadoutData set ["helmets", ["CUP_H_LWHv2_MARPAT", "CUP_H_LWHv2_MARPAT_comms", "CUP_H_LWHv2_MARPAT_NVG_gog_cov2", "CUP_H_LWHv2_MARPAT_NVG_gog2_cov2"]];
 _militaryLoadoutData set ["binoculars", ["CUP_LRTV"]];
 
 _militaryLoadoutData set ["slRifles", [

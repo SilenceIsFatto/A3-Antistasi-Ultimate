@@ -9,7 +9,7 @@
 
 ["flag", "Flag_US_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Pictures\Markers\marker_combine_ca.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_USA"] call _fnc_saveToTemplate;
+["flagMarkerType", "a3u_flag_uu"] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Vehicles       //
