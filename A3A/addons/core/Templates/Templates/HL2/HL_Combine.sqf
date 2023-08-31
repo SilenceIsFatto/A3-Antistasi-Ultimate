@@ -28,8 +28,8 @@
 ["vehiclesRepairTrucks", ["CUP_B_MTVR_Repair_USMC", "CUP_B_nM1038_Repair_USMC_DES", "CUP_B_nM1038_Repair_DF_USMC_DES"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["CUP_B_MTVR_Refuel_USMC"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["CUP_B_nM997_DF_USMC_DES", "CUP_B_nM997_USMC_DES"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["HL_CMB_CP_APC", "HL_CMB_CP_APC_Razor", "CUP_B_RG31E_M2_USMC", "CUP_B_RG31_Mk19_USMC",  "CUP_B_RG31_M2_USMC", "CUP_B_RG31_M2_GC_USMC"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["HL_CMB_OW_APC", "HL_CMB_OW_APC_Razor", "CUP_B_LAV25_desert_USMC", "CUP_B_LAV25M240_desert_USMC"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["HL_CMB_CP_APC", "HL_CMB_CP_APC_Razor"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["HL_CMB_OW_APC", "HL_CMB_OW_APC_Razor"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["CUP_B_M1A1FEP_Desert_USMC", "CUP_B_M1A1FEP_TUSK_Desert_USMC"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["CUP_B_nM1097_AVENGER_USMC_DES"]] call _fnc_saveToTemplate;
@@ -44,7 +44,7 @@
 ["vehiclesPlanesAA", ["CUP_B_AV8B_DYN_USMC"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["CUP_B_C130J_USMC", "CUP_B_MV22_USMC_RAMPGUN"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["CUP_B_MH6M_USA", "CUP_B_MH6J_USA", "CUP_B_UH1Y_UNA_USMC"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["HL_CMB_Hunter"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["CUP_MH60S_Unarmed_USN", "CUP_MH60S_Unarmed_FFV_USN", "CUP_B_MH60S_USMC", "CUP_B_UH60S_USN", "CUP_B_CH53E_USMC", "CUP_B_MH60L_DAP_2x_USN"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", ["HL_CMB_Hunter"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["HL_CMB_Gunship"]] call _fnc_saveToTemplate;
@@ -946,19 +946,18 @@ private _officerTemplate = {
 private _prefix = "SF";
 private _unitTypes = [
     ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_Combine_HL2_Type_Elite", true]], [_prefix]],
-	["Rifleman", _riflemanTemplate, [], [_prefix]],
-	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
-	["Grenadier", _grenadierTemplate, [], [_prefix]],
-	["LAT", _latTemplate, [], [_prefix]],
-	["AT", _atTemplate, [], [_prefix]],
-	["AA", _aaTemplate, [], [_prefix]],
-	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
-	["Marksman", _marksmanTemplate, [], [_prefix]],
-	["Sniper", _sniperTemplate, [], [_prefix]]
-];
+	["Rifleman", _riflemanTemplate, [["baseClass", "WBK_Combine_Ordinal", true]], [_prefix]],
+	["Radioman", _radiomanTemplate, [["baseClass", "WBK_Combine_Ordinal", true]], [_prefix]],
+	["Medic", _medicTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
+	["Engineer", _engineerTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
+	["Grenadier", _grenadierTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
+	["LAT", _latTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
+	["AT", _atTemplate, [["baseClass", "WBK_Hunter_Synth_1", true]], [_prefix]],
+	["AA", _aaTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
+	["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
+	["Marksman", _marksmanTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", false]], [_prefix]]
+	["Sniper", _sniperTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", false]], [_prefix]]
 
 
 [_prefix, _unitTypes, _sfLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
@@ -976,7 +975,7 @@ private _unitTypes = [
 ///////////////////////
 private _prefix = "military";
 private _unitTypes = [
-    ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
+    ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_Combine_Hl2_Type", true]], [_prefix]],
 	["Rifleman", _riflemanTemplate, [], [_prefix]],
 	["Radioman", _radiomanTemplate, [], [_prefix]],
 	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
@@ -1009,19 +1008,19 @@ private _unitTypes = [
 ////////////////////////
 private _prefix = "militia";
 private _unitTypes = [
-    ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_Combine_CP_SMG", true]], [_prefix]],
-	["Rifleman", _riflemanTemplate, [], [_prefix]],
-	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
-	["Grenadier", _grenadierTemplate, [], [_prefix]],
-	["LAT", _latTemplate, [], [_prefix]],
-	["AT", _atTemplate, [], [_prefix]],
-	["AA", _aaTemplate, [], [_prefix]],
-	["MachineGunner", _machineGunnerTemplate, [], [_prefix]],
-	["Marksman", _marksmanTemplate, [], [_prefix]],
-	["Sniper", _sniperTemplate, [], [_prefix]]
+    ["SquadLeader", _squadLeaderTemplate, [["baseClass", "WBK_HL_Conscript_4", true]], [_prefix]],
+    ["Rifleman", _riflemanTemplate, [["baseClass", "WBK_HL_Conscript_1", false]], [_prefix]],
+	["Radioman", _radiomanTemplate, [["baseClass", "WBK_HL_Conscript_4", true]], [_prefix]],
+	["Medic", _medicTemplate, [["baseClass", "WBK_HL_Conscript_3", true]], [_prefix]],
+	["Engineer", _engineerTemplate, [["baseClass", "WBK_HL_Conscript_2", true]], [_prefix]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["baseClass", "WBK_HL_Conscript_3", true]], [_prefix]],
+	["Grenadier", _grenadierTemplate, [["baseClass", "WBK_HL_Conscript_1", false]], [_prefix]],
+	["LAT", _latTemplate, [["baseClass", "WBK_HL_Conscript_1", false]], [_prefix]],
+	["AT", _atTemplate, [["baseClass", "WBK_HL_Conscript_1", false]], [_prefix]],
+	["AA", _aaTemplate, [["baseClass", "WBK_HL_Conscript_1", false]], [_prefix]],
+	["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_HL_Conscript_6", false]], [_prefix]],
+	["Marksman", _marksmanTemplate, [["baseClass", "WBK_HECU_Sniper", false]], [_prefix]],
+	["Sniper", _sniperTemplate, [[["baseClass", "WBK_HECU_Sniper", false]], [_prefix]],
 ];
 
 [_prefix, _unitTypes, _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
@@ -1032,18 +1031,18 @@ private _unitTypes = [
 private _prefix = "elite";
 private _unitTypes = [
 	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
-	["Rifleman", _riflemanTemplate, [], [_prefix]],
-	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
+    ["Rifleman", _riflemanTemplate, [["baseClass", "WBK_Combine_Grunt", true]], [_prefix]],
+    ["Radioman", _radiomanTemplate, [["baseClass", "WBK_Combine_Grunt", false]], [_prefix]],
+    ["Medic", _medicTemplate, [["medic", true], ["baseClass", "WBK_Combine_Grunt_white", false]], [_prefix]],
+    ["Engineer", _engineerTemplate, [["engineer", true], ["baseClass", "WBK_Combine_Ordinal", false]], [_prefix]],
     ["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true], ["baseClass", "WBK_Combine_Wallhammer", false]], [_prefix]],
-	["Grenadier", _grenadierTemplate, [], [_prefix]],
-	["LAT", _latTemplate, [], [_prefix]],
-	["AT", _atTemplate, [], [_prefix]],
+["Grenadier", _grenadierTemplate, [["baseClass", "WBK_HL2_Combine_Type", false]], [_prefix]],
+	["AT", _atTemplate, [["baseClass", "WBK_Hunter_Synth_1", true]], [_prefix]],
+	["AT", _atTemplate, [["baseClass", "WBK_Hunter_Synth_1", true]], [_prefix]],
     ["AA", _aaTemplate, [["baseClass", "WBK_HumanSynth_1", false]], [_prefix]],
     ["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_Combine_APF", false]], [_prefix]],
-	["Marksman", _marksmanTemplate, [], [_prefix]],
-	["Sniper", _sniperTemplate, [], [_prefix]]
+    ["Marksman", _marksmanTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", false]], [_prefix]],
+    ["Sniper", _sniperTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", false]], [_prefix]]
 ];
 
 [_prefix, _unitTypes, _eliteLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;

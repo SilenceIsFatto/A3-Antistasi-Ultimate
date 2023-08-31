@@ -460,7 +460,7 @@ _militaryLoadoutData set ["sidearms", [
 
 ///////////////////////////////
 //    Police Loadout Data    //
-///////////////////////////////
+////////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 
