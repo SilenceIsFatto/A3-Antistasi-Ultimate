@@ -2,6 +2,8 @@
 //   Rebel Information   //
 ///////////////////////////
 
+#include "..\..\..\script_component.hpp"
+
 ["name", "Forward Resistance"] call _fnc_saveToTemplate; 
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
@@ -73,15 +75,15 @@
 ///////////////////////////
 
 private _initialRebelEquipment = [
-    "CUP_sgun_slamfire", "CUP_srifle_LeeEnfield", "CUP_srifle_LeeEnfield_rail",
+    "CUP_sgun_slamfire", "WBK_BearRebel_Rifle", "HL_CivHuntingRifle_Mag",
     "CUP_1Rnd_12Gauge_Pellets_No00_Buck", "CUP_1Rnd_12Gauge_Pellets_No3_Buck", "CUP_10x_303_M",
     "CUP_hgun_TaurusTracker455", "CUP_6Rnd_45ACP_M",
     ["CUP_launch_RPG18", 50],
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "CUP_HandGrenade_RGD5", "SmokeShell",
     "CUP_V_I_Carrier_Belt", "CUP_V_I_Guerilla_Jacket", "CUP_V_I_RACS_Carrier_Rig_2", "CUP_V_I_RACS_Carrier_Rig_wdl_2",
-    "CUP_V_RUS_Smersh_New_Light", "CUP_V_OI_TKI_Jacket1_06", "CUP_V_OI_TKI_Jacket5_05", "CUP_V_OI_TKI_Jacket5_06", "CUP_V_OI_TKI_Jacket3_04",
-    "B_FieldPack_cbr", "B_FieldPack_khk", "B_FieldPack_oli","B_AssaultPack_cbr","B_AssaultPack_rgr","B_AssaultPack_khk",
+    "V_LegStrapBag_black_F", "V_Rangemaster_belt", "V_BandollierB_blk", "V_BandollierB_cbr", "V_Pocketed_black_F",
+    "B_FieldPack_cbr", "B_FieldPack_khk", "HLA_SCBA_01_infestation_F","Civ_Backpack_1","B_AssaultPack_rgr","B_AssaultPack_khk",
     "Binocular"
 ];
 

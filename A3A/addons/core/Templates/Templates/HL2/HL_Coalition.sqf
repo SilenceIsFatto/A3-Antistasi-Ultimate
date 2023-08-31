@@ -34,7 +34,7 @@
 ["vehiclesAirborne", ["CUP_B_M113A3_desert_USA", "CUP_B_M113A3_desert_USA", "CUP_B_RG31E_M2_USA", "CUP_B_RG31_M2_USA", "CUP_B_FV432_Bulldog_GB_D", "CUP_B_FV432_Bulldog_GB_D", "CUP_B_Mastiff_HMG_GB_D", "CUP_B_Mastiff_LMG_GB_D", "CUP_B_Mastiff_GMG_GB_D", "CUP_B_BRDM2_CDF"]] call _fnc_saveToTemplate;
 ["vehiclesLightTanks",  ["CUP_B_LAV25_desert_USMC", "CUP_B_LAV25M240_desert_USMC", "CUP_B_M2Bradley_USA_D", "CUP_B_M7Bradley_USA_D", "CUP_B_M2A3Bradley_USA_D", "CUP_B_M2A3Bradley_USA_D", "CUP_B_FV510_GB_D", "CUP_B_FV510_GB_D_SLAT", "CUP_B_MCV80_GB_D", "CUP_B_MCV80_GB_D_SLAT", "CUP_B_BMP2_CDF"]] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["B_Boat_Transport_01_F", ]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["CUP_B_RHIB2Turret_USMC"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["CUP_B_AAV_USMC", "CUP_B_AAV_USMC_TTS", "CUP_B_LAV25_desert_USMC", "CUP_B_LAV25M240_desert_USMC"]] call _fnc_saveToTemplate;
 
@@ -485,6 +485,7 @@ _policeLoadoutData set ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+_militiaLoadoutData set ["uniforms", ["CUP_U_B_CDF_DST_2", "CUP_U_B_CDF_DST_1"]];
 _militiaLoadoutData set ["vests", ["CUP_V_CDF_6B3_1_Green"]];
 _militiaLoadoutData set ["sniVests", ["CUP_V_CDF_6B3_5_FST"]];
 _militiaLoadoutData set ["backpacks", ["B_AssaultPack_rgr"]];
@@ -492,25 +493,56 @@ _militiaLoadoutData set ["atBackpacks", ["CUP_B_RPGPack_Khaki"]];
 _militiaLoadoutData set ["helmets", ["CUP_H_CDF_H_PASGT_FST"]];
 
 _militiaLoadoutData set ["rifles", [
-    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""]
+    ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+        ["CUP_arifle_AKS74U_top_rail", "", "cup_optic_ac11704_black", "", ["CUP_30Rnd_762x39_AK103_bakelite_M"], [], ""],
+        ["CUP_arifle_AKS74U_top_rail", "", "", "", ["CUP_30Rnd_762x39_AK103_bakelite_M"], [], ""],        
+        ["CUP_arifle_AKS74U", "cup_muzzle_mfsup_flashhider_545x39_od", "", "", ["CUP_30Rnd_545x39_AK74_plum_M"], [], ""],
+           ["CUP_arifle_AKS74U", "cup_muzzle_mfsup_flashhider_545x39_od", "", "", ["CUP_30Rnd_545x39_AK74_plum_M"], [], ""],     
+        ["CUP_arifle_AS_VAL", "", "cup_optic_okp_7", "", ["CUP_20Rnd_9x39_SP5_VSS_M"], [], ""],
+           ["CUP_arifle_AS_VAL", "", "", "", ["CUP_20Rnd_9x39_SP5_VSS_M"], [], ""]     
+                
 ]];
 _militiaLoadoutData set ["carbines", [
-    ["CUP_arifle_AKS74U", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""]
+    ["CUP_arifle_AKS74U", "", "hlc_optic_kobra", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+        ["CUP_arifle_AK101_railed", "", "hlc_optic_hensoldtzo_hi", "", ["CUP_30Rnd_556x45_AK"], [], ""],
+        ["CUP_srifle_SVD", "", "cup_optic_okp_7", "", ["CUP_10Rnd_762x54_SVD_M"], [], ""],
+             ["CUP_srifle_SVD", "", "", "", ["CUP_10Rnd_762x54_SVD_M"], [], ""],   
+        ["arifle_AK12_F", "", "optic_holosight_smg_blk_f", "", ["30Rnd_762x39_AK12_Mag_F"], [], ""],
+        ["CUP_arifle_AK102", "", "cup_acc_flashlight_wdl", "", ["CUP_30Rnd_556x45_AK"], [], ""],       
+             ["CUP_arifle_AK102", "", "", "", ["CUP_30Rnd_556x45_AK"], [], ""]          
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
-    ["CUP_arifle_AK74_GL", "", "", "", ["CUP_30Rnd_545x39_AK74_plum_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M"], ""]
+    ["CUP_arifle_AK74_GL", "", "", "", ["CUP_30Rnd_545x39_AK74_plum_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M"], ""],
+    ["hlc_rifle_aks74_GL", "", "cup_acc_flashlight", "", ["hlc_30Rnd_545x39_B_AK"], ["CUP_1Rnd_HE_GP25_M"], ""],
+    ["hlc_rifle_aks74_GL", "", "", "", ["hlc_30Rnd_545x39_B_AK"], ["CUP_1Rnd_HE_GP25_M"], ""],    
+    ["hlc_rifle_ak12GL", "", "cup_optic_compm4", "", ["hlc_30Rnd_545x39_B_AK"], ["CUP_1Rnd_HE_GP25_M"], ""],
+    ["hlc_rifle_ak12GL", "", "cup_optic_acog_ta01nsn_rmr_black", "", ["hlc_30Rnd_545x39_B_AK"], ["CUP_1Rnd_HE_GP25_M"], ""],   
+    ["CUP_arifle_AK109_GL_top_rail", "", "cup_optic_holoblack", "", ["CUP_30Rnd_762x39_AK103_bakelite_M"], ["hlc_VOG25_AK"], ""]        
 ]];
 _militiaLoadoutData set ["SMGs", [
-    ["CUP_arifle_AKS74U", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""]
+    ["CUP_arifle_AKS74U", "", "cup_optic_1p63", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+        ["CUP_arifle_AKS74U", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+         ["CUP_arifle_AKS74U", "", "cup_optic_ekp_8_02", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],   
+        ["CUP_smg_bizon", "", "cup_optic_okp_7", "", ["CUP_64Rnd_9x19_Bizon_M"], [], ""],
+        ["CUP_smg_UZI", "", "", "", ["CUP_72Rnd_9x19_UZI_M"], [], ""],
+         ["CUP_smg_vityaz_top_rail", "", "", "", ["CUP_30Rnd_9x19AP_Vityaz"], [], ""]       
 ]];
 _militiaLoadoutData set ["machineGuns", [
-    ["CUP_arifle_RPK74M", "", "", "", ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], [], ""]
+    ["CUP_arifle_RPK74M", "", "", "", ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], [], ""],
+        ["CUP_arifle_RPK74", "", "cup_optic_1p63", "", ["75rnd_762x39_AK12_Mag_Tracer_F"], [], ""],
+            ["CUP_arifle_RPK74", "", "", "", ["75rnd_762x39_AK12_Mag_Tracer_F"], [], ""],    
+        ["hlc_rifle_RPK12", "", "cup_optic_aimpoint_5000", "", ["30Rnd_545x39_Mag_Tracer_F"], [], ""],
+            ["hlc_rifle_RPK12", "", "", "", ["30Rnd_545x39_Mag_Tracer_F"], [], ""]    
+            
 ]];
 _militiaLoadoutData set ["marksmanRifles", [
-    ["CUP_srifle_SVD", "", "", "CUP_optic_PSO_1_1", ["CUP_10Rnd_762x54_SVD_M"], [], ""]
+    ["CUP_srifle_SVD", "", "", "CUP_optic_PSO_1_1", ["CUP_10Rnd_762x54_SVD_M"], [], ""],
+        ["srifle_DMR_01_F", "", "cup_optic_elcan", "", ["ACE_10Rnd_762x54_Tracer_mag"], [], ""],
+        ["CUP_srifle_VSSVintorez", "", "cup_optic_pso_1_1_open", "", ["CUP_10Rnd_9x39_SP5_VSS_M"], [], ""]    
 ]];
 _militiaLoadoutData set ["sniperRifles", [
-    ["CUP_srifle_SVD", "", "", "CUP_optic_PSO_1_1", ["CUP_10Rnd_762x54_SVD_M"], [], ""]
+    ["CUP_srifle_SVD", "", "", "CUP_optic_PSO_1_1", ["CUP_10Rnd_762x54_SVD_M"], [], ""],
+        ["CUP_srifle_Mosin_Nagant", "", "cup_optic_pem", "", ["CUP_5Rnd_762x54_Mosin_M"], [], ""]
 ]];
 _militiaLoadoutData set ["sidearms", [
     ["CUP_hgun_Makarov", "", "", "", ["CUP_8Rnd_9x18_Makarov_M"], [], ""]

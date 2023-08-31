@@ -41,3 +41,12 @@
         	name = "Union Citizens";
         	file = "HL_Citizen";
 	};
+
+		class HL_RIV : HL_Base
+	{
+        	side = "Riv";
+        	flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_combine_ca.paa);
+        	name = "Collaborative Enforcers";
+        	file = "HL_Rival";
+	};
+
