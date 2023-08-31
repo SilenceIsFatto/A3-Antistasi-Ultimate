@@ -41,7 +41,7 @@
 ["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
-#include "CUP_Reb_Vehicle_Attributes.sqf"
+#include "HL_Reb_Vehicle_Attributes.sqf"
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
