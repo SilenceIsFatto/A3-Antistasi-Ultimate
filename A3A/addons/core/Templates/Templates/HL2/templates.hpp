@@ -12,7 +12,7 @@
         	side = "Inv";
         	flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_combine_ca.paa);
         	name = "Universal Union";
-        	file = "Half_Life_Combine";
+        	file = "HL_Combine";
         	description = "We are the Universal Union. Held by a conglomerate effort to Unite, Protect, and Eliminate.";
 	};
 
@@ -21,7 +21,7 @@
         	side = "Reb";
         	flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_rebel_ca.paa);
         	name = "Forward Resistance";
-        	file = "Half_Life_Rebel";
+        	file = "HL_Rebel";
         	description = "The Forward Resistance. We fight for a free and better Earth. We are the front line of Humanity.";
 	};
 	
@@ -30,7 +30,7 @@
         	side = "Occ";
         	flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_rebel_ca.paa);
         	name = "United Defense Coalition";
-        	file = "Half_Life_Rebel";
+        	file = "HL_Coalition";
         	description = "The remnants of the old world militaries. Fighting to restore earth to the old order.";
 	};	
 	
@@ -39,5 +39,5 @@
         	side = "Civ";
         	flagTexture = QPATHTOFOLDER(Pictures\Markers\marker_combine_ca.paa);
         	name = "Union Citizens";
-        	file = "Half_Life_Citizen";
+        	file = "HL_Citizen";
 	};

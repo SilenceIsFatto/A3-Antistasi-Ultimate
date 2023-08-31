@@ -780,5 +780,8 @@ class Templates
 	
     // ***************************** GM *****************************
 
-    #include "Templates\GM\templates.hpp"
+    #include "Templates\GM\templates.hpp"	
+	 // ***************************** Hl2 *****************************
+
+    #include "Templates\HL2\templates.hpp"	
 };
