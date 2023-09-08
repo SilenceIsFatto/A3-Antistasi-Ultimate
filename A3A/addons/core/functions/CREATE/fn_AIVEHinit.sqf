@@ -246,7 +246,7 @@ if([typeOf _veh] call A3A_Logistics_fnc_isLoadable) then {[_veh] call A3A_Logist
 
 //initializes animiation sources and camo variants
 if (_side != teamPlayer) then {
-	[_veh] call SCRT_fnc_misc_tryInitVehicle;
+	[_veh, _side] call SCRT_fnc_misc_tryInitVehicle;
 };
 
 if (!isNull _veh) then {

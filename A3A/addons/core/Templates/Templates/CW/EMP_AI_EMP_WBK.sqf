@@ -33,7 +33,7 @@
 ["vehiclesAirborne", ["CW_Ifrit_Imperial_HMG", "CW_Ifrit_Imperial_AT"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["JMSLLTE_vehgr_ATST_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightTanks",  ["JMSLLTE_vehgr_ATST_F", "JMSLLTE_veh_S1firehawke_emp_F"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["3as_ATJT_Imperial", "3as_ATTE_Imperial"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["JMSLLTE_veh_S1firehawke_emp_F"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["3AS_RX200_Base"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate; 

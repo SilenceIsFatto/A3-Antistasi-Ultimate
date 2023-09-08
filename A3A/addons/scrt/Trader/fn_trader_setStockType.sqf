@@ -14,23 +14,6 @@ FIX_LINE_NUMBERS()
 
 params ["_traderX"];
 
-private _has_addon = {
-    params [["_class", ""]];
-    if (_class isEqualTo "") exitWith {false};
-
-    if (_class isEqualType []) exitWith {
-        {
-            if (isClass (configFile >> "cfgPatches" >> _x)) then {diag_log format ["cfgPatches class %1 does exist.", _x]; true} else {diag_log format ["cfgPatches class %1 does not exist.", _x]; false};
-        } forEach _class;
-    };
-
-    if (isClass (configFile >> "cfgPatches" >> _class)) then {
-        true
-    } else {
-        false
-    };
-};
-
 private _modsets = [];
 
 private _cfg = (configfile >> "A3U" >> "traderMods") call BIS_fnc_getCfgSubClasses;
@@ -39,7 +22,7 @@ private _cfg = (configfile >> "A3U" >> "traderMods") call BIS_fnc_getCfgSubClass
     private _addons = getArray (configFile >> "A3U" >> "traderMods" >> _x >> "addons");
     private _prefix = getText (configFile >> "A3U" >> "traderMods" >> _x >> "prefix");
 
-    if ([_addons] call _has_addon) then {
+    if ([_addons] call A3U_fnc_hasAddon) then {
         _modsets pushBack _prefix;
         [format ["Added %1 to _modsets list.", _prefix]] call A3U_fnc_log;
     };

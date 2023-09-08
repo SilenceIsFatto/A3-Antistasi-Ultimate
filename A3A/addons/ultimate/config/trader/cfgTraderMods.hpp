@@ -85,4 +85,34 @@ class traderMods
         addons[] = {"OPTRE_Core", "OPTRE_FC_Core"};
         prefix = "optre";
     };
+    class GM : base
+    {
+        addons[] = {"gm_core"};
+        prefix = "globmob";
+    };
+    class niarms : base
+    {
+        addons[] = {"hlcweapons_core"};
+        prefix = "niarms";
+    };
+    class fwa : base
+    {
+        addons[] = {"sp_fwa_fal"};
+        prefix = "fwa";
+    };
+    class tow : base
+    {
+        addons[] = {"Tier1_Weapons"};
+        prefix = "tow";
+    };
+    class sma : base
+    {
+        addons[] = {"SMA_Weapons"};
+        prefix = "sma";
+    };
+    class csa38 : base
+    {
+        addons[] = {"csa38ii_data"};
+        prefix = "csa38";
+    };
 };

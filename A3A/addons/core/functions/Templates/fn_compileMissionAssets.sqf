@@ -39,6 +39,14 @@ private _fnc_extractMarketClasses = {
     _vehicleRegisters apply {_x select 0}
 };
 
+private _fnc_setHashmap = {
+    params ["_faction", "_templateVar"];
+
+    private _map = createHashMap;
+    {_map set [_x select 0, _x select 1]} forEach (_faction get _templateVar);
+    _faction set [_templateVar, _map];
+};
+
   //=====\\
  // Units \\
 // ======= \\
@@ -115,20 +123,16 @@ setVar("vehicleRadars", [Occ("vehicleRadar"), Inv("vehicleRadar")]);
 setVar("vehicleSams", [Occ("vehicleSam"), Inv("vehicleSam")]);
 setVar("staticHowitzers", OccAndInv("staticHowitzers"));
 
-//for some reason it doesn't want to merge/append/concat animation source arrays
-private _animationMap = createHashMap;
-{_animationMap set [_x select 0, _x select 1]} forEach (A3A_faction_inv get "animations");
-{_animationMap set [_x select 0, _x select 1]} forEach (A3A_faction_occ get "animations");
-{_animationMap set [_x select 0, _x select 1]} forEach (A3A_faction_reb get "animations");
-{_animationMap set [_x select 0, _x select 1]} forEach (A3A_faction_riv get "animations");
-A3A_faction_all set ["animations", _animationMap];
-
-private _variantMap = createHashMap;
-{_variantMap set [_x select 0, _x select 1]} forEach (A3A_faction_inv get "variants");
-{_variantMap set [_x select 0, _x select 1]} forEach (A3A_faction_occ get "variants");
-{_variantMap set [_x select 0, _x select 1]} forEach (A3A_faction_reb get "variants");
-{_variantMap set [_x select 0, _x select 1]} forEach (A3A_faction_riv get "variants");
-A3A_faction_all set ["variants", _variantMap];
+[A3A_faction_inv, "animations"] call _fnc_setHashmap;
+[A3A_faction_occ, "animations"] call _fnc_setHashmap;
+[A3A_faction_reb, "animations"] call _fnc_setHashmap;
+[A3A_faction_riv, "animations"] call _fnc_setHashmap;
+[A3A_faction_civ, "animations"] call _fnc_setHashmap;
+[A3A_faction_inv, "variants"] call _fnc_setHashmap;
+[A3A_faction_occ, "variants"] call _fnc_setHashmap;
+[A3A_faction_reb, "variants"] call _fnc_setHashmap;
+[A3A_faction_riv, "variants"] call _fnc_setHashmap;
+[A3A_faction_civ, "variants"] call _fnc_setHashmap;
 
 //Rivals
 private _vehRivalsArmor = Riv("vehiclesRivalsAPCs") + Riv("vehiclesRivalsTanks");

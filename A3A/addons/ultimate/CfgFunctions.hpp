@@ -29,6 +29,7 @@ class CfgFunctions
         class Utility
         {
             file = QPATHTOFOLDER(functions\Utility);
+            class exportCrate {};
             class hasAddon {};
             class log {};
             class logisticsGrabSeats {};

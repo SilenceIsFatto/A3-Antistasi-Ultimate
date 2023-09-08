@@ -2,7 +2,7 @@
     {
         requiredAddons[] = {"IFA3_Core"};
         basepath = QPATHTOFOLDER(Templates\Templates\IFA);
-        logo = QPATHTOFOLDER(Templates\Templates\IFA\spe_ifa_logo.paa);
+        logo = QPATHTOFOLDER(Templates\Templates\IFA\ifa_logo.paa);
         priority = 15;
         equipFlags[] = {"lowTech"};
     };
