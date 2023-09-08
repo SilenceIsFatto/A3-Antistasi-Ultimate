@@ -24,10 +24,6 @@
 FIX_LINE_NUMBERS()
 params ["_markerX", ["_maxResourceCivilians", 4]];
 
-private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
-
-if ("seaport" in _markerX && {_civNonHuman}) exitWith {};
-
 private _daystate = [] call A3A_fnc_getDayState;
 
 if (_markerX in destroyedSites) exitWith {

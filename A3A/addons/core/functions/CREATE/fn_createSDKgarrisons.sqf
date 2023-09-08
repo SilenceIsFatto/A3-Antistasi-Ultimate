@@ -12,8 +12,6 @@ private _soldiers = [];
 private _civs = [];
 _positionX = getMarkerPos (_markerX);
 
-private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
-
 if (_markerX != "Synd_HQ") then {
 	if (!(_markerX in citiesX)) then {
 		private _veh = createVehicle [FactionGet(reb,"flag"), _positionX, [],0, "NONE"];

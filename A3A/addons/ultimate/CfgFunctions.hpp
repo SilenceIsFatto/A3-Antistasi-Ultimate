@@ -18,14 +18,6 @@ class CfgFunctions
             file = QPATHTOFOLDER(functions\init);
             class init {};
         };
-        class STALKER
-        {
-            file = QPATHTOFOLDER(functions\STALKER);
-            class cleanupAnomalyField {};
-            class createAnomalyField {};
-            class emission {};
-            class fillMapAnomalies {};
-        };
         class Utility
         {
             file = QPATHTOFOLDER(functions\Utility);

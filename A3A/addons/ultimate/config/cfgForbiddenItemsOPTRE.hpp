@@ -1,7 +1,6 @@
     //OPTRE Spartans
     class OPTRE_MJOLNIR_MkVBArmor : forbidden_limited_base {};
     class OPTRE_MJOLNIR_MkVBArmor_MkV4 : forbidden_limited_base {};
-    class OPTRE_MJOLNIR_MkVBArmor_SecurityMarkV_FJPARA_Knees1 : forbidden_limited_base {};
     class OPTRE_ANPRC_515_Spartan : forbidden_limited_base {};
     class OPTRE_MJOLNIR_MkVBHelmet : forbidden_limited_base {};
     class OPTRE_MJOLNIR_MkVBHelmet_UA_HUL : forbidden_limited_base {};

@@ -41,6 +41,7 @@ class CfgMarkers
         size = 24;
     };
 
+
 	class a3u_flag_optre_unsc: flag_NATO 
 	{
 		name = "UNSC";
@@ -58,62 +59,5 @@ class CfgMarkers
 		name = "Insurrection";
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_insurrection_ca.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_insurrection_ca.paa);
-	};
-
-	// This ukraine flag is for the STALKER modset, not current day ukraine
-	// Please don't use it for current day, it desensitises people to the reality that ukraine is in a war
-	class a3u_flag_stalker_ukraine: a3u_flag_optre_unsc 
-	{
-		name = "Ukrainian Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_ukraine_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_ukraine_ca.paa);
-	};
-	class a3u_flag_stalker_military: a3u_flag_stalker_ukraine
-	{
-		name = "Military Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_military_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_military_ca.paa);
-	};
-	class a3u_flag_stalker_monolith: a3u_flag_stalker_ukraine 
-	{
-		name = "Monolith Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_monolith_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_monolith_ca.paa);
-	};
-	class a3u_flag_stalker_loners: a3u_flag_stalker_ukraine 
-	{
-		name = "Loner Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_loners_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_loners_ca.paa);
-	};
-	class a3u_flag_stalker_duty: a3u_flag_stalker_ukraine 
-	{
-		name = "Duty Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_duty_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_duty_ca.paa);
-	};
-	class a3u_flag_stalker_bandits: a3u_flag_stalker_ukraine 
-	{
-		name = "Bandit Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_bandits_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_bandits_ca.paa);
-	};
-	class a3u_flag_stalker_ecologists: a3u_flag_stalker_ukraine 
-	{
-		name = "Ecologist Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_ecologists_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_ecologists_ca.paa);
-	};
-	class a3u_flag_stalker_clearsky: a3u_flag_stalker_ukraine 
-	{
-		name = "Clear Sky Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_clearsky_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_clearsky_ca.paa);
-	};
-	class a3u_flag_stalker_freedom: a3u_flag_stalker_ukraine 
-	{
-		name = "Freedom Flag (STALKER)";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_freedom_ca.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_freedom_ca.paa);
 	};
 };

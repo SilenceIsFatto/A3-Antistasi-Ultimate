@@ -119,15 +119,10 @@ _flagX allowDamage false;
 _vehiclesX pushBack _flagX;
 if (flagTexture _flagX != (_faction get "flagTexture")) then {[_flagX,(_faction get "flagTexture")] remoteExec ["setFlagTexture",_flagX]};
 
-private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
-private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
-
-if (_lowCiv isEqualTo false) then {
-	private _spawnedCivilians = [_markerX, 4] call A3A_fnc_createResourceCiv;
-	if !(isNil "_spawnedCivilians") then {
-		_groups pushBack (_spawnedCivilians # 0);
-		_civs append (_spawnedCivilians # 1);
-	};
+private _spawnedCivilians = [_markerX, 4] call A3A_fnc_createResourceCiv;
+if !(isNil "_spawnedCivilians") then {
+	_groups pushBack (_spawnedCivilians # 0);
+	_civs append (_spawnedCivilians # 1);
 };
 
 private _spawnParameter = [_markerX, "Vehicle"] call A3A_fnc_findSpawnPosition;
