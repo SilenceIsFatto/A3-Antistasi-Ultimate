@@ -37,5 +37,10 @@ class CfgFunctions
             class logisticsGrabSeats {};
             class weightTest {};
         };
+        class Inventory
+        {
+            file = QPATHTOFOLDER(functions\Inventory);
+            class compatibleMagazinesWithExceptions {};
+        };
     };
 };

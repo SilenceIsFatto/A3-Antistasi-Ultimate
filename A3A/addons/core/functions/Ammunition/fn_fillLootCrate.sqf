@@ -173,7 +173,7 @@ if (_crateWepTypeMax != 0) then {
 			_crate addWeaponWithAttachmentsCargoGlobal [[ _loot, "", "", "", [], [], ""], _amount];
             Verbose_2("Adding %1 weapons of type %2", _amount, _loot);
 
-			private _magazines = compatibleMagazines _loot;
+			private _magazines = [_loot, A3U_forbiddenItems] call A3U_fnc_compatibleMagazinesWithExceptions;
 			if (count _magazines < 1) exitWith {};
 			if (_loot in allShotguns) then { _magazines = [_magazines select 0] };		// prevent doomsday
 
