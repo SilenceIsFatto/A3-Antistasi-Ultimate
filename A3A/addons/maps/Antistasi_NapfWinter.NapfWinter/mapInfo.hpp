@@ -16,4 +16,14 @@ class napfwinter {
 		{8966.32,16349.9,-0.269293},{14608.1,14184.6,0},{2408.55,7980.53,0},{2033.37,9888.12,0},{6131.41,10402.5,0},{12851.8,9466.35,0},{6949.05,9651.84,0}
 	};
 	climate = "arctic";
+	buildObjects[] = {
+        // Large vanilla arid structures
+        {"Land_BagBunker_Large_F", 300}, {"Land_BagBunker_Tower_F", 300}, {"Land_BagBunker_Small_F", 60},
+        {"Land_Shed_09_F", 120}, {"Land_Shed_10_F", 140},
+        // Vanilla arid sandbag walls
+        {"Land_BagFence_Long_F", 10}, {"Land_BagFence_Round_F", 10}, {"Land_BagFence_Short_F", 10},
+        // Non-camo vanilla stuff
+        {"Land_SandbagBarricade_01_half_F", 20}, {"Land_SlumWall_01_s_2m_F", 5}, {"Land_PillboxBunker_01_hex_F", 200},
+        {"Land_Barricade_01_4m_F", 30}, {"Land_GuardBox_01_brown_F", 80}, {"Land_Tyres_F", 10}
+    };
 };

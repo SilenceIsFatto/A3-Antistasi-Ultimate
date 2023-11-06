@@ -38,4 +38,14 @@ class cup_chernarus_a3 {
 		{2729.96,5375.75,0},{13851.8,13218.4,0},{11489,14480.1,0},{7735.05,12636.6,0},{3430.91,13015.8,0},{11988.3,9190.38,3.8147e-006},{6617.86,2389.05,0},{6075.08,7777.44,0},{10699,7986.4,0}
 	};
 	climate = "temperate";
+	buildObjects[] = {
+        // Large vanilla arid structures
+        {"Land_BagBunker_Large_F", 300}, {"Land_BagBunker_Tower_F", 300}, {"Land_BagBunker_Small_F", 60},
+        {"Land_Shed_09_F", 120}, {"Land_Shed_10_F", 140},
+        // Vanilla arid sandbag walls
+        {"Land_BagFence_Long_F", 10}, {"Land_BagFence_Round_F", 10}, {"Land_BagFence_Short_F", 10},
+        // Non-camo vanilla stuff
+        {"Land_SandbagBarricade_01_half_F", 20}, {"Land_SlumWall_01_s_2m_F", 5}, {"Land_PillboxBunker_01_hex_F", 200},
+        {"Land_Barricade_01_4m_F", 30}, {"Land_GuardBox_01_brown_F", 80}, {"Land_Tyres_F", 10}
+    };
 };
