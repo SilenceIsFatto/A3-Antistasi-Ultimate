@@ -40,9 +40,9 @@
 ["vehiclesGunBoats", ["CUP_B_RHIB2Turret_USMC"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["CUP_B_AAV_USMC", "CUP_B_AAV_USMC_TTS", "CUP_B_LAV25_desert_USMC", "CUP_B_LAV25M240_desert_USMC"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["SC_Fixed_Bomber_01"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["SC_Fixed_Bomber_01"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", ["SC_Fixed_Bomber_01"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["CUP_B_A10_DYN_USA"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["CUP_B_AV8B_DYN_USMC"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["CUP_B_AV8B_DYN_USMC"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["HL_CMB_Hunter"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["SC_VTOL_X42S_AR"]] call _fnc_saveToTemplate;
@@ -96,7 +96,12 @@
 "WhiteHead_15","WhiteHead_17","WhiteHead_18","WhiteHead_19",
 "WhiteHead_20","WhiteHead_21"]] call _fnc_saveToTemplate;
 ["voices", ["Male01ENG","Male02ENG","Male03ENG","Male04ENG","Male06ENG","Male07ENG","Male08ENG","Male09ENG","Male10ENG","Male11ENG","Male12ENG"]] call _fnc_saveToTemplate;
-["militaryVoices", ["CivilProtectionENG"]] call _fnc_saveToTemplate;
+
+if (["cfgPatches"] call A3U_fnc_hasAddon) then {
+  ["milVoices", ["CivilProtectionENG"]] call _fnc_saveToTemplate;
+} else {
+  ["milVoices", ["other voice"]] call _fnc_saveToTemplate;
+};
 
 //////////////////////////
 //       Loadouts       //
@@ -153,9 +158,9 @@ _loadoutData set ["traitorUniforms", ["CUP_U_B_USMC_FROG1_DMARPAT"]];
 _loadoutData set ["traitorVests", ["CUP_V_B_Eagle_SPC_Empty"]];
 _loadoutData set ["traitorHats", ["CUP_H_USMC_BOONIE_2_DES"]];
 
-_loadoutData set ["officerUniforms", ["CUP_U_B_USMC_FROG1_DMARPAT"]];
-_loadoutData set ["officerVests", ["CUP_V_B_Eagle_SPC_Officer"]];
-_loadoutData set ["officerHats", ["CUP_H_USMC_Officer_Cap"]];
+_loadoutData set ["officerUniforms", []];
+_loadoutData set ["officerVests", []];
+_loadoutData set ["officerHats", []];
 
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
@@ -171,8 +176,8 @@ _loadoutData set ["longRangeRadios", []];
 _loadoutData set ["atBackpacks", []];
 _loadoutData set ["slBackpacks", []];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["H_Beret_02"]];
-_loadoutData set ["sniHats", ["CUP_H_USMC_BOONIE_2_DES"]];
+_loadoutData set ["slHat", []];
+_loadoutData set ["sniHats", []];
 _loadoutData set ["glasses", []];
 _loadoutData set ["goggles", []];
 
@@ -435,7 +440,7 @@ _militiaLoadoutData set ["rifles", [
 _militiaLoadoutData set ["carbines", [
     ["hlc_rifle_M4a1carryhandle", "", "", "", ["hlc_30rnd_556x45_EPR"], [], ""],
     ["hlc_rifle_Bushmaster300", "", "", "", ["hlc_30rnd_300BLK_PMAG"], [], ""],
-    ["hlc_rifle_Colt727", "", "", "", ["CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Yellow"], [], ""],
+    ["hlc_rifle_Colt727", "", "", "", ["CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Yellow"], [], ""]
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
     ["hlc_rifle_A1m203", "", "", "", ["hlc_30rnd_556x45_M_STANAGHD"], ["1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeYellow_Grenade_shell"], ""],
