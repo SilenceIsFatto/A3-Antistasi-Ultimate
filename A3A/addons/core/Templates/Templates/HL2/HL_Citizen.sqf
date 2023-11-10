@@ -103,25 +103,32 @@ private _civUniforms = [
     "HL_RES_U_Rebel_03",
     "HL_RES_U_Rebel_02",
     "HL_RES_U_Rebel_01",
-    "HL_RES_U_Rebel_Medic",
-	"U_BMS_Shirt_trop",
-	"U_BMS_Shirt",
-	"Civilian_Jumpsuit_1",
-	"Civilian_Jumpsuit_2",
-	"Civilian_Jumpsuit_5",
-	"Civilian_Jumpsuit_4",
-	"Civilian_Jumpsuit_3"
+    "HL_RES_U_Rebel_Medic"
 ];          //Uniforms given to Players
 
 private _civUniformsAI = [
-    "Civilian_Jumpsuit_1",
-    "Civilian_Jumpsuit_4",
-    "Civilian_Jumpsuit_5"
+    "CUP_U_C_Citizen_02",
+    "CUP_U_C_Citizen_01",
+    "CUP_U_C_Citizen_04",
+    "CUP_U_C_Citizen_03",
+    "CUP_U_C_Rocker_01",
+    "CUP_U_C_Rocker_02",
+    "CUP_U_C_Rocker_03",
+    "CUP_U_C_Rocker_04",
+    "CUP_U_C_AirMedic_yellow_01",
+    "CUP_U_C_Tracksuit_02",
+    "CUP_U_C_Tracksuit_01",
+    "U_C_Man_casual_1_F",
+    "U_C_Man_casual_2_F",
+    "U_C_Man_casual_3_F",
+    "U_C_Man_casual_4_F",
+    "U_C_Man_casual_5_F",
+    "U_C_Man_casual_6_F"
 ];  //Uniforms given to AI
 
-private _pressUniforms = ["Civilian_Jumpsuit_2"];            //Uniforms given to Press/Journalists
+private _pressUniforms = ["CombainCIV_Uniform_1"];            //Uniforms given to Press/Journalists
 
-private _workerUniforms = ["Civilian_Jumpsuit_3", "CombainCIV_Uniform_1", "CombainCIV_Uniform_2"];           //Uniforms given to Workers at Factories/Resources
+private _workerUniforms = ["CombainCIV_Uniform_1", "CombainCIV_Uniform_2"];           //Uniforms given to Workers at Factories/Resources
 
 ["uniforms", _civUniforms + _pressUniforms + _workerUniforms] call _fnc_saveToTemplate;          //Uniforms given to the Arsenal, Allowed for Undercover and given to Rebel Ai that go Undercover
 
@@ -136,7 +143,7 @@ _loadoutData set ["pressUniforms", _pressUniforms];
 _loadoutData set ["workerUniforms", _workerUniforms];
 _loadoutData set ["pressVests", ["V_Press_F"]];
 _loadoutData set ["pressHelmets", ["H_Cap_press"]];
-_loadoutData set ["workerHelmets", ["H_Cap_blk", "CUP_H_PMC_Cap_Tan"]];
+_loadoutData set ["workerHelmets", ["CombainCIV1", "H_EarProtectors_yellow_F"]];
 
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];

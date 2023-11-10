@@ -485,11 +485,11 @@ _policeLoadoutData set ["sidearms", [
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData set ["vests", ["CUP_V_CDF_6B3_1_Green"]];
-_militiaLoadoutData set ["sniVests", ["CUP_V_CDF_6B3_5_FST"]];
+_militiaLoadoutData set ["vests", ["V_TacVest_khk"]];
+_militiaLoadoutData set ["sniVests", ["V_TacVest_khk"]];
 _militiaLoadoutData set ["backpacks", ["B_AssaultPack_rgr"]];
 _militiaLoadoutData set ["atBackpacks", ["CUP_B_RPGPack_Khaki"]];
-_militiaLoadoutData set ["helmets", ["CUP_H_CDF_H_PASGT_FST"]];
+_militiaLoadoutData set ["helmets", ["CUP_H_CDF_OfficerCap_DST", "CUP_H_CDF_H_PASGT_DST"]];
 
 _militiaLoadoutData set ["rifles", [
     ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""]
