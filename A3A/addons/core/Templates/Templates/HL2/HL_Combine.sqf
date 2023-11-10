@@ -171,7 +171,7 @@ _loadoutData set ["longRangeRadios", []];
 _loadoutData set ["atBackpacks", []];
 _loadoutData set ["slBackpacks", []];
 _loadoutData set ["helmets", []];
-_loadoutData set ["slHat", ["H_Beret_02"]];
+_loadoutData set ["slHat", []];
 _loadoutData set ["sniHats", []];
 _loadoutData set ["glasses", []];
 _loadoutData set ["goggles", []];
