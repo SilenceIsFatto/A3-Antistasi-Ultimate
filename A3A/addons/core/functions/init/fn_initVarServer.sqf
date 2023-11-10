@@ -485,6 +485,10 @@ Info("Sorting grouped class categories");
 Info("Building loot lists");
 [] call A3A_fnc_loot;
 
+if (["tts_emission"] call A3U_fnc_hasAddon) then {call A3U_fnc_emission};
+
+if (["diwako_anomalies"] call A3U_fnc_hasAddon) then {call A3U_fnc_fillMapAnomalies};
+
 // Build smoke grenade magazine->muzzle hashmap
 private _smokeMuzzleHM = createHashMap;
 {

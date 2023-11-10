@@ -25,14 +25,14 @@ if ([getPosATL player] call A3A_fnc_enemyNearCheck) exitWith {
 
 construction_selectedEngineer = objNull;
 
-private _engineers = (units group player) select {_x getUnitTrait "engineer"};
+private _engineers = (units group player) select {_x call A3A_fnc_isEngineer};
 private _playerIsEngineer = false;
 private _otherPlayerEngineers = [];
 private _aiEngineers = [];
 private _abortMessage = "";
 
 {
-	if (_x getUnitTrait "engineer") then {
+	if (_x call A3A_fnc_isEngineer) then {
 		if (isPlayer _x) then {
 			if (player == _x) then {
 				_playerIsEngineer = true;
@@ -150,6 +150,8 @@ if (_money < construction_cost) exitWith {
 private _extraMessage = format [localize "STR_veh_callback_constructions_text", construction_cost, A3A_faction_civ get "currencySymbol"];
 private _fnc_placed = {
 	params ["_vehicle", "_cost"];
+
+    if (_vehicle isEqualTo objNull) exitWith {};
 
     private _earlyEscape = false;
     switch (construction_type) do { //return inverted here so true = cant place

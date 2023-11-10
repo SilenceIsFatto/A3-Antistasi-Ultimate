@@ -1,7 +1,7 @@
 //SPE_IFA3
 
 		class handgunsspe{
-			displayName = "SPE Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 			
 			ITEM(SPE_P08, 110, PISTOL_STOCK); //AMMO: SPE_8Rnd_9x19_P08
@@ -10,7 +10,7 @@
 		};
 
 		class smgspe{
-			displayName = "SPE SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 		
 			ITEM(SPE_Sten_Mk2, 165, RIFLE_STOCK); // SPE_32Rnd_9x19_Sten
@@ -22,7 +22,7 @@
 		};
 		
 		class mgspe{
-			displayName = "SPE MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(SPE_M1919A4, 550, RIFLE_STOCK); //NORMAL: SPE_50Rnd_762x63 SPE_50Rnd_762x63_M1 SPE_50Rnd_762x63_M2_AP
@@ -35,7 +35,7 @@
 		};
 
 		class riflesspe{
-			displayName = "SPE Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SPE_M1_Carbine, 250, RIFLE_STOCK); //NORMAL: SPE_15Rnd_762x33 TRACER: SPE_15Rnd_762x33_t
@@ -48,7 +48,7 @@
 		};
 
 		class sniperriflesspe{
-			displayName = "SPE Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 		
 			ITEM(SPE_M1903A4_Springfield, 570, RIFLE_STOCK); // SAME AS SPE_M1903A3_Springfield
@@ -57,7 +57,7 @@
 		};
 
 		class launchersspe{
-			displayName = "SPE Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(SPE_Faustpatrone, 100, 15);
@@ -68,7 +68,7 @@
 		}; 
 
 		class launchermagazinesspe{
-			displayName = "SPE Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			ITEM(SPE_1Rnd_60mm_M6, 100, 15);
@@ -79,7 +79,7 @@
 		};
 
 		class riflegrenadesspe{
-			displayName = "SPE Rifle Grenades";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(SPE_1Rnd_G_NBGR_42, 50, 25);
@@ -96,7 +96,7 @@
 		};
 
 		class muzzlesspe{
-			displayName = "SPE Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(spe_acc_m3_suppressor_45acp, 75, MZ_STOCK);
@@ -110,7 +110,7 @@
 		};
 
 		class magazinesspe{
-			displayName = "SPE Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";		
 			
 			ITEM(SPE_8Rnd_9x19_P08, 15, MZ_STOCK);
@@ -156,7 +156,7 @@
 		};
 
 		class miscspe{
-			displayName = "SPE Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 			
 			ITEM(SPE_US_TNT_4pound_mag, 450, MISC_STOCK);
@@ -166,7 +166,7 @@
 		};
 
 		class pointersspe{
-			displayName = "SPE BAR Accessories";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4 %5", localize "STR_A3AU_spe", localize "STR_A3AU_barret", localize "STR_A3AU_handles", localize "STR_A3AU_and", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(spe_m1918a2_bar_handle, 70, PN_STOCK);
@@ -175,7 +175,7 @@
 		};
 
 		class specialweaponsspe{
-			displayName = "SPE Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SPE_Fusil_Mle_208_12, 150, 25);
@@ -188,7 +188,7 @@
 		};
 
 		class underbarrelspe{
-	     	displayName = "SPE Backpack Static";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_spe", localize "STR_A3AU_bagsStatics"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(SPE_Lafette_Tripod, 400, 20);

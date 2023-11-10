@@ -41,7 +41,7 @@ _items append [
 ];
 
 if(A3A_hasACE) then {
-    _items pushBack [_medCrate#0, _medCrate#1, localize "STR_A3AP_buyvehdialog_medical_box", "heal", ["noclear", "move"]],
+    _items pushBack [_medCrate#0, _medCrate#1, localize "STR_A3AP_buyvehdialog_medical_box", "heal", ["noclear", "move"]];
     _items pushBack ["ACE_Wheel", 5, "", "", []];
     _items pushBack ["ACE_Track", 5, "", "", []];       // check names
 };

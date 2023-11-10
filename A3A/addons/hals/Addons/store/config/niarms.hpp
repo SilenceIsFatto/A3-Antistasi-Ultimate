@@ -1,6 +1,6 @@
 		class riflesNIArms
 		{
-			displayName = "NIArms Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_niarms", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(hlc_rifle_akm, 250, RIFLE_STOCK);  // hlc_30Rnd_762x39_b_ak
@@ -63,7 +63,7 @@
 
 		class sniperRiflesNIArms 
 		{
-			displayName = "NIArms Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_niarms", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(hlc_rifle_M1903A1_unertl, 1000, RIFLE_STOCK); // hlc_5rnd_3006_1903
@@ -82,7 +82,7 @@
 
 		class mgNIArms
 		{
-			displayName = "NIArms MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_niarms", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(hlc_lmg_MG42, 1500, RIFLE_STOCK); // hlc_50Rnd_792x57_B_MG42
@@ -98,7 +98,7 @@
 
 		class smgNIArms
 		{
-			displayName = "NIArms SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_niarms", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(hlc_smg_mp5a2, 350, RIFLE_STOCK); // hlc_30Rnd_9x19_B_MP5
@@ -117,7 +117,7 @@
 
 		class underbarrelNIArms
 		{
-			displayName = "NIArms Bipods";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_niarms", localize "STR_A3AU_bipods", localize "STR_A3AU_and", localize "STR_A3AU_grips"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(hlc_acc_vfg_pcap, 100, 50);
@@ -128,7 +128,7 @@
 
 		class pointersNIArms 
 		{
-			displayName = "NIArms Pointers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_niarms", localize "STR_A3AU_pointers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(hlc_panel_side_mp5tac_magpulxt_black, 75, PN_STOCK);
@@ -136,7 +136,7 @@
 
 		class muzzlesNIArms 
 		{
-			displayName = "NIArms Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_niarms", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(hlc_muzzle_agendasix, 500, MZ_STOCK); //5
@@ -146,7 +146,7 @@
 
 		class opticsNIArms
 		{
-			displayName = "NIArms Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_niarms", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class hlc_optic_zf95base {
@@ -181,7 +181,7 @@
 
 		class magazinesNIArms 
 		{
-			displayName = "NIArms Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_niarms", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
             
 			///////////////////////////////////////////////////////

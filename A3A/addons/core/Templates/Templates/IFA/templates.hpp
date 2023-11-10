@@ -121,6 +121,19 @@
         file = "IFA_CIV";
         climate[] = {"temperate","tropical","arid"};
     };
+
+    class IFA_CIV_Zombie_Soldiers : IFA_CIV
+    {
+        requiredAddons[] = {"IFA3_Core", "WBK_ZombieCreatures"};
+        priority = 14;
+        name = "IFA Soldier Zombies";
+        file = "IFA_CIV_Zombie_Soldiers";
+    };
+    class IFA_CIV_Zombie : IFA_CIV_Zombie_Soldiers
+    {
+        name = "IFA Civ Zombies";
+        file = "IFA_CIV_Zombie";
+    };
 	
     class IFA_CIV_Arctic : IFA_Base
     {

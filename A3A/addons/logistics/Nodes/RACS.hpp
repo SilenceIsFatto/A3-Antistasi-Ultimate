@@ -1,5 +1,3 @@
-// base classes should be defined in the other files
-
 class PRACS_M250 : TRIPLES(ADDON,Nodes,Base)
 {
     canLoadWeapon = 0;

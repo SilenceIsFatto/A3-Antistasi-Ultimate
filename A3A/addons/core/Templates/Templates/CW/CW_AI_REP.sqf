@@ -31,7 +31,7 @@
 ["vehiclesAirborne", ["CW_Ifrit_HMG", "CW_Offroad_AT"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["3as_saber_super", "3as_saber_m1G"]] call _fnc_saveToTemplate;
 ["vehiclesLightTanks",  ["3as_saber_super", "3as_saber_m1G"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["3as_ATAP_base"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["3as_ATAP_base","3AS_ATTE_Base","3AS_ATTE_TCW"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["3AS_RX200_Base"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["I_Boat_Transport_01_F"]] call _fnc_saveToTemplate; 

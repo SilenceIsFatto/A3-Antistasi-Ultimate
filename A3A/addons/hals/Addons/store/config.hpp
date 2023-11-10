@@ -48,6 +48,7 @@ class cfgHALsStore
 		#include "config\optre.hpp"
 		#include "config\pla.hpp"
 		#include "config\rhs.hpp"
+		#include "config\scion.hpp"
 		#include "config\sfp.hpp"
 		#include "config\sma.hpp"
 		#include "config\spearhead.hpp"
@@ -55,7 +56,9 @@ class cfgHALsStore
 		#include "config\unsung.hpp"
 		#include "config\vanilla.hpp"
 		#include "config\vn.hpp"
+		#include "config\wrs.hpp"
 		#include "config\ws.hpp"
+		#include "config\braf.hpp"
 	};
 
 	class stores 
@@ -64,13 +67,10 @@ class cfgHALsStore
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
-				"handgunsVanilla", 
-				"launchersVanilla", 
 				"riflesVanilla", 
 				"sniperRiflesVanilla", 
 				"mgVanilla",
 				"smgVanilla", 
-				"launcherMagazinesVanilla", 
 				"magazinesVanilla", 
 				"opticsVanilla", 
 				"muzzlesVanilla", 
@@ -85,20 +85,6 @@ class cfgHALsStore
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
-				"handgunsVanilla", 
-				"launchersVanilla", 
-				"riflesVanilla", 
-				"sniperRiflesVanilla", 
-				"mgVanilla",
-				"smgVanilla", 
-				"launcherMagazinesVanilla", 
-				"magazinesVanilla", 
-				"opticsVanilla", 
-				"muzzlesVanilla", 
-				"underbarrelVanilla", 
-				"pointersVanilla", 
-				"navigationVanilla", 
-				"miscVanilla",
 				"riflesWs",
 				"magazinesWs"
 			};
@@ -114,14 +100,7 @@ class cfgHALsStore
 				"sniperRiflesAegis", 
 				"mgAegis",
 				"smgAegis", 
-				"launcherMagazinesVanilla", 
-				"magazinesAegis", 
-				"opticsVanilla", 
-				"muzzlesVanilla", 
-				"underbarrelVanilla", 
-				"pointersVanilla", 
-				"navigationVanilla", 
-				"miscVanilla"
+				"magazinesAegis"
 			};
 		};
 
@@ -155,20 +134,11 @@ class cfgHALsStore
 				"launchers3cbf", 
 				"rifles3cbf", 
 				"sniperRifles3cbf", 
-				"specialWeaponsRhs",
 				"mg3cbf", 
 				"smg3cbf", 
-				"launcherMagazinesRhs", 
-				"magazinesRhs",
 				"additionalMuzzles3cbf",
 				"additionalScopes3cbf",
-				"additionalMagazines3cbf",
-				"opticsRhs", 
-				"muzzlesRhs", 
-				"underbarrelRhs", 
-				"pointersRhs", 
-				"navigationRhs", 
-				"miscRhs"
+				"additionalMagazines3cbf"
 			};
 		};
 
@@ -341,6 +311,7 @@ class cfgHALsStore
 				"underbarreluns"
 			};
 		};
+		
 		class optre
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
@@ -362,6 +333,7 @@ class cfgHALsStore
 			      "underbarrelhalo"
 			};
 		};
+		
 		class ffaastock
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
@@ -379,6 +351,7 @@ class cfgHALsStore
 			      "underbarrelffaa"
 			};
 		};
+		
 		class italystock
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
@@ -397,6 +370,7 @@ class cfgHALsStore
 			      "underbarrelitaly"
 			};
 		};
+		
 		class sfpstock
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
@@ -415,6 +389,7 @@ class cfgHALsStore
 			      "underbarrelswe"
 			};
 		};
+		
 		class plastock
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
@@ -427,6 +402,7 @@ class cfgHALsStore
 			      "magazinespla"
 			};
 		};
+		
 		class bwastock
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
@@ -445,6 +421,7 @@ class cfgHALsStore
 			      "underbarrelbwa"
 			};
 		};
+		
 		class 3cbbafstock
 		{
 		  displayName = $STR_ARMS_DEALER_STORE;
@@ -464,6 +441,7 @@ class cfgHALsStore
 			      "underbarrel3cbbaf"
 			};
 		};
+		
 		class globmob 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -483,6 +461,7 @@ class cfgHALsStore
 				"miscgm"
 			};
 		};
+		
 		class niarms 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -498,6 +477,7 @@ class cfgHALsStore
 				"underbarrelniarms"
 			};
 		};
+		
 		class fwa 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -512,6 +492,7 @@ class cfgHALsStore
 				"underbarrelfwa"
 			};
 		};
+		
 		class tow 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -524,6 +505,7 @@ class cfgHALsStore
 				"underbarreltow"
 			};
 		};
+		
 		class sma 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -536,6 +518,7 @@ class cfgHALsStore
 				"underbarrelsma"
 			};
 		};
+		
 		class csa38
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -548,6 +531,46 @@ class cfgHALsStore
 				"muzzlescsa",
 				"magazinescsa", 
 				"launcherscsa"
+			};
+		};
+		class scion
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesScion", 
+				"magazinesriflesScion",
+				"sniperRiflesScion", 
+				"magazinessniperRiflesScion", 
+				"opticsScion"
+			};
+		};
+		class wrs
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"riflesWRS", 
+				"magazinesriflesWRS",
+				"sniperRiflesWRS", 
+				"magazinessniperRiflesWRS"
+			};
+		};
+		class brafstock		
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsBraf", 
+				"launchersBraf", 
+				"riflesBraf", 
+				"sniperRiflesBraf",
+				"specialWeaponsBraf", 
+				"mgBraf", 
+				"smgBraf", 
+				"launcherMagazinesBraf", 
+				"magazinesBraf", 
+				"opticsBraf", 
+				"muzzlesBraf",  
+				"pointersBraf", 
+				"navigationBraf"
 			};
 		};
 	};

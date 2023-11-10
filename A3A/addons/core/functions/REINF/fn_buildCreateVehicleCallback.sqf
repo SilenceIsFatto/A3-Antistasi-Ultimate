@@ -65,7 +65,15 @@ construction_selectedEngineer addEventHandler ["AnimDone",
 		};
 	}];
 
-waitUntil  {sleep 5; !([construction_selectedEngineer] call A3A_fnc_canFight) or (construction_selectedEngineer getVariable ["helping",false]) or (construction_selectedEngineer getVariable ["rearming",false]) or (construction_selectedEngineer distance _positionX > 4) or (time > _timeOut)};
+waitUntil  {
+	sleep 5; 
+	isNil "construction_selectedEngineer" or 
+	{!([construction_selectedEngineer] call A3A_fnc_canFight) or 
+	{(construction_selectedEngineer getVariable ["helping",false]) or 
+	{(construction_selectedEngineer getVariable ["rearming",false]) or 
+	{(construction_selectedEngineer distance _positionX > 4) or 
+	{(time > _timeOut)}}}}}
+};
 
 construction_selectedEngineer setVariable ["constructing",false];
 if (!_isPlayer) then {{construction_selectedEngineer enableAI _x} forEach ["ANIM","AUTOTARGET","FSM","MOVE","TARGET"]};

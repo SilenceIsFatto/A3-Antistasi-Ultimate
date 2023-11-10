@@ -212,6 +212,7 @@ class CfgFunctions {
 			class encounter_gameEventLoop {};
 			class encounter_selectAndExecuteEvent {};
 			class encounter_civHeli {};
+			class encounter_civPlane {};
 			class encounter_police {};
 			class encounter_vehicleMove {};
 			class encounter_vehiclePatrol {};
@@ -271,7 +272,8 @@ class CfgFunctions {
 			class rivals_encounter_carDemo {};
 			class rivals_encounter_uavFlyby {};
 			class rivals_encounter_rovingMortar {};
-
+			class rivals_encounter_heliRaid {};
+			
 			class rivals_addProgressToRivalsLocationReveal {};
 			class rivals_revealLocation {};
 			class rivals_getLocations {};

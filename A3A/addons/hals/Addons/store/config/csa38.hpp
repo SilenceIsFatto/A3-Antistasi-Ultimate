@@ -1,5 +1,5 @@
 		class handgunscsa{
-			displayName = "CSA38 Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_csa", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(csa38_m1896, 90, PISTOL_STOCK); //AMMO: csa38_7_63mm_10xMauser
@@ -21,7 +21,7 @@
 		};
 
 		class smgcsa{
-			displayName = "CSA38 SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_csa", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(csa38_kpvz38, 265, RIFLE_STOCK); // CSA38_9_mm_36xBrowning
@@ -51,7 +51,7 @@
 		};
 		
 		class mgcsa{
-			displayName = "CSA38 MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_csa", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(CSA38_31m, 550, RIFLE_STOCK); // csa38_8x56_25xMannlicherMG
@@ -72,7 +72,7 @@
 		};
 
 		class riflescsa{
-			displayName = "CSA38 Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_csa", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(CSA38_SMLE, 380, RIFLE_STOCK); // CSA38_7_7_10x56RAP
@@ -108,7 +108,7 @@
 		};
 
 		class sniperriflescsa{
-			displayName = "CSA38 Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_csa", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CSA38_g98ii, 600, RIFLE_STOCK); // CSA38_7_92_5xMauser
@@ -122,7 +122,7 @@
 		};
 
 		class muzzlescsa{
-			displayName = "CSA38 Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_csa", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(csa38_m95bayonet, 75, MZ_STOCK);
@@ -137,7 +137,7 @@
 		};
 
 		class magazinescsa{
-			displayName = "CSA38 Magazines";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_csa", localize "STR_A3AU_magazines", localize "STR_A3AU_and", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			//Pistol Mags
@@ -197,7 +197,7 @@
 		};
 
 		class launcherscsa{
-			displayName = "CSA38 Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_csa", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(CSA38_PIAT_Rifle, 500, 25);

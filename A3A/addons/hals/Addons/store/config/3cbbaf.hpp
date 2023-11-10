@@ -1,6 +1,6 @@
 		//3CBBAF
 		class handguns3cbbaf{
-			displayName = "3CBBAF Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(UK3CB_BAF_L105A1, 110, PISTOL_STOCK); //AMMO: UK3CB_BAF_9_13Rnd
@@ -13,7 +13,7 @@
 		};
 
 		class smg3cbbaf{
-			displayName = "3CBBAF SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(UK3CB_BAF_L91A1, 225, RIFLE_STOCK); // Ammo: UK3CB_BAF_9_30Rnd
@@ -22,7 +22,7 @@
 		};
 		
 		class mg3cbbaf{
-			displayName = "3CBBAF MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(UK3CB_BAF_L110_762, 600, RIFLE_STOCK); //Ammo: UK3CB_BAF_762_100Rnd UK3CB_BAF_762_100Rnd_T 
@@ -36,7 +36,7 @@
 		};
 
 		class rifles3cbbaf{
-			displayName = "3CBBAF Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(UK3CB_BAF_L103A2, 330, RIFLE_STOCK); //Ammo: 
@@ -61,7 +61,7 @@
 		};
 
 		class sniperrifles3cbbaf{
-			displayName = "3CBBAF Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(UK3CB_BAF_L115A3, 700, RIFLE_STOCK); // Ammo: UK3CB_BAF_338_5Rnd
@@ -82,7 +82,7 @@
 		};
 
 		class launchers3cbbaf{
-			displayName = "3CBBAF Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(UK3CB_BAF_AT4_CS_AT_Launcher, 500, 25); 
@@ -93,7 +93,7 @@
 		}; 
 
 		class riflegrenades3cbbaf{
-			displayName = "3CBBAF Rifle Grenades";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(UK3CB_BAF_1Rnd_HE_Grenade_Shell, 70, 25);
@@ -104,7 +104,7 @@
 		};
 
 		class muzzles3cbbaf{
-			displayName = "3CBBAF Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(uk3cb_baf_silencer_l110, 80, MZ_STOCK);
@@ -117,7 +117,7 @@
 		};
 
 		class magazines3cbbaf{
-			displayName = "3CBBAF Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(UK3CB_BAF_9_13Rnd, 12, MZ_STOCK);
@@ -144,7 +144,7 @@
 		};
 
 		class pointers3cbbaf{
-			displayName = "3CBBAF Pointers";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(uk3cb_baf_llm_flashlight_black, 70, PN_STOCK);
@@ -155,7 +155,7 @@
 		};
 
 		class specialweapons3cbbaf{
-			displayName = "3CBBAF Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(UK3CB_BAF_L128A1, 300, RIFLE_STOCK); // UK3CB_BAF_12G_Pellets	UK3CB_BAF_12G_Slugs
@@ -163,7 +163,7 @@
 		};
 
 		class optics3cbbaf{
-			displayName = "3CBBAF Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_sights"]);
 			picture = "";
 			
 			ITEM(rksl_optic_eot552, 150, MAGAZINE_STOCK);
@@ -189,7 +189,7 @@
 		};
 
 		class underbarrel3cbbaf{
-	     	displayName = "3CBBAF Grips";
+	     	displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_3cbbaf", localize "STR_A3AU_bipods", localize "STR_A3AU_and", localize "STR_A3AU_grips"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(uk3cb_underbarrel_acc_bipod, 50, 20);

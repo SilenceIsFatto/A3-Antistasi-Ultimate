@@ -27,7 +27,7 @@ class AddonVics
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"Ivory_Data"};
         files[] = { {"Civ", "ivory_Civ.sqf"} };
-        displayName = "Ivory Car pack";
+        displayName = "Ivory Car Pack";
         description = "A car pack that extends the civilian vehicle pool";
         loadedMessage = "Ivory loaded, civilian car pool expanded";
     };
@@ -37,7 +37,7 @@ class AddonVics
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"rds_A2_Civilians"};
         files[] = { {"Civ", "rds_Civ.sqf"} };
-        displayName = "RDS Car pack";
+        displayName = "RDS Car Pack";
         description = "A car pack that extends the civilian vehicle pool";
         loadedMessage = "RDS loaded, civilian car pool expanded";
     };
@@ -47,8 +47,18 @@ class AddonVics
         path = QPATHTOFOLDER(Templates\AddonVics);
         requiredAddons[] = {"TCGM_BikeBackpack"};
         files[] = { {"Civ", "tcgm_Civ.sqf"} };
-        displayName = "TCGM Backpack bikes";
+        displayName = "TCGM Backpack Bikes";
         description = "A bike pack that extends the civilian vehicle pool";
         loadedMessage = "TCGM loaded, bikes added for civilians";
+    };
+
+    class CUP
+    {
+        path = QPATHTOFOLDER(Templates\AddonVics);
+        requiredAddons[] = {"CUP_AirVehicles_Core"};
+        files[] = { {"Civ", "cup_veh_Civ.sqf"} };
+        displayName = "CUP Civilian Vehicle Pack";
+        description = "A vehicle pack from CUP that extends the civilian vehicle pool";
+        loadedMessage = "CUP civilian loaded, civilian vehicle pool expanded";
     };
 };

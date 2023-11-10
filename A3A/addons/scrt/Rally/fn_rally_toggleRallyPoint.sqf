@@ -64,6 +64,8 @@ if (!isNil "isRallyPointPlaced" && {isRallyPointPlaced}) then {
     private _fnc_placed = {
         params ["_vehicle", "_cost"];
 
+		if (_vehicle isEqualTo objNull) exitWith {};
+		
         private _factionMoney = server getVariable "resourcesFIA";
         if (player == theBoss && {_cost <= _factionMoney}) then {
             [0,(-1 * _cost)] remoteExec ["A3A_fnc_resourcesFIA",2];

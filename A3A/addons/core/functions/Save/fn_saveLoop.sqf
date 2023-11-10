@@ -232,7 +232,8 @@ _wurzelGarrison = [];
 		_x,
 		garrison getVariable [_x,[]],
 		garrison getVariable [_x + "_lootCD", 0],
-		garrison getVariable [_x + "_powCD", 0]
+		garrison getVariable [_x + "_powCD", 0],
+		garrison getVariable [_x + "_samDestroyedCD", 0]
 	];
 	_wurzelGarrison pushBack [
 		_x,

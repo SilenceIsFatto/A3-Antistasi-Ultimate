@@ -1,17 +1,11 @@
-private ["_veh","_groupX","_positionX","_posOrigin","_heli","_landpos","_wp","_d","_wp2","_wp3","_xRef","_yRef","_reinf","_dist"];
+params ["_veh", "_groupX", "_positionX", "_posOrigin", "_heli"];
 
-_veh = _this select 0;
-_groupX = _this select 1;
-_positionX = _this select 2;
-_posOrigin = _this select 3;
-_heli = _this select 4;
-_reinf = if (count _this > 5) then {_this select 5} else {false};
+private _reinf = if (count _this > 5) then {_this select 5} else {false};
 
-
-_xRef = 2;
-_yRef = 1;
-_landpos = [];
-_dist = if (_reinf) then {30} else {100 + random 100};
+private _xRef = 2;
+private _yRef = 1;
+private _landpos = [];
+private _dist = if (_reinf) then {30} else {100 + random 100};
 
 {_x disableAI "TARGET"; _x disableAI "AUTOTARGET"} foreach units _heli;
 while {true} do
@@ -21,7 +15,7 @@ while {true} do
 	};
 _landpos set [2,0];
 {_x setBehaviour "CARELESS";} forEach units _heli;
-_wp = _heli addWaypoint [_landpos, 0];
+private _wp = _heli addWaypoint [_landpos, 0];
 _wp setWaypointType "MOVE";
 _wp setWaypointBehaviour "CARELESS";
 _wp setWaypointSpeed "FULL";
@@ -66,7 +60,7 @@ if (alive _veh) then
 		[_unit,""] remoteExec ["switchMove"];
 		sleep 0.5;
 		};
-	sleep 5 + random 2;
+	sleep (5 + random 2);
 	} forEach units _groupX;
 };
 
@@ -79,7 +73,7 @@ _veh flyInHeight 150;
 
 if !(_reinf) then
 	{
-	_wp2 = _groupX addWaypoint [(position (leader _groupX)), 0];
+	private _wp2 = _groupX addWaypoint [(position (leader _groupX)), 0];
 	_wp2 setWaypointType "MOVE";
 	_wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; (group this) spawn A3A_fnc_attackDrillAI"];
 	_wp2 = _groupX addWaypoint [_positionX, 1];
@@ -90,13 +84,12 @@ if !(_reinf) then
 	}
 else
 	{
-	_wp2 = _groupX addWaypoint [_positionX, 0];
+	private _wp2 = _groupX addWaypoint [_positionX, 0];
 	_wp2 setWaypointType "MOVE";
 	};
-_wp3 = _heli addWaypoint [_posOrigin, 1];
+private _wp3 = _heli addWaypoint [_posOrigin, 1];
 _wp3 setWaypointType "MOVE";
 _wp3 setWaypointSpeed "NORMAL";
 _wp3 setWaypointBehaviour "CARELESS";
 _wp3 setWaypointStatements ["true", "if !(local this) exitWith {}; deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList"];
 {_x setBehaviour "CARELESS";} forEach units _heli;
-

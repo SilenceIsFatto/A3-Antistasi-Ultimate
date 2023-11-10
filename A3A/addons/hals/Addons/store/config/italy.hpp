@@ -1,6 +1,6 @@
 		//Pedagne
 		class handgunsitaly{
-			displayName = "Pedagne Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(ASZ_M84, 110, PISTOL_STOCK); //AMMO: 15Rnd_9x19_M9_ASZ
@@ -10,7 +10,7 @@
 		};
 		
 		class mgitaly{
-			displayName = "Pedagne MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(ASZ_M249_base, 600, RIFLE_STOCK); //Ammo: 200Rnd_M249mag
@@ -19,7 +19,7 @@
 		};
 
 		class riflesitaly{
-			displayName = "Pedagne Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(ASZ_AR7090, 245, RIFLE_STOCK); //Ammo: 20Rnd_556x45_Stanag_ASZ
@@ -47,7 +47,7 @@
 		};
 
 		class sniperriflesitaly{
-			displayName = "Pedagne Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(ASZ_M40A3_Des, 450, RIFLE_STOCK); // Ammo: 5Rnd_762x51_Mag_ASZ
@@ -64,7 +64,7 @@
 		};
 
 		class launchersitaly{
-			displayName = "Pedagne Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(ASZ_PzF3_Loaded, 500, 25);
@@ -73,7 +73,7 @@
 		}; 
 
 		class launchermagazinesitaly{
-			displayName = "Pedagne Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(ASZ_Spike_Mag, 400, 15);
@@ -82,7 +82,7 @@
 		};
 
 		class muzzlesitaly{
-			displayName = "Pedagne Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(asz_silencer_m4a1, 80, MZ_STOCK);
@@ -94,7 +94,7 @@
 		};
 
 		class magazinesitaly{
-			displayName = "Pedagne Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(15Rnd_9x19_M9_ASZ, 17, MZ_STOCK);
@@ -115,7 +115,7 @@
 		};
 
 		class pointersitaly{
-			displayName = "Pedagne Pointers";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_italy", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(asz_flashlight, 70, PN_STOCK);
@@ -126,7 +126,7 @@
 		};
 
 		class specialweaponsitaly{
-			displayName = "Pedagne Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(ASZ_M32, 600, RIFLE_STOCK); // 6Rnd_HE_Grenade_shell_ASZ
@@ -135,7 +135,7 @@
 		};
 
 		class opticsitaly{
-			displayName = "Pedagne Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_sights"]);
 			picture = "";
 			
 			ITEM(asz_acog, 200, MAGAZINE_STOCK);
@@ -156,7 +156,7 @@
 		};
 
 		class underbarrelitaly{
-	     	displayName = "Pedagne Grips";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_italy", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(asz_bipod_m107, 50, 20);

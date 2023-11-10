@@ -1,6 +1,6 @@
 		//SFP Sweden
 		class handgunsswe{
-			displayName = "SFP Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(sfp_p226, 110, PISTOL_STOCK); //AMMO: sfp_15Rnd_9x19_Mag
@@ -11,7 +11,7 @@
 		};
 
 		class smgswe{
-			displayName = "SFP SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(sfp_cbj_ms, 225, RIFLE_STOCK); // Ammo: sfp_30Rnd_650x25mag	sfp_30Rnd_650x25mag_subsonic
@@ -23,7 +23,7 @@
 		};
 		
 		class mgswe{
-			displayName = "SFP MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(sfp_ksp58a, 600, RIFLE_STOCK); //Ammo: sfp_50Rnd_655x55_ksp58
@@ -36,7 +36,7 @@
 		};
 
 		class riflesswe{
-			displayName = "SFP Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(sfp_ak5, 325, RIFLE_STOCK); //Ammo: sfp_30Rnd_556x45_Stanag
@@ -55,7 +55,7 @@
 		};
 
 		class sniperriflesswe{
-			displayName = "SFP Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(sfp_ak4, 400, RIFLE_STOCK); // Ammo: sfp_20Rnd_762x51_ak4
@@ -71,7 +71,7 @@
 		};
 
 		class launchersswe{
-			displayName = "SFP Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(sfp_pskott68, 500, 25); 
@@ -84,7 +84,7 @@
 		}; 
 
 		class launchermagazinesswe{
-			displayName = "SFP Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(sfp_grg_smoke_mag, 100, 15);
@@ -98,7 +98,7 @@
 		};
 
 		class magazinesswe{
-			displayName = "SFP Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(sfp_15Rnd_9x19_Mag, 15, MZ_STOCK);
@@ -136,7 +136,7 @@
 		};
 
 		class pointersswe{
-			displayName = "SFP Pointers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_pointers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(sfp_dbal2, 70, PN_STOCK);
@@ -144,7 +144,7 @@
 		};
 
 		class specialweaponsswe{
-			displayName = "SFP Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(sfp_remington870, 300, RIFLE_STOCK); // sfp_12Gauge_8rd_Pellets
@@ -155,7 +155,7 @@
 		};
 
 		class opticsswe{
-			displayName = "SFP Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_sights"]);
 			picture = "";
 			
 			ITEM(sfp_optic_aimpoint, 150, MAGAZINE_STOCK);
@@ -168,7 +168,7 @@
 		};
 
 		class underbarrelswe{
-	     	displayName = "SFP Bipods";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sfp", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(sfp_ksp58_snow_support, 50, 20);

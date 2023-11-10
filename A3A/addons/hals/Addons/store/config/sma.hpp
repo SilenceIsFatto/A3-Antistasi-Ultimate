@@ -1,6 +1,6 @@
 		class riflesSMA
 		{
-			displayName = "SMA Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sma", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SMA_AAC_MPW_9_Black, 400, RIFLE_STOCK); // SMA_30Rnd_762x35_BLK_EPR
@@ -47,7 +47,7 @@
 
 		class mgSMA
 		{
-			displayName = "SMA MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sma", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(sma_minimi_mk3_762tlb, 1500, RIFLE_STOCK); // SMA_150Rnd_762_M80A1
@@ -56,7 +56,7 @@
 
 		class underbarrelSMA
 		{
-			displayName = "SMA Bipods";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sma", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(sma_gripod_01, 100, 50);
@@ -64,7 +64,7 @@
 
 		class pointersSMA
 		{
-			displayName = "SMA Pointers";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_sma", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(sma_anpeq15_top_blk_scar, 75, PN_STOCK);
@@ -81,7 +81,7 @@
 
 		class muzzlesSMA
 		{
-			displayName = "SMA Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sma", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(sma_aac_762_sdn6, 500, MZ_STOCK); //5
@@ -94,7 +94,7 @@
 
 		class opticsSMA
 		{
-			displayName = "SMA Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sma", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class sma_elcan_specter_ardrds {
@@ -114,7 +114,7 @@
 
 		class magazinesSMA
 		{
-			displayName = "SMA Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_sma", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			///////////////////////////////////////////////////////

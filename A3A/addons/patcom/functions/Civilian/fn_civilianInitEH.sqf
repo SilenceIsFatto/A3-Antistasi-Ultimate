@@ -29,11 +29,6 @@ _unit disableAI "AUTOTARGET";
 //Stops civilians from shouting out commands.
 [_unit, selectRandom (A3A_faction_civ get "faces"), "NoVoice"] call A3A_fnc_setIdentity;
 
-_unit addEventHandler["FiredNear", {
-    params ["_unit"];
-    [_unit, _thisEvent, _thisEventHandler] call A3A_fnc_civilianFiredNearEH;
-}];
-
 _unit addEventHandler ["HandleDamage", {
     private _unit = _this select 0;
     private _dam = _this select 2;
@@ -49,6 +44,23 @@ _unit addEventHandler ["HandleDamage", {
     };
 
     _dam
+}];
+
+private _civNotHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
+
+if (_civNotHuman) exitWith
+{
+    _unit addEventHandler ["Killed",
+    {
+        params ["_victim", "_killer"];
+        [_victim] spawn A3A_fnc_postmortem;
+    }];
+    ["civInit", [_unit]] call EFUNC(Events,triggerEvent);
+};
+
+_unit addEventHandler["FiredNear", {
+    params ["_unit"];
+    [_unit, _thisEvent, _thisEventHandler] call A3A_fnc_civilianFiredNearEH;
 }];
 
 _unit addEventHandler ["Killed", {

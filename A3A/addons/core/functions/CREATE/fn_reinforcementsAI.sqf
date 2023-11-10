@@ -145,3 +145,11 @@ if (AAFpatrols < round (3 * A3A_balancePlayerScale) and (random 2 < A3A_balanceP
 		garrison setVariable [_x + "_lootCD", 0 max (_lootCD - 10), true];
 	};
 } forEach (airportsX + outposts + seaports + milbases);
+
+{
+	call {
+		private _samCD = garrison getVariable [_x + "_samDestroyedCD", 0];
+		if (_samCD == 0) exitWith {};							// don't update unless changed
+		garrison setVariable [_x + "_samDestroyedCD", 0 max (_samCD - 100), true];
+	};
+} forEach (airportsX + milbases);

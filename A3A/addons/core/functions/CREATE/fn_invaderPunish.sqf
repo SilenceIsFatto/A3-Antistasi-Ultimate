@@ -13,6 +13,12 @@ Arguments:
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 
+private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
+private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
+
+if (_lowCiv) exitWith {};
+// if (_civNonHuman) exitWith {};
+
 if (!isServer) exitWith { Error("Server-only function miscalled") };
 
 if (areInvadersDefeated) exitWith {

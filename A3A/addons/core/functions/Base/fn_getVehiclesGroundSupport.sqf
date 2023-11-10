@@ -23,6 +23,7 @@ private _vehWeights = [];
 private _milCarWeight =     [50, 40, 30, 20, 10,  0,  0,  0,  0,  0] select _level;
 private _carWeight =        [50, 50, 50, 50, 50, 50, 50, 40, 35, 30] select _level;
 private _aaWeight =         [ 0,  0,  3,  5,  7,  8, 10, 12, 13, 14] select _level;
+private _milApcWeight =     [ 0,  5, 15, 25,  0,  0,  0,  0,  0,  0] select _level;
 private _tankWeight =       [ 0,  0,  0, 15, 20, 25, 30, 35, 40, 50] select _level;
 private _ltankWeight =      [ 0, 10, 15, 25, 30, 35, 30, 25, 20, 15] select _level;
 
@@ -33,6 +34,10 @@ if (_vehAA isEqualTo []) then { _tankWeight = _tankWeight + _aaWeight };
 // only occupants use militia vehicles?
 if (_side == Occupants) then {
     [_faction get "vehiclesMilitiaLightArmed", _milCarWeight] call _fnc_addArrayToWeights;
+    private _milApc = _faction get "vehiclesMilitiaAPCs";
+    if (_milApc isNotEqualTo []) then {
+        [_milApc, _milApcWeight] call _fnc_addArrayToWeights;
+    };
 };
 [_faction get "vehiclesLightArmed", _carWeight] call _fnc_addArrayToWeights;
 [_faction get "vehiclesTanks", _tankWeight] call _fnc_addArrayToWeights;

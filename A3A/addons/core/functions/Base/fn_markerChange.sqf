@@ -70,7 +70,7 @@ if (_winner == teamPlayer) then
 	// Don't send anything if it'd be too small
 	private _minAttack = (1 + random 0.5) * A3A_balanceResourceRate;
 	if (_resources < _minAttack) exitWith {
-		Debug_2("Available resources (%1) below minimum attack (%2), sending no counterattack", _resources, _minAttack);
+		Info_2("Available resources (%1) below minimum attack (%2), sending no counterattack", _resources, _minAttack);
 	};
 
 	private _vehCount = round (random 0.5 + _resources / A3A_balanceVehicleCost);

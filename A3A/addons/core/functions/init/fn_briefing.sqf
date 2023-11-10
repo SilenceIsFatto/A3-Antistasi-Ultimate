@@ -7,7 +7,7 @@ private _nameOcc = FactionGet(occ,"name");
 private _nameInv = FactionGet(inv,"name");
 private _nameReb = FactionGet(reb,"name");
 if (side player isEqualTo teamPlayer) then {
-	_index =player createDiarySubject ["Tutorial","Antistasi Basics"];
+	_index =player createDiarySubject ["Tutorial", localize "STR_antistasi_journal_entry_header_tutorial_name"];
 	player createDiaryRecord ["Tutorial",[format [localize "STR_antistasi_journal_entry_header_tutorial_7"],format [localize "STR_antistasi_journal_entry_text_tutorial_7"]]];
 	player createDiaryRecord ["Tutorial",[format [localize "STR_antistasi_journal_entry_header_tutorial_6"],format [localize "STR_antistasi_journal_entry_text_tutorial_6"]]];
 	player createDiaryRecord ["Tutorial",[format [localize "STR_antistasi_journal_entry_header_tutorial_5"],format [localize "STR_antistasi_journal_entry_text_tutorial_5"]]];
@@ -16,7 +16,7 @@ if (side player isEqualTo teamPlayer) then {
 	player createDiaryRecord ["Tutorial",[format [localize "STR_antistasi_journal_entry_header_tutorial_2"],format [localize "STR_antistasi_journal_entry_text_tutorial_2"]]];
 	player createDiaryRecord ["Tutorial",[format [localize "STR_antistasi_journal_entry_header_tutorial_1"],format [localize "STR_antistasi_journal_entry_text_tutorial_1"]]];
 
-	_index =player createDiarySubject ["Commander","Commander Options"];
+	_index =player createDiarySubject ["Commander", localize "STR_antistasi_journal_entry_header_commander_options_name"];
 	player createDiaryRecord ["Commander",[format [localize "STR_antistasi_journal_entry_header_commander_15"],format [localize "STR_antistasi_journal_entry_text_commander_15"]]];
 	player createDiaryRecord ["Commander",[format [localize "STR_antistasi_journal_entry_header_commander_14"],format [localize "STR_antistasi_journal_entry_text_commander_14"]]];
 	player createDiaryRecord ["Commander",[format [localize "STR_antistasi_journal_entry_header_commander_13"],format [localize "STR_antistasi_journal_entry_text_commander_13"]]];
@@ -32,7 +32,7 @@ if (side player isEqualTo teamPlayer) then {
 	player createDiaryRecord ["Commander",[format [localize "STR_antistasi_journal_entry_header_commander_1"],format [localize "STR_antistasi_journal_entry_text_commander_1"]]];
 
 
-	_index =player createDiarySubject ["SpecialK","Special Keys"];
+	_index =player createDiarySubject ["SpecialK", localize "STR_antistasi_journal_entry_header_special_keys_name"];
 	player createDiaryRecord ["SpecialK",[format [localize "STR_antistasi_journal_entry_header_SpecialK_3"],format [localize "STR_antistasi_journal_entry_text_SpecialK_3"]]];
 	player createDiaryRecord ["SpecialK",[format [localize "STR_antistasi_journal_entry_header_SpecialK_6"],format [localize "STR_antistasi_journal_entry_text_SpecialK_6"]]];
 	player createDiaryRecord ["SpecialK",[format [localize "STR_antistasi_journal_entry_header_SpecialK_5"],format [localize "STR_antistasi_journal_entry_text_SpecialK_5"]]];
@@ -41,14 +41,13 @@ if (side player isEqualTo teamPlayer) then {
 	player createDiaryRecord ["SpecialK",[format [localize "STR_antistasi_journal_entry_header_SpecialK_1"],format [localize "STR_antistasi_journal_entry_text_SpecialK_1"]]];
 
 
-	_index =player createDiarySubject ["Features","Features Detail"];
+	_index =player createDiarySubject ["Features", localize "STR_antistasi_journal_entry_header_features_detail_name"];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_17"],format [localize "STR_antistasi_journal_entry_text_Features_17", FactionGet(reb,"breachingExplosivesAPC") call A3A_fnc_createBreachChargeText, "<br></br><br></br>", FactionGet(reb,"breachingExplosivesTank") call A3A_fnc_createBreachChargeText]]];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_16"],format [localize "STR_antistasi_journal_entry_text_Features_16"]]];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_12"],format [localize "STR_antistasi_journal_entry_text_Features_12"]]];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_11"],format [localize "STR_antistasi_journal_entry_text_Features_11"]]];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_10"],format [localize "STR_antistasi_journal_entry_text_Features_10"]]];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_9"],format [localize "STR_antistasi_journal_entry_text_Features_9"]]];
-	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_8"],format [localize "STR_antistasi_journal_entry_text_Features_8"]]];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_7"],format [localize "STR_antistasi_journal_entry_text_Features_7"]]];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_6"],format [localize "STR_antistasi_journal_entry_text_Features_6",worldName]]];
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_5"],format [localize "STR_antistasi_journal_entry_text_Features_5"]]];
@@ -58,7 +57,7 @@ if (side player isEqualTo teamPlayer) then {
 	player createDiaryRecord ["Features",[format [localize "STR_antistasi_journal_entry_header_Features_1"],format [localize "STR_antistasi_journal_entry_text_Features_1"]]];
 
 
-	_index =player createDiarySubject ["AI","AI Management"];
+	_index =player createDiarySubject ["AI", localize "STR_antistasi_journal_entry_header_ai_management_name"];
 	player createDiaryRecord ["AI",[format [localize "STR_antistasi_journal_entry_header_AI_7"],format [localize "STR_antistasi_journal_entry_text_AI_7"]]];
 	player createDiaryRecord ["AI",[format [localize "STR_antistasi_journal_entry_header_AI_6"],format [localize "STR_antistasi_journal_entry_text_AI_6"]]];
 	player createDiaryRecord ["AI",[format [localize "STR_antistasi_journal_entry_header_AI_5"],format [localize "STR_antistasi_journal_entry_text_AI_5"]]];
@@ -68,7 +67,7 @@ if (side player isEqualTo teamPlayer) then {
 	player createDiaryRecord ["AI",[format [localize "STR_antistasi_journal_entry_header_AI_1"],format [localize "STR_antistasi_journal_entry_text_AI_1"]]];
 
 
-	_index =player createDiarySubject ["Options","Game Options"];
+	_index =player createDiarySubject ["Options", localize "STR_antistasi_journal_entry_header_game_options_name"];
 	player createDiaryRecord ["Options",[format [localize "STR_antistasi_journal_entry_header_Options_8"],format [localize "STR_antistasi_journal_entry_text_Options_8"]]];
 	player createDiaryRecord ["Options",[format [localize "STR_antistasi_journal_entry_header_Options_7"],format [localize "STR_antistasi_journal_entry_text_Options_7"]]];
 	player createDiaryRecord ["Options",[format [localize "STR_antistasi_journal_entry_header_Options_6"],format [localize "STR_antistasi_journal_entry_text_Options_6"]]];
@@ -116,7 +115,7 @@ player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry
 player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_1"],format [localize "STR_antistasi_journal_entry_text_Default_1",(call SCRT_fnc_misc_getMissionTitle)]]];
 
 // Always include the Credits. It's important!
-_index =player createDiarySubject ["Credits","Credits"];
+_index =player createDiarySubject ["Credits", localize "STR_antistasi_journal_entry_header_Credits_name"];
 player createDiaryRecord ["Credits",[format [localize "STR_antistasi_journal_entry_header_Credits_3"],format [localize "STR_antistasi_journal_entry_text_Credits_3"]]];
 player createDiaryRecord ["Credits",[format [localize "STR_antistasi_journal_entry_header_Credits_2"],format [localize "STR_antistasi_journal_entry_text_Credits_2"]]];
 player createDiaryRecord ["Credits",[format [localize "STR_antistasi_journal_entry_header_Credits_1"],format [localize "STR_antistasi_journal_entry_text_Credits_1"]]];

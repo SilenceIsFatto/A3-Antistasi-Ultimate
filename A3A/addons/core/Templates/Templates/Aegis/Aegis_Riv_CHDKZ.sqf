@@ -47,7 +47,7 @@ private _hasMarksman = "mark" in A3A_enabledDLC;
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
-["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
+["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	
 ["surrenderCrate", "Box_RUS_Wps_F"] call _fnc_saveToTemplate;
 
 private _unarmedCars = ["Opf_O_S_Offroad_01_F"];
@@ -63,7 +63,7 @@ if (_hasWs) then {
 ["vehiclesRivalsTrucks", ["Opf_O_S_Truck_02_transport_F", "Opf_O_S_Truck_02_F"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsAPCs", ["Opf_O_S_APC_Tracked_02_30mm_lxWS"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", ["Opf_O_S_MBT_02_cannon_F"]] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", ["O_Raven_Heli_Light_02_unarmed_F"]] call _fnc_saveToTemplate;			
+["vehiclesRivalsHelis", ["O_Raven_Heli_Light_02_dynamicLoadout_F"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", ["O_G_HMG_02_F", "O_GMG_01_F", "O_HMG_01_F"]] call _fnc_saveToTemplate;
@@ -75,13 +75,9 @@ if (_hasWs) then {
 ["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
 
 ["variants", [
-    ["Opf_O_S_Offroad_01_armed_F", ["Brown", 1]],
-    ["Opf_O_S_Offroad_01_AT_F", ["Brown", 1]],
-    ["Opf_O_S_Offroad_01_F", ["Brown", 1]],
 	["I_Tura_Offroad_armor_armed_lxWS", ["Black", 1]],
     ["I_Tura_Offroad_armor_AT_lxWS", ["Black", 1]],
-    ["I_Tura_Offroad_armor_lxWS", ["Black", 1]],
-	["Opf_O_S_APC_Tracked_02_30mm_lxWS", ["Grey", 1]]
+    ["I_Tura_Offroad_armor_lxWS", ["Black", 1]]
 ]] call _fnc_saveToTemplate;
 
 ["animations", [
@@ -144,8 +140,8 @@ _loadoutData set ["grenadeLaunchers", [
 ]];
 _loadoutData set ["marksmanRifles", [
 ["srifle_DMR_04_F", "", "acc_flashlight", "optic_DMS_weathered_Kir_F",  ["10Rnd_127x54_Mag"], [], ""],
-["srifle_DMR_01_black_F", "muzzle_mzls_B", "acc_flashlight", "optic_MRCO",  ["10Rnd_9x21_Mag"], [], "bipod_02_F_blk"],
-["srifle_DMR_01_black_F", "", "acc_flashlight", "optic_MRCO",  ["10Rnd_9x21_Mag"], [], ""]
+["srifle_DMR_01_black_F", "muzzle_mzls_B", "acc_flashlight", "optic_MRCO",  ["10Rnd_762x54_Mag"], [], "bipod_02_F_blk"],
+["srifle_DMR_01_black_F", "", "acc_flashlight", "optic_MRCO",  ["10Rnd_762x54_Mag"], [], ""]
 ]];
 _loadoutData set ["lightATLaunchers", [
 ["launch_RPG7_F", "", "", "", ["RPG7_F", "RPG7_F", "RPG7_F"], [], ""],
@@ -238,7 +234,7 @@ _loadoutData set ["uniforms", [
 	"Opf_U_I_I_Uniform_01_hex_F",
 	"Opf_U_O_S_Uniform_01_sweater_F",
 	"Opf_U_O_S_Uniform_01_taiga_F",
-	"Opf_U_I_I_Uniform_01_urb_F"
+	"Opf_U_I_I_Uniform_01_urb_F",
 	"Opf_U_I_I_Uniform_01_tshirt_black_F"
 ]];
 _loadoutData set ["heavyUniforms", [

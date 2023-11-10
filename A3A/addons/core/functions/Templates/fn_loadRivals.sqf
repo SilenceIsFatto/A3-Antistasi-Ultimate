@@ -25,7 +25,7 @@ missionNamespace setVariable ["A3A_faction_" + _factionPrefix, _faction];
 [_faction, _factionPrefix] call A3A_fnc_compileGroups;
 
 private _unitClassMap = [
-	"militia_Сellleader",
+	"militia_Cellleader",
 	"militia_Partisan",
 	"militia_Minuteman",
 	"militia_Mercenary",

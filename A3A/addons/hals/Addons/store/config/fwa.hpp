@@ -1,6 +1,6 @@
 		class riflesFWA
 		{
-			displayName = "FWA Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fwa", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(sp_fwa_ar10, 250, RIFLE_STOCK); // sp_fwa_20Rnd_762_ar10
@@ -52,7 +52,7 @@
 
 		class sniperRiflesFWA
 		{
-			displayName = "FWA Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fwa", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(sp_fwa_enfield_no4t, 1000, RIFLE_STOCK); // sp_fwa_20Rnd_762_FN49
@@ -62,7 +62,7 @@
 
 		class mgFWA
 		{
-			displayName = "FWA MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fwa", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(sp_fwa_mg4259, 1500, RIFLE_STOCK); // sp_fwa_100Rnd_762_mag
@@ -77,7 +77,7 @@
 
 		class smgFWA
 		{
-			displayName = "FWA SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fwa", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(sp_fwa_smg_sterling, 350, RIFLE_STOCK); // sp_fwa_15Rnd_9x19_L2A3_Sterling
@@ -96,7 +96,7 @@
 
 		class underbarrelFWA
 		{
-			displayName = "FWA Bipods";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fwa", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(sp_fwa_bipod_ar15_clipon, 100, 50);
@@ -106,7 +106,7 @@
 
 		class muzzlesFWA 
 		{
-			displayName = "FWA Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fwa", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(muzzle_snds_l, 500, MZ_STOCK); //5
@@ -116,7 +116,7 @@
 
 		class opticsFWA
 		{
-			displayName = "FWA Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fwa", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class sp_fwa_scope_zf39 {
@@ -139,7 +139,7 @@
 
 		class magazinesFWA
 		{
-			displayName = "FWA Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_fwa", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
             
 			///////////////////////////////////////////////////////

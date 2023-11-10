@@ -29,6 +29,8 @@ private _cfg = (configfile >> "A3U" >> "traderMods") call BIS_fnc_getCfgSubClass
 } forEach _cfg;
 
 // Special cases
+if (vanillaArmsDealer isEqualTo true && {!(_modsets isEqualTo [])}) then {_modsets pushBack "vanilla"}; // if parameter to keep vanilla weapons in arms dealer is on
+
 if (_modsets isEqualTo []) then {_modsets pushBack "vanilla"}; // If it still hasn't got anything by this point, we can safely assume no supported mods are loaded.
 
 if ("ws" in A3A_enabledDLC) then {_modsets pushBack "ws"}; // western sahara

@@ -303,11 +303,24 @@ while {_countX <= _radiusX} do {
 };
 
 for "_i" from 0 to (count _array - 1) do {
-	_groupX = if (_i == 0) then {
-		[_positionX, _sideX, (_array select _i), true, false] call A3A_fnc_spawnGroup;
+
+	private _groupX = grpNull;
+
+	if (plusGarrison isEqualTo false) then {
+		_array = (selectRandom ([_faction, "groupsTierSquads"] call SCRT_fnc_unit_flattenTier));
+		_groupX = if (_i == 0) then {
+			[_positionX, _sideX, _array, true, false] call A3A_fnc_spawnGroup;
+		} else {
+			private _spawnPosition = [_positionX, 10, 100, 2, 0, -1, 0] call A3A_fnc_getSafePos;
+			[_spawnPosition, _sideX, _array, false, true] call A3A_fnc_spawnGroup;
+		};
 	} else {
-		private _spawnPosition = [_positionX, 10, 100, 2, 0, -1, 0] call A3A_fnc_getSafePos;
-		[_spawnPosition, _sideX, (_array select _i), false, true] call A3A_fnc_spawnGroup;
+		_groupX = if (_i == 0) then {
+			[_positionX, _sideX, (_array select _i), true, false] call A3A_fnc_spawnGroup;
+		} else {
+			private _spawnPosition = [_positionX, 10, 100, 2, 0, -1, 0] call A3A_fnc_getSafePos;
+			[_spawnPosition, _sideX, (_array select _i), false, true] call A3A_fnc_spawnGroup;
+		};
 	};
 
 	_groups pushBack _groupX;

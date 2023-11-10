@@ -18,6 +18,8 @@
 ["toolKits", ["vn_b_item_toolkit"]] call _fnc_saveToTemplate;  // Relies on autodetection.
 ["itemMaps", ["vn_b_item_map"]] call _fnc_saveToTemplate;  // Relies on autodetection.
 
+["vehicleHealthStation", ["Land_vn_tent_mash_01_01", 75]] call _fnc_saveToTemplate;
+
 ["diveGear", ["vn_b_uniform_seal_09_01", "vn_b_acc_seal_01", "vn_b_vest_seal_01"]] call _fnc_saveToTemplate;
 
 ["flyGear", ["vn_b_uniform_heli_01_01"]] call _fnc_saveToTemplate;

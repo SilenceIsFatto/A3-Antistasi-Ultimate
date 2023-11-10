@@ -24,9 +24,9 @@
 - Magrepack by Outlawled, R3vo and OOster
 - HALs_Store by HallyG, R3vo and barman75
 - DRO by mbrdmn
-- Discord Rich Presence by ConnorAU 
-- Antistasi Plus fork of Community by Socrates
-- Antistasi Ultimate fork of Plus by Stutpip123, Silence, Karl, Antistasi Ultimate Team
+- Discord Rich Presence by ConnorAU
+- Antistasi Plus (fork of Community) by Socrates
+- Antistasi Ultimate (fork of Plus) by the [Antistasi Ultimate Dev Team](https://github.com/SilenceIsFatto/A3-Antistasi-Ultimate/wiki/Developers)
 
 ## Additional Icons Credits
 <div>

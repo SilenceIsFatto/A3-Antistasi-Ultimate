@@ -28,6 +28,8 @@ if (_vehType isEqualTo "") exitWith {false}; //null obj passed
 private _vehCfg = configFile/"CfgVehicles"/_vehType;
 if (!isClass _vehCfg) exitWith {false}; //invalid class string passed
 
+if (missionNamespace getVariable ["ace_repair_enabled", false]) exitWith { _vehicle call ace_repair_fnc_isRepairVehicle };
+
 if (A3A_hasAce) then {
     private _value = _vehicle getVariable ["ACE_isRepairVehicle", getNumber (_vehCfg/"ace_repair_canRepair")];
     _value in [1, true];

@@ -4806,6 +4806,11 @@
                 <Chinesesimp>军事管理机构</Chinesesimp>
                 <Korean>군 행정부</Korean>
             </Key>
+            <Key ID="STR_headquarters">
+                <Original>Your Headquarters</Original>
+                <English>Your Headquarters</English>
+                <Russian>Штаб</Russian>
+            </Key>
         </Container>
         <Container name="system_chats">
             <Key ID="STR_antistasi_schat_loading_cargo">

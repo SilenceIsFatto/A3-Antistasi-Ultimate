@@ -1,5 +1,5 @@
 		class handgunsuns{
-			displayName = "Unsung Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(uns_bhp, 90, PISTOL_STOCK); //AMMO: uns_13Rnd_hp
@@ -27,7 +27,7 @@
 		};
 
 		class smguns{
-			displayName = "Unsung SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uns_f1_smg, 165, RIFLE_STOCK); // uns_f1_smg_mag
@@ -63,7 +63,7 @@
 		};
 		
 		class mguns{
-			displayName = "Unsung MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(uns_m60grip, 600, RIFLE_STOCK); //NORMAL: uns_m60mag
@@ -90,7 +90,7 @@
 		};
 
 		class riflesuns{
-			displayName = "Unsung Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(uns_ak47, 200, RIFLE_STOCK); //NORMAL: uns_ak47mag
@@ -140,7 +140,7 @@
 		};
 
 		class sniperriflesuns{
-			displayName = "Unsung Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uns_type99, 150, RIFLE_STOCK); // uns_type99mag
@@ -173,7 +173,7 @@
 		};
 
 		class launchersuns{
-			displayName = "Unsung Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(uns_B40, 200, 25); // uns_B40grenade
@@ -188,7 +188,7 @@
 		}; 
 
 		class launchermagazinesuns{
-			displayName = "Unsung Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(uns_B40grenade, 100, 15);
@@ -202,7 +202,7 @@
 		};
 
 		class riflegrenadesuns{
-			displayName = "Unsung Rifle Grenades";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(Uns_1Rnd_HE_M381, 70, 25);
@@ -221,7 +221,7 @@
 		};
 
 		class muzzlesuns{
-			displayName = "Unsung Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(uns_s_uzi, 80, MZ_STOCK);
@@ -236,7 +236,7 @@
 		};
 
 		class magazinesuns{
-			displayName = "Unsung Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(uns_13Rnd_hp, 17, MZ_STOCK);
@@ -341,7 +341,7 @@
 		};
 
 		class miscuns{
-			displayName = "Unsung Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(DemoCharge_Remote_Mag, 450, MISC_STOCK);
@@ -349,7 +349,7 @@
 		};
 
 		class pointersuns{
-			displayName = "Unsung Bayonets";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(uns_b_spike, 70, PN_STOCK);
@@ -371,7 +371,7 @@
 		};
 
 		class specialweaponsuns{
-			displayName = "Unsung Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(uns_ex41, 700, 25); // uns_ex41mag
@@ -388,7 +388,7 @@
 		};
 
 		class opticsuns{
-			displayName = "Unsung Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_sights"]);
 			picture = "";
 			
 			ITEM(uns_o_anpvs2_m16, 350, MAGAZINE_STOCK);
@@ -410,7 +410,7 @@
 		};
 
 		class underbarreluns{
-	     	displayName = "Unsung Bipods";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_unsung", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(uns_bp_m60, 100, MAGAZINE_STOCK);

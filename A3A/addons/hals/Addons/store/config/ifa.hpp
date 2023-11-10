@@ -1,5 +1,5 @@
 		class handgunsifaa{
-			displayName = "IFA Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(LIB_M1896, 90, PISTOL_STOCK); //AMMO: LIB_10Rnd_9x19_M1896
@@ -16,7 +16,7 @@
 		};
 
 		class smgifaa{
-			displayName = "IFA SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(LIB_Sten_Mk2, 165, RIFLE_STOCK); // LIB_32Rnd_9x19_Sten
@@ -32,7 +32,7 @@
 		};
 		
 		class mgifaa{
-			displayName = "IFA MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(LIB_M1919A4, 550, RIFLE_STOCK); //NORMAL: LIB_50Rnd_762x63 M1_BALL: LIB_50Rnd_762x63_M1
@@ -48,7 +48,7 @@
 		};
 
 		class riflesifaa{
-			displayName = "IFA Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(LIB_LeeEnfield_No1, 210, RIFLE_STOCK); //NORMAL: LIB_10Rnd_770x56 BALL: LIB_10Rnd_770x56_MkVIII
 			ITEM(LIB_LeeEnfield_No4, 200, RIFLE_STOCK); //^^
@@ -68,7 +68,7 @@
 		};
 
 		class sniperriflesifaa{
-			displayName = "IFA Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(LIB_LeeEnfield_No4_Scoped, 580, RIFLE_STOCK); // SAME AS LIB_LeeEnfield_No1
@@ -78,7 +78,7 @@
 		};
 
 		class launchersifaa{
-			displayName = "IFA Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			ITEM(LIB_PIAT, 300, 25); 
 			ITEM(LIB_M1A1_Bazooka, 350, 25); 
@@ -90,7 +90,7 @@
 		}; 
 
 		class launchermagazinesifaa{
-			displayName = "IFA Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(LIB_1Rnd_89m_PIAT, 100, 15);
 			ITEM(LIB_1Rnd_60mm_M6, 100, 15);
@@ -101,7 +101,7 @@
 		};
 
 		class riflegrenadesifaa{
-			displayName = "IFA Rifle Grenades";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(LIB_1Rnd_G_MillsBomb, 70, 25);
 			ITEM(LIB_1Rnd_G_M9A1, 80, 25);
@@ -112,7 +112,7 @@
 		};
 
 		class muzzlesifaa{
-			displayName = "IFA Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(lib_acc_p1903_bayo, 75, MZ_STOCK);
@@ -127,7 +127,7 @@
 		};
 
 		class magazinesifaa{
-			displayName = "IFA Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(LIB_7Rnd_45ACP, 17, MZ_STOCK);
@@ -193,7 +193,7 @@
 		};
 
 		class miscifaa{
-			displayName = "IFA Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(LIB_Ladung_Big_MINE_mag, 450, MISC_STOCK);
@@ -201,7 +201,7 @@
 		};
 
 		class pointersifaa{
-			displayName = "IFA BAR Accessories";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4 %5", localize "STR_A3AU_ifa", localize "STR_A3AU_barret", localize "STR_A3AU_handles", localize "STR_A3AU_and", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(lib_m1918a2_bar_handle, 70, PN_STOCK);
@@ -209,20 +209,20 @@
 		};
 
 		class specialweaponsifaa{
-			displayName = "IFA Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(LIB_M2_Flamethrower, 300, 25);
 			ITEM(B_LIB_US_M2Flamethrower, 800, 25);
 		};
 
 		class opticsifaa{
-			displayName = "IFA Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_sights"]);
 			picture = "";
 			ITEM(lib_optic_zf4, 150, MAGAZINE_STOCK);
 		};
 
 		class underbarrelifaa{
-	     	displayName = "IFA Backpack Statics";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ifa", localize "STR_A3AU_bagsStatics"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(LIB_Maxim_Bar, 600, 20);

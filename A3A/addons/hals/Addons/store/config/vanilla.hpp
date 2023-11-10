@@ -1,6 +1,6 @@
 		class riflesVanilla 
 		{
-			displayName = "Vanilla Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_AKS_F, 250, RIFLE_STOCK);
@@ -84,7 +84,7 @@
 
 		class sniperRiflesVanilla 
 		{
-			displayName = "Vanilla Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(srifle_DMR_07_blk_F, 1450, RIFLE_STOCK);
@@ -139,7 +139,7 @@
 
 		class mgVanilla 
 		{
-			displayName = "Vanilla MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_CTARS_blk_F, 1500, RIFLE_STOCK);
@@ -175,7 +175,7 @@
 
 		class smgVanilla 
 		{
-			displayName = Vanilla SMGs;
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SMG_03C_TR_black, 350, RIFLE_STOCK);
@@ -204,7 +204,7 @@
 
 		class navigationVanilla 
 		{
-			displayName = "Vanilla GPS, Binoculars, NVGs";
+			displayName = __EVAL(formatText ["%1 %2, %3 %4 %5", localize "STR_A3AU_Vanilla", localize "STR_A3AU_gps", localize "STR_A3AU_binoculars", localize "STR_A3AU_and", localize "STR_A3AU_nvgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
 
 			ITEM(ItemGPS, 300, NN_STOCK);
@@ -225,7 +225,7 @@
 
 		class underbarrelVanilla 
 		{
-			displayName = "Vanilla Bipods";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(bipod_02_F_arid, 100, 50);
@@ -243,7 +243,7 @@
 
 		class pointersVanilla 
 		{
-			displayName = "Vanilla Pointers";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_Vanilla", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(acc_flashlight, 75, PN_STOCK);
@@ -254,7 +254,7 @@
 
 		class muzzlesVanilla 
 		{
-			displayName = "Vanilla Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(muzzle_snds_338_black, 500, MZ_STOCK); //5
@@ -288,7 +288,7 @@
 
 		class opticsVanilla 
 		{
-			displayName = "Vanilla Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class optic_tws {
@@ -483,7 +483,7 @@
 
 		class magazinesVanilla 
 		{
-			displayName = "Vanilla Magazines";
+			displayName = __EVAL(formatText["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class Laserbatteries {
@@ -1064,7 +1064,7 @@
 
 		class miscVanilla 
 		{
-			displayName = "Vanilla Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(H_HelmetO_ViperSP_ghex_F, 15000, MISC_STOCK);

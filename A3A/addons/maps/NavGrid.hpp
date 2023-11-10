@@ -31,7 +31,9 @@ class NavGrid {
 	rhspkl = QPATHTOFOLDER(Antistasi_rhspkl.rhspkl\navGrid.sqf);
 	Kapaulio = QPATHTOFOLDER(Antistasi_Kapaulio.Kapaulio\navGrid.sqf);
 	Staszow = QPATHTOFOLDER(Antistasi_Staszow.Staszow\navGrid.sqf);
+	StaszowWinter = QPATHTOFOLDER(Antistasi_StaszowWinter.StaszowWinter\navGrid.sqf);
 	iron_excelsior_Tobruk = QPATHTOFOLDER(Antistasi_iron_excelsior_Tobruk.iron_excelsior_Tobruk\navGrid.sqf);
+	ruha = QPATHTOFOLDER(Antistasi_ruha.ruha\navGrid.sqf);
 	gm_weferlingen_winter = QPATHTOFOLDER(Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\navGrid.sqf);
     gm_weferlingen_summer = QPATHTOFOLDER(Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\navGrid.sqf);
 };

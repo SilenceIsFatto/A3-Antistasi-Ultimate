@@ -115,4 +115,19 @@ class traderMods
         addons[] = {"csa38ii_data"};
         prefix = "csa38";
     };
+    class scion : base
+    {
+        addons[] = {"sc_weapons"};
+        prefix = "scion";
+    };
+    class wrs : base
+    {
+        addons[] = {"WBK_SciFiWeaponary"};
+        prefix = "wrs";
+    };
+    class braf : base
+    {
+        addons[] = {"BRAF_Air"};
+        prefix = "brafstock";
+    };
 };

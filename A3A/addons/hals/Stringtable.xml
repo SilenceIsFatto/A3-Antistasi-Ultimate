@@ -15,167 +15,167 @@
             <Chinesesimp>全部</Chinesesimp>
             <Korean>모두</Korean>
         </Key>
-        <Key ID="STR_HALS_STORE_HANDGUNS">
+        <!-- <Key ID="STR_HALS_STORE_HANDGUNS">
             <Original>Handguns</Original>
             <German>Handfeuerwaffen</German>
             <Russian>Пистолеты</Russian>
             <Chinesesimp>手枪</Chinesesimp>
             <Korean>권총</Korean>
-        </Key>
-        <Key ID="STR_HALS_STORE_LAUNCHERS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_STORE_LAUNCHERS">
             <Original>Launchers</Original>
             <German>Trägerraketen</German>
             <Russian>Пусковые установки, РПГ</Russian>
             <Chinesesimp>发射器</Chinesesimp>
             <Korean>발사기</Korean>
-        </Key>
-        <Key ID="STR_HALS_STORE_LAUNCHER_AMMO">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_STORE_LAUNCHER_AMMO">
             <Original>Launcher Ammunition</Original>
             <German>Launcher-Munition</German>
             <Russian>Боеприпасы для пусковых установок, РПГ</Russian>
             <Chinesesimp>发射器弹药</Chinesesimp>
             <Korean>발사기 탄약</Korean>
-        </Key>
-        <Key ID="STR_HALS_STORE_SMGS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_STORE_SMGS">
             <Original>Submachine Guns</Original>
             <German>Maschinenpistole</German>
             <Russian>Пистолеты-пулемёты</Russian>
             <Chinesesimp>冲锋枪</Chinesesimp>
             <Korean>기관단총</Korean>
-        </Key>
-        <Key ID="STR_HALS_STORE_MISC">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_STORE_MISC">
             <Original>Misc</Original>
             <German>Sonstiges</German>
             <Russian>Прочее</Russian>
             <Chinesesimp>杂项</Chinesesimp>
             <Korean>기타</Korean>
-        </Key>
-        <Key ID="STR_HALS_ASSAULT_RIFLES_VN">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_ASSAULT_RIFLES_VN">
             <Original>Assault Rifles, Carbines</Original>
             <German>Sturmgewehre, Karabiner</German>
             <Russian>Штурмовые винтовки, карабины</Russian>
             <Chinesesimp>突击步枪、卡宾枪</Chinesesimp>
             <Korean>돌격소총, 카빈</Korean>
-        </Key>
-        <Key ID="STR_HALS_ASSAULT_RIFLES">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_ASSAULT_RIFLES">
             <Original>Assault Rifles</Original>
             <German>Sturmgewehre</German>
             <Russian>Штурмовые винтовки</Russian>
             <Chinesesimp>突击步枪</Chinesesimp>
             <Korean>돌격소총</Korean>
-        </Key>
-        <Key ID="STR_HALS_ASSAULT_RIFLES_WS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_ASSAULT_RIFLES_WS">
             <Original>Assault Rifles (Western Sahara)</Original>
             <German>Sturmgewehre (Western Sahara)</German>
             <Russian>Штурмовые винтовки (Western Sahara)</Russian>
             <Chinesesimp>突击步枪(Western Sahara DLC)</Chinesesimp>
             <Korean>돌격소총 (웨스턴 사하라)</Korean>
-        </Key>
-        <Key ID="STR_HALS_SPECIAL_WEAPONS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_SPECIAL_WEAPONS">
             <Original>Special Weapons</Original>
             <German>Spezielle Waffen</German>
             <Russian>Спецоружие</Russian>
             <Chinesesimp>特殊武器</Chinesesimp>
             <Korean>특수화기</Korean>
-        </Key>
-        <Key ID="STR_HALS_MGS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_MGS">
             <Original>Machine Guns</Original>
             <German>Maschinengewehre</German>
             <Russian>Пулемёты</Russian>
             <Chinesesimp>机枪</Chinesesimp>
             <Korean>기관총</Korean>
-        </Key>
-        <Key ID="STR_HALS_NAV">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_NAV">
             <Original>Navigation</Original>
             <German>Navigation</German>
             <Russian>Навигация</Russian>
             <Chinesesimp>夜视仪</Chinesesimp>
             <Korean>내비게이션</Korean>
-        </Key>
-        <Key ID="STR_HALS_SRS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_SRS">
             <Original>DMRs, Sniper Rifles, Battle Rifles</Original>
             <German>Scharfschützengewehre</German>
             <Russian>Снайперские, самозарядные винтовки</Russian>
             <Chinesesimp>DMR、狙击步枪、精确步枪</Chinesesimp>
             <Korean>지정사수소총, 저격소총, 전투소총</Korean>
-        </Key>
-        <Key ID="STR_HALS_MAGS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_MAGS">
             <Original>Magazines</Original>
             <German>Waffenmagazine</German>
             <Russian>Магазины</Russian>
             <Chinesesimp>弹夹</Chinesesimp>
             <Korean>탄창</Korean>
-        </Key>
-        <Key ID="STR_HALS_MAGS_WS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_MAGS_WS">
             <Original>Magazines (Western Sahara)</Original>
             <German>Waffenmagazine (Western Sahara)</German>
             <Russian>Магазины (Western Sahara)</Russian>
             <Chinesesimp>弹夹(Western Sahara)</Chinesesimp>
             <Korean>탄창 (웨스턴 사하라)</Korean>
-        </Key>
-        <Key ID="STR_HALS_ADD_MAGS">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_ADD_MAGS">
             <Original>Magazines (additional)</Original>
             <German>Zeitschriften (zusätzlich)</German>
             <Russian>Магазины (дополнительно)</Russian>
             <Chinesesimp>弹夹(额外)</Chinesesimp>
             <Korean>탄창 (부가)</Korean>
-        </Key>
-        <Key ID="STR_HALS_UB_ACC">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_UB_ACC">
             <Original>Underbarrel Accessories</Original>
             <German>Underbarrel-Zubehör</German>
             <Russian>Подствольные аксессуары</Russian>
             <Chinesesimp>枪管配件</Chinesesimp>
             <Korean>하단부착물</Korean>
-        </Key>
-        <Key ID="STR_HALS_P_ACC">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_P_ACC">
             <Original>Pointer Accessories</Original>
             <German>Zeigerzubehör</German>
             <Russian>Указатели, фонарики</Russian>
             <Chinesesimp>指示器配件</Chinesesimp>
             <Korean>지시기 액세서리</Korean>
-        </Key>
-        <Key ID="STR_HALS_P_ACC_VN">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_P_ACC_VN">
             <Original>Pointers, flashlights, bayonets</Original>
             <German>Zeiger, Taschenlampen, Bajonette</German>
             <Russian>Указатели, фонарики, штыки</Russian>
             <Chinesesimp>指示器，手电筒，刺刀</Chinesesimp>
             <Korean>지시기, 손전등, 총검</Korean>
-        </Key>
-        <Key ID="STR_HALS_M_ACC">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_M_ACC">
             <Original>Muzzle Accessories</Original>
             <German>Maulkorb-Zubehör</German>
             <Russian>Наствольные аксессуары</Russian>
             <Chinesesimp>枪口配件</Chinesesimp>
             <Korean>총구 액세서리</Korean>
-        </Key>
-        <Key ID="STR_HALS_A_M_ACC">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_A_M_ACC">
             <Original>Muzzle Accessories (additional)</Original>
             <German>Maulkorb-Zubehör (zusätzlich)</German>
             <Russian>Наствольные аксессуары (дополнительно)</Russian>
             <Chinesesimp>枪口配件(额外)</Chinesesimp>
             <Korean>총구 액세서리 (부가)</Korean>
-        </Key>
-        <Key ID="STR_HALS_O_ACC">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_O_ACC">
             <Original>Optics Accessories</Original>
             <German>Optik Zubehör</German>
             <Russian>Оптика</Russian>
             <Chinesesimp>光学配件</Chinesesimp>
             <Korean>광학장비</Korean>
-        </Key>
-        <Key ID="STR_HALS_A_O_ACC">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_A_O_ACC">
             <Original>Optics Accessories (additional)</Original>
             <German>Optik Zubehör (zusätzlich)</German>
             <Russian>Оптика (дополнительно)</Russian>
             <Chinesesimp>光学配件(额外)</Chinesesimp>
             <Korean>광학장비 (부가)</Korean>
-        </Key>
-        <Key ID="STR_HALS_R_GRENADES">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_R_GRENADES">
             <Original>Rifle Grenades</Original>
             <German>Gewehrgranaten</German>
             <Russian>Винтовочные гранаты</Russian>
             <Chinesesimp>步枪榴弹</Chinesesimp>
             <Korean>유탄</Korean>
-        </Key>
+        </Key> -->
         <Key ID="STR_HALS_STORE_ACTION">
             <Original>Store</Original>
             <German>Geschäft</German>
@@ -234,40 +234,40 @@
             <Korean>구입 완료</Korean>
         </Key>
         <!-- Thanks to JakeHekesFists -->
-        <Key ID="STR_HALS_STORE_ITEM_SELL_NOTEMPTY">
+        <!-- <Key ID="STR_HALS_STORE_ITEM_SELL_NOTEMPTY">
             <Original>You cannot sell your %1 (%2) because it is not empty.</Original>
             <Russian>Вы не можете продать %1 (%2), поскольку он не пустой.</Russian>
             <Chinesesimp>无法出售 %1 (%2), 因为它不是空的。</Chinesesimp>
             <Korean>%1 (%2)이(가) 비어 있지 않으므로 판매할 수 없습니다.</Korean>
-        </Key>
-        <Key ID="STR_HALS_STORE_ITEM_SELL_SOLD">
+        </Key> -->
+        <!-- <Key ID="STR_HALS_STORE_ITEM_SELL_SOLD">
             <Original>Sold x%1 %2(s) for $%3.</Original>
             <Russian>Продано x%1 %2(s) за $%3.</Russian>
             <Chinesesimp>卖掉 %2 x%1 以换取 $%3。</Chinesesimp>
             <Korean>%1 개의 %2을(를) %3€에 팔았습니다.</Korean>
-        </Key>
+        </Key> -->
     </Package>
     <Package name="Dialog">
-        <Key ID="STR_HALS_STORE_CHECKBOX_AFFORD">
+        <!-- <Key ID="STR_HALS_STORE_CHECKBOX_AFFORD">
             <Original>Only show items which the player can afford.</Original>
             <German>Zeige nur Gegenstände, die sich der Spieler leisten kann.</German>
             <Russian>Показывать только предметы, на которые хватает денег</Russian>
             <Chinesesimp>只显示玩家买得起的商品。</Chinesesimp>
             <Korean>플레이어가 현재 구입 가능한 아이템만 표시합니다.</Korean>
-        </Key>
+        </Key> -->
         <Key ID="STR_HALS_STORE_CHECKBOX_AVALIABLE">
             <Original>Only show items that are avaliable for purchase.</Original>
             <Russian>Показывать только предметы, доступные к покупке.</Russian>
             <Chinesesimp>只显示可供购买的商品。</Chinesesimp>
             <Korean>플레이어가 구입 가능한 아이템만 표시합니다.</Korean>
         </Key>
-        <Key ID="STR_HALS_STORE_CHECKBOX_STOCK">
+        <!-- <Key ID="STR_HALS_STORE_CHECKBOX_STOCK">
             <Original>Only show items which are in stock.</Original>
             <German>Zeige nur Gegenstände, die auf Lager sind.</German>
             <Russian>Показывать только предметы, доступные для продажи.</Russian>
             <Chinesesimp>只显示有货的商品。</Chinesesimp>
             <Korean>재고가 있는 아이템만 표시합니다.</Korean>
-        </Key>
+        </Key> -->
         <Key ID="STR_HALS_STORE_CHECKBOX_COMPATIBLE">
             <Original>Only show items compatible with the player's equipped weapons.</Original>
             <German>Zeige nur Gegenstände, die mit der ausgerüsteten Waffe des Spielers kompatibel sind.</German>
@@ -325,12 +325,296 @@
             <Chinesesimp>售罄</Chinesesimp>
             <Korean>재고 없음.</Korean>
         </Key>
-        <Key ID="STR_HALS_STORE_LISTBOX_NOMONEY">
+        <!-- <Key ID="STR_HALS_STORE_LISTBOX_NOMONEY">
             <Original>%1¢ more required.</Original>
             <German>%1¢ mehr benötigt.</German>
             <Russian>Не хватает %1¢.</Russian>
             <Chinesesimp>还需要 %1¢。</Chinesesimp>
             <Korean>%1€가 더 필요합니다.</Korean>
-        </Key>
+        </Key> -->
+    </Package>
+    <Package name="A3AU_hals_store">
+        <!-- category names -->
+        <Container name="A3AU_hals_store_categories">
+            <Key ID="STR_A3AU_handguns">
+                <Original>Handguns</Original>
+                <English>Handguns</English>
+                <Russian>Пистолеты</Russian>
+            </Key>
+            <Key ID="STR_A3AU_smgs">
+                <Original>SMGs</Original>
+                <English>SMGSs</English>
+                <Russian>Пистолеты-пулемёты</Russian>
+            </Key>
+            <Key ID="STR_A3AU_rifles">
+                <Original>Rifles</Original>
+                <English>Rifles</English>
+                <Russian>Штурмовые Винтовки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_sniperRifles">
+                <Original>Sniper Rifles</Original>
+                <English>Sniper Rifles</English>
+                <Russian>Снайперские Винтовки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_mgs">
+                <Original>MGs</Original>
+                <English>MGs</English>
+                <Russian>Пулеметы</Russian>
+            </Key>
+            <Key ID="STR_A3AU_launchers">
+                <Original>Launchers</Original>
+                <English>Launchers</English>
+                <Russian>Пусковые Установки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_specialWeapons">
+                <Original>Special Weapons</Original>
+                <English>Special Weapons</English>
+                <Russian>Спецоружие</Russian>
+            </Key>
+            <Key ID="STR_A3AU_magazines">
+                <Original>Magazines</Original>
+                <English>Magazines</English>
+                <Russian>Магазины</Russian>
+            </Key>
+            <Key ID="STR_A3AU_glGrenades">
+                <Original>GL Grenadaes</Original>
+                <English>GL Grenades</English>
+                <Russian>Подствольные Гранаты</Russian>
+            </Key>
+            <Key ID="STR_A3AU_launcherAmmo">
+                <Original>Missiles and Rockets</Original>
+                <English>Missiles and Rockets</English>
+                <Russian>Ракеты и Реактивные гранаты</Russian>
+            </Key>
+            <Key ID="STR_A3AU_sights">
+                <Original>Sights</Original>
+                <English>Sights</English>
+                <Russian>Прицелы</Russian>
+            </Key>
+            <Key ID="STR_A3AU_muzzles">
+                <Original>Muzzle Devices</Original>
+                <English>Muzzle Devices</English>
+                <Russian>Дульные Устройства</Russian>
+            </Key>
+            <Key ID="STR_A3AU_bipods">
+                <Original>Bipods</Original>
+                <English>Bipods</English>
+                <Russian>Сошки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_grips">
+                <Original>Grips</Original>
+                <English>Grips</English>
+                <Russian>Рукоятки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_handles">
+                <Original>Handles</Original>
+                <English>Handles</English>
+                <Russian>Рукоятки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_pointers">
+                <Original>Pointers</Original>
+                <English>Pointers</English>
+                <Russian>ЛЦУ</Russian>
+            </Key>
+            <Key ID="STR_A3AU_flashlights">
+                <Original>Flashlights</Original>
+                <English>Flashlights</English>
+                <Russian>Фонарики</Russian>
+            </Key>
+            <Key ID="STR_A3AU_gps">
+                <Original>GPS</Original>
+                <English>GPS</English>
+                <Russian>GPS</Russian>
+            </Key>
+            <Key ID="STR_A3AU_binoculars">
+                <Original>Binoculars</Original>
+                <English>Binoculars</English>
+                <Russian>Бинокли</Russian>
+            </Key>
+            <Key ID="STR_A3AU_nvgs">
+                <Original>NVGs</Original>
+                <English>NVGs</English>
+                <Russian>ПНВ</Russian>
+            </Key>
+            <Key ID="STR_A3AU_misc">
+                <Original>Misc</Original>
+                <English>Misc</English>
+                <Russian>Прочее</Russian>
+            </Key>
+            <Key ID="STR_A3AU_bagsStatics">
+                <Original>Bags with Statics</Original>
+                <English>Bags with Statics</English>
+                <Russian>Сумки со Стационарным оружием</Russian>
+            </Key>
+            <Key ID="STR_A3AU_srMagazines">
+                <Original>Sniper Rifle Magazines</Original>
+                <English>Sniper Rifle Magazines</English>
+                <Russian>Магазины для Снайперских Винтовок</Russian>
+            </Key>
+            <Key ID="STR_A3AU_camouflage">
+                <Original>Camouflage</Original>
+                <English>Camouflage</English>
+                <Russian>Камуфляж</Russian>
+            </Key>
+        </Container>
+        <!-- helpers -->
+        <Container name="A3AU_hals_store_helpers">
+            <Key ID="STR_A3AU_and">
+                <Original>and</Original>
+                <English>and</English>
+                <Russian>и</Russian>
+                <German>und</German>
+            </Key>
+            <Key ID="STR_A3AU_barret">
+                <Original>Barret</Original>
+                <English>Barret</English>
+                <Russian>Barret</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Vanilla">
+                <Original>Arma 3</Original>
+                <English>Arma 3</English>
+                <Russian>Арма 3</Russian>
+            </Key>
+            <Key ID="STR_A3AU_3cbbaf">
+                <Original>3CBBAF</Original>
+                <English>3CBBAF</English>
+                <Russian>3CBBAF</Russian>
+            </Key>
+            <Key ID="STR_A3AU_3cbf">
+                <Original>3CB</Original>
+                <English>3CB</English>
+                <Russian>3CB</Russian>
+            </Key>
+            <Key ID="STR_A3AU_3cbfcw">
+                <Original>3CBFCW</Original>
+                <English>3CBFCW</English>
+                <Russian>3CBFCW</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Aegis">
+                <Original>Aegis</Original>
+                <English>Aegis</English>
+                <Russian>Aegis</Russian>
+            </Key>
+            <Key ID="STR_A3AU_Braf">
+                <Original>BRAF</Original>
+                <English>BRAF</English>
+                <Russian>BRAF</Russian>
+            </Key>
+            <Key ID="STR_A3AU_bwa">
+                <Original>BWA</Original>
+                <English>BWA</English>
+                <Russian>BWA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_csa">
+                <Original>CSA38</Original>
+                <English>CSA38</English>
+                <Russian>CSA38</Russian>
+            </Key>
+            <Key ID="STR_A3AU_cup">
+                <Original>CUP</Original>
+                <English>CUP</English>
+                <Russian>CUP</Russian>
+            </Key>
+            <Key ID="STR_A3AU_cw">
+                <Original>CW</Original>
+                <English>CW</English>
+                <Russian>CW</Russian>
+            </Key>
+            <Key ID="STR_A3AU_empire">
+                <Original>Empire</Original>
+                <English>Empire</English>
+                <Russian>Empire</Russian>
+            </Key>
+            <Key ID="STR_A3AU_ffaa">
+                <Original>FFAA</Original>
+                <English>FFAA</English>
+                <Russian>FFAA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_fwa">
+                <Original>FWA</Original>
+                <English>FWA</English>
+                <Russian>FWA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_gm">
+                <Original>GM</Original>
+                <English>GM</English>
+                <Russian>GM</Russian>
+            </Key>
+            <Key ID="STR_A3AU_ifa">
+                <Original>IFA</Original>
+                <English>IFA</English>
+                <Russian>IFA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_italy">
+                <Original>Pedagne</Original>
+                <English>Pedagne</English>
+                <Russian>Pedagne</Russian>
+            </Key>
+            <Key ID="STR_A3AU_niarms">
+                <Original>NIArms</Original>
+                <English>NIArms</English>
+                <Russian>NIArms</Russian>
+            </Key>
+            <Key ID="STR_A3AU_optre">
+                <Original>OPTRE</Original>
+                <English>OPTRE</English>
+                <Russian>OPTRE</Russian>
+            </Key>
+            <Key ID="STR_A3AU_pla">
+                <Original>PLA</Original>
+                <English>PLA</English>
+                <Russian>PLA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_rhs">
+                <Original>RHS</Original>
+                <English>RHS</English>
+                <Russian>RHS</Russian>
+            </Key>
+            <Key ID="STR_A3AU_scion">
+                <Original>Scion</Original>
+                <English>Scion</English>
+                <Russian>Scion</Russian>
+            </Key>
+            <Key ID="STR_A3AU_sfp">
+                <Original>SFP</Original>
+                <English>SFP</English>
+                <Russian>SFP</Russian>
+            </Key>
+            <Key ID="STR_A3AU_sma">
+                <Original>SMA</Original>
+                <English>SMA</English>
+                <Russian>SMA</Russian>
+            </Key>
+            <Key ID="STR_A3AU_spearhead">
+                <Original>SPE</Original>
+                <English>SPE</English>
+                <Russian>SPE</Russian>
+            </Key>
+            <Key ID="STR_A3AU_tow">
+                <Original>Tier 1</Original>
+                <English>Tier 1</English>
+                <Russian>Tier 1</Russian>
+            </Key>
+            <Key ID="STR_A3AU_unsung">
+                <Original>Unsung</Original>
+                <English>Unsung</English>
+                <Russian>Unsung</Russian>
+            </Key>
+            <Key ID="STR_A3AU_vn">
+                <Original>VN</Original>
+                <English>VN</English>
+                <Russian>VN</Russian>
+            </Key>
+            <Key ID="STR_A3AU_wrs">
+                <Original>Research & Security</Original>
+                <English>Research & Security</English>
+                <Russian>Research & Security</Russian>
+            </Key>
+            <Key ID="STR_A3AU_ws">
+                <Original>Western Sahara</Original>
+                <English>Western Sahara</English>
+                <Russian>Western Sahara</Russian>
+            </Key>
+        </Container>
     </Package>
 </Project>

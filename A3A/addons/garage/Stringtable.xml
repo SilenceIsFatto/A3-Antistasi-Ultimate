@@ -31,7 +31,7 @@
             <Key ID="STR_HR_GRG_Generic_Confirm">
                 <Original>Confirm</Original>
                 <French>Confirmer</French>
-                <Russian>Подтв-ть</Russian>
+                <Russian>Подтвердить</Russian>
                 <Korean>확인</Korean>
                 <Spanish>Confirmar</Spanish>
                 <Chinesesimp>确认</Chinesesimp>
@@ -163,7 +163,7 @@
             <Key ID="STR_HR_GRG_Generic_PylonDisabled">
                 <Original>Pylons require an ammo source to edit</Original>
                 <French>Les pylônes nécessitent une source de munitions pour être modifiés</French>
-                <Russian>Источник боеприпасов необходим для редактирования пилонов</Russian>
+                <Russian>Для редактирования пилонов необходим источник боеприпасов</Russian>
                 <Korean>무장창을 편집하려면 탄약차량이 필요합니다.</Korean>
                 <Spanish>Los pilones necesitan de un sitio con munición para ser editados</Spanish>
                 <Chinesesimp>编辑挂架需要可用弹药来源</Chinesesimp>
@@ -207,7 +207,7 @@
             <Key ID="STR_HR_GRG_SourcePanel_toolTip_Ammo_Available">
                 <Original>Vehicles will be rearmed when ungaraged</Original>
                 <French>Les véhicules seront réarmés lorsqu'ils sortiront du garage</French>
-                <Russian>Техника будет переснаряжена после вывода из гаража</Russian>
+                <Russian>Техника будет перезаряжена после вывода из гаража</Russian>
                 <Korean>차고에서 꺼내면 차량이 재무장됩니다</Korean>
                 <Spanish>Los vehículos serán rearmados cuando los saques</Spanish>
                 <Chinesesimp>从车库中被取出的载具会被重新武装</Chinesesimp>
@@ -218,7 +218,7 @@
             <Key ID="STR_HR_GRG_SourcePanel_toolTip_Ammo_Unavailable">
                 <Original>Vehicles won't be rearmed when ungaraged as the garage lacks an ammo source</Original>
                 <French>Les véhicules ne seront pas réarmés lorsqu'ils sortiront du garage car le garage n'a pas de source de munitions</French>
-                <Russian>Техника не будет переснаряжена после вывода из гаража из-за недостатка источников боеприпасов</Russian>
+                <Russian>Техника не будет перезаряжена после вывода из гаража из-за отсутствия источников боеприпасов</Russian>
                 <Korean>차고에 탄약차량이 없기 때문에 차고에서 꺼낼 때 차량은 재무장되지 않습니다</Korean>
                 <Spanish>Los vehículos no serán rearmados una vez fuera ya que el garaje necesita un punto de munición cerca</Spanish>
                 <Chinesesimp>缺乏弹药来源时从车库中被取出的载具不会被重新武装</Chinesesimp>
@@ -251,7 +251,7 @@
             <Key ID="STR_HR_GRG_SourcePanel_toolTip_Fuel_Unavailable">
                 <Original>Vehicles won't be refueled when ungaraged as the garage lacks a fuel source</Original>
                 <French>Les véhicules ne seront pas ravitaillées en carburant lorsqu'ils sortiront du garage car le garage n'a pas de source de carburant</French>
-                <Russian>Техника не будет заправлена после вывода из гаража из-за недостатка источников топлива</Russian>
+                <Russian>Техника не будет заправлена после вывода из гаража из-за отсутствия источников топлива</Russian>
                 <Korean>차고에 유류차량이 없기 때문에 차고에서 꺼낼 때 차량은 재급유되지 않습니다</Korean>
                 <Spanish>Los vehículos no serán repostados cuando los saques pues no hay un punto de repostaje</Spanish>
                 <Chinesesimp>缺乏油料来源时从车库中被取出的载具不会被重新加油</Chinesesimp>
@@ -284,7 +284,7 @@
             <Key ID="STR_HR_GRG_SourcePanel_toolTip_Repair_Unavailable">
                 <Original>Vehicles won't be repaired when ungaraged as the garage lacks a repair source</Original>
                 <French>Les véhicules ne seront pas réparés lorsqu'ils sortiront du garage, car le garage n'a pas de source de réparation</French>
-                <Russian>Техника не будет отремонтирована при выводе из гаража из-за недостатка ремонтных машин</Russian>
+                <Russian>Техника не будет отремонтирована при выводе из гаража из-за отсутствия ремонтных машин</Russian>
                 <Korean>차고에 수리차량이 없기 때문에 차고에서 꺼낼 때 차량은 수리되지 않습니다</Korean>
                 <Spanish>Los vehículos no serán reparados cuando los ssaques pues no hay un sitio de reparación cerca</Spanish>
                 <Chinesesimp>缺乏维修来源时从车库中被取出的载具不会被重新维修</Chinesesimp>
@@ -527,7 +527,7 @@
             <Key ID="STR_HR_GRG_Feedback_addVehicle_SATow">
                 <Original>You can't garage a Vehicle with your Tow Rope out or a Vehicle attached</Original>
                 <French>Vous ne pouvez pas garer un véhicule avec votre câble de remorquage hors d'un véhicule attaché</French>
-                <Russian>Вы не можете завести в гараж технику с буксирным тросом или присоединённой им техникой</Russian>
+                <Russian>Вы не можете завести в гараж технику с буксировочным тросом или присоединённой им техникой</Russian>
                 <Korean>견인 로프를 빼거나 차량에 부착한 상태에서는 차량을 넣을 수 없습니다</Korean>
                 <Spanish>No puedes almacenar un vehículo con una cuerda atada a él ni remolcando a otro vehículo</Spanish>
                 <Chinesesimp>你不能停放任何带有拖车绳的载具</Chinesesimp>
@@ -549,7 +549,7 @@
             <Key ID="STR_HR_GRG_Feedback_addVehicle_Item_Stored">
                 <Original>Item stored</Original>
                 <French>Article stocké</French>
-                <Russian>предмет в хранилище</Russian>
+                <Russian>Предмет складирован</Russian>
                 <Korean>아이템 저장 완료</Korean>
                 <Spanish>Objeto almacenado</Spanish>
                 <Chinesesimp>已存放物品</Chinesesimp>
@@ -672,7 +672,7 @@
             <Key ID="STR_HR_GRG_Feedback_addVehicle_inVehicle">
                 <Original>You can't garage a vehicle while in another vehicle</Original>
                 <French>Vous ne pouvez pas garer un véhicule en étant dans un véhicule</French>
-                <Russian>Вы не можете завести в гараж технику, находясь в другой</Russian>
+                <Russian>Вы не можете завести в гараж технику, находясь в другой технике</Russian>
                 <Korean>다른 차량에 있는 동안에는 차량을 넣을 수 없습니다</Korean>
                 <Spanish>No puedes almacenar un vehículo mientrás estás en otro vehículo</Spanish>
                 <Chinesesimp>你不能在载具内存放另一个载具</Chinesesimp>
@@ -683,7 +683,7 @@
             <Key ID="STR_HR_GRG_Feedback_addVehicle_Crewed">
                 <Original>You can't garage a vehicle with crew inside</Original>
                 <French>Vous ne pouvez pas garer un véhicule avec un équipage à l'intérieur</French>
-                <Russian>Вы не можете завести в гараж технику с находящимся в нём экипажем</Russian>
+                <Russian>Вы не можете завести в гараж технику людьми внутри</Russian>
                 <Korean>승무원이 탑승한 차량은 차고에 넣을 수 없습니다</Korean>
                 <Spanish>No puedes almacenar un vehículo si hay personas dentro</Spanish>
                 <Chinesesimp>你不能存放有人的载具</Chinesesimp>
@@ -852,7 +852,7 @@
             <!--%1 is pylon number-->
             <Key ID="STR_HR_GRG_Pylons_PylonText">
                 <Original>Pylon %1</Original>
-                <Russian>Пилон</Russian>
+                <Russian>Пилон %1</Russian>
                 <Korean>%1 무장창</Korean>
                 <French>Pylône 1%</French>
                 <Spanish>Pilón 1%</Spanish>

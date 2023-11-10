@@ -10,7 +10,7 @@
                 <Italian>RECLUTA UNITA</Italian>
                 <Polish>ZWERBUJ JEDNOSTKI</Polish>
                 <Portuguese>Placeholder</Portuguese>
-                <Russian>НАНЯТЬ БОЙЦА</Russian>
+                <Russian>НАНЯТЬ СОЛДАТ</Russian>
                 <German>Placeholder</German>
                 <Chinesesimp>招募单位</Chinesesimp>
                 <Korean>유닛 모집</Korean>
@@ -201,7 +201,7 @@
                 <Original>AT Team</Original>
                 <French>Équipe AT</French>
                 <Korean>대전차 팀</Korean>
-                <Russian>Противотанковая группа</Russian>
+                <Russian>ПТ группа</Russian>
                 <Chinesesimp>反坦克班组</Chinesesimp>
                 <Czech>AT tým</Czech>
                 <Italian>Team Anti-Carro</Italian>
@@ -302,7 +302,7 @@
                 <Original>days</Original>
                 <French>jours</French>
                 <Korean>일</Korean>
-                <Russian>Дни</Russian>
+                <Russian>дни</Russian>
                 <Chinesesimp>天</Chinesesimp>
                 <Czech>dny</Czech>
                 <Italian>giorni</Italian>
@@ -313,7 +313,7 @@
                 <Original>hours</Original>
                 <French>heures</French>
                 <Korean>시간</Korean>
-                <Russian>Часы</Russian>
+                <Russian>часы</Russian>
                 <Chinesesimp>时</Chinesesimp>
                 <Czech>hodiny</Czech>
                 <Italian>ore</Italian>
@@ -324,7 +324,7 @@
                 <Original>minutes</Original>
                 <French>minutes</French>
                 <Korean>분</Korean>
-                <Russian>Минуты</Russian>
+                <Russian>минуты</Russian>
                 <Chinesesimp>分</Chinesesimp>
                 <Czech>minut</Czech>
                 <Italian>minuti</Italian>
@@ -335,7 +335,7 @@
                 <Original>seconds</Original>
                 <French>secondes</French>
                 <Korean>초</Korean>
-                <Russian>Секунды</Russian>
+                <Russian>секунды</Russian>
                 <Chinesesimp>秒</Chinesesimp>
                 <Czech>sekundy</Czech>
                 <Italian>secondi</Italian>
@@ -346,7 +346,7 @@
                 <Original>day</Original>
                 <French>jour</French>
                 <Korean>일</Korean>
-                <Russian>День</Russian>
+                <Russian>день</Russian>
                 <Chinesesimp>天</Chinesesimp>
                 <Czech>den</Czech>
                 <Italian>giorno</Italian>
@@ -357,7 +357,7 @@
                 <Original>hour</Original>
                 <French>heure</French>
                 <Korean>시간</Korean>
-                <Russian>Час</Russian>
+                <Russian>час</Russian>
                 <Chinesesimp>时</Chinesesimp>
                 <Czech>hodina</Czech>
                 <Italian>ora</Italian>
@@ -368,7 +368,7 @@
                 <Original>minute</Original>
                 <French>minute</French>
                 <Korean>분</Korean>
-                <Russian>Минута</Russian>
+                <Russian>минута</Russian>
                 <Chinesesimp>分</Chinesesimp>
                 <Czech>minuta</Czech>
                 <Italian>minuto</Italian>
@@ -379,7 +379,7 @@
                 <Original>second</Original>
                 <French>seconde</French>
                 <Korean>초</Korean>
-                <Russian>Секунда</Russian>
+                <Russian>секунда</Russian>
                 <Chinesesimp>秒</Chinesesimp>
                 <Czech>druhý</Czech>
                 <Italian>secondo</Italian>
@@ -390,7 +390,7 @@
                 <Original>d</Original>
                 <French>j</French>
                 <Korean>일</Korean>
-                <Russian>Д</Russian>
+                <Russian>д</Russian>
                 <Chinesesimp>d</Chinesesimp>
                 <Czech>d</Czech>
                 <Italian>g</Italian>
@@ -401,7 +401,7 @@
                 <Original>h</Original>
                 <French>h</French>
                 <Korean>시간</Korean>
-                <Russian>Ч</Russian>
+                <Russian>ч</Russian>
                 <Chinesesimp>h</Chinesesimp>
                 <Czech>h</Czech>
                 <Italian>o</Italian>
@@ -412,7 +412,7 @@
                 <Original>m</Original>
                 <French>m</French>
                 <Korean>분</Korean>
-                <Russian>М</Russian>
+                <Russian>м</Russian>
                 <Chinesesimp>m</Chinesesimp>
                 <Czech>m</Czech>
                 <Italian>m</Italian>
@@ -423,7 +423,7 @@
                 <Original>s</Original>
                 <French>s</French>
                 <Korean>초</Korean>
-                <Russian>С</Russian>
+                <Russian>с</Russian>
                 <Chinesesimp>s</Chinesesimp>
                 <Czech>s</Czech>
                 <Italian>s</Italian>
@@ -434,7 +434,7 @@
                 <Original>aggression</Original>
                 <French>agression</French>
                 <Korean>어그로</Korean>
-                <Russian>Агрессия</Russian>
+                <Russian>агрессия</Russian>
                 <Chinesesimp>警戒值</Chinesesimp>
                 <Czech>agrese</Czech>
                 <Italian>aggressione</Italian>
@@ -447,7 +447,7 @@
                 <Original>LOAD LAST SAVE?</Original>
                 <French>CHARGER LA DERNIÈRE SAUVEGARDE ?</French>
                 <Korean>마지막 저장을 불러옵니까?</Korean>
-                <Russian>ЗАГРУЗИТЬ ПОСЛЕДНЕЕ СОХРАНЕНИЕ?</Russian>
+                <Russian>ЗАГРУЗИТЬ ПОСЛ СОХРАНЕНИЕ?</Russian>
                 <Chinesesimp>加载最近的保存项？</Chinesesimp>
                 <Czech>NAČÍST POSLEDNÍ ULOŽENÍ?</Czech>
                 <Italian>CARICARE L'ULTIMO SALVATAGGIO?</Italian>
@@ -608,11 +608,13 @@
             <Key ID="STR_antistasi_dialogs_buy_item_custom_hint_header">
                 <Original>Purchase Item</Original>
                 <Chinesesimp>购买物品</Chinesesimp>
+                <Russian>Парашют</Russian>
                 <Korean>아이템 구매</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_item_custom_hint_commander_only">
                 <Original>Only the Commander may buy this item.</Original>
                 <Chinesesimp>只有指挥官可以购买此物品</Chinesesimp>
+                <Russian>Только командир может купить этот предмет.</Russian>
                 <Korean>지휘관만 이 아이템을 살 수 있습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_civ">
@@ -623,7 +625,7 @@
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_reb">
                 <Original>Rebel</Original>
-                <Russian>Военная техника</Russian>
+                <Russian>Техника повстанцев</Russian>
                 <Korean>반군용</Korean>
                 <Spanish>Rebelde</Spanish>
             </Key>
@@ -647,16 +649,19 @@
             <Key ID="STR_antistasi_dialogs_buy_vehicle_refuel_tooltip">
                 <Original>This item can refuel others.\n%1 max fuel is %2.</Original>
                 <Chinesesimp>这个物品可以为其他人加油。\n%1 最大燃料是 %2 。</Chinesesimp>
+                <Russian>Этот предмет может заправлять другие машины.\n%1 максимум топлива %2.</Russian>
                 <Korean>이 아이템은 다른 차량을 재급유할 수 있습니다.\n%1의 최대 연료량은 %2입니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_loot_tooltip">
                 <Original>This item can collect loot.</Original>
                 <Chinesesimp>这个物品可以收集战利品。</Chinesesimp>
+                <Russian>Этот предмет может собирать трофеи.</Russian>
                 <Korean>이 아이템은 전리품을 수집할 수 있습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_light_tooltip">
                 <Original>This item provides light source.</Original>
                 <Chinesesimp>这个物品可以提供照明。</Chinesesimp>
+                <Russian>Этот предмет излучает свет.</Russian>
                 <Korean>이 아이템은 광원을 제공합니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_revivekitbox_tooltip">
@@ -693,7 +698,7 @@
                 <Original>Go Undercover</Original>
                 <French>Devenir incognito</French>
                 <Korean>위장하기</Korean>
-                <Russian>Перейти под прикрытие</Russian>
+                <Russian>Перейти в скрытность</Russian>
                 <Chinesesimp>进入伪装模式</Chinesesimp>
                 <Czech>Jít v utajení</Czech>
                 <Italian>Vai Sottocopertura</Italian>
@@ -759,7 +764,7 @@
                 <Original>Resign</Original>
                 <French>Démissionner</French>
                 <Korean>사임</Korean>
-                <Russian>Сняться с должности</Russian>
+                <Russian>Уйти в отставку</Russian>
                 <Chinesesimp>辞职</Chinesesimp>
                 <Czech>Odstoupit</Czech>
                 <Italian>Dimettiti</Italian>
@@ -1071,7 +1076,7 @@
                 <Original>Mount</Original>
                 <French>Monter</French>
                 <Korean>탑승</Korean>
-                <Russian>Загрузиться</Russian>
+                <Russian>Погрузиться</Russian>
                 <Chinesesimp>进入载具</Chinesesimp>
                 <Czech>Nasednout</Czech>
                 <Italian>Monta</Italian>
@@ -1082,7 +1087,7 @@
                 <Original>Dismount</Original>
                 <French>Démonter</French>
                 <Korean>하차</Korean>
-                <Russian>Выгрузиться</Russian>
+                <Russian>Спешиться</Russian>
                 <Chinesesimp>离开载具</Chinesesimp>
                 <Czech>Sesednout</Czech>
                 <Italian>Smonta</Italian>
@@ -1148,7 +1153,7 @@
                 <Original>HE</Original>
                 <French>HE</French>
                 <Korean>고폭탄</Korean>
-                <Russian>Осколочно-фугасный</Russian>
+                <Russian>ОФ</Russian>
                 <Chinesesimp>高爆弹</Chinesesimp>
                 <Czech>HE</Czech>
                 <Italian>AE</Italian>
@@ -1181,7 +1186,7 @@
                 <Original>HE</Original>
                 <French>HE</French>
                 <Korean>고폭탄</Korean>
-                <Russian>Осколочно-фугасный снаряд</Russian>
+                <Russian>ОФ снаряд</Russian>
                 <Chinesesimp>高爆弹</Chinesesimp>
                 <Czech>HE</Czech>
                 <Italian>AE</Italian>
@@ -1258,7 +1263,7 @@
                 <Original>SET</Original>
                 <French>DÉFINIR</French>
                 <Korean>지정</Korean>
-                <Russian>Подтвердить цель</Russian>
+                <Russian>Подтвердить запрос</Russian>
                 <Chinesesimp>设置</Chinesesimp>
                 <Czech>SET</Czech>
                 <Italian>IMPOSTA</Italian>
@@ -1546,7 +1551,7 @@
                 <Original>HE Bombs</Original>
                 <French>Bombes HE</French>
                 <Korean>고폭탄</Korean>
-                <Russian>Осколочно-фугасные бомбы</Russian>
+                <Russian>ОФ бомбы</Russian>
                 <Chinesesimp>高爆炸弹</Chinesesimp>
                 <Czech>HE Bomby</Czech>
                 <Italian>Bombe AE</Italian>
@@ -1647,7 +1652,7 @@
                 <Original>You will bring your vehicle along as well as any cargo and passengers along with you.</Original>
                 <French>Vous apporterez votre véhicule ainsi que toute cargaison et passagers avec vous.</French>
                 <Korean>차량은 물론 화물과 승객도 함께 가지고 갈 것입니다다.</Korean>
-                <Russian>Вы возьмете с собой свою технику, так же как и груз и пассажиров с вами.</Russian>
+                <Russian>Вы возьмете с собой свою технику, а также груз и пассажиров.</Russian>
                 <Chinesesimp>您将带上您的载具以及任何货物和乘客。</Chinesesimp>
                 <Czech>Vezměte si vozidlo, a i jakýkoli náklad a cestující s vámi.</Czech>
                 <Italian>Porterai con te il tuo veicolo compreso il cargo e i passeggeri.</Italian>
@@ -1682,7 +1687,7 @@
                 <Original>Assassination</Original>
                 <French>Assassinat</French>
                 <Korean>암살</Korean>
-                <Russian>Убийство</Russian>
+                <Russian>Ликвидация</Russian>
                 <Chinesesimp>暗杀</Chinesesimp>
                 <Czech>Atentát</Czech>
                 <Italian>Assassinio</Italian>
@@ -1970,7 +1975,7 @@
                 <Original>Training level:</Original>
                 <French>Niveau de formation:</French>
                 <Korean>훈련 레벨:</Korean>
-                <Russian>Уровень опыта:</Russian>
+                <Russian>Уровень подготовки:</Russian>
                 <Chinesesimp>训练水平</Chinesesimp>
                 <Czech>Úroveň školení:</Czech>
                 <Italian>Livello Addestramento:</Italian>
@@ -2260,7 +2265,7 @@
                 <Original>Deploy Minefield:</Original>
                 <French>Déployez le champ de mines:</French>
                 <Korean>지뢰지대 배치:</Korean>
-                <Russian>Развернуть минное поле:</Russian>
+                <Russian>Установить минное поле:</Russian>
                 <Chinesesimp>部署雷区</Chinesesimp>
                 <Czech>Rozmístit minová pole</Czech>
                 <Italian>Schiera Campo Minato</Italian>
@@ -2293,7 +2298,7 @@
                 <Original>Remove Minefield</Original>
                 <French>Supprimer le champ de mines</French>
                 <Korean>지뢰지대 제거</Korean>
-                <Russian>Убрать минное поле</Russian>
+                <Russian>Снять минное поле</Russian>
                 <Chinesesimp>移除雷区</Chinesesimp>
                 <Czech>Odstraňte minové pole</Czech>
                 <Italian>Rimuovi Campo Minato</Italian>
@@ -2416,7 +2421,7 @@
                 <Original>Vehicle Box</Original>
                 <French>Boîte de véhicule</French>
                 <Korean>차량 상자</Korean>
-                <Russian>Ящик с техникой</Russian>
+                <Russian>Гаражный ящик</Russian>
                 <Chinesesimp>载具箱</Chinesesimp>
                 <Czech>Vozidlový Box</Czech>
                 <Italian>Cassa Veicolo</Italian>
@@ -2682,7 +2687,7 @@
                 <Original>You can only remote control single units\nSelect exactly one AI in the list</Original>
                 <French>Vous ne pouvez contrôler à distance que des unités individuelles\nSélectionnez exactement une IA dans la liste</French>
                 <Korean>단일 유닛만 원격 조종 가능합니다\n목록에서 인공지능을 정확히 하나만 선택하십시오</Korean>
-                <Russian>Вы можете удаленное управлять только одним юнитом\nВыберете конкретно одного ИИ из списка</Russian>
+                <Russian>Вы можете удаленно управлять только одним юнитом\nВыберете одного конкретного ИИ из списка</Russian>
                 <Chinesesimp>您只能远程控制单个单位\n在列表中仅选择一个 AI</Chinesesimp>
                 <Czech>V seznamu můžete pouze samostatné ovládání pouze jednotlivé jednotky</Czech>
                 <Italian>Puoi controllare remotamente solo singole unità\nSeleziona esattamente un IA dalla lista</Italian>
@@ -2827,7 +2832,7 @@
                 <Original>Group %1 at your command.&lt;br/&gt;&lt;br/&gt;Groups are managed from the High Command bar (Default: CTRL+SPACE)&lt;br/&gt;&lt;br/&gt;If the group gets stuck, use the AI Control feature to make them start moving. Mounted Static teams tend to get stuck (solving this is WiP)&lt;br/&gt;&lt;br/&gt;To assign a vehicle for this group, look at some vehicle, and use Vehicle Squad Mngmt option in Y menu</Original>
                 <French>Groupe %1 à votre commande.&lt;br/&gt;&lt;br/&gt;Les groupes sont gérés depuis la barre de commande supérieure (par défaut: CTRL+ESPACE)&lt;br/&gt;&lt;br/&gt;Si le groupe se coince, utilisez la fonction contrôle temporaire de l'IA pour les déplacer. Les équipes statiques montées ont tendance à rester bloquées (résoudre cela est WiP)&lt;br/&gt;&lt;br/&gt;Pour attribuer un véhicule à ce groupe, regardez un véhicule et utilisez l'option Vehicle Squad Mngmt dans le menu Y</French>
                 <Korean>%1 그룹은 이제 당신 휘하에 있습니다.&lt;br/&gt;&lt;br/&gt;그룹은 하이 커맨드 표시줄(기본값: 컨트롤+ 스페이스)에서 관리됩니다.&lt;br/&gt;&lt;br/&gt;그룹이 끼인다면 인공지능 조종 기능을 이용하여 이동을 시키십시오. 탑재된 고정화기 팀이 끼이는 경향이 있습니다 (해결 중에 있습니다).&lt;br/&gt;&lt;br/&gt;이 그룹에 차량을 할당하려면 차량을 보고 Y 메뉴의 차량 분대 관리 설정을 사용하십시오.</Korean>
-                <Russian>Группа %1 под вашим командованием.&lt;br/&gt;&lt;br/&gt;Управление группами происходит из панели Командования (По стандарту: CTRL+SPACE)&lt;br/&gt;&lt;br/&gt;Если группа застряла, используйте Управление ИИ чтобы заставить их двигаться. Отряды со статичным вооружение любят застревать (Это решается с помощью WiP)&lt;br/&gt;&lt;br/&gt;Чтобы назначить технику к этой группе, посмотрите на неё и используйте Управление Техникой Отряда в меню на клавише Y.</Russian>
+                <Russian>Группа %1 под вашим командованием.&lt;br/&gt;&lt;br/&gt;Управление группами происходит из панели Командования (По умолчанию: CTRL+SPACE)&lt;br/&gt;&lt;br/&gt;Если группа застряла, используйте Управление ИИ чтобы заставить их двигаться. Отряды со статичным вооружение любят застревать (решение в разработке)&lt;br/&gt;&lt;br/&gt;Чтобы назначить технику к этой группе, посмотрите на неё и используйте Управление Техникой Отряда в меню на клавише Y.</Russian>
                 <Chinesesimp>%1 小组受你指挥。&lt;br/&gt;&lt;br/&gt;使用高级指挥菜单命令小组。(默认键位: CTRL+空格)&lt;br/&gt;&lt;br/&gt;如果小组卡住不动，可以先用AI控制功能来让他们动起来。已部署的固定式武器小组通常会卡住。(解决方案还在开发中)&lt;br/&gt;&lt;br/&gt;要想给小组分配一辆载具，看向该载具，然后使用Y键菜单中的载具小队管理选项</Chinesesimp>
                 <Czech>Skupina %1 na váš příkaz. &lt;br/&gt; &lt;br/&gt; Skupiny jsou spravovány z panelu vyššího veliteství (výchozí: Ctrl+Space) &lt;br/&gt; &lt;br/&gt; Pokud se skupina uvízne, použijte funkci ovládání AI tak přimět je, aby se začali pohybovat. Rozestavěné statické týmy mají tendenci uvíznout (Je to v řešení) &lt;br/&gt; &lt;br/&gt;K přiřazení vozidla do tého skupiny, podívejte se na nějaké vozidlo a použijte Družstevní vozidlový management možnost v Y menu.</Czech>
                 <Italian>Gruppo %1 al tuo comando.&lt;br/&gt;&lt;br/&gt;I gruppi vengono gestiti dalla barra dell'Alto Comando(Default: CTRL+SPAZIO)&lt;br/&gt;&lt;br/&gt;Se il gruppo si blocca, usa il controllo IA per farli muovere. Le squadre mobili di solito si incastrano facilmente. (Stiamo cercando di risolvere questo problema)&lt;br/&gt;&lt;br/&gt;Per assegnare un veicolo a questo gruppo, guarda il veicolo, e usa l'opzione Gestione Veicolo di Squadra nel menu che apri con Y</Italian>
@@ -2840,7 +2845,7 @@
                 <Original>ARSENAL GUEST LIMITS</Original>
                 <French>LIMITES D'INVITÉS D'ARSENAL</French>
                 <Korean>아스널 게스트 제한</Korean>
-                <Russian>Ограничения для Гостей</Russian>
+                <Russian>Ограничения арсенала для Гостей</Russian>
                 <Chinesesimp>对游客的军火库限制</Chinesesimp>
                 <Czech>Limity hostů Arsenalu</Czech>
                 <Italian>LIMITE OSPITI NELL' ARSENALE</Italian>
@@ -2998,7 +3003,7 @@
                 <French>Copier une partie</French>
                 <Italian>Copia vecchia partita</Italian>
                 <Korean>예전 게임 복사</Korean>
-                <Russian>Скопир. старое сохранен.</Russian>
+                <Russian>Скопир. старое сохр.</Russian>
                 <Polish>Skopiuj Starą Rozgrywkę</Polish>
                 <Portuguese>copiar jogo antigo</Portuguese>
                 <Chinesesimp>加载之前的存档</Chinesesimp>
@@ -3260,7 +3265,7 @@
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_occ_inv">
                 <Original>%1 occupants and %2 invaders?</Original>
-                <Russian>%1 оккупантами and %2 захватчиками?</Russian>
+                <Russian>%1 оккупантами и %2 захватчиками?</Russian>
                 <Chinesesimp>%1 防守方和 %2 入侵者？</Chinesesimp>
                 <Korean>%1이(가) 점령군이고 %2이(가) 침략군입니까?</Korean>
             </Key>
@@ -3359,7 +3364,7 @@
                 <French>La position ne peut pas être en dehors de la map.</French>
                 <Italian>La posizione selezionata non può essere fuori dalla mappa</Italian>
                 <Korean>지도 밖에는 설치할 수 없습니다.</Korean>
-                <Russian>Выбранное место не может находиться вне карты.</Russian>
+                <Russian>Выбранное место не может находиться за краем карты.</Russian>
                 <Polish>Wybrana pozycja nie może znajdować się poza mapą.</Polish>
                 <Portuguese>Posiçao selecionada nao pode estar fora do mapa</Portuguese>
                 <Chinesesimp>所选位置不能位于地图外</Chinesesimp>

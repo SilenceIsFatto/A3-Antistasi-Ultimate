@@ -1,7 +1,7 @@
 		//PLA
 		
 		class mgpla{
-			displayName = "PLA MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_pla", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(LMG_mas_chi_pkm_F, 600, RIFLE_STOCK); //Ammo: 150Rnd_762x54_Box
@@ -11,7 +11,7 @@
 		};
 
 		class riflespla{
-			displayName = "PLA Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_pla", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(arifle_mas_qbz95, 325, RIFLE_STOCK); //Ammo: 30Rnd_mas_chi_580x42UW_mag
@@ -22,7 +22,7 @@
 		};
 
 		class sniperriflespla{
-			displayName = "PLA Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_pla", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_mas_qbz95_snp, 580, RIFLE_STOCK); // Ammo: 20Rnd_mas_chi_650x39SD_mag
@@ -32,7 +32,7 @@
 		};
 
 		class launcherspla{
-			displayName = "PLA Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_pla", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(launch_mas_chi_RPG32_F, 500, 25); 
@@ -41,7 +41,7 @@
 		}; 
 
 		class launchermagazinespla{
-			displayName = "PLA Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_pla", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(Strela_mas_chi, 300, 15);
@@ -49,7 +49,7 @@
 		};
 
 		class magazinespla{
-			displayName = "PLA Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_pla", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(30Rnd_mas_chi_580x42UW_mag, 55, MZ_STOCK);

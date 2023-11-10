@@ -12,7 +12,9 @@ private _soldiers = [];
 private _civs = [];
 _positionX = getMarkerPos (_markerX);
 
-if (_markerX != "Synd_HQ") then {
+private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false];
+
+if (_markerX != "Synd_HQ" && {!(_markerX in milAdministrationsX)}) then {
 	if (!(_markerX in citiesX)) then {
 		private _veh = createVehicle [FactionGet(reb,"flag"), _positionX, [],0, "NONE"];
 		_veh setFlagTexture FactionGet(reb,"flagTexture");

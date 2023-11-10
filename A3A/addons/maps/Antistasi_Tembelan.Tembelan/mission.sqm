@@ -4819,7 +4819,7 @@ class Mission
 					dataType="Marker";
 					position[]={893.62347,2.7037606e+012,5457.6265};
 					name="respawn_guerrila";
-					text="Your Headquarters";
+					text=$STR_headquarters;
 					type="hd_flag";
 					colorName="ColorGUER";
 					id=509;

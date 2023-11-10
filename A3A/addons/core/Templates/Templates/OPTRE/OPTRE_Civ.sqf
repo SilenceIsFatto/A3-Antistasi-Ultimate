@@ -102,7 +102,6 @@ _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 
-
 private _manTemplate = {
     ["helmets"] call _fnc_setHelmet;
     ["uniforms"] call _fnc_setUniform;

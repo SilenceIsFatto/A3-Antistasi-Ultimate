@@ -14,22 +14,22 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagMarkerType", "flag_Syndicat"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["I_G_Offroad_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["I_G_Offroad_01_armed_F"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["I_G_Van_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["I_G_Offroad_01_AT_F"]] call _fnc_saveToTemplate;
+private _vehiclesLightUnarmed = ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F"];
+private _vehiclesLightArmed = ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F"];
+["vehiclesTruck", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
+private _vehiclesAt = ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F"];
 private _vehicleAA = [];
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlane", ["I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
 
-["vehiclesCivCar", ["C_Offroad_01_F"]] call _fnc_saveToTemplate;
-["vehiclesCivTruck", ["C_Truck_02_transport_F"]] call _fnc_saveToTemplate;
+["vehiclesCivCar", ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_Offroad_02_unarmed_F", "C_SUV_01_F"]] call _fnc_saveToTemplate;
+["vehiclesCivTruck", ["C_Truck_02_transport_F", "C_Van_01_transport_F", "C_Van_02_transport_F", "C_Van_02_vehicle_F"]] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
-["vehiclesCivBoat", ["C_Rubberboat"]] call _fnc_saveToTemplate;
+["vehiclesCivBoat", ["C_Boat_Civil_01_F", "C_Rubberboat"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
+["staticMGs", ["I_G_HMG_02_high_F", "I_G_HMG_02_F"]] call _fnc_saveToTemplate;
 ["staticAT", ["I_static_AT_F"]] call _fnc_saveToTemplate;
 private _staticAA = ["I_static_AA_F"];
 ["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
@@ -43,9 +43,15 @@ private _staticAA = ["I_static_AA_F"];
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
 if (_hasWs) then {
-  _vehicleAA = ["I_Tura_Truck_02_aa_lxWS"];
-  _staticAA = ["I_Tura_ZU23_lxWS"];
+    _vehiclesLightUnarmed pushBack "I_G_Offroad_01_armor_base_lxWS";
+    _vehiclesLightArmed pushBack "I_G_Offroad_01_armor_armed_lxWS";
+    _vehiclesAt pushBack "I_G_Offroad_01_armor_AT_lxWS";
+    _vehicleAA pushBack "I_Tura_Truck_02_aa_lxWS";
+    _staticAA = ["I_Tura_ZU23_lxWS"];
 };
+["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
+["vehiclesLightArmed", _vehiclesLightArmed] call _fnc_saveToTemplate;
+["vehiclesAT", _vehiclesAt] call _fnc_saveToTemplate;
 ["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 
@@ -57,38 +63,34 @@ if (_hasWs) then {
 private _shopWs = if (_hasWs) then {
     [
         ["I_UAV_02_lxWS", 3500, "UAV", {tierWar > 2}], 
-        ["I_G_UAV_02_IED_lxWS", 4500, "UAV", {tierWar > 3}],
-        ["I_G_Offroad_01_armor_base_lxWS", 4500, "UNARMEDCAR", {true}],
-        ["I_G_Offroad_01_armor_armed_lxWS", 4500, "ARMEDCAR", {true}],
-        ["I_G_Offroad_01_armor_AT_lxWS", 4500, "ARMEDCAR", {true}]
+        ["I_G_UAV_02_IED_lxWS", 4500, "UAV", {tierWar > 3}]
     ]
 } else {
     []
 };
 
-private _shopApex = if (_hasApex) then {
-    [
-        ["I_C_Offroad_02_unarmed_F", 200, "UNARMEDCAR", {true}], 
-        ["I_C_Offroad_02_LMG_F", 800, "ARMEDCAR", {true}],
-        ["I_C_Offroad_02_AT_F", 1450, "ARMEDCAR", {true}]
-    ]
-} else {
-    []
-};
-
-private _vehiclesBlackMarket = _shopWs + _shopApex + [
+private _vehiclesBlackMarket = _shopWs + [
     ["I_UAV_01_F", 2000, "UAV", {true}],
     ["I_LT_01_AA_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["I_LT_01_scout_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["I_LT_01_cannon_F", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
+    ["I_LT_01_AT_F", 11000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
     ["I_G_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+    ["I_Heli_Light_01_F", 7000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
     ["I_Heli_Light_01_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
 ];
 ["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
 
 ["variants", [
     ["I_LT_01_AA_F", ["Indep_Olive",1]],
+    ["I_LT_01_scout_F", ["Indep_Olive",1]],
+    ["I_LT_01_cannon_F", ["Indep_Olive",1]],
+    ["I_LT_01_AT_F", ["Indep_Olive",1]],
+    ["I_Heli_Light_01_F", ["Black",1]],
     ["I_Heli_Light_01_dynamicLoadout_F", ["Black",1]]
 ]] call _fnc_saveToTemplate;
 
+#include "Aegis_Reb_Vehicle_Attributes.sqf"
 
 ///////////////////////////
 //  Rebel Starting Gear  //
@@ -107,7 +109,8 @@ private _initialRebelEquipment = [
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk",
     "V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F",
-    "Binocular", "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
+    "Binocular", "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
+    "Aegis_V_Ammo_Bandolier_F"
 ];
 
 
@@ -177,7 +180,20 @@ private _rebUniforms = [
     "U_IG_Guerilla2_3"
 ];
 
-["uniforms", _rebUniforms] call _fnc_saveToTemplate;
+private _dlcUniforms = [];
+
+if (_hasWs) then {
+    _dlcUniforms append [
+        "U_lxWS_ION_Casual1",
+        "U_lxWS_ION_Casual2",
+        "U_lxWS_ION_Casual3",
+        "U_lxWS_ION_Casual4",
+        "U_lxWS_ION_Casual5",
+        "U_lxWS_SFIA_deserter"
+    ];
+};
+
+["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
 ["headgear", [
     "H_Booniehat_khk_hs",

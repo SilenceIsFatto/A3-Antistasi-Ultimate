@@ -1,6 +1,6 @@
 		class handguns3cbfcw
 		{
-			displayName = "3CBCW Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(rhs_weap_makarov_pm, 75, PISTOL_STOCK);
@@ -23,7 +23,7 @@
 
 		class smg3cbfcw
 		{
-			displayName = "3CBCW SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uk3cb_ppsh41, 375, RIFLE_STOCK);
@@ -50,7 +50,7 @@
 
 		class rifles3cbfcw
 		{
-			displayName = "3CBCW Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_aks74u, 200, RIFLE_STOCK);
@@ -111,7 +111,7 @@
 
 		class sniperRifles3cbfcw
 		{
-			displayName = "3CBCW Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uk3cb_sks_01, 500, RIFLE_STOCK);
@@ -162,7 +162,7 @@
 
 		class mg3cbfcw
 		{
-			displayName = "3CBCW MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(UK3CB_Bren, 550, RIFLE_STOCK);
@@ -190,7 +190,7 @@
 
 		class specialWeapons3cbfcw 
 		{
-			displayName = "3CBCW Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_m79, 350, RIFLE_STOCK);
@@ -199,7 +199,7 @@
 
 		class launcherMagazines3cbfcw 
 		{
-			displayName = "3CBCW Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class rhs_rpg7_PG7V_mag {
@@ -261,7 +261,7 @@
 
 		class navigation3cbfcw
 		{
-			displayName = "3CBCW GPS, Binoculars, NVGs";
+			displayName = __EVAL(formatText ["%1 %2, %3 %4 %5", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_gps", localize "STR_A3AU_binoculars", localize "STR_A3AU_and", localize "STR_A3AU_nvgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
 
 			ITEM(ItemGPS, 200, NN_STOCK);
@@ -275,7 +275,7 @@
 
 		class underbarrel3cbfcw
 		{
-			displayName = "3CBCW Bipods";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(rhsusf_acc_harris_bipod, 100, 50);
@@ -285,7 +285,7 @@
 
 		class pointers3cbfcw 
 		{
-			displayName = "3CBCW Pointers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(acc_flashlight, 75, PN_STOCK);
@@ -295,7 +295,7 @@
 
 		class muzzles3cbfcw 
 		{
-			displayName = "3CBCW Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(rhs_acc_6p9_suppressor, 200, MZ_STOCK);
@@ -337,7 +337,7 @@
 
 		class optics3cbfcw 
 		{
-			displayName = "3CBCW Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class uk3cb_optic_sro {
@@ -494,7 +494,7 @@
 
 		class magazines3cbfcw 
 		{
-			displayName = "3CBCW Magazines";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_magazines", localize "STR_A3AU_and", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class Laserbatteries 
@@ -1678,7 +1678,7 @@
 
 		class misc3cbfcw 
 		{
-			displayName = "3CBCW Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbfcw", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(rhsgref_hidf_alicepack, 750, MISC_STOCK);

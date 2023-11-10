@@ -1,7 +1,7 @@
 //Galactic Civil War
 
 		class handgunsemp{
-			displayName = "Empire Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(JMSLLTE_dl18pistol, 100, PISTOL_STOCK); //AMMO: JMSLLTE_DL18_20rnd_Mag
@@ -11,7 +11,7 @@
 		};
 
 		class smgemp{
-			displayName = "Empire SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(JMSLLTE_dh17rifle, 170, RIFLE_STOCK); // JMSLLTE_DH17_60Rnd_Mag
@@ -20,7 +20,7 @@
 		};
 		
 		class mgemp{
-			displayName = "Empire MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(JMSLLTE_rt97cBlasterRifle, 550, RIFLE_STOCK); // JMSLLTE_RT97C_150Rnd_Mag
@@ -29,7 +29,7 @@
 		};
 
 		class riflesemp{
-			displayName = "Empire Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(JMSLLTE_a280, 230, RIFLE_STOCK); // JMSLLTE_A280_30rnd_Mag
@@ -44,7 +44,7 @@
 		};
 
 		class sniperriflesemp{
-			displayName = "Empire Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(JMSLLTE_E17DRifle, 700, RIFLE_STOCK); // JMSLLTE_E17d_5Rnd_Mag
@@ -57,7 +57,7 @@
 		};
 
 		class launchersemp{
-			displayName = "Empire Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(JMSLLTE_RPS10_launcher, 300, 25);
@@ -65,7 +65,7 @@
 		}; 
 
 		class launchermagazinesemp{
-			displayName = "Empire Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			ITEM(JMSLLTE_RPS10_Mag, 200, 15);
@@ -74,7 +74,7 @@
 		};
 
 		class magazinesemp{
-			displayName = "Empire Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(JMSLLTE_DL18_20rnd_Mag, 20, MZ_STOCK);
@@ -101,7 +101,7 @@
 		};
 
 		class opticsemp{
-			displayName = "Empire Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_empire", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			ITEM(jmsllte_dh17_bl_scope, 60, MAGAZINE_STOCK);

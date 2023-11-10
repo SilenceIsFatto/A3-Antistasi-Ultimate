@@ -28,7 +28,7 @@ private _hasMarksman = "mark" in A3A_enabledDLC;
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
-["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
+["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	
 ["surrenderCrate", "Box_W_NATO_Wps_F"] call _fnc_saveToTemplate;
 
 ["vehiclesRivalsLightArmed", ["B_ION_Offroad_armed_lxWS"]] call _fnc_saveToTemplate;
@@ -36,7 +36,7 @@ private _hasMarksman = "mark" in A3A_enabledDLC;
 ["vehiclesRivalsTrucks", ["B_ION_Truck_02_covered_lxWS"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsAPCs", ["B_ION_APC_Wheeled_01_command_lxWS", "B_ION_APC_Wheeled_02_hmg_lxWS"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", []] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", "B_ION_Heli_Light_02_unarmed_lxWS"]] call _fnc_saveToTemplate;			
+["vehiclesRivalsHelis", ["B_ION_Heli_Light_02_dynamicLoadout_lxWS"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["ION_UAV_01_lxWS"]] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", ["B_HMG_02_F", "B_HMG_01_F", "B_GMG_01_F"]] call _fnc_saveToTemplate;
@@ -44,7 +44,7 @@ private _hasMarksman = "mark" in A3A_enabledDLC;
 
 ["mortarMagazineHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 
-["handGrenadeAmmo", ["GrenadeHandEast", "GrenadeHandGuer"]] call _fnc_saveToTemplate;
+["handGrenadeAmmo", ["HandGrenade", "MiniGrenade"]] call _fnc_saveToTemplate;
 ["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
 
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
@@ -154,10 +154,10 @@ _loadoutData set ["machineGuns", [
 ["LMG_03_F", "", "saber_light_lxWS", "optic_Holosight_blk_F", ["200Rnd_556x45_Box_F", "200Rnd_556x45_Box_F", "200Rnd_556x45_Box_Tracer_F"], [], ""],
 ["LMG_03_F", "", "saber_light_lxWS", "optic_LRCO_blk_F", ["200Rnd_556x45_Box_F", "200Rnd_556x45_Box_F", "200Rnd_556x45_Box_Tracer_F"], [], ""],
 ["LMG_03_F", "", "saber_light_lxWS", "optic_Hamr", ["200Rnd_556x45_Box_F", "200Rnd_556x45_Box_F", "200Rnd_556x45_Box_Tracer_F"], [], ""],
-["LMG_S77_Compact_lxWS", "", "", "", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], "bipod_01_F_blk"],
-["LMG_S77_Compact_lxWS", "", "saber_light_lxWS", "optic_Holosight_blk_F", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], "bipod_01_F_blk"],
-["LMG_S77_Compact_lxWS", "", "saber_light_lxWS", "optic_Hamr", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], "bipod_01_F_blk"],
-["LMG_S77_Compact_lxWS", "", "saber_light_lxWS", "optic_LRCO_blk_F", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], "bipod_01_F_blk"],
+["LMG_S77_Compact_lxWS", "", "", "", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+["LMG_S77_Compact_lxWS", "", "saber_light_lxWS", "optic_Holosight_blk_F", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+["LMG_S77_Compact_lxWS", "", "saber_light_lxWS", "optic_Hamr", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
+["LMG_S77_Compact_lxWS", "", "saber_light_lxWS", "optic_LRCO_blk_F", ["100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_lxWS", "100Rnd_762x51_S77_Red_Tracer_lxWS"], [], ""],
 ["LMG_Mk200_black_F", "", "saber_light_lxWS", "optic_Holosight_blk_F", ["200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box_Tracer"], [], "bipod_01_F_blk"],
 ["LMG_Mk200_black_F", "", "saber_light_lxWS", "optic_Hamr", ["200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box_Tracer"], [], "bipod_01_F_blk"],
 ["LMG_Mk200_black_F", "", "saber_light_lxWS", "optic_LRCO_blk_F", ["200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box_Tracer"], [], "bipod_01_F_blk"],
@@ -165,10 +165,10 @@ _loadoutData set ["machineGuns", [
 ["arifle_SPAR_02_blk_F", "", "saber_light_lxWS", "optic_Holosight_blk_F", ["150Rnd_556x45_Drum_Mag_F", "150Rnd_556x45_Drum_Mag_F", "150Rnd_556x45_Drum_Mag_Tracer_F"], [], "bipod_01_F_blk"],
 ["arifle_SPAR_02_blk_F", "", "saber_light_lxWS", "optic_Hamr", ["150Rnd_556x45_Drum_Mag_F", "150Rnd_556x45_Drum_Mag_F", "150Rnd_556x45_Drum_Mag_Tracer_F"], [], "bipod_01_F_blk"],
 ["arifle_SPAR_02_blk_F", "", "saber_light_lxWS", "optic_LRCO_blk_F", ["150Rnd_556x45_Drum_Mag_F", "150Rnd_556x45_Drum_Mag_F", "150Rnd_556x45_Drum_Mag_Tracer_F"], [], "bipod_01_F_blk"],
-["arifle_XMS_Base_lxWS", "", "", "", ["75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_green_lxWS"], [], "bipod_01_F_blk"],
-["arifle_XMS_Base_lxWS", "", "saber_light_lxWS", "optic_Holosight_blk_F", ["75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_green_lxWS"], [], "bipod_01_F_blk"],
-["arifle_XMS_Base_lxWS", "", "saber_light_lxWS", "optic_Hamr", ["75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_green_lxWS"], [], "bipod_01_F_blk"],
-["arifle_XMS_Base_lxWS", "", "saber_light_lxWS", "optic_LRCO_blk_F", ["75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_green_lxWS"], [], "bipod_01_F_blk"],
+["arifle_XMS_Base_lxWS", "", "", "", ["75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_green_lxWS"], [], ""],
+["arifle_XMS_Base_lxWS", "", "saber_light_lxWS", "optic_Holosight_blk_F", ["75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_green_lxWS"], [], ""],
+["arifle_XMS_Base_lxWS", "", "saber_light_lxWS", "optic_Hamr", ["75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_green_lxWS"], [], ""],
+["arifle_XMS_Base_lxWS", "", "saber_light_lxWS", "optic_LRCO_blk_F", ["75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_lxWS", "75Rnd_556x45_Stanag_green_lxWS"], [], ""],
 ["arifle_MX_SW_Black_F", "", "", "", ["100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag_tracer"], [], "bipod_01_F_blk"],
 ["arifle_MX_SW_Black_F", "", "saber_light_lxWS", "optic_Holosight_blk_F", ["100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag_tracer"], [], "bipod_01_F_blk"],
 ["arifle_MX_SW_Black_F", "", "saber_light_lxWS", "optic_Hamr", ["100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag", "100Rnd_65x39_caseless_black_mag_tracer"], [], "bipod_01_F_blk"],

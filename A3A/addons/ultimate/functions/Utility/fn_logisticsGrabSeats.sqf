@@ -20,7 +20,10 @@
     colour = [0,1,0,1];
 */
 
-params ["_vehicle", ["_unit", player]];
+params [
+	["_vehicle", cursorObject],
+	["_unit", player]
+];
 
 textSize = 0.05;
 iconSize = 1.5;
@@ -40,7 +43,8 @@ private _selectionsCoords = [];
     private _inModelPosition = _vehicle selectionPosition [_x, "FireGeometry", "FirstPoint"];
 
 	private _splitSelections = _x splitString "";
-	private _splitSelection = (_splitSelections select -3) + (_splitSelections select -2) + (_splitSelections select -1); // get the last 3 numbers
+	private _splitSelection = parseNumber ((_splitSelections select -3) + (_splitSelections select -2) + (_splitSelections select -1)) - 1; // get the last 3 numbers, - 1
+	private _splitSelection = str _splitSelection; // I forgot the index starts at 0, so technically it's been outputting the seat index + 1...
 
     if !("cargo" in _x && {!("gunner" in _x)}) then {} else {
         _selectionsCoords pushBack _inModelPosition;

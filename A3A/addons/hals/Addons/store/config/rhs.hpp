@@ -3,7 +3,7 @@
 		///////////////////////////////////////////////////////
 		class handgunsRhs 
 		{
-			displayName = "RHS Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(rhs_weap_makarov_pm, 75, PISTOL_STOCK);
@@ -25,7 +25,7 @@
 
 		class launchersRhs 
 		{
-			displayName = "RHS Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_rpg26, 200, 50);
@@ -55,7 +55,7 @@
 
 		class launcherMagazinesRhs 
 		{
-			displayName = "RHS Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 		
 			class rhs_rpg7_PG7V_mag {
@@ -121,7 +121,7 @@
 
 		class riflesRhs 
 		{
-			displayName = "RHS Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_aks74u, 200, RIFLE_STOCK);
@@ -221,7 +221,7 @@
 
 		class sniperRiflesRhs 
 		{
-			displayName = "RHS Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_m38_rail, 400, RIFLE_STOCK);
@@ -295,7 +295,7 @@
 
 		class mgRhs 
 		{
-			displayName = "RHS MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_m27iar, 1800, RIFLE_STOCK);
@@ -319,7 +319,7 @@
 
 		class smgRhs 
 		{
-			displayName = "RHS SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_pp2000, 600, RIFLE_STOCK);
@@ -337,7 +337,7 @@
 
 		class specialWeaponsRhs 
 		{
-			displayName = "RHS Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(rhs_weap_m79, 350, RIFLE_STOCK);
@@ -349,7 +349,7 @@
 
 		class navigationRhs 
 		{
-			displayName = "RHS GPS, Binoculars, NVGs";
+			displayName = __EVAL(formatText ["%1 %2, %3 %4 %5", localize "STR_A3AU_rhs", localize "STR_A3AU_gps", localize "STR_A3AU_binoculars", localize "STR_A3AU_and", localize "STR_A3AU_nvgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
 
 			ITEM(ItemGPS, 200, NN_STOCK);
@@ -378,7 +378,7 @@
 
 		class underbarrelRhs 
 		{
-			displayName = "RHS Bipods";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_rhs", localize "STR_A3AU_bipods", localize "STR_A3AU_and", localize "STR_A3AU_grips"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(rhs_acc_harris_swivel, 100, 50);
@@ -409,7 +409,7 @@
 
 		class pointersRhs 
 		{
-			displayName = "RHS Pointers";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_rhs", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(acc_flashlight, 75, PN_STOCK);
@@ -442,7 +442,7 @@
 
 		class muzzlesRhs 
 		{
-			displayName = "RHS Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(rhs_acc_6p9_suppressor, 200, MZ_STOCK);
@@ -502,7 +502,7 @@
 
 		class opticsRhs 
 		{
-			displayName = "RHS Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class rhsgref_acc_l1a1_l2a2 {
@@ -868,7 +868,7 @@
 
 		class magazinesRhs 
 		{
-			displayName = "RHS Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class Laserbatteries {
@@ -1719,7 +1719,7 @@
 
 		class miscRhs 
 		{
-			displayName = "RHS Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_rhs", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 			ITEM(B_Bergen_mcamo_F, 900, MISC_STOCK);
 			ITEM(B_Bergen_tna_F, 900, MISC_STOCK);

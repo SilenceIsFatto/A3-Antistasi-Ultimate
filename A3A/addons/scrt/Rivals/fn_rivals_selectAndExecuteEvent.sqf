@@ -44,4 +44,7 @@ switch (_eventType) do {
 	case (ROVINGMORTAR): {
 		[[], "SCRT_fnc_rivals_encounter_rovingMortar"] call A3A_fnc_scheduler;
 	};
+	case (HELIRAID): {
+		[[], "SCRT_fnc_rivals_encounter_heliRaid"] call A3A_fnc_scheduler;
+	};
 };
