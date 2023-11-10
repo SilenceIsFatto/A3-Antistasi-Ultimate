@@ -159,8 +159,8 @@ private _specialUnits = [
     "WBK_Zombine_HLA_2",
     "WBK_Headcrab_Normal",
     "WBK_Antlion_1",
-    "WBK_AntlionGuardian_1"
-    "WBK_Bullsquid_1"
+    "WBK_AntlionGuardian_1",
+    "WBK_Bullsquid_1",
     "WBK_HoundEye_1"
 ];
 
