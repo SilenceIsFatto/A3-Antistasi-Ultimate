@@ -119,8 +119,8 @@ _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["rifles", [
-["hlc_rifle_SG553SB_RIS", "", "", "cup_optic_microt1_low", ["hlc_30Rnd_556x45_EPR_sg550", "hlc_30Rnd_556x45_MDIM_sg550", "hlc_30Rnd_556x45_TDIM_sg550"], [], ""],
-["hlc_rifle_SG553SB", "", "", "", ["hlc_30Rnd_556x45_EPR_sg550", "hlc_30Rnd_556x45_MDIM_sg550", "hlc_30Rnd_556x45_TDIM_sg550"], [], ""]
+["cup_arifle_hk_m27", "", "", "CUP_optic_1P87_RIS", ["CUP_30Rnd_556x45_Emag"], [], ""],
+["cup_arifle_m4a1_moe_short_black", "", "CUP_optic_VortexRazor_UH1_Black", "", ["CUP_30Rnd_556x45_Stanag"], [], ""]
 ]];
 _loadoutData set ["tunedRifles", [
 ["SC_Rifle_AR12", "", "", "cup_optic_compm4", ["SC_35Rnd_762x51_Mag"], [], ""],
@@ -130,11 +130,11 @@ _loadoutData set ["enforcerRifles", [
 ["SC_Rifle_Bastard", "", "", "cup_optic_aimm_microt1_blk", ["SC_200Rnd_338_MagBastard"], [], ""]
 ]];
 _loadoutData set ["carbines", [
-["hlc_rifle_M14dmr_Rail", "", "cup_optic_aimm_microt1_blk", "", ["hlc_20Rnd_762x51_B_M14", "hlc_20Rnd_762x51_Mdim_M14", "CUP_20Rnd_TE1_Red_Tracer_762x51_DMR"], [], ""],
+["CUP_smg_BallisticShield_MP7", "", "cup_optic_aimm_microt1_blk", "", ["CUP_40Rnd_46x30_MP7"], [], ""],
 ["CUP_arifle_DSA_SA58_DMR", "", "", "cup_optic_mars", ["CUP_10Rnd_762x51_FNFAL_M", "CUP_20Rnd_TE1_Red_Tracer_762x51_FNFAL_M", "CUP_20Rnd_TE1_Green_Tracer_762x51_FNFAL_Desert_M"], [], ""]
 ]];
 _loadoutData set ["grenadeLaunchers", [
-["hlc_rifle_SG551SB_TAC_GL", "", "", "cup_optic_1p87_ris", ["hlc_30Rnd_556x45_EPR_sg550", "hlc_30Rnd_556x45_SOST_sg550", "hlc_30Rnd_556x45_MDIM_sg550"], ["CUP_1Rnd_HEDP_M203", "CUP_1Rnd_HE_M203", "ACE_HuntIR_M203"], ""]
+["cup_arifle_hk_m27_ag36", "", "", "CUP_optic_MicroT1_low", ["CUP_30Rnd_556x45_Emag", "CUP_30Rnd_556x45_Emag_Tracer_Yellow"], ["CUP_1Rnd_HEDP_M203", "CUP_1Rnd_HE_M203", "ACE_HuntIR_M203"], ""]
 ]];
 _loadoutData set ["SMGs", [
 ["SC_Rifle_ARG88", "", "", "optre_m7_sight", ["SC_30Rnd_Shrapnel_Mag_Cyan"], [], ""],
@@ -147,7 +147,7 @@ _loadoutData set ["marksmanRifles", [
 ["WBK_BearRebel_Rifle", "", "", "wbk_bearrebel_rifle_scope", ["HL_CivHuntingRifle_Mag"], [], ""]
 ]];
 _loadoutData set ["sniperRifles", [
-["hlc_rifle_SG550Sniper_RIS", "", "", "cup_optic_leupold_vx3", ["hlc_30Rnd_556x45_T_sg550"], [], ""]
+["cup_srifle_m24_blk", "", "", "SC_TSO55", ["CUP_5Rnd_762x51_M24"], [], ""]
 ]];
 _loadoutData set ["sidearms", [
 ["HL_CMB_hgun_USP", "", "", "", ["HL_CMB_18Rnd_9x19_Mag"], [], ""]
