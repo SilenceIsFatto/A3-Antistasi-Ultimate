@@ -363,7 +363,7 @@ _militiaLoadoutData set ["carbines", [
 ["PRACS_galil_SAR", "", "", "", ["PRACS_35rd_Galil_mag", "PRACS_35rd_Galil_mag", "PRACS_35rd_Galil_mag"], [], ""]
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
-["PRACS_g3a3t40", "", "", "rhsusf_acc_eotech_xps3", ["PRACS_20rd_G3_mag", "PRACS_20rd_G3_mag", "PRACS_20rd_G3_mag"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+["rhs_weap_vhsd2_bg", "", "", "rhsusf_acc_eotech_xps3", ["rhsgref_30rnd_556x45_vhs2", "rhsgref_30rnd_556x45_vhs2", "rhsgref_30rnd_556x45_vhs2"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
 ["PRACS_UZI", "", "", "rhsusf_acc_eotech_xps3", [], [], ""],

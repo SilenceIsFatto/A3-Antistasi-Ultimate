@@ -1,6 +1,6 @@
 		class riflesWs 
 		{
-			displayName = "WesternSahara Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ws", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_XMS_Base_lxWS, 700, RIFLE_STOCK);
@@ -56,7 +56,7 @@
 
 		class magazinesWs 
 		{
-			displayName = "WesternSahara Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ws", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			//SLR Rifle grenades

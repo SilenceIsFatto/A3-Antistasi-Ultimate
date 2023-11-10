@@ -1,6 +1,6 @@
 		//FFAA
 		class handgunsffaa{
-			displayName = "FFAA Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(ffaa_armas_fnp9, 110, PISTOL_STOCK); //AMMO: ffaa_9x19_pistola
@@ -10,7 +10,7 @@
 		};
 
 		class smgffaa{
-			displayName = "FFAA SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(ffaa_armas_hkmp5a5, 225, RIFLE_STOCK); // Ammo: ffaa_9x19_mp5
@@ -22,7 +22,7 @@
 		};
 		
 		class mgffaa{
-			displayName = "FFAA MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(ffaa_armas_ameli, 600, RIFLE_STOCK); //Ammo: ffaa_556x45_ameli
@@ -33,7 +33,7 @@
 		};
 
 		class riflesffaa{
-			displayName = "FFAA Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(ffaa_armas_cetme_l, 325, RIFLE_STOCK); //Ammo: ffaa_556x45_cedmel
@@ -53,7 +53,7 @@
 		};
 
 		class sniperriflesffaa{
-			displayName = "FFAA Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(ffaa_armas_cetme_c, 430, RIFLE_STOCK); // Ammo: ffaa_762x51_cedmec
@@ -66,7 +66,7 @@
 		};
 
 		class launchersffaa{
-			displayName = "FFAA Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(ffaa_armas_c90_CR_AM, 500, 25);
@@ -80,7 +80,7 @@
 		}; 
 
 		class muzzlesffaa{
-			displayName = "FFAA Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(ffaa_snds_gt_556, 80, MZ_STOCK);
@@ -88,7 +88,7 @@
 		};
 
 		class magazinesffaa{
-			displayName = "FFAA Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(ffaa_9x19_pistola, 17, MZ_STOCK);
@@ -111,7 +111,7 @@
 		};
 
 		class pointersffaa{
-			displayName = "FFAA Pointers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_pointers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(ffaa_acc_puntero_ir, 70, PN_STOCK);
@@ -119,7 +119,7 @@
 		};
 
 		class opticsffaa{
-			displayName = "FFAA Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_sights"]);
 			picture = "";
 			
 			ITEM(ffaa_optic_acog, 160, MAGAZINE_STOCK);
@@ -138,7 +138,7 @@
 		};
 
 		class underbarrelffaa{
-	     	displayName = "FFAA Grips";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_ffaa", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(ffaa_bipod_g36, 50, 20);

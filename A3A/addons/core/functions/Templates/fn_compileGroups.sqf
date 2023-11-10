@@ -438,3 +438,4 @@ if (_prefix isEqualTo "reb") exitWith {
 _faction set ["unitMan", unit(militia, "Man")];
 _faction set ["unitPress", unit(militia, "Press")];
 _faction set ["unitWorker", unit(militia, "Worker")];
+_faction set ["unitSpecial", unit(militia, "Special")];

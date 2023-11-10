@@ -1,4 +1,4 @@
-if (!(player getUnitTrait "engineer")) exitWith {
+if (!(player call A3A_fnc_isEngineer)) exitWith {
     [localize "STR_antistasi_dialogs_construction_removal_title", localize "STR_antistasi_dialogs_construction_removal_no_trait"] call SCRT_fnc_misc_deniedHint;
     closeDialog 0;
 };

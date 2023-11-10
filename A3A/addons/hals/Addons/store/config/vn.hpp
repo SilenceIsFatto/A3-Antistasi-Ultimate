@@ -1,6 +1,6 @@
 		class handgunsvn
 		{
-			displayName = "VN Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(vn_welrod, 100, PISTOL_STOCK);
@@ -34,7 +34,7 @@
 
 		class smgvn
 		{
-			displayName = "VN SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_vz61, 200, RIFLE_STOCK);
@@ -72,7 +72,7 @@
 
 		class mgvn
 		{
-			displayName = "VN MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m1918, 400, RIFLE_STOCK);
@@ -101,7 +101,7 @@
 
 		class sniperriflesvn
 		{
-			displayName = "VN Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m1891, 450, RIFLE_STOCK);
@@ -149,7 +149,7 @@
 		
 		class riflesvn
 		{
-			displayName = "VN Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m1carbine, 200, RIFLE_STOCK);
@@ -194,7 +194,7 @@
 
 		class launchersvn
 		{
-			displayName = "VN Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(vn_m72, 250, 15);
@@ -210,7 +210,7 @@
 
 		class launchermagazinesvn
 		{
-			displayName = "VN Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class vn_m72_mag {
@@ -246,7 +246,7 @@
 
 		class riflegrenadesvn
 		{
-			displayName = "VN Rifle Grenades";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class vn_22mm_n94_heat_mag {
@@ -313,7 +313,7 @@
 
 		class muzzlesvn
 		{
-			displayName = "VN Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(vn_s_mk22, 100, MZ_STOCK);
@@ -334,7 +334,7 @@
 
 		class underbarrelvn
 		{
-			displayName = "VN Bipods";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_bipods", localize "STR_A3AU_and", localize "STR_A3AU_camouflage"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(vn_b_camo_m9130, 10, 50);
@@ -354,7 +354,7 @@
 
 		class specialWeaponsvn 
 		{
-			displayName = "VN Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(vn_m79, 500, RIFLE_STOCK);
@@ -450,7 +450,7 @@
 
 		class pointersvn 
 		{
-			displayName = "VN Pointers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(vn_b_carbine, 50, PN_STOCK);
@@ -468,7 +468,7 @@
 
 		class magazinesvn 
 		{
-			displayName = "VN Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			ITEM(vn_mk1_udg_mag, 50, MZ_STOCK);
@@ -653,7 +653,7 @@
 
 		class miscvn 
 		{
-			displayName = "VN Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_vn", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(IEDUrbanSmall_Remote_Mag, 500, MISC_STOCK);

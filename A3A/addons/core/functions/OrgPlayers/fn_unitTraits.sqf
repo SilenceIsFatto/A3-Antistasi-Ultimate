@@ -31,7 +31,8 @@ if(roleDescription player isEqualTo "@STR_role_default_commander_role_name" || {
     player setUnitTrait ["loadCoef",1];
     player setUnitTrait ["medic", true];
     player setUnitTrait ["explosiveSpecialist", true];
-	player setUnitTrait ["engineer", true];
+    // ACE clears the engineer unitTrait and adds this var at CBA initPost, so we have to do it ourselves; Credit: https://github.com/official-antistasi-community/A3-Antistasi/pull/2978/files
+    if (missionNamespace getVariable ["ace_repair_enabled", false]) then { player setVariable ["ace_isEngineer", true, true] } else { player setUnitTrait ["engineer", true] };
 	player setUnitTrait ["UAVHacker",true];
     _text = localize "STR_role_default_commander";
 } else {

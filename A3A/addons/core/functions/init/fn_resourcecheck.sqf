@@ -217,7 +217,7 @@ while {true} do {
 				["TaskSucceeded", ["", format [localize "STR_notifiers_city_rebuilt",_nameX]]] remoteExec ["BIS_fnc_showNotification",[teamPlayer,civilian]];
 				sleep 2;
 			};
-		} forEach (destroyedSites - citiesX) select {sidesX getVariable [_x,sideUnknown] != teamPlayer};
+		} forEach ((destroyedSites - citiesX) select {sidesX getVariable [_x,sideUnknown] != teamPlayer});
 		if (_changingX) then {publicVariable "destroyedSites"};
 	};
 	sleep 4;

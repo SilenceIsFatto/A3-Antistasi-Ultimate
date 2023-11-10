@@ -1,6 +1,6 @@
 		//OPTRE
 		class handgunshalo{
-			displayName = "OPTRE Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(OPTRE_M6B, 110, PISTOL_STOCK); //AMMO: OPTRE_8Rnd_127x40_Mag
@@ -11,20 +11,19 @@
 		};
 
 		class smghalo{
-			displayName = "OPTRE SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(OPTRE_M45, 225, RIFLE_STOCK); // Ammo: OPTRE_6Rnd_8Gauge_Pellets
 			ITEM(OPTRE_M45A, 425, RIFLE_STOCK); // Ammo: OPTRE_6Rnd_8Gauge_Pellets
 			ITEM(OPTRE_M45E, 250, RIFLE_STOCK); // Ammo: OPTRE_6Rnd_8Gauge_Pellets
 			ITEM(OPTRE_M7, 250, RIFLE_STOCK); // Ammo: OPTRE_60Rnd_5x23mm_Mag
-			ITEM(OPTRE_M12_SOC, 350, RIFLE_STOCK); // Ammo: OPTRE_64Rnd_57x31_Mag
 			ITEM(OPTRE_MA37K, 400, RIFLE_STOCK); // Ammo: OPTRE_32Rnd_762x51_Mag
 			ITEM(OPTRE_MA5K, 400, RIFLE_STOCK); // Ammo: OPTRE_32Rnd_762x51_Mag
 		};
 		
 		class mghalo{
-			displayName = "OPTRE MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(OPTRE_HMG38, 600, RIFLE_STOCK); //Ammo: OPTRE_40Rnd_30x06_Mag
@@ -33,7 +32,7 @@
 		};
 
 		class rifleshalo{
-			displayName = "OPTRE Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(OPTRE_BR37, 325, RIFLE_STOCK); //Ammo: OPTRE_10RND_338_SP
 			ITEM(OPTRE_BR45, 345, RIFLE_STOCK); //Ammo: OPTRE_36Rnd_95x40_Mag
@@ -64,7 +63,7 @@
 		};
 
 		class sniperrifleshalo{
-			displayName = "OPTRE Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(OPTRE_Commando_Black, 400, RIFLE_STOCK); // Ammo: Commando_20Rnd_65_Mag
@@ -80,13 +79,13 @@
 		};
 
 		class launchershalo{
-			displayName = "OPTRE Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			ITEM(OPTRE_M41_SSR, 500, 25); 
 		}; 
 
 		class launchermagazineshalo{
-			displayName = "OPTRE Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(OPTRE_M41_Twin_HE, 100, 15);
 			ITEM(OPTRE_M41_Twin_HEAP, 150, 15);
@@ -98,7 +97,7 @@
 		};
 
 		class riflegrenadeshalo{
-			displayName = "OPTRE Rifle Grenades";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			ITEM(1Rnd_HE_Grenade_shell, 70, 25);
 			ITEM(1Rnd_Smoke_Grenade_shell, 50, 25);
@@ -106,7 +105,7 @@
 		};
 
 		class muzzleshalo{
-			displayName = "OPTRE Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			ITEM(optre_ma5suppressor, 80, MZ_STOCK);
 			ITEM(optre_m12_suppressor, 80, MZ_STOCK);
@@ -117,7 +116,7 @@
 		};
 
 		class magazineshalo{
-			displayName = "OPTRE Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(OPTRE_8Rnd_127x40_Mag, 17, MZ_STOCK);
@@ -126,7 +125,6 @@
             ITEM(16Rnd_10mm_Ball, 25, MZ_STOCK);
             ITEM(OPTRE_6Rnd_8Gauge_Pellets, 25, MZ_STOCK);
             ITEM(OPTRE_60Rnd_5x23mm_Mag, 65, MZ_STOCK);
-            ITEM(OPTRE_64Rnd_57x31_Mag, 55, MZ_STOCK);
             ITEM(OPTRE_32Rnd_762x51_Mag, 30, MZ_STOCK);
             ITEM(OPTRE_40Rnd_30x06_Mag, 35, MZ_STOCK);
             ITEM(OPTRE_100Rnd_762x51_Box, 62, MZ_STOCK);
@@ -144,7 +142,7 @@
 		};
 
 		class mischalo{
-			displayName = "OPTRE Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			// Spartan gear
@@ -185,7 +183,7 @@
 		};
 
 		class pointershalo{
-			displayName = "OPTRE Pointers";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_optre", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(optre_bmr_laser, 70, PN_STOCK);
@@ -198,7 +196,7 @@
 		};
 
 		class specialweaponshalo{
-			displayName = "OPTRE Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(OPTRE_M319, 300, RIFLE_STOCK);
 			ITEM(OPTRE_M319n, 400, RIFLE_STOCK);
@@ -207,7 +205,7 @@
 		};
 
 		class opticshalo{
-			displayName = "OPTRE Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_sights"]);
 			picture = "";
 			ITEM(optre_br45_scope, 150, MAGAZINE_STOCK);
 			ITEM(optre_br55hb_scope, 150, MAGAZINE_STOCK);
@@ -227,7 +225,7 @@
 		};
 
 		class underbarrelhalo{
-	     	displayName = "OPTRE Grips";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_optre", localize "STR_A3AU_grips"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(optre_br45grip, 50, 20);

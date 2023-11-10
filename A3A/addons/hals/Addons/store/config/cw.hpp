@@ -1,7 +1,7 @@
 //Clone Wars
 
 		class handgunscw{
-			displayName = "CW Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(SWLW_DC15SA, 110, PISTOL_STOCK); //AMMO: SWLW_DC15SA_Mag
@@ -26,7 +26,7 @@
 		};
 
 		class smgcw{
-			displayName = "CW SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SWLW_E5, 185, RIFLE_STOCK); // SWLW_E5_Mag
@@ -45,7 +45,7 @@
 		};
 		
 		class mgcw{
-			displayName = "CW MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(SWLW_LS150, 550, RIFLE_STOCK); // SWLW_LS150_mag
@@ -70,7 +70,7 @@
 		};
 
 		class riflescw{
-			displayName = "CW Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(SWLW_DC15A, 225, RIFLE_STOCK); // SWLW_DC15A_Mag
@@ -103,7 +103,7 @@
 		};
 
 		class sniperriflescw{
-			displayName = "CW Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SWLW_sniper, 580, RIFLE_STOCK); // SWLW_sniper_Mag
@@ -119,7 +119,7 @@
 		};
 
 		class launcherscw{
-			displayName = "CW Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(ls_weapon_rps6_disposable, 200, 25);
@@ -146,7 +146,7 @@
 		}; 
 
 		class launchermagazinescw{
-			displayName = "CW Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(ls_mag_rpg_1rnd, 200, 15);
@@ -174,7 +174,7 @@
 		};
 
 		class riflegrenadescw{
-			displayName = "CW Rifle Grenades";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(SWLW_DC15A_UGL_Mag, 70, 25);
@@ -187,7 +187,7 @@
 		};
 
 		class muzzlescw{
-			displayName = "CW Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(swlw_attachment_dc17m_at, 90, MZ_STOCK);
@@ -199,7 +199,7 @@
 		};
 
 		class magazinescw{
-			displayName = "CW Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(SWLW_DC15SA_Mag, 15, MZ_STOCK);
@@ -274,7 +274,7 @@
 		};
 
 		class misccw{
-			displayName = "CW Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(SWLW_clones_spec_demo_mag, 450, MISC_STOCK);
@@ -311,7 +311,7 @@
 		};
 
 		class pointerscw{
-			displayName = "CW Binoculars, NVGs";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_cw", localize "STR_A3AU_binoculars", localize "STR_A3AU_and", localize "STR_A3AU_nvgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(SWLB_clone_commander_binocular, 70, PN_STOCK);
@@ -331,14 +331,14 @@
 		};
 
 		class specialweaponscw{
-			displayName = "CW Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			ITEM(3AS_Flamer_Base, 300, RIFLE_STOCK); // 3AS_FlamerFuel
 			ITEM(SWLW_GL, 800, RIFLE_STOCK); // SWLW_mag_40mm_1rnd
 		};
 
 		class opticscw{
-			displayName = "CW Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_sights"]);
 			picture = "";
 			
 			ITEM(swlw_attachment_scope_dc17m_sniper, 80, MAGAZINE_STOCK);
@@ -365,7 +365,7 @@
 		};
 
 		class underbarrelcw{
-	     	displayName = "CW Bipods";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cw", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(bipod_01_F_blk, 30, 20);

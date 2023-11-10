@@ -228,7 +228,8 @@ if (_varName in specialVarLoads) then {
                 garrison setVariable [_marker, _garrison, true];
                 if (count _x > 2) then { garrison setVariable [_marker + "_lootCD", _x select 2, true] };
                 if (count _x > 3) then { garrison setVariable [_marker + "_powCD", _x select 3, true] };
-            } forEach _varvalue;
+                if (count _x > 4) then { garrison setVariable [_marker + "_samDestroyedCD", _x select 4, true] }; 
+			} forEach _varvalue;
         };
 
         case 'wurzelGarrison': {

@@ -1,7 +1,7 @@
 
 		class handguns3cbf
 		{
-			displayName = "3CBF Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 
@@ -13,7 +13,7 @@
 
 		class launchers3cbf
 		{
-			displayName = "3CBF Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(UK3CB_Blowpipe, 500, 50);
@@ -22,7 +22,7 @@
 
 		class smg3cbf
 		{
-			displayName = "3CBF SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(uk3cb_ppsh41, 375, RIFLE_STOCK);
@@ -52,7 +52,7 @@
 
 		class rifles3cbf
 		{
-			displayName = "3CBF Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(UK3CB_M16A1, 400, RIFLE_STOCK);
@@ -120,7 +120,7 @@
 
 		class sniperRifles3cbf
 		{
-			displayName = "3CBF Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(UK3CB_Enfield_Rail, 450, RIFLE_STOCK);
@@ -166,7 +166,7 @@
 
 		class mg3cbf
 		{
-			displayName = "3CBF MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(UK3CB_Bren, 550, RIFLE_STOCK);
@@ -189,7 +189,7 @@
 		
 		class additionalMagazines3cbf
 		{
-			displayName = "3CBF Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			ITEM(UK3CB_CZ75_9_20Rnd, 75, MAGAZINE_STOCK);
@@ -709,7 +709,7 @@
 
 		class additionalScopes3cbf 
 		{
-			displayName = "3CBF Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class uk3cb_optic_sro {
@@ -744,7 +744,7 @@
 
 		class additionalMuzzles3cbf 
 		{
-			displayName = "3CBF Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_3cbf", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(uk3cb_muzzle_snds_g3, 450, MZ_STOCK);

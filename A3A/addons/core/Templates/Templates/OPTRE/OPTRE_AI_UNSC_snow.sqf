@@ -337,7 +337,7 @@ _policeLoadoutData set ["helmets", ["OPTRE_CMA_Helmet_ear", "OPTRE_CMA_Helmet_ch
 _policeLoadoutData set ["NVGs", ["OPTRE_NVG_UAB_HUL", "OPTRE_NVG_UAB_UL_HUL"]];
 
 _policeLoadoutData set ["SMGs", [
-["OPTRE_M12_SOC", "", "", "optre_m393_eotech", [], [], ""]
+["OPTRE_MA37K", "", "", "", ["OPTRE_32Rnd_762x51_Mag"], [], ""]
 ]];
 _policeLoadoutData set ["sidearms", ["OPTRE_M6G"]];
 
@@ -361,7 +361,7 @@ _militiaLoadoutData set ["grenadeLaunchers", [
 ["OPTRE_M319", "", "", "", ["M319_HE_Grenade_Shell", "M319_Smoke", "OPTRE_signalSmokeB"], [], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
-["OPTRE_M12_SOC", "", "", "optre_m393_eotech", [], [], ""]
+["OPTRE_MA37K", "", "", "", ["OPTRE_32Rnd_762x51_Mag"], [], ""]
 ]];
 _militiaLoadoutData set ["machineGuns", [
 ["OPTRE_M73", "", "", "", ["OPTRE_100Rnd_95x40_Box", "OPTRE_100Rnd_95x40_Box", "OPTRE_100Rnd_95x40_Box"], [], "bipod_01_F_blk"]

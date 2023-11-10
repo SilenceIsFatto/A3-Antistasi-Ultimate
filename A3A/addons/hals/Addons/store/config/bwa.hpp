@@ -1,6 +1,6 @@
 		// BWMod
 		class handgunsbwa{
-			displayName = "BWMod Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(BWA3_P12, 110, PISTOL_STOCK); //AMMO: BWA3_12Rnd_45ACP_P12
@@ -10,7 +10,7 @@
 		};
 
 		class smgbwa{
-			displayName = "BWMod SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(BWA3_MP7, 225, RIFLE_STOCK); // Ammo: BWA3_40Rnd_46x30_MP7 BWA3_20Rnd_46x30_MP7
@@ -18,7 +18,7 @@
 		};
 		
 		class mgbwa{
-			displayName = "BWMod MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
 
 			ITEM(BWA3_MG3, 600, RIFLE_STOCK); //Ammo: BWA3_120Rnd_762x51	BWA3_120Rnd_762x51_Tracer
@@ -29,7 +29,7 @@
 		};
 
 		class riflesbwa{
-			displayName = "BWMod Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 			
 			ITEM(BWA3_G36A1, 325, RIFLE_STOCK); //Ammo: BWA3_30Rnd_556x45_G36
@@ -79,7 +79,7 @@
 		};
 
 		class sniperriflesbwa{
-			displayName = "BWMod Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(BWA3_G27, 670, RIFLE_STOCK); // Ammo: BWA3_20Rnd_762x51_G28_LR	BWA3_20Rnd_762x51_G28_SD
@@ -92,7 +92,7 @@
 		};
 
 		class launchersbwa{
-			displayName = "BWMod Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 			
 			ITEM(BWA3_Bunkerfaust_Loaded, 500, 25); 
@@ -104,7 +104,7 @@
 		}; 
 
 		class launchermagazinesbwa{
-			displayName = "BWMod Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(BWA3_CarlGustav_HE, 150, 15);
@@ -117,7 +117,7 @@
 		};
 
 		class muzzlesbwa{
-			displayName = "BWMod Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 			
 			ITEM(bwa3_muzzle_snds_rotex_iia, 80, MZ_STOCK);
@@ -133,7 +133,7 @@
 		};
 
 		class magazinesbwa{
-			displayName = "BWMod Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 			
 			ITEM(BWA3_12Rnd_45ACP_P12, 15, MZ_STOCK);
@@ -166,7 +166,7 @@
 		};
 
 		class pointersbwa{
-			displayName = "BWMod Pointers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_pointers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(bwa3_acc_varioray_irlaser_black, 70, PN_STOCK);
@@ -179,7 +179,7 @@
 		};
 
 		class opticsbwa{
-			displayName = "BWMod Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_sights"]);
 			picture = "";
 			
 			ITEM(bwa3_optic_pmii_shortdotcc, 250, MAGAZINE_STOCK);
@@ -227,7 +227,7 @@
 		};
 
 		class underbarrelbwa{
-	     	displayName = "BWMod Bipods";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_bwa", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(bwa3_bipod_harris, 50, 20);

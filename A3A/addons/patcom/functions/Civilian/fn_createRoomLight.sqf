@@ -18,7 +18,13 @@
 
     License: MIT License
 */
+#include "..\..\script_component.hpp"
+
 params ["_building"];
+
+private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
+
+if (_lowCiv) exitWith {};
 
 private _colours = [[255,217,66],[255,162,41],[221,219,206]];
 private _colour = _colours select (random((count _colours)-1));

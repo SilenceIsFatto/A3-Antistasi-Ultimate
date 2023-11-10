@@ -108,7 +108,7 @@
             <Key ID="STR_antistasi_mission_info_Malden_mapname_short_text">
                 <Original>Antistasi Ultimate - Malden Elegy</Original>
                 <German>Antistasi Ultimate - Malden Elegie</German>
-                <Russian>Antistasi Ultimate - Элегия Малд.</Russian>
+                <Russian>Antistasi Ultimate - Элегия Малдена</Russian>
                 <Chinesesimp>Antistasi Ultimate - 马尔登悲歌</Chinesesimp>
                 <Korean>안티스타시 플러스 - 몰든의 애가</Korean>
             </Key>
@@ -310,7 +310,7 @@
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_blurb_text">
                 <Original>A pack of old men in a job where people die young.</Original>
-                <Russian>Стая стариков там, где люди умирают молодыми.</Russian>
+                <Russian>Там, где молодые умирают, в бой идут старики.</Russian>
                 <Chinesesimp>一群老人从事英年早逝的工作。</Chinesesimp>
                 <Korean>사람들이 젊어서 죽는 직업의 노인들.</Korean>
             </Key>
@@ -347,7 +347,7 @@
             </Key>
             <Key ID="STR_antistasi_mission_info_khesanh_blurb_text">
                 <Original>“In this world, a man himself is nothing. And there ain't no world but this one.”</Original>
-                <Russian>„В этом мире человек, сам по себе - ничто. И нет другого мира, кроме этого."</Russian>
+                <Russian>“В этом мире человек, сам по себе - ничто. И нет другого мира, кроме этого.”</Russian>
                 <Chinesesimp>只有这个世界，一个人什么都不是。</Chinesesimp>
                 <Korean>"이 세상에서 인간 그 자체는 아무것도 아니다. 그리고 이 세계 외에는 다른 세계는 없다." </Korean>
             </Key>
@@ -404,7 +404,72 @@
 			</Key>
 			<Key ID="STR_antistasi_mission_info_SPE_Normandy_blurb_text">
 				<Original>Vive la résistance!</Original>
+                <Russian>Vive la résistance!</Russian>
 			</Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_name">
+                <Original>Automatically load last valid save after delay</Original>
+                <Russian>Автоматически загружать последнее сохранение после задержки</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_no_automatic_load">
+                <Original>No automatic load</Original>
+                <Russian>Не загружать автоматически</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_1min">
+                <Original>1 min</Original>
+                <Russian>1 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_2min">
+                <Original>2 min</Original>
+                <Russian>2 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_3min">
+                <Original>3 min</Original>
+                <Russian>3 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_5min">
+                <Original>5 min</Original>
+                <Russian>5 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_10min">
+                <Original>10 min</Original>
+                <Russian>10 мин</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_name">
+                <Original>Logging Level during setup</Original>
+                <Russian>Уровень логгирования</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_Error">
+                <Original>Error</Original>
+                <Russian>Ошибки</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_Info">
+                <Original>Info</Original>
+                <Russian>Информация</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_Debug">
+                <Original>Debug</Original>
+                <Russian>Дебаг</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_LogLevel_Verbose">
+                <Original>Verbose</Original>
+                <Russian>Подробный</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_name">
+                <Original>Log debug console use during setup</Original>
+                <Russian>Логгировать использование дебаг консоли</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_None">
+                <Original>None</Original>
+                <Russian>Не логировать никого</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_All_none_dev">
+                <Original>All none dev</Original>
+                <Russian>Логгировать не-разработчиков</Russian>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_journal_A3A_logDebugConsole_Dev">
+                <Original>Dev</Original>
+                <Russian>Логгировать всех</Russian>
+            </Key>
         </Container>
     </Package>
 </Project>

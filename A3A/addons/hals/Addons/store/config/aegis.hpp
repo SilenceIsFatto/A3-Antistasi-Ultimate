@@ -3,7 +3,7 @@
 		///////////////////////////////////////////////////////
 		class handgunsAegis 
 		{
-			displayName = "Aegis Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 			ITEM(hgun_Pistol_heavy_01_F, 450, PISTOL_STOCK);
 			ITEM(hgun_Pistol_heavy_01_green_F, 450, PISTOL_STOCK);
@@ -21,7 +21,7 @@
 
 		class launchersAegis 
 		{
-			displayName = "Aegis Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(launch_RPG7_F, 650, LAUNCHER_STOCK);
@@ -60,7 +60,7 @@
 
 		class riflesAegis 
 		{
-			displayName = "Aegis Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_AKS_F, 250, RIFLE_STOCK);
@@ -89,7 +89,24 @@
 			ITEM(arifle_AUG_F, 750, RIFLE_STOCK);
 			ITEM(arifle_AUG_GL_F, 850, RIFLE_STOCK);
 
+			ITEM(Aegis_arifle_M4A1_short_F, 800, RIFLE_STOCK);
+			ITEM(Aegis_arifle_M4A1_short_khaki_F, 800, RIFLE_STOCK);
+			ITEM(Aegis_arifle_M4A1_short_sand_F, 800, RIFLE_STOCK);
+
+			ITEM(Aegis_arifle_M4A1_F, 800, RIFLE_STOCK);
+			ITEM(Aegis_arifle_M4A1_khaki_F, 800, RIFLE_STOCK);
+			ITEM(Aegis_arifle_M4A1_sand_F, 800, RIFLE_STOCK);
+
+			ITEM(Aegis_arifle_M4A1_grip_F, 850, RIFLE_STOCK);
+			ITEM(Aegis_arifle_M4A1_grip_khaki_F, 850, RIFLE_STOCK);
+			ITEM(Aegis_arifle_M4A1_grip_sand_F, 850, RIFLE_STOCK);
+
+			ITEM(Aegis_arifle_M4A1_GL_F, 1100, RIFLE_STOCK);
+			ITEM(Aegis_arifle_M4A1_GL_khaki_F, 1100, RIFLE_STOCK);
+			ITEM(Aegis_arifle_M4A1_GL_sand_F, 1100, RIFLE_STOCK);
+
 			ITEM(Opf_arifle_SKS_F, 500, RIFLE_STOCK);
+			ITEM(Opf_arifle_SKS_oak_F, 500, RIFLE_STOCK);
 
 			ITEM(arifle_AKM_F, 700, RIFLE_STOCK);
 
@@ -250,7 +267,7 @@
 
 		class specialWeaponsAegis 
 		{
-			displayName = "Aegis Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(GL_XM25_F, 1500, RIFLE_STOCK);
@@ -271,11 +288,9 @@
 			ITEM(glaunch_GLX_tan_lxWS, 600, RIFLE_STOCK);
 		};
 
-
-
 		class mgAegis 
 		{
-			displayName = "Aegis MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_RPK_F, 900, RIFLE_STOCK);
@@ -331,7 +346,7 @@
 
 		class sniperRiflesAegis 
 		{
-			displayName = "Aegis Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(srifle_DMR_07_blk_F, 1450, RIFLE_STOCK);
@@ -366,9 +381,17 @@
 			ITEM(srifle_EBR_khk_F, 2550, RIFLE_STOCK);
 			ITEM(srifle_EBR_cbr_F, 2550, RIFLE_STOCK);
 
-			ITEM(arifle_SPAR_03_blk_F, 1800, RIFLE_STOCK);
-			ITEM(arifle_SPAR_03_khk_F, 1800, RIFLE_STOCK);
-			ITEM(arifle_SPAR_03_snd_F, 1800, RIFLE_STOCK);
+			ITEM(Aegis_arifle_SR25_MR_blk_F, 2400, RIFLE_STOCK);
+			ITEM(Aegis_arifle_SR25_MR_khk_F, 2400, RIFLE_STOCK);
+			ITEM(Aegis_arifle_SR25_MR_snd_F, 2400, RIFLE_STOCK);
+
+			ITEM(Aegis_arifle_SR25_blk_F, 2400, RIFLE_STOCK);
+			ITEM(Aegis_arifle_SR25_khk_F, 2400, RIFLE_STOCK);
+			ITEM(Aegis_arifle_SR25_snd_F, 2400, RIFLE_STOCK);
+
+			ITEM(arifle_SPAR_03_blk_F, 2800, RIFLE_STOCK);
+			ITEM(arifle_SPAR_03_khk_F, 2800, RIFLE_STOCK);
+			ITEM(arifle_SPAR_03_snd_F, 2800, RIFLE_STOCK);
 
 			ITEM(srifle_DMR_02_F, 4250, 10);
 			ITEM(srifle_DMR_02_camo_F, 4250, 10);
@@ -399,7 +422,7 @@
 
 		class smgAegis 
 		{
-			displayName = "Aegis SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(SMG_03C_TR_black, 350, RIFLE_STOCK);
@@ -434,9 +457,313 @@
 			ITEM(SMG_01_khk_F, 200, RIFLE_STOCK);
 		};
 
+		class pointersAegis 
+		{
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_Aegis", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(acc_flashlight, 75, PN_STOCK);
+			ITEM(acc_flashlight_ir, 100, PN_STOCK);
+			ITEM(acc_flashlight_smg_01, 75, PN_STOCK);
+			ITEM(acc_pointer_IR, 100, PN_STOCK);
+			ITEM(acc_flashlight_pistol, 75, PN_STOCK);
+			ITEM(Aegis_acc_pointer_compact_green, 100, PN_STOCK);
+			ITEM(Aegis_acc_pointer_compact_red, 100, PN_STOCK);
+
+			ITEM(Aegis_acc_pointer_DM, 250, PN_STOCK);
+			ITEM(Aegis_acc_pointer_DM_Arid, 250, PN_STOCK);
+			ITEM(Aegis_acc_pointer_DM_Khaki, 250, PN_STOCK);
+			ITEM(Aegis_acc_pointer_DM_Lush, 250, PN_STOCK);
+			ITEM(Aegis_acc_pointer_DM_Sand, 250, PN_STOCK);
+		};
+
+		class muzzlesAegis 
+		{
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_muzzles"]);
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
+
+			ITEM(muzzle_snds_338_black, 500, MZ_STOCK); //5
+			ITEM(muzzle_snds_338_green, 500, MZ_STOCK);
+			ITEM(muzzle_snds_338_sand, 500, MZ_STOCK);
+			ITEM(muzzle_snds_93mmg, 600, MZ_STOCK); //4
+			ITEM(muzzle_snds_93mmg_tan, 600, MZ_STOCK);
+			ITEM(muzzle_snds_acp, 150, MZ_STOCK);
+			ITEM(muzzle_snds_B, 200, MZ_STOCK);//3
+			ITEM(muzzle_snds_B_khk_F, 200, MZ_STOCK);
+			ITEM(muzzle_snds_B_snd_F, 200, MZ_STOCK);
+			ITEM(muzzle_snds_H, 200, MZ_STOCK);//2
+			ITEM(muzzle_snds_H_khk_F, 200, MZ_STOCK);//2
+			ITEM(muzzle_snds_H_snd_F, 200, MZ_STOCK);
+			ITEM(muzzle_snds_H_MG, 200, MZ_STOCK);
+			ITEM(muzzle_snds_H_SW, 200, MZ_STOCK);
+			ITEM(muzzle_snds_L, 200, MZ_STOCK);//1
+			ITEM(muzzle_snds_M, 200, MZ_STOCK);
+			ITEM(muzzle_snds_58_blk_F, 150, MZ_STOCK);//1
+			ITEM(muzzle_snds_m_khk_F, 200, MZ_STOCK);
+			ITEM(muzzle_snds_m_snd_F, 200, MZ_STOCK);
+			ITEM(muzzle_snds_58_wdm_F, 150, MZ_STOCK);//1
+			ITEM(muzzle_snds_58_ghex_F, 150, MZ_STOCK);
+			ITEM(muzzle_snds_58_hex_F, 150, MZ_STOCK);
+			ITEM(muzzle_snds_65_TI_blk_F, 350, MZ_STOCK); //2
+			ITEM(muzzle_snds_65_TI_hex_F, 350, MZ_STOCK);
+			ITEM(muzzle_snds_65_TI_ghex_F, 350, MZ_STOCK);
+			ITEM(muzzle_snds_H_MG_blk_F, 200, MZ_STOCK);
+			ITEM(muzzle_snds_H_MG_khk_F, 200, MZ_STOCK);
+
+			ITEM(muzzle_mzls_M, 300, MZ_STOCK);
+			ITEM(muzzle_mzls_B, 300, MZ_STOCK);
+
+			ITEM(aegis_muzzle_snds_sr25_blk, 450, MZ_STOCK);
+			ITEM(aegis_muzzle_snds_sr25_khk, 450, MZ_STOCK);
+			ITEM(aegis_muzzle_snds_sr25_snd, 450, MZ_STOCK);
+		};
+
+		class opticsAegis 
+		{
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_sights"]);
+			picture = "A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\ItemOptic_ca.paa";
+
+			class optic_tws {
+				price = 2000;
+				stock = 5;
+			};
+			class optic_tws_mg {
+				price = 2000;
+				stock = 5;
+			};
+			class optic_tws_sniper {
+				price = 2000;
+				stock = 5;
+			};
+			class optic_Hamr_khk_F {
+				price = 700;
+				stock = 100;
+			};
+			class optic_SOS_khk_F {
+				price = 800;
+				stock = 100;
+			};
+			class optic_LRCO_blk_F {
+				price = 500;
+				stock = 100;
+			};
+			class optic_LRCO_snd_F {
+				price = 500;
+				stock = 100;
+			};
+			class optic_Arco_ghex_F {
+				price = 650;
+				stock = 100;
+			};
+			class optic_Arco_blk_F {
+				price = 650;
+				stock = 100;
+			};
+			class optic_Arco_AK_blk_F {
+				price = 650;
+				stock = 100;
+			};
+			class optic_Arco_AK_lush_F {
+				price = 650;
+				stock = 100;
+			};
+			class optic_Arco_AK_arid_F {
+				price = 650;
+				stock = 100;
+			};
+			class optic_Arco_arid_F {
+				price = 650;
+				stock = 100;
+			};
+			class optic_Arco_lush_F {
+				price = 650;
+				stock = 100;
+			};
+			class optic_DMS_ghex_F {
+				price = 900;
+				stock = 100;
+			};
+			class optic_ERCO_blk_F {
+				price = 800;
+				stock = 100;
+			};
+			class optic_ERCO_khk_F {
+				price = 800;
+				stock = 100;
+			};
+			class optic_ERCO_snd_F {
+				price = 800;
+				stock = 100;
+			};
+			class optic_LRPS_ghex_F {
+				price = 1000;
+				stock = 100;
+			};
+			class optic_LRPS_tna_F {
+				price = 1000;
+				stock = 100;
+			};
+			class optic_Holosight_blk_F {
+				price = 250;
+				stock = 100;
+			};
+			class optic_Holosight_lush_F {
+				price = 250;
+				stock = 100;
+			};
+			class optic_Holosight_arid_F {
+				price = 250;
+				stock = 100;
+			};
+			class optic_Holosight_khk_F {
+				price = 250;
+				stock = 100;
+			};
+			class optic_Holosight_smg_blk_F {
+				price = 250;
+				stock = 100;
+			};
+			class optic_Holosight_smg_khk_F {
+				price = 250;
+				stock = 100;
+			};
+			class optic_DMS_weathered_Kir_F {
+				price = 1000;
+				stock = 100;
+			};
+			class optic_Aco {
+				price = 200; 
+				stock = 100;
+			};
+			class optic_ACO_grn {
+				price = 200; 
+				stock = 100;
+			};
+			class optic_ACO_grn_smg {
+				price = 200; 
+				stock = 100;
+			};
+			class optic_Aco_smg {
+				price = 200; 
+				stock = 100;
+			};
+			class optic_AMS {
+				price = 1200;
+				stock = 100;
+			};
+			class optic_AMS_khk {
+				price = 1200;
+				stock = 100;
+			};
+			class optic_AMS_snd {
+				price = 1200;
+				stock = 100;
+			};
+			class optic_Arco {
+				price = 650;
+				stock = 100;
+			};
+			class optic_DMS {
+				price = 800;
+				stock = 100;
+			};
+			class optic_Hamr {
+				price = 700;
+				stock = 100;
+			};
+			class optic_Holosight {
+				price = 250;
+				stock = 100;
+			};
+			class optic_Holosight_smg {
+				price = 250;
+				stock = 100;
+			};
+			class optic_KHS_blk {
+				price = 1100;
+				stock = 100;
+			};
+			class optic_KHS_hex {
+				price = 1100;
+				stock = 100;
+			};
+			class optic_KHS_old {
+				price = 1100;
+				stock = 100;
+			};
+			class optic_KHS_tan {
+				price = 1100;
+				stock = 100;
+			};
+			class optic_LRPS {
+				price = 1000;
+				stock = 100;
+			};
+			class optic_MRCO {
+				price = 500;
+				stock = 100;
+			};
+			class optic_MRD {
+				price = 100;
+				stock = 100;
+			};
+			class optic_MRD_black {
+				price = 100;
+				stock = 100;
+			};
+			class optic_NVS {
+				price = 1500;
+				stock = 100;
+			};
+			class optic_SOS {
+				price = 800;
+				stock = 100;
+			};
+			class optic_Yorris {
+				price = 100;
+				stock = 100;
+			};
+			class Aegis_optic_ACOG {
+				price = 425;
+				stock = 100;
+			};
+			class Aegis_optic_ACOG_khaki {
+				price = 425;
+				stock = 100;
+			};
+			class Aegis_optic_ACOG_sand {
+				price = 425;
+				stock = 100;
+			};
+			class optic_dcl {
+				price = 250;
+				stock = 100;
+			};
+			class Aegis_optic_ICO {
+				price = 175;
+				stock = 100;
+			};
+			class Aegis_optic_ICO_khaki {
+				price = 175;
+				stock = 100;
+			};
+			class Aegis_optic_ICO_sand {
+				price = 175;
+				stock = 100;
+			};
+			class Aegis_optic_ROS {
+				price = 200;
+				stock = 100;
+			};
+			class Aegis_optic_ROS_SMG {
+				price = 200;
+				stock = 100;
+			};
+		};
+
 		class magazinesAegis 
 		{
-			displayName = "Aegis Magazines";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_Aegis", localize "STR_A3AU_magazines", localize "STR_A3AU_and", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			///////////////////////////////////////////////////////
@@ -784,6 +1111,35 @@
 			};
 			class 30Rnd_65x39_caseless_green_mag_Tracer {
 				price = 110;
+				stock = MAGAZINE_STOCK;
+			};
+
+			class Atlas_25Rnd_556x45_Famas {
+				price = 50;
+				stock = MAGAZINE_STOCK;
+			};
+			class Atlas_25Rnd_556x45_Famas_green {
+				price = 50;
+				stock = MAGAZINE_STOCK;
+			};
+			class Atlas_25Rnd_556x45_Famas_red {
+				price = 50;
+				stock = MAGAZINE_STOCK;
+			};
+			class Atlas_25Rnd_556x45_Famas_Yellow {
+				price = 50;
+				stock = MAGAZINE_STOCK;
+			};
+			class Atlas_25Rnd_556x45_Famas_Tracer_Red {
+				price = 60;
+				stock = MAGAZINE_STOCK;
+			};
+			class Atlas_25Rnd_556x45_Famas_Tracer_Green {
+				price = 60;
+				stock = MAGAZINE_STOCK;
+			};
+			class Atlas_25Rnd_556x45_Famas_Tracer_Yellow {
+				price = 60;
 				stock = MAGAZINE_STOCK;
 			};
 

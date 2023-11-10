@@ -28,6 +28,12 @@ FIX_LINE_NUMBERS()
 
 params ["_markerX"];
 
+private _lowCiv = Faction(civilian) getOrDefault ["attributeLowCiv", false];
+private _civNonHuman = Faction(civilian) getOrDefault ["attributeCivNonHuman", false]; // if civs are not human, we don't want them drifting in their ford fiestas
+
+if (_lowCiv) exitWith {};
+if (_civNonHuman) exitWith {};
+
 if (_markerX in destroyedSites) exitWith {};
 
 // civ part of cities has a separate spawn state from the garrison

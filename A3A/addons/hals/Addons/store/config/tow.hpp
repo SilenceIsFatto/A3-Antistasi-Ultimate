@@ -2,7 +2,7 @@
 
 		class riflesTOW
 		{
-			displayName = "Tier One Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_tow", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(Tier1_HK416D10_CTR, 500, RIFLE_STOCK);  // Tier1_30Rnd_556x45_M855_EMag
@@ -36,7 +36,7 @@
 
 		class mgTOW
 		{
-			displayName = "Tier One MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_tow", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(Tier1_MK46_Mod0, 1500, RIFLE_STOCK); // uses rhs ammo
@@ -48,7 +48,7 @@
 
 		class underbarrelTOW
 		{
-			displayName = "Tier One Bipods";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_tow", localize "STR_A3AU_bipods", localize "STR_A3AU_and", localize "STR_A3AU_grips"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(tier1_dd_vfg_black, 100, 50);
@@ -71,7 +71,7 @@
 
 		class pointersTOW
 		{
-			displayName = "Tier One Pointers";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_tow", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(tier1_m110_la5_top, 75, PN_STOCK);
@@ -84,7 +84,7 @@
 
 		class muzzlesTOW 
 		{
-			displayName = "Tier One Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_tow", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(tier1_aac_m42000_black, 500, MZ_STOCK); //5
@@ -100,7 +100,7 @@
 
 		class opticsTOW
 		{
-			displayName = "Tier One Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_tow", localize "STR_A3AU_sights"]);
 			picture = "";
 
 			class tier1_leupoldm3a_adm_black {
@@ -171,7 +171,7 @@
 
 		class magazinesTOW
 		{
-			displayName = "Tier One Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_tow", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			///////////////////////////////////////////////////////

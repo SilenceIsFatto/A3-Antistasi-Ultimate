@@ -3,7 +3,7 @@
 		///////////////////////////////////////////////////////
 		class handgunsCup 
 		{
-			displayName = "CUP Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(hgun_Rook40_F, 150, PISTOL_STOCK);
@@ -43,7 +43,7 @@
 
 		class smgCup 
 		{
-			displayName = "CUP SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CUP_smg_PS90_olive, 350, PISTOL_STOCK);
@@ -102,7 +102,7 @@
 
 		class launchersCup 
 		{
-			displayName = "CUP Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(CUP_launch_RShG2, 250, 50);
@@ -150,7 +150,7 @@
 
 		class launcherMagazinesCup 
 		{
-			displayName = "CUP Launcher Ammo";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class CUP_SMAW_Spotting {
@@ -249,7 +249,7 @@
 
 		class specialWeaponsCup 
 		{
-			displayName = "CUP Special Weapons";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_specialWeapons"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CUP_hgun_BallisticShield_Armed, 300, RIFLE_STOCK);
@@ -271,7 +271,7 @@
 
 		class sniperRiflesCup 
 		{
-			displayName = "CUP Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CUP_SKS, 350, RIFLE_STOCK);
@@ -414,7 +414,7 @@
 
 		class mgCup 
 		{
-			displayName = "CUP MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(CUP_lmg_UK59, 1100, RIFLE_STOCK);
@@ -504,7 +504,7 @@
 
 		class riflesCup 
 		{
-			displayName = "CUP Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(arifle_AKS_F, 200, RIFLE_STOCK);
@@ -723,7 +723,7 @@
 
 		class magazinesCup 
 		{
-			displayName = "CUP Magazines";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_cup", localize "STR_A3AU_magazines", localize "STR_A3AU_and", localize "STR_A3AU_glGrenades"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class Laserbatteries {
@@ -2473,7 +2473,7 @@
 
 		class underbarrelCup 
 		{
-			displayName = "CUP Bipods";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(bipod_02_F_arid, 100, 50);
@@ -2493,7 +2493,7 @@
 
 		class pointersCup 
 		{
-			displayName = "CUP Pointers";
+			displayName = __EVAL(formatText ["%1 %2 %3 %4", localize "STR_A3AU_cup", localize "STR_A3AU_pointers", localize "STR_A3AU_and", localize "STR_A3AU_flashlights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(acc_flashlight, 75, PN_STOCK);
@@ -2530,7 +2530,7 @@
 
 		class muzzlesCup 
 		{
-			displayName = "CUP Muzzles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(muzzle_snds_338_black, 500, MZ_STOCK); //5
@@ -2601,7 +2601,7 @@
 
 		class opticsCup 
 		{
-			displayName = "CUP Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_sights"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemOptic_ca.paa";
 
 			class CUP_optic_artel_m14 {
@@ -3225,7 +3225,7 @@
 
 		class navigationCup 
 		{
-			displayName = "CUP GPS, Binoculars, NVGs";
+			displayName = __EVAL(formatText ["%1 %2, %3 %4 %5", localize "STR_A3AU_cup", localize "STR_A3AU_gps", localize "STR_A3AU_binoculars", localize "STR_A3AU_and", localize "STR_A3AU_nvgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
 
 			ITEM(ItemGPS, 300, NN_STOCK);
@@ -3253,7 +3253,7 @@
 
 		class miscCup 
 		{
-			displayName = "CUP Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_cup", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(B_Bergen_dgtl_F, 900, MISC_STOCK);

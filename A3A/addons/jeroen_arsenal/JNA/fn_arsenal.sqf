@@ -2817,7 +2817,7 @@ switch _mode do {
 			};
 		};
 
-		if(player getUnitTrait "Engineer")then {
+		if(player call A3A_fnc_isEngineer) then {
 					_itemsBackpack pushback ["ToolKit",1];
 					if(A3A_hasACE) then {
 						_itemsbackpack pushback ["ACE_Clacker",1];

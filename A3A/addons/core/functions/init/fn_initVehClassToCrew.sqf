@@ -38,7 +38,8 @@ private _allVehClassToCrew = [
     [FactionGet(all,"vehiclesRivalsLight"),[FactionGet(occ,"unitRifle"), FactionGet(riv,"unitRifle"), FactionGet(reb,"unitRifle"), "C_Man_1"]],
     [FactionGet(all,"vehiclesRivalsStatics"),[FactionGet(occ,"unitRifle"), FactionGet(riv,"unitRifle"), FactionGet(reb,"unitRifle"), "C_Man_1"]],
     [FactionGet(all,"vehiclesRivals"),[FactionGet(occ,"unitRifle"), FactionGet(riv,"unitRifle"), FactionGet(reb,"unitRifle"), "C_Man_1"]],
-    [FactionGet(riv,"vehiclesRivalsUavs"), ["B_UAV_AI", "O_UAV_AI", "I_UAV_AI", "C_UAV_AI"]],
+    [FactionGet(all,"vehiclesRivalsHelis"),[FactionGet(occ,"unitRifle"), FactionGet(riv,"unitRifle"), FactionGet(reb,"unitRifle"), "C_Man_1"]],    
+	[FactionGet(riv,"vehiclesRivalsUavs"), ["B_UAV_AI", "O_UAV_AI", "I_UAV_AI", "C_UAV_AI"]],
 
     [FactionGet(all,"vehiclesFixedWing"),[FactionGet(occ,"unitPilot"), FactionGet(inv,"unitPilot"), FactionGet(reb,"unitCrew"), "C_Man_1"]],
     [FactionGet(all,"vehiclesArmor"), [FactionGet(occ,"unitCrew"), FactionGet(inv,"unitCrew"), FactionGet(reb,"unitCrew"), "C_Man_1"]],          // <- vehiclesArmor has nested arrays; therefore, it needs to be flattened. (will change with arty template change)

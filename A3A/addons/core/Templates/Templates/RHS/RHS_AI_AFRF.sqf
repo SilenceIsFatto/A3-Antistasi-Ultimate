@@ -32,7 +32,7 @@
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;
 
 ["vehiclesLightTanks",  ["rhs_bmd1k", "rhs_bmd1pk", "rhs_sprut_vdv", "rhs_t72ba_tv", "rhs_t80"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["rhs_t72bd_tv", "rhs_t72be_tv", "rhs_t80a", "rhs_t80bv", "rhs_t80u", "rhs_t80um", "rhs_t72bb_tv", "rhs_t90sab_tv", "rhs_t90a_tv", "rhs_t90_tv"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["rhs_t72bd_tv", "rhs_t72be_tv", "rhs_t80a", "rhs_t80bv", "rhs_t80u", "rhs_t80um", "rhs_t72bb_tv", "rhs_t90sab_tv", "rhs_t90a_tv", "rhs_t90_tv", "rhs_t90sm_tv", "rhs_t90am_tv"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["rhs_zsu234_aa"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["O_G_Boat_Transport_01_F"]] call _fnc_saveToTemplate;

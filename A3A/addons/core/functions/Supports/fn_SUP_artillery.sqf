@@ -22,7 +22,8 @@ params ["_supportName", "_side", "_resPool", "_maxSpend", "_target", "_targPos",
 
 private _faction = Faction(_side);
 private _vehType = selectRandom (_faction get "vehiclesArtillery");
-private _shellType = ((_faction get "magazines") get _vehType)#0;
+private _magPool = (_faction get "magazines") get _vehType;
+private _shellType = selectRandom _magPool;
 ([_vehType, _shellType] call A3A_fnc_getArtilleryRanges) params ["_minRange", "_maxRange"];
 
 Info_6("Artillery support %1 against %2 will be carried out by a %3 with %4 mags, min range %5 max %6", _supportName, _targPos, _vehType, _shellType, _minRange, _maxRange);

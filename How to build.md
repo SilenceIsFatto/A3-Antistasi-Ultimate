@@ -8,9 +8,9 @@
 * fill in the configuration `.json` file something like this
 ```json
 {
-	"title": "A3 Antistasi",
-	"name": "A3A",
-	"author": "Official Antistasi dev team",
+	"title": "Antistasi Ultimate",
+	"name": "A3U",
+	"author": "Antistasi Ultimate Dev Team",
 	"website": "https://antistasi.de/",
 	"version": "2.5.4",
 	"buildPath": "build",
@@ -18,10 +18,18 @@
 	"serverDirs": [],
 	"serverUse32bit": false,
 	"clientDirs": [ //should list all addons the mod provides
+        "A3A/addons/config_fixes",
         "A3A/addons/core",
-        "A3A/addons/Garage",
-        "A3A/addons/JeroenArsenal",
-        "A3A/addons/maps"
+        "A3A/addons/events",
+        "A3A/addons/garage",
+        "A3A/addons/gui",
+        "A3A/addons/hals",
+        "A3A/addons/jeroen_arsenal",
+        "A3A/addons/logistics",
+        "A3A/addons/maps",
+        "A3A/addons/patcom",
+        "A3A/addons/scrt",
+        "A3A/addons/ultimate"
     ],
 	"clientMods": [],
 	"ftpConnection": {},

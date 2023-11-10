@@ -1,10 +1,11 @@
 #define RIVALS_CITY_PART 0.3
-#define RIVALS_CONTROL_PART 0.3
+#define RIVALS_CONTROL_PART 0.15
 
 //events
 #define CARDEMO 100
 #define UAVGRENADE 200
 #define ROVINGMORTAR 300
+#define HELIRAID 400
 
 //activity levels
 #define INSIGNIFICANT_ACTIVITY 5

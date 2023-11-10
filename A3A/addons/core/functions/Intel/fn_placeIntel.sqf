@@ -138,7 +138,7 @@ if (_isLarge && {_isComputer}) then {
 			localize "STR_antistasi_actions_bomb_disarm",
 			"a3\ui_f\data\igui\cfg\holdactions\holdaction_unbind_ca.paa",
 			"a3\ui_f\data\igui\cfg\holdactions\holdaction_unbind_ca.paa",
-			"(_this distance _target < 3) and (_this getUnitTrait 'engineer')",
+			"(_this distance _target < 3) and (_this call A3A_fnc_isEngineer)",
 			"_caller distance _target < 3",
 			{},
 			{},

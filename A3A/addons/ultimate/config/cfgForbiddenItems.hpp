@@ -2,6 +2,7 @@ class forbiddenItems
 {
     class forbidden_unlimited_base
     {
+        addons[] = {};
         unlimited = 1;
         appearInCrates = 0;
     };
@@ -9,14 +10,14 @@ class forbiddenItems
     {
         unlimited = 0;
     };
-	
-	class uns_m72used : forbidden_limited_base {};
 
     #include "cfgForbiddenItemsCW.hpp"
     #include "cfgForbiddenItemsFWA.hpp"
 	#include "cfgForbiddenItemsGM.hpp"
 	#include "cfgForbiddenItemsNIA.hpp"
     #include "cfgForbiddenItemsOPTRE.hpp"
+    #include "cfgForbiddenItemsPracs.hpp"
     #include "cfgForbiddenItemsSMA.hpp"
     #include "cfgForbiddenItemsTOW.hpp"
+    #include "cfgForbiddenItemsUns.hpp"
 };

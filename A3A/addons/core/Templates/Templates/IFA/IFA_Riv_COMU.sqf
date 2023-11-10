@@ -89,7 +89,7 @@ _loadoutData set ["headgear", []];
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["LIB_GER_ItemWatch"]];
 _loadoutData set ["compasses", ["LIB_GER_ItemCompass_deg"]];
-_loadoutData set ["radios", []];
+_loadoutData set ["radios", ["TFAR_SCR536"]];
 _loadoutData set ["gpses", []];
 _loadoutData set ["NVGs", []];
 _loadoutData set ["binoculars", ["LIB_Binocular_GER"]];
@@ -284,7 +284,7 @@ private _mercenaryTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["gpses"] call _fnc_addGPS;
 	["binoculars"] call _fnc_addBinoculars;
 	["NVGs"] call _fnc_addNVGs;
@@ -322,7 +322,7 @@ private _enforcerTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["gpses"] call _fnc_addGPS;
 	["binoculars"] call _fnc_addBinoculars;
 	["NVGs"] call _fnc_addNVGs;
@@ -359,7 +359,7 @@ private _partisanTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["NVGs"] call _fnc_addNVGs;
 };
 
@@ -394,7 +394,7 @@ private _minutemanTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["NVGs"] call _fnc_addNVGs;
 };
 
@@ -425,7 +425,7 @@ private _medicTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["NVGs"] call _fnc_addNVGs;
 };
 
@@ -462,7 +462,7 @@ private _saboteurTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["NVGs"] call _fnc_addNVGs;
 };
 
@@ -499,7 +499,7 @@ private _explosivesExpertTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["NVGs"] call _fnc_addNVGs;
 };
 
@@ -534,7 +534,7 @@ private _atTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["NVGs"] call _fnc_addNVGs;
 };
 
@@ -569,7 +569,7 @@ private _aaTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["NVGs"] call _fnc_addNVGs;
 };
 
@@ -600,7 +600,7 @@ private _oppressorTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["NVGs"] call _fnc_addNVGs;
 };
 
@@ -631,7 +631,7 @@ private _sharpshooterTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["Rangefinder"] call _fnc_addBinoculars;
 	["NVGs"] call _fnc_addNVGs;
 };
@@ -656,7 +656,7 @@ private _crewTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 	["gpses"] call _fnc_addGPS;
 	["NVGs"] call _fnc_addNVGs;
 };
@@ -673,7 +673,7 @@ private _unarmedTemplate = {
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
-	["radios"] call _fnc_addRadio;
+	// ["radios"] call _fnc_addRadio;
 };
 
 private _commanderTemplate = {

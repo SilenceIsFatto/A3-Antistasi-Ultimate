@@ -31,7 +31,9 @@ class mapInfo {
 	#include "Antistasi_rhspkl.rhspkl\mapInfo.hpp"
 	#include "Antistasi_Kapaulio.Kapaulio\mapInfo.hpp"
 	#include "Antistasi_Staszow.Staszow\mapInfo.hpp"
+	#include "Antistasi_StaszowWinter.StaszowWinter\mapInfo.hpp"
 	#include "Antistasi_iron_excelsior_Tobruk.iron_excelsior_Tobruk\mapInfo.hpp"
+	#include "Antistasi_ruha.ruha\mapInfo.hpp"
 	#include "Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\mapInfo.hpp"
     #include "Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\mapInfo.hpp"
 };

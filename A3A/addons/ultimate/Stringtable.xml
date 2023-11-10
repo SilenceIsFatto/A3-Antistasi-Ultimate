@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="A3AU-ultimate">
+    <Package name="A3-Antistasi-Ultimate-trader-config">
+        
+    </Package>
+    <Package name="A3-Antistasi-Ultimate-functions">
+        <Key ID="STR_A3AU_init_mods_warning_header">
+            <Original>Warning</Original>
+            <English>Warning</English>
+            <Russian>Предупреждение</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_text">
+            <Original>Warning. Addons loaded may not work correctly, or work together.%1%1| %2 |%1%1Consider removing them if you encounter any issues.</Original>
+            <English>Warning. Addons loaded may not work correctly, or work together.%1%1| %2 |%1%1Consider removing them if you encounter any issues.</English>
+            <Russian>Внимание! Загруженные моды могут работать некорректно или конфликтовать между собой.%1%1| %2 |%1%1Рекомендуем отключить их в случае возникновения ошибок.</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_CUP_RHS">
+            <Original>CUP and RHS (Pick One)</Original>
+            <English>CUP and RHS (Pick One)</English>
+            <Russian>CUP и RHS (Выберите один из них)</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_Advanced_Rappeling">
+            <Original>Advanced Rappeling</Original>
+            <English>Advanced Rappeling</English>
+            <Russian>Advanced Rappeling</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_Advanced_Urban_Rappeling">
+            <Original>Advanced Urban Rappeling</Original>
+            <English>Advanced Urban Rappeling</English>
+            <Russian>Advanced Urban Rappeling</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_LAMBS_AI">
+            <Original>LAMBS AI</Original>
+            <English>LAMBS AI</English>
+            <Russian>LAMBS AI</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_VCOM_AI">
+            <Original>VCOM AI</Original>
+            <English>VCOM AI</English>
+            <Russian>VCOM AI</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_AI_CSTG">
+            <Original>AI Cannot See Through Grass</Original>
+            <English>AI Cannot See Through Grass</English>
+            <Russian>AI Cannot See Through Grass</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_ASR_AI3">
+            <Original>ASR AI3</Original>
+            <English>ASR AI3</English>
+            <Russian>ASR AI3</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_ALiVE">
+            <Original>ALiVE</Original>
+            <English>ALiVE</English>
+            <Russian>ALiVE</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_MCC_Sandbox_4">
+            <Original>MCC Sandbox 4</Original>
+            <English>MCC Sandbox 4</English>
+            <Russian>MCC Sandbox 4</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_ZHC">
+            <Original>Zulu Headless Client (ZHC)</Original>
+            <English>Zulu Headless Client (ZHC)</English>
+            <Russian>Zulu Headless Client (ZHC)</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_PiR">
+            <Original>Project injury Reaction (PiR)</Original>
+            <English>Project injury Reaction (PiR)</English>
+            <Russian>Project injury Reaction (PiR)</Russian>
+        </Key>
+        <Key ID="STR_A3AU_init_mods_warning_WHK">
+            <Original>Werthles' Headless Module</Original>
+            <English>Werthles' Headless Module</English>
+            <Russian>Werthles' Headless Module</Russian>
+        </Key>
+    </Package>
+</Project>

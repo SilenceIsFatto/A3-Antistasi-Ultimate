@@ -14,6 +14,13 @@ if (isNil "_player") exitWith {
     publicVariableServer "isEventInProgress";
 };
 
+private _civHeli = (A3A_faction_civ getOrDefault ["vehiclesCivHeli", []]);
+if (_civHeli isEqualTo []) exitWith {
+    Error("No civ heli found, aborting.");
+    isEventInProgress = false;
+    publicVariableServer "isEventInProgress";
+};
+
 private _originPosition = position _player;
 
 Info_2("%1 will be used as center of the event at %2 position.", name _player, str _originPosition);

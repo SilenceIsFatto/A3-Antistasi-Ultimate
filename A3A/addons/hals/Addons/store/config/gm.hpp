@@ -2,7 +2,7 @@
 		// Global Mobilisation
 		///////////////////////////////////////////////////////
 		class handgunsgm{
-			displayName = "GM Handguns";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
 			ITEM(gm_lp1_blk, 50, PISTOL_STOCK); //AMMO: gm_1Rnd_265mm_flare_single_wht_gc
@@ -21,7 +21,7 @@
 		
 		class riflesgm
 		{
-			displayName = "GM Rifles";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(gm_mpiak74n_brn, 350, RIFLE_STOCK); // gm_30Rnd_545x39mm_B_7N6_ak74_org
@@ -85,7 +85,7 @@
 		
 		class mggm 
 		{
-			displayName = "GM MGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(gm_lmgk500_brn, 800, RIFLE_STOCK); // gm_75Rnd_762x39mm_BSD_57N231U_ak47_blk
@@ -108,7 +108,7 @@
 
 		class sniperRiflesgm
 		{
-			displayName = "GM Snipers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(gm_svd_wud, 1500, RIFLE_STOCK); // gm_10Rnd_762x54mmR_AP_7N1_svd_blk
@@ -120,7 +120,7 @@
 
 		class smggm 
 		{
-			displayName = "GM SMGs";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_smgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
 			ITEM(gm_mp2a1_blk, 200, RIFLE_STOCK); // gm_32Rnd_9x19mm_B_DM51_mp2_blk
@@ -143,7 +143,7 @@
 
 		class launchersgm
 		{
-			displayName = "GM Launchers";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
 
 			ITEM(gm_m72a3_oli, 200, 50);
@@ -160,7 +160,7 @@
 	
 		class launcherMagazinesgm 
 		{
-			displayName = "GM Launcher Ammunition";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_launcherAmmo"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 			class gm_1Rnd_84x245mm_heat_t_DM12_carlgustaf {
@@ -287,7 +287,7 @@
 
 		class pointersgm 
 		{
-			displayName = "GM Pointer";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_pointers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
 
 			ITEM(gm_zvn64_front, 25, PN_STOCK);
@@ -295,7 +295,7 @@
 
 		class muzzlesgm 
 		{
-			displayName = "Muzzle Accessories";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_muzzles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemMuzzle_ca.paa";
 
 			ITEM(gm_bayonet_6x3_wud, 10, PN_STOCK);
@@ -305,7 +305,7 @@
 
 		class magazinesgm 
 		{
-			displayName = "GM Magazines";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_magazines"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
 
 
@@ -526,7 +526,7 @@
 		};
 		
 		class underbarrelgm{
-	     	displayName = "GM Bipods";
+	     	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_bipods"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemBipod_ca.paa";
 
 			ITEM(gm_g3_bipod_blk, 50, 20);
@@ -536,7 +536,7 @@
 		};	
 		
 		class miscgm{
-			displayName = "GM Misc";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_misc"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
 
 			ITEM(gm_explosive_petn_charge, 450, MISC_STOCK);

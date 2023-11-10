@@ -42,12 +42,15 @@ private _groupPilot = group driver _vehicle;
 private _targetPosition = if(_target isEqualType "") then {getMarkerPos _target} else {_target};
 private _originPosition = getMarkerPos _originMarker;
 
-_vehicle flyInHeight 1000;
+_vehicle flyInHeight 650;
 _vehicle setCollisionLight false;
 if(_vehicle isKindOf "Helicopter") then
 {
     _entryDistance = 150;
     _vehicle flyInHeight 500;
+} else {
+    _vehicle setDir (_originPosition getDir _targetPosition);
+    _vehicle setVelocityModelSpace [0, 100, 0];
 };
 
 // Try to find a position that isn't on water
