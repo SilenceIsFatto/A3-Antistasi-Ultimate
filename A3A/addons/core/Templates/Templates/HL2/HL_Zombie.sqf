@@ -147,29 +147,41 @@ private _pressTemplate = {
 
 private _specialUnits = [
     "WBK_ClassicZombie_HLA_1",
-      "WBK_ClassicZombie_HLA_2",
-        "WBK_ClassicZombie_HLA_3",
-            "WBK_ClassicZombie_HLA_4",
-                "WBK_ClassicZombie_HLA_5",
-                    "WBK_ClassicZombie_HLA_6",
-                        "WBK_ClassicZombie_HLA_7",
-                            "WBK_ClassicZombie_HLA_8",
-                                "WBK_ClassicZombie_HLA_9",    
+    "WBK_ClassicZombie_HLA_2",
+    "WBK_ClassicZombie_HLA_3",
+    "WBK_ClassicZombie_HLA_4",
+    "WBK_ClassicZombie_HLA_5",
+    "WBK_ClassicZombie_HLA_6",
+    "WBK_ClassicZombie_HLA_7",
+    "WBK_ClassicZombie_HLA_8",
+    "WBK_ClassicZombie_HLA_9",    
     "WBK_Zombine_HLA_1",
-        "WBK_Zombine_HLA_2",
+    "WBK_Zombine_HLA_2",
     "WBK_Headcrab_Normal",
     "WBK_Antlion_1",
     "WBK_AntlionGuardian_1"
-        "WBK_Bullsquid_1"
-            "WBK_HoundEye_1"
+    "WBK_Bullsquid_1"
+    "WBK_HoundEye_1"
 ];
 
 private _specialUnitsWeights = [
     1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
     0.8,
-    0.3,
-    0.15,
-    0.05
+    0.8,
+    2.0,
+    0.5,
+    0.1,
+    0.2,
+    0.15
+  
 ];
 
 private _prefix = "militia";
