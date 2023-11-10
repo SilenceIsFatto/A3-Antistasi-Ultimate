@@ -116,4 +116,26 @@ class CfgMarkers
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_freedom_ca.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_freedom_ca.paa);
 	};
+
+//HL2 FLAGS//
+	class a3u_flag_uu: flag_NATO 
+	{
+		name = "Combine";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_combine_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_combine_ca.paa);
+	};
+
+	class a3u_flag_udc: a3u_flag_uu 
+	{
+		name = "UDC";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_udc_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_udc_ca.paa);
+	};
+
+	class a3u_flag_rebel: a3u_flag_uu 
+	{
+		name = "Rebel";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_rebel_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_rebel_ca.paa);
+	};
 };

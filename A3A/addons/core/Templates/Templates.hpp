@@ -661,5 +661,8 @@ class Templates
     // ***************************** Task Force Canada *****************************
 
     #include "Templates\TFC\templates.hpp"
+	
+	 // ***************************** Hl2 *****************************
 
+    #include "Templates\HL2\templates.hpp"
 };
