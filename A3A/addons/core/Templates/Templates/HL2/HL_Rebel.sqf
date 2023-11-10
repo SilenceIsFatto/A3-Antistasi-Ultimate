@@ -152,14 +152,7 @@ private _rebUniforms = [
     "HL_RES_U_Rebel_03",
     "HL_RES_U_Rebel_02",
     "HL_RES_U_Rebel_01",
-    "HL_RES_U_Rebel_Medic",
-	"U_BMS_Shirt_trop",
-	"U_BMS_Shirt",
-	"Civilian_Jumpsuit_1",
-	"Civilian_Jumpsuit_2",
-	"Civilian_Jumpsuit_5",
-	"Civilian_Jumpsuit_4",
-	"Civilian_Jumpsuit_3"
+    "HL_RES_U_Rebel_Medic"
 ];          //Uniforms given to Player Rebels
 
 private _rebUniformsAI = [
@@ -169,13 +162,8 @@ private _rebUniformsAI = [
     "HL_RES_U_Rebel_02",
     "HL_RES_U_Rebel_01",
     "HL_RES_U_Rebel_Medic",
-	"U_BMS_Shirt_trop",
-	"U_BMS_Shirt",
-	"Civilian_Jumpsuit_1",
-	"Civilian_Jumpsuit_2",
-	"Civilian_Jumpsuit_5",
-	"Civilian_Jumpsuit_4",
-	"Civilian_Jumpsuit_3"
+    "CombainCIV_Uniform_2",
+    "CombainCIV_Uniform_1"
 ];          //Uniforms given to AI Rebels
 
 ["uniforms", _rebUniforms] call _fnc_saveToTemplate;         //These Items get added to the Arsenal
