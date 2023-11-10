@@ -28,7 +28,7 @@
 	class HL_COA_ARD : HL_Base
 	{
         	side = "Occ";
-        	flagTexture = QPATHTOFOLDER(Templates\Templates\HL2\images\udc_flag_co.paa);
+        	flagTexture = QPATHTOFOLDER(Templates\Templates\HL2\images\flag_udc_co.paa);
         	name = "United Defense Coalition";
         	file = "HL_Coalition_Arid";
         	description = "The remnants of the old world militaries. Fighting to restore earth to the old order.";
@@ -37,7 +37,7 @@
 		class HL_COA_TMPRT : HL_Base
 	{
         	side = "Occ";
-        	flagTexture = QPATHTOFOLDER(Templates\Templates\HL2\images\udc_flag_co.paa);
+        	flagTexture = QPATHTOFOLDER(Templates\Templates\HL2\images\flag_udc_co.paa);
         	name = "United Defense Coalition";
         	file = "HL_Coalition_Temperate";
         	description = "The remnants of the old world militaries. Fighting to restore earth to the old order.";
