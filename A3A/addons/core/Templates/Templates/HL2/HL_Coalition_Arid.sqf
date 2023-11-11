@@ -488,11 +488,11 @@ _policeLoadoutData set ["sidearms", [
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militiaLoadoutData set ["uniforms", ["CUP_U_B_CDF_DST_2", "CUP_U_B_CDF_DST_1"]];
-_militiaLoadoutData set ["vests", ["CUP_V_CDF_6B3_1_Green"]];
-_militiaLoadoutData set ["sniVests", ["CUP_V_CDF_6B3_5_FST"]];
-_militiaLoadoutData set ["backpacks", ["B_AssaultPack_rgr"]];
+_militiaLoadoutData set ["vests", ["V_TacVest_khk"]];
+_militiaLoadoutData set ["sniVests", ["V_TacVest_khk"]];
+_militiaLoadoutData set ["backpacks", ["B_AssaultPack_ocamo"]];
 _militiaLoadoutData set ["atBackpacks", ["CUP_B_RPGPack_Khaki"]];
-_militiaLoadoutData set ["helmets", ["CUP_H_CDF_H_PASGT_FST"]];
+_militiaLoadoutData set ["helmets", ["CUP_H_CDF_OfficerCap_DST", "CUP_H_CDF_H_PASGT_DST"]];
 
 _militiaLoadoutData set ["rifles", [
     ["CUP_arifle_AK74", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
@@ -1116,9 +1116,9 @@ private _unitTypes = [
 	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
 	["Rifleman", _riflemanTemplate, [], [_prefix]],
 	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
+	["Medic", _medicTemplate, [["medic", false]], [_prefix]],
+	["Engineer", _engineerTemplate, [["engineer", false]], [_prefix]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", false]], [_prefix]],
 	["Grenadier", _grenadierTemplate, [], [_prefix]],
 	["LAT", _latTemplate, [], [_prefix]],
 	["AT", _atTemplate, [], [_prefix]],

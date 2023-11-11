@@ -49,7 +49,7 @@
 ["vehiclesHelisLightAttack", ["CUP_B_MH60L_DAP_4x_USN", "CUP_B_UH1Y_Gunship_Dynamic_USMC", "CUP_B_UH1D_armed_GER_KSK_Des", "CUP_B_UH1D_gunship_GER_KSK_Des", "CUP_B_AW159_GER", "CUP_B_AW159_RN_Grey", "CUP_B_Mi171Sh_CDF"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["CUP_B_AH1Z_Dynamic_USMC", "CUP_B_AH1_DL_BAF", "CUP_B_Mi24_D_Dynamic_CDF"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["CUP_B_M270_DPICM_USA","CUP_B_M270_HE_USA", CUP_B_M270_HE_BAF_DES, "CUP_B_BM21_CDF", "CUP_B_D30_CDF"]] call _fnc_saveToTemplate;
+["vehiclesArtillery", ["CUP_B_M270_DPICM_USA","CUP_B_M270_HE_USA", "CUP_B_M270_HE_BAF_DES", "CUP_B_BM21_CDF", "CUP_B_D30_CDF"]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
 ["CUP_B_M270_HE_USA", ["CUP_12Rnd_MLRS_HE"]],
 ["CUP_B_M270_DPICM_USA", ["CUP_12Rnd_MLRS_DPICM"]],
@@ -1116,9 +1116,9 @@ private _unitTypes = [
 	["SquadLeader", _squadLeaderTemplate, [], [_prefix]],
 	["Rifleman", _riflemanTemplate, [], [_prefix]],
 	["Radioman", _radiomanTemplate, [], [_prefix]],
-	["Medic", _medicTemplate, [["medic", true]], [_prefix]],
-	["Engineer", _engineerTemplate, [["engineer", true]], [_prefix]],
-	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true]], [_prefix]],
+	["Medic", _medicTemplate, [["medic", false]], [_prefix]],
+	["Engineer", _engineerTemplate, [["engineer", false]], [_prefix]],
+	["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", false]], [_prefix]],
 	["Grenadier", _grenadierTemplate, [], [_prefix]],
 	["LAT", _latTemplate, [], [_prefix]],
 	["AT", _atTemplate, [], [_prefix]],
