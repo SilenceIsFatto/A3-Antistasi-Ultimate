@@ -40,9 +40,9 @@
 ["vehiclesGunBoats", ["CUP_B_RHIB2Turret_USMC"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["CUP_B_AAV_USMC", "CUP_B_AAV_USMC_TTS", "CUP_B_LAV25_desert_USMC", "CUP_B_LAV25M240_desert_USMC"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["SC_Fixed_Bomber_01"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["SC_Fixed_Bomber_01"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", ["SC_Fixed_Bomber_01"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["CUP_B_A10_DYN_USA", "CUP_B_GR9_DYN_GB", "CUP_B_Su25_Dyn_CDF"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["CUP_B_AV8B_DYN_USMC", "CUP_B_GR9_DYN_GB", "CUP_B_GR9_DYN_GB", "CUP_B_SU34_CDF"]] call _fnc_saveToTemplate;
+["vehiclesPlanesTransport", ["CUP_B_C130J_USMC", "CUP_B_MV22_USMC_RAMPGUN", "CUP_B_C130J_GB"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["HL_CMB_Hunter"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["SC_VTOL_X42S_AR"]] call _fnc_saveToTemplate;
