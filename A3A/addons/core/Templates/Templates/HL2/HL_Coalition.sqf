@@ -6,7 +6,7 @@
 ["spawnMarkerName", "United Defense Corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_US_F"] call _fnc_saveToTemplate;
-["flagTexture", QPATHTOFOLDER(Templates\Templates\HL2\images\udc_flag_co.paa)] call _fnc_saveToTemplate;
+["flagTexture", QPATHTOFOLDER(Templates\Templates\HL2\images\flag_udc_co.paa)] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_USA"] call _fnc_saveToTemplate;
 
 //////////////////////////
