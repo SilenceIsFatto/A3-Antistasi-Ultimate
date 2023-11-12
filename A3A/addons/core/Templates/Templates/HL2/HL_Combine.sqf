@@ -51,8 +51,8 @@
 
 ["vehiclesArtillery", ["CUP_B_M270_DPICM_USA","CUP_B_M270_HE_USA"]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
-["CUP_B_M270_HE_USA", ["CUP_12Rnd_MLRS_HE"]],
-["CUP_B_M270_DPICM_USA", ["CUP_12Rnd_MLRS_DPICM"]]
+    ["CUP_B_M270_HE_USA", ["CUP_12Rnd_MLRS_HE"]],
+    ["CUP_B_M270_DPICM_USA", ["CUP_12Rnd_MLRS_DPICM"]]
 ]] call _fnc_saveToTemplate;
 
 ["uavsAttack", ["CUP_B_USMC_DYN_MQ9"]] call _fnc_saveToTemplate;
@@ -135,8 +135,6 @@ _loadoutData set ["heavyExplosives", ["SatchelCharge_Remote_Mag"]];
 _loadoutData set ["antiInfantryGrenades", ["CUP_HandGrenade_M67"]];
 _loadoutData set ["smokeGrenades", ["SmokeShell"]];
 _loadoutData set ["signalsmokeGrenades", ["SmokeShellYellow", "SmokeShellRed", "SmokeShellPurple", "SmokeShellOrange", "SmokeShellGreen", "SmokeShellBlue"]];
-
-
 
 //Basic equipment. Shouldn't need touching most of the time.
 //Mods might override this, or certain mods might want items removed (No GPSs in WW2, for example)
@@ -239,7 +237,6 @@ _sfLoadoutData set ["slRifles", [
 
 _sfLoadoutData set ["rifles", [
     ["HL_CMB_arifle_AR2", "", "", "", ["HL_CMB_30Rnd_AR2_Mag"], [], ""]
-
 ]];
 _sfLoadoutData set ["carbines", [
     ["HLA_Ordinal_AR1", "", "", "", ["HL_CMB_30Rnd_AR2_Mag"], [], ""]
