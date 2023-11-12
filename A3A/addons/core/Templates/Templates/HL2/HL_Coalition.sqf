@@ -36,7 +36,7 @@
 ["vehiclesAirborne", ["CUP_B_M113A3_desert_USA", "CUP_B_M113A3_desert_USA", "CUP_B_RG31E_M2_USA", "CUP_B_RG31_M2_USA", "CUP_B_FV432_Bulldog_GB_D", "CUP_B_FV432_Bulldog_GB_D", "CUP_B_Mastiff_HMG_GB_D", "CUP_B_Mastiff_LMG_GB_D", "CUP_B_Mastiff_GMG_GB_D", "CUP_B_BRDM2_CDF"]] call _fnc_saveToTemplate;
 ["vehiclesLightTanks",  ["CUP_B_LAV25_desert_USMC", "CUP_B_LAV25M240_desert_USMC", "CUP_B_M2Bradley_USA_D", "CUP_B_M7Bradley_USA_D", "CUP_B_M2A3Bradley_USA_D", "CUP_B_M2A3Bradley_USA_D", "CUP_B_FV510_GB_D", "CUP_B_FV510_GB_D_SLAT", "CUP_B_MCV80_GB_D", "CUP_B_MCV80_GB_D_SLAT", "CUP_B_BMP2_CDF"]] call _fnc_saveToTemplate;
 
-["vehiclesTransportBoats", ["B_Boat_Transport_01_F", ]] call _fnc_saveToTemplate;
+["vehiclesTransportBoats", ["B_Boat_Transport_01_F" ]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["CUP_B_RHIB2Turret_USMC"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", ["CUP_B_AAV_USMC", "CUP_B_AAV_USMC_TTS", "CUP_B_LAV25_desert_USMC", "CUP_B_LAV25M240_desert_USMC"]] call _fnc_saveToTemplate;
 
