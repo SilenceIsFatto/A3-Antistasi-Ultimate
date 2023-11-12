@@ -5,21 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1153;
+	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=2879;
+		nextID=2928;
 	};
 	class LayerIndexProvider
 	{
-		nextID=196;
+		nextID=217;
 	};
 	class Camera
 	{
-		pos[]={7945.9751,183.78854,3505.2539};
-		dir[]={0.053072173,0.035963673,0.99794376};
-		up[]={-0.0019098641,0.99935269,-0.035912197};
-		aside[]={0.99858916,-2.5902409e-009,-0.053106502};
+		pos[]={4413.4741,16.768843,4447.2246};
+		dir[]={-0.76651549,-0.36430201,-0.52892107};
+		up[]={-0.2998555,0.93127567,-0.20691013};
+		aside[]={-0.56794947,1.4924444e-007,0.82307595};
 	};
 };
 binarizationWanted=0;
@@ -60,13 +60,14 @@ addons[]=
 	"A3_Structures_F_Mil_Barracks",
 	"A3_Structures_F_Enoch_Civilian_Police",
 	"A3_Structures_F_Exp_Military_Pillboxes",
-	"CUP_CAStructuresBarn_W"
+	"CUP_CAStructuresBarn_W",
+	"CUP_CAStructures_PMC_FuelStation"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=18;
+		items=19;
 		class Item0
 		{
 			className="A3_Modules_F_Curator";
@@ -187,6 +188,11 @@ class AddonsMetaData
 			className="CUP_CAStructuresBarn_W";
 			name="CUP_CAStructuresBarn_W";
 		};
+		class Item18
+		{
+			className="CUP_CAStructures_PMC_FuelStation";
+			name="CUP_CAStructures_PMC_FuelStation";
+		};
 	};
 };
 dlcs[]=
@@ -222,7 +228,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=566;
+		items=567;
 		class Item0
 		{
 			dataType="Layer";
@@ -4036,7 +4042,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=164.50299;
+							angle=164.50298;
 							id=1802;
 							atlOffset=-6.4849854e-005;
 						};
@@ -4122,7 +4128,7 @@ class Mission
 							colorName="ColorBrown";
 							a=91.244034;
 							b=56.813999;
-							angle=0.17999996;
+							angle=0.17999995;
 							id=284;
 							atlOffset=0.75421619;
 						};
@@ -4233,7 +4239,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=216.44485;
+							angle=216.44484;
 							id=309;
 							atlOffset=0.00040149689;
 						};
@@ -27438,6 +27444,802 @@ class Mission
 			};
 			id=2777;
 			type="Land_Cargo_Patrol_V1_F";
+		};
+		class Item566
+		{
+			dataType="Layer";
+			name="antistasi fuel station";
+			class Entities
+			{
+				items=48;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3628.4082,7.6580338,4142.1216};
+						angles[]={0.0024897563,3.5933602,6.146543};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2879;
+					type="Land_FuelStation_Build_PMC";
+					atlOffset=1.4305115e-006;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3636.5891,8.9454527,4158.7168};
+						angles[]={6.2806959,5.1310101,6.2756844};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2880;
+					type="Land_FuelStation_Shed_PMC";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3635.9163,7.0135579,4159.1431};
+						angles[]={6.2806959,5.1309652,6.2756844};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2881;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.020676136;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3637.9587,6.9902997,4158.1753};
+						angles[]={6.2806959,5.1309652,6.2756844};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2882;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.01514864;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3638.696,7.2341433,4165.4741};
+						angles[]={6.2806959,5.1309652,6.2756844};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2883;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.24634838;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3640.7385,7.5070643,4164.5059};
+						angles[]={0.0011728744,5.1307478,6.2753696};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2884;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.53700304;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3632.9316,6.9189625,4152.957};
+						angles[]={6.2806959,5.1311803,6.2756844};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2885;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.06809473;
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3634.9741,6.9302874,4151.9893};
+						angles[]={6.2806959,5.1321058,6.2756844};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2886;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.17240429;
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3810.8081,7.5711393,2347.7629};
+						angles[]={0,3.7217402,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2888;
+					type="Land_FuelStation_Build_PMC";
+					atlOffset=0.29999971;
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3820.74,9.1533442,2363.248};
+						angles[]={0,5.3122759,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2889;
+					type="Land_FuelStation_Shed_PMC";
+				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3820.1543,7.2641888,2363.7883};
+						angles[]={0,5.3122401,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2890;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.069437027;
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3821.989,7.0928311,2362.4683};
+						angles[]={0,5.3122401,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2891;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.33919573;
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3824.03,7.5354414,2369.5146};
+						angles[]={-0,5.3122401,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2892;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.34068966;
+				};
+				class Item13
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3825.8645,7.3251066,2368.1938};
+						angles[]={0,5.3120227,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2893;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.13035488;
+				};
+				class Item14
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3816.1035,7.1378665,2358.2417};
+						angles[]={0,5.3124552,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2894;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.39214182;
+				};
+				class Item15
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3817.938,6.9898596,2356.9216};
+						angles[]={0,5.3133807,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2895;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.49645138;
+				};
+				class Item16
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6205.7266,10.273432,5816.0493};
+						angles[]={0.0075011365,3.2124605,6.2756844};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2896;
+					type="Land_FuelStation_Build_PMC";
+					atlOffset=0.41728687;
+				};
+				class Item17
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6207.21,11.463259,5834.4917};
+						angles[]={6.2806959,4.7532692,6.278194};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2897;
+					type="Land_FuelStation_Shed_PMC";
+				};
+				class Item18
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6206.4272,9.5294857,5834.6396};
+						angles[]={6.2806959,4.7532244,6.278194};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2898;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.02058506;
+				};
+				class Item19
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6208.6826,9.5170841,5834.4937};
+						angles[]={6.2806959,4.7532244,6.278194};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2899;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.019804955;
+				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6206.6763,9.7264719,5841.5498};
+						angles[]={6.2806959,4.7532244,6.278194};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2900;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.20161057;
+				};
+				class Item21
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6208.9316,9.994503,5841.4028};
+						angles[]={0,4.7530103,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2901;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.48126698;
+				};
+				class Item22
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6205.9346,10.217392,5827.7891};
+						angles[]={0,4.7534389,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2902;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.72309113;
+				};
+				class Item23
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6208.1899,9.8038158,5827.6426};
+						angles[]={0,4.754365,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2903;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.32113743;
+				};
+				class Item24
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6991.7739,13.501001,4570.5444};
+						angles[]={-0,5.3873782,0.01499443};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2904;
+					type="Land_FuelStation_Build_PMC";
+					atlOffset=0.054927826;
+				};
+				class Item25
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7006.1265,15.329715,4558.8682};
+						angles[]={0.010000871,0.64916426,0.0024897563};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2905;
+					type="Land_FuelStation_Shed_PMC";
+					atlOffset=9.5367432e-007;
+				};
+				class Item26
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7006.6919,13.37018,4559.4292};
+						angles[]={0.010000871,0.64912957,0.0024897563};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2906;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.0034036636;
+				};
+				class Item27
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7005.293,13.359409,4557.6538};
+						angles[]={0.010000871,0.64912957,0.0024897563};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2907;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.31070805;
+				};
+				class Item28
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7012.147,13.12303,4555.3154};
+						angles[]={6.218277,0.64912957,6.225749};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2908;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.076071739;
+				};
+				class Item29
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7010.8442,13.184457,4553.5322};
+						angles[]={0,0.64329427,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2909;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.25073528;
+				};
+				class Item30
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7001.3276,13.018405,4563.7183};
+						angles[]={0.024993783,0.6465928,6.278182};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2910;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.0680933;
+				};
+				class Item31
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6999.9287,13.131704,4561.9429};
+						angles[]={0.010000871,0.64788598,0.0024897563};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2911;
+					type="Land_FuelStation_Feed_PMC";
+					atlOffset=0.17240334;
+				};
+				class Item32
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3410.4788,17.644169,6141.5752};
+						angles[]={6.279614,1.4169301,0.01749678};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2912;
+					type="Land_FuelStation_Build_PMC";
+				};
+				class Item33
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3392.1907,19.145071,6138.7695};
+						angles[]={0,2.9540439,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2913;
+					type="Land_FuelStation_Shed_PMC";
+					atlOffset=0.78210831;
+				};
+				class Item34
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3392.2268,17.186478,6137.9736};
+						angles[]={-0,2.9539993,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2914;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item35
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3391.8496,17.186478,6140.2021};
+						angles[]={-0,2.9529109,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2915;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item36
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3385.4456,17.186478,6136.6235};
+						angles[]={-0,2.9499266,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2916;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item37
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3385.0686,17.186478,6138.8525};
+						angles[]={-0,2.9497309,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2917;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3399.157,17.186478,6138.9023};
+						angles[]={-0,2.9542365,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2918;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item39
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={3398.6484,17.186478,6141.1055};
+						angles[]={-0,2.955162,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2919;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item40
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4398.6782,3.8989472,4422.8232};
+						angles[]={6.2196617,2.4469142,0.017135333};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2920;
+					type="Land_FuelStation_Build_PMC";
+				};
+				class Item41
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4388.7041,5.2017069,4433.1543};
+						angles[]={0,0.86175227,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+					};
+					id=2921;
+					type="Land_FuelStation_Shed_PMC";
+					atlOffset=0.36405861;
+				};
+				class Item42
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4389.3662,3.2431142,4433.5977};
+						angles[]={0,0.86097527,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2922;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item43
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4387.6558,3.2431142,4432.1201};
+						angles[]={0,0.86183006,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2923;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item44
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4394.0347,3.2431142,4428.4971};
+						angles[]={-0,0.83365625,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2924;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item45
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4392.3237,3.2431142,4427.02};
+						angles[]={0,0.83349365,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2925;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item46
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4384.9126,3.2431142,4438.8267};
+						angles[]={0,0.83416438,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2926;
+					type="Land_FuelStation_Feed_PMC";
+				};
+				class Item47
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4383.2026,3.2431142,4437.3496};
+						angles[]={0,0.83443838,-0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+					};
+					id=2927;
+					type="Land_FuelStation_Feed_PMC";
+				};
+			};
+			id=2887;
+			atlOffset=-0.17451072;
 		};
 	};
 	class Connections
