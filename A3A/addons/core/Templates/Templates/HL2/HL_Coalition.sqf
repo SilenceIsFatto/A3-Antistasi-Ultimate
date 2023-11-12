@@ -2,6 +2,8 @@
 //   Side Information   //
 //////////////////////////
 
+#include "..\..\..\script_component.hpp"
+
 ["name", "UDC"] call _fnc_saveToTemplate;
 ["spawnMarkerName", "United Defense Corridor"] call _fnc_saveToTemplate;
 
