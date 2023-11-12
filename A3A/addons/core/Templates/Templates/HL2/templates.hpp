@@ -10,28 +10,28 @@
 	{
 		side = "Inv";
 		flagTexture = QPATHTOFOLDER(Templates\Templates\HL2\images\flag_combine_co.paa);
-		name = "Universal Union";
+		name = "The Combine Union";
 		file = "HL_Combine";
-		description = "We are the Universal Union. Held by a conglomerate effort to Unite, Protect, and Eliminate.";
+		description = "We are the Universal Union. Held by a conglomerate effort to Unite, Protect, and Eliminate. In the early days of The Combine Invasion, humans were used for a militia force.";
 	};
 	
 	class HL_COA : HL_Base
 	{
 		side = "Occ";
 		flagTexture = QPATHTOFOLDER(Templates\Templates\HL2\images\flag_udc_co.paa);
-		name = "United Defense Coalition";
+		name = "Defense Coalition";
 		file = "HL_Coalition";
 		description = "The remnants of the old world militaries. Fighting to restore earth to the old order.";	
 	};
 	class HL_COA_ARD : HL_COA
 	{
-		name = "United Defense Coalition (Arid)";
+		name = "Defense Coalition (Arid)";
 		file = "HL_Coalition_Arid";
 		climate[] = {"arid"};
 	};	
 	class HL_COA_TMPRT : HL_COA
 	{
-		name = "United Defense Coalition (Temperate)";
+		name = "Defense Coalition (Temperate)";
 		file = "HL_Coalition_Temperate";
 		climate[] = {"temperate"};
 	};

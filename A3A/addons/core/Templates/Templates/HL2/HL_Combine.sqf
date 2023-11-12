@@ -4,7 +4,7 @@
 
 #include "..\..\..\script_component.hpp"
 
-["name", "Universal Union"] call _fnc_saveToTemplate;
+["name", "Combine Union"] call _fnc_saveToTemplate;
 ["spawnMarkerName", "Union Support Portal"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_US_F"] call _fnc_saveToTemplate;
