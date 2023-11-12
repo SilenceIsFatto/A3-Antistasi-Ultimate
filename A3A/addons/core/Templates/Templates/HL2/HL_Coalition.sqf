@@ -49,7 +49,7 @@
 ["vehiclesHelisLightAttack", ["CUP_B_MH60L_DAP_4x_USN", "CUP_B_UH1Y_Gunship_Dynamic_USMC", "CUP_B_UH1D_armed_GER_KSK_Des", "CUP_B_UH1D_gunship_GER_KSK_Des", "CUP_B_AW159_GER", "CUP_B_AW159_RN_Grey", "CUP_B_Mi171Sh_CDF"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["CUP_B_AH1Z_Dynamic_USMC", "CUP_B_AH1_DL_BAF", "CUP_B_Mi24_D_Dynamic_CDF"]] call _fnc_saveToTemplate;
 
-["vehiclesArtillery", ["CUP_B_M270_DPICM_USA","CUP_B_M270_HE_USA", CUP_B_M270_HE_BAF_DES, "CUP_B_BM21_CDF", "CUP_B_D30_CDF"]] call _fnc_saveToTemplate;
+["vehiclesArtillery", ["CUP_B_M270_DPICM_USA","CUP_B_M270_HE_USA", "CUP_B_M270_HE_BAF_DES", "CUP_B_BM21_CDF", "CUP_B_D30_CDF"]] call _fnc_saveToTemplate;
 ["magazines", createHashMapFromArray [
 ["CUP_B_M270_HE_USA", ["CUP_12Rnd_MLRS_HE"]],
 ["CUP_B_M270_DPICM_USA", ["CUP_12Rnd_MLRS_DPICM"]],
@@ -72,7 +72,7 @@
 ["staticAT", ["CUP_B_TOW2_TriPod_USMC", "CUP_B_TOW2_TriPod_US", "CUP_B_SPG9_CDF"]] call _fnc_saveToTemplate;
 ["staticAA", ["CUP_B_Stinger_AA_pod_Base_USMC", "CUP_B_CUP_Stinger_AA_pod_US", "CUP_B_Igla_AA_pod_CDF"]] call _fnc_saveToTemplate;
 ["staticMortars", ["CUP_B_M252_USMC", "CUP_B_M252_US", "CUP_B_L16A2_BAF_DDPM", "CUP_B_2b14_82mm_CDF"]] call _fnc_saveToTemplate;
-["staticHowitzers", [""CUP_O_D30_RU""]] call _fnc_saveToTemplate;
+["staticHowitzers", ["CUP_O_D30_RU"]] call _fnc_saveToTemplate;
 
 ["vehicleRadar", "B_Radar_System_01_F"] call _fnc_saveToTemplate;
 ["vehicleSam", "B_SAM_System_03_F"] call _fnc_saveToTemplate;
