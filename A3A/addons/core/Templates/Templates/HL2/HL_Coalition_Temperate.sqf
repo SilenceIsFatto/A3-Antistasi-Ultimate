@@ -783,8 +783,8 @@ _militiaLoadoutData set ["rifles", [
                 
 ]];
 _militiaLoadoutData set ["carbines", [
-    ["CUP_arifle_AKS74U", "", "hlc_optic_kobra", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
-    ["CUP_arifle_AK101_railed", "", "hlc_optic_hensoldtzo_hi", "", ["CUP_30Rnd_556x45_AK"], [], ""],
+    ["CUP_arifle_AKS74U", "", "", "", ["CUP_30Rnd_TE1_Red_Tracer_545x39_AK74_plum_M"], [], ""],
+    ["CUP_arifle_AK101_railed", "", "", "", ["CUP_30Rnd_556x45_AK"], [], ""],
     ["CUP_srifle_SVD", "", "cup_optic_okp_7", "", ["CUP_10Rnd_762x54_SVD_M"], [], ""],
     ["CUP_srifle_SVD", "", "", "", ["CUP_10Rnd_762x54_SVD_M"], [], ""],   
     ["arifle_AK12_F", "", "optic_holosight_smg_blk_f", "", ["30Rnd_762x39_AK12_Mag_F"], [], ""],
@@ -797,11 +797,7 @@ _militiaLoadoutData set ["carbines", [
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
     ["CUP_arifle_AK74_GL", "", "", "", ["CUP_30Rnd_545x39_AK74_plum_M"], ["CUP_1Rnd_HE_GP25_M", "CUP_1Rnd_SmokeRed_GP25_M"], ""],
-    ["hlc_rifle_aks74_GL", "", "cup_acc_flashlight", "", ["hlc_30Rnd_545x39_B_AK"], ["CUP_1Rnd_HE_GP25_M"], ""],
-    ["hlc_rifle_aks74_GL", "", "", "", ["hlc_30Rnd_545x39_B_AK"], ["CUP_1Rnd_HE_GP25_M"], ""],    
-    ["hlc_rifle_ak12GL", "", "cup_optic_compm4", "", ["hlc_30Rnd_545x39_B_AK"], ["CUP_1Rnd_HE_GP25_M"], ""],
-    ["hlc_rifle_ak12GL", "", "cup_optic_acog_ta01nsn_rmr_black", "", ["hlc_30Rnd_545x39_B_AK"], ["CUP_1Rnd_HE_GP25_M"], ""],   
-    ["CUP_arifle_AK109_GL_top_rail", "", "cup_optic_holoblack", "", ["CUP_30Rnd_762x39_AK103_bakelite_M"], ["hlc_VOG25_AK"], ""],
+    ["CUP_arifle_AK109_GL_top_rail", "", "cup_optic_holoblack", "", ["CUP_30Rnd_762x39_AK103_bakelite_M"], ["CUP_30Rnd_762x39_AK103_bakelite_M"], ""],
     ["CUP_arifle_Colt727_M203", "", "", "", ["CUP_30Rnd_556x45_Stanag_Tracer_Red"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HEDP_M203", "CUP_1Rnd_Smoke_M203"], ""],
     ["CUP_arifle_M16A1E1GL", "", "", "", ["CUP_30Rnd_556x45_Stanag_Tracer_Red"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HEDP_M203", "CUP_1Rnd_Smoke_M203"], ""],
     ["CUP_arifle_M16A2_GL", "", "", "", ["CUP_30Rnd_556x45_Stanag_Tracer_Red"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HEDP_M203", "CUP_1Rnd_Smoke_M203"], ""],
@@ -825,8 +821,6 @@ _militiaLoadoutData set ["machineGuns", [
     ["CUP_arifle_RPK74M", "", "", "", ["CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M"], [], ""],
     ["CUP_arifle_RPK74", "", "cup_optic_1p63", "", ["75rnd_762x39_AK12_Mag_Tracer_F"], [], ""],
     ["CUP_arifle_RPK74", "", "", "", ["75rnd_762x39_AK12_Mag_Tracer_F"], [], ""],    
-    ["hlc_rifle_RPK12", "", "cup_optic_aimpoint_5000", "", ["30Rnd_545x39_Mag_Tracer_F"], [], ""],
-    ["hlc_rifle_RPK12", "", "", "", ["30Rnd_545x39_Mag_Tracer_F"], [], ""],
     ["CUP_lmg_M60E4_norail", "", "", "", ["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"], [], ""],
     ["CUP_lmg_M60", "", "", "", ["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M"], [], ""],
     ["CUP_lmg_MG3_rail", "", "", "", ["CUP_120Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M", "CUP_120Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"], [], ""],
