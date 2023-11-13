@@ -20,15 +20,9 @@
 		side = "Occ";
 		flagTexture = QPATHTOFOLDER(Templates\Templates\HL2\images\flag_udc_co.paa);
 		name = "Defense Coalition";
-		file = "HL_Coalition";
+		file = "HL_Coalition_Arid";
 		climate[] = {"arid", "temperate"};
 		description = "The remnants of the old world militaries. Fighting to restore earth to the old order.";	
-	};	
-	class HL_COA_ARD : HL_COA
-	{
-		name = "Defense Coalition (Arid)";
-		file = "HL_Coalition_Arid";
-		climate[] = {"arid"};
 	};	
 	class HL_COA_TMPRT : HL_COA
 	{
