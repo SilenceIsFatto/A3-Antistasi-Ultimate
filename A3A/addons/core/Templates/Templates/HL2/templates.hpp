@@ -5,7 +5,7 @@
 		basepath = QPATHTOFOLDER(Templates\Templates\HL2);
 		priority = 30;
 	};
-
+////// Combine Start ///////
 	class HL_COMB : HL_Base
 	{
 		side = "Inv";
@@ -14,15 +14,16 @@
 		file = "HL_Combine";
 		description = "We are the Universal Union. Held by a conglomerate effort to Unite, Protect, and Eliminate. In the early days of The Combine Invasion, humans were used for a militia force.";
 	};
-	
+////// Coalition Start///////	
 	class HL_COA : HL_Base
 	{
 		side = "Occ";
 		flagTexture = QPATHTOFOLDER(Templates\Templates\HL2\images\flag_udc_co.paa);
 		name = "Defense Coalition";
 		file = "HL_Coalition";
+		climate[] = {"arid", "temperate"};
 		description = "The remnants of the old world militaries. Fighting to restore earth to the old order.";	
-	};
+	};	
 	class HL_COA_ARD : HL_COA
 	{
 		name = "Defense Coalition (Arid)";
@@ -35,7 +36,7 @@
 		file = "HL_Coalition_Temperate";
 		climate[] = {"temperate"};
 	};
-
+////////// Citizen and Zombie //////////
 	class HL_CIV : HL_Base
 	{
 		side = "Civ";
@@ -49,7 +50,7 @@
 		name = "Xenian Life";
 		file = "HL_Zombie";
 	};
-
+/////////// Rival ////////////////
 	class HL_RIV : HL_Base
 	{
 		side = "Riv";
@@ -57,7 +58,7 @@
 		name = "Collaborative Enforcers";
 		file = "HL_Rival";
 	};
-
+/////////////// Rebel ///////////////
 	class HL_REB : HL_Base
 	{
 		side = "Reb";
