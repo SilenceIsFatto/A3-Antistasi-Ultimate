@@ -210,9 +210,9 @@ _loadoutData set ["items_unarmed_extras", []];
 
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
-///////////////////////////////////////
-//    Special Forces Loadout Data    //
-///////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+//    Special Forces Loadout Data  Weapons are Excluded due to spawning template WBK Npcs  //
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _sfLoadoutData set ["items_marksman_extras", (_mmItems + _sfmmItems)];
@@ -263,9 +263,9 @@ _sfLoadoutData set ["sidearms", [
     ["", "ace_muzzle_mzls_smg_02", "optic_yorris", "", [""], [], ""]
 ]];
 
-/////////////////////////////////
-//    Elite Loadout Data       //
-/////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////
+//    Elite Loadout Data  Weapons are Excluded due to spawning template WBK Npcs     //
+///////////////////////////////////////////////////////////////////////////////////////
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData set ["uniforms", ["CombainOrdenal_Uniform_1"]];
