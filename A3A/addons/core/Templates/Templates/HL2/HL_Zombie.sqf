@@ -146,15 +146,21 @@ private _pressTemplate = {
 };
 
 private _specialUnits = [
-    "WBK_ClassicZombie_HLA_1",
-    "WBK_ClassicZombie_HLA_2",
-    "WBK_ClassicZombie_HLA_3",
-    "WBK_ClassicZombie_HLA_4",
-    "WBK_ClassicZombie_HLA_5",
-    "WBK_Antlion_1",
-    "WBK_AntlionGuardian_1",
-    "WBK_Bullsquid_1",
-    "WBK_HoundEye_1"
+"WBK_ClassicZombie_HLA_1",
+"WBK_ClassicZombie_HLA_2",
+"WBK_ClassicZombie_HLA_3",
+"WBK_ClassicZombie_HLA_4",
+"WBK_ClassicZombie_HLA_5",
+"WBK_ClassicZombie_HLA_6",
+"WBK_ClassicZombie_HLA_7",
+"WBK_ClassicZombie_HLA_8",
+"WBK_ClassicZombie_HLA_9",    
+"WBK_Zombine_HLA_1",
+"WBK_Zombine_HLA_2",
+"WBK_Headcrab_Normal",
+"WBK_Antlion_1",
+"WBK_Bullsquid_1",
+"WBK_HoundEye_1"
 ];
 
 private _specialUnitsWeights = [
@@ -163,10 +169,16 @@ private _specialUnitsWeights = [
     1.0,
     1.0,
     1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,    
+    0.7,
+    0.7,
+    1.5,
     0.5,
-    0.1,
-    0.6,
-    0.35
+    0.4,
+    0.5
   
 ];
 
