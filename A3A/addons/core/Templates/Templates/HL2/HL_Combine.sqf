@@ -248,10 +248,10 @@ _sfLoadoutData set ["SMGs", [
     ["WBK_CP_HeavySmg", "", "", "", ["HLB_HSMG_Mag"], [], ""]
 ]];
 _sfLoadoutData set ["machineGuns", [
-    ["MMG_01_tan_F", "hlc_bipod_utgshooters", "ace_muzzle_mzls_93mmg", "optic_arco_ak_blk_f", ["150Rnd_93x64_Mag"], [], ""]
+    ["MMG_01_tan_F", "", "ace_muzzle_mzls_93mmg", "optic_arco_ak_blk_f", ["150Rnd_93x64_Mag"], [], ""]
 ]];
 _sfLoadoutData set ["marksmanRifles", [
-    ["hlc_rifle_bcmblackjack", "optic_arco_ak_blk_f", "", "CUP_optic_SB_11_4x20_PM", ["hlc_50rnd_300BLK_STANAG_EPR"], [], "hlc_bipod_utgshooters"]
+    ["", "optic_arco_ak_blk_f", "", "CUP_optic_SB_11_4x20_PM", [""], [], ""]
 ]];
 _sfLoadoutData set ["sniperRifles", [
     ["HL_SniperAssasin", "", "", "", ["HLA_SniperMag_Mag"], [], ""]
@@ -260,7 +260,7 @@ _sfLoadoutData set ["lightATLaunchers", [
     ["launch_O_Titan_short_F", "", "", "", [""], [], ""]
 ]];
 _sfLoadoutData set ["sidearms", [
-    ["hlc_smg_mp5k", "ace_muzzle_mzls_smg_02", "optic_yorris", "", ["hlc_30Rnd_9x19_SD_MP5"], [], ""]
+    ["", "ace_muzzle_mzls_smg_02", "optic_yorris", "", [""], [], ""]
 ]];
 
 /////////////////////////////////
@@ -308,7 +308,7 @@ _eliteLoadoutData set ["sniperRifles", [
     ["HL_SniperAssasin", "", "", "", ["HLA_SniperMag_Mag"], [], ""]
 ]];
 _eliteLoadoutData set ["sidearms", [
-    ["hlc_smg_mp5k", "", "", "", ["hlc_30Rnd_9x19_B_MP5"], [], ""],
+    ["", "", "", "", [""], [], ""],
     ["WBK_Revolver_HL1_2", "", "", "", ["HL_Revolver_Mag"], [], ""]
 ]];
 
