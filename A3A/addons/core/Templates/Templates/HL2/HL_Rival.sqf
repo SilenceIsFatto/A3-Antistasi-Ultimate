@@ -79,12 +79,12 @@ _loadoutData set ["uniforms", [
 ]];
 
 _loadoutData set ["offuniforms", ["CombainCIV_Uniform_2"]];
-_loadoutData set ["vests", ["V_hecu_vest_belt_LBV_collar"]];
-_loadoutData set ["heavyVests", ["HL_CMB_V_CP"]];
-_loadoutData set ["atBackpacks", ["bms_ARVN_zwart_ruck"]];
+_loadoutData set ["vests", ["V_HeavyBallistic_Sundown"]];
+_loadoutData set ["heavyVests", ["V_HeavyBallistic_Sundown"]];
+_loadoutData set ["atBackpacks", ["Combaine_backpack_Civilian"]];
 _loadoutData set ["backpacks", ["Combaine_backpack_Civilian"]];
-_loadoutData set ["helmets", ["CombainCIV1", "CombainCIV2"]];
-_loadoutData set ["heavyHelmets", ["HL_CMB_H_CP"]];
+_loadoutData set ["helmets", ["SC_Helmet_GRI_Black", "SC_Helmet_GRI_Black"]];
+_loadoutData set ["heavyHelmets", ["SC_MDF_Pathfinder_Helmet"]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
