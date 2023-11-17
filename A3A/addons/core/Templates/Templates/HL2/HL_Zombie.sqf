@@ -151,8 +151,7 @@ private _specialUnits = [
 "WBK_ClassicZombie_HLA_3",
 "WBK_ClassicZombie_HLA_4",
 "WBK_ClassicZombie_HLA_5",
-"WBK_Antlion_1",
-"WBK_Bullsquid_1"
+"WBK_Antlion_1"
 ];
 
 private _specialUnitsWeights = [
@@ -161,8 +160,7 @@ private _specialUnitsWeights = [
     1.0,
     1.0,
     1.0,
-    0.5,
-    0.4
+    0.5
 ];
 
 private _prefix = "militia";
