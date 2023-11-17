@@ -82,7 +82,7 @@ private _initialRebelEquipment = [
     "CUP_HandGrenade_RGD5", "SmokeShell",
     "CUP_V_I_Carrier_Belt", "CUP_V_I_Guerilla_Jacket", "CUP_V_I_RACS_Carrier_Rig_2", "CUP_V_I_RACS_Carrier_Rig_wdl_2",
     "V_LegStrapBag_black_F", "V_Rangemaster_belt", "V_BandollierB_blk", "V_BandollierB_cbr", "V_Pocketed_black_F",
-    "B_FieldPack_cbr", "B_FieldPack_khk", "HLA_SCBA_01_infestation_F","Civ_Backpack_1","B_AssaultPack_rgr","B_AssaultPack_khk",
+    "B_FieldPack_cbr", "B_FieldPack_khk", "B_AssaultPack_rgr", "B_AssaultPack_khk",
     "Binocular"
 ];
 
