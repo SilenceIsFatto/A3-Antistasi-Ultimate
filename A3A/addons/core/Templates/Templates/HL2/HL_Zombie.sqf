@@ -151,7 +151,6 @@ private _specialUnits = [
 "WBK_ClassicZombie_HLA_3",
 "WBK_ClassicZombie_HLA_4",
 "WBK_ClassicZombie_HLA_5",
-"WBK_Headcrab_Normal",
 "WBK_Antlion_1",
 "WBK_Bullsquid_1",
 "WBK_HoundEye_1"
@@ -163,7 +162,6 @@ private _specialUnitsWeights = [
     1.0,
     1.0,
     1.0,
-    1.5,
     0.5,
     0.4,
     0.5
