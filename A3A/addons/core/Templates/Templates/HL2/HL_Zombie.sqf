@@ -149,8 +149,6 @@ private _specialUnits = [
 "WBK_ClassicZombie_HLA_1",
 "WBK_ClassicZombie_HLA_2",
 "WBK_ClassicZombie_HLA_3",
-"WBK_ClassicZombie_HLA_9",
-"WBK_Zombine_HLA_2",
 "WBK_Headcrab_Normal",
 "WBK_Antlion_1"
 ];
@@ -159,8 +157,6 @@ private _specialUnitsWeights = [
     1.0,
     1.0,
     1.0,
-    1.0,
-    0.2, 
     1.0,           
     0.7
 ];
