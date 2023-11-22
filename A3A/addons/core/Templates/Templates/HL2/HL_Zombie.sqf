@@ -149,16 +149,14 @@ private _specialUnits = [
 "WBK_ClassicZombie_HLA_1",
 "WBK_ClassicZombie_HLA_2",
 "WBK_ClassicZombie_HLA_3",
-"WBK_Headcrab_Normal",
-"WBK_Antlion_1"
+"WBK_Headcrab_Normal"
 ];
 
 private _specialUnitsWeights = [
     1.0,
     1.0,
     1.0,
-    1.0,           
-    0.7
+    1.0
 ];
 
 private _prefix = "militia";
