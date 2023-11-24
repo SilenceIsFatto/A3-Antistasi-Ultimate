@@ -953,8 +953,8 @@ private _unitTypes = [
 	["AT", _atTemplate, [["baseClass", "WBK_Hunter_Synth_1", false]], [_prefix]],
 	["AA", _aaTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
 	["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_Combine_Hl2_Type_WastelandPatrol", true]], [_prefix]],
-	["Marksman", _marksmanTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", false]], [_prefix]],
-	["Sniper", _sniperTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", false]], [_prefix]]
+	["Marksman", _marksmanTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", true]], [_prefix]],
+	["Sniper", _sniperTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", true]], [_prefix]]
 ];
 
 [_prefix, _unitTypes, _sfLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
@@ -1032,14 +1032,14 @@ private _unitTypes = [
     ["Radioman", _radiomanTemplate, [["baseClass", "WBK_Combine_Grunt", true]], [_prefix]],
     ["Medic", _medicTemplate, [["medic", true], ["baseClass", "WBK_Combine_Grunt_white", true]], [_prefix]],
     ["Engineer", _engineerTemplate, [["engineer", true], ["baseClass", "WBK_Combine_Ordinal", true]], [_prefix]],
-    ["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true], ["baseClass", "WBK_Combine_Wallhammer", false]], [_prefix]],
-["Grenadier", _grenadierTemplate, [["baseClass", "WBK_HL2_Combine_Type", false]], [_prefix]],
+    ["ExplosivesExpert", _explosivesExpertTemplate, [["explosiveSpecialist", true], ["baseClass", "WBK_Combine_Wallhammer", true]], [_prefix]],
+["Grenadier", _grenadierTemplate, [["baseClass", "WBK_HL2_Combine_Type", true]], [_prefix]],
 	["AT", _atTemplate, [["baseClass", "WBK_Hunter_Synth_1", false]], [_prefix]],
 	["AT", _atTemplate, [["baseClass", "WBK_Hunter_Synth_1", false]], [_prefix]],
     ["AA", _aaTemplate, [["baseClass", "WBK_HumanSynth_1", false]], [_prefix]],
-    ["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_Combine_APF", false]], [_prefix]],
-    ["Marksman", _marksmanTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", false]], [_prefix]],
-    ["Sniper", _sniperTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", false]], [_prefix]]
+    ["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_Combine_APF", true]], [_prefix]],
+    ["Marksman", _marksmanTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", true]], [_prefix]],
+    ["Sniper", _sniperTemplate, [["baseClass", "WBK_Combine_ASS_Sniper", true]], [_prefix]]
 ];
 
 [_prefix, _unitTypes, _eliteLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
