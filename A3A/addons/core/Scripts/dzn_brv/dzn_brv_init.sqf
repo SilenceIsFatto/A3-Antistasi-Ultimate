@@ -12,7 +12,7 @@ if (!isServer) exitWith {};
 
 // Enable/Disable AI logging
 dzn_brv_allowLogAI			= true;
-dzn_brv_disableOnAllDead		= true;
+dzn_brv_disableOnAllDead		= false;
 
 dzn_brv_playerLogInterval 		= 1; // seconds (min: 1 sec), accuracy of player's logging
 dzn_brv_nonPlayerLogInterval		= 3; // seconds (min: 1 sec), accurcay of vehicles and AI (if enabled) logging
