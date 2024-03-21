@@ -38,4 +38,27 @@ class Params
         };
         default = 1;
     };
+
+    // AAR Logging
+    class dzn_brv_enabled
+	{
+		title = "tS AAR Logging";
+		values[] = {0,1};
+		texts[] = {"Disabled","Enabled"};
+		default = 1;
+	};
+	class dzn_brv_enabledAILog
+	{
+		title = "tS AAR Logging -- Enable AI logging";
+		values[] = {0,1};
+		texts[] = {"Disabled","Enabled"};
+		default = 1;
+	};
+	class dzn_brv_disableOnAllDead
+	{
+		title = "tS AAR Logging -- Stop logging on all players dead";
+		values[] = {0,1};
+		texts[] = {"Disabled","Enabled"};
+		default = 0;
+	};
 };

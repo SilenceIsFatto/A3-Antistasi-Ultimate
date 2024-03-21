@@ -1,0 +1,263 @@
+/*%FSM<COMPILE "E:\GMZ\STEAM\SteamApps\common\Arma 3 Tools\FSMEditor\scriptedFSM.cfg, dzn_brv_loop">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Start",0,250,-50.000000,-1175.000000,50.000000,-1125.000000,0.000000,"Start"};
+item1[] = {"Started",4,218,-50.000000,-1075.000000,50.000000,-1025.000000,0.000000,"Started"};
+item2[] = {"Collect_Metedata",2,250,-50.000000,-1000.000000,50.000000,-950.000000,0.000000,"Collect Metedata"};
+item3[] = {"Player_Timer",4,218,-50.000000,-925.000000,50.000000,-875.000000,0.000000,"Player Timer"};
+item4[] = {"All_Units_Timer",4,218,100.000000,-925.000000,200.000000,-875.000000,6.000000,"All Units Timer"};
+item5[] = {"Collect__Player",2,250,-50.000000,-850.000000,50.000000,-800.000000,0.000000,"Collect " \n "Player Data"};
+item6[] = {"Collect_Units_Da",2,250,100.000000,-850.000000,200.000000,-800.000000,0.000000,"Collect" \n "Units Data"};
+item7[] = {"",7,210,146.000000,-754.000000,154.000000,-746.000000,0.000000,""};
+item8[] = {"",7,210,-129.000000,-754.000000,-121.000000,-746.000000,0.000000,""};
+item9[] = {"",7,210,-4.000000,-754.000000,4.000000,-746.000000,0.000000,""};
+item10[] = {"",7,210,-129.000000,-1054.000000,-121.000008,-1046.000000,0.000000,""};
+item11[] = {"Finished_",4,218,-300.000000,-1075.000000,-200.000000,-1025.000000,2.000000,"Finished?"};
+item12[] = {"End",1,250,-300.000000,-675.000000,-200.000000,-625.000000,0.000000,"End"};
+link0[] = {0,1};
+link1[] = {1,2};
+link2[] = {2,3};
+link3[] = {2,4};
+link4[] = {3,5};
+link5[] = {4,6};
+link6[] = {5,9};
+link7[] = {6,7};
+link8[] = {7,9};
+link9[] = {8,10};
+link10[] = {9,8};
+link11[] = {10,1};
+link12[] = {10,11};
+link13[] = {11,12};
+globals[] = {0.000000,0,0,0,0,640,480,1,271,6316128,1,-550.838135,324.729004,-431.797852,-1364.026123,649,691,1};
+window[] = {0,-1,-1,-1,-1,998,281,1694,136,1,667};
+*//*%FSM</HEAD>*/
+class FSM
+{
+        fsmName = "dzn_brv_loop";
+        class States
+        {
+                /*%FSM<STATE "Start">*/
+                class Start
+                {
+                        name = "Start";
+                        itemno = 0;
+                        init = /*%FSM<STATEINIT""">*/"private[""_longTimer"",""_shortTimer"",""_debug""];" \n
+                         "" \n
+                         "_debug = false;" \n
+                         "if (_debug) then { " \n
+                         "	diag_log ""BRV: REPORT Init"";" \n
+                         "	diag_log format [""BRV: dzn_brv_allowLogAI=%1"", dzn_brv_allowLogAI]; " \n
+                         "	diag_log format [""BRV: dzn_brv_playerLogInterval=%1"", dzn_brv_playerLogInterval];" \n
+                         "	diag_log format [""BRV: dzn_brv_nonPlayerLogInterval=%1"", dzn_brv_nonPlayerLogInterval];  " \n
+                         "	diag_log format [""BRV: dzn_brv_attackVectorMaxDistance=%1"", dzn_brv_attackVectorMaxDistance];  " \n
+                         "};" \n
+                         "" \n
+                         "/*" \n
+                         "	Initialization" \n
+                         "" \n
+                         "	- get mission metadata" \n
+                         "	- get units metadata" \n
+                         "	- get units 0-time data" \n
+                         "*/" \n
+                         "	" \n
+                         "call dzn_brv_getCoreMetadata;" \n
+                         "call dzn_brv_collectMetadata;" \n
+                         "[false] call dzn_brv_collectUnitsData;" \n
+                         "" \n
+                         "/*" \n
+                         "	Set timers" \n
+                         "*/" \n
+                         "_playerTimer = 0;" \n
+                         "_allUnitsTimer = 0;" \n
+                         "" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Started">*/
+                                class Started
+                                {
+                                        itemno = 1;
+                                        priority = 0.000000;
+                                        to="Collect_Metedata";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(dzn_brv_started)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Collect_Metedata">*/
+                class Collect_Metedata
+                {
+                        name = "Collect_Metedata";
+                        itemno = 2;
+                        init = /*%FSM<STATEINIT""">*/"if (_debug) then { " \n
+                         "	diag_log format [""BRV: Re-collect Metadata at %1"", (call dzn_brv_getLogTime)]; " \n
+                         "};" \n
+                         "" \n
+                         "/*" \n
+                         "	Get Metadata about new units (e.g. spawned)" \n
+                         "*/" \n
+                         "call dzn_brv_collectMetadata;"/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "All_Units_Timer">*/
+                                class All_Units_Timer
+                                {
+                                        itemno = 4;
+                                        priority = 6.000000;
+                                        to="Collect_Units_Da";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(call dzn_brv_getLogTime) >= _allUnitsTimer"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Player_Timer">*/
+                                class Player_Timer
+                                {
+                                        itemno = 3;
+                                        priority = 0.000000;
+                                        to="Collect__Player";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(call dzn_brv_getLogTime) >= _playerTimer"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Collect__Player">*/
+                class Collect__Player
+                {
+                        name = "Collect__Player";
+                        itemno = 5;
+                        init = /*%FSM<STATEINIT""">*/"" \n
+                         "private _logTime = (call dzn_brv_getLogTime);" \n
+                         "" \n
+                         "if (_debug) then { " \n
+                         "	diag_log format [""BRV: Dump Player Data at %1"", _logTime]; " \n
+                         "};" \n
+                         "" \n
+                         "[true, _logTime] call dzn_brv_collectUnitsData;" \n
+                         "" \n
+                         "if (_debug) then { " \n
+                         "	diag_log format [""BRV: Player Data dumped at %1"", _logTime]; " \n
+                         "" \n
+                         "};" \n
+                         "" \n
+                         "" \n
+                         "/*" \n
+                         "	Set timers" \n
+                         "*/" \n
+                         "_playerTimer = _logTime + dzn_brv_playerLogInterval;" \n
+                         "" \n
+                         "if (_debug) then { " \n
+                         "diag_log format [""BRV: New Player Data Dump planned to %1"", (_logTime + dzn_brv_playerLogInterval)]; " \n
+                         "};" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Finished_">*/
+                                class Finished_
+                                {
+                                        itemno = 11;
+                                        priority = 2.000000;
+                                        to="End";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(dzn_brv_finished)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Started">*/
+                                class Started
+                                {
+                                        itemno = 1;
+                                        priority = 0.000000;
+                                        to="Collect_Metedata";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(dzn_brv_started)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "Collect_Units_Da">*/
+                class Collect_Units_Da
+                {
+                        name = "Collect_Units_Da";
+                        itemno = 6;
+                        init = /*%FSM<STATEINIT""">*/"private _logTime = (call dzn_brv_getLogTime);" \n
+                         "" \n
+                         "if (_debug) then { " \n
+                         "	diag_log format [""BRV: Dump All Units Data at %1"", _logTime]; " \n
+                         "" \n
+                         "};" \n
+                         "" \n
+                         "[false, _logTime] call dzn_brv_collectUnitsData;" \n
+                         "" \n
+                         "if (_debug) then { " \n
+                         "	diag_log format [""BRV: All Units Data dumped at %1"", _logTime]; " \n
+                         "};" \n
+                         "" \n
+                         "/*" \n
+                         "	Set timers" \n
+                         "*/" \n
+                         "_allUnitsTimer = _logTime + dzn_brv_nonPlayerLogInterval;" \n
+                         "" \n
+                         "if (_debug) then { " \n
+                         "diag_log format [""BRV: New All Units Data Dump planned to %1"", (_logTime + dzn_brv_nonPlayerLogInterval)]; " \n
+                         "};" \n
+                         ""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                                /*%FSM<LINK "Finished_">*/
+                                class Finished_
+                                {
+                                        itemno = 11;
+                                        priority = 2.000000;
+                                        to="End";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(dzn_brv_finished)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                                /*%FSM<LINK "Started">*/
+                                class Started
+                                {
+                                        itemno = 1;
+                                        priority = 0.000000;
+                                        to="Collect_Metedata";
+                                        precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+                                        condition=/*%FSM<CONDITION""">*/"(dzn_brv_started)"/*%FSM</CONDITION""">*/;
+                                        action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+                                };
+                                /*%FSM</LINK>*/
+                        };
+                };
+                /*%FSM</STATE>*/
+                /*%FSM<STATE "End">*/
+                class End
+                {
+                        name = "End";
+                        itemno = 12;
+                        init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+                        precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+                        class Links
+                        {
+                        };
+                };
+                /*%FSM</STATE>*/
+        };
+        initState="Start";
+        finalStates[] =
+        {
+                "End",
+        };
+};
+/*%FSM</COMPILE>*/
