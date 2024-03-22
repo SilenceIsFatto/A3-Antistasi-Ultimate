@@ -80,6 +80,11 @@ private _initialRebelEquipment = [
 
 if (["diwako_anomalies"] call A3U_fnc_hasAddon) then {_initialRebelEquipment append ["anomalydetector"]};
 
+if (A3A_hasArmbands) then {
+    _armbands = call compile preprocessFileLineNumbers "x\A3A\addons\core\Templates\Templates\#items\armbands_nvg.sqf";
+    _initialRebelEquipment append _armbands;
+};
+
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr", "tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {
     _initialRebelEquipment pushBack "tf_anprc155";

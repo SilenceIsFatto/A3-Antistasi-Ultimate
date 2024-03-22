@@ -93,6 +93,11 @@ private _initialRebelEquipment = [
     "vn_c_pack_01"
 ];
 
+if (A3A_hasArmbands) then {
+    _armbands = call compile preprocessFileLineNumbers "x\A3A\addons\core\Templates\Templates\#items\armbands_nvg.sqf";
+    _initialRebelEquipment append _armbands;
+};
+
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [

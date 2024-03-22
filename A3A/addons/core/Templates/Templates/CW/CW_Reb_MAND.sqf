@@ -84,6 +84,11 @@ private _initialRebelEquipment = [
     "SWLB_clone_commander_binocular_night"
 ];
 
+if (A3A_hasArmbands) then {
+    _armbands = call compile preprocessFileLineNumbers "x\A3A\addons\core\Templates\Templates\#items\armbands_nvg.sqf";
+    _initialRebelEquipment append _armbands;
+};
+
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","SWLB_comlink_hush98","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["ls_mandalorian_tro_backpack"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","JLTS_clone_comlink","TFAR_anprc154"]};

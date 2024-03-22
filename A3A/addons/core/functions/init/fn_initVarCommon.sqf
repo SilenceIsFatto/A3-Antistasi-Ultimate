@@ -115,12 +115,11 @@ if(A3A_hasACEMedical && isClass (configFile >> "CfgWeapons" >> "kat_scalpel")) t
 // Zeus enhanced
 A3A_hasZen = (isClass (configFile >> "CfgPatches" >> "zen_common"));
 
-// Zeus enhanced
-A3A_hasZen = (isClass (configFile >> "CfgPatches" >> "zen_common"));
-
 //Content Mods (Units, Vehicles, Weapons, Clothes etc.)
 //These are handled by a script in the Templates folder to keep integrators away from critical code.
 //call A3A_fnc_detector;
+
+A3A_hasArmbands = (isClass (configFile >> "CfgPatches" >> "Armbands"));
 
 ////////////////////////////////////
 //        BUILDINGS LISTS        ///

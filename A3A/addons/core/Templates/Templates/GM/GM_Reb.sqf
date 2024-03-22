@@ -98,6 +98,11 @@ private _initialRebelEquipment = [
 "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_ocamo","B_FieldPack_oucamo","B_FieldPack_cbr","B_FieldPack_khk",
 "gm_ge_bgs_vest_80_rifleman","gm_gc_bgs_vest_80_border_str","gm_gc_army_vest_80_at_str","Binocular"];
 
+if (A3A_hasArmbands) then {
+    _armbands = call compile preprocessFileLineNumbers "x\A3A\addons\core\Templates\Templates\#items\armbands_nvg.sqf";
+    _initialRebelEquipment append _armbands;
+};
+
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};

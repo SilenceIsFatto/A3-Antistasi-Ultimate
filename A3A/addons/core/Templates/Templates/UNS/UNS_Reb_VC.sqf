@@ -87,6 +87,11 @@ private _initialRebelEquipment = [
 "uns_vc_chestrig", "UNS_VC_A2",
 "Binocular"];
 
+if (A3A_hasArmbands) then {
+    _armbands = call compile preprocessFileLineNumbers "x\A3A\addons\core\Templates\Templates\#items\armbands_nvg.sqf";
+    _initialRebelEquipment append _armbands;
+};
+
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr", "UNS_ItemRadio_PRC_90_TFAR"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "UNS_USMC_RTO"};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr", "UNS_ItemRadio_PRC_90_TFAR"]};

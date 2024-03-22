@@ -77,6 +77,11 @@ private _initialRebelEquipment = [
     "LIB_Binocular_GER"
 ];
 
+if (A3A_hasArmbands) then {
+    _armbands = call compile preprocessFileLineNumbers "x\A3A\addons\core\Templates\Templates\#items\armbands_nvg.sqf";
+    _initialRebelEquipment append _armbands;
+};
+
 // if (A3A_hasTFAR) then {_initialRebelEquipment append ["TFAR_SCR536"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["B_LIB_US_Radio"]};
 // if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_SCR536"]};
