@@ -100,6 +100,12 @@ private _initialRebelEquipment = [
     "SPE_Binocular_US"
 ];
 
+if (A3A_hasArmbands) then {
+    _armbands = call compile preprocessFileLineNumbers "x\A3A\addons\core\Templates\Templates\#items\armbands_nvg.sqf";
+    _initialRebelEquipment append _armbands;
+};
+if (A3A_hasACE) then {_initialRebelEquipment append ["ACE_DeadManSwitch"]};
+
 // if (A3A_hasTFAR) then {_initialRebelEquipment append ["TFAR_SCR536"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {
     _initialRebelEquipment pushBack "B_SPE_GER_Radio";
