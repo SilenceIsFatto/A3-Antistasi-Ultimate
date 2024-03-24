@@ -60,6 +60,11 @@ class traderMods
         addons[] = {"bwa3_common"};
         prefix = "bwastock";
     };
+    class crocus : base
+    {
+        addons[] = {"ArmaFPV_Data"};
+        prefix = "crocusstock";
+    };
     class CW : base
     {
         addons[] = {"3AS_Characters", "442_equipment", "SWLB_clones", "JLTS_core", "CWDependencies"};

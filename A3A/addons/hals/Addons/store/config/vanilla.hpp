@@ -1155,7 +1155,4 @@
 			ITEM(I_UavTerminal, 800, MISC_STOCK);
 			ITEM(O_UavTerminal, 800, MISC_STOCK);
 			ITEM(B_UavTerminal, 800, MISC_STOCK);
-
-			ITEM(I_Crocus_AP_Bag, 200, LAUNCHER_STOCK);
-			ITEM(I_Crocus_AT_Bag, 400, LAUNCHER_STOCK);
 		};
