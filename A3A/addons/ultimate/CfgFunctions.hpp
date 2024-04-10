@@ -27,6 +27,11 @@ class CfgFunctions
             file = QPATHTOFOLDER(functions\patches);
             class IMS_stealthKill {};
         };
+        class sabotage
+        {
+            file = QPATHTOFOLDER(functions\sabotage);
+            class isSabotaged {};
+        };
         class STALKER
         {
             file = QPATHTOFOLDER(functions\STALKER);
