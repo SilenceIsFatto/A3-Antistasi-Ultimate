@@ -22,7 +22,7 @@
 ["vehiclesRivalsCars", ["vn_o_wheeled_btr40_01_pl"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsAPCs", ["vn_o_wheeled_btr40_mg_01_pl", "vn_o_wheeled_btr40_mg_02_pl", "vn_o_wheeled_btr40_mg_04_pl"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", ["vn_o_armor_pt76a_01_pl"]] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", ["vn_o_air_mi2_01_01"]] call _fnc_saveToTemplate;			
+["vehiclesRivalsHelis", ["vn_o_air_mi2_04_05"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", []] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", ["vn_o_pl_static_type56rr", "vn_o_pl_static_sgm_low_02", "vn_o_pl_static_mg42_low", "vn_o_pl_static_dshkm_low_02", "vn_o_pl_static_dshkm_low_01"]] call _fnc_saveToTemplate;

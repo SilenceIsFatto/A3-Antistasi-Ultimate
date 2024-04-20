@@ -175,7 +175,6 @@ class gm_gm_vehicles_gm_land_gm_wheeled_gm_u1300l_gm_u1300l_container_civ : TRIP
 
 class gm_gm_vehicles_gm_land_gm_wheeled_gm_ural4320_gm_ural4320_cargo_p3d : TRIPLES(ADDON,Nodes,Base)
 {
-    canLoadWeapon = 0;
     class Nodes
     {
         class Node1
@@ -208,7 +207,6 @@ class gm_gm_vehicles_gm_land_gm_wheeled_gm_ural4320_gm_ural4320_cargo_p3d : TRIP
 
 class gm_gm_vehicles_gm_land_gm_wheeled_gm_ural375d_gm_ural375d_cargo_p3d : TRIPLES(ADDON,Nodes,Base)
 {
-    canLoadWeapon = 0;
     class Nodes
     {
         class Node1
@@ -236,7 +234,7 @@ class gm_gm_vehicles_gm_land_gm_wheeled_gm_ural375d_gm_ural375d_cargo_p3d : TRIP
 
 class gm_gm_vehicles_gm_land_gm_wheeled_gm_typ2_gm_typ247 : TRIPLES(ADDON,Nodes,Base)
 {
-        class Nodes
+    class Nodes
     {
         class Node1
         {
@@ -249,17 +247,33 @@ class gm_gm_vehicles_gm_land_gm_wheeled_gm_typ2_gm_typ247 : TRIPLES(ADDON,Nodes,
     };
 };
 
-class gm_gm_vehicles_gm_land_gm_wheeled_gm_typ2_gm_typ251 : TRIPLES(ADDON,Nodes,Base)
+
+
+class gm_gm_vehicles_gm_land_gm_wheeled_gm_iltis_gm_iltis_cargo : TRIPLES(ADDON,Nodes,Base)
 {
-        class Nodes
+    class Nodes
     {
         class Node1
         {
-            offset[] = {-0.1,-0.3,-0.82};
+            offset[] = {-0.14,-1.645,-1.22};
+        };
+    };
+};
+
+
+//civ
+class gm_gm_vehicles_gm_land_gm_wheeled_gm_typ2_gm_typ251 : TRIPLES(ADDON,Nodes,Base)
+{
+    canLoadWeapon = 0;
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {-0.1,-0.06,-1.3};
         };
         class Node2
         {
-            offset[] = {-0.1,-1.1,-0.82};
+            offset[] = {-0.1,-0.5,-1.3};
         };
         class Node3
         {
@@ -267,15 +281,69 @@ class gm_gm_vehicles_gm_land_gm_wheeled_gm_typ2_gm_typ251 : TRIPLES(ADDON,Nodes,
         };
     };
 };
-
+class gm_gm_vehicles_gm_land_gm_wheeled_gm_bicycle_gm_bicycle_01 : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {-0,-0.62,0.87};
+        };
+    };
+};
+class gm_gm_vehicles_gm_land_gm_wheeled_gm_k125_gm_k125_bw : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {-0.15,-0.95,-0.6};
+        };
+    };
+};
 
 class gm_gm_vehicles_gm_land_gm_wheeled_gm_typ2_gm_typ253 : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {-0.1,-2.2,-0.81};
+        };
+    };
+};
+
+class gm_gm_vehicles_gm_land_gm_wheeled_gm_uaz469_gm_uaz469_cargo : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {-0.12,-1.65,-1.25};
+            seats[] = {4,5};
+        };
+    };
+};
+
+class gm_gm_vehicles_gm_land_gm_wheeled_gm_w123_gm_w123 : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {-0,-1.7,-0.43};
+            seats[] = {4};
+        };
+    };
+};
+class gm_gm_vehicles_gm_land_gm_wheeled_gm_typ1_gm_typ1200 : TRIPLES(ADDON,Nodes,Base)
 {
         class Nodes
     {
         class Node1
         {
-            offset[] = {0,-2.2,-0.8};
+            offset[] = {-0,-0.447,-0.679};
+            seats[] = {1,2};
         };
     };
 };

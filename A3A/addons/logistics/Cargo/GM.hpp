@@ -45,3 +45,12 @@ class gm_gm_weapons_gm_launchers_gm_fagot_gm_fagot_launcher_tripod : TRIPLES(ADD
     isWeapon = 1;
     blackList[] = {"\gm\gm_vehicles\gm_land\gm_wheeled\gm_kat1\gm_kat1_452_container","\gm\gm_vehicles\gm_land\gm_wheeled\gm_kat1\gm_kat1_451_container","\gm\gm_vehicles\gm_land\gm_wheeled\gm_kat1\gm_kat1_454_cargo"};
 };
+
+class gm_gm_objects_gm_searchlight_gm_searchlight_01 : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0.7,0.82};
+    rotation[] = {0,0,0};
+    size = 2;
+    recoil = 100;
+    isWeapon = 1;
+};

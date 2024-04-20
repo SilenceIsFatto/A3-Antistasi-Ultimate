@@ -18,11 +18,13 @@ params ["_helicopter", "_crewGroup", "_cargoGroup", "_posDestination", "_originP
 _crewGroup setVariable ["A3A_AIScriptHandle", _thisScript];
 _cargoGroup setVariable ["A3A_AIScriptHandle", _thisScript];
 
-private _landPad = createVehicle ["Land_HelipadEmpty_F", _landpos, [], 0, "NONE"];
+private [_landPos];
+
+private _landPad = createVehicle ["Land_HelipadEmpty_F", _landPos, [], 0, "NONE"];
 _helicopter setVariable ["LandingPad", _landPad, true];             // cleared up (eventually) by heli deletion handler
 
 //Create the waypoints for the crewGroup
-private _vehWP0 = _crewGroup addWaypoint [_landpos, 0];
+private _vehWP0 = _crewGroup addWaypoint [_landPos, 0];
 _vehWP0 setWaypointType "MOVE";
 _vehWP0 setWaypointSpeed "FULL";
 _vehWP0 setWaypointCompletionRadius 150;
@@ -31,9 +33,19 @@ _vehWP0 setWaypointBehaviour "CARELESS";
 private _midHeight = [100, 150] select (A3A_climate isEqualTo "tropical");
 _helicopter flyInHeight _midHeight;
 
+waitUntil {sleep 1; (_helicopter distance2D _landPos) < 875};
+
+while {_helicopter distance2D _landPos > 600} do {
+    [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
+    [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
+    [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
+    sleep 0.5;
+};
+
 waitUntil {sleep 1; (_helicopter distance2D _landPos) < 600};
 
 _helicopter flyInHeight 0;                  // helps to keep it near the ground after landing
+_helicopter land "LAND";
 
 // Landing path setup
 private _endPos = getPosASL _landPad;
@@ -67,6 +79,7 @@ private _angleIs = 0;
 private _angleDiff = 0;
 private _heightDiff = 0;
 
+/* _helicopter action ["LandGear", _helicopter]; */
 
 private _driver = driver _helicopter;
 while {_interval < 0.9999} do
@@ -92,6 +105,8 @@ while {_interval < 0.9999} do
     private _lineStart = _startPos vectorAdd (_startToMidVector vectorMultiply _interval);
     private _lineEnd = _midPos vectorAdd (_midToEndVector vectorMultiply _interval);
 
+    _helicopter action ["LandGear", _helicopter]; ///forces vehicle to use landing gear
+    
     _helicopter setVelocityTransformation
     [
         _lineStart,
@@ -108,14 +123,30 @@ while {_interval < 0.9999} do
     _time = time;
     sleep 0.001;
     _interval = _interval + (((time - _time)/_landingTime) * (1 - (_interval / 2)));
-
     _velocityVector = _lineEnd vectorDiff _lineStart;
     _velocityVector = (vectorNormalized _velocityVector) vectorMultiply (_initialSpeed * (1 - _interval));
 
     if(!canMove _helicopter || !alive _driver) exitWith {};
+    _dam = damage _helicopter;
+    if ((getPos _helicopter select 2) < 0.25 ) exitwith{_helicopter setdamage 0; sleep 1; _helicopter setdamage _dam;};
 };
+_helicopter engineOn true; ///keep the engine running
 
 _cargoGroup leaveVehicle _helicopter;
+
+private _second = false;
+{
+  if (_second) then {
+    _x action ["Eject", _helicopter];
+    unassignVehicle _x;
+    _second = false;
+  } else {
+    _second = true;
+    _x leaveVehicle _helicopter;
+  };
+  private _second = true;
+} forEach units _cargoGroup;
+
 private _cargoWP1 = _cargoGroup addWaypoint [_posDestination, 10];
 _cargoWP1 setWaypointType "MOVE";
 _cargoWP1 setWaypointBehaviour "AWARE";
@@ -125,26 +156,42 @@ _cargoWP2 setWaypointType "SAD";
 _cargoWP2 setWaypointBehaviour "COMBAT";
 _cargoGroup spawn A3A_fnc_attackDrillAI;
 
+
 if(!canMove _helicopter || !alive _driver) exitWith { deleteVehicle _landPad };
 
 // Dirty hack to stop the heli lurching around near the ground
-private _dismountTime = 5 + count units _cargoGroup;
+private _dismountTime = count units _cargoGroup - 4;
 [_helicopter, time + _dismountTime, _midHeight, _landPad] spawn {
     params ["_heli", "_endTime", "_flyHeight", "_landPad"];
     while { time < _endTime } do {
         _heli setVelocity [0,0,-0.5];
         sleep 1;
     };
+    if (!isEngineOn _heli) then { _heli engineOn true;};
     _heli flyInHeight _flyHeight;
     deleteVehicle _landPad;
 };
 [_helicopter] call A3A_fnc_smokeCoverAuto;          // Already done by GetOut handler in AIVehInit?
 
-sleep _dismountTime;
 
+_helicopter engineOn true;  ///still keeping the engine running
+sleep _dismountTime;
+_helicopter engineOn true;  ///we must keep the engine running
 // Heli RTB
 private _vehWP1 = _crewGroup addWaypoint [_originPos, 0];
 _vehWP1 setWaypointType "MOVE";
 _vehWP1 setWaypointStatements ["true", "if (local this and alive this) then { deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList }"];
+
 _vehWP1 setWaypointBehaviour "CARELESS";
+
 _crewGroup setCurrentWaypoint _vehWP1;
+waitUntil {sleep 1; (_helicopter distance2D _landPos) > 165};
+for '_i' from 1 to (5 + (round random 2)) do
+    {
+        [_helicopter, "CMFlareLauncher"] call BIS_fnc_fire;
+        [_helicopter, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
+        [_helicopter, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
+        sleep 1;
+    };
+
+_helicopter action ["LandGearUp", _helicopter];

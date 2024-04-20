@@ -99,3 +99,45 @@
         name = "EMP Civ";
         file = "EMP_Civ";
     };
+	
+    class WEMP_Base
+    {
+        requiredAddons[] = {"3AS_Characters", "442_equipment", "SWLB_clones", "JLTS_core", "CWDependencies", "WM_Rebels"};
+        basepath = QPATHTOFOLDER(Templates\Templates\CW);
+        logo = QPATHTOFOLDER(Templates\Templates\CW\flag_Empire.paa);
+        priority = 110;
+    };
+	
+    class WM_EMP : WEMP_Base
+    {
+        side = "Occ";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_Empire.paa);
+        name = "Empire";
+        file = "WM_AI_EMP";
+    };
+	
+    class WM_RCU : WEMP_Base
+    {
+        side = "Reb";
+        flagTexture = "\LS_statics_props\flags\data\flag_republic.paa";
+        name = "Rex's Clone Uprising";
+        file = "WM_Reb_RCU";
+		description = "Captain Rex and other disgruntled Clones attempt to start an Uprising against the Empire";
+    };
+	
+    class WM_REB : WEMP_Base
+    {
+        side = "Reb";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_rebellion.paa);
+        name = "Rebel Alliance";
+        file = "WM_Reb_RA";
+    };
+	
+    class WM_RIV_GP : WEMP_Base
+    {
+        side = "Riv";
+		flagTexture = QPATHTOFOLDER(Templates\Templates\CW\flag_partisans.paa);
+        name = "Gerrera's Partisans";
+        file = "WM_Riv_GP";
+        description = "Saw Gerrera's Partisans are an extremely militant, anti-imperial group, willing to use any and all tactics against their enemies.";
+    };

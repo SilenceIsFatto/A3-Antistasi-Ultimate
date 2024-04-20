@@ -1,22 +1,25 @@
 //Define results for small intel
-#define TIME_LEFT       101
-#define DECRYPTION_KEY  102
-#define CONVOY          103
-#define DEF_RESOURCES   104
+#define TIME_LEFT               101
+#define DECRYPTION_KEY          102
+#define CONVOY                  103
+#define DEF_RESOURCES           104
+#define REVEAL_ZONE_SMALL       105
 
 //Define results for medium intel
-#define ACCESS_ARMOR    200
-#define ACCESS_AIR      201
-#define ACCESS_HELI     202
-#define CONVOYS         203
-#define COUNTER_ATTACK  204
-#define KEY_PACK        205
-#define CONVOY_ROUTE    206
+#define ACCESS_ARMOR            200
+#define ACCESS_AIR              201
+#define ACCESS_HELI             202
+#define CONVOYS                 203
+#define COUNTER_ATTACK          204
+#define KEY_PACK                205
+#define CONVOY_ROUTE            206
+#define REVEAL_ZONE_MEDIUM      207
 
 //Define results for large intel
-#define WEAPON          300
-#define TRAITOR         301
-#define MONEY           302
+#define WEAPON                  300
+#define TRAITOR                 301
+#define MONEY                   302
+#define REVEAL_ZONE_LARGE       303
 
 //Additional types
 #define DISCOUNT      500
@@ -65,8 +68,8 @@ if (_text isEqualTo "") then {
     switch (true) do {
         case (_intelType isEqualTo "Small"): {
             _intelContent = [
-                selectRandomWeighted [TIME_LEFT, 0.2, DEF_RESOURCES, 0.2, DECRYPTION_KEY, 0.2, CONVOY, 0.2, RIVALS, 0.1, DISCOUNT, 0.1],
-                selectRandomWeighted [TIME_LEFT, 0.23, DEF_RESOURCES, 0.23, DECRYPTION_KEY, 0.23, CONVOY, 0.21, DISCOUNT, 0.21]
+                selectRandomWeighted [TIME_LEFT, 0.2, REVEAL_ZONE_SMALL, 0.2, DEF_RESOURCES, 0.2, DECRYPTION_KEY, 0.2, CONVOY, 0.2, RIVALS, 0.1, DISCOUNT, 0.1],
+                selectRandomWeighted [TIME_LEFT, 0.23, REVEAL_ZONE_SMALL, 0.2, DEF_RESOURCES, 0.23, DECRYPTION_KEY, 0.23, CONVOY, 0.21, DISCOUNT, 0.21]
             ] select (areRivalsEnabled && {areRivalsDiscovered && {!areRivalsDefeated}});
             
             switch (_intelContent) do
@@ -86,6 +89,10 @@ if (_text isEqualTo "") then {
                     {
                         _text = format [localize "STR_intel_attack", _sideName, round (_nextAttack)];
                     };
+                };
+                case (REVEAL_ZONE_SMALL):
+                {
+                    _text = [random 2] call A3U_fnc_revealRandomZones;
                 };
                 case (DEF_RESOURCES):
                 {
@@ -159,6 +166,7 @@ if (_text isEqualTo "") then {
         case (_intelType isEqualTo "Medium"): {
             _intelContent = selectRandomWeighted [
                 KEY_PACK, 0.4, 
+                REVEAL_ZONE_MEDIUM, 0.35,
                 ACCESS_AIR, 0, 
                 ACCESS_HELI, 0, 
                 ACCESS_ARMOR, 0, 
@@ -181,6 +189,10 @@ if (_text isEqualTo "") then {
                         invaderRadioKeys = invaderRadioKeys + _keyCount;
                     };
                     _text = format [localize "STR_intel_key_pack", _sideName];
+                };
+                case (REVEAL_ZONE_MEDIUM):
+                {
+                    _text = [3] call A3U_fnc_revealRandomZones;
                 };
                 case (CONVOYS):
                 {
@@ -239,11 +251,11 @@ if (_text isEqualTo "") then {
         };
         case (_intelType isEqualTo "Large"): {
             if ("AS" in A3A_activeTasks) then {
-                _intelContent = selectRandomWeighted [TRAITOR, 0.25, WEAPON, 0.25, MONEY, 0.25, DISCOUNT, 0.25];
+                _intelContent = selectRandomWeighted [TRAITOR, 0.25, REVEAL_ZONE_LARGE, 0.25, WEAPON, 0.25, MONEY, 0.25, DISCOUNT, 0.25];
             } else {
                 _intelContent = [
-                    selectRandomWeighted [WEAPON, 0.35, MONEY, 0.55, DISCOUNT, 0.2],
-                    selectRandomWeighted [WEAPON, 0.35, MONEY, 0.35, RIVALS, 0.15, DISCOUNT, 0.15]
+                    selectRandomWeighted [WEAPON, 0.35, REVEAL_ZONE_LARGE, 0.3, MONEY, 0.55, DISCOUNT, 0.2],
+                    selectRandomWeighted [WEAPON, 0.35, REVEAL_ZONE_LARGE, 0.3, MONEY, 0.35, RIVALS, 0.15, DISCOUNT, 0.15]
                 ] select (areRivalsEnabled && {areRivalsDiscovered && {!areRivalsDefeated}});
             };
 
@@ -253,6 +265,10 @@ if (_text isEqualTo "") then {
                 {
                     _text = "You found incriminating data on the traitor, we don't think he will cause any more trouble";
                     traitorIntel = true; publicVariable "traitorIntel";
+                };
+                case (REVEAL_ZONE_LARGE):
+                {
+                    _text = [5] call A3U_fnc_revealRandomZones;
                 };
                 case (WEAPON):
                 {

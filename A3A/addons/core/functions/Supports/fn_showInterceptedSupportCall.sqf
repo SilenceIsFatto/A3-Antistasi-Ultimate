@@ -57,7 +57,7 @@ else
         };
         case ("ARTILLERY"):
         {
-            _text = format ["A %1 artillery piece has opened fire", _sideName];
+            _text = format [localize "STR_notifiers_SUP_execute_artillery", _sideName];
             _markerText = localize "STR_notifiers_SUP_execute_artillery_marker";
         };
         case ("MORTAR"):
@@ -96,6 +96,11 @@ else
             _markerText = localize "STR_notifiers_SUP_execute_ASF_target";
         };
         case ("CAS"):
+        {
+            _text = format [localize "STR_notifiers_SUP_execute_CAS", _sideName];
+            _markerText = localize "STR_notifiers_SUP_execute_CAS_marker";
+        };
+        case ("CASDIVE"):
         {
             _text = format [localize "STR_notifiers_SUP_execute_CAS", _sideName];
             _markerText = localize "STR_notifiers_SUP_execute_CAS_marker";

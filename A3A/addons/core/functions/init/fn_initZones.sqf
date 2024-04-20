@@ -141,7 +141,7 @@ sidesX setVariable ["NATO_carrier", Occupants, true];
 sidesX setVariable ["CSAT_carrier", Invaders, true];
 
 
-Info("Setting up antennas");
+Info("Setting up zone-dependent objects - antennas and banks");
 
 antennasDead = [];
 banks = [];

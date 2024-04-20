@@ -1,9 +1,43 @@
 # Changelog
 
-<!-- ## 2.x.x
+## 2.3.2
+### Changes
+- Fixed broken rally point and construction cancellation 
+
+## 2.3.1
 ### Additions
-- (Aegis) AUKUS, NATO, CSAT, AAF factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods)
-- (Aegis) CHDKZ and Ion PMC Rival factions (Aegis factions are beta/experimental so they could be used only via their dev branch versions of Aegis, Atlas and Opposing Force mods) -->
+- New civilian plane flyby random event
+- (Vanilla, Aegis) Weasel AA, AT, Autocannon, Radar variants will be present in Vehicle Black Market
+
+## 2.3
+### Additions
+- Aegis support
+- Šumava terrain support
+- New enemy group type - reconnaissance patrol, usually it has snipper and spotter in ghillie suits if possible, they may spawn in forests and other wilderness areas. If faction has no ghillie or other suit types, ordinary snipers and spotters will be used
+- New Rivals random event - Helicopter Raid, they will try to drop some munition on your heads and then they will loiter in the area to finish survivors if there are any (some rivals faction have only drop part because of lacking required assets in their specific modsets) 
+- (Aegis) AUKUS, NATO, CSAT, AAF, AFRF factions
+- (Aegis) CHDKZ and Ion PMC Rival factions
+- (Aegis) FIA, Syndikat and Livonian Militia rebel factions
+
+### Changes
+- AI will use militia APCs in support actions and attacks too, not only roadblocks
+- Minor Rivals roving mortar spawn fixes
+- Separate airborne groups for QRF vehicle airdrop
+- SAM sites could be persistently destroyed so they will no longer spawn for some time until replenish occurs
+- SAM support type will be not used on site if SAM site was previously destroyed and isn't replenished yet
+- Slightly reduced probability of QRF vehicle airdrops and infantry paradrops on air QRFs
+- Fixed Invaders/Occupants non-usage of light helicopters
+- Fixed broken Vehicle Airdrop QRFs on vanilla NATO factions
+- Fixed non-working radars on SAM sites, radar will be actually enabled and data link will be used to share targets with near air defense assets
+- Fixed wrong Rivals cell leader classname on initialization
+- Fixed unintended appearance of flagpole on captured military administrations causing them to be destroyed
+- Enemy will use divebomb CAS support against rebels along with traditional CAS attacks
+- Minor loot crate timing changes
+- (Vanilla) Enemy artillery support will utilize more shell types
+- (Vanilla) Additional civilian helicopters
+- (Vanilla, Aegis) AAF will use Wiesel AA and Scout vehicles as their replamcents for SAM and Radar vehicle types
+- (Western Sahara) Vanilla and Aegis Rebel templates will use armored pickup vehicles  //need to check this
+- (SOGPF) Changed identites of rebel Vietnam Militia and Viet Cong factions to Vietnamese //and this
 
 ## 2.2.4
 ### Changes

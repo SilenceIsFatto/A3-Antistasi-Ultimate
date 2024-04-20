@@ -243,6 +243,11 @@
                 <Chinesesimp>布尔什维克。\不要问它是什么。</Chinesesimp>
                 <Korean>볼셰비키.\n뭔지 절대 묻지 마시오.</Korean>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_lm">
+                <Original>Livonian Militia (LM).\nEastern European militants.</Original>
+                <Russian>Ополчение Ливонии.\nВосточноевропейское ополчение.</Russian>
+                <Korean>리보니아 민병대(LM).\n동유럽계 무장세력입니다.</Korean>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_ws_tura">
                 <Original>Tura.\nOne of the many militarized tribes of the Sefrawi Desert, almost like famous Turanic Raiders.</Original>
                 <Russian>Тура.\nОдно из многих военизированных племен пустыни Сефрави, почти как знаменитые туранские рейдеры.</Russian>
@@ -994,6 +999,12 @@
             <Key ID="STR_veh_callback_constructions">
                 <Original>Light and heavy fortifications can only be built off roads, in friendly areas.</Original>
                 <Russian>Лёгкие и тяжелые фортификации могут быть построены только вне дорог, а также в дружественных зонах.</Russian>
+                <Chinesesimp>轻型和重型防御工事只能建在友好地区的公路旁。</Chinesesimp>
+                <Korean>경량과 중량 요새화 진지는 우호적인 지역의 오프로드에서만 건설 가능합니다.</Korean>
+            </Key>
+            <Key ID="STR_veh_callback_constructions_rb">
+                <Original>Roadblocks can only be built on roads.</Original>
+                <Russian>Блокпосты могут быть построены только на дорогах.</Russian>
                 <Chinesesimp>轻型和重型防御工事只能建在友好地区的公路旁。</Chinesesimp>
                 <Korean>경량과 중량 요새화 진지는 우호적인 지역의 오프로드에서만 건설 가능합니다.</Korean>
             </Key>
@@ -3974,6 +3985,7 @@
             <Key ID="STR_params_allowUnlockedExplosives">
                 <Original>Allow Unlocked Explosives</Original>
                 <Russian>Разрешить разблокированную взрывчатку</Russian>
+                <Korean>폭발물 해금 허용</Korean>
             </Key>
             <Key ID="STR_params_startWithLongRangeRadio">
                 <Original>[TFAR] Start with Long Range Radio</Original>
@@ -4449,9 +4461,11 @@
             </Key>
             <Key ID="STR_params_lootCratePrice">
                 <Original>Loot crate price</Original>
+                <Korean>전리품 상자 가격</Korean>
             </Key>
             <Key ID="STR_params_lootCrateUnlockedItems">
                 <Original>Loot crate ignore unlocked items</Original>
+                <Korean>전리품 상자가 해금된 아이템 무시</Korean>
             </Key>
             <Key ID="STR_params_spawnDistance">
                 <Original>Enemy spawn distance</Original>
@@ -4693,7 +4707,6 @@
                 <Chinesesimp>[实验]真随机箱: 移除箱子上的所有平衡检查</Chinesesimp>
                 <Korean>[실험용] 완전히 랜덤한 상자: 상자에 대한 밸런스 확인 없음</Korean>
             </Key>
-
         </Container>
         <Container name="roles">
             <Key ID="STR_role_default_commander_role_name">
@@ -5854,6 +5867,14 @@
                 <Chinesesimp>卖掉你正在看的载具，然后把钱存入派系的账户。</Chinesesimp>
                 <Korean>차량을 보고 돈을 받고 파십시오.</Korean>
             </Key>
+            <Key ID="STR_antistasi_dialogs_moveout_crew_title">
+                <Original>Moveout vehicle crew</Original>
+                <Russian>Выгнать экипаж их техники</Russian>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_moveout_crew_tooltip">
+                <Original>Moves out crew from vehicle you loking at.</Original>
+                <Russian>Выгоняет экипаж из техники на которую вы смотрите.</Russian>
+            </Key>>
             <Key ID="STR_antistasi_dialogs_arsenal_limits_title">
                 <Original>Arsenal Limits</Original>
                 <Russian>Лимиты арсенала</Russian>
@@ -6751,7 +6772,7 @@
                 <Original>%1 operates through a network of cells and hideouts. You and your allies can obtain data that increase your knowledge about this network through interrogations, cell leader laptop data mining and completing tasks. When progress bar fully fills, another hideout or cell will be revealed, so you can start an attack on it.</Original>
                 <Russian>%1 действуют через сеть ячеек и укрытий. Вы и ваши союзники можете получать данные, расширяющие ваши знания об этой сети, посредством допросов, сбора данных с ноутбука лидера ячейки и выполнения заданий. Когда полоса прогресса полностью заполнится, откроется еще одно убежище или ячейка, чтобы вы могли начать атаку на нее.</Russian>
                 <Chinesesimp>%1 通过密室和藏身处网络运作。 您和您的盟友可以通过审讯、小组组长笔记本电脑数据挖掘和完成任务来获取增加您对该网络了解的数据。 当进度条完全填满时，将显示另一个藏身处或单元格，因此您可以对其发起攻击。</Chinesesimp>
-                <Korean>%1은 셀과 은신처의 연락망을 통해 작전을 수행합니다. 당신과 당신의 아군들은 심문, 국가정보원 요원의 노트북 데이터 채굴 및 완료 과업을 통해 이 연락망에 대한 지식을 상승시키는 데이터를 얻을 수 있습니다. 진행 표시줄이 완전히 채워지면 다른 은신처나 셀이 나타나므로 이에 대한 공격을 시작할 수 있습니다.</Korean>
+                <Korean>%1은(는) 셀과 은신처의 연락망을 통해 작전을 수행합니다. 당신과 당신의 아군들은 심문, 셀 리더의 노트북 데이터 채굴 및 완료 과업을 통해 이 연락망에 대한 지식을 상승시키는 데이터를 얻을 수 있습니다. 진행 표시줄이 완전히 채워지면 다른 은신처나 셀이 나타나므로 이에 대한 공격을 시작할 수 있습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_rivals_network_progress_bar_tooltip">
                 <Original>Next %1 Location Reveal.</Original>
@@ -6883,10 +6904,16 @@
             </Key>
         </Container>
         <Container name="credits_generic">
-            <Key ID="STR_antistasi_credits_authors_plus">
+            <Key ID="STR_antistasi_credits_authors_ultimate">
                 <Original>Antistasi Ultimate Authors:</Original>
                 <Russian>Авторы Antistasi Ultimate:</Russian>
                 <Chinesesimp>Antistasi Ultimate 作者：</Chinesesimp>
+                <Korean>안티스타시 얼티밋의 제작자:</Korean>
+            </Key>
+            <Key ID="STR_antistasi_credits_authors_plus">
+                <Original>Antistasi Plus Authors:</Original>
+                <Russian>Авторы Antistasi Plus:</Russian>
+                <Chinesesimp>Antistasi Plus 作者：</Chinesesimp>
                 <Korean>안티스타시 얼티밋의 제작자:</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_authors">
@@ -6899,7 +6926,7 @@
                 <Original>Antistasi Ultimate Team</Original>
                 <Russian>Antistasi Ultimate Team</Russian>
                 <Chinesesimp>Antistasi Ultimate Team</Chinesesimp>
-                <Korean>Antistasi Ultimate Team</Korean>
+                <Korean>안티스타시 얼티밋 팀</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_cw_mode">
                 <Original>Cold War Mode</Original>
@@ -6928,10 +6955,10 @@
                 <Korean>근처에 수집할 것이 없습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_looter_cooldown_text">
-                <Original>The looting ability has been used in the last 15 seconds! Please wait for a bit.</Original>
-                <Russian>Сборщик лута уже был использован недавно. Пожалуйста, подождите 15 секунд.</Russian>
-                <Chinesesimp>战利品收集最近已经用过了。 请等待15秒。</Chinesesimp>
-                <Korean>지난 15초 이내에 수집 능력이 사용되었습니다! 조금만 기다려 주십시오.</Korean>
+                <Original>The looting ability has been used recently! Please wait for a bit.</Original>
+                <Russian>Сборщик лута уже был использован недавно. Пожалуйста, подождите 10 секунд.</Russian>
+                <Chinesesimp>战利品收集最近已经用过了。 请等待10秒。</Chinesesimp>
+                <Korean>지난 10초 이내에 수집 능력이 사용되었습니다! 조금만 기다려 주십시오.</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_looter_enemies_nearby">
                 <Original>Loot gathering is interrupted - the enemies are nearby.</Original>
@@ -7324,7 +7351,7 @@
                 <Korean>%1은 방어 예비 병력이 하나도 없습니다!</Korean>
             </Key>
             <Key ID="STR_intel_key_pack">
-                <Original>You found a package of %1 decryption keys!&lt;br/&gt;They allow your faction to decrypt support calls.</Original>
+                <Original>You found a package of %1 decryption keys!&lt;br/&gt;This will allow your faction to decrypt support calls.</Original>
                 <Russian>Вы нашли упаковку с %1 ключами расшифровки!&lt;br/&gt;Это позволит вашей фракции расшифровывать вражеские вызовы поддержки.</Russian>
                 <Chinesesimp>您找到了 %1 个解密密钥包！&lt;br/&gt;这将允许你的派系破译敌人的支援通信。</Chinesesimp>
                 <Korean>%1의 암호 해독 키 패키지를 찾았습니다!&lt;br/&gt;그것들은 당신의 팩션이 지원 요청을 해독할 수 있게 해줍니다.</Korean>
@@ -7521,7 +7548,7 @@
                 <Original>A traitor has scheduled a meeting with %1 in %2. Kill him before he provides enough intel to give us trouble. Do this before %3. We don't where exactly this meeting will happen. You will recognise the building by the nearby Offroad and %1 presence.</Original>
                 <Russian>Предатель назначил встречу с %1 в %2. Убейте его до того как он выдаст достаточно информации о нас. Сделайте это до %3. Мы не знаем точно где произойдёт эта встреча. Вы узнаете конкретное здание по припаркованному рядом автомобилю и присутствию охраны от %1.</Russian>
                 <Chinesesimp>内鬼已安排在 %2 与 %1 会面。 在他提供足够的情报给我们带来麻烦之前杀了他。 在 %3 之前执行此任务。 我们不知道这次会议的确切地点。 你要通过识别停在附近的载具和 %1 携带的安保人员，找到在哪个建筑交易。</Chinesesimp>
-                <Korean>배신자가 %2에서 %1과의 만남을 예약했습니다. 그가 우리에게 문제를 일으킬 만큼 충분한 정보를 제공하기 전에 그를 죽이십시오. %3 이전에 완료하십시오. 우린 이 만남이 어디서 일어날 지 모릅니다. 근처 차량 및 %3의 존재로 건물을 알아볼 수 있습니다.</Korean>
+                <Korean>배신자가 %2에서 %1과의 만남을 예약했습니다. 그가 우리에게 문제를 일으킬 만큼 충분한 정보를 제공하기 전에 그를 죽이십시오. %3 이전에 완료하십시오. 우린 이 만남이 어디서 일어날 지 모릅니다. 근처 차량 및 %1의 존재로 건물을 알아볼 수 있습니다.</Korean>
             </Key>
             <Key ID="STR_A3A_Missions_AS_RIV_Traitor_task_header">
                 <Original>Eliminate the Defector</Original>
@@ -8803,6 +8830,11 @@
                 <Chinesesimp>无人机来袭，躲起来！</Chinesesimp>
                 <Korean>무인기 공격이 임박했습니다! 엄폐하십시오!</Korean>
             </Key>
+            <Key ID="STR_rivals_activity_heli_raid_description">
+                <Original>&lt;t color='#800000'&gt;%1 helicopter&lt;/t&gt; is near us!</Original>
+                <Russian>&lt;t color='#800000'&gt;Вертолёт %1&lt;/t&gt; рядом с нами!</Russian>
+                <Korean>&lt;t color='#800000'&gt;%1대의 헬리콥터&lt;/t&gt;가 우리 근처에 있습니다!</Korean>
+            </Key>
         </Container>
     </Package>
     <Package name="A3-Antistasi-Namespace">
@@ -8900,7 +8932,7 @@
                 <Korean>%1 자원채취소</Korean>
             </Key>
             <Key ID="STR_A3A_cityinfo_resources_rebel">
-                <Original>%2 Airport%1</Original>
+                <Original>%2 Resources%1</Original>
                 <Russian>Ресурсы %2%1</Russian>
                 <Chinesesimp>资源%2%1</Chinesesimp>
                 <Korean>%2 자원채취소는 %1 소속이다</Korean>
@@ -10930,6 +10962,14 @@
                 <Chinesesimp>卖载具</Chinesesimp>
                 <Korean>차량 판매</Korean>
             </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_header">
+                <Original>Move out crew</Original>
+                <Russian>Выгнать экипаж из техники</Russian>
+            </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_err0">
+                <Original>Vehicle must contain rebel crew or civillian crew.</Original>
+                <Russian>В транспортном средстве должен находиться экипаж повстанцев или гражданских.</Russian>
+            </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err0">
                 <Original>Vehicle must be closer than 50 meters to the headquarters marker.</Original>
                 <Russian>Техника должна быть ближе 50 метров чтобы её можно было продать.</Russian>
@@ -10965,6 +11005,10 @@
                 <Russian>Транспортное средство продано.</Russian>
                 <Chinesesimp>载具已出售</Chinesesimp>
                 <Korean>차량 판매 완료.</Korean>
+            </Key>
+            <Key ID="STR_A3A_Base_moveOutCrew_success">
+                <Original>Crew moved out.</Original>
+                <Russian>Экипаж покинул технику.</Russian>
             </Key>
         </Container>
         <Container name="A3A_CREATE">

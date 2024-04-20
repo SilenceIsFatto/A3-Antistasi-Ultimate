@@ -47,6 +47,7 @@ private _fnc_placed = {
 	};
 
 	[_vehicle, teamPlayer] call A3A_fnc_AIVehInit;
+	[_vehicle, teamPlayer] call SCRT_fnc_misc_tryInitVehicle;
 
 	player reveal _vehicle;
 };

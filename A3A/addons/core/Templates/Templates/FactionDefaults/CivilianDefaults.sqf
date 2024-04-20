@@ -39,7 +39,7 @@ private _faces = switch (true) do {
 			"lxWS_African_Head_01", "lxWS_African_Head_02", "lxWS_African_Head_03", "lxWS_African_Head_04", "lxWS_African_Head_Old_Bard", "lxWS_African_Head_05"
 		];
 	};
-	case (toLowerANSI worldName in ["enoch", "cup_chernarus_a3", "taviana", "esseker"]): {
+	case (toLowerANSI worldName in ["enoch", "cup_chernarus_a3", "taviana", "esseker", "brf_sumava"]): {
 		[
 			"LivonianHead_1", "LivonianHead_2", "LivonianHead_3", "LivonianHead_4",
 			"LivonianHead_5", "LivonianHead_6", "LivonianHead_7", "LivonianHead_8",
@@ -81,7 +81,7 @@ private _currencySymbol = switch (true) do {
     case ((toLowerANSI worldName) isEqualTo "enoch"): {
         "zł"
     };
-    case ((toLowerANSI worldName) isEqualTo "cup_chernarus_a3"): {
+    case ((toLowerANSI worldName) in ["cup_chernarus_a3", "brf_sumava"]): {
         "ČRK"
     };
     case ((toLowerANSI worldName) isEqualTo "taviana"): {

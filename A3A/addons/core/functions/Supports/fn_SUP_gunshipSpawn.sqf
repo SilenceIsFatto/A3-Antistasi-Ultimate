@@ -97,7 +97,7 @@ _strikePlane addEventHandler
                     else
                     {
                         //Vehicle is outside of radius, call in other support
-                        [group driver _plane, ["CAS", "MISSILE", "CANNON", "CARPETBOMB", "MORTAR", "HOWITZER"], _vehicle] spawn A3A_fnc_callForSupport;
+                        [group driver _plane, ["CAS", "CASDIVE", "MISSILE", "CANNON", "CARPETBOMB", "MORTAR", "HOWITZER"], _vehicle] spawn A3A_fnc_callForSupport;
                     };
                 };
             };

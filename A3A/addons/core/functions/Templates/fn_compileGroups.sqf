@@ -100,6 +100,12 @@ if (_prefix in ["occ", "inv"]) exitWith {
         [unit(elite, "Sniper"), unit(elite, "Rifleman")]
     ]];
 
+    _faction set ["groupTierPatrolSniper", [
+        [unit(militia, "PatrolSniper"), unit(militia, "PatrolSpotter")],
+        [unit(military, "PatrolSniper"), unit(military, "PatrolSpotter")],
+        [unit(elite, "PatrolSniper"), unit(elite, "PatrolSpotter")]
+    ]];
+
     _faction set ["groupsTierSmall", [
         _faction get "groupTierSniper",
         _smallGroupSentry,
@@ -141,6 +147,20 @@ if (_prefix in ["occ", "inv"]) exitWith {
         _sniperTeams,
         _faction get "groupTierAA", 
         _faction get "groupTierAT"
+    ]];
+
+    _faction set ["groupsTierAirborne", [
+        _fireteams,
+        [
+            [unit(militia, "SquadLeader"), unit(militia, "Rifleman"), unit(militia, "MachineGunner"), unit(militia, "LAT"), unit(militia, "LAT")],
+            [unit(military, "SquadLeader"), unit(military, "Rifleman"), unit(military, "MachineGunner"), unit(military, "LAT"), unit(military, "LAT")],
+            [unit(elite, "SquadLeader"), unit(elite, "Rifleman"), unit(elite, "MachineGunner"), unit(elite, "LAT"), unit(elite, "LAT")]
+        ],
+        [
+            [unit(militia, "SquadLeader"), unit(militia, "Marksman"), unit(militia, "Rifleman"), unit(militia, "Grenadier"), unit(militia, "LAT")],
+            [unit(military, "SquadLeader"), unit(military, "Marksman"), unit(military, "Rifleman"), unit(military, "Grenadier"), unit(military, "LAT")],
+            [unit(elite, "SquadLeader"), unit(elite, "Marksman"), unit(elite, "Rifleman"), unit(elite, "Grenadier"), unit(elite, "LAT")]
+        ]
     ]];
 
     //old randomised behaviour maintained because... reasons
@@ -218,7 +238,7 @@ if (_prefix in ["occ", "inv"]) exitWith {
     };
 
     _faction set ["groupSpecOpsRandom", _specOpsRandom];
-    _faction set ["groupSpecOpsSniper", [unit(SF, "Sniper"), unit(SF, "Rifleman")]];
+    //_faction set ["groupSpecOpsSniper", [unit(SF, "Sniper"), unit(SF, "Rifleman")]];
 
     //militia
     _faction set ["groupsMilitiaSmall", [

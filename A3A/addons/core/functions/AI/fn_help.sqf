@@ -50,6 +50,26 @@ private _fnc_doHeal = {
     _cured;
 };
 
+private _fnc_doAceHeal = {
+    params ["_medic", "_target"];
+    _medic stop true;
+    _target stop true;
+    private _cured = if !(_target call ACE_medical_ai_fnc_isInjured) then {
+        [_medic, _target] call ACE_medical_ai_fnc_healingLogic;
+        true;
+    } else {
+        sleep 10; true;
+    };
+    if (_cured && _medic != _target && _isPlayerGroup) then {
+        _medic groupChat format ["You are ready %1",name _target];
+    };
+    _medic stop false;
+    _target stop false;
+    _target doFollow leader _target;
+    _medic doFollow leader _medic;
+    _cured;
+};
+
 if (_medicX != _unit) then
 {
     // Is this one even used? Never seen it
@@ -125,7 +145,11 @@ if (_medicX != _unit) then
     Debug_1("Medic %1 healing target", _medicX);
 
     if ([_medicX, _unit] call _fnc_canHelp) then {
-        _cured = [_medicX, _unit] call _fnc_doHeal;
+        if (A3A_hasAce) then {
+            _cured = [_medicX, _unit] call _fnc_doAceHeal;
+        } else {
+            _cured = [_medicX, _unit] call _fnc_doHeal;
+        };
     };
 }
 else

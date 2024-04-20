@@ -81,6 +81,6 @@ if !("vanilla" in A3A_factionEquipFlags) exitWith {
 };
 
 //exclude CSLA items as they are not supported
-if (toLowerANSI _itemMod isEqualTo "csla") exitWith {false};
+///if (toLowerANSI _itemMod isEqualTo "csla") exitWith {false};
 
 true;			// otherwise allow everything

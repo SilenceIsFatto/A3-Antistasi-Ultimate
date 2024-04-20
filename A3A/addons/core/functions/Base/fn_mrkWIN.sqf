@@ -29,6 +29,13 @@ if (_caller isNotEqualTo player) exitWith {
 };
 
 private _markerX = [airportsX + resourcesX + factories + outposts + seaports + milbases, getPosATL _flagX] call BIS_fnc_nearestPosition;
+
+// private _hideEnemyMarkers = missionNamespace getVariable ["A3U_setting_hideEnemyMarkers",false];
+
+if (hideEnemyMarkers) then {
+    "Dum"+_markerX setMarkerAlpha 1;
+};
+
 private _markerPos = getMarkerPos _markerX;
 private _outpostGridSquare = ((_markerPos#0 toFixed 0) call A3A_fnc_pad_3Digits) + ((_markerPos#1 toFixed 0) call A3A_fnc_pad_3Digits);  // NB: Check if this is the right order for pos-> grid square
 

@@ -40,12 +40,12 @@ private _lightHelis = _faction get "vehiclesHelisLight";
 private _lhFactor = 0 max (1 - (tierWar+_tierMod) / 10);            // phase out light helis at higher war tiers
 
 private _transportPool = [];
-{ _transportPool append [_x, 1 / count _transportPlanes] } forEach _transportPlanes;
 if (_transportPlanes isNotEqualTo [] && {(_faction get "vehiclesAirborne") isNotEqualTo []}) then {
-    _transportPool append ["VEHAIRDROP", 1 / count _transportPlanes];
+    _transportPool append ["VEHAIRDROP", 0.45 / count _transportPlanes];
 };
 { _transportPool append [_x, 2 / count _transportHelis] } forEach _transportHelis;
 { _transportPool append [_x, 2 * _lhFactor / count _lightHelis] } forEach _lightHelis;
+{ _transportPool append [_x, 0.75 / count _transportPlanes] } forEach _transportPlanes;
 
 private _supportPool = [_side, tierWar+_tierMod] call A3A_fnc_getVehiclesAirSupport;
 
@@ -72,6 +72,7 @@ for "_i" from 1 to _vehCount do {
             _resourcesSpent = _resourcesSpent + _vehCost + _crewCost;
             sleep 5;
         };
+        case (_vehType == "CASDIVE");
         case (_vehType == "CAS"): {
             // no reveal because it's a sub-support, delay because it's faster than the helis
             [_vehType, _side, _resPool, 500, false, _targPos, 0, 60] remoteExec ["A3A_fnc_createSupport", 2];

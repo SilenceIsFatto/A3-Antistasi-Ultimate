@@ -96,6 +96,10 @@ else
         {
             _text = format [localize "STR_notifiers_SUP_setup_CAS", _sideName];
         };
+        case ("CASDIVE"):
+        {
+            _text = format [localize "STR_notifiers_SUP_setup_CAS", _sideName];
+        };
         case ("GUNSHIP"):
         {
             _text = format [localize "STR_notifiers_SUP_setup_gunship", _sideName];

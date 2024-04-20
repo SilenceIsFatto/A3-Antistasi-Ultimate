@@ -27,7 +27,7 @@ _lootActionID = [_vehicle,
 	},
 	{},
 	[],
-	3,
+	2,
 	5,
 	false,
 	false

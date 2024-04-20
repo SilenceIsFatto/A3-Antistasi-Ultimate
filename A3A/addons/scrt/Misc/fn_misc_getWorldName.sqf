@@ -36,6 +36,10 @@ if (isNil "storedWorldName") then {
 		{
 			storedWorldName = "Weferlingen";
 		};
+		case "brf_sumava": 
+		{
+			storedWorldName = "Šumava";
+		};
 		default
 		{
 			storedWorldName = toUpperANSI([worldName, 0, 0] call BIS_fnc_trimString) + ([worldName, 1, count worldName] call BIS_fnc_trimString);

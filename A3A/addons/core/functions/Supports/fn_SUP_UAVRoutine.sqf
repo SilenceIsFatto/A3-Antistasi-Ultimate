@@ -29,6 +29,27 @@ _groupVeh = group driver _uav;
 { [_x, nil, false, _resPool] call A3A_fnc_NATOinit } forEach (crew _uav);           // arguable
 [_uav, _side, _resPool] call A3A_fnc_AIVEHinit;
 
+#if __A3_DEBUG__
+		_uav spawn {
+			while {alive _this} do {
+				sleep 1;
+				private _localMarker = createMarkerLocal [format ["%1test%2", random 10000, random 10000], (position _this)];
+				_localMarker setMarkerSizeLocal [1,1];
+				_localMarker setMarkerAlpha 1; 
+				_localMarker setMarkerTypeLocal "hd_dot";
+				_localMarker setMarkerColorLocal "ColorRed";
+			};
+
+			if (!alive _this) then {
+				private _localMarker = createMarkerLocal [format ["%1test%2", random 10000, random 10000], (position _this)];
+				_localMarker setMarkerSizeLocal [1,1];
+				_localMarker setMarkerAlpha 1; 
+				_localMarker setMarkerTypeLocal "KIA";
+				_localMarker setMarkerColorLocal "ColorRed";	
+			};
+		};
+#endif
+
 _wp = _groupVeh addWayPoint [_suppCenter, 0];
 _wp setWaypointBehaviour "AWARE";
 _wp setWaypointType "SAD";

@@ -2,6 +2,7 @@ private _hasWs = "ws" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ///////////////////////////
 //   Rebel Information   //
@@ -14,26 +15,26 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagMarkerType", "lxWS_flag_Argana"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["I_G_Offroad_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["I_G_Offroad_01_armed_F"]] call _fnc_saveToTemplate;
+private _vehiclesLightUnarmed = ["O_SFIA_Offroad_lxWS","O_Tura_Offroad_armor_lxWS"];
+private _vehiclesLightArmed = ["O_SFIA_Offroad_armed_lxWS","O_Tura_Offroad_armor_armed_lxWS"];
 ["vehiclesTruck", ["I_G_Van_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["I_Tura_Offroad_armor_AT_lxWS"]] call _fnc_saveToTemplate;
+private _vehiclesAT = ["O_SFIA_Offroad_AT_lxWS","O_Tura_Offroad_armor_AT_lxWS"];
 ["vehiclesAA", ["I_G_Offroad_01_AT_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlane", ["I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
 
-["vehiclesCivCar", ["C_Offroad_lxWS"]] call _fnc_saveToTemplate;
+private _vehiclesCivCar = ["C_Offroad_lxWS", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_SUV_01_F", "C_Offroad_01_F"];
 ["vehiclesCivTruck", ["C_Truck_02_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
+private _vehiclesCivHeli = ["C_Heli_Light_01_civil_F", "a3a_C_Heli_Transport_02_F"];
 ["vehiclesCivBoat", ["C_Rubberboat"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["I_G_HMG_02_high_F"]] call _fnc_saveToTemplate;
 ["staticAT", ["I_static_AT_F"]] call _fnc_saveToTemplate;
 ["staticAA", ["I_Tura_ZU23_lxWS"]] call _fnc_saveToTemplate;
 
-["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
+private _staticMortars = ["I_G_Mortar_01_F"];
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 
@@ -42,6 +43,28 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 
 ["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
+
+if ("expansion" in A3A_enabledDLC) then {
+    _vehiclesCivCar append ["C_Offroad_02_unarmed_F"];
+	_vehiclesLightUnarmed append ["I_C_Offroad_02_unarmed_F"];
+	_vehiclesLightArmed append ["I_C_Offroad_02_LMG_F"];
+	_vehiclesAT append ["I_C_Offroad_02_AT_F"];
+};
+
+if (_hasRF) then {
+    _vehiclesCivCar append ["C_Pickup_rf"];
+    _vehiclesLightUnarmed append ["I_Tura_Pickup_01_RF"];
+    _vehiclesLightArmed append ["I_Tura_Pickup_01_mmg_rf"];
+    _staticMortars append ["I_G_CommandoMortar_RF"];
+    _vehiclesCivHeli append ["C_Heli_EC_01A_civ_RF","C_Heli_EC_04_rescue_RF"];
+};
+
+["vehiclesCivHeli", _vehiclesCivHeli] call _fnc_saveToTemplate;
+["staticMortars", _staticMortars] call _fnc_saveToTemplate;
+["vehiclesCivCar", _vehiclesCivCar] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
+["vehiclesLightArmed", _vehiclesLightArmed] call _fnc_saveToTemplate;
+["vehiclesAT", _vehiclesAT] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
@@ -80,6 +103,11 @@ private _initialRebelEquipment = [
     "Binocular",
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
 ];
+
+if (_hasRF) then {
+    _initialRebelEquipment append ["srifle_h6_tan_rf","10Rnd_556x45_AP_Stanag_red_Tan_RF","10Rnd_556x45_AP_Stanag_Tan_RF","10Rnd_556x45_AP_Stanag_green_Tan_RF"];
+    _initialRebelEquipment = _initialRebelEquipment - ["hgun_PDW2000_F","SMG_02_F","30Rnd_9x21_Mag_SMG_02","SMG_05_F"];
+};
 
 private _backpacks =  [];
 if (_hasLawsOfWar) then {
@@ -169,6 +197,13 @@ if (_hasApex) then {
         "U_I_C_Soldier_Para_4_F",
         "U_I_C_Soldier_Para_1_F",
         "U_I_C_Soldier_Camo_F"
+    ];
+};
+
+if (_hasRF) then {
+    _dlcUniforms append [
+        "U_IG_Guerrilla_RF",
+        "U_IG_leader_RF"
     ];
 };
 

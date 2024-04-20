@@ -31,13 +31,13 @@
                 <Original>Antistasi Ultimate - Altis Requiem</Original>
                 <Russian>Antistasi Ultimate - Алт. Реквием</Russian>
                 <Chinesesimp>Antistasi Ultimate - 阿尔蒂斯安魂曲</Chinesesimp>
-                <Korean>안티스타시 플러스 - 알티스의 진혼곡</Korean>
+                <Korean>안티스타시 얼티밋 - 알티스의 진혼곡</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Altis_mapname_text">
                 <Original>Antistasi Ultimate - Altis Requiem</Original>
                 <Chinesesimp>Antistasi Ultimate - 阿尔蒂斯安魂曲</Chinesesimp>
                 <Russian>Antistasi Ultimate - Реквием по Алтису</Russian>
-                <Korean>안티스타시 플러스 - 알티스의 진혼곡</Korean>
+                <Korean>안티스타시 얼티밋 - 알티스의 진혼곡</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Altis_description_text">
                 <Original>Be the Resistance Leader. Fight against a superior enemy in technology, number, assets and vehicles. Use guerrilla tactics in a totally dynamic world, with around 30+ sidemissions, everywhere, anytime, anything.</Original>
@@ -62,13 +62,13 @@
                 <Original>Antistasi Ultimate - Lythium</Original>
                 <Russian>Antistasi Ultimate - Lythium</Russian>
                 <Chinesesimp>Antistasi Ultimate - Lythium</Chinesesimp>
-                <Korean>안티스타시 플러스 - Lythium</Korean>
+                <Korean>안티스타시 얼티밋 - Lythium</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Lythium_mapname_text">
                 <Original>Antistasi Ultimate - Lythium</Original>
                 <Chinesesimp>Antistasi Ultimate - Lythium</Chinesesimp>
                 <Russian>Antistasi Ultimate - Lythium</Russian>
-                <Korean>안티스타시 플러스 - Lythium</Korean>
+                <Korean>안티스타시 얼티밋 - Lythium</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Lythium_blurb_text">
                 <Original>Whether we wanted it or not, we stepped into a war with occupants and invaders on Lythium.</Original>
@@ -80,18 +80,19 @@
                 <Original>Antistasi Ultimate - Green Sea</Original>
                 <Russian>Antistasi Ultimate - Green Sea</Russian>
                 <Chinesesimp>Antistasi Ultimate - Green Sea</Chinesesimp>
-                <Korean>안티스타시 플러스 - Green Sea</Korean>
+                <Korean>안티스타시 얼티밋 - Green Sea</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Greensea_mapname_text">
                 <Original>Antistasi Ultimate - Green Sea</Original>
                 <Chinesesimp>Antistasi Ultimate - Green Sea</Chinesesimp>
                 <Russian>Antistasi Ultimate - Green Sea</Russian>
-                <Korean>안티스타시 플러스 - Green Sea</Korean>
+                <Korean>안티스타시 얼티밋 - Green Sea</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Greensea_blurb_text">
                 <Original>Whether we wanted it or not, we stepped into a war with occupants and invaders in the Green Sea.</Original>
                 <Russian>Хотим мы того или нет, но мы начали войну против оккупантов и захвачтиков Green Sea.</Russian>
                 <German>Ob wir es wollten oder nicht, wir traten in einen Krieg mit Besatzern auf Green Sea.</German>
+                <Korean>우리가 원했든 원하지 않았든, 우린 Green Sea의 점령군들과 침략자와의 전쟁을 시작했습니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Stratis_mapname_short_text">
                 <Original>Antistasi Stratis</Original>
@@ -145,14 +146,14 @@
                 <German>Antistasi Ultimate - Malden Elegie</German>
                 <Russian>Antistasi Ultimate - Элегия Малдена</Russian>
                 <Chinesesimp>Antistasi Ultimate - 马尔登悲歌</Chinesesimp>
-                <Korean>안티스타시 플러스 - 몰든의 애가</Korean>
+                <Korean>안티스타시 얼티밋 - 몰든의 애가</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Malden_mapname_text">
                 <Original>Antistasi Ultimate - Malden Elegy</Original>
                 <German>Antistasi Ultimate - Malden Elegie</German>
                 <Russian>Antistasi Ultimate - Элегия Малдена</Russian>
                 <Chinesesimp>Antistasi Ultimate - 马尔登悲歌</Chinesesimp>
-                <Korean>안티스타시 플러스 - 몰든의 애가</Korean>
+                <Korean>안티스타시 얼티밋 - 몰든의 애가</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_Malden_blurb_text">
                 <Original>Reprise for the people.</Original>
@@ -166,14 +167,14 @@
                 <German>Antistasi Ultimate - Sandsturm</German>
                 <Russian>Antistasi Ultimate - Песчаная буря</Russian>
                 <Chinesesimp>Antistasi Ultimate - 沙暴</Chinesesimp>
-                <Korean>안티스타시 플러스 - 모래폭풍</Korean>
+                <Korean>안티스타시 얼티밋 - 모래폭풍</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_sefrouramal_mapname_short_text">
                 <Original>Antistasi Ultimate - Sandstorm</Original>
                 <German>Antistasi Ultimate - Sandsturm</German>
                 <Russian>Antistasi Ultimate - Песчаная буря</Russian>
                 <Chinesesimp>Antistasi Ultimate - 沙暴</Chinesesimp>
-                <Korean>안티스타시 플러스 - 모래폭풍</Korean>
+                <Korean>안티스타시 얼티밋 - 모래폭풍</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_sefrouramal_blurb_text">
                 <Original>Unrest comes from the desert.</Original>
@@ -187,14 +188,14 @@
                 <German>Antistasi Ultimate - Zusammenbruch</German>
                 <Russian>Antistasi Ultimate - Крах</Russian>
                 <Chinesesimp>Antistasi Ultimate - 倒塌</Chinesesimp>
-                <Korean>안티스타시 플러스 - 붕괴</Korean>
+                <Korean>안티스타시 얼티밋 - 붕괴</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_esseker_mapname_short_text">
                 <Original>Antistasi Ultimate - Collapse</Original>
                 <German>Antistasi Ultimate - Zusammenbruch</German>
                 <Russian>Antistasi Ultimate - Крах</Russian>
                 <Chinesesimp>Antistasi Ultimate - 倒塌</Chinesesimp>
-                <Korean>안티스타시 플러스 - 붕괴</Korean>
+                <Korean>안티스타시 얼티밋 - 붕괴</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_esseker_blurb_text">
                 <Original>Regain all that was ever lost.</Original>
@@ -208,14 +209,14 @@
                 <German>Antistasi Ultimate - Rote Ernte</German>
                 <Russian>Antistasi Ultimate - Красная жатва</Russian>
                 <Chinesesimp>Antistasi Ultimate - 蓝色收获</Chinesesimp>
-                <Korean>안티스타시 플러스 - 빨갱이 수확</Korean>
+                <Korean>안티스타시 얼티밋 - 하베스트 레드</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_chernarus2020_mapname_short_text">
                 <Original>Antistasi Ultimate - Harvest Red</Original>
                 <German>Antistasi Ultimate - Rote Ernte</German>
                 <Russian>Antistasi Ultimate - Красная жатва</Russian>
                 <Chinesesimp>Antistasi Ultimate - 蓝色收获</Chinesesimp>
-                <Korean>안티스타시 플러스 - 빨갱이 수확</Korean>
+                <Korean>안티스타시 얼티밋 - 하베스트 레드</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_chernarus2020_blurb_text">
                 <Original>Bardak is out there.</Original>
@@ -229,14 +230,14 @@
                 <German>Antistasi Ultimate -  Horizontscan</German>
                 <Russian>Antistasi Ultimate - Ливония</Russian>
                 <Chinesesimp>Antistasi Ultimate - 扫视地平线</Chinesesimp>
-                <Korean>안티스타시 플러스 - 지평선 경계</Korean>
+                <Korean>안티스타시 얼티밋 - 지평선 경계</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_livonia_mapname_text">
                 <Original>Antistasi Ultimate - Horizon Scan</Original>
                 <Russian>Antistasi Ultimate - Сканирование Горизонта</Russian>
                 <German>Antistasi Ultimate - Horizontscan</German>
                 <Chinesesimp>Antistasi Ultimate - 扫视地平线</Chinesesimp>
-                <Korean>안티스타시 플러스 - 지평선 경계</Korean>
+                <Korean>안티스타시 얼티밋 - 지평선 경계</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_livonia_description_text">
                 <Original>Be the Resistance Leader. Fight against a superior enemy in technology, number, assets and vehicles. Use guerrilla tactics in a totally dynamic world, with around 30+ sidemissions, everywhere, anytime, anything.</Original>
@@ -257,14 +258,14 @@
                 <German>Antistasi Ultimate - Bernsteinfarbener Aufstand</German>
                 <Chinesesimp>Antistasi Ultimate - 黄色叛乱</Chinesesimp>
                 <Russian>Antistasi Ultimate - Янтарное Восстание</Russian>
-                <Korean>안티스타시 플러스 - 호박색 반란</Korean>
+                <Korean>안티스타시 얼티밋 - 호박색 반란</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_napf_mapname_short_text">
                 <Original>Antistasi Ultimate - Amber Ins.</Original>
                 <German>Antistasi Ultimate - Bernst. Aufstand</German>
                 <Russian>Antistasi Ultimate - Янтар. восст.</Russian>
                 <Chinesesimp>Antistasi Ultimate - 黄色叛乱</Chinesesimp>
-                <Korean>안티스타시 플러스 - 호박색 반란</Korean>
+                <Korean>안티스타시 얼티밋 - 호박색 반란</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_napf_blurb_text">
                 <Original>Yellow soil is under our boots.</Original>
@@ -278,14 +279,14 @@
                 <German>Antistasi Ultimate - Kesäsota</German>
                 <Russian>Antistasi Ultimate - Летняя Война</Russian>
                 <Chinesesimp>Antistasi Ultimatemate - 夏季战争</Chinesesimp>
-                <Korean>안티스타시 플러스 - 여름 전쟁</Korean>
+                <Korean>안티스타시 얼티밋 - 여름 전쟁</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_vt7_mapname_short_text">
                 <Original>Antistasi Ultimate - Kesäsota</Original>
                 <German>Antistasi Ultimate - Kesäsota</German>
                 <Russian>Antistasi Ultimate - Летняя Война</Russian>
                 <Chinesesimp>Antistasi Ultimate - 夏季战争</Chinesesimp>
-                <Korean>안티스타시 플러스 - 여름 전쟁</Korean>
+                <Korean>안티스타시 얼티밋 - 여름 전쟁</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_vt7_blurb_text">
                 <Original>Hiking on the North with guns.</Original>
@@ -304,26 +305,26 @@
                 <German>Antistasi Ultimate - Nordvakt</German>
                 <Russian>Antistasi Ultimate - Северный Дозор</Russian>
                 <Chinesesimp>Antistasi Ultimate - 北方守卫</Chinesesimp>
-                <Korean>안티스타시 플러스 - 노도박</Korean>
+                <Korean>안티스타시 얼티밋 - 노도박</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_vidda_mapname_short_text">
                 <Original>Antistasi Ultimate - Nordvakt</Original>
                 <German>Antistasi Ultimate - Nordvakt</German>
                 <Russian>Antistasi Ultimate - Северный Дозор</Russian>
                 <Chinesesimp>Antistasi Ultimate - 北方守卫</Chinesesimp>
-                <Korean>안티스타시 플러스 - 노도박</Korean>
+                <Korean>안티스타시 얼티밋 - 노도박</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_takistan_mapname_text">
                 <Original>Antistasi Ultimate - Takistan</Original>
                 <Russian>Antistasi Ultimate - Такистан</Russian>
                 <Chinesesimp>Antistasi Ultimate - 塔克斯坦</Chinesesimp>
-                <Korean>안티스타시 플러스 - 타키스탄</Korean>
+                <Korean>안티스타시 얼티밋 - 타키스탄</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_takistan_mapname_short_text">
                 <Original>Antistasi Ultimate - Takistan</Original>
                 <Russian>Antistasi Ultimate - Такистан</Russian>
                 <Chinesesimp>Antistasi Ultimate - 塔克斯坦</Chinesesimp>
-                <Korean>안티스타시 플러스 - 타키스탄</Korean>
+                <Korean>안티스타시 얼티밋 - 타키스탄</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_takistan_blurb_text">
                 <Original>We are not your kind of people.</Original>
@@ -335,13 +336,13 @@
                 <Original>Antistasi Ultimate - Horizon Islands</Original>
                 <Russian>Antistasi Ultimate - Острова Горизонта</Russian>
                 <Chinesesimp>Antistasi Ultimate - 地平线群岛</Chinesesimp>
-                <Korean>안티스타시 플러스 - 호라이즌 제도</Korean>
+                <Korean>안티스타시 얼티밋 - 호라이즌 제도</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_mapname_text">
                 <Original>Antistasi Ultimate - Horizon Islands</Original>
                 <Russian>Antistasi Ultimate - Острова Горизонта</Russian>
                 <Chinesesimp>Antistasi Ultimate - 地平线群岛</Chinesesimp>
-                <Korean>안티스타시 플러스 - 호라이즌 제도</Korean>
+                <Korean>안티스타시 얼티밋 - 호라이즌 제도</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_blurb_text">
                 <Original>A pack of old men in a job where people die young.</Original>
@@ -353,13 +354,13 @@
                 <Original>Antistasi Ultimate - Agent Orange</Original>
                 <Russian>Antistasi Ultimate - Агент Оранж</Russian>
                 <Chinesesimp>Antistasi Ultimate - 橙剂</Chinesesimp>
-                <Korean>안티스타시 플러스 - 오렌지 요원</Korean>
+                <Korean>안티스타시 얼티밋 - 오렌지 요원</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_camlaonam_mapname_text">
                 <Original>Antistasi Ultimate - Agent Orange</Original>
                 <Russian>Antistasi Ultimate - Агент Оранж</Russian>
                 <Chinesesimp>Antistasi Ultimate - 橙剂</Chinesesimp>
-                <Korean>안티스타시 플러스 - 오렌지 요원</Korean>
+                <Korean>안티스타시 얼티밋 - 오렌지 요원</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_camlaonam_blurb_text">
                 <Original>Good morning, Vietnam.</Original>
@@ -372,13 +373,13 @@
                 <Russian>Antistasi Ultimate - Битва при Кшешани</Russian>
                 <Chinesesimp>Antistasi Ultimate - 溪生之战</Chinesesimp>
                 <Czech>Antistasi Ultimate - Bitva u Khe Sanh</Czech>
-                <Korean>안티스타시 플러스 - 케산 전투</Korean>
+                <Korean>안티스타시 얼티밋 - 케산 전투</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_khesanh_mapname_short_text">
                 <Original>Antistasi Ultimate - Battle of KS</Original>
                 <Russian>Antistasi Ultimate - Битви при Кшешани</Russian>
                 <Chinesesimp>Antistasi Ultimate - 溪生之战</Chinesesimp>
-                <Korean>안티스타시 플러스 - 케산 전투</Korean>
+                <Korean>안티스타시 얼티밋 - 케산 전투</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_khesanh_blurb_text">
                 <Original>“In this world, a man himself is nothing. And there ain't no world but this one.”</Original>
@@ -390,13 +391,13 @@
                 <Original>Antistasi Ultimate - Unity</Original>
                 <Russian>Antistasi Ultimate - Единство</Russian>
                 <Chinesesimp>Antistasi Ultimate - 联盟</Chinesesimp>
-                <Korean>안티스타시 플러스 - 통일</Korean>
+                <Korean>안티스타시 얼티밋 - 통일</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_sehreno_mapname_short_text">
                 <Original>Antistasi Ultimate - Unity</Original>
                 <Russian>Antistasi Ultimate - Единство</Russian>
                 <Chinesesimp>Antistasi Ultimate - 联盟</Chinesesimp>
-                <Korean>안티스타시 플러스 - 통일</Korean>
+                <Korean>안티스타시 얼티밋 - 통일</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_sehreno_blurb_text">
                 <Original>There is no such thing in Eponia.</Original>
@@ -407,12 +408,12 @@
             <Key ID="STR_antistasi_mission_info_weferlingen_mapname_text">
                 <Original>Antistasi Ultimate - Code Red</Original>
                 <Russian>Antistasi Ultimate - Код Красный</Russian>
-                <Korean>안티스타시 플러스 - 코드 레드</Korean>
+                <Korean>안티스타시 얼티밋 - 코드 레드</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_weferlingen_mapname_short_text">
                 <Original>Antistasi Ultimate - Code Red</Original>
                 <Russian>Antistasi Ultimate - Код Красный</Russian>
-                <Korean>안티스타시 플러스 - 코드 레드</Korean>
+                <Korean>안티스타시 얼티밋 - 코드 레드</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_weferlingen_blurb_text">
                 <Original>Border crossing never has been so easy.</Original>
@@ -443,6 +444,21 @@
                 <Original>Vive la résistance!</Original>
                 <Russian>Vive la résistance!</Russian>
                 <Korean>레지스탕스 만세!</Korean>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_sumava_mapname_text">
+                <Original>Antistasi Ultimate - Šumava</Original>
+                <Russian>Antistasi Ultimate - Čумава</Russian>
+                <Korean>안티스타시 얼티밋 - Šumava</Korean>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_sumava_blurb_text">
+                <Original>The entire country is counting on us and they don't even know it.</Original>
+                <Russian>На нас рассчитывает вся страна и они даже не знают об этом.</Russian>
+                <Korean>온 나라가 우리를 믿고 있지만 그들은 그걸 모르고 있습니다.</Korean>
+            </Key>
+            <Key ID="STR_antistasi_mission_info_sumava_mapname_short_text">
+                <Original>Antistasi Ultimate - Šumava</Original>
+                <Russian>Antistasi Ultimate - Čумава</Russian>
+                <Korean>안티스타시 얼티밋 - Šumava</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_journal_autoLoadLastGame_name">
                 <Original>Automatically load last valid save after delay</Original>

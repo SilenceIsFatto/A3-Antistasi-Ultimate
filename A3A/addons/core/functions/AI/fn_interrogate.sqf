@@ -32,6 +32,11 @@ private _chance = 120 - ([aggressionOccupants, aggressionInvaders] select (_side
 sleep 4;
 
 if (random 100 < _chance) then {
+
+    if (hideEnemyMarkers) then {
+        [1, "An interrogated soldier gave us some intel about zone locations."] call A3U_fnc_revealRandomZones;// To-Do: Localize
+    }; // Since bases can be revealed without "intel", don't see any negative to this. Adds a somewhat consistent way to gain zone locations
+
     if(_unit getVariable ["hasIntel", false]) then {
         _unit globalChat (selectRandom [
             localize "STR_interrogation_success_phrase1_text",

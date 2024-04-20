@@ -30,6 +30,20 @@ class CfgMarkers
 		texture = QPATHTOFOLDER(Pictures\Markers\chdkz_co.paa);
 	};
 
+	class a3u_flag_ija: flag_NATO 
+	{
+		name = "IJA Flag";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_ija_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_ija_ca.paa);
+	};
+
+	class a3u_flag_roc: flag_NATO 
+	{
+		name = "ROC Flag";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_roc_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_roc_ca.paa);
+	};
+
     class loc_MilAdministration {
         color[] = {1,1,1,1};
         icon = QPATHTOFOLDER(Pictures\Markers\milAdministration_CA.paa);

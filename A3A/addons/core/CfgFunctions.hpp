@@ -164,6 +164,7 @@ class CfgFunctions
             class returnMuzzle {};
             class revealToPlayer {};
             class scheduler {};
+            class moveOutCrew {};
             class sellVehicle {};
             class setMarkerAlphaForSide {};
             class setPlaneLoadout {};
@@ -607,12 +608,16 @@ class CfgFunctions
             class SUP_carpetBombsAvailable {};
             class SUP_carpetBombsRoutine {};
             class SUP_CAS {};
+            class SUP_CASDive {};
             class SUP_CASAvailable {};
+            class SUP_CASDiveAvailable {};
             class SUP_CASApproach {};
             class SUP_CASDiveBomb {};
             class SUP_CASDiveBombRun {};
+            class SUP_CASDiveRoutine {};
             class SUP_CASRoutine {};
             class SUP_CASRun {};
+            class SUP_CASDiveRun {};
             class SUP_cruiseMissile {};
             class SUP_cruiseMissileAvailable {};
             class SUP_cruiseMissileRoutine {};

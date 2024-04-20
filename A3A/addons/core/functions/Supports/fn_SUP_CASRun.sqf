@@ -13,7 +13,7 @@ FIX_LINE_NUMBERS()
 
 params ["_plane", "_target", "_supportName"];
 Debug_1("%1 has started gun run", _supportName);
-
+_plane setVehicleRadar 1;
 //Creating the startpoint for the fire EH loop
 private _fnc_executeWeaponFire =
 {
@@ -157,7 +157,14 @@ addMissionEventHandler ["EachFrame",
 waitUntil { sleep 1; _transform#8 >= 1 };
 
 Debug_1("Gun run for %1 finished, returning control", _supportName);
-
+_plane setVehicleRadar 0;
+for '_i' from 1 to 3 do
+    {
+        [_plane, "CMFlareLauncher"] call BIS_fnc_fire;
+        [_plane, "CMFlareLauncher_Triples"] call BIS_fnc_fire;
+        [_plane, "CMFlareLauncher_Singles"] call BIS_fnc_fire;
+        sleep 1;
+    };
 /*
     if(_interval > 0.25 && (_fireParams#0#0)) then
     {

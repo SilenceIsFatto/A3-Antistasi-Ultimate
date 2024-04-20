@@ -8,7 +8,7 @@ class EditorData
 	toggles=1093;
 	class ItemIDProvider
 	{
-		nextID=5712;
+		nextID=5737;
 	};
 	class MarkerIDProvider
 	{
@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=852;
+		nextID=920;
 	};
 	class Camera
 	{
@@ -25142,7 +25142,7 @@ class Mission
 					name="controls";
 					class Entities
 					{
-						items=8;
+						items=33;
 						class Item0
 						{
 							dataType="Marker";
@@ -25232,9 +25232,284 @@ class Mission
 							b=40;
 							id=893;
 						};
+						class Item8
+						{
+							dataType="Marker";
+							position[]={3858.7615,10.883621,9325.2256};
+							name="control_9";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5712;
+						};
+						class Item9
+						{
+							dataType="Marker";
+							position[]={2576.375,10.952188,7823.25};
+							name="control_10";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5713;
+						};
+						class Item10
+						{
+							dataType="Marker";
+							position[]={3583.7095,13.794429,6406.8857};
+							name="control_11";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5714;
+						};
+						class Item11
+						{
+							dataType="Marker";
+							position[]={1958.8695,13.715101,4818.4102};
+							name="control_12";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5715;
+						};
+						class Item12
+						{
+							dataType="Marker";
+							position[]={2355.0789,27.659031,4522.7773};
+							name="control_13";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5716;
+						};
+						class Item13
+						{
+							dataType="Marker";
+							position[]={5492.2729,14.182751,3877.751};
+							name="control_14";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5717;
+						};
+						class Item14
+						{
+							dataType="Marker";
+							position[]={6665.8647,11.133163,1055.7412};
+							name="control_15";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5718;
+						};
+						class Item15
+						{
+							dataType="Marker";
+							position[]={11240.274,18.363344,1580.8027};
+							name="control_16";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5719;
+						};
+						class Item16
+						{
+							dataType="Marker";
+							position[]={9910.376,16.987631,2219.2676};
+							name="control_17";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5720;
+						};
+						class Item17
+						{
+							dataType="Marker";
+							position[]={15905.66,19.273726,3700.5137};
+							name="control_18";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5721;
+						};
+						class Item18
+						{
+							dataType="Marker";
+							position[]={13653.006,15.620481,6649.0947};
+							name="control_19";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5722;
+						};
+						class Item19
+						{
+							dataType="Marker";
+							position[]={13390.961,9.0254545,8930.3896};
+							name="control_20";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5723;
+						};
+						class Item20
+						{
+							dataType="Marker";
+							position[]={10439.347,4.8705564,11012.074};
+							name="control_21";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5724;
+						};
+						class Item21
+						{
+							dataType="Marker";
+							position[]={14354.625,13.599063,12504.875};
+							name="control_22";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5725;
+						};
+						class Item22
+						{
+							dataType="Marker";
+							position[]={359.77097,25.276339,7686.6572};
+							name="control_23";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5726;
+						};
+						class Item23
+						{
+							dataType="Marker";
+							position[]={13193.835,8.3515825,13846.613};
+							name="control_24";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5727;
+						};
+						class Item24
+						{
+							dataType="Marker";
+							position[]={9954.6074,8.9205122,15101.859};
+							name="control_25";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5728;
+						};
+						class Item25
+						{
+							dataType="Marker";
+							position[]={1668.953,13.818247,595.21289};
+							name="control_26";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5729;
+						};
+						class Item26
+						{
+							dataType="Marker";
+							position[]={9295.4541,12.721494,6708.6465};
+							name="control_27";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5730;
+						};
+						class Item27
+						{
+							dataType="Marker";
+							position[]={12447.595,11.452266,7643.5146};
+							name="control_28";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5731;
+						};
+						class Item28
+						{
+							dataType="Marker";
+							position[]={9509.8604,9.8340845,7746.6455};
+							name="control_29";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5732;
+						};
+						class Item29
+						{
+							dataType="Marker";
+							position[]={7231.7671,13.034089,7724.9072};
+							name="control_30";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5733;
+						};
+						class Item30
+						{
+							dataType="Marker";
+							position[]={8948.9258,16.78775,734.2666};
+							name="control_31";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5734;
+						};
+						class Item31
+						{
+							dataType="Marker";
+							position[]={5094.2939,29.507296,11932.244};
+							name="control_32";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5735;
+						};
+						class Item32
+						{
+							dataType="Marker";
+							position[]={8562.9551,12.917011,15888.646};
+							name="control_33";
+							markerType="RECTANGLE";
+							type="rectangle";
+							a=40;
+							b=40;
+							id=5736;
+						};
 					};
 					id=117;
-					atlOffset=12.814967;
+					atlOffset=-8.1315632;
 				};
 				class Item3
 				{
@@ -25467,7 +25742,7 @@ class Mission
 				};
 			};
 			id=49;
-			atlOffset=2.4301662;
+			atlOffset=1.7196522;
 		};
 		class Item3
 		{
@@ -34723,7 +34998,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=279.04938;
+							angle=279.04935;
 							id=5591;
 							atlOffset=6.1990633;
 						};
@@ -39718,7 +39993,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=96.202682;
+							angle=96.202675;
 							id=5607;
 						};
 						class Item83
@@ -42638,7 +42913,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=7.0942011;
+							angle=7.0942006;
 							id=5099;
 						};
 						class Item4
@@ -44868,7 +45143,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=7.0942006;
+							angle=7.0942001;
 							id=5574;
 						};
 						class Item77
@@ -44881,7 +45156,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=7.0942006;
+							angle=7.0942001;
 							id=5575;
 						};
 					};
@@ -45745,7 +46020,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=343.49548;
+							angle=343.49545;
 							id=5550;
 						};
 						class Item31
@@ -47307,7 +47582,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=51.00481;
+							angle=51.004807;
 							id=730;
 						};
 						class Item1
@@ -47320,7 +47595,7 @@ class Mission
 							colorName="ColorGUER";
 							a=63.117001;
 							b=51.050999;
-							angle=48.98724;
+							angle=48.987236;
 							id=731;
 						};
 						class Item2
@@ -51036,7 +51311,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=83.15696;
+							angle=83.156952;
 							id=5615;
 						};
 					};
@@ -51869,7 +52144,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=136.90887;
+							angle=136.90886;
 							id=5588;
 						};
 						class Item30
@@ -53919,7 +54194,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=208.32104;
+							angle=208.32103;
 							id=5221;
 							atlOffset=1.9073486e-006;
 						};
@@ -56064,7 +56339,7 @@ class Mission
 							colorName="ColorGreen";
 							a=5;
 							b=5;
-							angle=208.32103;
+							angle=208.32101;
 							id=5581;
 						};
 					};
@@ -62393,7 +62668,7 @@ class Mission
 							colorName="ColorBlue";
 							a=15;
 							b=15;
-							angle=319.97754;
+							angle=319.97751;
 							id=673;
 						};
 						class Item1
@@ -73526,7 +73801,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351999;
 					b=12.158;
-					angle=95.666985;
+					angle=95.666977;
 					id=5684;
 					atlOffset=272.51999;
 				};
@@ -73554,7 +73829,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=186.33698;
+					angle=186.33696;
 					id=5686;
 					atlOffset=240.82124;
 				};
@@ -73568,7 +73843,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=181.62897;
+					angle=181.62895;
 					id=5687;
 					atlOffset=351.65155;
 				};
@@ -73582,7 +73857,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=181.62895;
+					angle=181.62894;
 					id=5688;
 					atlOffset=351.65155;
 				};
@@ -73596,7 +73871,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=186.33696;
+					angle=186.33694;
 					id=5689;
 					atlOffset=240.82124;
 				};
@@ -73610,7 +73885,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=186.33696;
+					angle=186.33694;
 					id=5690;
 					atlOffset=240.82124;
 				};
@@ -73624,7 +73899,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=186.33696;
+					angle=186.33694;
 					id=5691;
 					atlOffset=240.82124;
 				};
@@ -73638,7 +73913,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=186.33696;
+					angle=186.33694;
 					id=5692;
 					atlOffset=240.82124;
 				};
@@ -73652,7 +73927,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=186.33696;
+					angle=186.33694;
 					id=5693;
 					atlOffset=240.82124;
 				};
@@ -73666,7 +73941,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=186.33696;
+					angle=186.33694;
 					id=5694;
 					atlOffset=240.82124;
 				};
@@ -73680,7 +73955,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=186.33696;
+					angle=186.33694;
 					id=5695;
 					atlOffset=240.82124;
 				};
@@ -73694,7 +73969,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351999;
 					b=12.158;
-					angle=95.666985;
+					angle=95.666977;
 					id=5696;
 					atlOffset=272.41467;
 				};
@@ -73722,7 +73997,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=327.4581;
+					angle=327.45807;
 					id=5698;
 					atlOffset=243.07843;
 				};
@@ -73736,7 +74011,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=105.71298;
+					angle=105.71297;
 					id=5699;
 					atlOffset=353.82001;
 				};
@@ -73764,7 +74039,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=327.45807;
+					angle=327.45804;
 					id=5701;
 					atlOffset=243.16281;
 				};
@@ -73778,7 +74053,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=327.45807;
+					angle=327.45804;
 					id=5702;
 					atlOffset=243.07843;
 				};
@@ -73792,7 +74067,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=327.45807;
+					angle=327.45804;
 					id=5703;
 					atlOffset=243.07843;
 				};
@@ -73806,7 +74081,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=327.45807;
+					angle=327.45804;
 					id=5704;
 					atlOffset=243.06906;
 				};
@@ -73820,7 +74095,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=327.45807;
+					angle=327.45804;
 					id=5705;
 					atlOffset=243.06625;
 				};

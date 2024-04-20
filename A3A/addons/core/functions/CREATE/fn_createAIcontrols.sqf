@@ -27,7 +27,7 @@ A3A_hasIFA = false;
 //IFA Detection
 if (isClass (configfile >> "CfgPatches" >> "LIB_core")) then {
   A3A_hasIFA = true;
-  [2,"Iront Front Detected.",_fileName] call A3A_fnc_log;
+  [2,"Iront Front Detected.",_fnc_scriptName] call A3A_fnc_log;
 };
 
 _isControl = if (isOnRoad _positionX) then {true} else {false};
@@ -248,7 +248,17 @@ else
 	}
 	else
 	{
-		_leave = true;
+		private _aggro = [aggressionOccupants, aggressionInvaders] select (_sideX == Invaders);
+		if ((random 100) > ((tierWar * 3) + (_aggro / 5))) then {
+			_leave = true;
+		} else {	
+			private _sniperPair = [_faction get "groupTierPatrolSniper"] call SCRT_fnc_unit_getTiered;
+			private _groupX = [_positionX,_sideX, _sniperPair] call A3A_fnc_spawnGroup;
+
+			[_groupX, "Patrol_Area", 25, 150, 300, false, [], false] call A3A_fnc_patrolLoop;
+			_groups pushBack _groupX;
+			{[_x, "", false] call A3A_fnc_NATOinit} forEach units _groupX;
+		};
 	};
 };
 if (_leave) exitWith {};

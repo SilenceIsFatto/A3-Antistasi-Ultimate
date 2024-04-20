@@ -39,13 +39,15 @@ private _initData = [
     ["HOWITZER",        "AREA", 0.5, 0.9, 125,  65,  "", "staticHowitzers"],
     ["ASF",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesAA"],            // balanced against SAMs (if available), 66/33 weighting
     ["CAS",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesCAS"],
+    ["CASDIVE",       "TARGET", 0.8, 0.3,   0, 100,  "", "vehiclesPlanesCAS"],
     ["QRFLAND",       "TROOPS", 1.0, 1.4,   0,   0,  "", ""],
     ["QRFAIR",        "TROOPS", 0.5, 0.1,   0,   0,  "", ""],
-    ["QRFVEHAIRDROP", "TROOPS", 0.4, 0.2,   0,   0,  "", "vehiclesPlanesTransport"],
+    ["QRFVEHAIRDROP", "TROOPS", 0.3, 0.1,   0,   0,  "", "vehiclesPlanesTransport"],
     ["CARPETBOMBS",     "AREA", 0.5, 0.1, 200,   0, "u", ""],                            // balanced against airstrikes
     ["SAM",           "TARGET", 1.0, 1.0,   0, 100, "u", ""],                             // balanced against ASF
     ["ORBITALSTRIKE",   "AREA", 0.2, 0.0, 300,   0, "f", ""]
-//    ["GUNSHIP",    ["AREA",   0.2,  50,   0]],                 // uh. Does AREA work for this? Only lasts 5 minutes so maybe...
+//  ["UAV",           "TARGET", 1.0, 0.4,   0, 80,  "", "uavsAttack"],
+//  ["GUNSHIP",    ["AREA",   0.2,  50,   0]],                 // uh. Does AREA work for this? Only lasts 5 minutes so maybe...
 ];
 
 // Generate support type hashmap for a faction, suppType -> [baseType, weight, effRadius, strikepower]

@@ -14,11 +14,16 @@ private _intermediatePosition = [_positionDestination, 200, _angle] call BIS_fnc
 private _originPosition = [_positionOrigin, 1500, _angleOrigin] call BIS_fnc_relPos;
 private _finPosition = [_positionDestination, 1500, _angle] call BIS_fnc_relPos;
 
-private _heliType = selectRandom (A3A_faction_reb get "vehiclesCivHeli");
+private _heliType = selectRandom (A3A_faction_reb getOrDefault ["vehiclesCivHeli", []]);
 private _heliData = [_originPosition, _angle, _heliType, teamPlayer] call A3A_fnc_spawnVehicle;
 private _heli = _heliData select 0;
 private _heliCrew = _heliData select 1;
 private _groupHeli = _heliData select 2;
+
+if (_heliType isEqualTo []) exitWith {
+	["Support", "A helicopter is not available in this template. Apologies! You have been refunded."] call A3A_fnc_customHint;
+	[0,2000] remoteExec ["A3A_fnc_resourcesFIA",2];
+};
 
 _heli setPosATL [getPosATL _heli select 0, getPosATL _heli select 1, 300];
 _heli disableAI "TARGET";

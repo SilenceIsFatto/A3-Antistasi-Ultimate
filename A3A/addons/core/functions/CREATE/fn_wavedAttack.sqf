@@ -72,7 +72,7 @@ while {_wave <= _maxWaves and !_victory} do
         {
             _x params ["_supportName", "_suppSide", "_suppType", "_suppCenter", "_suppRadius", "_suppTarget"];
             if (_suppSide != _side or _suppCenter distance2d _targpos > _suppRadius) then { continue };
-            if (_suppType in ["UAV", "CAS", "ASF"]) then { _airSupports pushBack _suppType };
+            if (_suppType in ["UAV", "CAS", "CASDIVE", "ASF"]) then { _airSupports pushBack _suppType };
         } forEach A3A_activeSupports;
 
         // Not ideal because it might have a dead gunner. Might need some proper vehicleCanFight function
@@ -104,6 +104,7 @@ while {_wave <= _maxWaves and !_victory} do
         private _possibles = ["AH", 1];
         if !("UAV" in _airSupports) then { _possibles append ["UAV", 1] };
         if !("CAS" in _airSupports) then { _possibles append ["CAS", 0.6] };
+	if !("CASDIVE" in _airSupports) then { _possibles append ["CASDIVE", 0.4] };
         if !("ASF" in _airSupports) then { _possibles append ["ASF", 0.3] };
 
         private _support = selectRandomWeighted _possibles;

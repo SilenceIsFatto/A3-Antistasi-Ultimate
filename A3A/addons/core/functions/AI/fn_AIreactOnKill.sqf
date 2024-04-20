@@ -43,9 +43,9 @@ if(count _activeGroupMembers == 0) exitWith {};
 
 //Call help if possible
 if(_group getVariable ["A3A_canCallSupportAt", -1] < time) then {
-    if (radiomanSupport isEqualTo true) then { // use radioman or squadleader depending on parameter
+    if (radiomanSupport isEqualTo false) then { // use radioman
         [_group, _killer] spawn A3A_fnc_callForSupportInfantry;
-    } else {
+    } else { // use SL
         [_group, _killer] spawn A3A_fnc_callForSupport;
     };
 };

@@ -5,6 +5,8 @@ Info("InitBases started");
 
 // This is called pre-setup so that the map looks vaguely plausible
 
+// private _hideEnemyMarkers = missionNamespace getVariable ["A3U_setting_hideEnemyMarkers",false];
+
 private _fnc_initMarkerList =
 {
 	params ["_mrkCSAT", "_markers", "_mrkType", "_mrkText", ["_useSideName", false]];
@@ -15,25 +17,33 @@ private _fnc_initMarkerList =
 		private _mrkD = createMarkerLocal [format ["Dum%1", _x], _pos];
 		_mrkD setMarkerShapeLocal "ICON";
 
-
-        switch (true) do {
-            case (_x in airportsX): {
+        switch (true) do 
+        {
+            case (_x in airportsX): 
+            {
                 _mrkD setMarkerTypeLocal (["flag_NATO", "flag_CSAT"] select _isInvader);
                 _mrkD setMarkerColorLocal "Default";
             };
-            case (_x in milbases): {
+            case (_x in milbases): 
+            {
                 _mrkD setMarkerTypeLocal (["b_hq", "o_hq"] select _isInvader);
                 _mrkD setMarkerColorLocal ([colorOccupants, colorInvaders] select _isInvader);
             };
-            case (_x in seaports): {
+            case (_x in seaports): 
+            {
                 _mrkD setMarkerTypeLocal (["b_naval", "o_naval"] select _isInvader);
                 _mrkD setMarkerColorLocal ([colorOccupants, colorInvaders] select _isInvader);
             };
-            default {
+            default 
+            {
                 _mrkD setMarkerTypeLocal _mrkType;
                 _mrkD setMarkerColorLocal ([colorOccupants, colorInvaders] select _isInvader);
             };
         };
+
+        // if (hideEnemyMarkers && {!(_x in airportsX)}) then {
+        //     _mrkD setMarkerAlpha 0;
+        // };
 
         _mrkD setMarkerText format [_mrkText, [localize "STR_A3A_initBases_occ", localize "STR_A3A_initBases_inv"] select _isInvader];
 

@@ -152,6 +152,9 @@ _loadoutData set ["officerUniforms", ["OPTRE_FC_Elite_CombatSkin"]];
 _loadoutData set ["officerVests", ["OPTRE_FC_Elite_Armor_Officer"]];
 _loadoutData set ["officerHats", ["OPTRE_FC_Elite_Helmet_Officer"]];
 
+_loadoutData set ["cloakUniforms", []];
+_loadoutData set ["cloakVests", []];
+
 _loadoutData set ["uniforms", []];
 _loadoutData set ["slUniforms", []];
 _loadoutData set ["mgVests", []];
@@ -917,6 +920,57 @@ private _officerTemplate = {
     ["radios"] call _fnc_addRadio;
 };
 
+private _patrolSniperTemplate = {
+    ["sniHats"] call _fnc_setHelmet;
+    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [["cloakVests","vests"] call _fnc_fallback] call _fnc_setVest;
+    [["cloakUniforms","uniforms"] call _fnc_fallback] call _fnc_setUniform;
+
+    [["sniperRifles", "marksmanRifles"] call _fnc_fallback] call _fnc_setPrimary;
+    ["primary", 6] call _fnc_addMagazines;
+
+    ["sidearms"] call _fnc_setHandgun;
+    ["handgun", 2] call _fnc_addMagazines;
+
+    ["items_medical_standard"] call _fnc_addItemSet;
+    ["items_sniper_extras"] call _fnc_addItemSet;
+    ["items_miscEssentials"] call _fnc_addItemSet;
+    ["antiInfantryGrenades", 1] call _fnc_addItem;
+    ["smokeGrenades", 2] call _fnc_addItem;
+
+    ["maps"] call _fnc_addMap;
+    ["watches"] call _fnc_addWatch;
+    ["compasses"] call _fnc_addCompass;
+    ["radios"] call _fnc_addRadio;
+    ["NVGs"] call _fnc_addNVGs;
+};
+
+private _patrolSpotterTemplate = {
+    ["sniHats"] call _fnc_setHelmet;
+    [selectRandomWeighted [[], 2, "glasses", 0.75, "goggles", 0.5]] call _fnc_setFacewear;
+    [["cloakVests","vests"] call _fnc_fallback] call _fnc_setVest;
+    [["cloakUniforms","uniforms"] call _fnc_fallback] call _fnc_setUniform;
+
+    [selectRandom ["rifles", "carbines", "marksmanRifles"]] call _fnc_setPrimary;
+    ["primary", 6] call _fnc_addMagazines;
+
+    ["sidearms"] call _fnc_setHandgun;
+    ["handgun", 2] call _fnc_addMagazines;
+
+    ["items_medical_standard"] call _fnc_addItemSet;
+    ["items_sniper_extras"] call _fnc_addItemSet;
+    ["items_miscEssentials"] call _fnc_addItemSet;
+    ["antiInfantryGrenades", 1] call _fnc_addItem;
+    ["smokeGrenades", 2] call _fnc_addItem;
+
+    ["maps"] call _fnc_addMap;
+    ["watches"] call _fnc_addWatch;
+    ["compasses"] call _fnc_addCompass;
+    ["radios"] call _fnc_addRadio;
+    ["rangefinders"] call _fnc_addBinoculars;
+    ["NVGs"] call _fnc_addNVGs;
+};
+
 ////////////////////////////////////////////////////////////////////////////////////////
 //  You shouldn't touch below this line unless you really really know what you're doing.
 //  Things below here can and will break the gamemode if improperly changed.
@@ -970,7 +1024,9 @@ private _unitTypes = [
     ["AA", _aaTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]],
     ["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]],
     ["Marksman", _marksmanTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]],
-    ["Sniper", _sniperTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]]
+    ["Sniper", _sniperTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]],
+    ["PatrolSniper", _patrolSniperTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]],
+    ["PatrolSpotter", _patrolSpotterTemplate, [["baseClass", "WBK_EliteMainWeap_1", false]], [_prefix]] 
 ];
 
 [_prefix, _unitTypes, _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
@@ -1003,7 +1059,9 @@ private _unitTypes = [
     ["AA", _aaTemplate, [["baseClass", "WBK_Grunt_5", true]], [_prefix]],
     ["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_Grunt_1", true]], [_prefix]],
     ["Marksman", _marksmanTemplate, [["baseClass", "WBK_Grunt_1", true]], [_prefix]],
-    ["Sniper", _sniperTemplate, [["baseClass", "WBK_Grunt_4", true]], [_prefix]]
+    ["Sniper", _sniperTemplate, [["baseClass", "WBK_Grunt_4", false]], [_prefix]],
+    ["PatrolSniper", _patrolSniperTemplate, [["baseClass", "WBK_Grunt_4", false]], [_prefix]],
+    ["PatrolSpotter", _patrolSpotterTemplate, [["baseClass", "WBK_Grunt_4", false]], [_prefix]]
 ];
 
 [_prefix, _unitTypes, _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
@@ -1025,7 +1083,9 @@ private _unitTypes = [
     ["AA", _aaTemplate, [["baseClass", "WBK_EliteMainWeap_2", false]], [_prefix]],
     ["MachineGunner", _machineGunnerTemplate, [["baseClass", "WBK_EliteMainWeap_2", false]], [_prefix]],
     ["Marksman", _marksmanTemplate, [["baseClass", "WBK_EliteMainWeap_2", false]], [_prefix]],
-    ["Sniper", _sniperTemplate, [["baseClass", "WBK_EliteMainWeap_2", false]], [_prefix]]
+    ["Sniper", _sniperTemplate, [["baseClass", "WBK_EliteMainWeap_2", false]], [_prefix]],
+    ["PatrolSniper", _patrolSniperTemplate, [["baseClass", "WBK_EliteMainWeap_2", false]], [_prefix]],
+    ["PatrolSpotter", _patrolSpotterTemplate, [["baseClass", "WBK_EliteMainWeap_2", false]], [_prefix]] 
 ];
 
 [_prefix, _unitTypes, _eliteLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;

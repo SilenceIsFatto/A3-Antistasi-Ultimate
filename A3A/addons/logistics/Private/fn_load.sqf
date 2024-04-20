@@ -108,6 +108,7 @@ _cargo attachto [_vehicle,_location];
 [_cargo, [(_offsetAndDir#1),[0,0,1]]] remoteExecCall ["setVectorDirAndUp", owner _cargo]; //need to be done where cargo is local, command broadcast updated vector dir and up
 _cargo hideObjectGlobal false;
 
+_vehicle animateDoor ["Door_rear", 1];
 //slideing attachment
 if (_instant) then {
     _location set [1, _yEnd+0.1];
@@ -147,7 +148,7 @@ if (_weapon) then {
         private _jipKey = "A3A_Logistics_weaponAction_" + _objStringCargo;
     [_cargo, _vehicle, _jipKey] remoteExec ["A3A_Logistics_fnc_addWeaponAction", 0, _jipKey];
 };
-
+_vehicle animateDoor ["Door_rear", 0];
 _vehicle setVariable ["LoadingCargo",nil,true];
 
 private _jipKey = "A3A_Logistics_unload_" + _objStringVehicle;

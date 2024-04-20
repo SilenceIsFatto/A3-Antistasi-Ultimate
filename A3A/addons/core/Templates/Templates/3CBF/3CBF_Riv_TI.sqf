@@ -22,7 +22,7 @@
 ["vehiclesRivalsCars", ["UK3CB_TKM_O_BRDM2_UM", "UK3CB_TKM_O_Hilux_Open", "UK3CB_TKM_O_Pickup"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsAPCs", ["UK3CB_TKM_O_BMP1", "UK3CB_TKM_O_BTR40_MG", "UK3CB_TKM_O_BTR60", "UK3CB_TKM_O_MTLB_PKT", "UK3CB_TKM_O_MTLB_ZU23"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", ["UK3CB_TKM_O_T34", "UK3CB_TKM_O_T55"]] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", ["UK3CB_ADA_O_Mi8AMT"]] call _fnc_saveToTemplate;			
+["vehiclesRivalsHelis", ["UK3CB_ADA_O_Mi8AMTSh"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", ["rhsgref_ins_DSHKM_Mini_TriPod", "rhsgref_ins_AGS30_TriPod"]] call _fnc_saveToTemplate;

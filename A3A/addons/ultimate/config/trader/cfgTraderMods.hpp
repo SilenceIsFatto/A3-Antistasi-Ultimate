@@ -5,10 +5,30 @@ class traderMods
         addons[] = {};
         prefix = "";
     };
+    class aegis : base
+    {
+        addons[] = {"Weapons_1_F_lxWS","A3_Aegis_Armor_F_Aegis_APC_Tracked_02", "A3_Atlas_Armor_F_Atlas_APC_Tracked_02", "A3_Opf_Armor_F_Opf_APC_Tracked_02"};
+        prefix = "aegis";
+    };
+    class wmempire : base
+    {
+        addons[] = {"WM_Rebels"};
+        prefix = "wmemp";
+    };
     class empire : base
     {
         addons[] = {"JMSLLTE_empire_mod"};
         prefix = "emp";
+    };
+    class eaw : base
+    {
+        addons[] = {"EAW_Air","WBK_MeleeMechanics"};
+        prefix = "ww2eaw";
+    };
+    class ww2fow : base
+    {
+        addons[] = {"fow_tanks"};
+        prefix = "fowstore";
     };
     class unsung : base
     {
@@ -55,6 +75,11 @@ class traderMods
         addons[] = {"mas_chi_army"};
         prefix = "plastock";
     };
+    class rf : base
+    {
+        addons[] = {"RF_Weapons"};
+        prefix = "rf";
+    };
     class BWA3 : base
     {
         addons[] = {"bwa3_common"};
@@ -74,6 +99,11 @@ class traderMods
     {
         addons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core"};
         prefix = "cup";
+    };
+    class csla : base
+    {
+        addons[] = {"CSLA"};
+        prefix = "csla";
     };
     class 3CBBAF : base
     {

@@ -691,11 +691,13 @@
                 <Original>Radioman</Original>
                 <English>Radioman</English>
                 <Russian>радист</Russian>
+                <Korean>무전병</Korean>
             </Key>
             <Key ID="STR_A3AU_dialogs_squadleader_support">
                 <Original>Squadleader</Original>
                 <English>Squadleader</English>
                 <Russian>лидер команды</Russian>
+                <Korean>분대장</Korean>
             </Key>
         </Container>
         <Container name="credits_generic">
@@ -4885,62 +4887,62 @@
                 <Korean>&lt;br/&gt; - 재급유되었습니다</Korean>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Last_Time_Purchase">
-        <Original>You already bought one, wait %1 seconds before you can buy another.</Original>
-        <Spanish>Ya has comprado una unidad, espera %1 segundos antes de poder comprar otra.</Spanish>				  
-        <Korean>이미 하나를 구입하였습니다. 다른 걸 구입하려면 %1초를 기다리십시오.</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Insufficient_Funds">
-        <Original>You can't afford this Item.</Original>
-        <Spanish>No puedes pagar ese objeto.</Spanish>
-        <Korean>이 아이템을 구입할 자금이 부족합니다.</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Purchase_Title">
-        <Original>Item Purchase</Original>
-        <Spanish>Compra de objeto</Spanish>
-        <Korean>아이템 구입</Korean>
-      </Key>
-      <Key ID="STR_A3A_Packable_Objects_Title">
-        <Original>Packing Objects</Original>
-        <Spanish>Objetos empacables</Spanish>
-        <Korean>오브젝트 포장</Korean>
-      </Key>
-      <Key ID="STR_A3A_Packable_Objects_refunding_error">
-        <Original>refunding money due to error</Original>
-        <Spanish>Devolviendo el dinero a causa de un error.</Spanish>
-        <Korean>오류로 인해 환불됨</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Name_lootbox">
-        <Original>Loot Box</Original>
-        <Korean>전리품 상자</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Name_fueldrum">
-        <Original>Fuel Drum</Original>
-        <Korean>연료통 (드럼통)</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Name_fueltank">
-        <Original>Fuel Tank</Original>
-        <Korean>연료통 (연료탱크)</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Name_medicaltent">
-        <Original>Medical Tent</Original>
-        <Korean>의료텐트</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Name_medicalbox">
-        <Original>Medical Box</Original>
-        <Korean>의료 상자</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Name_ammostation">
-        <Original>Ammo Station</Original>
-        <Korean>탄약고</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Name_repairstation">
-        <Original>Repair Station</Original>
-        <Korean>수리소</Korean>
-      </Key>
-      <Key ID="STR_A3A_Utility_Items_Name_light">
-        <Original>Light</Original>
-        <Korean>조명</Korean>
-      </Key>
+                <Original>You already bought one, wait %1 seconds before you can buy another.</Original>
+                <Spanish>Ya has comprado una unidad, espera %1 segundos antes de poder comprar otra.</Spanish>
+                <Korean>이미 하나를 구입하였습니다. 다른 걸 구입하려면 %1초를 기다리십시오.</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Insufficient_Funds">
+                <Original>You can't afford this Item.</Original>
+                <Spanish>No puedes pagar ese objeto.</Spanish>
+                <Korean>이 아이템을 구입할 자금이 부족합니다.</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Purchase_Title">
+                <Original>Item Purchase</Original>
+                <Spanish>Compra de objeto</Spanish>
+                <Korean>아이템 구입</Korean>
+            </Key>
+            <Key ID="STR_A3A_Packable_Objects_Title">
+                <Original>Packing Objects</Original>
+                <Spanish>Objetos empacables</Spanish>
+                <Korean>오브젝트 포장</Korean>
+            </Key>
+            <Key ID="STR_A3A_Packable_Objects_refunding_error">
+                <Original>refunding money due to error</Original>
+                <Spanish>Devolviendo el dinero a causa de un error.</Spanish>
+                <Korean>오류로 인해 환불됨</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Name_lootbox">
+                <Original>Loot Box</Original>
+                <Korean>전리품 상자</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Name_fueldrum">
+                <Original>Fuel Drum</Original>
+                <Korean>연료통 (드럼통)</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Name_fueltank">
+                <Original>Fuel Tank</Original>
+                <Korean>연료통 (연료탱크)</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Name_medicaltent">
+                <Original>Medical Tent</Original>
+                <Korean>의료텐트</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Name_medicalbox">
+                <Original>Medical Box</Original>
+                <Korean>의료 상자</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Name_ammostation">
+                <Original>Ammo Station</Original>
+                <Korean>탄약고</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Name_repairstation">
+                <Original>Repair Station</Original>
+                <Korean>수리소</Korean>
+            </Key>
+            <Key ID="STR_A3A_Utility_Items_Name_light">
+                <Original>Light</Original>
+                <Korean>조명</Korean>
+            </Key>
         </Container>
         <Container name="server_info">
             <Key ID="STR_A3A_feedback_serverinfo">
@@ -5193,64 +5195,64 @@
             </Key>
         </Container>
         <Container name="A3A_selfRevive">
-        <Key ID="STR_A3A_Params_selfReviveMethods_title">
-            <Original>Self-revive methods enabled</Original>
-            <Italian>Metodi di auto-rianimazione abilitati</Italian>
-            <French>Méthodes d'auto-réanimation activées</French>
-            <Korean>자가소생 활성화</Korean>
-            <Chinesesimp>启用自我复苏</Chinesesimp>
-        </Key>
-        <Key ID="STR_A3A_Params_selfReviveMethods_withstand">
-            <Original>Withstand</Original>
-            <French>Résister</French>
-            <Korean>저항하다</Korean>
-            <Chinesesimp>抗</Chinesesimp>
-        </Key>
-        <Key ID="STR_A3A_selfRevive_noFAK">
-            <Original>You don't have a first aid kit for self-revive.</Original>
-            <Italian>Non hai un kit di primo soccorso per rianimarti.</Italian>
-            <Spanish>No tienes un kit de primeros auxilios para auto revivirte.</Spanish>
-            <French>Vous n'avez pas de kit de premiers secours pour vous réanimer.</French>
-            <Korean>당신은 자가소생을 위한 구급상자를 가지고 있지 않습니다.</Korean>
-            <Polish>Nie masz apteczki pierwszej pomocy do samodzielnego uleczenia się.</Polish>
-            <Czech>Nepotřebuješ Soupravu první pomoci pro oživení sama sebe.</Czech>
-        </Key>
-        <Key ID="STR_A3A_selfRevive_recent">
-            <Original>You have already revived yourself recently.</Original>
-            <Italian>Ti sei già rianimato di recente.</Italian>
-            <Spanish>Ya te has revivido recientemente.</Spanish>
-            <French>Vous vous êtes déjà réanimé vous-même récemment.</French>
-            <Korean>당신은 이미 최근에 자가소생을 했습니다.</Korean>
-            <Polish>Niedawno już się uleczyłeś.</Polish>
-            <Czech>Již jsi se nedávno oživil.</Czech>
-        </Key>
-        <Key ID="STR_A3A_selfRevive_success">
-            <Original>You shake off the injury, but you're not feeling great.</Original>
-            <Italian>Incassi la ferita ma comunque non ti senti bene.</Italian>
-            <Spanish>Te recuperas de la lesión, pero no te sientes muy bien.</Spanish>
-            <French>Vous vous remettez de la blessure, mais ne vous sentez pas très bien.</French>
-            <Korean>당신은 부상을 털어내지만, 썩 기분이 좋지 않습니다.</Korean>
-            <Polish>Otrząsnąłeś się po kontuzji, ale nie czujesz się najlepiej.</Polish>
-            <Czech>Zbavuješ se zranění, ale necítíš se dobře.</Czech>
-        </Key>
-        <Key ID="STR_A3A_selfRevive_timeout">
-            <Original>You are feeling much better.</Original>
-            <Italian>Ti senti molto meglio.</Italian>
-            <Spanish>Te sientes mucho mejor.</Spanish>
-            <French>Vous vous sentez beaucoup mieux.</French>
-            <Korean>당신은 훨씬 상태가 좋아졌다.</Korean>
-            <Polish>Czujesz się znacznie lepiej.</Polish>
-            <Czech>Cítíš se mnohem lépe</Czech>
-        </Key>
-        <Key ID="STR_A3A_selfRevive_title">
-            <Original>Self Revive</Original>
-            <Italian>Auto Rianimazione</Italian>
-            <Spanish>Auto revivir</Spanish>
-            <French>Se Réanimer</French>
-            <Korean>자가소생</Korean>
-            <Czech>Oživit sám sebe</Czech>
-            <Chinesesimp>自我复苏</Chinesesimp>
-        </Key>
+            <Key ID="STR_A3A_Params_selfReviveMethods_title">
+                <Original>Self-revive methods enabled</Original>
+                <Italian>Metodi di auto-rianimazione abilitati</Italian>
+                <French>Méthodes d'auto-réanimation activées</French>
+                <Korean>자가소생 활성화</Korean>
+                <Chinesesimp>启用自我复苏</Chinesesimp>
+            </Key>
+            <Key ID="STR_A3A_Params_selfReviveMethods_withstand">
+                <Original>Withstand</Original>
+                <French>Résister</French>
+                <Korean>저항</Korean>
+                <Chinesesimp>抗</Chinesesimp>
+            </Key>
+            <Key ID="STR_A3A_selfRevive_noFAK">
+                <Original>You don't have a first aid kit for self-revive.</Original>
+                <Italian>Non hai un kit di primo soccorso per rianimarti.</Italian>
+                <Spanish>No tienes un kit de primeros auxilios para auto revivirte.</Spanish>
+                <French>Vous n'avez pas de kit de premiers secours pour vous réanimer.</French>
+                <Korean>당신은 자가소생을 위한 구급상자를 가지고 있지 않습니다.</Korean>
+                <Polish>Nie masz apteczki pierwszej pomocy do samodzielnego uleczenia się.</Polish>
+                <Czech>Nepotřebuješ Soupravu první pomoci pro oživení sama sebe.</Czech>
+            </Key>
+            <Key ID="STR_A3A_selfRevive_recent">
+                <Original>You have already revived yourself recently.</Original>
+                <Italian>Ti sei già rianimato di recente.</Italian>
+                <Spanish>Ya te has revivido recientemente.</Spanish>
+                <French>Vous vous êtes déjà réanimé vous-même récemment.</French>
+                <Korean>당신은 이미 최근에 자가소생을 했습니다.</Korean>
+                <Polish>Niedawno już się uleczyłeś.</Polish>
+                <Czech>Již jsi se nedávno oživil.</Czech>
+            </Key>
+            <Key ID="STR_A3A_selfRevive_success">
+                <Original>You shake off the injury, but you're not feeling great.</Original>
+                <Italian>Incassi la ferita ma comunque non ti senti bene.</Italian>
+                <Spanish>Te recuperas de la lesión, pero no te sientes muy bien.</Spanish>
+                <French>Vous vous remettez de la blessure, mais ne vous sentez pas très bien.</French>
+                <Korean>당신은 부상을 털어내지만, 썩 기분이 좋지 않습니다.</Korean>
+                <Polish>Otrząsnąłeś się po kontuzji, ale nie czujesz się najlepiej.</Polish>
+                <Czech>Zbavuješ se zranění, ale necítíš se dobře.</Czech>
+            </Key>
+            <Key ID="STR_A3A_selfRevive_timeout">
+                <Original>You are feeling much better.</Original>
+                <Italian>Ti senti molto meglio.</Italian>
+                <Spanish>Te sientes mucho mejor.</Spanish>
+                <French>Vous vous sentez beaucoup mieux.</French>
+                <Korean>당신은 훨씬 상태가 좋아졌다.</Korean>
+                <Polish>Czujesz się znacznie lepiej.</Polish>
+                <Czech>Cítíš se mnohem lépe</Czech>
+            </Key>
+            <Key ID="STR_A3A_selfRevive_title">
+                <Original>Self Revive</Original>
+                <Italian>Auto Rianimazione</Italian>
+                <Spanish>Auto revivir</Spanish>
+                <French>Se Réanimer</French>
+                <Korean>자가소생</Korean>
+                <Czech>Oživit sám sebe</Czech>
+                <Chinesesimp>自我复苏</Chinesesimp>
+            </Key>
         </Container>
         <Container name="A3A_customHint">
             <Key ID="STR_A3A_customHint_dismiss_no_key">
@@ -5321,6 +5323,17 @@
                 <Original>Support Caller</Original>
                 <English>Support Caller</English>
                 <Russian>Вызывающий поддержку</Russian>
+                <Korean>지원 요청자</Korean>
+            </Key>
+            <Key ID="STR_A3AU_hide_enemy_markers">
+                <Original>Hide Enemy Zone Markers</Original>
+                <English>Hide Enemy Zone Markers</English>
+                <Russian>Спрятать маркеры вражеских баз</Russian>
+            </Key>
+            <Key ID="STR_A3AU_hide_enemy_markers_recon_plane_distance">
+                <Original>Recon Plane Zone Reveal Distance</Original>
+                <English>Recon Plane Zone Reveal Distance</English>
+                <Russian>Дистанция открытыя маркеров самолётом разведки</Russian>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>

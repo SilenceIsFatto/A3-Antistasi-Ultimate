@@ -3,6 +3,8 @@
 			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Vanilla", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
+			ITEM(arifle_SDAR_F, 350, RIFLE_STOCK);
+
 			ITEM(arifle_AKS_F, 250, RIFLE_STOCK);
 
 			ITEM(arifle_Mk20_plain_F, 700, RIFLE_STOCK);
@@ -665,6 +667,10 @@
 				stock = MAGAZINE_STOCK;
 			};
 
+			class 20Rnd_556x45_UW_mag {
+				price = 65;
+				stock = MAGAZINE_STOCK;
+			};
 			class 30Rnd_556x45_Stanag {
 				price = 65;
 				stock = MAGAZINE_STOCK;
@@ -1073,6 +1079,37 @@
 			ITEM(H_HelmetO_ViperSP_hex_F, 15000, MISC_STOCK);
 			ITEM(U_O_V_Soldier_Viper_hex_F, 25000, MISC_STOCK);
 
+			ITEM(U_I_Protagonist_VR, 50000, MISC_STOCK);
+			ITEM(U_C_Protagonist_VR, 50000, MISC_STOCK);
+			ITEM(U_O_Protagonist_VR, 50000, MISC_STOCK);
+			ITEM(U_B_Protagonist_VR, 50000, MISC_STOCK);
+
+			ITEM(U_B_CTRG_Soldier_F, 5000, MISC_STOCK);
+			ITEM(U_B_CTRG_Soldier_Arid_F, 5000, MISC_STOCK);
+			ITEM(U_B_CTRG_Soldier_3_F, 4500, MISC_STOCK);
+			ITEM(U_B_CTRG_Soldier_3_Arid_F, 4500, MISC_STOCK);
+			ITEM(U_B_CTRG_Soldier_2_F, 4000, MISC_STOCK);
+			ITEM(U_B_CTRG_Soldier_2_Arid_F, 4000, MISC_STOCK);
+			ITEM(U_B_CTRG_Soldier_urb_1_F, 5000, MISC_STOCK);
+			ITEM(U_B_CTRG_Soldier_urb_3_F, 4500, MISC_STOCK);
+			ITEM(U_B_CTRG_Soldier_urb_2_F, 4000, MISC_STOCK);
+
+			ITEM(U_I_HeliPilotCoveralls, 500, MISC_STOCK);
+			ITEM(H_CrewHelmetHeli_I, 750, MISC_STOCK);
+			ITEM(H_PilotHelmetHeli_I, 500, MISC_STOCK);
+			ITEM(H_PilotHelmetFighter_I, 1000, MISC_STOCK);
+			ITEM(U_I_pilotCoveralls, 1000, MISC_STOCK);
+			ITEM(U_Tank_green_F, 500, MISC_STOCK);
+			ITEM(H_HelmetCrew_I, 750, MISC_STOCK);
+			ITEM(H_HelmetCrew_B, 1000, MISC_STOCK);
+
+			ITEM(U_I_E_Uniform_01_sweater_F, 500, MISC_STOCK);
+			ITEM(U_I_E_Uniform_01_tanktop_F, 500, MISC_STOCK);
+
+			ITEM(U_O_R_Gorka_01_F, 7000, MISC_STOCK);
+			ITEM(U_O_R_Gorka_01_brown_F, 7000, MISC_STOCK);
+			ITEM(U_O_R_Gorka_01_camo_F, 7000, MISC_STOCK);
+
 			ITEM(B_Bergen_dgtl_F, 600, MISC_STOCK);
 			ITEM(B_Bergen_hex_F, 600, MISC_STOCK);
 			ITEM(B_Bergen_mcamo_F, 600, MISC_STOCK);
@@ -1086,7 +1123,7 @@
 			ITEM(B_ViperHarness_ghex_F, 550, MISC_STOCK);
 			ITEM(B_ViperHarness_hex_F, 550, MISC_STOCK);
 			ITEM(B_ViperHarness_khk_F, 550, MISC_STOCK);
-			ITEM(B_ViperHarness_oli_F, 550, MISC_STOCK);
+			ITEM(V_RebreatherIA, 750, MISC_STOCK);
 
 			ITEM(B_Carryall_cbr, 400, MISC_STOCK);
 			ITEM(B_Carryall_eaf_F, 400, MISC_STOCK);
@@ -1115,21 +1152,60 @@
 			ITEM(V_SmershVest_01_F, 300, MISC_STOCK);
 			ITEM(V_SmershVest_01_radio_F, 300, MISC_STOCK);
 
-			ITEM(V_PlateCarrier1_blk, 900, MISC_STOCK);
+			ITEM(V_TacVestIR_blk, 500, MISC_STOCK);
+			ITEM(V_Press_F, 900, MISC_STOCK);
+
+			ITEM(V_PlateCarrierIA1_dgtl, 1000, MISC_STOCK);
+			ITEM(V_PlateCarrierIA2_dgtl, 1000, MISC_STOCK);
+			ITEM(V_PlateCarrier1_blk, 1200, MISC_STOCK);
+			ITEM(V_PlateCarrier2_rgr_noflag_F, 1400, MISC_STOCK);
 			ITEM(V_PlateCarrier2_blk, 1250, MISC_STOCK);
 			ITEM(V_PlateCarrierIAGL_oli, 1300, MISC_STOCK);
 
+			ITEM(V_CarrierRigKBT_01_heavy_EAF_F, 1300, MISC_STOCK);
 			ITEM(V_CarrierRigKBT_01_heavy_Olive_F, 1300, MISC_STOCK);
-			ITEM(V_CarrierRigKBT_01_light_Olive_F, 700, MISC_STOCK);
+			ITEM(V_CarrierRigKBT_01_light_EAF_F, 900, MISC_STOCK);
+			ITEM(V_CarrierRigKBT_01_light_Olive_F, 900, MISC_STOCK);
+			ITEM(V_CarrierRigKBT_01_EAF_F, 700, MISC_STOCK);
 			ITEM(V_CarrierRigKBT_01_Olive_F, 700, MISC_STOCK);
+
+			ITEM(V_EOD_blue_F, 900, MISC_STOCK);
+			ITEM(V_EOD_coyote_F, 900, MISC_STOCK);
+			ITEM(V_EOD_olive_F, 900, MISC_STOCK);
+
+			ITEM(V_DeckCrew_blue_F, 900, MISC_STOCK);
+			ITEM(V_DeckCrew_brown_F, 900, MISC_STOCK);
+			ITEM(V_DeckCrew_red_F, 900, MISC_STOCK);
+			ITEM(V_DeckCrew_green_F, 900, MISC_STOCK);
+			ITEM(V_DeckCrew_violet_F, 900, MISC_STOCK);
+			ITEM(V_DeckCrew_white_F, 900, MISC_STOCK);
+			ITEM(V_DeckCrew_yellow_F, 900, MISC_STOCK);
 
 			ITEM(NVGogglesB_blk_F, 2500, MISC_STOCK);
 			ITEM(NVGogglesB_grn_F, 2500, MISC_STOCK);
 			ITEM(NVGogglesB_gry_F, 2500, MISC_STOCK);
 
+			ITEM(NVGoggles_tna_F, 1000, MISC_STOCK);
+			ITEM(NVGoggles_INDEP, 1000, MISC_STOCK);
+			ITEM(NVGoggles, 1000, MISC_STOCK);
+			ITEM(NVGoggles_OPFOR, 1000, MISC_STOCK);
+
+			ITEM(O_NVGoggles_ghex_F, 1000, MISC_STOCK);
+			ITEM(O_NVGoggles_grn_F, 1000, MISC_STOCK);
+			ITEM(O_NVGoggles_hex_F, 1000, MISC_STOCK);
+			ITEM(O_NVGoggles_urb_F, 1000, MISC_STOCK);
+
+			ITEM(G_Balaclava_TI_blk_F, 900, MISC_STOCK);
+			ITEM(G_Balaclava_TI_G_blk_F, 900, MISC_STOCK);
+			ITEM(G_Balaclava_TI_tna_F, 900, MISC_STOCK);
+			ITEM(G_Balaclava_TI_G_tna_F, 900, MISC_STOCK);
+
 			ITEM(U_I_FullGhillie_lsh, 1000, MISC_STOCK);
 			ITEM(U_I_FullGhillie_ard, 1000, MISC_STOCK);
 			ITEM(U_I_FullGhillie_sard, 1000, MISC_STOCK);
+			ITEM(U_I_GhillieSuit, 750, MISC_STOCK);
+			ITEM(U_B_survival_uniform, 750, MISC_STOCK);
+			ITEM(U_I_Wetsuit, 750, MISC_STOCK);
 
 			ITEM(IEDUrbanSmall_Remote_Mag, 500, MISC_STOCK);
 			ITEM(IEDLandSmall_Remote_Mag, 500, MISC_STOCK);
@@ -1146,6 +1222,8 @@
 			ITEM(APERSBoundingMine_Range_Mag, 150, MISC_STOCK);
 			ITEM(APERSTripMine_Wire_Mag, 100, MISC_STOCK);
 
+			ITEM(B_SCBA_01_F, 400, MISC_STOCK);
+			ITEM(B_CombinationUnitRespirator_01_F, 400, MISC_STOCK);
 			ITEM(G_RegulatorMask_F, 200, MISC_STOCK);
 			ITEM(G_AirPurifyingRespirator_01_F, 200, MISC_STOCK);
 			ITEM(G_AirPurifyingRespirator_02_sand_F, 200, MISC_STOCK);

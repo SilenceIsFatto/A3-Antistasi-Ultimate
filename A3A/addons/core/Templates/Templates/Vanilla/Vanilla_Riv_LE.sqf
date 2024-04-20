@@ -2,6 +2,7 @@ private _hasWs = "ws" in A3A_enabledDLC;
 private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ////////////////////////////
 //   Rivals Information   //
@@ -23,15 +24,13 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
 ["surrenderCrate", "Box_Syndicate_Wps_F"] call _fnc_saveToTemplate;
 
-["vehiclesRivalsLightArmed", ["I_C_Offroad_02_AT_F", "I_C_Offroad_02_LMG_F"]] call _fnc_saveToTemplate;
-["vehiclesRivalsCars", ["I_C_Offroad_02_unarmed_F"]] call _fnc_saveToTemplate;
+private _vehiclesRivalsLightArmed = ["I_C_Offroad_02_AT_F", "I_C_Offroad_02_LMG_F"];
+private _vehiclesRivalsCars = ["I_C_Offroad_02_unarmed_F"];
+private _vehiclesRivalsTrucks = ["I_C_Van_01_transport_F"];
+private _vehiclesRivalsHelis = ["I_C_Heli_Light_01_civil_F"];
 
-["vehiclesRivalsLightArmed", ["I_C_Offroad_02_AT_F", "I_C_Offroad_02_LMG_F"]] call _fnc_saveToTemplate;
-["vehiclesRivalsCars", ["I_C_Offroad_02_unarmed_F"]] call _fnc_saveToTemplate;
-["vehiclesRivalsTrucks", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
 ["vehiclesRivalsAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", []] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", []] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", ["O_G_HMG_02_F"]] call _fnc_saveToTemplate;
@@ -45,6 +44,17 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine", "APERSBoundingMine"]] call _fnc_saveToTemplate;
+
+if (_hasRF) then {
+	_vehiclesRivalsLightArmed append ["I_C_Pickup_mmg_rf", "B_T_Pickup_mmg_rf"];
+	_vehiclesRivalsCars append ["I_C_Pickup_rf", "B_T_Pickup_rf", "B_T_Pickup_Comms_rf", "C_Pickup_rf"];
+	_vehiclesRivalsHelis append ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF"];
+};
+
+["vehiclesRivalsLightArmed", _vehiclesRivalsLightArmed] call _fnc_saveToTemplate;
+["vehiclesRivalsCars", _vehiclesRivalsCars] call _fnc_saveToTemplate;
+["vehiclesRivalsTrucks", _vehiclesRivalsTrucks] call _fnc_saveToTemplate;
+["vehiclesRivalsHelis", _vehiclesRivalsHelis] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
@@ -77,6 +87,21 @@ private _marksmanRifles = [
 ];
 
 private _pistols = ["hgun_Pistol_01_F"];
+
+private _helmets = ["H_Helmet_Skate"];
+
+if (_hasRF) then {
+	_marksmanRifles pushBack ["srifle_DMR_01_black_RF", "", "acc_flashlight", "optic_VRCO_RF", ["10Rnd_762x54_Mag"], [], ""];
+	_gls pushBack ["arifle_ash12_GL_wood_RF", "", "acc_flashlight", "optic_VRCO_khk_RF", ["10Rnd_127x55_Mag_wood_RF", "20Rnd_127x55_Mag_wood_RF"], ["1Rnd_HE_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "UGL_FlareGreen_F"], ""];
+	_pistols append ["hgun_Glock19_auto_khk_RF", "hgun_DEagle_classic_RF"];
+
+	_helmets = ["H_HelmetHeavy_VisorUp_Olive_RF", "H_HelmetB_plain_sb_tna_RF"];
+
+	if (random 100 <= 10) then {
+		_tunedRifles pushBack ["srifle_h6_gold_rf", "muzzle_snds_M", "", "optic_VRCO_RF", ["30Rnd_556x45_AP_Stanag_green_RF"], [], ""];
+		_pistols append ["hgun_DEagle_gold_RF"];
+	};
+};
 
 if (_hasContact) then {
 	_carbines pushBack ["arifle_AK12U_F", "", "", "", ["30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Tracer_Green_F"], [], ""];
@@ -143,6 +168,7 @@ _loadoutData set ["facewear", [
 	"G_Aviator",
 	"G_Combat",
 	"G_Bandanna_aviator",
+	"G_Bandanna_Syndikat2",
 	"G_Bandanna_beast",
 	"G_Bandanna_sport",
 	"G_Bandanna_shades",
@@ -167,7 +193,6 @@ _loadoutData set ["NVGs", ["NVGoggles_INDEP"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 _loadoutData set ["Rangefinder", ["Rangefinder"]];
 
-
 _loadoutData set ["uniforms", [
 	"U_I_C_Soldier_Bandit_4_F",
 	"U_I_C_Soldier_Bandit_1_F",
@@ -175,8 +200,6 @@ _loadoutData set ["uniforms", [
 	"U_I_C_Soldier_Bandit_5_F",
 	"U_I_C_Soldier_Bandit_3_F"
 ]];
-
-private _helmets = ["H_Helmet_Skate"];
 
 if (_hasLawsOfWar) then {
 	_helmets pushBack "H_PASGT_basic_olive_F";

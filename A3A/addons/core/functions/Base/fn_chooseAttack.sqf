@@ -94,7 +94,8 @@ if (sidesX getVariable _originMrk != _side) exitWith {
 
 
 if (_targetMrk in citiesX) exitWith {
-    if (_side == Invaders) then {
+    private _tierWarPunishments = missionNamespace getVariable ["A3U_setting_tierWarPunishments",3];
+    if (_side == Invaders && {(tierWar >= _tierWarPunishments)}) then {
         // Punishment, unsimulated
         Info_2("Starting punishment mission from %1 to %2", _originMrk, _targetMrk);
         [_targetMrk, _originMrk] spawn A3A_fnc_invaderPunish;

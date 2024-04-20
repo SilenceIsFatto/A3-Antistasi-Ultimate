@@ -19,7 +19,7 @@ if (_overridePosition isEqualTo [] && {[getPosATL player, _radius] call A3A_fnc_
 	};
 };
 
-if ((_time - (_vehicle getVariable ["lastLooted", -15])) < 15) exitWith {
+if ((_time - (_vehicle getVariable ["lastLooted", -10])) < 10) exitWith {
 	if (hasInterface) then {
         {
             [localize "STR_antistasi_actions_looter_cooldown_text"] remoteExecCall ["systemChat", _x];
@@ -83,18 +83,21 @@ private _data = [];
 
     if (count _backpacks > 0) then {
         {
+            if ((lootCrateUnlockedItems isEqualTo true) && {_x in unlockedBackpacks}) exitWith {};
             _vehicle addBackpackCargoGlobal [_x, 1];
         } forEach _backpacks;
     };
 
     if (count _items > 0) then {
         {
+            if ((lootCrateUnlockedItems isEqualTo true) && {_x in unlockedItems}) exitWith {};
             _vehicle addItemCargoGlobal [_x, 1];
         } forEach _items;
     };
 
     if (count _weaponsWithAttachments > 0) then {
         {
+            if ((lootCrateUnlockedItems isEqualTo true) && {_x in unlockedWeapons}) exitWith {};
             _vehicle addWeaponWithAttachmentsCargoGlobal [_x, 1];
         } forEach _weaponsWithAttachments;
     };
@@ -145,26 +148,26 @@ private _data = [];
             };
 
             if (_vest isNotEqualTo "") then {
-                if ((lootCrateUnlockedItems isEqualTo true) && {_vest in unlockedVests}) exitWith {};
+                if ((lootCrateUnlockedItems isEqualTo true) && {_vest in unlockedVests}) exitWith {removeVest _lootContainer};
                 _vehicle addItemCargoGlobal [_vest,1];
                 removeVest _lootContainer;
             };
 
             if (_headgear isNotEqualTo "") then {
-                if ((lootCrateUnlockedItems isEqualTo true) && {_headgear in unlockedHeadgear}) exitWith {};
+                if ((lootCrateUnlockedItems isEqualTo true) && {_headgear in unlockedHeadgear}) exitWith {removeHeadgear _lootContainer};
                 _vehicle addItemCargoGlobal [_headgear,1];
                 removeHeadgear _lootContainer;
             };
 
             if (_backpack isNotEqualTo "") then {
-                if ((lootCrateUnlockedItems isEqualTo true) && {_backpack in unlockedBackpacks}) exitWith {};
+                if ((lootCrateUnlockedItems isEqualTo true) && {_backpack in unlockedBackpacks}) exitWith {removeBackpackGlobal _lootContainer};
                 _vehicle addBackpackCargoGlobal [_backpack,1];
                 removeBackpackGlobal _lootContainer;
             };
 
             if (count _lootContainerWeapons > 0) then {
                 {
-                    if ((lootCrateUnlockedItems isEqualTo true) && {_x in unlockedWeapons}) exitWith {};
+                    if ((lootCrateUnlockedItems isEqualTo true) && {_x in unlockedWeapons}) exitWith {_lootContainer removeWeaponGlobal _x};
                     _vehicle addWeaponCargoGlobal [_x, 1];
                     _lootContainer removeWeaponGlobal _x;
                 } forEach _lootContainerWeapons;

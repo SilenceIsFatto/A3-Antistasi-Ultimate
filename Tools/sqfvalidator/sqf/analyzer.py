@@ -111,9 +111,9 @@ class Analyzer(BaseInterpreter):
             result = self.value(self.execute_token(token))
         elif isinstance(token, Variable):
             scope = self.get_scope(token.name, namespace_name)
-            if scope.level == 0 and not token.is_global:
-                self.exception(
-                    SQFWarning(token.position, 'Local variable "%s" is not from this scope (not private)' % token))
+            # if scope.level == 0 and not token.is_global:
+            #     self.exception(
+            #         SQFWarning(token.position, 'Local variable "%s" is not from this scope (not private)' % token))
 
             try:
                 result = scope[token.name]
@@ -264,9 +264,9 @@ class Analyzer(BaseInterpreter):
 
         scope[lhs_name] = rhs_t()
 
-        if scope.level == 0 and lhs_name.startswith('_'):
-            self.exception(
-                SQFWarning(lhs_position, 'Local variable "%s" assigned to an outer scope (not private)' % lhs_name))
+        # if scope.level == 0 and lhs_name.startswith('_'):
+        #     self.exception(
+        #         SQFWarning(lhs_position, 'Local variable "%s" assigned to an outer scope (not private)' % lhs_name))
 
     def execute_single(self, statement):
         assert(isinstance(statement, Statement))

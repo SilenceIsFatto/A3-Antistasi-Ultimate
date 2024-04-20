@@ -119,6 +119,7 @@ switch (_mode) do
             ,["Enoch", "Livonia"]
             ,["tem_anizay", "Anizay"]
             ,["cup_chernarus_A3", "Chernarus 2020"]
+            ,["brf_sumava", "Šumava"]
         ];
         {
             private _realMap = _x get "map";

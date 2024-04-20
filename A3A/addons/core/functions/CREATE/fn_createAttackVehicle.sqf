@@ -42,7 +42,7 @@ if (_expectedCargo >= 2 and !_isAttackHeli) then
 {
     //Vehicle is able to transport units
     private _groupType = call {
-        if (_isAirdrop) exitWith { selectRandom  ([_faction get "groupsTierMedium"] call SCRT_fnc_unit_getTiered) };
+        if (_isAirdrop) exitWith { selectRandom ([_faction get "groupsTierAirborne"] call SCRT_fnc_unit_getTiered) };
         if (_troopType == "Normal") exitWith { [_vehicleType, _side] call A3A_fnc_cargoSeats };
         if (_troopType == "Specops") exitWith { selectRandom (_faction get "groupSpecOpsRandom") };
         if (_troopType == "Air") exitWith { [_faction get "groupTierAA"] call SCRT_fnc_unit_getTiered };
@@ -59,7 +59,7 @@ if (_expectedCargo >= 2 and !_isAttackHeli) then
         } forEach ("true" configClasses (_config >> "Turrets"));
     };
     private _cargoTurrets = [];
-    if !(_vehicleType in ["LIB_C47_Skytrain", "LIB_C47_RAF", "LIB_Li2"]) then {
+    if !(_vehicleType in ["LIB_C47_Skytrain", "LIB_C47_RAF", "LIB_Li2", "A3U_LIB_C47_German"]) then {
         [configFile >> "CfgVehicles" >> _vehicleType] call _fnc_addCargoTurrets;
     };
 

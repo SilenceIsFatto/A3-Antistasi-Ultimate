@@ -6,13 +6,14 @@ FIX_LINE_NUMBERS()
 
 private _credits = [
 	[ (call SCRT_fnc_misc_getMissionTitle), [QUOTE(VERSION)], "<img image='Pictures\Mission\logo.paa' size='1.6' />"],
-	[ (localize "STR_antistasi_credits_authors_plus"), ["Antistasi Ultimate Team", "Socrates"]],
+	[ (localize "STR_antistasi_credits_authors_ultimate"), ["Antistasi Ultimate Team"]],
+	[ (localize "STR_antistasi_credits_authors_plus"), ["Socrates"]],
 	[ (localize "STR_antistasi_credits_authors"), ["Barbolani","Official Antistasi Community"]]
 ];
 
-if ("coldWar" in A3A_factionEquipFlags) then {
-	_credits pushBack [[localize "STR_antistasi_credits_cw_mode", "<t size=1.5 font='PuristaBold' color='#B6020B'>%1</t>"], [""]];
-};
+// if ("coldWar" in A3A_factionEquipFlags) then {
+// 	_credits pushBack [[localize "STR_antistasi_credits_cw_mode", "<t size=1.5 font='PuristaBold' color='#B6020B'>%1</t>"], [""]];
+// };
 
 private _layer = "credits1" call bis_fnc_rscLayer;
 

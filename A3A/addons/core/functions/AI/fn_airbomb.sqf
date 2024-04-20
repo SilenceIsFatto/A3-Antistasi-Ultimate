@@ -2,7 +2,7 @@
 
 */
 
-params ["_plane", "_bombType", "_bombCount", "_bombRunLength"];
+params ["_plane", "_bombType", "_bombCount", "_bombRunLength", ["_isRivals", false]];
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 Debug_1("Executing on: %1", clientOwner);
@@ -54,7 +54,9 @@ private _metersPerBomb = _bombRunLength / _bombCount;
 //Decrease it a bit, to avoid scheduling erros
 private _timeBetweenBombs = (_metersPerBomb / _speedInMeters) - 0.05;
 
-sleep ((_timeBetweenBombs/2) + (_bombOffset/_speedInMeters));
+if (!_isRivals) then {
+    sleep ((_timeBetweenBombs / 2) + (_bombOffset / _speedInMeters));
+};
 
 if (_bombType isEqualTo "CHEMICAL") then {
     for "_i" from 1 to _bombCount do {

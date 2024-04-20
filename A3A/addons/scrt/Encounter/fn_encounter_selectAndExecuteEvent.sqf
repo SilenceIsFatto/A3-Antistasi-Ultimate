@@ -19,8 +19,8 @@ params [["_excludeId", -1]];
 Info("Event condition has been procced, selecting event...");
 
 private _events = [
-	[CIV_HELI, POLICE, VEH_MOVE, VEH_PATROL, VEH_POSTAMBUSH],
-	([CIV_HELI, POLICE, VEH_MOVE, VEH_PATROL, VEH_POSTAMBUSH] select { _x != _excludeId })
+	[CIV_HELI, CIV_PLANE, POLICE, VEH_MOVE, VEH_PATROL, VEH_POSTAMBUSH],
+	([CIV_HELI, CIV_PLANE, POLICE, VEH_MOVE, VEH_PATROL, VEH_POSTAMBUSH] select { _x != _excludeId })
 ] select (_excludeId isNotEqualTo 0);
 
 private _weight = 1 / (count _events); 
@@ -30,6 +30,9 @@ private _eventType = selectRandomWeighted _eventsWithWeights;
 switch (_eventType) do {
 	case (CIV_HELI): {
 		[[], "SCRT_fnc_encounter_civHeli"] call A3A_fnc_scheduler;
+	};
+	case (CIV_PLANE): {
+		[[], "SCRT_fnc_encounter_civPlane"] call A3A_fnc_scheduler;
 	};
 	case (POLICE): {
 		[[], "SCRT_fnc_encounter_police"] call A3A_fnc_scheduler;

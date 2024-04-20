@@ -3,6 +3,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 private _hasApex = "expansion" in A3A_enabledDLC;
 private _hasContact = "enoch" in A3A_enabledDLC;
 private _hasMarksman = "mark" in A3A_enabledDLC;
+private _hasRF = "rf" in A3A_enabledDLC;
 
 ////////////////////////////
 //   Rivals Information   //
@@ -63,12 +64,17 @@ if (_hasLawsOfWar) then {
 	_trucks pushBack "O_G_Van_02_transport_F";
 };
 
+if (_hasRF) then {
+	_lightArmedVehicles append ["a3a_black_Pickup_mmg_rf", "a3u_black_Pickup_mmg_frame_rf", "a3u_black_Pickup_mmg_alt_rf"];
+	_lightUnarmedVehicles pushBack "a3u_black_Pickup_rival_rf";
+};
+
 ["vehiclesRivalsLightArmed", _lightArmedVehicles] call _fnc_saveToTemplate;
 ["vehiclesRivalsTrucks", _trucks] call _fnc_saveToTemplate;
 ["vehiclesRivalsCars", _lightUnarmedVehicles] call _fnc_saveToTemplate;
 ["vehiclesRivalsAPCs", []] call _fnc_saveToTemplate;
 ["vehiclesRivalsTanks", []] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", []] call _fnc_saveToTemplate;			
+["vehiclesRivalsHelis", ["I_C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", ["O_UAV_01_F"]] call _fnc_saveToTemplate;			
 
 ["staticLowWeapons", ["O_G_HMG_02_F"]] call _fnc_saveToTemplate;
@@ -120,6 +126,13 @@ private _rpgs = [
 ];
 
 private _pistols = ["hgun_Rook40_F"];
+
+if (_hasRF) then {
+	_marksmanRifles pushBack ["srifle_DMR_01_tan_RF", "", "acc_flashlight", "optic_VRCO_RF", ["10Rnd_762x54_Mag"], [], ""];
+	_enforcerRifles pushBack ["arifle_ash12_LR_desert_RF", "", "", "optic_VRCO_RF", ["20Rnd_127x55_Mag_RF"], [], ""];
+	_gls pushBack ["arifle_ash12_GL_desert_RF", "", "acc_flashlight", "optic_VRCO_RF", ["10Rnd_127x55_Mag_RF", "20Rnd_127x55_Mag_RF"], ["1Rnd_HE_Grenade_shell", "1Rnd_SmokeGreen_Grenade_shell", "UGL_FlareGreen_F"], ""];
+	_pistols = ["hgun_Glock19_Tan_RF", "hgun_Glock19_auto_Tan_RF", "hgun_DEagle_classic_RF"];
+};
 
 if (_hasContact) then {
 	_carbines pushBack ["arifle_AK12U_F", "", "", "", ["30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Green_F", "30Rnd_762x39_Mag_Tracer_Green_F"], [], ""];

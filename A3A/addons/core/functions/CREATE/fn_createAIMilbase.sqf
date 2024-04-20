@@ -33,39 +33,66 @@ private _faction = Faction(_sideX);
 private _radarType = _faction getOrDefault ["vehicleRadar", ""];
 private _samType = _faction getOrDefault ["vehicleSam", ""];
 
-if (_radarType != "" && _samType != "") then {
-	private _spawnParameter = [_markerX, "Sam"] call A3A_fnc_findSpawnPosition;
-	if !(_spawnParameter isEqualType []) exitWith {};
-	_spawnsUsed pushBack _spawnParameter#2;
+// In case of array
+if (_radarType isEqualType [] && {_radarType isNotEqualTo []}) then {_radarType = selectRandom _radarType};
+if (_samType isEqualType [] && {_samType isNotEqualTo []}) then {_samType = selectRandom _samType};
 
+// In case of empty array
+if (_samType isEqualType [] && {_samType isEqualTo []}) then {_samType = ""};
+if (_radarType isEqualType [] && {_radarType isEqualTo []}) then {_radarType = ""};
+
+diag_log _radarType;
+diag_log _samType;
+
+if (garrison getVariable [_markerX + "_samDestroyedCD", 0] == 0) then 
+{
+	if (_radarType != "" && {_samType != ""}) then 
 	{
-		private _aaVehicle = nil;
-		isNil {
-			// _aaVehicle = createVehicle [_x, (_spawnParameter select 0), [], 0, "CAN_COLLIDE"];
-			// _aaVehicle setDir (_spawnParameter select 1);
-			_aaVehicle = [_x, _spawnParameter select 0, 25, 10, true] call A3A_fnc_safeVehicleSpawn;
-			_aaVehicle setDir (_spawnParameter select 1);
-		};
+		private _spawnParameter = [_markerX, "Sam"] call A3A_fnc_findSpawnPosition;
+		if !(_spawnParameter isEqualType []) exitWith {};
+		_spawnsUsed pushBack _spawnParameter#2;
 
-		private _aaGroup = [_sideX, _aaVehicle] call A3A_fnc_createVehicleCrew;
-		[_aaVehicle, _sideX] call A3A_fnc_AIVEHinit;
-
-		_soldiers append (units _aaGroup); //not sure if needed
-		_groups pushBack _aaGroup;
-		_vehiclesX pushBack _aaVehicle;
-
-		//radar rotation
-		if(_x isEqualTo _radarType) then {
-			_aaVehicle spawn {
-				while {alive _this} do {
-					{
-						_this lookAt (_this getRelPos [100, _x]);
-						sleep 2.45;
-					} forEach [120, 240, 0];
-				};
+		{
+			private _aaVehicle = nil;
+			isNil {
+				// _aaVehicle = createVehicle [_x, (_spawnParameter select 0), [], 0, "CAN_COLLIDE"];
+				// _aaVehicle setDir (_spawnParameter select 1);
+				_aaVehicle = [_x, _spawnParameter select 0, 25, 10, true] call A3A_fnc_safeVehicleSpawn;
+				_aaVehicle setDir (_spawnParameter select 1);
 			};
-		};
-	} forEach [_radarType, _samType];
+
+			private _aaGroup = [_sideX, _aaVehicle] call A3A_fnc_createVehicleCrew;
+			[_aaVehicle, _sideX] call A3A_fnc_AIVEHinit;
+
+			_soldiers append (units _aaGroup); //not sure if needed
+			_groups pushBack _aaGroup;
+			_vehiclesX pushBack _aaVehicle;
+
+			//radar rotation
+			if(_x isEqualTo _radarType) then {
+				_aaVehicle spawn {
+					while {alive _this} do {
+						{
+							_this lookAt (_this getRelPos [100, _x]);
+							sleep 2.45;
+						} forEach [120, 240, 0];
+					};
+				};
+				_aaVehicle setVehicleRadar 1;
+				_aaVehicle setVehicleReportRemoteTargets true;
+			};
+
+			_aaVehicle setVariable ["A3A_samMarker", _markerX];
+			_aaVehicle addEventHandler ["Killed", { 
+				private _marker = _this#0 getVariable ["A3A_samMarker", ""];
+				if (_marker isNotEqualTo "") then {
+					private _varName = _marker + "_samDestroyedCD";
+					private _previousValue = garrison getVariable [_varName, 0];
+					garrison setVariable [_varName, (_previousValue + 900), true];
+				};
+			}];
+		} forEach [_radarType, _samType];
+	};
 };
 
 /////////////////////////////
