@@ -8,7 +8,7 @@
 
     // Armored PO-30 Orca
     ["B_ION_Heli_Light_02_unarmed_lxWS", ["cost", 115]],
-    ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", ["cost", 125]],
+    ["a3a_ION_Heli_Light_02_dynamicLoadout_lxWS", ["cost", 125]],
 
     // AAF trash CAS
     ["I_Plane_Fighter_03_dynamicLoadout_F", ["cost", 200]]

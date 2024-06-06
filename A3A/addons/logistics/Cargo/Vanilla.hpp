@@ -33,12 +33,21 @@ class A3_Static_F_Gamma_HMG_01_HMG_01_high_F_p3d : TRIPLES(ADDON,Cargo,Base)
     recoil = 100;
     isWeapon = 1;
 };
+
 class a3_Props_F_Decade_Spaceship_SpaceshipCapsule_01_container_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,0.53};
     rotation[] = {0,1,0};
     size = 2;
 };
+
+class a3_Props_F_Decade_Spaceship_SpaceshipCapsule_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 8;
+};
+
 class A3_Static_F_Gamma_GMG_01_GMG_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
 {
     offset[] = {0,0,1.2};
@@ -161,6 +170,55 @@ class A3_Supplies_F_Heli_Fuel_FlexibleTank_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
     offset[] = {0,0,0.52};
     rotation[] = {1,0,0};
     size = 1;
+};
+
+class a3_Props_F_Enoch_Military_Equipment_PortableServer_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0.2};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class a3_Props_F_Enoch_Military_Decontamination_CBRNContainer_01_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class A3_Structures_F_Heli_Items_Luggage_MetalCase_01_small_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class A3_Structures_F_Heli_Items_Luggage_MetalCase_01_medium_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class A3_Structures_F_Heli_Items_Luggage_MetalCase_01_large_F_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 2;
+};
+
+class A3_Weapons_F_Ammoboxes_Proxy_UsBasicWeaponBox_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 1;
+};
+
+class A3_Weapons_F_Ammoboxes_Proxy_UsLouncherBox_p3d : TRIPLES(ADDON,Cargo,Base)
+{
+    offset[] = {0,0,0};
+    rotation[] = {0,1,0};
+    size = 2;
 };
 
 class A3_Supplies_F_Heli_Slingload_Slingload_01_Fuel_F_p3d : TRIPLES(ADDON,Cargo,Base)

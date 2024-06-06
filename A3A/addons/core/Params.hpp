@@ -204,6 +204,13 @@ class Params
         texts[] = {"100", "300", "500", "1000", "1500", "2000"};
         default = 500;
     };
+    class totalVictory
+    {
+        title = $STR_A3AU_total_victory;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
+    };
     class staminaEnabled
     {
         title = $STR_A3AU_stamina_enabled;

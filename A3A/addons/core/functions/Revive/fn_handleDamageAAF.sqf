@@ -46,32 +46,8 @@ if (side group _injurer == teamPlayer) then
 	};
 };
 
-private _unconsiousAceAAF = {
-	params ["_unit"];
-
-	private _group = group _unit;
-	private _side = side _group;
-	private _nextRequest = 0;
-	while { (alive _unit) && (_unit getVariable ["incapacitated",false]) } do
-	{
-		//Ask for help if not already helped
-		private _helped = _unit getVariable ["helped",objNull];
-		if (isNull _helped and _nextRequest < time) then {
-			//Plays the injured sound
-			if (random 20 < 1) then {
-				playSound3D [(selectRandom injuredSounds),_unit,false, getPosASL _unit, 1, 1, 50];
-			};
-			[_unit] call A3A_fnc_askHelp;
-			_nextRequest = time + (2 + (_unit getVariable ["helpFailed", 0]))^2;
-		};
-		sleep 3;
-	};
-};
-
 // Let ACE medical handle the rest (inc return value) if it's running
-if (A3A_hasACEMedical) exitWith {
-	[_unit] spawn _unconsiousAceAAF;
-};
+if (A3A_hasACEMedical) exitWith {};
 
 
 private _makeUnconscious =

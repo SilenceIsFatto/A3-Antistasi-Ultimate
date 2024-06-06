@@ -27,11 +27,15 @@ private _carWeight =       [20, 25, 20, 10, 10, 10,  5,  5,  5,  5] select _leve
 private _armedCarWeight =  [20, 25, 30, 30, 30, 25, 20, 20, 15, 15] select _level;
 private _truckWeight =     [50, 45, 40, 35, 30, 25, 20, 15, 10,  5] select _level;
 private _lapcWeight =      [30, 40, 50, 50, 45, 40, 35, 30, 25, 20] select _level;
-private _milApcWeight =    [ 0, 15, 25, 30,  0,  0,  0,  0,  0,  0] select _level;
+private _milApcWeight =    [ 0, 15, 25, 30, 35,  0,  0,  0,  0,  0] select _level;
 private _apcWeight =       [ 0, 10, 15, 20, 25, 30, 35, 40, 40, 40] select _level;
-private _ifvWeight =       [ 0,  0,  2,  4,  6,  8, 12, 16, 20, 25] select _level;
+private _ifvWeight =       [ 0,  0,  2,  4,  6,  8, 12, 16, 25, 30] select _level;
+private _tankWeight =      [ 0,  0,  0, 15, 20, 25, 30, 35, 40, 50] select _level;
+private _ltankWeight =     [ 0, 0, 15, 25, 30, 35, 30, 25, 20, 15] select _level;
 
 // Assumption is that at least one of APC or battle bus exists
+if (_faction get "vehiclesTanks" isEqualTo []) then { _tankWeight = _tankWeight + _ltankWeight };
+if (_faction get "vehiclesLightTanks" isEqualTo []) then { _ltankWeight = _ltankWeight + _ifvWeight };
 if (_faction get "vehiclesIFVs" isEqualTo []) then { _apcWeight = _apcWeight + _ifvWeight };
 if (_faction get "vehiclesAPCs" isEqualTo []) then { _lapcWeight = _lapcWeight + _apcWeight };
 if (_faction get "vehiclesLightAPCs" isEqualTo []) then { _apcWeight = _apcWeight + _lapcWeight/2; _truckWeight = _truckWeight + _lapcWeight/2; };
@@ -52,5 +56,6 @@ if (_side == Occupants) then {
 [_faction get "vehiclesLightAPCs", _lapcWeight] call _fnc_addArrayToWeights;
 [_faction get "vehiclesAPCs", _apcWeight] call _fnc_addArrayToWeights;
 [_faction get "vehiclesIFVs", _ifvWeight] call _fnc_addArrayToWeights;
-
+[_faction get "vehiclesTanks", _tankWeight] call _fnc_addArrayToWeights;
+[_faction get "vehiclesLightTanks", _ltankWeight] call _fnc_addArrayToWeights;
 _vehWeights;

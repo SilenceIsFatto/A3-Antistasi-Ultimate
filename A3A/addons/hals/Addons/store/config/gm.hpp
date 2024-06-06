@@ -230,7 +230,7 @@
 
 		class opticsgm
 		{
-			displayName = "GM Optics";
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_gm", localize "STR_A3AU_sights"]);
 			picture = "\A3\Ui_f\data\GUI\Rsc\RscDisplayArsenal\ItemOptic_ca.paa";
 
 			class gm_pso1_gry {
@@ -439,7 +439,6 @@
 			// DMRs, Sniper Rifles
 			///////////////////////////////////////////////////////
 
-
 			class gm_10Rnd_762x54mmR_AP_7N1_svd_blk {
 				price = 225;
 				stock = MAGAZINE_STOCK;
@@ -455,17 +454,16 @@
 				stock = MAGAZINE_STOCK;
 			};
 			
-			class gm_20Rnd_762x51mm_B_T_DM151_g3_blk {
+			class gm_20Rnd_762x51mm_AP_DM151_g3_blk {
 				price = 250;
 				stock = MAGAZINE_STOCK;
 			};
 
-			class gm_20Rnd_762x51mm_B_T_DM41_g3_blk {
+			class gm_20Rnd_762x51mm_B_DM41_g3_blk {
 				price = 235;
 				stock = MAGAZINE_STOCK;
 			};
 
-			
 			///////////////////////////////////////////////////////
 			// MGs
 			///////////////////////////////////////////////////////

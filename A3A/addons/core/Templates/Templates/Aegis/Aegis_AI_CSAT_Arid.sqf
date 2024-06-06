@@ -53,8 +53,8 @@ private _tanks = ["O_MBT_02_cannon_F"];
 ["vehiclesTransportBoats", ["O_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["O_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["O_Plane_CAS_02_dynamicLoadout_F","O_Plane_Fighter_02_F","O_A_Plane_Fighter_03_dynamicLoadout_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["O_Plane_Fighter_02_Stealth_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["O_Plane_CAS_02_dynamicLoadout_F","O_Plane_Fighter_02_F","O_A_Plane_Fighter_03_dynamicLoadout_F","O_Plane_Transport_01_infantry_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["O_Plane_Fighter_02_Stealth_F","O_Plane_Transport_01_infantry_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["O_Plane_Transport_01_infantry_F", "O_T_VTOL_02_infantry_hex_F"]] call _fnc_saveToTemplate;
 
 

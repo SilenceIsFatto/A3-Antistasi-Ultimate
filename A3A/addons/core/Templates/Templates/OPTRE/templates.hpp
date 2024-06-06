@@ -13,7 +13,7 @@
         side = "Occ";
         flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_unsc_ca.paa);
         name = "UNSC";
-        file = "OPTRE_AI_UNSC_New";
+        file = "OPTRE_AI_UNSC";
         climate[] = {"arid", "temperate"};
         description = "The UNSC";
     };
@@ -21,30 +21,23 @@
     class OPTRE_UNSC_desert : OPTRE_UNSC
     {
         name = "UNSC Desert";
-        file = "OPTRE_AI_UNSC_desert_New";
+        file = "OPTRE_AI_UNSC_desert";
         climate[] = {"arid", "temperate"};
     };
     
     class OPTRE_UNSC_snow : OPTRE_UNSC
     {
         name = "UNSC Snow";
-        file = "OPTRE_AI_UNSC_snow_New";
+        file = "OPTRE_AI_UNSC_snow";
         climate[] = {"arctic"};
     };
 
     class OPTRE_UNSC_tropical : OPTRE_UNSC
     {
         name = "UNSC Tropical";
-        file = "OPTRE_AI_UNSC_tropical_New";
+        file = "OPTRE_AI_UNSC_tropical";
         climate[] = {"tropical"};
     };
-
-    // class OPTRE_UNSC_ODST : OPTRE_UNSC
-    // {
-    //     requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core"}; // required addons (cfgPatches) to be loaded for this to show up
-    //     name = "UNSC (ODST)";
-    //     file = "OPTRE_AI_UNSC_ODST";
-    // };
     /*------------- END UNSC -------------*/
 
     /*------------- START COVENANT -------------*/
@@ -54,7 +47,7 @@
         side = "Inv";
         flagTexture = QPATHTOFOLDER(Templates\Templates\OPTRE\images\flag_covenant_ca.paa);
         name = "Covenant (Elites)";
-        file = "OPTRE_AI_Covenant_New";
+        file = "OPTRE_AI_Covenant";
         description = "The Covenant (With OPTRE elites)";
     };
 
@@ -62,7 +55,7 @@
     {
         requiredAddons[] = {"OPTRE_Core", "OPTRE_FC_Core", "WBK_Halo_Alients"};
         name = "Covenant (WBK Elites)";
-        file = "OPTRE_AI_Covenant_Grunts_New";
+        file = "OPTRE_AI_Covenant_Grunts";
         description = "The Covenant (With Webknights elites and grunts)";
     };
     /*------------- END COVENANT -------------*/

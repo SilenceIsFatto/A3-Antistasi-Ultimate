@@ -22,8 +22,8 @@ Info("Event condition has procced, selecting event...");
 isRivalEventInProgress = true;
 
 private _events = [
-	[CARDEMO, UAVGRENADE, ROVINGMORTAR],
-	([CARDEMO, UAVGRENADE, ROVINGMORTAR] select { _x != _excludeId })
+	[CARDEMO, UAVGRENADE, ROVINGMORTAR, HELIRAID ,SKIRMISH_OCCVSRIV],
+	([CARDEMO, UAVGRENADE, ROVINGMORTAR, HELIRAID ,SKIRMISH_OCCVSRIV] select { _x != _excludeId })
 ] select (_excludeId isNotEqualTo 0);
 
 if ((A3A_faction_riv get "vehiclesRivalsUavs") isEqualTo []) then {
@@ -46,5 +46,8 @@ switch (_eventType) do {
 	};
 	case (HELIRAID): {
 		[[], "SCRT_fnc_rivals_encounter_heliRaid"] call A3A_fnc_scheduler;
+	};
+	case (SKIRMISH_OCCVSRIV): {
+		[[], "SCRT_fnc_rivals_encounter_OccVsRivalsSkirmish"] call A3A_fnc_scheduler;
 	};
 };

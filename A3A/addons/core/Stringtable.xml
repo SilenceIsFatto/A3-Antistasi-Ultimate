@@ -130,7 +130,7 @@
             <Key ID="STR_antistasi_dialogs_hq_button_members_list_tooltip">
                 <Original>Displays which server members are currently playing</Original>
                 <French>Affiche quels membres du serveur sont actuellement en jeu</French>
-                <Russian>Показывает, кто из Игроков сейчас на сервере</Russian>
+                <Russian>Показывает, кто из игроков сейчас на сервере</Russian>
                 <German>Zeigt, welche Servermitglieder momentan im Spiel sind.</German>
                 <Czech>Zobrazuje, kteří členové serveru aktuálně hrají</Czech>
                 <Chinesesimp>显示哪些服务器会员正在游玩</Chinesesimp>
@@ -168,12 +168,14 @@
                 <Russian>Тренировать повстанцев</Russian>
                 <Chinesesimp>训练反抗军</Chinesesimp>
                 <Korean>반군 병사 훈련</Korean>
+                <French>Entraîner les troupes rebelles</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_hq_button_train_ai_tooltip">
                 <Original>Upgrades the AI skill level.</Original>
                 <Russian>Улучшает боевые навыки повстанцев.</Russian>
                 <Chinesesimp>升级AI技能等级。</Chinesesimp>
                 <Korean>인공지능의 숙련도 레벨을 업그레이드합니다.</Korean>
+                <French>Augmente le niveau de compétence de l'IA.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_hq_button_garage_text">
                 <Original>Garage Access</Original>
@@ -252,7 +254,7 @@
             <Key ID="STR_antistasi_dialogs_build_outpost_button_text">
                 <Original>Watchpost or Roadblock</Original>
                 <French>Poste de Garde ou Barrage Routier</French>
-                <Russian>БП или НП</Russian>
+                <Russian>Блокпост или Надзорный пункт</Russian>
                 <German>Wachposten oder Straßensperre</German>
                 <Czech>Předsunutá hlídka nebo Zátaras</Czech>
                 <Chinesesimp>岗哨或路障</Chinesesimp>
@@ -631,11 +633,13 @@
                 <Original>Recruit AT Specialist</Original>
                 <Russian>ПТ-специалист</Russian>
                 <Korean>대전차전문가 모집</Korean>
+                <French>Recruter un spécialiste AT</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_unit_recruit_aamissile_text">
                 <Original>Recruit AA Specialist</Original>
                 <Russian>Оператор ПЗРК</Russian>
                 <Korean>대공전문가 모집</Korean>
+                <French>Recruter un spécialiste en AA</French>
             </Key>
         </Container>
         <Container name="dialog_generic">
@@ -690,13 +694,13 @@
             <Key ID="STR_A3AU_dialogs_radioman_support">
                 <Original>Radioman</Original>
                 <English>Radioman</English>
-                <Russian>радист</Russian>
+                <Russian>Радист</Russian>
                 <Korean>무전병</Korean>
             </Key>
             <Key ID="STR_A3AU_dialogs_squadleader_support">
                 <Original>Squadleader</Original>
                 <English>Squadleader</English>
-                <Russian>лидер команды</Russian>
+                <Russian>Лидер команды</Russian>
                 <Korean>분대장</Korean>
             </Key>
         </Container>
@@ -924,7 +928,7 @@
             <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_truck_text">
                 <Original>Pickup Truck</Original>
                 <French>4x4</French>
-                <Russian>Пикап</Russian>
+                <Russian>Грузовик</Russian>
                 <German>Pickup</German>
                 <Czech>Pickup</Czech>
                 <Chinesesimp>皮卡</Chinesesimp>
@@ -936,7 +940,7 @@
             <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_offroad_text">
                 <Original>Offroad Truck</Original>
                 <French>Camion Tout-Terrain</French>
-                <Russian>Грузовик</Russian>
+                <Russian>Внедорожник</Russian>
                 <German>Geländewagen</German>
                 <Czech>Terénní vozidlo</Czech>
                 <Chinesesimp>越野车</Chinesesimp>
@@ -948,7 +952,7 @@
             <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_military_a_offroad_text">
                 <Original>Armed Pickup Truck</Original>
                 <French>4x4 Armé</French>
-                <Russian>Вооружённый пикап</Russian>
+                <Russian>Вооружённый внедорожник</Russian>
                 <German>Bewaffneter Pickup</German>
                 <Czech>Ozbrojený pickup</Czech>
                 <Chinesesimp>武装皮卡</Chinesesimp>
@@ -974,7 +978,7 @@
             <Key ID="STR_antistasi_dialogs_dialog_vehicle_purchase_civ_offroad_text">
                 <Original>Offroad</Original>
                 <French>Tout-Terrain</French>
-                <Russian>Пикап</Russian>
+                <Russian>Внедорожник</Russian>
                 <German>Geländewagen</German>
                 <Czech>Terénní vozidlo</Czech>
                 <Chinesesimp>越野车</Chinesesimp>
@@ -1678,6 +1682,7 @@
                 <Czech>Přepnout viditelnost info lišty</Czech>
                 <Spanish>Alternar visibilidad de la barra de información</Spanish>
                 <Polish>Przełącz Widoczność Paska Informacji</Polish>
+                <French>Activation/désactivation de la visibilité du panneau supérieur</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_text_SpecialK_6">
                 <Original>Press ALT+HOME to show / hide information bar at the top of the screen.</Original>
@@ -1688,6 +1693,7 @@
                 <Czech>Stisknout ALT+HOME k zobrazení / skrytí info lišty v horní části obrazovky</Czech>
                 <Spanish>Presiona ALT + HOME para mostrar / ocultar la barra de información arriba de la pantalla.</Spanish>
                 <Polish>Naciśnij klawisze ALT+HOME, aby wyświetlić/ukryć pasek informacyjny u góry ekranu.</Polish>
+                <French>Appuyez sur ALT+HOME pour afficher/masquer la barre d'information supérieure.</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_Features_1">
                 <Original>Faction Leader</Original>
@@ -2736,6 +2742,7 @@
                 <English>Credits</English>
                 <Russian>Заслуги</Russian>
                 <Korean>크레딧</Korean>
+                <French>Crédits</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_Credits_1">
                 <Original>Script Credits</Original>
@@ -2759,6 +2766,7 @@
                 <Italian>Patcom da Hazey.&lt;br/&gt;Salvataggio Persistente di zooloo75.&lt;br/&gt;Tags da Marker and Melbo.&lt;br/&gt;JAS da Jeroen (Scusa per averti incluso così tardi)&lt;br/&gt;Advanced Towing da Seth Duda.</Italian>
                 <Spanish>Patcom by Hazey.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</Spanish>
                 <Polish>Patcom stworzony przez Hazey.&lt;br/&gt;Persistent Save stworzony przez zooloo75.&lt;br/&gt;Tags stworzony przez Marker i Melbo.&lt;br/&gt;JAS stworzony przez Jeroen.&lt;br/&gt;Advanced Towing stworzony przez Seth Duda.</Polish>
+                <French>Patcom by Hazey.&lt;br/&gt;Persistent Save by zooloo75.&lt;br/&gt;Tags by Marker and Melbo.&lt;br/&gt;JAS by Jeroen (sorry for including you that late)&lt;br/&gt;Advanced Towing by Seth Duda.</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_Credits_2">
                 <Original>Mods</Original>
@@ -2782,6 +2790,7 @@
                 <Italian>Integrate (opzionali) Mods: &lt;br/&gt;TFAR: Radio integrate nell'Arsenal. Suoni disabilitati quando il giocatore è privo di sensi.&lt;br/&gt;Ace Medical: Disabiliterà il sistema medico di Antistasi.&lt;br/&gt;&lt;br/&gt;Attenzione:Se verrà eseguito un salvataggio con le mod opzionali attive diventeranno obbligatorie la prossima volta che si tenta entrare.&lt;br/&gt;&lt;br/&gt;Qualunque mod client come: JSRS, Blastcore, UI Mod, dovrebbero funzionare&lt;br/&gt;&lt;br/&gt;Mod che aggiungono veicoli e unità non funzioneranno. Mod che modificano il comportamento dell'IA potrebbero creare problemi poiché Antistasi modifica pesantemente l'IA.</Italian>
                 <Spanish>Mods Integrados (opcionales): &lt;br/&gt; TFAR: Radio integrada en el Arsenal. Sonido deshabilitado cuando el jugador está inconsciente. &lt;br/&gt;ACE medical: Sustituirá el metódo de reanimación de Antistasi. &lt;br/&gt;&lt;br/&gt;ATENCIÓN: El uso del sistema de Guardado Persistente con TFAR y/o con cualquier mod de armas activo hará que seán obligatorios en el futuro.&lt;br/&gt;&lt;br/&gt;Cualquier otro mod del cliente, como JSRS, Blastcore, UI Mod deberían funcionar.&lt;br/&gt;&lt;br/&gt;Mods de unidades y vehículos no funcionan. Mods de IA pueden ocasionar errores (En cualquier caso Antistasi tiene una alta modificación del comportamiento de la IA).</Spanish>
                 <Polish>Zintegrowane (opcjonalne) Mody:&lt;br/&gt;TFAR: Radio zintegrowane iw Arsenale. Dźwięk wyłączony, gdy gracz jest nieprzytomny.&lt;br/&gt;ACE Medical: Wyłączy system leczenia Antistasi.&lt;br/&gt;&lt;br/&gt;UWAGA: Korzystanie z systemu Trwały Zapis wraz z modyfikacją TFAR i modyfikacjami dodającymi broni sprawi, że będą one obowiązkowe przy wczytaniu zapisu gry.&lt;br/&gt;&lt;br/&gt;Każdy mod po stronie klienta, taki jak JSRS, Blastcore oraz mody na interfejs gry powinny działać.&lt;br/&gt;&lt;br/&gt;Modyfikacje dodające jednostki i pojazdy nie będą działać. Mody na AI mogą powodować problemy (Antistasi domyślnie ma poprawione i podkręcone AI).</Polish>
+                <French>Mods intégrés (optionnels):&lt;br/&gt;TFAR : Radio intégrée dans l'Arsenal. Le son est désactivé lorsque le joueur est inconscient.&lt;br/&gt;ACE Medical : Désactive le système de réanimation d'Antistasi.&lt;br/&gt;&lt;br/&gt;ATTENTION: L'utilisation du système de sauvegarde persistante avec TFAR et tout mod d'arme activé les rendra obligatoires à l'avenir.&lt;br/&gt;&lt;br/&gt;Tout mod côté client, tel que JSRS, Blastcore, UI Mod devrait fonctionner.&lt;br/&gt;&lt;br/&gt;Les mods d'unités et de véhicules ne fonctionneront pas. Les mods d'IA peuvent causer des dysfonctionnements (dans tous les cas, Antistasi a une IA lourdement modifiée).</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_Credits_3">
                 <Original>Thanks</Original>
@@ -2811,30 +2820,35 @@
                 <English>Antistasi Basics</English>
                 <Russian>Основы Antistasi</Russian>
                 <Korean>일반 안티스타시</Korean>
+                <French>Notions d'antistasi</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_commander_options_name">
                 <Original>Commander Options</Original>
                 <English>Commander Options</English>
                 <Russian>Функции командира</Russian>
                 <Korean>지휘관 옵션</Korean>
+                <French>Options du commandant</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_special_keys_name">
                 <Original>Special Keys</Original>
                 <English>Special Keys</English>
                 <Russian>Спец. клавиши</Russian>
                 <Korean>특수 키</Korean>
+                <French>Touches spéciales</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_features_detail_name">
                 <Original>Features Detail</Original>
                 <English>Features Detail</English>
                 <Russian>Возможности</Russian>
                 <Korean>기능 세부 정보</Korean>
+                <French>Détails des fonctionnalités</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_ai_management_name">
                 <Original>AI Management</Original>
                 <English>AI Management</English>
                 <Russian>Управление ИИ</Russian>
                 <Korean>AI 관리</Korean>
+                <French>Gestion de l'IA</French>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_game_options_name">
                 <Original>Game Options</Original>
@@ -2930,7 +2944,7 @@
                 <Original>Disables/Enable situational music.</Original>
                 <French>Désactive/Active la musique de situation.</French>
                 <Chinesesimp>禁用/启用背景音乐</Chinesesimp>
-                <Russian>Отключение/включение музыки</Russian>
+                <Russian>Отключение/включение ситуативной музыки</Russian>
                 <Korean>상황에 맞는 음악을 켜고 끕니다.</Korean>
                 <Italian>Disabilita/Abilita Musica Situazionale.</Italian>
                 <Czech>Zapne/vypne situační hudbu</Czech>
@@ -3209,7 +3223,7 @@
                 <Original>Become Undercover if you match the requirements. Enemy AI won't attack you until they discover you</Original>
                 <French>Devenez Incognito si vous remplissez les conditions. L'IA ennemie ne vous attaquera pas tant qu'elle ne vous aura pas découverte</French>
                 <Chinesesimp>满足条件时可进入伪装状态。敌方AI在识破你之前不会攻击你</Chinesesimp>
-                <Russian>Станьте скрытным, если вы соответствуете требованиям. Вражеский ИИ не нападет на вас, пока не обнаружит вас</Russian>
+                <Russian>Замаскируйтесь под гражданского, если вы соответствуете требованиям. Вражеский ИИ не нападет на вас, пока не обнаружит вас</Russian>
                 <Korean>요구 사항과 일치하는 경우 위장이 시작됩니다. 적 인공지능은 당신을 알아볼 때까지 당신을 공격하지 않을 것입니다.</Korean>
                 <Italian>Vai sotto copertura se soddisfi i requisiti. I nemici non ti attaccheranno finché verrai scoperto</Italian>
                 <Czech>Být v utajení pokud jsou splněny podmínky. Nepřítel nebude útočit pokud nebudete odhaleni.</Czech>
@@ -3275,7 +3289,7 @@
                 <Original>Allow other groups to mount this vehicle</Original>
                 <French>Autoriser d'autres groupes à monter dans ce véhicule</French>
                 <Chinesesimp>允许其他小队搭乘该载具</Chinesesimp>
-                <Russian>Разрешить другим группам садиться на этот автомобиль</Russian>
+                <Russian>Разрешить другим группам садиться в эту технику</Russian>
                 <Korean>다른 그룹이 이 차량에 탑승하도록 허용합니다</Korean>
                 <Italian>Permetti ad altri gruppi di salire su questo veicolo</Italian>
                 <Czech>Umožněte ostatním skupinám nasednout do tohoto vozidla</Czech>
@@ -3326,6 +3340,335 @@
                 <Spanish>Abre las opciones del comandante</Spanish>
                 <Polish>Otwórz opcje dowódcy</Polish>
             </Key>
+        </Container>
+        <Container name="A3A_fn_Undercover">
+        <Key ID="STR_A3A_fn_undercover_canGoUn_already">
+            <Original>You are Undercover already.</Original>
+            <Italian>Sei già sotto copertura.</Italian>
+            <French>Vous êtes déja Incognito.</French>
+            <Korean>당신은 이미 위장 중입니다.</Korean>
+            <Russian>Вы уже под прикрытием</Russian>
+            <Czech>Už jsi v utajení.</Czech>
+            <Chinesesimp>你已经伪装过了</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_ai">
+            <Original>You cannot go Undercover while you are controlling AI!</Original>
+            <Italian>Non puoi andare Sotto Copertura mentre controlli l'IA!</Italian>
+            <French>Vous ne pouvez pas être Incognito alors que vous contrôlez l'IA!</French>
+            <Korean>AI를 조종하는 동안에는 위장을 할 수 없습니다!</Korean>
+            <Russian>Вы не можете быть под прикрытием, пока управляете ИИ!</Russian>
+            <Czech>Nemůžeš jít do utajení když ovládáš AI!</Czech>
+            <Chinesesimp>你无法在伪装模式下控制AI！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_close">
+            <Original>You cannot go Undercover near Airbases, Outposts, Seaports or Roadblocks.</Original>
+            <Italian>Non puoi andare Sotto Copertura vicino ad Aeroporti, Avamposti, Porti o Posti di blocco.</Italian>
+            <French>Vous ne pouvez pas être Incognito près des Aéroports, des Avants-postes, des Bases Maritimes ou des Barrages routiers.</French>
+            <Korean>공항, 전초기지, 항구 또는 검문소 근처에서는 위장할 수 없습니다.</Korean>
+            <Russian>Вы не можете быть под прикрытием вблизи авиабаз, аванпостов, морских портов или блокпостов.</Russian>
+            <Czech>Nemůžeš jít do utajení poblíž Letišť, Stanovišť, Přístavů a Zátarasů.</Czech>
+            <Chinesesimp>你无法在机场, 哨站, 港口以及路障附近进行伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_nociv">
+            <Original>You are not in a civilian vehicle.</Original>
+            <Italian>Non sei in un veicolo civile</Italian>
+            <French>Vous n'êtes pas dans un véhicule civile.</French>
+            <Korean>당신은 민간 차량 안에 있지 않습니다.</Korean>
+            <Russian>Вы не в гражданском транспорте.</Russian>
+            <Czech>Nejsi v civilním vozidle.</Czech>
+            <Chinesesimp>你当前不在一辆民用车辆内</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_lowciv">
+            <Original>Undercover not allowed in current civ template.</Original>
+            <Russian>Вы не можете быть под прикрытием в текущем гражданском шаблоне</Russian>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reason_helmet">
+            <Original>%1&lt;br/&gt;Wearing a helmet.</Original>
+            <Italian>%1&lt;br/&gt;Indossa un elmetto.</Italian>
+            <French>%1&lt;br/&gt;Port d'un casque.</French>
+            <Korean>%1&lt;br/&gt;헬멧 착용 중.</Korean>
+            <Russian>%1&lt;br/&gt;В шлеме.</Russian>
+            <Czech>%1&lt;br/&gt;Máš na sobě helmu.</Czech>
+            <Chinesesimp>%1&lt;br/&gt;正戴着一顶军用头盔</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reason_naked">
+            <Original>%1&lt;br/&gt;Being naked. Put some civilian clothes on, Petros can't bear to watch.</Original>
+            <Italian>%1&lt;br/&gt;Nudo? Mettiti dei vestiti civili, Petros non riesce a guardarti.</Italian>
+            <French>%1&lt;br/&gt;Être nu. Mettez des vêtements civils, Petros ne supporte pas de regarder.</French>
+            <Korean>%1&lt;br/&gt;알몸 상태. 민간인 복장을 착용하십시오, 페트로스가 차마 눈 뜨고 볼 수가 없어합니다.</Korean>
+            <Russian>%1&lt;br/&gt;Голый. Надень что-нибудь гражданское, Петросу невыносимо на это смотреть.</Russian>
+            <Czech>%1&lt;br/&gt;Jsi nahý. Vezmi si na sebe nějaké civilní oblečení, Petros na toto nesnese pohled.</Czech>
+            <Chinesesimp>%1&lt;br/&gt;决定啥都不穿. 快拿点平民的衣服套上, Petros都快看不下去了.</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reason_ngv">
+            <Original>%1&lt;br/&gt;Wearing NVGs.</Original>
+            <Italian>%1&lt;br/&gt;Indossando NVG.</Italian>
+            <French>%1&lt;br/&gt;Porte des NVGs.</French>
+            <Korean>%1&lt;br/&gt;야시경 착용 중.</Korean>
+            <Russian>%1&lt;br/&gt;Одето ПНВ.</Russian>
+            <Czech>%1&lt;br/&gt;Máš na sobě noktovizor.</Czech>
+            <Chinesesimp>%1&lt;br/&gt;正穿戴这一顶军用夜视仪</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reason_rope">
+            <Original>%1&lt;br/&gt;Holding tow ropes.</Original>
+            <Italian>%1&lt;br/&gt;Portando funi da traino.</Italian>
+            <French>%1&lt;br/&gt;Tient un treuil de remorquage.</French>
+            <Korean>%1&lt;br/&gt;견인줄 잡는 중.</Korean>
+            <Russian>%1&lt;br/&gt;В руках трос.</Russian>
+            <Czech>%1&lt;br/&gt;Držíš tažné lano.</Czech>
+            <Chinesesimp>%1&lt;br/&gt;手中正拿着拖车绳索</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reason_uniform">
+            <Original>%1&lt;br/&gt;Wearing a suspicious uniform.</Original>
+            <Italian>%1&lt;br/&gt;Indossando una uniforme sospetta.</Italian>
+            <French>%1&lt;br/&gt;Porte un uniforme suspect.</French>
+            <Korean>%1&lt;br/&gt;수상한 복장 착용 중.</Korean>
+            <Russian>%1&lt;br/&gt;Одета подозрительная одежда.</Russian>
+            <Czech>%1&lt;br/&gt;Máš na sobě podezřelou uniformu.</Czech>
+            <Chinesesimp>%1&lt;br/&gt;身着可疑制服</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reason_vest">
+            <Original>%1&lt;br/&gt;Wearing a vest.</Original>
+            <Italian>%1&lt;br/&gt;Indossando gibernaggi.</Italian>
+            <French>%1&lt;br/&gt;Porte une veste.</French>
+            <Korean>%1&lt;br/&gt;조끼 착용 중.</Korean>
+            <Russian>%1&lt;br/&gt;Одет бронежилет.</Russian>
+            <Czech>%1&lt;br/&gt;Máš na sobě vestu.</Czech>
+            <Chinesesimp>%1&lt;br/&gt;身上套有军用背心</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reason_weapon">
+            <Original>%1&lt;br/&gt;A weapon is visible.</Original>
+            <Italian>%1&lt;br/&gt;Un'arma è visibile.</Italian>
+            <French>%1&lt;br/&gt;Une arme est visible.</French>
+            <Korean>%1&lt;br/&gt;무기 보임.</Korean>
+            <Russian>%1&lt;br/&gt;Видно оружие.</Russian>
+            <Czech>%1&lt;br/&gt;Zbraň je viditelná.</Czech>
+            <Chinesesimp>%1&lt;br/&gt;被目视到身上持有武器</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reported1">
+            <Original>This vehicle has been reported to the enemy. Change or renew your vehicle in the Garage to go Undercover.</Original>
+            <Italian>Questo veicolo è stato riportato al nemico. Cambialo o rinnovalo nel Garage per andare Sotto Copertura.</Italian>
+            <French>Ce véhicule a été signalé à l'ennemi. Changez-en ou prenez-en un nouvel exemplaire au garage pour devenir Icognito.</French>
+            <Korean>이 차량은 적에게 보고되었습니다. 차고에서 차량을 바꾸거나 재도색하여 위장을 하십시오.</Korean>
+            <Russian>Об этом транспортном средстве стало известно врагу. Смените или обновите свой автомобиль в гараже, чтобы действовать под прикрытием.</Russian>
+            <Czech>Toto vozidlo bylo nahlášeno nepříteli. Změň nebo obnov bozidlo v Garáži aby jsi mohl jít do utajení.</Czech>
+            <Chinesesimp>该载具已经被上报给敌人.在车库中更变或者更新你的车辆以便再次进行伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_reported2">
+            <Original>You have been reported in the last 30 minutes therefore you cannot go Undercover.</Original>
+            <Italian>Sei stato riportato negli ultimi 30 minuti, quindi non puoi andare Sotto Copertura.</Italian>
+            <French>Vous avez été signalé dans les 30 dernières minutes, de fait vous ne pouvez pas devenir Incognito.</French>
+            <Korean>지난 30분 동안 신고를 당했기 때문에 위장할 수 없습니다.</Korean>
+            <Russian>О вас сообщили за последние 30 минут, поэтому вы не можете работать под прикрытием.</Russian>
+            <Czech>Byl jsi nahlášen v posledních 30 minutách tudíž nemůžeš jít do utajení.</Czech>
+            <Chinesesimp>在过去的30分钟内你被上报给敌人因此你暂时无法进行伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_spotted">
+            <Original>You cannot go Undercover while enemies are spotting you.</Original>
+            <Italian>Non puoi andare Sotto Copertura mentre i nemici ti stanno avvistando.</Italian>
+            <French>Vous ne pouvez pas devenir Incognito pendant que des ennemis vous observent.</French>
+            <Korean>적이 당신을 발견한 동안에는 위장을 할 수 없습니다.</Korean>
+            <Russian>Вы не можете действовать под прикрытием, пока враги вас замечают.</Russian>
+            <Czech>Nemůžeš být v utajení když tě nepřátelé pozorují.</Czech>
+            <Chinesesimp>在敌人发现你的情况下你无法进行伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_towrope">
+            <Original>This vehicle cannot go undercover while it has tow ropes attached.</Original>
+            <Italian>Questo veicolo non può andare sotto copertura mentre ha delle funi da traino attaccate.</Italian>
+            <French>Ce véhicule ne peut pas devenir Incognito pendant un remorquage.</French>
+            <Korean>이 차량은 견인줄이 걸려 있는 동안에는 위장이 불가능합니다.</Korean>
+            <Russian>Этот автомобиль не может передвигаться под прикрытием, пока к нему прикреплены буксирные тросы.</Russian>
+            <Czech>Tohle vozidlo nemůže být v utajení když má připojené tažné lano.</Czech>
+            <Chinesesimp>在载具拖车绳索调用的情况下该载具无法进行伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_canGoUn_no_while">
+            <Original>You cannot go Undercover while:&lt;br/&gt;</Original>
+            <Italian>Non puoi andare Sotto Copertura mentre:&lt;br/&gt;</Italian>
+            <French>Vous ne pouvez pas devenir Incognito pendant :&lt;br/&gt;</French>
+            <Korean>다음 사항이 있는 동안에는 위장을 할 수 없습니다:&lt;br/&gt;</Korean>
+            <Russian>Вы не можете работать под прикрытием, пока:&lt;br/&gt;</Russian>
+            <Czech>Nemůžeš být v utajení když:&lt;br/&gt;</Czech>
+            <Chinesesimp>你不能进行伪装，你正在:&lt;br/&gt;</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_detect_airspace">
+            <Original>Unidentified aircraft, you have violated the restricted airspace of %1!</Original>
+            <Italian>Velivolo non identificato, hai violato lo spazio aereo di %1!</Italian>
+            <French>Vous avez enfreint l'espace aérien de %1 !</French>
+            <Korean>미확인 항공기, 넌 %1 소속의 영공을 침범했다!</Korean>
+            <Russian>Неопознанный самолет, вы нарушили воздушное пространство %1!</Russian>
+            <Czech>Neidentifikované letadlo, narušil jsi vzdušný prostor %1!</Czech>
+            <Chinesesimp>不明飞行物,你已经侵犯了%1的空中管制区域</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_detect_outp">
+            <Original>An enemy outpost or seaport has detected you!</Original>
+            <Italian>Un avamposto o un porto nemico ti hanno avvistato!</Italian>
+            <French>Un avant-poste ou port ennemi vous a detecté !</French>
+            <Korean>적의 전초기지나 항구가 당신을 발견했습니다!</Korean>
+            <Russian>Вражеский аванпост или морской порт обнаружил вас!</Russian>
+            <Czech>Nepřátelské stanoviště nebo přístav tě zpozoroval!</Czech>
+            <Chinesesimp>敌人的哨站或港口已经察觉到你了！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_detect_milb">
+            <Original>An enemy military base has detected you!</Original>
+            <Russian>Вас обнаружила вражеская военная база</Russian>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_detect_roadb">
+            <Original>An enemy roadblock has detected you!</Original>
+            <Italian>Un posto di blocco nemico ti ha avvistato!</Italian>
+            <French>Un barrage routier ennemi vous a detecté !</French>
+            <Korean>적의 검문소가 당신을 발견했습니다!</Korean>
+            <Russian>Вас обнаружил вражеский блокпост!</Russian>
+            <Czech>Nepřátelský zátaras tě zpozoroval!</Czech>
+            <Chinesesimp>敌人的阻击路障已经察觉到你了！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_entered_veh1">
+            <Original>You entered a non civilian vehicle!</Original>
+            <Italian>Sei salito su un veicolo non civile!</Italian>
+            <French>Vous êtes entré dans un véhicule non civil !</French>
+            <Korean>민간 차량이 아닌 차량에 탑승했습니다!</Korean>
+            <Russian>Вы сели в негражданский автомобиль!</Russian>
+            <Czech>Nastoupil jsi do necivilního vozidla!</Czech>
+            <Chinesesimp>你进入了一辆非民用车辆！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_entered_veh2">
+            <Original>You entered a reported vehicle!</Original>
+            <Italian>Sei salito su un veicolo riportato!</Italian>
+            <French>Vous êtes entré dans un véhicule recherché !</French>
+            <Korean>수배된 차량에 탑승했습니다!</Korean>
+            <Russian>Вы сели в скомпрометированный автомобиль!</Russian>
+            <Czech>Nastoupil jsi do hledaného vozidla!</Czech>
+            <Chinesesimp>你进入了一辆已经被上报的车辆！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_Error">
+            <Original>Unknown error occured in undercover execution routine!</Original>
+            <Italian>Si è verificato un errore sconosciuto durante l'esecuzione della routine di copertura!</Italian>
+            <French>Erreur inconnue survenue pendant le processus de devenir Incognito !</French>
+            <Korean>위장 실행 루틴에서 알 수 없는 오류가 발생했습니다!</Korean>
+            <Russian>При скрытии произошла неизвестная ошибка!</Russian>
+            <Czech>Došlo k neznámé chybě při přepínání statusu do "v utajení"!</Czech>
+            <Chinesesimp>进行伪装的过程中出现了未知错误</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_leftveh">
+            <Original>You left your vehicle and you are still on the Wanted List!</Original>
+            <Italian>Hai abbandonato il tuo veicolo e sei ancora Ricercato!</Italian>
+            <French>Vous avez quitté votre véhicule et êtes toujours recherchés !</French>
+            <Korean>당신은 차량에서 내렸지만 여전히 수배 목록에 있습니다!</Korean>
+            <Russian>Вы оставили свой автомобиль и все еще находитесь в розыске!</Russian>
+            <Czech>Opustil jsi vozidlo ale stále jsi na listině hledaných!</Czech>
+            <Chinesesimp>你已从你的车辆中离开然而你仍然还在通缉名单上！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_no_distance">
+            <Original>You went too far away from any roads and have been spotted!</Original>
+            <Italian>Ti sei allontanato troppo dalle strade e sei stato avvistato!</Italian>
+            <French>Vous vous êtes trop éloigné des routes et vous avez été repéré !</French>
+            <Korean>도로에서 너무 멀리 떨어졌기 때문에 발견되었습니다!</Korean>
+            <Russian>Вы ушли слишком далеко от каких-либо дорог и были замечены!</Russian>
+            <Czech>Sjel jsi příliš daleko z cesty a byl jsi zpozorován!</Czech>
+            <Chinesesimp>你因过度开离任何公路而遭到了举报</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_no_explo">
+            <Original>Explosives have been spotted on your vehicle!</Original>
+            <Italian>Gli esplosivi sono stati visti sul tuo veicolo!</Italian>
+            <French>Des Explosifs ont étés repérés sur votre véhicule !</French>
+            <Korean>차량에서 폭발물이 발견되었습니다!</Korean>
+            <Russian>В вашем автомобиле обнаружена взрывчатка!</Russian>
+            <Chinesesimp>你车上的爆炸物被发现了！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_no_reason_1">
+            <Original>You cannot stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a mil uniform!</Original>
+            <Italian>Non puoi rimanere Sotto Copertura mentre:&lt;br/&gt;&lt;br/&gt;Un'arma è visibile&lt;br/&gt;Indossi del gibernaggio&lt;br/&gt;Indossi un elmetto&lt;br/&gt;Indossi NVG&lt;br/&gt;Indossi un'uniforme militare!</Italian>
+            <French>Vous ne pouvez pas rester Incognito pendant que :&lt;br/&gt;&lt;br/&gt;Une arme est visible&lt;br/&gt;Vous portez une veste&lt;br/&gt;Vous portez un casque&lt;br/&gt;Vous portez des LVN&lt;br/&gt;Vous portez un uniforme militaire !</French>
+            <Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!</Korean>
+            <Russian>Вы не можете оставаться под прикрытием, пока:&lt;br/&gt;&lt;br/&gt;Видно оружие&lt;br/&gt;Одет бронежилет&lt;br/&gt;Одет бронежилет&lt;br/&gt;Одет ПНВ&lt;br/&gt;Одета военная форма!</Russian>
+            <Czech>Nemůžeš zůstat v utajení pokud:&lt;br/&gt;&lt;br/&gt;Zbraň je viditelná&lt;br/&gt;Máš na sobě vestu&lt;br/&gt;Máš na sobě helmu&lt;br/&gt;Máš na sobě noktovizor&lt;br/&gt;Máš na sobě vojenskou uniformu!</Czech>
+            <Chinesesimp>你不能进行伪装，因为你:&lt;br/&gt;&lt;br/&gt;被目视到身持武器&lt;br/&gt;正身着军用背心&lt;br/&gt;正穿戴一顶军用头盔&lt;br/&gt;正穿戴一顶军用夜视仪&lt;br/&gt;正身着军用制服！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_no_reason_2">
+            <Original>You cannot stay Undercover while showing:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a mil uniform&lt;br/&gt;&lt;br/&gt;The enemy added you to their Wanted List!</Original>
+            <Italian>Non puoi rimanere Sotto Copertura mentre:&lt;br/&gt;&lt;br/&gt;Un'arma è visibile&lt;br/&gt;Indossi del gibernaggio&lt;br/&gt;Indossi un elmetto&lt;br/&gt;Indossi NVG&lt;br/&gt;Indossi un'uniforme militare!&lt;br/&gt;Sei ricercato dal nemico!</Italian>
+            <French>Vous ne pouvez pas rester Incognito pendant que vous montrez :&lt;br/&gt;&lt;br/&gt;Une arme est visible&lt;br/&gt;Vous portez une veste&lt;br/&gt;Vous portez un casque&lt;br/&gt;Vous portez des LVN&lt;br/&gt;Vous portez un uniforme militaire !</French>
+            <Korean>다음과 같은 경우가 보여지는 동안에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음&lt;br/&gt;적이 당신을 수배 목록에 추가했습니다!</Korean>
+            <Russian>Вы не можете оставаться под прикрытием, демонстрируя:&lt;br/&gt;&lt;br/&gt;Видно оружие&lt;br/&gt;Одет бронежилет&lt;br/&gt;Одет шлем&lt;br/&gt;Одет ПНВ&lt;br/&gt;Одета военная форма&lt;br/&gt;&lt;br/&gt;Вы в розыске!</Russian>
+            <Czech>Nemůžeš zůstat v utajení pokud:&lt;br/&gt;&lt;br/&gt;Zbraň je viditelná&lt;br/&gt;Máš na sobě vestu&lt;br/&gt;Máš na sobě helmu&lt;br/&gt;Máš na sobě noktovizor&lt;br/&gt;Máš na sobě vojenskou uniformu&lt;br/&gt;&lt;br/&gt;Nepřítel tě přidal na listinu hledaných!</Czech>
+            <Chinesesimp>你不能进行伪装，因为你:&lt;br/&gt;&lt;br/&gt;被目视到身持武器&lt;br/&gt;正身着军用背心&lt;br/&gt;正穿戴一顶军用头盔&lt;br/&gt;正穿戴一顶军用夜视仪&lt;br/&gt;正身着军用制服！&lt;br/&gt;敌人已经把你拉入他们的通缉名单！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_no_reason_3">
+            <Original>You cannot stay Undercover while healing a compromised resistance member!</Original>
+            <Italian>Non puoi rimanere Sotto Copertura mentre curi un membro della resistenza comprommesso!</Italian>
+            <French>Vous ne pouvez pas rester Incognito alors que vous soignez un membre de la résistance compromis !</French>
+            <Korean>부상을 입은 저항군을 치료하는 동안에는 위장을 유지할 수 없습니다!</Korean>
+            <Russian>Вы не можете оставаться под прикрытием, исцеляя члена сопротивления!</Russian>
+            <Czech>Nemůžeš zůstat v utajení když léčíš prozrazeného člena odboje!</Czech>
+            <Chinesesimp>明目张胆的救助反抗军成员使得你退出了伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_no_reason_4">
+            <Original>You cannot stay Undercover while healing a compromised resistance member&lt;br/&gt;&lt;br/&gt;The enemy added you to their Wanted List!</Original>
+            <Italian>Non puoi rimanere Sotto Copertura mentre curi un membro della resistenza comprommesso!&lt;br/&gt;&lt;br/&gt;Il nemico ti ha aggiunto alla Lista dei Ricercati!</Italian>
+            <French>Vous ne pouvez pas rester Incognito alors que vous soignez un membre de la résistance compromis !&lt;br/&gt;&lt;br/&gt;L'ennemi vous a ajouté à leur liste de gens recherchés !</French>
+            <Korean>부상을 입은 저항군을 치료하는 동안에는 위장을 유지할 수 없습니다!&lt;br/&gt;&lt;br/&gt;적이 당신을 수배 목록에 추가했습니다!</Korean>
+            <Russian>Вы не можете оставаться под прикрытием, пока лечите скомпрометированного члена сопротивления&lt;br/&gt;&lt;br/&gt;Враг добавил вас в свой список разыскиваемых!</Russian>
+            <Czech>Nemůžeš zůstat v utajení když léčíš prozrazeného člena odboje&lt;br/&gt;&lt;br/&gt;Nepřítel tě přidal na listinu hledaných!</Czech>
+            <Chinesesimp>明目张胆的救助反抗军成员使得你退出了伪装&lt;br/&gt;&lt;br/&gt;敌人已经把你拉入他们的通缉名单！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_no_towrope1">
+            <Original>You cannot be undercover while tow ropes are attached to your vehicle!</Original>
+            <Italian>Non puoi andare sotto copertura mentre hai delle funi da traino attaccate al tuo veicolo.</Italian>
+            <French>Vous ne pouvez pas être Incognito pendant qu'un treuil de remorquage est attaché à votre véhicule !</French>
+            <Korean>당신의 차량에 견인줄이 걸려 있는 동안에는 위장이 불가능합니다!</Korean>
+            <Russian>Вы не можете находиться под прикрытием, пока к вашему автомобилю прикреплены буксирные тросы!</Russian>
+            <Czech>Nemůžeš být v utajení když tažné lano je připojeno k tvému vozidlu!</Czech>
+            <Chinesesimp>在载具被其他车辆拖动的情况下该载具无法进行伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_no_towrope2">
+            <Original>You cannot be undercover and use tow ropes!</Original>
+            <Italian>Non puoi andare sotto copertura e usare le funi da traino!</Italian>
+            <French>Vous ne pouvez pas être Incognito et utiliser un treuil de remorquage !</French>
+            <Korean>견인줄을 사용하면서 위장을 할 순 없습니다!</Korean>
+            <Russian>Вы не можете работать под прикрытием и использовать буксирные тросы!</Russian>
+            <Czech>V utajení nemůžeš používat tažné lano!</Czech>
+            <Chinesesimp>你不能在伪装模式下使用拖车绳索！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_off">
+            <Original>Undercover OFF</Original>
+            <French>Incognito OFF</French>
+            <Korean>위장 끔</Korean>
+            <Russian>Скрытность ВЫКЛ</Russian>
+            <Chinesesimp>退出伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_on">
+            <Original>Undercover ON</Original>
+            <French>Incognito ON</French>
+            <Korean>위장 켬</Korean>
+            <Russian>Скрытность ВКЛ</Russian>
+            <Chinesesimp>进行伪装</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_reported">
+            <Original>You have been reported or spotted by the enemy!</Original>
+            <Italian>Sei stato riportato o avvistato dal nemico!</Italian>
+            <French>Vous avez été signalé ou détecté par l'ennemi !</French>
+            <Korean>적에게 신고를 받았거나 발견되었습니다!</Korean>
+            <Russian>Враг сообщил о вас или заметил вас!</Russian>
+            <Czech>Byl jsi nahlášen nebo zpozorován nepřítelem!</Czech>
+            <Chinesesimp>你已经被敌人举报或者发现了！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_goUn_trespass">
+            <Original>You have trespassed on an enemy airbase!</Original>
+            <Italian>Hai sconfinato in una base nemica!</Italian>
+            <French>Vous vous êtes introduit sur une base aérienne ennemie !</French>
+            <Korean>적의 공군 기지에 무단 침입했습니다!</Korean>
+            <Russian>Вы вторглись на территорию вражеской авиабазы!</Russian>
+            <Czech>Vkročil jsi na nepřátelské letiště!</Czech>
+            <Chinesesimp>你已经非法入侵敌人的空军基地！</Chinesesimp>
+        </Key>
+        <Key ID="STR_A3A_fn_undercover_title">
+            <Original>Undercover</Original>
+            <Italian>Sotto Copertura</Italian>
+            <French>Incognito</French>
+            <Korean>위장</Korean>
+            <Russian>Под прикрытием</Russian>
+            <Czech>V utajení</Czech>
+            <Chinesesimp>伪装</Chinesesimp>
+        </Key>
         </Container>
         <Container name="vehicle_manager">
             <Key ID="STR_antistasi_dialogs_vehicle_manager">
@@ -3395,10 +3738,10 @@
                 <Polish>Dodaj do Wsparcia Powietrznego</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_manager_add_air_support_tooltip">
-                <Original>Gain Airstrike points giving this vehicle to the faction Air pool</Original>
+                <Original>Gain Airstrike points by giving this vehicle to the faction Air pool</Original>
                 <French>Gagnez des points de frappe aérienne en donnant ce véhicule à la réserve aérienne de la faction</French>
                 <Chinesesimp>将此载具捐献给阵营空军以换取空袭点数</Chinesesimp>
-                <Russian>Получите очки авиаудара, отдав этот автомобиль в запас воздуха фракции</Russian>
+                <Russian>Получите очки авиаудара, отдав эту технику фракции</Russian>
                 <Korean>해당 차량을 팩션의 항공 자산에 제공하여 공습 포인트를 획득합니다</Korean>
                 <Italian>Ottieni Punti Supporto Aereo consegnado questo veivolo alla fazione</Italian>
                 <Czech>Získejte body leteckého úderu dáním tohoto vozidla do frakčního leteckého poolu</Czech>
@@ -3420,7 +3763,7 @@
                 <Original>Allow other groups to mount this vehicle</Original>
                 <French>Autoriser d'autres groupes à monter dans ce véhicule</French>
                 <Chinesesimp>允许其他小队搭乘该载具</Chinesesimp>
-                <Russian>Разрешить другим группам садиться на этот автомобиль</Russian>
+                <Russian>Разрешить другим группам садиться в эту технику</Russian>
                 <Korean>다른 그룹이 이 차량에 탑승하도록 허용합니다</Korean>
                 <Italian>Permetti ad altri gruppi di salire su questo veicolo</Italian>
                 <Czech>Umožněte ostatním skupinám nasednout do tohoto vozidla</Czech>
@@ -3431,7 +3774,7 @@
                 <Original>Add Vehicle to Squad?</Original>
                 <French>Ajouter un véhicule à l'escouade ?</French>
                 <Chinesesimp>将载具分配给班组?</Chinesesimp>
-                <Russian>Добавить машину в отряд?</Russian>
+                <Russian>Добавить технику в отряд?</Russian>
                 <Korean>차량을 분대에 추가합니까?</Korean>
                 <Italian>Aggiungi Veicolo alla Squadra?</Italian>
                 <Czech>Přidat vozidlo do družstva?</Czech>
@@ -3510,7 +3853,7 @@
                 <Original>Force squad to mount or dismount their assigned vehicle</Original>
                 <French>Forcer l'escouade à monter ou descendre de son véhicule assigné</French>
                 <Chinesesimp>强制班组搭乘或离开他们分配的车辆</Chinesesimp>
-                <Russian>Заставить отряд сесть или слезть с назначенной машины</Russian>
+                <Russian>Заставить отряд сесть или слезть с назначенной техники</Russian>
                 <Korean>분대에 할당된 차량에 강제로 탑승하거나 하차시킵니다</Korean>
                 <Italian>Forza la squadra a montare o smontare dal loro veicolo assegnato</Italian>
                 <Czech>Přinutit družřstvo k nasednutí nebo sesednutí jejich přiřazeného vozidla</Czech>
@@ -3721,7 +4064,7 @@
                 <Original>Force squad to mount or dismount their assigned vehicle</Original>
                 <French>Forcer l'escouade à monter ou descendre de son véhicule assigné</French>
                 <Chinesesimp>强制班组搭乘或离开他们分配的车辆</Chinesesimp>
-                <Russian>Заставить отряд сесть или слезть с назначенной машины</Russian>
+                <Russian>Заставить отряд сесть или слезть с назначенной техники</Russian>
                 <Korean>분대에 할당된 차량에 강제로 탑승하거나 하차시킵니다</Korean>
                 <Italian>Forza la squadra a montare o smontare dal loro veicolo assegnato</Italian>
                 <Czech>Přinutit družřstvo k nasednutí nebo sesednutí jejich přiřazeného vozidla</Czech>
@@ -4746,6 +5089,7 @@
                 <Czech>d</Czech>
                 <Spanish>d</Spanish>
                 <Polish>d</Polish>
+                <French>d</French>
             </Key>
             <Key ID="STR_antistasi_timeSpan_hours_abbr">
                 <Original>h</Original>
@@ -4756,6 +5100,7 @@
                 <Czech>h</Czech>
                 <Spanish>h</Spanish>
                 <Polish>h</Polish>
+                <French>h</French>
             </Key>
             <Key ID="STR_antistasi_timeSpan_minutes_abbr">
                 <Original>m</Original>
@@ -4766,6 +5111,7 @@
                 <Czech>m</Czech>
                 <Spanish>m</Spanish>
                 <Polish>m</Polish>
+                <French>m</French>
             </Key>
             <Key ID="STR_antistasi_timeSpan_seconds_abbr">
                 <Original>s</Original>
@@ -4776,6 +5122,7 @@
                 <Czech>s</Czech>
                 <Spanish>s</Spanish>
                 <Polish>s</Polish>
+                <French>s</French>
             </Key>
             <Key ID="STR_antistasi_timeSpan_milliseconds_abbr">
                 <Original>ms</Original>
@@ -4786,6 +5133,7 @@
                 <Czech>ms</Czech>
                 <Spanish>ms</Spanish>
                 <Polish>ms</Polish>
+                <French>ms</French>
             </Key>
             <Key ID="STR_antistasi_timeSpan_microseconds_abbr">
                 <Original>µs</Original>
@@ -4798,6 +5146,7 @@
                 <Czech>µs</Czech>
                 <Spanish>µs</Spanish>
                 <Polish>µs</Polish>
+                <French>µs</French>
             </Key>
             <Key ID="STR_antistasi_timeSpan_nanoseconds_abbr">
                 <Original>ns</Original>
@@ -4808,6 +5157,7 @@
                 <Czech>ns</Czech>
                 <Spanish>ns</Spanish>
                 <Polish>ns</Polish>
+                <French>ns</French>
             </Key>
             <Key ID="STR_antistasi_timeSpan_now">
                 <Original>(Now)</Original>
@@ -4861,87 +5211,118 @@
                 <Russian>Соседние юниты были вылечены, восстановлены и теперь могут снова уходить в гражданскую маскировку.&lt;br/&gt;&lt;br/&gt;Техника рядом:%1</Russian>
                 <Chinesesimp>附近的单位已经得到治疗，精神焕发，可以再次使用伪装。&lt;br/&gt;&lt;br/&gt;附近重置的载具是：%1</Chinesesimp>
                 <Korean>인근 유닛이 치료되고 새로워졌으며, 다시 위장할 수 있습니다.&lt;br/&gt;&lt;br/&gt;인근 차량은:%1</Korean>
+                <French>Les unités proches ont été soignées, restaurées et peuvent à nouveau être infiltrées.&lt;br/&gt;&lt;br/&gt;Les véhicules proches sont:%1</French>
             </Key>
             <Key ID="STR_A3A_base_vehicleBoxRestore_noreported">
                 <Original>&lt;br/&gt; - no longer reported</Original>
                 <Russian>&lt;br/&gt; - более не разыскивается</Russian>
                 <Chinesesimp>&lt;br/&gt; - 不再被人发现</Chinesesimp>
                 <Korean>&lt;br/&gt; - 더 이상 신고되지 않습니다</Korean>
+                <French>&lt;br/&gt; - n'est plus signalé</French>
             </Key>
             <Key ID="STR_A3A_base_vehicleBoxRestore_rearmed">
                 <Original>&lt;br/&gt; - rearmed</Original>
                 <Russian>&lt;br/&gt; - перезаряжена</Russian>
                 <Chinesesimp>&lt;br/&gt; - 重新武装</Chinesesimp>
                 <Korean>&lt;br/&gt; - 재무장되었습니다</Korean>
+                <French>&lt;br/&gt; - réarmé</French>
             </Key>
             <Key ID="STR_A3A_base_vehicleBoxRestore_repaired">
                 <Original>&lt;br/&gt; - repaired</Original>
                 <Russian>&lt;br/&gt; - отремонтирована</Russian>
                 <Chinesesimp>&lt;br/&gt; - 修好了</Chinesesimp>
                 <Korean>&lt;br/&amp;&gt; - 수리되었습니다</Korean>
+                <French>&lt;br/&gt; - réparé</French>
             </Key>
             <Key ID="STR_A3A_base_vehicleBoxRestore_refueled">
                 <Original>&lt;br/&gt; - refueled</Original>
                 <Russian>&lt;br/&gt; - заправлена</Russian>
                 <Chinesesimp>&lt;br/&gt; - 加油</Chinesesimp>
                 <Korean>&lt;br/&gt; - 재급유되었습니다</Korean>
+                <French>&lt;br/&gt; - ravitaillé en carburant</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Last_Time_Purchase">
                 <Original>You already bought one, wait %1 seconds before you can buy another.</Original>
+                <Russian>Вы уже купили одну, подождите %1 секунд прежде чем купить ещё раз</Russian>
                 <Spanish>Ya has comprado una unidad, espera %1 segundos antes de poder comprar otra.</Spanish>
                 <Korean>이미 하나를 구입하였습니다. 다른 걸 구입하려면 %1초를 기다리십시오.</Korean>
+                <French>Vous en avez déjà acheté un, attendez %1 secondes avant de pouvoir en acheter un autre.</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Insufficient_Funds">
                 <Original>You can't afford this Item.</Original>
+                <Russian>Вы не можете позволить себе этот предмет</Russian>
                 <Spanish>No puedes pagar ese objeto.</Spanish>
                 <Korean>이 아이템을 구입할 자금이 부족합니다.</Korean>
+                <French>Vous ne pouvez pas vous permettre cet article.</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Purchase_Title">
                 <Original>Item Purchase</Original>
+                <Russian>Покупка предмета</Russian>
                 <Spanish>Compra de objeto</Spanish>
                 <Korean>아이템 구입</Korean>
+                <French>Achat d'objets</French>
             </Key>
             <Key ID="STR_A3A_Packable_Objects_Title">
                 <Original>Packing Objects</Original>
+                <Russian>Запаковать объект</Russian>
                 <Spanish>Objetos empacables</Spanish>
                 <Korean>오브젝트 포장</Korean>
+                <French>Emballage d'objets</French>
             </Key>
             <Key ID="STR_A3A_Packable_Objects_refunding_error">
                 <Original>refunding money due to error</Original>
+                <Russian>Возврат денег из-за ошибки</Russian>
                 <Spanish>Devolviendo el dinero a causa de un error.</Spanish>
                 <Korean>오류로 인해 환불됨</Korean>
+                <French>remboursement des sommes versées en raison d'une erreur</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Name_lootbox">
                 <Original>Loot Box</Original>
+                <Russian>Ящик для сбора лута</Russian>
                 <Korean>전리품 상자</Korean>
+                <French>Boîte de butin</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Name_fueldrum">
                 <Original>Fuel Drum</Original>
+                <Russian>Бочка с топливом</Russian>
                 <Korean>연료통 (드럼통)</Korean>
+                <French>Bidon de carburant</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Name_fueltank">
                 <Original>Fuel Tank</Original>
+                <Russian>Топливное хранилище</Russian>
                 <Korean>연료통 (연료탱크)</Korean>
+                <French>Réservoir de carburant</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Name_medicaltent">
                 <Original>Medical Tent</Original>
+                <Russian>Медицинская палатка</Russian>
                 <Korean>의료텐트</Korean>
+                <French>Tente médicale</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Name_medicalbox">
                 <Original>Medical Box</Original>
+                <Russian>Медицинский ящик</Russian>
                 <Korean>의료 상자</Korean>
+                <French>Boîte médicale</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Name_ammostation">
                 <Original>Ammo Station</Original>
+                <Russian>Станция перевооружения</Russian>
                 <Korean>탄약고</Korean>
+                <French>Station de munitions</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Name_repairstation">
                 <Original>Repair Station</Original>
+                <Russian>Ремонтная станция</Russian>
                 <Korean>수리소</Korean>
+                <French>Station de réparation</French>
             </Key>
             <Key ID="STR_A3A_Utility_Items_Name_light">
                 <Original>Light</Original>
+                <Russian>Фонарь</Russian>
                 <Korean>조명</Korean>
+                <French>Lumière</French>
             </Key>
         </Container>
         <Container name="server_info">
@@ -4980,23 +5361,31 @@
             </Key>
             <Key ID="STR_A3A_feedback_serverinfo_waitserver">
                 <Original>Waiting for server...</Original>
+                <Russian>Ожидаем сервер...</Russian>
                 <Chinesesimp>等待服务器…</Chinesesimp>
                 <Korean>서버 기다리는 중...</Korean>
+                <French>En attente du serveur...</French>
             </Key>
             <Key ID="STR_A3A_feedback_serverinfo_adminwait">
                 <Original>Waiting for an admin to log in...</Original>
+                <Russian>Ждём пока зайдёт администратор...</Russian>
                 <Chinesesimp>等待管理员登录…</Chinesesimp>
                 <Korean>관리자가 로그인하길 기다리는 중...</Korean>
+                <French>En attendant qu'un administrateur se connecte...</French>
             </Key>
             <Key ID="STR_A3A_feedback_serverinfo_autostartwait">
                 <Original>Waiting for an admin to log in, or autostart timeout...</Original>
+                <Russian>Ждём пока зайдёт администратор, или произойдёт автостарт</Russian>
                 <Chinesesimp>等待管理员登录或自动启动超时…</Chinesesimp>
                 <Korean>관리자가 로그인하거나 자동 시작 시간 초과를 기다리는 중...</Korean>
+                <French>Attente de la connexion d'un administrateur, ou dépassement du délai de démarrage automatique...</French>
             </Key>
             <Key ID="STR_A3A_feedback_serverinfo_adminsetup">
                 <Original>Admin is setting up the game.</Original>
+                <Russian>Администратор настраивает игру</Russian>
                 <Chinesesimp>管理员正在设置游戏。</Chinesesimp>
                 <Korean>관리자가 게임을 설정 중입니다.</Korean>
+                <French>L'administrateur met en place le jeu.</French>
             </Key>
             <Key ID="STR_A3A_feedback_serverinfo_background">
                 <Original>Waiting for background init to complete...</Original>
@@ -5013,6 +5402,7 @@
                 <Original>Version mismatch error:&lt;br/&gt;&lt;br/&gt;Server: %1&lt;br/&gt;Client: %2</Original>
                 <Russian>Ошибка, несовпадение версий:&lt;br/&gt;&lt;br/&gt;Сервер: %1&lt;br/&gt;Клиент: %2</Russian>
                 <Korean>버전 불일치 오류:&lt;br/&gt;&lt;br/&gt;서버: %1&lt;br/&gt;클라이언트: %2</Korean>
+                <French>Erreur de compatibilité de version:&lt;br/&gt;&lt;br/&gt;Serveur : %1&lt;br/&gt;Client : %2</French>
             </Key>
         </Container>
         <Container name="A3A_actions">
@@ -5022,28 +5412,37 @@
                 <Russian>Восстановить союзников поблизости</Russian>
                 <Chinesesimp>恢复附近单位</Chinesesimp>
                 <Korean>인근 유닛 회복</Korean>
+                <French>Restaurer les unités proches</French>
             </Key>
         </Container>
         <Container name="mission_check">
             <Key ID="STR_A3A_missioncheck_nonmodmission_title">
                 <Original>Deprecated Mission</Original>
+                <Russian>Неподдерживаемая миссия</Russian>
                 <Chinesesimp>已弃用的任务</Chinesesimp>
                 <Korean>사용되지 않는 임무</Korean>
+                <French>Mission obsolète</French>
             </Key>
             <Key ID="STR_A3A_missioncheck_nonmodmission">
                 <Original>An incompatible pre-mod Antistasi mission has been started. To play this mission, unload the Antistasi mod. If you intended to load a mission from the Antistasi mod, select the correct mission.</Original>
+                <Russian>Запущена несовместимая с предыдущим модом миссия Antistasi. Чтобы играть в эту миссию, выгрузите мод Antistasi. Если вы намеревались загрузить миссию из мода Antistasi, выберите правильную миссию.</Russian>
                 <Chinesesimp>一个不兼容的 pre-mod Antistasi 任务已经开始。 要执行此任务，请卸载 Antistasi 模组。 如果您打算从 Antistasi 模组加载任务，请选择正确的任务。</Chinesesimp>
                 <Korean>호환되지 않는 사전 모드로 안티스타시 임무가 시작되었습니다. 이 임무를 수행하려면 안티스타시 모드를 언로드하십시오. 안티스타시 모드에서 임무를 로드하려는 경우 올바른 임무를 선택하십시오.</Korean>
+                <French>Une mission pré-mod Antistasi incompatible a été lancée. Pour jouer cette mission, déchargez le mod Antistasi. Si vous aviez l'intention de charger une mission du mod Antistasi, sélectionnez la bonne mission.</French>
             </Key>
             <Key ID="STR_A3A_missioncheck_oldmission_title">
                 <Original>Outdated Mission</Original>
+                <Russian>Устаревшая миссия</Russian>
                 <Chinesesimp>过时的任务</Chinesesimp>
                 <Korean>구식 임무</Korean>
+                <French>Mission obsolète</French>
             </Key>
             <Key ID="STR_A3A_missioncheck_oldmission">
                 <Original>"This mission is outdated and could lack important map details that may break your game. Inform your mission maker or update the extension to the latest version."</Original>
+                <Russian>Эта миссия устарела, и в ней могут отсутствовать важные детали карты, что может нарушить работу вашей игры. Сообщите об этом создателю миссии или обновите расширение до последней версии.</Russian>
                 <Chinesesimp>“这个任务已经过时，可能缺少重要的地图细节，可能会破坏你的游戏。通知你的任务制定者或将扩展更新到最新版本。”</Chinesesimp>
                 <Korean>"이 임무는 구식이며 게임을 망칠 수 있는 중요한 지도의 세부 정보가 부족할 수 있습니다. 미션메이커에게 알리거나 확장 버전을 최신 버전으로 업데이트하십시오."</Korean>
+                <French>"Cette mission est obsolète et pourrait manquer de détails importants sur la carte, ce qui pourrait perturber votre jeu. Informez le créateur de la mission ou mettez à jour l'extension avec la dernière version."</French>
             </Key>
         </Container>
         <Container name="A3A_garrisons">
@@ -5052,132 +5451,154 @@
                 <Russian>Гарнизон</Russian>
                 <Chinesesimp>驻军</Chinesesimp>
                 <Korean>주둔지</Korean>
+                <French>Garrison</French>
             </Key>
             <Key ID="STR_A3A_garrisons_header">
                 <Original>Garrisons</Original>
                 <Russian>Гарнизоны</Russian>
                 <Chinesesimp>驻军们</Chinesesimp>
                 <Korean>주둔지</Korean>
+                <French>Garnisons</French>
             </Key>
             <Key ID="STR_A3A_garrison_full_limit">
                 <Original>This garrison is full, choose another zone to add this HC squad into it's garrison.</Original>
                 <Russian>Этот гарнизон полон, выберите другую локацию для того чтобы добавить этот отряд в гарнизон.</Russian>
                 <Chinesesimp>这个驻军已经满了，选择另一个区域的驻军，将这个总部小队加入到它的驻军中。</Chinesesimp>
                 <Korean>이 주둔지는 꽉 찼으며, 해당 하이 커맨드 분대를 추가할 다른 구역을 선택하십시오.</Korean>
+                <French>Cette garnison est pleine, choisissez une autre zone pour ajouter cette escouade HC à sa garnison.</French>
             </Key>
             <Key ID="STR_A3A_garrison_exceed_limit">
                 <Original>Adding this squad to garrison will exceed garrison limit. Some part of them will join garrison, the rest will be dismissed and their cost will be refunded.</Original>
                 <Russian>Добавление этого отряда в гарнизон превысит лимит гарнизона. Какая-то их часть присоединится к гарнизону, оставшиеся будут распущены, а их стоимость будет возмещена.</Russian>
                 <Chinesesimp>将这个小队加入驻军将会超出驻军限制。他们中的一部分人将加入驻军，其余的人将被遣散，他们的费用将被退还。</Chinesesimp>
                 <Korean>해당 분대를 주둔지에 추가하면 주둔 제한을 초과할 것입니다. 그들 중 일부는 주둔지에 합류할 것이고, 내머지는 해산되어 비용을 환불받을 것입니다.</Korean>
+                <French>L'ajout de cette escouade à la garnison dépassera la limite de la garnison. Une partie d'entre eux rejoindra la garnison, le reste sera renvoyé et leur coût sera remboursé.</French>
             </Key>
             <Key ID="STR_A3A_garrison_reached_limit">
                 <Original>Garrison limit has reached, you can't add new units anymore.</Original>
                 <Russian>Достигнут лимит гарнизона, вы больше не можете добавлять в него новые юниты.</Russian>
                 <Chinesesimp>驻军限制已达，你不能再增加新的单位。</Chinesesimp>
                 <Korean>주둔지가 제한에 도달했으며, 더 이상 새 유닛을 추가할 수 없습니다.</Korean>
+                <French>La limite de garnison a été atteinte, vous ne pouvez plus ajouter de nouvelles unités.</French>
             </Key>
             <Key ID="STR_A3A_garrison_select_zone">
                 <Original>Select the zone on where you will send the selected troops as garrison.</Original>
                 <Russian>Выберите зону, куда вы отправите выбранные войска в качестве гарнизона.</Russian>
                 <Chinesesimp>选择一个区域，把选定的部队变为驻军。</Chinesesimp>
                 <Korean>선택한 대원을 주둔군으로 보낼 구역을 선택하십시오.</Korean>
+                <French>Sélectionnez la zone dans laquelle vous enverrez les troupes sélectionnées en garnison.</French>
             </Key>
             <Key ID="STR_A3A_garrison_fail_not_markerzone">
                 <Original>You must select at any %1 zone with marker.</Original>
                 <Russian>Вы должны выбрать любую зону %1 с маркером.</Russian>
                 <Chinesesimp>您必须在任何带有标记的 %1 区域选择</Chinesesimp>
                 <Korean>마커가 있는 %1 영역을 선택해야 합니다.</Korean>
+                <French>Vous devez sélectionner n'importe quelle zone %1 avec un marqueur.</French>
             </Key>
             <Key ID="STR_A3A_garrison_fail_not_teamplayer">
                 <Original>Selected zone does not belong to %1.</Original>
                 <Russian>Выбранная зона не принадлежит %1.</Russian>
                 <Chinesesimp>所选区域不属于 %1 。</Chinesesimp>
                 <Korean>선택한 영역은 %1 소속이 아닙니다.</Korean>
+                <French>La zone sélectionnée n'appartient pas à %1.</French>
             </Key>
             <Key ID="STR_A3A_garrison_fail_wrong_type">
                 <Original>You can't manage garrisons on this kind of zone.</Original>
                 <Russian>Вы не можете управлять гарнизонами у зоны этого типа.</Russian>
                 <Chinesesimp>这区域是不能管理驻军的。</Chinesesimp>
                 <Korean>이런 구역에서는 주둔군을 관리할 수 없습니다.</Korean>
+                <French>Il n'est pas possible de gérer des garnisons dans ce type de zone.</French>
             </Key>
             <Key ID="STR_A3A_garrison_fail_already_in_garrison">
                 <Original>Selected units are already in garrison.</Original>
                 <Russian>Выбранные юниты уже в гарнизоне.</Russian>
                 <Chinesesimp>选定的单位已经在驻军。</Chinesesimp>
                 <Korean>선택한 유닛이 이미 주둔지에 있습니다.</Korean>
+                <French>Les unités sélectionnées sont déjà en garnison.</French>
             </Key>
             <Key ID="STR_A3A_garrison_fail_no_specific_squads">
                 <Original>You can't add units to player led, Watchpost, Roadblocks or Minefield building squads.</Original>
                 <Russian>Вы не можете добавлять юниты в ведомые игроком отряды, сторожевые посты, блокпосты и отряды строителей минных полей.</Russian>
                 <Chinesesimp>您不能将单位添加到玩家主导的小队、观察哨、路障或雷区建造小队。</Chinesesimp>
                 <Korean>플레이어 주도, 감시초소, 검문소 또는 지뢰지대 건설 분대는 추가할 수 없습니다.</Korean>
+                <French>Vous ne pouvez pas ajouter d'unités aux escouades des postes de guet, des barrages routiers ou des champs de mines dirigés par les joueurs.</French>
             </Key>
             <Key ID="STR_A3A_garrison_fail_dead_units">
                 <Original>Dead or player-controlled units can't be added to garrison.</Original>
                 <Russian>Мертвые или контролируемые игроком юниты не могут быть добавлены в гарнизон.</Russian>
                 <Chinesesimp>死亡或玩家控制的单位不能添加到驻军。</Chinesesimp>
                 <Korean>사망하거나 플레이어가 조종하는 유닛은 주둔지에 추가할 수 없습니다.</Korean>
+                <French>Les unités mortes ou contrôlées par le joueur ne peuvent pas être ajoutées à la garnison.</French>
             </Key>
             <Key ID="STR_A3A_garrison_fail_no_specific_units">
                 <Original>Static crewmen, prisoners, refugees, Petros or unknown units cannot be added to garrison.</Original>
                 <Russian>Расчёты стационарных орудий, пленные, беженцы, Петрос или неизвестные юниты не могут быть добавлены в гарнизон.</Russian>
                 <Chinesesimp>不动的机组成员、囚犯、难民、Petros或未知单位不能加入驻军。</Chinesesimp>
                 <Korean>고정화기 사수, 죄수, 난민, 백두로 또는 알려지지 않은 유닛은 주둔지에 추가할 수 없습니다.</Korean>
+                <French>Les membres d'équipage, les prisonniers, les réfugiés, Petros ou les unités inconnues ne peuvent pas être ajoutés à la garnison.</French>
             </Key>
             <Key ID="STR_A3A_garrison_adding_to_garrison">
                 <Original>Adding units to garrison...</Original>
                 <Russian>Добавление юнитов в гарнизон...</Russian>
                 <Chinesesimp>正在增设部队驻军...</Chinesesimp>
                 <Korean>유닛을 주둔지에 추가 중..</Korean>
+                <French>Ajouter des unités à la garnison...</French>
             </Key>
             <Key ID="STR_A3A_garrison_adding_to_garrison_hc">
                 <Original>Adding %1 squad to garrison...</Original>
                 <Russian>Добавление отряда %1 в гарнизон...</Russian>
                 <Chinesesimp>正在将 %1 小队添加到驻军...</Chinesesimp>
                 <Korean>%1 분대를 주둔지에 추가 중...</Korean>
+                <French>Ajout de l'escouade %1 à la garnison...</French>
             </Key>
             <Key ID="STR_A3A_garrison_fail_zone_lost">
                 <Original>%1 group is back to HC control because the zone which was pointed to garrison has been lost.</Original>
                 <Russian>Группа %1 вернулась под контроль HC, т.к. зона, указанная для гарнизона, утрачена.</Russian>
                 <Chinesesimp>%1 小队返回 总部 ，因为指向驻军的区域已经丢失。</Chinesesimp>
                 <Korean>%1 그룹은 주둔지로 지목된 구역을 잃었기 때문에 하이 커맨드 통제로 되돌아갔습니다.</Korean>
+                <French>Le groupe %1 est revenu sous le contrôle de HC car la zone qui était pointée vers la garnison a été perdue.</French>
             </Key>
             <Key ID="STR_A3A_garrison_error_no_hr">
                 <Original>You lack HR to recruit units.</Original>
                 <Russian>Вам не хватает HR, чтобы добавить новый юнит в гарнизон.</Russian>
                 <Korean>유닛을 모집할 인력이 부족합니다.</Korean>
                 <Spanish>Te falta HR para reclutar unidades.</Spanish>
+                <French>Vous manquez de RH pour recruter des unités.</French>
             </Key>
             <Key ID="STR_A3A_garrison_error_no_money">
                 <Original>You don't have enough money for adding this kind of unit (%1€ needed).</Original>
                 <Russian>У вас недостаточно денег для добавления такого юнита (необходимо %1€).</Russian>
                 <Korean>이런 종류의 유닛을 추가할 충분한 비용이 없습니다 (%1€ 필요).</Korean>
                 <Spanish>No tienes suficiente dinero para añadir este tipo de unidad (Necesitas %1€).</Spanish>
+                <French>Vous n'avez pas assez d'argent pour ajouter ce type d'unité (%1€ nécessaire).</French>
             </Key>
             <Key ID="STR_A3A_garrison_recruit_success">
                 <Original>Unit has been recruited.%1</Original>
                 <Russian>Юнит нанят в гарнизон.%1</Russian>
                 <Korean>다음 유닛을 모집했습니다: %1</Korean>
                 <Spanish>La unidad ha sido reclutada.%1</Spanish>
+                <French>L'unité a été recrutée.%1</French>
             </Key>
             <Key ID="STR_A3A_garrison_error_enemies_near">
                 <Original>You can't recruit units into garrison when enemies are near the zone.</Original>
                 <Russian>Вы не можете набирать юниты в гарнизон, когда враги находятся рядом с зоной.</Russian>
                 <Korean>적들이 근처에 있을 때는 주둔지에 유닛을 모집할 수 없습니다.</Korean>
                 <Spanish>No puedes reclutar unidades en guarniciones cuando los enemigos se encuentran cerca de la zona.</Spanish>
+                <French>Vous ne pouvez pas recruter d'unités en garnison lorsque des ennemis se trouvent à proximité de la zone.</French>
             </Key>
             <Key ID="STR_A3A_garrison_error_still_updating">
                 <Original>This garrison is still updating, please try again in a few seconds.</Original>
                 <Russian>Этот гарнизон все еще обновляется, повторите попытку через несколько секунд.</Russian>
                 <Korean>이 주둔지는 아직 업데이트 중이니 몇 초 후에 다시 시도하십시오.</Korean>
                 <Spanish>La guarnición se está actualizando, por favor inténtalo en unos segundos.</Spanish>
+                <French>Cette garnison est en cours de mise à jour, veuillez réessayer dans quelques secondes.</French>
             </Key>
             <Key ID="STR_A3A_garrison_error_no_mortar">
                 <Original>You can't add mortars to Roadblock or Watchpost garrisons.</Original>
                 <Russian>Вы не можете добавлять минометы в гарнизоны блокпостов и сторожевых постов.</Russian>
                 <Korean>검문소나 감시초소에는 박격포를 추가할 수 없습니다.</Korean>
                 <Spanish>No puedes añadir morteros a las guarniciones de Control de carretera o Puesto de boservación.</Spanish>
+                <French>Vous ne pouvez pas ajouter de mortiers aux garnisons, aux barrages routiers ou aux postes de garde.</French>
             </Key>
         </Container>
         <Container name="A3AP_items">
@@ -5186,17 +5607,20 @@
                 <Russian>Набор восстановления боеспособности</Russian>
                 <Chinesesimp>战备恢复包</Chinesesimp>
                 <Korean>전투 준비 복구 키트</Korean>
+                <French>Kit de récupération d'aptitude au combat</French>
             </Key>
             <Key ID="STR_A3AP_items_crrk_desc">
                 <Original>Allows owner of such kit to treat incapacitated soldiers for emergency recovery of their combat capabilities right on the battlefield. Could be self-applied. One-time use.</Original>
                 <Russian>Позволяет владельцу такого комплекта лечить выведенных из строя солдат для экстренного восстановления их боеспособности прямо на поле боя. Может быть применён на самом себе. Одноразовое использование.</Russian>
                 <Chinesesimp>让拥有此类装备的拥有者可以在战场上治疗丧失行动能力的士兵，以紧急恢复他们的战斗能力。 可以自己使用。 一次性使用。</Chinesesimp>
                 <Korean>해당 키트의 소유자는 전장에서 전투 능력의 긴급 복구를 위해 무능력해진 병사를 치료할 수 있습니다. 자신에게도 적용됩니다. 일회용입니다.</Korean>
+                <French>Permet au propriétaire de ce kit de traiter les soldats incapables de se défendre afin de rétablir d'urgence leurs capacités de combat sur le champ de bataille. Peut être appliqué soi-même. Usage unique.</French>
             </Key>
         </Container>
         <Container name="A3A_selfRevive">
             <Key ID="STR_A3A_Params_selfReviveMethods_title">
                 <Original>Self-revive methods enabled</Original>
+                <Russian>Способы самовозрождения активированны</Russian>
                 <Italian>Metodi di auto-rianimazione abilitati</Italian>
                 <French>Méthodes d'auto-réanimation activées</French>
                 <Korean>자가소생 활성화</Korean>
@@ -5204,12 +5628,14 @@
             </Key>
             <Key ID="STR_A3A_Params_selfReviveMethods_withstand">
                 <Original>Withstand</Original>
+                <Russian>Выдержка</Russian>
                 <French>Résister</French>
                 <Korean>저항</Korean>
                 <Chinesesimp>抗</Chinesesimp>
             </Key>
             <Key ID="STR_A3A_selfRevive_noFAK">
                 <Original>You don't have a first aid kit for self-revive.</Original>
+                <Russian>У вас нет аптечки для востановления боеспособности.</Russian>
                 <Italian>Non hai un kit di primo soccorso per rianimarti.</Italian>
                 <Spanish>No tienes un kit de primeros auxilios para auto revivirte.</Spanish>
                 <French>Vous n'avez pas de kit de premiers secours pour vous réanimer.</French>
@@ -5219,6 +5645,7 @@
             </Key>
             <Key ID="STR_A3A_selfRevive_recent">
                 <Original>You have already revived yourself recently.</Original>
+                <Russian>Вы уже возрождали себя недавно.</Russian>
                 <Italian>Ti sei già rianimato di recente.</Italian>
                 <Spanish>Ya te has revivido recientemente.</Spanish>
                 <French>Vous vous êtes déjà réanimé vous-même récemment.</French>
@@ -5228,6 +5655,7 @@
             </Key>
             <Key ID="STR_A3A_selfRevive_success">
                 <Original>You shake off the injury, but you're not feeling great.</Original>
+                <Russian>Вы оправился от травмы, но чувствуете себя неважно.</Russian>
                 <Italian>Incassi la ferita ma comunque non ti senti bene.</Italian>
                 <Spanish>Te recuperas de la lesión, pero no te sientes muy bien.</Spanish>
                 <French>Vous vous remettez de la blessure, mais ne vous sentez pas très bien.</French>
@@ -5237,6 +5665,7 @@
             </Key>
             <Key ID="STR_A3A_selfRevive_timeout">
                 <Original>You are feeling much better.</Original>
+                <Russian>Вы чувствуете себя намного лучше.</Russian>
                 <Italian>Ti senti molto meglio.</Italian>
                 <Spanish>Te sientes mucho mejor.</Spanish>
                 <French>Vous vous sentez beaucoup mieux.</French>
@@ -5246,6 +5675,7 @@
             </Key>
             <Key ID="STR_A3A_selfRevive_title">
                 <Original>Self Revive</Original>
+                <Russian>Самовосстановление.</Russian>
                 <Italian>Auto Rianimazione</Italian>
                 <Spanish>Auto revivir</Spanish>
                 <French>Se Réanimer</French>
@@ -5260,12 +5690,14 @@
                 <Russian>&lt;br/&gt;&lt;t size='0.8' color='#e5b348' shadow='1' shadowColor='#000000' valign='top'&gt;%1 предыдущих подсказок&lt;br/&gt;Назначить клавишу закрытия подсказок: &lt;t color='#f0d498'&gt;Меню паузы&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;НАСТРОЙКА&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;УПРАВЛЕНИЕ&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;ФИЛЬТР: Antistasi Ultimate&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;Закрыть предыдущую подсказку&lt;/t&gt;&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;t size='0.8' color='#e5b348' shadow='1' shadowColor='#000000' valign='top'&gt;%1 之前的提示&lt;br/&gt;通过以下设置的关闭键：&lt;t color='#f0d498'&gt;退出菜单&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;配置&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;控件&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;显示: Antistasi Ultimate&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;忽略先前的提示&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;t size='0.8' color='#e5b348' shadow='1' shadowColor='#000000' valign='top'&gt;%1의 이전 힌트&lt;br/&gt;해제 키를 설정하려면: &lt;t color='#f0d498'&gt;ESC 메뉴&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;설정&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;조작&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;표시: 안티스타시 플러스&lt;/t&gt; &gt; &lt;t color='#f0d498'&gt;이전 힌트 해제&lt;/t&gt;&lt;/t&gt;</Korean>
+                <French>&lt;br/&gt;&lt;t size='0. 8' color='#e5b348' shadow='1' shadowColor='#000000' valign='top'&gt;%1 Conseils précédents&lt;br/&gt;Désignez la touche de fermeture des cues : &lt;t colour='#f0d498'&gt;Menu Pause&lt;/t&gt; &gt; &lt;t colour='#f0d498'&gt;CONFIGURER&lt;/t&gt; &gt; &lt;t colour='#f0d498'&gt;COMMANDES&lt;/t&gt; &gt; &lt;t colour='#f0d498'&gt;AFFICH : Antistasi Ultimate&lt;/t&gt; &gt; &lt;t colour='#f0d498'&gt;Fermer l'infobulle précédente&lt;/t&gt;&lt;/t&gt;.</French>
             </Key>
             <Key ID="STR_A3A_customHint_dismiss">
                 <Original>&lt;br/&gt;&lt;t size='0.8' color='#%1' shadow='1' shadowColor='#%2' valign='top'&gt;Press &lt;t color='#%3'&gt;%4&lt;/t&gt; to dismiss hint. +%5&lt;/t&gt;</Original>
                 <Russian>&lt;br/&gt;&lt;t size='0.8' color='#%1' shadow='1' shadowColor='#%2' valign='top'&gt;Нажмите &lt;t color='#%3'&gt;%4&lt;/t&gt; чтобы закрыть подсказку. +%5&lt;/t&gt;</Russian>
                 <Chinesesimp>&lt;br/&gt;&lt;t size='0.8' color='#%1' shadow='1' shadowColor='#%2' valign='top'&gt;按 &lt;t color='#%3'&gt;%4&lt;/t&gt; 解除提示。 +%5&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;br/&gt;&lt;t size='0.8' color='#%1' shadow='1' shadowColor='#%2' valign='top'&gt;힌트를 해제하려면 &lt;t color='#%3'&gt;%4+%5&lt;/t&gt; 키를 누르십시오.&lt;/t&gt;</Korean>
+                <French>&lt;br/&gt;&lt;t size='0.8' color='#%1' shadow='1' shadowColor='#%2' valign='top'&gt;Appuyez sur &lt;t color='#%3'&gt;%4&lt;/t&gt; pour supprimer l'indice . +%5&lt;/t&gt;</French>
             </Key>
         </Container>
         <Container name="A3A_GCTracker">
@@ -5274,18 +5706,21 @@
                 <Russian>Трекер сборщика мусора</Russian>
                 <Korean>쓰레기 청소 기록 프로그램</Korean>
                 <Spanish>Seguimiento del Limpiador de Basura</Spanish>
+                <French>Traceur de collecteurs d'ordures</French>
             </Key>
             <Key ID="STR_A3A_GCTracker_tracker_notification">
                 <Original>Last Garbage Clean was %1 ago. Keep track of it.</Original>
                 <Russian>Последняя очистка мусора была произведена %1 назад. Следите за ней.</Russian>
                 <Korean>마지막 쓰레기 청소는 %1 전에 실행되었습니다. 계속 기록합니다.</Korean>
                 <Spanish>La ultima Limpieza de Basura fue hace %1. Mantenlo supervisado.</Spanish>
+                <French>Le dernier nettoyage des ordures a eu lieu il y a %1. Gardez-en la trace.</French>
             </Key>
             <Key ID="STR_A3A_GCTracker_tracker_ran_gc">
                 <Original>Garbage Cleaner Tracker run a garbage clean because the time passed the threshold. Keep track of GC times.</Original>
                 <Russian>Трекер сборщика мусора запустил очистку мусора так как время превысило порог. Следите за порогом сборки мусора.</Russian>
                 <Korean>쓰레기 청소 기록 프로그램이 임계값을 초과하여 쓰레기를 청소합니다. 쓰레기 청소 시간을 계속 기록합니다.</Korean>
                 <Spanish>El Seguimiento del Limpiador de Basura llevó a cabo una limpieza porque el umbral de tiempo fue superado. Mantén supervisado el Limpiador de Basura.</Spanish>
+                <French>Le dernier nettoyage des ordures a eu lieu il y a %1. Gardez-en la trace.</French>
             </Key>
         </Container>
         <Container name="A3AU_SetupParams">
@@ -5294,64 +5729,82 @@
                 <English>ANTISTASI ULTIMATE PARAMETERS</English>
                 <Russian>ПАРАМЕТРЫ ANTISTASI ULTIMATE</Russian>
                 <Korean>안티스타시 얼티밋 매개변수</Korean>
+                <French>PARAMÈTRES D'ANTISTASI ULTIMATE</French>
             </Key>
             <Key ID="STR_A3AU_cosmetics">
                 <Original>Enable Cosmetics</Original>
                 <English>Enable Cosmetics</English>
                 <Russian>Добавить косметические предметы</Russian>
                 <Korean>설계도 활성화</Korean>
+                <French>Activer les cosmétiques</French>
             </Key>
             <Key ID="STR_A3AU_uncap_zombie_spawn">
                 <Original>Enable Uncapped Zombie Spawning</Original>
                 <English>Enable Uncapped Zombie Spawning</English>
                 <Russian>Включить неограниченный спавн зомби</Russian>
                 <Korean>무제한 좀비 스폰 활성화</Korean>
+                <French>Activer la création de zombies non plafonnés</French>
             </Key>
             <Key ID="STR_A3AU_old_garrison_spawn">
                 <Original>Use Old Plus Garrison Spawning</Original>
                 <English>Use Old Plus Garrison Spawning</English>
                 <Russian>Использовать старую логику спавна гарнизонов из Plus</Russian>
                 <Korean>기존 안티스타시 플러스 주둔지 스폰 사용</Korean>
+                <French>Utiliser la garnison Old Plus</French>
             </Key>
             <Key ID="STR_A3AU_vanilla_weapons_in_arms_dealer">
                 <Original>Include Vanilla Weapons In Arms Dealer</Original>
                 <English>Include Vanilla Weapons In Arms Dealer</English>
                 <Russian>Добавить ванильное оружие в ассортимент торговца оружием</Russian>
                 <Korean>암거래상에 바닐라 무기 포함</Korean>
+                <French>Inclure les armes Vanilla dans les contrats de vente d'armes</French>
             </Key>
             <Key ID="STR_A3AU_radioman_support">
                 <Original>Support Caller</Original>
                 <English>Support Caller</English>
                 <Russian>Вызывающий поддержку</Russian>
                 <Korean>지원 요청자</Korean>
+                <French>Appel de soutien</French>
             </Key>
             <Key ID="STR_A3AU_hide_enemy_markers">
                 <Original>Hide Enemy Zone Markers</Original>
                 <English>Hide Enemy Zone Markers</English>
                 <Russian>Спрятать маркеры вражеских баз</Russian>
+                <French>Cacher les marqueurs ennemis</French>
+                <Korean>적 구역 마커 숨기기</Korean>
             </Key>
             <Key ID="STR_A3AU_hide_enemy_markers_recon_plane_distance">
                 <Original>Recon Plane Zone Reveal Distance</Original>
                 <English>Recon Plane Zone Reveal Distance</English>
                 <Russian>Дистанция открытыя маркеров самолётом разведки</Russian>
+                <French>Zone révélée par les avions de reconnaissance.</French>
+                <Korean>정찰기의 정찰 거리</Korean>
+            </Key>
+            <Key ID="STR_A3AU_total_victory">
+                <Original>Enable Total Victory Conditions</Original>
+                <English>Enable Total Victory Conditions</English>
+                <Russian>Включить условия тотальной победы</Russian>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>
                 <English>Enable Stamina (Vanilla)</English>
                 <Russian>Включить выносливость (Vanilla)</Russian>
                 <Korean>스태미나 활성화 (바닐라)</Korean>
+                <French>Activer l'endurance (Vanilla)</French>
             </Key>
             <Key ID="STR_A3AU_fatigue_enabled">
                 <Original>Enable Fatigue (Vanilla)</Original>
                 <English>Enable Fatigue (Vanilla)</English>
                 <Russian>Включить усталость (Vanilla)</Russian>
                 <Korean>피로도 활성화 (바닐라)</Korean>
+                <French>Activer la fatigue (Vanilla)</French>
             </Key>
             <Key ID="STR_A3AU_sway_enabled">
                 <Original>Enable Sway (Vanilla)</Original>
                 <English>Enable Sway (Vanilla)</English>
                 <Russian>Включить раскачку оружия (Vanilla)</Russian>
                 <Korean>무기 흔들림 활성화 (바닐라)</Korean>
+                <French>Activer l'oscillation (Vanilla)</French>
             </Key>
         </Container>
     </Package>

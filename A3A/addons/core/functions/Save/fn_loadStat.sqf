@@ -129,8 +129,26 @@ if (_varName in specialVarLoads) then {
             // Avoid persisting potentially-broken fog values
             private _fogParams = _varValue select 0;
             0 setFog [_fogParams#0, (_fogParams#1) max 0, (_fogParams#2) max 0];
-            0 setRain (_varValue select 1);
-            forceWeatherChange;
+            0 setOvercast (_varValue select 1);
+
+            // Ensure compatibility with < v10.7.0
+            if(count _varValue == 12) then {
+                0 setGusts (_varValue select 2);
+                setHumidity (_varValue select 3);
+                0 setLightnings (_varValue select 4);
+                0 setRain (_varValue select 5);
+                private _rainParams = _varValue select 6;
+                0 setRainbow (_varValue select 7);
+                0 setWaves (_varValue select 8);
+                private _windParams = _varValue select 9;
+                setWind [_windParams#0, _windParams#1, _windParams#2];
+                0 setWindDir (_varValue select 10);
+                0 setWindStr (_varValue select 11);
+                forceWeatherChange;
+                _rainParams call BIS_fnc_setRain;
+            } else {
+                forceWeatherChange;
+            };
         };
 
         case 'resourcesFIA': {

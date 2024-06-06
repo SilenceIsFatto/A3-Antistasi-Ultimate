@@ -47,7 +47,7 @@ if (isNil {_display getVariable "isContentInitialized"}) then {
     private _checkCtrls = [];
     {
         private _textCtrl = _display ctrlCreate ["A3A_Text_Small", -1, _addonTable];
-        _textCtrl ctrlSetPosition [GRID_W*4, count _checkCtrls*GRID_H*4, GRID_W*28, GRID_H*4];
+        _textCtrl ctrlSetPosition [GRID_W*4, count _checkCtrls*GRID_H*4, GRID_W*40, GRID_H*4];
         _textCtrl ctrlCommit 0;
         if !(_x call _fnc_factionLoaded) then { _textCtrl ctrlSetTextColor A3A_COLOR_TEXT_DARKER_SQF };
         _textCtrl ctrlSetText getText (_x/"displayName");
@@ -70,7 +70,7 @@ if (isNil {_display getVariable "isContentInitialized"}) then {
     _checkCtrls = [];
     {
         private _textCtrl = _display ctrlCreate ["A3A_Text_Small", -1, _dlcTable];
-        _textCtrl ctrlSetPosition [GRID_W*4, count _checkCtrls*GRID_H*4, GRID_W*28, GRID_H*4];
+        _textCtrl ctrlSetPosition [GRID_W*4, count _checkCtrls*GRID_H*4, GRID_W*40, GRID_H*4];
         _textCtrl ctrlCommit 0;
         _textCtrl ctrlSetText _x#0;
 

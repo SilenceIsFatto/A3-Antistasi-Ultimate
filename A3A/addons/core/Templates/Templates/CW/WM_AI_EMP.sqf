@@ -28,9 +28,9 @@
 ["vehiclesRepairTrucks", ["442_argon_repair"]] call _fnc_saveToTemplate; 	
 ["vehiclesFuelTrucks", ["442_argon_fuel"]] call _fnc_saveToTemplate;	
 ["vehiclesMedical", ["WM_ITT_Medical","3AS_ITT_Medical"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["WM_ITT_Imperial", "3AS_ITT"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["WM_ITT_Imperial", "3AS_ITT", "3AS_Saber_M1_Imperial", "3AS_Saber_M1Recon_Imperial"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["3AS_ISP", "3AS_Saber_M1_Imperial", "WM_ITT_Imperial", "3AS_ITT"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["WM_ITT_Imperial", "3AS_ITT", "3AS_PX10_IMP_F"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["WM_ITT_Imperial", "3AS_ITT", "3AS_Saber_M1_Imperial", "3AS_Saber_M1Recon_Imperial", "3AS_PX10_IMP_UP"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["3AS_PX10_IMP_F", "3AS_ISP", "3AS_Saber_M1_Imperial", "WM_ITT_Imperial", "3AS_ITT"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["3AS_Saber_Super_Imperial", "3AS_Saber_M1G_Imperial"]] call _fnc_saveToTemplate;
 ["vehiclesLightTanks",  ["3AS_Saber_Super_Imperial", "3AS_Saber_M1G_Imperial"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["3AS_ATTE_Imperial","WM_ATST"]] call _fnc_saveToTemplate;
@@ -40,12 +40,12 @@
 ["vehiclesGunBoats", ["442_boat_armed"]] call _fnc_saveToTemplate; 
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["3AS_BTLB_Bomber"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["3as_Z95_Republic"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["WM_TieBomber_Cluster"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["WM_TieInterceptor","WM_TieInterceptor","3AS_VWing_Imperial","3AS_VWing_Imperial","WM_TieAdvanced"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Imperial_Transport_01"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Imperial"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["3AS_LAAT_Mk2_Imperial", "3AS_LAAT_Mk2_Imperial", "3AS_LAAT_Mk2_Imperial", "WM_Lambda"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["3AS_LAAT_Mk2_Imperial", "3AS_LAAT_Mk2_Imperial", "3AS_LAAT_Mk2_Imperial", "WM_Lambda", "3AS_Nu_IMP_F", "3AS_Rho_IMP_F"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", ["3AS_LAAT_Mk1_Imperial"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["3AS_LAAT_Mk1_Imperial"]] call _fnc_saveToTemplate;
 

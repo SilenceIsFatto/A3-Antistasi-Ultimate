@@ -12,6 +12,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 #include "..\script_component.hpp"
 FIX_LINE_NUMBERS()
 
+if ((missionNamespace getVariable ["A3U_setting_enableAdvancedTowing", true]) isEqualTo false) exitWith {Info("Skipped loading advanced towing")};
+
 #define SA_Find_Surface_ASL_Under_Position(_object,_positionAGL,_returnSurfaceASL,_canFloat) \
 _objectASL = AGLToASL (_object modelToWorldVisual (getCenterOfMass _object)); \
 _surfaceIntersectStartASL = [_positionAGL select 0, _positionAGL select 1, (_objectASL select 2) + 1]; \

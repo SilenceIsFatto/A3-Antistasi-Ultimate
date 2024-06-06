@@ -31,6 +31,7 @@ private _startCtrl = _display displayCtrl A3A_IDC_SETUP_STARTBUTTON;
 private _newGameCtrl = _display displayCtrl A3A_IDC_SETUP_NEWGAMECHECKBOX;
 private _copyGameCtrl = _display displayCtrl A3A_IDC_SETUP_COPYGAMECHECKBOX;
 private _oldParamsCtrl = _display displayCtrl A3A_IDC_SETUP_OLDPARAMSCHECKBOX;
+private _newSaveCtrl = _display displayCtrl A3A_IDC_SETUP_NAMESPACECHECKBOX;
 
 private _saveBoxColumns = [
     ["gameID", "ID", 0, 9],
@@ -76,8 +77,11 @@ switch (_mode) do
         _startCtrl ctrlEnable (_sameMap or _newGame);
         _copyGameCtrl ctrlShow _newGame;
         _oldParamsCtrl ctrlShow _newGame;
+        _newSaveCtrl ctrlShow _newGame;
+        _newSaveCtrl cbSetChecked true;
         (_display displayCtrl A3A_IDC_SETUP_COPYGAMETEXT) ctrlShow _newGame;
         (_display displayCtrl A3A_IDC_SETUP_OLDPARAMSTEXT) ctrlShow _newGame;
+        (_display displayCtrl A3A_IDC_SETUP_NAMESPACETEXT) ctrlShow _newGame;
         (_display displayCtrl A3A_IDC_SETUP_HQPOSBUTTON) ctrlShow (_newGame && !cbChecked _copyGameCtrl);
 
         // If we're selecting a game to load, load factions if available
@@ -191,7 +195,7 @@ switch (_mode) do
         if (_saveData get "name" != "") then {
             _confirmText = _confirmText + format [localize "STR_antistasi_dialogs_setup_confirm_game_name", _saveData get "name"];
         };
-        _saveData set ["useNewNamespace", true];
+        _saveData set ["useNewNamespace", cbChecked _newSaveCtrl];
 
         // Factions tab: [factions, addonvics, DLC]
         private _factions = ["getFactions"] call A3A_fnc_setupFactionsTab;

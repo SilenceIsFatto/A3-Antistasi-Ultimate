@@ -60,7 +60,7 @@ private _fnc_notifyPlayers = {
 
 	private _finPosition = [_originPosition, 2500, (random 360)] call BIS_fnc_relPos;
 	private _spawnPosition = [_originPosition, 1200, 1400, 0, 0, 1] call BIS_fnc_findSafePos;
-	private _height = 250 + (random 75);
+	private _height = 150 + (random 75);
 
 	_spawnPosition pushBack ((_spawnPosition select 2) + _height);
 

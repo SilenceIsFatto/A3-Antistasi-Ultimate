@@ -17,9 +17,9 @@
 
 
 // General size MACROS
-#define STORE_W (105)
-#define DIALOG_W (128)
-#define DIALOG_H (80)
+#define STORE_W (160)
+#define DIALOG_W (183)
+#define DIALOG_H (100)
 #define DIALOG_X (safeZoneX + CENTER_GRID_X(safeZoneW, STORE_W)) //(safeZoneW / 2) - GRID_X(STORE_W/2))
 #define DIALOG_Y (safeZoneY + CENTER_GRID_Y(safeZoneH, DIALOG_H)) //(safeZoneH / 2) - GRID_Y(DIALOG_H/2))
 
@@ -40,14 +40,14 @@
 // Item Selection
 #define BAR_W 3
 #define BAR_H 3
-#define COMBO_W 35
-#define CARGO_W 18
-#define LIST_W (COMBO_W + SPACE_W*4 + BAR_W*4) //54
+#define COMBO_W 88
+#define CARGO_W 44
+#define LIST_W (COMBO_W + SPACE_W*4 + BAR_W*4)
 #define LIST_H (STORE_H - (BAR_H*2 + SPACE_H2*3 + SPACE_H)) 
 #define LIST_Y (BAR_H + SPACE_H2)
 
 // Selected Item 
-#define ITEM_W 52
+#define ITEM_W 54
 #define ITEM_X (SPACE_W2 + LIST_W + SPACE_W)
 #define ITEM_Y (BAR_H*2 + SPACE_H2*4)
 #define PIC_H 21
@@ -58,7 +58,3 @@
 #define TRADER_Y (DIALOG_Y + GRID_Y(BAR_H + SPACE_H/*BAR_H*2 + SPACE_H*3*/))
 #define TRADER_X (DIALOG_X + GRID_X(STORE_W + SPACE_W))
 #define TRADER_PIC_H 21
-
-
-
-

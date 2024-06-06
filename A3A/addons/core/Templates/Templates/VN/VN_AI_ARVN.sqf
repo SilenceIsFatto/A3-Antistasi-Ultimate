@@ -40,7 +40,11 @@
 
 ["vehiclesPlanesCAS", ["vn_b_air_f4c_at", "vn_b_air_f100d_at"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["vn_b_air_f4c_cap", "vn_b_air_f100d_cap"]] call _fnc_saveToTemplate;
-["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
+private _transportplanes = [];
+if (isClass (configFile >> "cfgVehicles" >> "vnx_b_air_ac119_02_01")) then {
+	_transportplanes append ["vnx_i_air_ac119_02_01"];
+};
+["vehiclesPlanesTransport", _transportplanes] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["vn_i_air_ch34_02_01"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["vn_i_air_uh1d_02_01", "vn_i_air_uh1c_07_01", "vn_i_air_ch34_01_02", "vn_i_air_ch34_02_02"]] call _fnc_saveToTemplate;

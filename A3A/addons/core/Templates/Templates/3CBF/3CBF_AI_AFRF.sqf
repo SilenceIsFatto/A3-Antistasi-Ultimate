@@ -26,13 +26,13 @@
 ["vehiclesRepairTrucks", ["RHS_Ural_Repair_MSV_01"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["RHS_Ural_Fuel_MSV_01"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["rhs_gaz66_ap2_msv"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", ["UK3CB_O_G_MTLB_PKT", "rhs_btr80_msv", "rhs_btr80a_msv"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["rhs_bmd1", "rhs_bmd1p", "rhs_bmd1pk", "rhs_bmd2m", "rhs_bmd2"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["rhs_bmd4m_vdv", "rhs_bmd4ma_vdv", "rhs_bmp3m_msv", "rhs_bmp3mera_msv", "rhs_bmp2e_msv", "rhs_bmp2_msv", "rhs_bmp2d_msv", "rhs_bmp2k_msv", "rhs_Ob_681_2"]] call _fnc_saveToTemplate;
-["vehiclesIFVs", []] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["UK3CB_O_G_MTLB_PKT", "rhs_btr80_msv", "rhs_btr80a_msv", "rhsgref_BRDM2_msv"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["rhs_bmd1", "rhs_bmd1p", "rhs_bmd1pk", "rhs_bmd2m", "rhs_bmd2", "rhs_bmp3_msv", "rhs_bmp3_late_msv", "rhs_bmp1k_msv", "rhs_bmp1p_msv", "rhs_brm1k_msv"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["rhsgref_BRDM2_ATGM_msv", "rhs_bmd4m_vdv", "rhs_bmd4ma_vdv", "rhs_bmp3m_msv", "rhs_bmp3mera_msv", "rhs_bmp2e_msv", "rhs_bmp2_msv", "rhs_bmp2d_msv", "rhs_bmp2k_msv", "rhs_Ob_681_2"]] call _fnc_saveToTemplate;
+["vehiclesIFVs", ["rhs_prp3_msv", "rhs_bmp1d_msv"]] call _fnc_saveToTemplate;
 
-["vehiclesLightTanks",  ["rhs_bmd1pk", "rhs_sprut_vdv", "UK3CB_KDF_O_T55"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["rhs_t72bd_tv", "rhs_t72be_tv", "rhs_t80a", "rhs_t80bv", "rhs_t80u", "rhs_t80um", "rhs_t72bb_tv", "rhs_t90sab_tv", "rhs_t90a_tv", "rhs_t90_tv"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["rhs_bmd1pk", "rhs_sprut_vdv", "UK3CB_KDF_O_T55", "rhs_t72ba_tv", "rhs_t72bc_tv", "rhs_t80", "rhs_t80u45m", "rhs_t80ue1"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["rhs_t80bk", "rhs_t72bd_tv", "rhs_t72be_tv", "rhs_t80a", "rhs_t80bv", "rhs_t80u", "rhs_t80um", "rhs_t72bb_tv", "rhs_t90sab_tv", "rhs_t90a_tv", "rhs_t90_tv", "rhs_t90am_tv", "rhs_t90saa_tv", "rhs_t90sm_tv"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["rhs_zsu234_aa", "rhs_zsu234_aa", "UK3CB_O_2S6M_Tunguska_VPV"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["rhsgref_hidf_assault_boat", "rhsgref_hidf_rhib"]] call _fnc_saveToTemplate;
@@ -61,7 +61,7 @@
 ["vehiclesMilitiaLightArmed", ["rhsgref_BRDM2_msv", "rhs_tigr_sts_msv"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["rhs_gaz66o_msv", "rhs_gaz66_msv", "rhs_zil131_msv", "rhs_zil131_open_msv"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["RHS_UAZ_MSV_01", "rhs_uaz_open_MSV_01", "rhsgref_BRDM2UM_msv"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["UK3CB_O_G_MTLB_PKT", "rhs_btr70_msv", "rhs_bmp1_msv", "rhs_bmp1d_msv"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["UK3CB_O_G_MTLB_PKT", "rhsgref_BRDM2UM_msv", "rhsgref_BRDM2_HQ_msv", "rhs_btr60_msv", "rhs_btr70_msv", "rhs_bmp1_msv", "rhs_bmp1d_msv"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["rhs_uaz_open_vv", "rhs_uaz_vv"]] call _fnc_saveToTemplate;
 

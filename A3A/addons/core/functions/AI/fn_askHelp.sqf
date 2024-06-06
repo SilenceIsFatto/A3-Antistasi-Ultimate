@@ -26,7 +26,7 @@ private _fnc_canHelp = {
     if !([_unit] call A3A_fnc_canFight) exitWith { false };
     if (currentCommand _unit == "STOP") exitWith { false };
     if ((_unit getVariable ["maneuvering", false]) or (_unit getVariable ["helping", false]) or (_unit getVariable ["rearming", false])) exitWith { false };
-    if (!A3A_hasACEMedical and _unitNeedsFAK and {count (_firstAidKits arrayIntersect items _unit) == 0}) exitWith { false };
+    if (_unitNeedsFAK and {count (_firstAidKits arrayIntersect items _unit) == 0}) exitWith { false };
     true;
 };
 

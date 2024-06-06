@@ -11,12 +11,12 @@ class CfgFunctions {
 			file = QPATHTOFOLDER(Common);
 			class common_attachLightSource {};
 			class common_addRandomMoneyCargo {};
-        		class common_addRandomMoneyMagazine {};
+        	class common_addRandomMoneyMagazine {};
 			class common_getNearPlayers {};
 			class common_addActionMove {};
-        		class common_removeActionMove {};
+        	class common_removeActionMove {};
 			class common_moveStatic {};
-        		class common_moveObject {};
+        	class common_moveObject {};
 			class common_set3dIcons {};
 			class common_fixCupRhsLaunchers {};
 			class common_getMilAdminGarrisonPositions {};
@@ -33,7 +33,7 @@ class CfgFunctions {
 			class common_hcTransfer {};
 			class common_chemicalDamage {};
 			class common_recon {};
-        		class common_reveal {};
+        	class common_reveal {};
 			class common_moveOutpostStatic {};
 			class common_findSafePositionForVehicle {};
 			class common_fillSupplyDrop {};
@@ -49,6 +49,7 @@ class CfgFunctions {
 
 		class Effect {
 			file = QPATHTOFOLDER(Effect);
+                        class effect_crashingEffects {};
 			class effect_createBurningDebrisEffect {};
 			class effect_createGasEffect {};
 			class effect_createSmallExplosionEffect {};
@@ -217,6 +218,9 @@ class CfgFunctions {
 			class encounter_vehicleMove {};
 			class encounter_vehiclePatrol {};
 			class encounter_postAmbush {};
+			class encounter_fleeingCivConvoy {};
+			class encounter_HeliSlingloadCargo {};
+			class encounter_frontlineSkirmish {};
 		};
 
 		class Support {
@@ -273,6 +277,7 @@ class CfgFunctions {
 			class rivals_encounter_uavFlyby {};
 			class rivals_encounter_rovingMortar {};
 			class rivals_encounter_heliRaid {};
+			class rivals_encounter_OccVsRivalsskirmish {};
 			
 			class rivals_addProgressToRivalsLocationReveal {};
 			class rivals_revealLocation {};

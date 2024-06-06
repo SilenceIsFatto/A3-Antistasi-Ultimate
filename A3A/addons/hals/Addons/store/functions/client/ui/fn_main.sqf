@@ -89,7 +89,7 @@ switch (_mode) do {
 
 		{
 			private _categoryAdd = getArray (configFile >> "cfgHALsAddons" >> "cfgHALsStore" >> "stores" >> _x >> "categories");
-			_categories = _categories + _categoryAdd;
+			_categories append _categoryAdd;
 		} forEach _traderType; // make sure it grabs ALL categories, not only the first
 
 		{
@@ -268,7 +268,7 @@ switch (_mode) do {
 
 				{
 					private _categoryAdd = getArray (_cfg >> "stores" >> _x >> "categories");
-					_categories = _categories + _categoryAdd;
+					_categories append _categoryAdd;
 				} forEach _traderType; // make sure it grabs ALL categories, not only the first
 
 				// private _categories = getArray (_cfg >> "stores" >> ( (_trader getVariable ["HALs_store_trader_type", []]) select 0) >> "categories");

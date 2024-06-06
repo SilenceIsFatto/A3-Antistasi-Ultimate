@@ -291,13 +291,18 @@ switch(true) do {
 
         private _boxesCount = { _x distance (getMarkerPos respawnTeamPlayer) < 25 } count _boxes;
 
-        [0, 400 * _boxesCount] remoteExec ["A3A_fnc_resourcesFIA",2];
+        {
+            if ((typeOf _x) isEqualTo (_faction get "ammobox")) then {
+                [_x] remoteExec ["jn_fnc_arsenal_cargoToArsenal",2];
+            };
+        } forEach _boxes;
+
         { 
             [300 * _boxesCount,_x] call A3A_fnc_addMoneyPlayer;
             [10 * _boxesCount, _x] call A3A_fnc_addScorePlayer;
         } forEach (call SCRT_fnc_misc_getRebelPlayers);
-        [10,theBoss] call A3A_fnc_addScorePlayer;
-        [250,theBoss, true] call A3A_fnc_addMoneyPlayer;
+        [10, theBoss] call A3A_fnc_addScorePlayer;
+        [250, theBoss, true] call A3A_fnc_addMoneyPlayer;
 
         [_taskId, "LOG", "SUCCEEDED"] call A3A_fnc_taskSetState;
     };

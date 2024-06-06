@@ -30,6 +30,6 @@ A3A_vehClassToCrew getOrDefault [_typeX,
         FactionGetTiered(occ,"unitRifle"), 
         FactionGetTiered(inv,"unitRifle"), 
         FactionGet(reb,"unitCrew"), 
-        "C_Man_1"
+        FactionGet(civ,"unitMan")///"C_Man_1"
     ]
 ] select _sideIndex;

@@ -2,6 +2,7 @@
 FIX_LINE_NUMBERS()
 
 private _veh = _this select 0;
+private _vehCrew = crew _veh;
 
 if (_veh isKindOf "Car") then {
 	_veh addEventHandler ["HandleDamage",{if (((_this select 1) find "wheel" != -1) and (_this select 4=="") and (!isPlayer driver (_this select 0))) then {0} else {(_this select 2)};}];
@@ -11,7 +12,7 @@ if (_veh isKindOf "Car") then {
 
 _veh addEventHandler ["Killed",{[_this select 0] spawn A3A_fnc_postmortem}];
 
-if ((count crew _veh == 0) and {("vanilla" in A3A_factionEquipFlags)}) then {
+if (count _vehCrew == 0) then { //and {("vanilla" in A3A_factionEquipFlags)}
 	sleep 10;
 	[_veh,false] remoteExec ["enableSimulationGlobal",2];
 	_veh addEventHandler ["GetIn", { //ToDo: we should clean up the sim eh after as its a one of thing

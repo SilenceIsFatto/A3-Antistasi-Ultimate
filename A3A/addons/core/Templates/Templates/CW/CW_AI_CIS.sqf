@@ -26,11 +26,11 @@
 ["vehiclesRepairTrucks", ["442_argon_repair_cis"]] call _fnc_saveToTemplate; 	
 ["vehiclesFuelTrucks", ["442_argon_fuel_cis"]] call _fnc_saveToTemplate;		
 ["vehiclesMedical", ["442_argon_medical_cis"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", []] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["3AS_Advanced_DSD", "3AS_ISP"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["3AS_SAC_F"]] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["3AS_Advanced_DSD", "3AS_ISP", "3AS_PAC_F"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["3AS_PAC_F"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["3AS_AAT_CIS"]] call _fnc_saveToTemplate;
-["vehiclesLightTanks",  ["3AS_n99"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["3AS_n99","3AS_Advanced_DSD"]] call _fnc_saveToTemplate;
 ["vehiclesTanks", ["3AS_AAT_CIS", "3AS_GAT", "3AS_n99"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["3AS_GAT_Light"]] call _fnc_saveToTemplate;
 
@@ -38,8 +38,8 @@
 ["vehiclesGunBoats", ["442_boat_armed"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["3as_Tri_Fighter_dynamicLoadout"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["3as_Tri_Fighter_dynamicLoadout"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["3AS_Tri_Fighter_DynamicLoadout"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["3AS_Z95_Blue"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Civilian_Transport_01"]] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Police"]] call _fnc_saveToTemplate; 		//this line determines light helis -- Example: ["vehiclesHelisLight", ["B_Heli_Light_01_F"]] -- Array, can contain multiple assets

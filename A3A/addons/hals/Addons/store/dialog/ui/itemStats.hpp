@@ -7,7 +7,7 @@
 */
 
 class ItemPictureBackground: RscItemText {
-	x = 0;
+	x = 0.014;
 	y = 0;
 	w = GRID_X(ITEM_W);
 	h = GRID_Y(PIC_H);
@@ -18,16 +18,16 @@ class ItemPictureBackground: RscItemText {
 class ItemPicture: RscItemCtrlStaticPictureKeepAspect {
 	idc = IDC_ITEM_PICTURE;
 		
-	x = 0;
+	x = 0.014;
 	y = 0;
 	w = GRID_X(ITEM_W);
 	h = GRID_Y(PIC_H);
 };
 
 class ItemDescriptionBackground: RscItemText {
-	x = 0;
+	x = 0.014;
 	y = GRID_Y(PIC_H + SPACE_H);
-	w = GRID_X(ITEM_W);
+	w = GRID_X(54);
 	h = GRID_Y(STORE_H - (ITEM_Y + PIC_H + SPACE_H + SPACE_H2));
 
 	colorBackground[] = {0.05, 0.05, 0.05, 0.3};
@@ -35,7 +35,7 @@ class ItemDescriptionBackground: RscItemText {
 
 class ItemDescriptionGroup: RscItemCtrlGroup {
 	idc = -1;
-	x = 0;
+	x = 0.014;
 	y = GRID_Y(PIC_H + SPACE_H);
 	w = GRID_X(ITEM_W);
 	h = GRID_Y(STORE_H - (ITEM_Y + PIC_H + SPACE_H + SPACE_H2));

@@ -58,5 +58,5 @@ private _killedEhId = _unit addEventHandler ["killed", {
 if (_unit == gunner objectParent _unit or {(secondaryWeapon _unit) in allAA}) then {
     {
         if (!isNull driver _x) then { _unit reveal [_x, 1.5] };
-    } forEach (_unit nearEntities ["Air", distanceSPWN*2]);
+    } forEach (_unit nearEntities ["Air", distanceSPWN*1]);
 };

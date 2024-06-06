@@ -36,6 +36,8 @@ private _group = [_side, _plane] call A3A_fnc_createVehicleCrew;
 _group deleteGroupWhenEmpty true;
 _group setBehaviourStrong "CARELESS";
 
+_plane setVehicleRadar 1;
+
 _plane addEventHandler ["Killed", {
     params ["_plane"];
     ["TaskSucceeded", ["", localize "STR_notifiers_cas_killed"]] remoteExec ["BIS_fnc_showNotification", teamPlayer];

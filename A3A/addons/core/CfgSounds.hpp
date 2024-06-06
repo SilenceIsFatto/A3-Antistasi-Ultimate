@@ -86,6 +86,13 @@ class CfgSounds
         titles[] = { 1, "" };
     };
 
+    class Sonic
+    {
+        name = "Sonic";
+        sound[] = {EQPATHTOFOLDER(core,Sounds\Misc\Sonic.ogg), 1, 1, 100};
+        titles[] = { 1, "" };
+    };
+
     class A3AP_UiSuccess 
     {
         name = "A3AP_UiSuccess";

@@ -74,6 +74,18 @@ if (["diw_armor_plates_main"] call A3U_fnc_hasAddon) then {
     _addons pushBack localize "STR_A3AU_init_mods_warning_APS";
 };
 
+if (["BloodSplatter"] call A3U_fnc_hasAddon) then { // Some weird dismemberment mod that breaks everything
+    _addons pushBack localize "STR_A3AU_init_mods_warning_dis";
+};
+
+if (["gore_units"] call A3U_fnc_hasAddon) then { // Some weird dismemberment mod that breaks everything
+    _addons pushBack localize "STR_A3AU_init_mods_warning_dis";
+};
+
+if (["DISMEMBERMENT"] call A3U_fnc_hasAddon) then { // Some weird dismemberment mod that breaks everything
+    _addons pushBack localize "STR_A3AU_init_mods_warning_dis";
+};
+
 if (_addons isNotEqualTo []) exitWith {
     private _addonText = _addons joinString ", ";
 

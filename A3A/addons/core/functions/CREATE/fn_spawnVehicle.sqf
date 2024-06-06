@@ -87,7 +87,6 @@ _veh setVelocityModelSpace [0, _velocity, 0];
 if (isNil "_unitType") then {
     _unitType = [_side, _veh] call A3A_fnc_crewTypeForVehicle;
 };
-
 //Spawn the crew
 _group = [_group, _veh, _unitType] call A3A_fnc_createVehicleCrew;
 

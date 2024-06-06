@@ -193,10 +193,11 @@ private _fnc_spawnConvoyVehicle = {
     _markNames pushBack _markName;
     _veh;
 };
-
+private _EscortText = localize "STR_marker_convoy_escort_vehicle";
 private _fnc_spawnEscortVehicle = {
     private _typeVehEsc = selectRandomWeighted _vehPool;
-    private _veh = [_typeVehEsc, "Convoy Escort"] call _fnc_spawnConvoyVehicle;
+    
+    private _veh = [_typeVehEsc, _EscortText] call _fnc_spawnConvoyVehicle;
 
     private _typeGroup = [_typeVehEsc, _sideX] call A3A_fnc_cargoSeats;
     if (count _typeGroup == 0) exitWith {};
@@ -262,7 +263,8 @@ for "_i" from 1 to _countX do
 // Lead vehicle
 sleep 2;
 private _typeVehX = selectRandom (if (_sideX == Occupants && random 4 < tierWar) then {_faction get "vehiclesPolice"} else {_faction get "vehiclesLightArmed"});
-private _vehLead = [_typeVehX, "Convoy Lead"] call _fnc_spawnConvoyVehicle;
+private _LeadText = localize "STR_marker_convoy_lead_vehicle";
+private _vehLead = [_typeVehX, _LeadText] call _fnc_spawnConvoyVehicle;
 
 // Apply convoy resource cost, if it's from attack or defence pool
 if (_resPool != "legacy") then {

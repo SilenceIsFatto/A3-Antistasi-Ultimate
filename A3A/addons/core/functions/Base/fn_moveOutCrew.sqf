@@ -37,18 +37,16 @@ FIX_LINE_NUMBERS()
 #define OccAndInv(VAR) (FactionGet(occ, VAR) + FactionGet(inv, VAR))
 private _vehicle = _veh;
 private _crewgroup = crew _vehicle;
-private _crewdriver = _crewgroup select 0;
-private _crewdgunner = _crewgroup select 1;
 if (isNull _player) exitWith { Error("_player is null.") };
 if (isNull _vehicle) exitWith {
     [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_reinf_airstrike_not_looking_at_veh"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 _owner = _vehicle getVariable ["ownerX",""];
-if !(_owner isEqualTo "" || {getPlayerUID _player isEqualTo _owner}) exitWith {  // Vehicle cannot be sold if owned by another player.
+if !(_owner isEqualTo "" || {getPlayerUID _player isEqualTo _owner}) exitWith {  // crew cannot be moved out if owned by another player.
     [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_Base_sellVehicle_err2"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 
-if (((side driver _vehicle==  west) || (side _vehicle == east)) && alive driver _vehicle) exitWith {
+if ((side _vehicle ==  west) || (side _vehicle == east)/*  && alive driver _vehicle */) exitWith {
     [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_Base_moveOutCrew_err0"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 
@@ -56,22 +54,23 @@ if (((side driver _vehicle==  west) || (side _vehicle == east)) && alive driver 
 _veh setVariable ["A3A_moveOutCrew_inProgress",true,false];   */ // Only processed on the server. It is absolutely pointless trying to network this due to race conditions.
 
 if (unitIsUAV _vehicle) then {
-    deleteVehicle _crewdriver;
-    deleteVehicle _crewgunner;
+    {
+        deleteVehicle _x;  
+    } forEach _crewgroup;
 };
 
-{
-    _x action ["Eject", _vehicle];
+{   
     unassignVehicle _x;
-} forEach units _vehicle;
+    _x action ["Eject", _vehicle];
+} forEach _crewgroup;
 
 {
 	moveOut _x 
-} forEach units _vehicle;
+} forEach _crewgroup;
 
 {
     _x leaveVehicle _vehicle;
-} forEach units _vehicle;
+} forEach _crewgroup;
 
 
 [localize "STR_A3A_Base_moveOutCrew_header", localize "STR_A3A_Base_moveOutCrew_success"] remoteExecCall ["A3A_fnc_customHint",_player];

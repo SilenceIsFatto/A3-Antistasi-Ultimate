@@ -8,6 +8,7 @@
                 <German>Auswählen</German>
                 <Chinesesimp>选择</Chinesesimp>
                 <Korean>선택</Korean>
+                <French>Sélectionner</French>
             </Key>
             <Key ID="STR_JNC_ACT_CANCEL">
                 <Original>Cancel</Original>
@@ -15,6 +16,7 @@
                 <German>Abbrechen</German>
                 <Chinesesimp>取消</Chinesesimp>
                 <Korean>취소</Korean>
+                <French>Annuler</French>
             </Key>
             <Key ID="STR_JNC_ACT_SELECT_HINT">
                 <Original>Select an object</Original>
@@ -22,6 +24,7 @@
                 <German>Objekt auswählen</German>
                 <Chinesesimp>选择一个对象</Chinesesimp>
                 <Korean>개체를 선택합니다</Korean>
+                <French>Sélectionner un objet</French>
             </Key>
             <Key ID="STR_JNC_ACT_SELECT_NO_OBJECT">
                 <Original>Not looking at anything</Original>
@@ -29,6 +32,7 @@
                 <German>Nichts ausgewählt</German>
                 <Chinesesimp>你没有在看任何物体</Chinesesimp>
                 <Korean>아무것도 보고 있지 않습니다</Korean>
+                <French>Ne rien regarder</French>
             </Key>
             <Key ID="STR_JNA_SORT_COLOR">
                 <Original>Sort by row color</Original>
@@ -36,6 +40,7 @@
                 <Russian>Сортировка по цвету строки</Russian>
                 <Chinesesimp>按行的颜色排序</Chinesesimp>
                 <Korean>색깔 별로 정렬</Korean>
+                <French>Tri par couleur de ligne</French>
             </Key>
             <Key ID="STR_JNA_SORT_DEFAULT">
                 <Original>Default</Original>
@@ -43,6 +48,7 @@
                 <Russian>Сортировка по умолчанию</Russian>
                 <Chinesesimp>默认排序</Chinesesimp>
                 <Korean>기본</Korean>
+                <French>Standard</French>
             </Key>
             <Key ID="STR_JNA_SORT_BY_AMOUNT">
                 <Original>Sort by amount</Original>
@@ -50,6 +56,7 @@
                 <Russian>Сортировка по количеству</Russian>
                 <Chinesesimp>按数量排序</Chinesesimp>
                 <Korean>수량 별로 정렬</Korean>
+                <French>Trier par quantité</French>
             </Key>
             <Key ID="STR_JNA_ACT_OPEN">
                 <Original>Arsenal</Original>
@@ -57,6 +64,7 @@
                 <Chinesesimp>军火库</Chinesesimp>
                 <Russian>Арсенал</Russian>
                 <Korean>아스널</Korean>
+                <French>Arsenal</French>
             </Key>
             <Key ID="STR_JNA_ACT_CONTAINER_OPEN">
                 <Original>Select vehicle to open arsenal for it</Original>
@@ -64,6 +72,7 @@
                 <German>Fahrzeug auswählen, um Arsenal dafür zu öffnen</German>
                 <Chinesesimp>选择一辆载具，在载具内打开军火库</Chinesesimp>
                 <Korean>아스널을 열 차량 선택</Korean>
+                <French>Sélectionner un véhicule pour ouvrir l'arsenal qui lui est destiné</French>
             </Key>
             <Key ID="STR_JNA_ACT_UNLOAD">
                 <Original>Unload from vehicle</Original>
@@ -71,6 +80,7 @@
                 <Chinesesimp>从载具上卸载</Chinesesimp>
                 <Russian>Выгрузить из транспортного средства</Russian>
                 <Korean>차량에서 하역</Korean>
+                <French>Déchargement du véhicule</French>
             </Key>
             <Key ID="STR_JNA_ACT_CONTAINER_SELECTERROR1">
                 <Original>You're not looking at an object.</Original>
@@ -78,6 +88,7 @@
                 <Chinesesimp>你没有在看物体。</Chinesesimp>
                 <Russian>Вы не смотрите на объект.</Russian>
                 <Korean>개체를 보고 있지 않습니다.</Korean>
+                <French>Vous ne regardez pas un objet.</French>
             </Key>
             <Key ID="STR_JNA_ACT_CONTAINER_SELECTERROR2">
                 <Original>Object is too far away.</Original>
@@ -85,6 +96,7 @@
                 <Chinesesimp>该对象太远</Chinesesimp>
                 <Russian>Объект находится слишком далеко.</Russian>
                 <Korean>개체가 너무 멉니다.</Korean>
+                <French>L'objet est trop éloigné.</French>
             </Key>
             <Key ID="STR_JNA_ACT_CONTAINER_SELECTERROR3">
                 <Original>Object does not have any inventory.</Original>
@@ -92,6 +104,7 @@
                 <Chinesesimp>该对象没有任何库存</Chinesesimp>
                 <Russian>У объекта нет какого-либо инвентаря.</Russian>
                 <Korean>개체에 소지품이 없습니다.</Korean>
+                <French>L'objet n'a pas d'inventaire.</French>
             </Key>
             <Key ID="STR_JNA_ACT_ONLY_MEMBERS">
                 <Original>We are low on this item, only members may use it.</Original>
@@ -99,6 +112,7 @@
                 <Chinesesimp>这样的有限物品只有服务器会员才能使用。</Chinesesimp>
                 <Russian>У нас мало этих предметов, только участники могут его использовать.</Russian>
                 <Korean>우린 이 아이템이 부족해서 멤버만 사용할 수 있습니다.</Korean>
+                <French>Cet article est en rupture de stock, seuls les membres peuvent l'utiliser.</French>
             </Key>
             <Key ID="STR_JNA_ACT_VEHICLE_INVENTORY">
                 <Original>Vehicle Inventory</Original>
@@ -106,6 +120,7 @@
                 <Chinesesimp>载具库存</Chinesesimp>
                 <Russian>Инвентарь транспортного средства</Russian>
                 <Korean>차량 소지품</Korean>
+                <French>Inventaire du véhicule</French>
             </Key>
             <Key ID="STR_JNA_ACT_DEF_GEAR_BUTTON">
                 <Original>Default gear</Original>
@@ -113,6 +128,7 @@
                 <German>Standardausrüstung</German>
                 <Chinesesimp>默认装备</Chinesesimp>
                 <Korean>기본 장비</Korean>
+                <French>Équipement standard</French>
             </Key>
             <Key ID="STR_JNA_ACT_DEF_GEAR">
                 <Original>Add default items like radio and medical supplies</Original>
@@ -120,6 +136,7 @@
                 <German>Fügen Sie Standardartikel wie Radio und medizinische Versorgung hinzu</German>
                 <Chinesesimp>添加默认装备，如无线电和医疗用品</Chinesesimp>
                 <Korean>무전기 및 의료품같은 기본 아이템 추가</Korean>
+                <French>Ajouter des éléments par défaut tels que des radios et des fournitures médicales</French>
             </Key>
             <Key ID="STR_JNA_ACT_MOVE_FROM_CRATE_TO_ARSENAL_BUTTON">
                 <Original>To crate</Original>
@@ -127,6 +144,7 @@
                 <German>Kiste</German>
                 <Chinesesimp>到箱子</Chinesesimp>
                 <Korean>상자로</Korean>
+                <French>A mettre en caisse</French>
             </Key>
             <Key ID="STR_JNA_ACT_MOVE_FROM_CRATE_TO_ARSENAL">
                 <Original>Move items from crate inventory to arsenal</Original>
@@ -134,6 +152,7 @@
                 <German>Verschiebe Gegenstände aus dem Kisteninventar ins Arsenal</German>
                 <Chinesesimp>将箱子里物品转移到军火库库存</Chinesesimp>
                 <Korean>상자 소지품을 아스널로 아이템 옮기기</Korean>
+                <French>Déplacer des objets de l'inventaire de la caisse vers l'arsenal</French>
             </Key>
             <Key ID="STR_JNA_ACT_MOVE_FROM_VEHICLE_TO_ARSENAL_BUTTON">
                 <Original>Unload Vehicle</Original>
@@ -141,6 +160,7 @@
                 <German>Fahrzeug entladen</German>
                 <Chinesesimp>卸载载具</Chinesesimp>
                 <Korean>차량 하역</Korean>
+                <French>Décharger le véhicule</French>
             </Key>
             <Key ID="STR_JNA_ACT_MOVE_FROM_VEHICLE_TO_ARSENAL">
                 <Original>Move items from vehicle inventory to arsenal</Original>
@@ -148,6 +168,7 @@
                 <German>Verschieben Sie Gegenstände aus dem Fahrzeuginventar in das Arsenal</German>
                 <Chinesesimp>将载具库存内物品移动到军火库</Chinesesimp>
                 <Korean>차량 소지품을 아스널로 아이템 옮기기</Korean>
+                <French>Déplacer des objets de l'inventaire des véhicules vers l'arsenal</French>
             </Key>
         </Container>
     </Package>

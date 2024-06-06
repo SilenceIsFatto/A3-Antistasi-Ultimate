@@ -37,6 +37,7 @@ class cfgHALsStore
 		#include "config\bwa.hpp"
 		#include "config\crocus.hpp"
 		#include "config\csa38.hpp"
+		#include "config\csla.hpp"
 		#include "config\cup.hpp"
 		#include "config\cw.hpp"
 		#include "config\empire.hpp"
@@ -57,6 +58,15 @@ class cfgHALsStore
 		#include "config\tow.hpp"
 		#include "config\unsung.hpp"
 		#include "config\vanilla.hpp"
+		#include "config\apex.hpp"
+		#include "config\lawsofwar.hpp"
+		#include "config\contact.hpp"
+		#include "config\marksmen.hpp"
+		#include "config\jets.hpp"
+		#include "config\kart.hpp"
+		#include "config\tanks.hpp"
+		#include "config\artofwar.hpp"
+		#include "config\kkiv2035.hpp"
 		#include "config\vn.hpp"
 		#include "config\wrs.hpp"
 		#include "config\ws.hpp"
@@ -72,20 +82,127 @@ class cfgHALsStore
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
+				"handgunsVanilla",
 				"riflesVanilla", 
 				"sniperRiflesVanilla", 
 				"mgVanilla",
-				"smgVanilla", 
-				"magazinesVanilla", 
-				"opticsVanilla", 
-				"muzzlesVanilla", 
-				"underbarrelVanilla", 
-				"pointersVanilla", 
-				"navigationVanilla", 
+				"smgVanilla",
+				"launchersVanilla",
+				"launcherMagazinesVanilla",
+				"navigationVanilla",
+				"pointersVanilla",
+				"muzzlesVanilla",
+				"opticsVanilla",
+				"magazinesVanilla",  
 				"miscVanilla"
 			};
 		};
+    
+		class apex 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsApex",
+				"riflesApex", 
+				"sniperRiflesApex", 
+				"mgApex",
+				"smgApex",
+				"launchersApex",
+				"launcherMagazinesApex",
+				"opticsApex", 
+				"muzzlesApex", 
+				"underbarrelApex", 
+				"navigationApex", 
+				"magazinesApex", 
+				"miscApex"
+			};
+		};
 
+		class lawsofwar 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = { 
+				"miscLawsofwar"
+			};
+		};
+
+		class contact
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsContact",
+				"riflesContact", 
+				"sniperRiflesContact", 
+				"mgContact",
+				"launchersContact", 
+				"opticsContact", 
+				"muzzlesContact", 
+				"underbarrelContact", 
+				"pointersContact", 
+				"navigationContact", 
+				"magazinesContact", 
+				"miscContact"
+			};
+		};
+
+		class marksmen
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"sniperRiflesMarksmen",
+				"mgMarksmen", 
+				"opticsMarksmen", 
+				"muzzlesMarksmen", 
+				"underbarrelMarksmen", 
+				"navigationMarksmen",
+				"magazinesMarksmen"
+			};
+		};
+
+		class jets 
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"miscJets"
+			};
+		};
+
+		class kart
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsKart", 
+				"magazinesKart"
+			};
+		};
+
+		class tanks
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"launchersTanks",
+				"launcherMagazinesTanks",
+				"miscTanks"
+			};
+		};
+
+		class artofwar
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"miscArtofwar"
+			};
+		};
+
+		class kkiv2035
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"sniperRifleskkiv2035",
+				"magazineskkiv2035"
+			};
+		};
+    
 		class rf 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -102,13 +219,20 @@ class cfgHALsStore
 				"miscRF"
 			};
 		};
-
+    
 		class ws 
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"riflesWs",
-				"magazinesWs"
+				"sniperRiflesWs",
+				"mgWs",
+				"magazinesWs",
+				"navigationWs",
+				"pointersWs",
+				"muzzlesWs",
+				"opticsWs",
+				"miscWs"
 			};
 		};
 
@@ -121,6 +245,7 @@ class cfgHALsStore
 				"mgCSLA",
 				"launchersCSLA",
 				"magazineslaunchersCSLA",
+				"handgunsCSLA",
 				"magazinesCSLA",
 				"navigationCSLA",
 				"attachmentsCSLA",
@@ -132,7 +257,8 @@ class cfgHALsStore
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
 				"handgunsAegis", 
-				"launchersAegis", 
+				"launchersAegis",
+				"launcherMagazinesAegis",  
 				"riflesAegis", 
 				"sniperRiflesAegis", 
 				"mgAegis",

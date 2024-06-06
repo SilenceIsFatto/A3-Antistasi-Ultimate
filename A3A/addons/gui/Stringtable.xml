@@ -472,12 +472,14 @@
                 <Russian>Список доступной для покупки техники будет расширяться по мере развития войны.</Russian>
                 <Chinesesimp>请注意，随着战争的发展，反抗军的载具数量会增加。</Chinesesimp>
                 <Korean>전쟁이 진행될 때마다 저항군의 차량 재고가 증가한다는 것을 알아두세요.</Korean>
+                <French>Notez que le stock de véhicules des rebelles s'accroît au fur et à mesure que la guerre évolue.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_black_market_tip">
                 <Original>Black market vehicle stock depends on current War Level and various achieved milestones.</Original>
                 <Russian>Список техники на чёрном рынке зависит от текущего уровня войны и успехов повстанцев.</Russian>
                 <Chinesesimp>黑市上可买的载具清单取决于当前的战争水平和反抗军的各种成功。</Chinesesimp>
                 <Korean>암시장 차량 재고는 현재 전쟁 레벨과 달성한 다양한 이정표에 따라 달라집니다.</Korean>
+                <French>Le stock de véhicules du marché noir dépend du niveau de guerre actuel et des différentes étapes franchies.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_button_tooltip">
                 <Original>Buy %1 for %2 %3</Original>
@@ -604,71 +606,83 @@
                 <Original>Buy %1 for %2 %3</Original>
                 <Chinesesimp>以 %2 %3 的价格购买 %1</Chinesesimp>
                 <Korean>%2%3에 %1 구매</Korean>
+                <French>Acheter %1 pour %2 %3</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_item_custom_hint_header">
                 <Original>Purchase Item</Original>
                 <Chinesesimp>购买物品</Chinesesimp>
                 <Russian>Парашют</Russian>
                 <Korean>아이템 구매</Korean>
+                <French>Acheter un article</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_item_custom_hint_commander_only">
                 <Original>Only the Commander may buy this item.</Original>
                 <Chinesesimp>只有指挥官可以购买此物品</Chinesesimp>
                 <Russian>Только командир может купить этот предмет.</Russian>
                 <Korean>지휘관만 이 아이템을 살 수 있습니다.</Korean>
+                <French>Seul le commandant peut acheter cet article.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_civ">
                 <Original>Civilian</Original>
                 <Russian>Гражд. техника</Russian>
                 <Korean>민간용</Korean>
                 <Spanish>Civil</Spanish>
+                <French>Civils</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_reb">
                 <Original>Rebel</Original>
                 <Russian>Техника повстанцев</Russian>
                 <Korean>반군용</Korean>
                 <Spanish>Rebelde</Spanish>
+                <French>Rebelle</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_mil">
                 <Original>Military</Original>
                 <Russian>Военная техника</Russian>
                 <Korean>군용</Korean>
+                <French>Militaire</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_static">
                 <Original>Statics</Original>
                 <Russian>Стац. орудия</Russian>
                 <Korean>고정화기</Korean>
                 <Spanish>Estáticas</Spanish>
+                <French>Statique</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_other">
                 <Original>Other</Original>
                 <Russian>Другое</Russian>
                 <Korean>그 외</Korean>
                 <Spanish>Otras</Spanish>
+                <French>Autres</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_refuel_tooltip">
                 <Original>This item can refuel others.\n%1 max fuel is %2.</Original>
                 <Chinesesimp>这个物品可以为其他人加油。\n%1 最大燃料是 %2 。</Chinesesimp>
                 <Russian>Этот предмет может заправлять другие машины.\n%1 максимум топлива %2.</Russian>
                 <Korean>이 아이템은 다른 차량을 재급유할 수 있습니다.\n%1의 최대 연료량은 %2입니다.</Korean>
+                <French>Cet objet peut en ravitailler d'autres.\n%1 Le carburant maximum est de %2.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_loot_tooltip">
                 <Original>This item can collect loot.</Original>
                 <Chinesesimp>这个物品可以收集战利品。</Chinesesimp>
                 <Russian>Этот предмет может собирать трофеи.</Russian>
                 <Korean>이 아이템은 전리품을 수집할 수 있습니다.</Korean>
+                <French>Cet objet peut collecter du butin.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_light_tooltip">
                 <Original>This item provides light source.</Original>
                 <Chinesesimp>这个物品可以提供照明。</Chinesesimp>
                 <Russian>Этот предмет излучает свет.</Russian>
                 <Korean>이 아이템은 광원을 제공합니다.</Korean>
+                <French>Cet article fournit une source lumineuse.</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_revivekitbox_tooltip">
                 <Original>This item contains certain amount of Combat Readiness Recovery kits.</Original>
                 <Russian>Этот предмет содержит в себе некоторое количество наборов восстановления боеспособности.</Russian>
                 <Chinesesimp>这个物品包含一定数量的战备恢复包。</Chinesesimp>
                 <Korean>이 아이템은 일정량의 전투 준비 복구 키트가 들어 있습니다.</Korean>
+                <French>Cet objet contient un certain nombre de kits de récupération de l'état de préparation au combat.</French>
             </Key>
         </Container>
         <Container name="dialog_main_player">
@@ -3244,36 +3258,42 @@
                 <Russian>Создать новую игру с </Russian>
                 <Chinesesimp>创建新游戏</Chinesesimp>
                 <Korean>새 게임 만들기: </Korean>
+                <French>Créer une nouvelle partie avec</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_delete">
                 <Original>Are you sure that you want to delete the game with ID %1 on %2?</Original>
                 <Russian>Вы действительно хотите удалить игру с ID %1 на %2?</Russian>
                 <Chinesesimp>您确定要删除 %2 上 ID 为 %1 的游戏吗？</Chinesesimp>
                 <Korean>정말 %2에서 ID가 %1인 게임을 삭제하시겠습니까?</Korean>
+                <French>Êtes-vous sûr de vouloir supprimer le partie avec l'ID %1 sur %2 ?</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_start_copy">
                 <Original>Copy game with ID %1, </Original>
                 <Russian>Копировать игру с ID %1, </Russian>
                 <Chinesesimp>复制 ID 为 %1 的游戏，</Chinesesimp>
                 <Korean>ID가 %1인 게임 복사, </Korean>
+                <French>Copier la partie avec ID %1,</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_start_load">
                 <Original>Load game with ID %1, </Original>
                 <Russian>Загрузить игру с ID %1, </Russian>
                 <Chinesesimp>加载 ID 为 %1 的游戏，</Chinesesimp>
                 <Korean>ID가 %1인 게임 불러오기, </Korean>
+                <French>Charger la partie avec l' ID %1,</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_occ_inv">
                 <Original>%1 occupants and %2 invaders?</Original>
                 <Russian>%1 оккупантами и %2 захватчиками?</Russian>
                 <Chinesesimp>%1 防守方和 %2 入侵者？</Chinesesimp>
                 <Korean>%1이(가) 점령군이고 %2이(가) 침략군입니까?</Korean>
+                <French>%1 occupants et %2 envahisseurs ?</French>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_confirm_game_name">
                 <Original>name "%1", </Original>
                 <Russian>названием "%1", </Russian>
                 <Chinesesimp>名称“%1”，</Chinesesimp>
                 <Korean>"%1"(으)로 명명, </Korean>
+                <French>nom "%1", </French>
             </Key>
         </Container>
         <Container name="setup_dialog_table">
@@ -3283,6 +3303,7 @@
                 <Russian>Карта</Russian>
                 <Chinesesimp>地图</Chinesesimp>
                 <Korean>지도</Korean>
+                <French>Carte</French>
             </Key>
             <Key ID="STR_antistasi_setup_dialog_table_name">
                 <Original>Name</Original>
@@ -3290,6 +3311,7 @@
                 <Russian>Название</Russian>
                 <Chinesesimp>名字</Chinesesimp>
                 <Korean>이름</Korean>
+                <French>Nom</French>
             </Key>
             <Key ID="STR_antistasi_setup_dialog_table_version">
                 <Original>Version</Original>
@@ -3297,6 +3319,7 @@
                 <Russian>Версия</Russian>
                 <Chinesesimp>载具</Chinesesimp>
                 <Korean>버전</Korean>
+                <French>Version</French>
             </Key>
             <Key ID="STR_antistasi_setup_dialog_table_time">
                 <Original>Time</Original>
@@ -3304,6 +3327,7 @@
                 <Russian>Время</Russian>
                 <Chinesesimp>时间</Chinesesimp>
                 <Korean>시간</Korean>
+                <French>Temps</French>
             </Key>
             <Key ID="STR_antistasi_setup_dialog_table_file">
                 <Original>File</Original>
@@ -3311,6 +3335,7 @@
                 <Russian>Файл</Russian>
                 <Chinesesimp>文件</Chinesesimp>
                 <Korean>파일</Korean>
+                <French>Fichier</French>
             </Key>
         </Container>
         <Container name="hqpos_dialog">

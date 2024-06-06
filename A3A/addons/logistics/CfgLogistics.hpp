@@ -60,6 +60,7 @@ class DOUBLES(ADDON,Cargo)
     #include "Cargo\CSLA.hpp"
     #include "Cargo\GM.hpp"
     #include "Cargo\RHS.hpp"
+    #include "Cargo\RF.hpp"
     #include "Cargo\IFA.hpp"
     #include "Cargo\SPE.hpp"
     #include "Cargo\UNS.hpp"

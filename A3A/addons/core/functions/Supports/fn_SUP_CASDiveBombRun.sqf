@@ -14,6 +14,9 @@ FIX_LINE_NUMBERS()
 
 params ["_plane", "_target", "_supportName", "_waypoint"];
 private _group = group driver _plane;
+private _gunner = gunner _plane;
+private _weaponState2 = [];
+private _weaponState3 = [];
 
 (_plane getVariable "diveParams") params ["_startAlt", "_endAlt", "_diveSpeed", "_diveAngle", "_turnRate", "_bombDrag"];
 
@@ -106,6 +109,7 @@ private _ehID = addMissionEventHandler ["EachFrame", {
     if (getPosATL _plane#2 < _endAlt) exitWith {
         removeMissionEventHandler ["EachFrame", _thisEventHandler];
         driver _plane enableAI "All";
+        gunner _plane enableAI "All";
         if (_targetDir vectorDotProduct vectorDir _plane < 0.9) exitWith {
             Debug("Bomb drop abandoned due to bad heading");
         };
@@ -115,17 +119,21 @@ private _ehID = addMissionEventHandler ["EachFrame", {
             private _bombMags = getArray (configFile >> "CfgWeapons" >> _x >> "magazines");
             private _ammoCount = 0;
             {
-                if (_x in _bombMags) then { _ammoCount = _ammoCount + getNumber (configFile >> "CfgMagazines" >> _x >> "count") };
+                if (_x in _bombMags) then { _ammoCount = _ammoCount + getNumber (configFile >> "CfgMagazines" >> _x >> "count")}; //+ ((driver _plane) ammo _x) + ( gunner _plane ammo _x) ///something wrong with this ammo count
             } forEach (_plane getVariable "loadout");
-
             private _weaponState = weaponState [_plane, [-1], _x];
+            _weaponState2 = weaponState [_plane, [0], _x];
+            _weaponState3 = weaponState [_plane, [1], _x];
+            /* if !(_gunner isEqualTo objNull) then {
+            }; */
             for "_i" from 1 to _ammoCount do {
                 driver _plane forceWeaponFire [_weaponState#1, _weaponState#2];
+                gunner _plane forceWeaponFire [_weaponState2#1, _weaponState2#2];
+                commander _plane forceWeaponFire [_weaponState3#1, _weaponState3#2];
             };
         } forEach (_plane getVariable "bombRacks");
         _plane setVariable ["bombsDropped", true];
     };
-
 }, [_plane, _target, _endAlt, _diveSpeed, _turnRate, _bombDrag]];
 
 waitUntil { sleep 1; !(getEventHandlerInfo ["EachFrame", _ehID] # 0) };
@@ -134,4 +142,3 @@ _plane removeEventHandler ["Fired", _firedEH];
 
 // return true if bombs were dropped
 (_plane getVariable ["bombsDropped", false]);
-

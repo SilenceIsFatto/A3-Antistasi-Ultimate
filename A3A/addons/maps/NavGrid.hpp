@@ -45,4 +45,5 @@ class NavGrid {
 	WW2_Omaha_Beach = QPATHTOFOLDER(Antistasi_WW2_Omaha_Beach.WW2_Omaha_Beach\navGrid.sqf);
 	UMB_Colombia = QPATHTOFOLDER(Antistasi_UMB_Colombia.UMB_Colombia\navGrid.sqf);
 	tem_kujari = QPATHTOFOLDER(Antistasi_tem_kujari.tem_kujari\navGrid.sqf);
+	stozec = QPATHTOFOLDER(Antistasi_stozec.stozec\navGrid.sqf);
 };

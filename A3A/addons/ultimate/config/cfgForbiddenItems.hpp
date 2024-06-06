@@ -11,6 +11,7 @@ class forbiddenItems
         unlimited = 0;
     };
 
+    #include "cfgForbiddenItemsAndroid.hpp"
     #include "cfgForbiddenItemsCW.hpp"
     #include "cfgForbiddenItemsFWA.hpp"
 	#include "cfgForbiddenItemsGM.hpp"

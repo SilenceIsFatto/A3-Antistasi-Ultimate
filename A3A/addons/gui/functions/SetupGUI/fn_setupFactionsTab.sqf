@@ -102,7 +102,7 @@ switch (_mode) do
                 private _index = _listBox lbAdd getText(_x/"name");
                 if (_x call _fnc_factionLoaded) then {
                     _listBox lbSetPicture [_index, getText(_x/"flagTexture")];
-                    _listBox lbSetPictureRight [_index, getText(_x/"logo")];
+                    _listBox lbSetPictureRight [_index, getText(_x/"logo")]; // Perhaps remove this because it looks like a cluster fuck with mods loaded
                     _listBox lbSetData [_index, configName _x];
                     _listBox lbSetTooltip [_index, getText(_x/"description")];
                     if (_selected == configName _x) then { _listBox lbSetCurSel (lbSize _listBox - 1) };

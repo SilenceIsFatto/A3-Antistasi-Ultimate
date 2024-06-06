@@ -38,7 +38,7 @@ private _crewGroup = [_side, _vehicle, nil, _isAttackHeli] call A3A_fnc_createVe
 
 private _cargoGroup = grpNull;
 private _expectedCargo = ([_vehicleType, true] call BIS_fnc_crewCount) - ([_vehicleType, false] call BIS_fnc_crewCount);
-if (_expectedCargo >= 2 and !_isAttackHeli) then
+if (_expectedCargo >= 2) then
 {
     //Vehicle is able to transport units
     private _groupType = call {
@@ -75,6 +75,12 @@ if (_expectedCargo >= 2 and !_isAttackHeli) then
             _x moveInCargo _vehicle;
         };
         [_x, nil, nil, _resPool] call A3A_fnc_NATOinit;
+    } forEach units _cargoGroup;
+    {
+        private _index = _vehicle getCargoIndex _x;
+        if (_index == -1) then {
+            deleteVehicle _x;
+        };
     } forEach units _cargoGroup;
 };
 

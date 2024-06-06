@@ -45,4 +45,5 @@ class mapInfo {
 	#include "Antistasi_WW2_Omaha_Beach.WW2_Omaha_Beach\mapInfo.hpp"
 	#include "Antistasi_UMB_Colombia.UMB_Colombia\mapInfo.hpp"
 	#include "Antistasi_tem_kujari.tem_kujari\mapInfo.hpp"
+	#include "Antistasi_stozec.stozec\mapInfo.hpp"
 };

@@ -5,6 +5,11 @@ class traderMods
         addons[] = {};
         prefix = "";
     };
+    class kkiv2035 : base
+    {
+        addons[] = {"Kio_Kkiv_2035"};
+        prefix = "kkiv2035";
+    };
     class aegis : base
     {
         addons[] = {"Weapons_1_F_lxWS","A3_Aegis_Armor_F_Aegis_APC_Tracked_02", "A3_Atlas_Armor_F_Atlas_APC_Tracked_02", "A3_Opf_Armor_F_Opf_APC_Tracked_02"};

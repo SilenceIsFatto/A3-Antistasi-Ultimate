@@ -43,8 +43,14 @@ switch (true) do {
 		_formatX = "n";
 		_color = colorTeamPlayer;
 	};
-	case (_side in [Occupants, civilian]): {
+	case (_side == civilian): {
+		_enemyX = false;
 		_formatX = "b";
+		_color = colorCivilian;
+	};
+	case (_side == Occupants): {
+		_formatX = "b";
+		_color = colorOccupants;
 	};
 	case (_side == Invaders): {
 		_formatX = "o";

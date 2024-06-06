@@ -1,14 +1,76 @@
+///civ cars
+class vn_wheeled_f_vietnam_02_car_vn_wheeled_car_01_p3d : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {0,-1.4,-0.9};
+            seats[] = {3};
+        };
+    };
+};
+
+class vn_wheeled_f_vietnam_02_car_vn_wheeled_car_03_p3d : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {0,-1.6,-0.9};
+        };
+    };
+};
+
+class vn_wheeled_f_vietnam_02_car_vn_wheeled_car_02_p3d : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {0,0.025,0.155};
+        };
+        class Node2
+        {
+            offset[] = {0,-0.775,0.155};
+        };
+    };
+};
+
 class vn_wheeled_f_vietnam_m151_vn_wheeled_m151_01_p3d : TRIPLES(ADDON,Nodes,Base)
 {
     class Nodes
     {
         class Node1
         {
-            offset[] = {0,-0.9,-0.49};
-            seats[] = {1};
+            offset[] = {0,-0.62,-0.78};
         };
     };
 };
+
+class vn_wheeled_f_vietnam_bicycle_vn_bicycle_02_p3d : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {0.05,0.18,-0.3};
+        };
+    };
+};
+
+class vn_wheeled_f_vietnam_bicycle_vn_bicycle_01_p3d : TRIPLES(ADDON,Nodes,Base)
+{
+    class Nodes
+    {
+        class Node1
+        {
+            offset[] = {0,-0.4,-0.66};
+            seats[] = {0};
+        };
+    };
+};
+//
 
 class vn_wheeled_f_vietnam_btr40_vn_wheeled_btr40_02 : TRIPLES(ADDON,Nodes,Base)
 {
@@ -279,7 +341,6 @@ class vn_boat_f_vietnam_gunboat_vn_boat_03_p3d : TRIPLES(ADDON,Nodes,Base)
 
 class vn_wheeled_f_vietnam_02_car_vn_wheeled_car_04_p3d : TRIPLES(ADDON,Nodes,Base)
 {
-    canLoadWeapon = 0;
     class Nodes
     {
         class Node1
@@ -296,24 +357,6 @@ class vn_wheeled_f_vietnam_02_car_vn_wheeled_car_04_p3d : TRIPLES(ADDON,Nodes,Ba
         {
             offset[] = {0,-1.2,-0.62};
             seats[] = {3,4};
-        };
-    };
-};
-
-class vn_wheeled_f_vietnam_02_car_vn_wheeled_car_02_p3d : TRIPLES(ADDON,Nodes,Base)
-{
-    canLoadWeapon = 0;
-    class Nodes
-    {
-        class Node1
-        {
-            offset[] = {0,-0.02,0.22};
-            seats[] = {};
-        };
-        class Node2
-        {
-            offset[] = {0,-0.82,0.22};
-            seats[] = {};
         };
     };
 };

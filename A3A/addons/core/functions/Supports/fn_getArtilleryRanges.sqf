@@ -23,10 +23,10 @@ params ["_vehType", "_shellType"];
 private _turretCfg = call {
     private _allTurrets = configProperties [configFile >> "CfgVehicles" >> _vehType >> "Turrets"];
     private _idx = _allTurrets findIf { getNumber (_x >> "elevationMode") == 3 };       // no idea if this is a valid check
-    if (_idx == -1) exitWith {
+    /* if (_idx == -1) exitWith {
         Error_1("Artillery turret not found on %1", _vehType);
         configFile >> "CfgVehicles" >> _vehType >> "Turrets" >> "MainTurret";
-    };
+    }; */
     _allTurrets # _idx;
 };
 

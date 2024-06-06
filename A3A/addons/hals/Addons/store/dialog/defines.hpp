@@ -174,6 +174,58 @@ class RscItemListBox {
 	itemBackground[] = {0, 1, 1, 0.1};
 };
 
+class RscItemListBoxCategories {
+	deletable = 0;
+	fade = 0;
+	access = 0;
+	type = CT_LISTBOX;
+	rowHeight = "1.15 * pixelH * pixelGridNoUIScale * 1.35";
+	colorText[] = {1, 1, 1, 1};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	colorScrollbar[] = {1, 0, 0, 0};
+	colorSelect[] = {0, 0, 0, 1};
+	colorSelect2[] = {0, 0, 0, 1};
+	colorSelectBackground[] = {1, 1, 1, 0.5};
+	colorSelectBackground2[] = {1, 1, 1, 0.5};
+	colorBackground[] = {1, 1, 1, 0.15};
+	soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect", 0.09, 1};
+	autoScrollSpeed = -1;
+	autoScrollDelay = 5;
+	autoScrollRewind = 0;
+	arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+	arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+	colorPicture[] = {1, 1, 1, 1};
+	colorPictureSelected[] = {1, 1, 1, 1};
+	colorPictureDisabled[] = {1, 1, 1, 0.25};
+	colorPictureRight[] = {1, 1, 1, 1};
+	colorPictureRightSelected[] = {1, 1, 1, 1};
+	colorPictureRightDisabled[] = {1, 1, 1, 0.25};
+	colorTextRight[] = {1, 1, 1, 1};
+	colorSelectRight[] = {0, 0, 0, 1};
+	colorSelect2Right[] = {0, 0, 0, 1};
+	tooltipColorText[] = {1, 1, 1, 1};
+	tooltipColorBox[] = {1, 1, 1, 1};
+	tooltipColorShade[] = {0, 0, 0, 0.65};
+
+	class ListScrollBar: ScrollBar {
+		color[] = {1, 1, 1, 0.6};
+		autoScrollEnabled = 1;
+	};
+
+	x = 0;
+	y = 0;
+	w = 0.3;
+	h = 0.3;
+	style = LB_TEXTURES;
+	font = "RobotoCondensedLight";
+	shadow = 0;
+	colorShadow[] = {0, 0, 0, 0.5};
+	period = 0;
+	maxHistoryDelay = 1;
+	itemSpacing = 0.01;
+	itemBackground[] = {0, 1, 1, 0.1};
+};
+
 class RscItemText {
 	deletable = 0;
 	fade = 0;

@@ -38,7 +38,7 @@ private _locations = [];
 
 private _radius = (sqrt 2 / 2 * worldSize) / (3 + 2);
 
-private _frontLineCities = citiesX select {([_x] call A3A_fnc_isFrontline && {sidesX getVariable [_x,sideUnknown] != teamPlayer})};
+private _frontLineCities = citiesX select {([_x] call A3A_fnc_isFrontline && {sidesX getVariable [_x,sideUnknown] != teamPlayer})}; ///look here on how fn_frontline works
 private _cities = (citiesX select {!(_x in _frontLineCities) && {sidesX getVariable [_x,sideUnknown] != teamPlayer}}) call BIS_fnc_arrayShuffle;
 private _controls = (controlsX select {
     private _control = _x;

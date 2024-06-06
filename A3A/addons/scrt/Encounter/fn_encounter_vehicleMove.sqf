@@ -50,7 +50,7 @@ private _roadPosition = getPos (_road select 0);
 private _truckClass = selectRandom ((_faction get "vehiclesAmmoTrucks") + (_faction get "vehiclesRepairTrucks") + (_faction get "vehiclesFuelTrucks") + (_faction get "vehiclesMedical"));
 
 if (_truckClass == "") exitWith {
-    Error("No outposts in proximity, aborting Vehicle Move Event.");
+    Error("No trucks, problems with template, aborting Vehicle Move Event.");
     isEventInProgress = false;
     publicVariableServer "isEventInProgress";
 };

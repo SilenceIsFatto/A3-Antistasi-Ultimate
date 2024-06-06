@@ -31,11 +31,7 @@ private _vehicleAA = [];
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F" , "I_SDV_01_F" , "I_Boat_Armed_01_minigun_F" , "O_Boat_Armed_01_hmg_F"]] call _fnc_saveToTemplate;
 
-
-private _vehiclePlane = [];
-if (_hasApex) then {
-    _vehiclePlane append ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
-};
+private _vehiclePlane = ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
 
 private _vehiclesCivCar = ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_SUV_01_F"];
 private _CivTruck = ["C_Truck_02_transport_F", "C_Truck_02_covered_F"];
@@ -58,9 +54,11 @@ private _staticMortars = ["I_G_Mortar_01_F"];
 
 if (_hasRF) then {
     _vehiclesCivCar append ["C_Pickup_rf", "C_Pickup_covered_rf"];
-    _civHelicopters append ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF"];
-    _vehiclesLightArmed append ["a3u_black_Pickup_mmg_alt_rf", "a3u_black_Pickup_mmg_frame_rf"];
-    _vehiclesLightUnarmed append ["a3a_black_Pickup_rf"];
+    _civHelicopters append ["C_Heli_EC_01A_civ_RF", "C_Heli_EC_01_civ_RF","C_Heli_EC_04_rescue_RF"];
+    _vehiclesLightArmed append ["a3u_black_Pickup_mmg_alt_rf", "a3u_black_Pickup_mmg_frame_rf","I_G_Pickup_hmg_rf"];
+    _vehiclesLightUnarmed pushBack "I_G_Pickup_rf";
+    _vehicleAA pushBack "B_Pickup_aat_rf";
+    _staticMortars pushBack "I_G_CommandoMortar_RF";
 };
 
 if (_hasApex) then {
@@ -74,9 +72,6 @@ if (_hasApex) then {
 if (_hasLawsOfWar) then {
     _CivTruck append ["C_Van_02_vehicle_F", "C_Van_02_transport_F"];
     _VehTruck append ["I_G_Van_02_transport_F", "I_G_Van_02_vehicle_F"];
-    _vehiclesLightUnarmed pushBack "I_C_Offroad_02_unarmed_F";
-    _vehiclesLightArmed pushBack "I_C_Offroad_02_LMG_F";
-    _vehiclesAt pushBack "I_C_Offroad_02_AT_F";
 };
 
 if (_hasContact) then {
@@ -113,11 +108,11 @@ if (_hasGM) then {
 
 if (_hasCSLA) then {
     _staticMG append ["AFMC_M2h", "AFMC_M2l","CSLA_UK59L_Stat","CSLA_UK59T_Stat"];
-    _staticAT append ["AFMC_TOW_Stat", "CSLA_rT21","CSLA_9K113_Stat"];
+    _staticAT append ["AFMC_TOW_Stat", "CSLA_T21_Stat","CSLA_9K113_Stat"];
     _staticAA pushback "CSLA_PLdvK59_Stat";
     _vehiclePlane pushBack "CSLA_CIV_An2_1";
     _vehiclesCivCar append ["CSLA_CIV_Sarka1200","CSLA_CIV_ADA1600","CSLA_CIV_AZU","CSLA_civ_CATOR"];
-    _CivTruck append ["CSLA_CIV_V3Sr", "CSLA_CIV_V3S"];
+    _CivTruck append ["CSLA_CIV_V3S"];
     _VehTruck append ["CSLA_F813o", "CSLA_F813"];
     _vehiclesLightUnarmed append ["US85_M1008c","US85_M1008","US85_M1025_ua","US85_M1043_ua","FIA_AZU_para","CSLA_AZU_R2","CSLA_AZU"];
     _vehiclesLightArmed append ["US85_M1025_M2","US85_M1025_M60","US85_M1043_M2","US85_M1043_M60","US85_M998SFGT","FIA_AZU_DSKM"];
@@ -127,6 +122,7 @@ if (_hasCSLA) then {
     _CivBoat pushback "CSLA_lodka";
 };
 
+["staticMortars", _staticMortars] call _fnc_saveToTemplate;
 ["staticMGs", _staticMG] call _fnc_saveToTemplate;
 ["staticAT", _staticAT] call _fnc_saveToTemplate;
 ["vehiclesCivHeli", _civHelicopters] call _fnc_saveToTemplate;
@@ -179,6 +175,22 @@ private _shopWs = if (_hasWs) then {
 } else {
     []
 };
+private _shopRF = if (_hasRF) then {
+    [
+        ["I_UAV_RC40_SENSOR_RF", 1500, "UAV", {tierWar > 2}],
+        ["I_UAV_RC40_HE_RF", 3500, "UAV", {tierWar > 2}],
+        ["I_G_Pickup_mrl_rf", 25000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
+        ["I_TwinMortar_RF", 40000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
+        ["a3a_black_Heli_light_03_dynamicLoadout_RF", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["B_Heli_EC_03_RF", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["I_Heli_EC_02_RF", 35000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["B_Heli_EC_04_military_RF", 12000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["I_Heli_EC_01A_military_RF", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["a3a_black_Heli_light_03_unarmed_RF", 8000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+    ]
+} else {
+    []
+};
 private _shopLawsOfWar = if (_hasLawsOfWar) then {
     [
         ["I_UAV_06_F", 2500, "UAV", {tierWar > 2}], 
@@ -213,7 +225,6 @@ private _shopMarksman = if (_hasMarksman) then {
 };
 private _shopGM = if (_hasGM) then {
     [
-
     ["gm_ge_army_kat1_463_mlrs", 55000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
     ["gm_gc_army_2s1", 50000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
     ["gm_dk_army_m109", 50000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
@@ -302,7 +313,7 @@ private _shopCSLA = if (_hasCSLA) then {
     []
 };
 
-private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopLawsOfWar + _shopContact + _shopJets + _shopMarksman + _shopGM + _shopCSLA + [
+private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopRF + _shopLawsOfWar + _shopContact + _shopJets + _shopMarksman + _shopGM + _shopCSLA + [
     ["I_HMG_01_high_F", 1000, "STATICMG", {tierWar > 3}],
     ["I_HMG_01_F", 700, "STATICMG", {tierWar > 3}],
     ["I_GMG_01_high_F", 3000, "STATICMG", {tierWar > 3}],
@@ -327,9 +338,7 @@ private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopLawsOfWar
     ["I_LT_01_AA_F", ["Indep_Olive",1]],
     ["I_LT_01_scout_F", ["Indep_Olive",1]],
     ["I_LT_01_cannon_F", ["Indep_Olive",1]],
-    ["I_LT_01_AT_F", ["Indep_Olive",1]],
-    ["I_Heli_Transport_02_F", ["Dahoman", 1]],
-    ["O_Heli_Light_02_unarmed_F", ["Blue", 1]]
+    ["I_LT_01_AT_F", ["Indep_Olive",1]]
 ]] call _fnc_saveToTemplate;
 
 #include "Vanilla_Reb_Vehicle_Attributes.sqf"
@@ -352,7 +361,6 @@ private _initialRebelEquipment = [
 
 if (_hasRF) then {
     _initialRebelEquipment append ["srifle_h6_tan_rf","10Rnd_556x45_AP_Stanag_red_Tan_RF","10Rnd_556x45_AP_Stanag_Tan_RF","10Rnd_556x45_AP_Stanag_green_Tan_RF"];
-    _initialRebelEquipment = _initialRebelEquipment - ["SMG_05_F","SMG_01_F","hgun_PDW2000_F","SMG_02_F","30Rnd_45ACP_Mag_SMG_01","30Rnd_9x21_Mag_SMG_02"];
 };
 
 if (_hasLawsOfWar) then {
@@ -594,7 +602,20 @@ if (_hasCSLA) then {
 if (_hasRF) then {
     _dlcUniforms append [
         "U_IG_Guerrilla_RF",
-        "U_IG_leader_RF"
+        "U_IG_leader_RF",
+        "U_C_PilotJacket_brown_RF",
+        "U_C_PilotJacket_open_brown_RF",
+        "U_C_PilotJacket_lbrown_RF",
+        "U_C_PilotJacket_open_lbrown_RF",
+        "U_C_PilotJacket_black_RF",
+        "U_C_PilotJacket_open_black_RF",
+        "U_C_FirefighterFatigues_RF",
+        "U_C_FirefighterFatigues_RolledUp_RF",
+        "U_C_HeliPilotCoveralls_Yellow_RF",
+        "U_C_HeliPilotCoveralls_Green_RF",
+        "U_C_HeliPilotCoveralls_Rescue_RF",
+        "U_C_HeliPilotCoveralls_Blue_RF",
+        "U_C_HeliPilotCoveralls_Black_RF"
     ];
 };
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
@@ -778,6 +799,19 @@ if (_hasCSLA) then {
     ];
 };
 
+if (_hasRF) then {
+    _dlcheadgear append [
+        "H_Helmet_HardHat_White_RF",
+        "H_Helmet_HardHat_Yellow_RF",
+        "H_Helmet_HardHat_Green_RF",
+        "H_Helmet_HardHat_Red_RF",
+        "H_Helmet_HardHat_Orange_RF",
+        "H_Helmet_HardHat_Blue_RF",
+        "H_Helmet_HardHat_Black_RF",
+        "H_Cap_marshal_blue_RF"
+    ];
+};
+
 ["headgear", _headgear + _dlcheadgear] call _fnc_saveToTemplate;
 /////////////////////
 ///  Identities   ///
@@ -787,7 +821,7 @@ if (_hasCSLA) then {
 "GreekHead_A3_05","GreekHead_A3_06","GreekHead_A3_07","GreekHead_A3_08",
 "GreekHead_A3_09","GreekHead_A3_10","GreekHead_A3_11","GreekHead_A3_12","GreekHead_A3_13",
 "GreekHead_A3_14","Ioannou","Mavros","Sturrock"]] call _fnc_saveToTemplate;
-["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE","Male01GREVR"]] call _fnc_saveToTemplate;
+["voices", ["Male01GRE", "Male02GRE", "Male03GRE", "Male04GRE", "Male05GRE", "Male06GRE"]] call _fnc_saveToTemplate;
 
 #include "Vanilla_Reb_Vehicle_Attributes.sqf"
 
@@ -799,7 +833,6 @@ private _loadoutData = call _fnc_createLoadoutData;
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
-
 
 if (_hasWs) then {
     _loadoutData set ["binoculars", ["Binocular","Camera_lxWS"]];
@@ -819,6 +852,11 @@ if (_hasWs) then {
     _loadoutData set ["facewearWS", ["G_Balaclava_blk_lxWS", "G_Balaclava_oli_lxWS", "G_Balaclava_snd_lxWS", "G_Combat_lxWS", "G_Headset_lxWS"]];
 } else {
     _loadoutData set ["facewearWS", []];
+};
+
+if (_hasRF) then {
+    (_loadoutData get "facemask") pushBack "G_Bandanna_yellow_RF";
+    (_loadoutData get "glasses") append ["G_Glasses_black_RF","G_Glasses_white_RF"];
 };
 
 if (_hasContact) then {

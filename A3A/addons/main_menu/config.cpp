@@ -26,67 +26,103 @@ class CfgPatches
 #endif
 
 #if RANDOM_NUMBER > 0
-    #define BACKGROUND data\backgrounds\us_army_co.jpg
+    #define BACKGROUND data\backgrounds\Zombies_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 17
-    #define BACKGROUND data\backgrounds\absolute_heat_co.jpg
-#endif
-
-#if RANDOM_NUMBER > 34
+#if RANDOM_NUMBER > 11
     #define BACKGROUND data\backgrounds\bwa_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 51
+#if RANDOM_NUMBER > 22
     #define BACKGROUND data\backgrounds\canada_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 68
-    #define BACKGROUND data\backgrounds\rebels2_co.jpg
+#if RANDOM_NUMBER > 33
+    #define BACKGROUND data\backgrounds\Cars_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 85
+#if RANDOM_NUMBER > 44
+    #define BACKGROUND data\backgrounds\clone_wars_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 55
     #define BACKGROUND data\backgrounds\ffaa_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 102
+#if RANDOM_NUMBER > 66
     #define BACKGROUND data\backgrounds\italy_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 119
-    #define BACKGROUND data\backgrounds\pla_co.jpg
+#if RANDOM_NUMBER > 77
+    #define BACKGROUND data\backgrounds\Maps_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 136
+#if RANDOM_NUMBER > 88
+    #define BACKGROUND data\backgrounds\Modsets_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 99
+    #define BACKGROUND data\backgrounds\transport_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 110
     #define BACKGROUND data\backgrounds\racs_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 153
+#if RANDOM_NUMBER > 121
     #define BACKGROUND data\backgrounds\rebels_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 170
+#if RANDOM_NUMBER > 132
+    #define BACKGROUND data\backgrounds\rebels2_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 143
+    #define BACKGROUND data\backgrounds\rebels3_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 154
     #define BACKGROUND data\backgrounds\russia_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 187
+#if RANDOM_NUMBER > 165
     #define BACKGROUND data\backgrounds\spearhead_1944_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 204
+#if RANDOM_NUMBER > 176
+    #define BACKGROUND data\backgrounds\Stealth_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 187
+    #define BACKGROUND data\backgrounds\Sunset_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 198
     #define BACKGROUND data\backgrounds\sweden_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 221
+#if RANDOM_NUMBER > 209
     #define BACKGROUND data\backgrounds\turkey_co.jpg
 #endif
 
-#if RANDOM_NUMBER > 238
-    #define BACKGROUND data\backgrounds\vietnarm_co.jpg
+#if RANDOM_NUMBER > 220
+    #define BACKGROUND data\backgrounds\us_army_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 231
+    #define BACKGROUND data\backgrounds\usmc_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 242
+    #define BACKGROUND data\backgrounds\vietnam_co.jpg
+#endif
+
+#if RANDOM_NUMBER > 254
+    #define BACKGROUND data\backgrounds\onein255_co.jpg
 #endif
 
 #ifndef BACKGROUND
-    #define BACKGROUND data\backgrounds\usmc_co.jpg
+    #define BACKGROUND data\backgrounds\Sunset_co.jpg
 #endif
 
 class RscActivePicture;
@@ -109,7 +145,7 @@ class RscTitles
 		};
 		class BackgroundNoise: RscPicture
 		{
-			text = QPATHTOFOLDER(data\backgrounds\AUC_Credits_Blank_co.jpg);
+			text = QPATHTOFOLDER(data\backgrounds\LoadingScreen\AUC_Credits_Blank_co.jpg);
 			colorText[]={1,1,1,1};
 			x="safezoneX";
 			y="safezoneY";
@@ -191,7 +227,7 @@ class RscTitles
 		};
 		class Picture: RscPicture
 		{
-			text = QPATHTOFOLDER(data\backgrounds\AUC_Credits_co.jpg);
+			text = QPATHTOFOLDER(data\backgrounds\LoadingScreen\AUC_Credits_co.jpg);
 			colorText[]={1,1,1,1};
 			x="safezoneX";
 			y="safezoneY";
@@ -225,7 +261,7 @@ class RscTitles
 		};
 		class Picture: RscPicture
 		{
-			text = QPATHTOFOLDER(data\backgrounds\AUC_Updates_co.jpg);
+			text = QPATHTOFOLDER(data\backgrounds\LoadingScreen\AUC_Updates_co.jpg);
 			colorText[]={1,1,1,1};
 			x="safezoneX";
 			y="safezoneY";
@@ -305,7 +341,7 @@ class RscDisplayMain: RscStandardDisplay //main menu
 			y = "safeZoneY + safeZoneH - 0.28";
 			w = 0.18;
 			h = 0.05;
-			text = QPATHTOFOLDER(data\DevB.paa); // No text needed for an image button
+			text = QPATHTOFOLDER(data\SteamB.paa); // No text needed for an image button
 			colorBackground[] = {0, 0, 0, 0};
 			colorText[] = {1, 1, 1, 1};
 			font = "RobotoCondensed";
@@ -331,17 +367,16 @@ class RscDisplayMain: RscStandardDisplay //main menu
 		class SteamButton1: base_side_btn 
         {
 			onLoad = "(_this # 0) ctrlEnable true";
-			text = QPATHTOFOLDER(data\DevB.paa); // Path to button image
+			text = QPATHTOFOLDER(data\SteamB.paa); // Path to button image
 			tooltip = "Steam workshop Mod";
 			url = "https://steamcommunity.com/sharedfiles/filedetails/?id=3020755032";
-			onMouseEnter = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\DevB_Hov.paa""";
-			onMouseExit = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\DevB.paa""";
-			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\DevB_Hov.paa""";
-			onMouseButtonDown = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\DevB.paa""";
+			onMouseEnter = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\SteamB_Hov.paa""";
+			onMouseExit = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\SteamB.paa""";
+			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\SteamB_Hov.paa""";
+			onMouseButtonDown = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\SteamB.paa""";
 		};
-		class GitHubButton2: base_side_btn 
+		class GitHubButton2: SteamButton1
         {
-			onLoad = "(_this # 0) ctrlEnable true";
 			y = "safeZoneY + safeZoneH - 0.34";
 			text = QPATHTOFOLDER(data\GitB.paa); // Path to button image
 			tooltip="GitHub Page";
@@ -351,9 +386,8 @@ class RscDisplayMain: RscStandardDisplay //main menu
 			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\GitB_Hov.paa""";
 			onMouseButtonDown = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\GitB.paa""";
 		};
-		class ServerButton3: base_side_btn 
+		class ServerButton3: base_side_btn
         {
-			onLoad = "(_this # 0) ctrlEnable true";
 			y = "safeZoneY + safeZoneH - 0.4";
 			text = QPATHTOFOLDER(data\ServerB.paa); // No text needed for an image button
 			tooltip="Connect to our community server!";
@@ -374,6 +408,17 @@ class RscDisplayMain: RscStandardDisplay //main menu
 			onMouseExit = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\ArmaCredits.paa""";
 			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\ArmaCredits_Hov.paa""";
 			onMouseButtonDown = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\ArmaCredits.paa""";
+		};
+		class WebsiteButton5: ArmaCreditsButton4
+        {
+			y = "safeZoneY + safeZoneH - 0.34";
+			text = QPATHTOFOLDER(data\WebsiteB.paa); // No text needed for an image button
+			tooltip="Official Website";
+			url = "https://antistasiultimate.com/Home/";
+			onMouseEnter = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\WebsiteB_Hov.paa""";
+			onMouseExit = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\WebsiteB.paa""";
+			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\WebsiteB_Hov.paa""";
+			onMouseButtonDown = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\WebsiteB.paa""";
 		};
 	};
 };

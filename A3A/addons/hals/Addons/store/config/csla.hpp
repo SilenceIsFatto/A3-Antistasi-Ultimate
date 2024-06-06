@@ -2,21 +2,21 @@
 	{
 		displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_CSLA", localize "STR_A3AU_rifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
-			ITEM(CSLA_rSa61, 600, _STOCKTYPE_);	
-			ITEM(CSLA_Sa24, 600, _STOCKTYPE_);	
-			ITEM(CSLA_Sa26, 600, _STOCKTYPE_);	
-			ITEM(CSLA_Sa58P, 600, _STOCKTYPE_);	
-			ITEM(CSLA_Sa58V, 600, _STOCKTYPE_);	
-			ITEM(CSLA_VG70, 600, _STOCKTYPE_);	
-			ITEM(US85_MPVN, 600, _STOCKTYPE_);	
-			ITEM(US85_MPVSD, 600, _STOCKTYPE_);	
-			ITEM(US85_M16A2, 600, _STOCKTYPE_);	
-			ITEM(US85_M16A1, 600, _STOCKTYPE_);	
-			ITEM(US85_M16A2CAR, 600, _STOCKTYPE_);	
-			ITEM(US85_M16A2GL, 600, _STOCKTYPE_);	
-			ITEM(US85_M16A2CARGL, 600, _STOCKTYPE_);	
-			ITEM(US85_FAL, 600, _STOCKTYPE_);	
-			ITEM(US85_FALf, 600, _STOCKTYPE_);		
+			ITEM(CSLA_rSa61, 600, RIFLE_STOCK);	
+			ITEM(CSLA_Sa24, 600, RIFLE_STOCK);	
+			ITEM(CSLA_Sa26, 600, RIFLE_STOCK);	
+			ITEM(CSLA_Sa58P, 600, RIFLE_STOCK);	
+			ITEM(CSLA_Sa58V, 600, RIFLE_STOCK);	
+			ITEM(CSLA_VG70, 600, RIFLE_STOCK);	
+			ITEM(US85_MPVN, 600, RIFLE_STOCK);	
+			ITEM(US85_MPVSD, 600, RIFLE_STOCK);	
+			ITEM(US85_M16A2, 600, RIFLE_STOCK);	
+			ITEM(US85_M16A1, 600, RIFLE_STOCK);	
+			ITEM(US85_M16A2CAR, 600, RIFLE_STOCK);	
+			ITEM(US85_M16A2GL, 600, RIFLE_STOCK);	
+			ITEM(US85_M16A2CARGL, 600, RIFLE_STOCK);	
+			ITEM(US85_FAL, 600, RIFLE_STOCK);	
+			ITEM(US85_FALf, 600, RIFLE_STOCK);		
 	}; 
 
 ///mg
@@ -24,9 +24,9 @@
 	{
 		displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_CSLA", localize "STR_A3AU_mgs"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-			ITEM(CSLA_UK59L, 1000, _STOCKTYPE_);	
-			ITEM(US85_M249, 1000, _STOCKTYPE_);	
-			ITEM(US85_M60, 1000, _STOCKTYPE_);		
+			ITEM(CSLA_UK59L, 1000, RIFLE_STOCK);	
+			ITEM(US85_M249, 1000, RIFLE_STOCK);	
+			ITEM(US85_M60, 1000, RIFLE_STOCK);		
 	}; 
 
 ////sniperRifles
@@ -34,10 +34,10 @@
 	{
 	displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_CSLA", localize "STR_A3AU_sniperRifles"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";	
-			ITEM(CSLA_OP63, 1000, _STOCKTYPE_);	
-			ITEM(CSLA_HuntingRifle, 1000, _STOCKTYPE_);	
-			ITEM(US85_M21, 1000, _STOCKTYPE_);	
-			ITEM(US85_M14, 1000, _STOCKTYPE_);		
+			ITEM(CSLA_OP63, 1000, RIFLE_STOCK);	
+			ITEM(CSLA_HuntingRifle, 1000, RIFLE_STOCK);	
+			ITEM(US85_M21, 1000, RIFLE_STOCK);	
+			ITEM(US85_M14, 1000, RIFLE_STOCK);		
 	}; 
 
 ///launchers
@@ -45,13 +45,13 @@
 	{
 		displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_CSLA", localize "STR_A3AU_launchers"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
-			ITEM(CSLA_RPG75, 1250, _STOCKTYPE_);	
-			ITEM(CSLA_9K32, 1250, _STOCKTYPE_);	
-			ITEM(US85_LAW72, 1250, _STOCKTYPE_);	
-			ITEM(US85_M136, 1250, _STOCKTYPE_);	
-			ITEM(US85_SMAW, 1250, _STOCKTYPE_);	
-			ITEM(US85_M47, 1250, _STOCKTYPE_);	
-			ITEM(US85_FIM92, 1250, _STOCKTYPE_);		
+			ITEM(CSLA_RPG75, 1250, RIFLE_STOCK);	
+			ITEM(CSLA_9K32, 1250, RIFLE_STOCK);	
+			ITEM(US85_LAW72, 1250, RIFLE_STOCK);	
+			ITEM(US85_M136, 1250, RIFLE_STOCK);	
+			ITEM(US85_SMAW, 1250, RIFLE_STOCK);	
+			ITEM(US85_M47, 1250, RIFLE_STOCK);	
+			ITEM(US85_FIM92, 1250, RIFLE_STOCK);		
 	}; 
 
 	class magazineslaunchersCSLA
@@ -73,13 +73,13 @@
 		displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_CSLA", localize "STR_A3AU_handguns"]);
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
 
-			ITEM(CSLA_Pi52, 200, _STOCKTYPE_);	
-			ITEM(CSLA_Pi75sr, 200, _STOCKTYPE_);	
-			ITEM(CSLA_Pi75lr, 200, _STOCKTYPE_);	
-			ITEM(CSLA_Pi82, 200, _STOCKTYPE_);	
-			ITEM(CSLA_Sa61, 200, _STOCKTYPE_);	
-			ITEM(US85_1911, 200, _STOCKTYPE_);	
-			ITEM(US85_M9, 200, _STOCKTYPE_);		
+			ITEM(CSLA_Pi52, 200, RIFLE_STOCK);	
+			ITEM(CSLA_Pi75sr, 200, RIFLE_STOCK);	
+			ITEM(CSLA_Pi75lr, 200, RIFLE_STOCK);	
+			ITEM(CSLA_Pi82, 200, RIFLE_STOCK);	
+			ITEM(CSLA_Sa61, 200, RIFLE_STOCK);	
+			ITEM(US85_1911, 200, RIFLE_STOCK);	
+			ITEM(US85_M9, 200, RIFLE_STOCK);		
 		}; 
 
 	class magazinesCSLA
@@ -99,8 +99,7 @@
             ITEM(CSLA_Sa58_30rnd_7_62vz43, 50, MAGAZINE_STOCK);	
             ITEM(US85_MPV_30Rnd_9Luger, 50, MAGAZINE_STOCK);	
             ITEM(US85_30Rnd_556x45, 50, MAGAZINE_STOCK);	
-            ITEM(US85_20Rnd_556x45, 50, MAGAZINE_STOCK);	
-            ITEM(US85_20Rnd_762x51, 50, MAGAZINE_STOCK);
+            ITEM(US85_20Rnd_556x45, 50, MAGAZINE_STOCK);
 
             ITEM(CSLA_UK59_50rnd_7_62vz59, 50, MAGAZINE_STOCK);	
             ITEM(US85_200Rnd_556x45, 50, MAGAZINE_STOCK);	

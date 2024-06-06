@@ -110,10 +110,10 @@ Info_1("Helicrash position: %1", str _crashPosition);
 {  
 	[_x, true] remoteExec ["hideObject", 0, true];
     _x enableSimulationGlobal false;
-} forEach nearestTerrainObjects [_crashPosition, ["ROCKS"], 50, false, true];
+} forEach nearestTerrainObjects [_crashPosition, ["ROCKS","ROCK"], 50, false, true];
 {  
     _x setDamage 1;
-} forEach nearestTerrainObjects [_crashPosition, ["Tree", "Bush", "BUILDING"], 20, false, true];
+} forEach nearestTerrainObjects [_crashPosition, ["Tree", "Bush", "BUILDING","RUIN","POWERWIND","POWERWAVE","POWERSOLAR","POWER LINES","MAIN ROAD","LIGHTHOUSE","HOUSE","HOSPITAL","HIDE","FUELSTATION","FOUNTAIN","FORTRESS","FENCE","CROSS","CHURCH","CHAPEL","BUSSTOP","BUNKER","QUAY","ROAD","SMALL TREE","STACK","TOURISM","TRACK","TRAIL","TRANSMITTER","VIEW-TOWER","WALL","WATERTOWER"], 20, false, true];
 
 Info_2("Crash Location: %1, Aircraft: %2", _crashPosition, _helicopterClass);
 

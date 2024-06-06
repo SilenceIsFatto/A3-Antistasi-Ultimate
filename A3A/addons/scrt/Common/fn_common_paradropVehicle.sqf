@@ -33,6 +33,8 @@ params
     ["_resPool", nil, [""]]
 ];
 
+private _vehType = typeOf _plane;
+
 private _groupPilot = group driver _plane;
 {
     _x disableAI "TARGET";
@@ -78,10 +80,6 @@ private _wp1 = _groupPilot addWaypoint [_exitPos, -1];
 _wp1 setWaypointType "MOVE";
 _wp1 setWaypointSpeed "NORMAL";
 
-private _wp2 = _groupPilot addWaypoint [_originPosition, -1];
-_wp2 setWaypointType "MOVE";
-_wp2 setWaypointSpeed "FULL";
-_wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList"];
 
 waitUntil {sleep 1; (_plane getVariable ["dropPosReached", false]) || {!alive _plane || {!canMove _plane}}};
 
@@ -172,7 +170,7 @@ if(_plane getVariable ["dropPosReached", false] && {!(_plane getVariable ["plane
         {
             unassignVehicle _x;
             _x assignAsCargo _apc;
-        } forEach units _groupJumper;
+        } forEach units _groupJumper; //some sort of check is needed to stop apc waiting endlessly for jumper group and make it start moving immediately
 
         private _apcLeader = leader _apcGroup;
         (units _apcGroup) joinSilent _groupJumper;
@@ -193,3 +191,21 @@ if(_plane getVariable ["dropPosReached", false] && {!(_plane getVariable ["plane
         _groupJumper spawn A3A_fnc_attackDrillAI;
     };
 };
+
+private _weapons = count weapons _helicopter;
+private _driverturret = _helicopter weaponsTurret [0];
+private _gunnerturret = _helicopter weaponsTurret [-1];
+private _weaponsturret = count _driverturret + count _gunnerturret;
+
+if (_vehType in FactionGet(all,"vehiclesTransportAir") && _weapons > 2 || _weaponsturret > 2) exitWith { //assuming first 2 are laserdesignator and flares
+    [_helicopter, _crewGroup, _posDestination] spawn A3A_fnc_attackHeli;
+};
+
+if (_vehType in FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack")) exitWith {
+    [_plane, _groupPilot, _targetPosition] spawn A3A_fnc_attackHeli
+};
+
+private _wp2 = _groupPilot addWaypoint [_originPosition, -1];
+_wp2 setWaypointType "MOVE";
+_wp2 setWaypointSpeed "FULL";
+_wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; deleteVehicle (vehicle this); {deleteVehicle _x} forEach thisList"];

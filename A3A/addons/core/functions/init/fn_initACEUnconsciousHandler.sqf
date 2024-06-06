@@ -40,11 +40,7 @@ Info("initACEUnconsciousHandler started");
 		_unit setCaptive false;			// match vanilla behaviour
 	};
 
-	if (isPlayer _unit) exitWith {
-		if !(isPlayer leader (group _unit)) then {
-			group _unit selectLeader _unit;
-		};					// if players' group leader is AI that means leadership was transfered when player got knocked
-	};					// don't force surrender with players
+	if (isPlayer _unit) exitWith {};					// don't force surrender with players
 	if (_realSide != Occupants && _realSide != Invaders) exitWith {};
 	if (_unit getVariable ["surrendered", false]) exitWith {};		// don't surrender twice
 

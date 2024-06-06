@@ -6,6 +6,7 @@
 #define UAVGRENADE 200
 #define ROVINGMORTAR 300
 #define HELIRAID 400
+#define SKIRMISH_OCCVSRIV 500
 
 //activity levels
 #define INSIGNIFICANT_ACTIVITY 5

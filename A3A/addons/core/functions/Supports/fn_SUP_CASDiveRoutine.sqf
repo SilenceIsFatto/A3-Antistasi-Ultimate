@@ -30,6 +30,7 @@ _plane flyInHeight 500;
 
 private _group = [_side, _plane] call A3A_fnc_createVehicleCrew;
 { [_x, nil, false, _resPool] call A3A_fnc_NATOinit } forEach units _group;
+(driver _plane) action ["ManualFire", _plane];
 _group deleteGroupWhenEmpty true;
 _group setBehaviourStrong "CARELESS";
 

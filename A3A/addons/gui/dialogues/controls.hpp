@@ -1144,6 +1144,7 @@ class A3A_Listbox_Small : A3A_Listbox
 {
     rowHeight = GUI_TEXT_SIZE_SMALL;
     sizeEx = GUI_TEXT_SIZE_SMALL;
+    // lineSpacing = 0.01;
 };
 
 class A3A_ComboBox : A3A_ListBox

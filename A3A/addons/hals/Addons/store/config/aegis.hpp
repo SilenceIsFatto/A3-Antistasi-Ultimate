@@ -58,6 +58,67 @@
 			ITEM(launch_O_Titan_short_camo_F, 3250, 3);
 		};
 
+		class launcherMagazinesAegis
+		{
+			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_launcherAmmo"]);
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\cargoMag_ca.paa";
+		
+			class RPG7_F {
+				price = 200;
+				stock = 50;
+			};
+
+			class Vorona_HE {
+				price = 75;
+				stock = 50;
+			};
+			class Vorona_HEAT {
+				price = 100;
+				stock = 50;
+			};
+			class MRAWS_HEAT55_F {
+				price = 250;
+				stock = 50;
+			};
+			class MRAWS_HE_F {
+				price = 150;
+				stock = 50;
+			};
+			class MRAWS_HEAT_F {
+				price = 300;
+				stock = 50;
+			};
+
+			class NLAW_F {
+				price = 300;
+				stock = 50;
+			};
+
+			class RPG32_F {
+				price = 300;
+				stock = 50;
+			};
+			class RPG32_HE_F {
+				price = 200;
+				stock = 50;
+			};
+
+			class Titan_AA {
+				price = 400;
+				stock = 10;
+			};
+
+			class Titan_AT {
+				price = 300;
+				stock = 10;
+			};
+			class Titan_AP {
+				price = 200;
+				stock = 10;
+			};
+
+		};
+
 		class riflesAegis 
 		{
 			displayName = __EVAL(formatText ["%1 %2", localize "STR_A3AU_Aegis", localize "STR_A3AU_rifles"]);

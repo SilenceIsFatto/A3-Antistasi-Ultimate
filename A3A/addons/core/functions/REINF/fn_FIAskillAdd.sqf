@@ -21,8 +21,19 @@ if (skillFIA >= SKILL_CAP) exitWith {
     ] spawn SCRT_fnc_ui_showMessage;
 };
 
-_resourcesFIA = server getVariable "resourcesFIA";
-_costs = 1000 + (1.5*(skillFIA *750));
+private _resourcesFIA = server getVariable "resourcesFIA";
+private _costs = 1000 + (1.5*(skillFIA *750));
+
+private _result = [(format["Are you sure? Price will be %2%1", _costs, A3A_faction_civ get "currencySymbol"]), "Confirm", true, true] call BIS_fnc_guiMessage;
+
+if (_result isEqualTo false) exitWith {
+    [
+        localize "STR_notifiers_fail_type",
+        format [localize "STR_notifiers_skill_header", FactionGet(reb, "name")],
+        parseText localize "STR_notifiers_skill_cancelled",
+        30
+    ] spawn SCRT_fnc_ui_showMessage;
+};
 
 if (_resourcesFIA < _costs) exitWith {
     [

@@ -23,6 +23,7 @@ params ["_vehicle", "_group", "_targPos"];
 // Set script handle so abort routines can remove it later
 _group setVariable ["A3A_AIScriptHandle", _thisScript];
 
+
 while {count waypoints _group > 0} do { deleteWaypoint [_group, 0] };
 _group setBehaviourStrong "COMBAT";
 private _noGunner = isNull gunner _vehicle;

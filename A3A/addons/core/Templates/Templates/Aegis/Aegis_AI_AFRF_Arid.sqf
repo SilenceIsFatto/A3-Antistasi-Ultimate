@@ -57,8 +57,8 @@ if (_hasTanks) then {
 ["vehiclesTransportBoats", ["O_R_Boat_Transport_01_ard_F"]] call _fnc_saveToTemplate;
 ["vehiclesGunBoats", ["O_R_Boat_Armed_01_hmg_ard_F"]] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["O_R_Plane_CAS_02_dynamicLoadout_ard_F","O_R_Plane_Fighter_02_ard_F"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["O_R_Plane_Fighter_02_Stealth_ard_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["O_R_Plane_CAS_02_dynamicLoadout_ard_F","O_R_Plane_Fighter_02_ard_F","O_T_VTOL_02_infantry_dynamicLoadout_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesAA", ["O_R_Plane_Fighter_02_Stealth_ard_F","O_T_VTOL_02_infantry_dynamicLoadout_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["O_T_VTOL_02_infantry_dynamicLoadout_F", "O_Plane_Transport_01_infantry_F"]] call _fnc_saveToTemplate;
 
 private _lightHelicopters = ["O_R_Heli_Light_02_unarmed_ard_F"];

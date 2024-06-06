@@ -25,6 +25,7 @@ teamPlayer = independent;		// uh, probably don't need this yet unless something 
 Rivals = east;
 colorOccupants = "colorBLUFOR";
 colorInvaders = "colorOPFOR";
+colorCivilian = "ColorCIV";
 colorTeamPlayer = "colorGUER";
 colorRivals = "ColorBrown";
 respawnTeamPlayer = "respawn_guerrila";

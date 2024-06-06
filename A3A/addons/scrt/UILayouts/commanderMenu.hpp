@@ -475,7 +475,7 @@ class commanderMenu
 					h = "3 * pixelGridNoUIScale * pixelH";	
 					sizeEx = "((pixelH * (pixelGridNoUIScale) * 2) * 1.25) * 0.5";	
 					shadow = 2;	
-					action = "[] call A3A_fnc_FIAskillAdd";		
+					action = "[] spawn A3A_fnc_FIAskillAdd";		
 				};
 
 				class rebelLoadoutButton: ButtonBase

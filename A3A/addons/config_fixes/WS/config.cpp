@@ -2,6 +2,7 @@
 
 #include "..\script_component.hpp"
 
+
 class CfgPatches 
 {
     class PATCHNAME(WS) 
@@ -10,8 +11,8 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
+        skipWhenMissingDependencies = 1;
         requiredAddons[] = {"A3_Data_F_AoW_Loadorder", "Vehicles_F_lxWS"};
-        skipWhenMissingDependencies = 1; // makes this entire config not load if any requiredAddons are not present
         author = AUTHOR;
         authors[] = { AUTHORS };
         authorUrl = "";
@@ -19,4 +20,8 @@ class CfgPatches
     };
 };
 
+// Uncomment when needed
+#include "CfgVehicles.hpp"
+#include "CfgMarkers.hpp"
 #include "CfgWeapons.hpp"
+
