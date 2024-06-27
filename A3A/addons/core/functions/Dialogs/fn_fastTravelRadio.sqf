@@ -1,5 +1,10 @@
 private _markersX = markersX + [respawnTeamPlayer];
 
+// private _titleStr = localize "STR_A3A_fn_dialogs_ftradio_title";
+private _titleStr = "Fast Travel";
+if (limitedFT == 2) exitWith {[_titleStr, "Fast travel is disabled for this server."] call A3A_fnc_customHint}; // [_titleStr, localize "STR_A3A_fn_dialogs_ftradio_no_param"]
+// This needs a proper stringtable ^
+
 if (!isNil "traderMarker") then {
 	_markersX pushBack traderMarker;
 };
@@ -21,7 +26,7 @@ if (count hcSelected player == 1) then {
 	_groupX = group player;
 };
 private _checkForPlayer = false;
-if (!_esHC and {limitedFT}) then {_checkForPlayer = true};
+if (!_esHC and {(limitedFT == 1)}) then {_checkForPlayer = true};
 private _boss = leader _groupX;
 
 if (_boss != player and {!_esHC}) then {_groupX = player};
@@ -136,7 +141,7 @@ if (_positionTel distance getMarkerPos _base < 50) then {
 		};
 	};
 	private _exit = false;
-	if (limitedFT) then {
+	if (limitedFT == 1) then {
 		_vehicles = [];
 		{if (vehicle _x != _x) then {_vehicles pushBackUnique (vehicle _x)}} forEach units _groupX;
 		{if ((vehicle _x) in _vehicles) exitWith {_checkForPlayer = true}} forEach (call A3A_fnc_playableUnits);
@@ -147,11 +152,12 @@ if (_positionTel distance getMarkerPos _base < 50) then {
 	};
 
 	private _movedUnits = units _groupX;
-
+	private _ftUnits = [];
 	{
 		private _unit = _x;
 		if (!isPlayer _unit or {_unit == player}) then {
 			_unit allowDamage false;
+			_ftUnits pushBack _unit;
 			if (_unit != vehicle _unit) then {
 				if (driver vehicle _unit == _unit) then {
 					sleep 3;
@@ -196,7 +202,7 @@ if (_positionTel distance getMarkerPos _base < 50) then {
 	};
 	
 	sleep 5;
-	{_x allowDamage true} forEach _movedUnits;
+	{_x allowDamage true} forEach _ftUnits;
 } else {
 	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_missclick"] call SCRT_fnc_misc_deniedHint;
 };

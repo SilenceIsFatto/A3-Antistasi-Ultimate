@@ -799,16 +799,16 @@ class cfgHALsStore
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
-			"handgunsCWR", 
-			"launchersCWR", 
-			"riflesCWR", 
-			"sniperRiflesCWR",
-			"specialWeaponsCWR", 
-			"mgCWR", 
-			"smgCWR", 
-			"launcherMagazinesCWR", 
-			"magazinesCWR", 
-			"opticsCWR"
+				"handgunsCWR", 
+				"launchersCWR", 
+				"riflesCWR", 
+				"sniperRiflesCWR",
+				"specialWeaponsCWR", 
+				"mgCWR", 
+				"smgCWR", 
+				"launcherMagazinesCWR", 
+				"magazinesCWR", 
+				"opticsCWR"
 			};
 		};
 	};

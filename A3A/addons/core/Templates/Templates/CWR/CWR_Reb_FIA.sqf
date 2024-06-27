@@ -74,7 +74,7 @@
 
 private _initialRebelEquipment = [
     "CUP_sgun_slamfire", "CUP_srifle_Mosin_Nagant",
-    "CUP_1Rnd_12Gauge_Pellets_No00_Buck", "CUP_1Rnd_12Gauge_Pellets_No3_Buck", "CUP_srifle_Mosin_Nagant",
+    "CUP_1Rnd_12Gauge_Pellets_No00_Buck", "CUP_1Rnd_12Gauge_Pellets_No3_Buck", "CUP_5Rnd_762x54_Mosin_M",
     "CUP_hgun_TT", "CUP_8Rnd_762x25_TT",
     ["CUP_launch_RPG18", 50],
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],

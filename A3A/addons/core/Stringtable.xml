@@ -5618,6 +5618,9 @@
             </Key>
         </Container>
         <Container name="A3A_selfRevive">
+            <Key ID="STR_A3A_Params_removeRestore_title">
+                <Original>Disable the "Restore nearby units" option on the vehicle box.</Original>
+            </Key>
             <Key ID="STR_A3A_Params_selfReviveMethods_title">
                 <Original>Self-revive methods enabled</Original>
                 <Russian>Способы самовозрождения активированны</Russian>
@@ -5788,7 +5791,7 @@
             <Key ID="STR_A3AU_blackmarket_ignore_requirements">
                 <Original>Ignore Black Market Vehicle Requirements</Original>
                 <English>Ignore Black Market Vehicle Requirements</English>
-                <Russian>Placeholder</Russian>
+                <Russian>Игнорировать условия разблокировки транспорта у черного торговца </Russian>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>

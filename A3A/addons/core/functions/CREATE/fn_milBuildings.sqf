@@ -315,6 +315,97 @@ for "_i" from 0 to (count _buildings) - 1 do
             private _static = [_type, _pos, _dir] call _fnc_spawnStatic;
             _static setPos _pos; 
         };
+        if  ((_typeB == "Land_WW2_Bunker_H679")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticMGs");
+            private _dir = (getDir _building) - 90;
+            private _pos = _building modelToWorld [-1.8,0,0.555];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if  ((_typeB == "Land_WW2_Bunker_Gun_R")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticAT");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [0.2,0,0.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if  ((_typeB == "Land_WW2_Bunker_Gun_L")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticAT");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [0,0,0.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if  ((_typeB == "Land_WW2_BET_Flak_Bettung")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticAA");
+            private _dir = (getDir _building) - 45;
+            private _pos = _building modelToWorld [-1.2,1,0.2];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if  ((_typeB == "Land_SPE_H667")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticMGs");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [0,-0.1,0.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if  ((_typeB == "Land_SPE_H612")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticMGs");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [-0.3,-5,0.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if  ((_typeB == "Land_SPE_H630")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticMGs");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [0.8,-2.5,0.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if  ((_typeB == "Land_SPE_H669")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticAT");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [0,-3.2,0.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if  ((_typeB == "Land_SPE_H679")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticAT");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [-0.2,-2,0.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if     ((_typeB == "LAND_uns_weapon_pit")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticMGs");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [0.5,0.1,0.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if     ((_typeB == "LAND_CSJ_gunpit")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticAA");
+            private _dir = (getDir _building) - 90;
+            private _pos = _building modelToWorld [0,0,1.2];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if     ((_typeB == "csj_VCbunk01")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticMGs");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [0,0,-0.5];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
+        if     ((_typeB == "Land_Vil_Tower")) exitWith
+        {
+            private _type = selectRandom (_faction get "staticMGs");
+            private _dir = (getDir _building) - 180;
+            private _pos = _building modelToWorld [-0.5,-0.7,1.3];
+            [_type, _pos, _dir] call _fnc_spawnStatic;
+        };
     };
 };
 

@@ -32,6 +32,13 @@ A3A_buildingsToSave = A3A_buildingsToSave select {
 	deleteVehicle _x; false;
 };
 
+Debug("Moving dead solders out of vehicles...")
+{
+	if !(isNull objectParent _x) then { moveOut _x };
+} forEach allDeadMen;
+Debug("Finished moving soldiers out of vehicles; executing garbage clean.")
+sleep 0.5;
+
 { deleteVehicle _x } forEach allDead;
 { deleteVehicle _x } forEach (allMissionObjects "WeaponHolder");
 { deleteVehicle _x } forEach (allMissionObjects "WeaponHolderSimulated");

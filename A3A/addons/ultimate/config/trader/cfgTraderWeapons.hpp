@@ -138,3 +138,7 @@
         {
             prefix = "nftsstock";
         };
+        class weapons_cwriii : weapons_base
+        {
+            prefix = "cwrstock";
+        };

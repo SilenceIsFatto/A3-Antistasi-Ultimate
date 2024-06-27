@@ -513,7 +513,7 @@ _flagLight lightAttachObject [flagX, [0, 0, 4]];
 _flagLight setLightAttenuation [7, 0, 0.5, 0.5];
 
 vehicleBox allowDamage false;
-vehicleBox addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\use_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_A3A_actions_restore_units"], A3A_fnc_vehicleBoxRestore,nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (side (group _this) == teamPlayer)", 4];
+vehicleBox addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\use_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_A3A_actions_restore_units"], A3A_fnc_vehicleBoxRestore,nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (side (group _this) == teamPlayer) and !A3A_removeRestore", 4];
 [vehicleBox] call HR_GRG_fnc_initGarage;
 if (A3A_hasACE) then { [vehicleBox, VehicleBox] call ace_common_fnc_claim;};	//Disables ALL Ace Interactions
 vehicleBox addAction [format ["<img image='a3\ui_f\data\igui\cfg\simpletasks\types\truck_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_buy_vehicle"], {

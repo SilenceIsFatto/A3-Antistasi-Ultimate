@@ -60,7 +60,7 @@
 
 ["vehiclesPolice", ["cwr3_c_lada_militia"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["CUP_O_KORD_high_RU"]] call _fnc_saveToTemplate;
+["staticMGs", ["CUP_O_DSHKM_ChDKZ"]] call _fnc_saveToTemplate;
 ["staticAT", ["cwr3_o_konkurs_tripod"]] call _fnc_saveToTemplate;
 ["staticAA", ["CUP_O_Igla_AA_pod_ChDKZ"]] call _fnc_saveToTemplate;
 ["staticMortars", ["CUP_O_2b14_82mm_RU"]] call _fnc_saveToTemplate;

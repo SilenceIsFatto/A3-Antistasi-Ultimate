@@ -8172,7 +8172,7 @@
             </Key>
             <Key ID="STR_trader_black_market_requirements">
                 <Original>Vehicle requirements can be found by clicking the notepad in the top right corner.</Original>
-                <Russian>Placeholder</Russian>
+                <Russian>И соответственно, Условия разблокировки можно найти, кликнув на иконку книги/тетради в правом верхнем углу</Russian>
             </Key>
         </Container>
         <Container name="intel_actions">

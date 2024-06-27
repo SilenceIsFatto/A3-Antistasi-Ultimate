@@ -23,7 +23,7 @@ class vehicles_rhs : vehicles_base
     ITEM(rhs_bmp3_late_msv, 43150, "APC", VEHICLE_CONDITION_APC);
     ITEM(rhs_bmp3m_msv, 44650, "APC", VEHICLE_CONDITION_APC);
     ITEM(rhs_bmp3mera_msv, 45330, "APC", VEHICLE_CONDITION_APC);
-    ITEM(rhs_t15_tv, 2914179, "APC", VEHICLE_CONDITION_APC);
+    ITEM(rhs_t15_tv, 48579, "APC", VEHICLE_CONDITION_APC);
     ITEM(rhsusf_m113_usarmy_unarmed, 3600, "APC", VEHICLE_CONDITION_APC);
     ITEM(rhsusf_m113_usarmy_M240, 4500, "APC", VEHICLE_CONDITION_APC);
     ITEM(rhsusf_m113_usarmy_M2_90, 6500, "APC", VEHICLE_CONDITION_APC);

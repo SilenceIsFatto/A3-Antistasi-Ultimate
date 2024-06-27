@@ -6,7 +6,7 @@
 ["spawnMarkerName", "USSR Support Corridor"] call _fnc_saveToTemplate;
 
 ["flag", "Flag_NATO_F"] call _fnc_saveToTemplate;
-["flagTexture", "cup\baseconfigs\cup_baseconfigs\data\flags\flag_rus_co.paa"] call _fnc_saveToTemplate;
+["flagTexture", "cwr3\general\cwr3_flags\data\ussr.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "cwr3_faction_ussr"] call _fnc_saveToTemplate;
 
 //////////////////////////
@@ -60,7 +60,7 @@
 
 ["vehiclesPolice", ["cwr3_c_lada_militia"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["CUP_O_KORD_high_RU"]] call _fnc_saveToTemplate;
+["staticMGs", ["CUP_O_DSHKM_ChDKZ"]] call _fnc_saveToTemplate;
 ["staticAT", ["cwr3_o_konkurs_tripod"]] call _fnc_saveToTemplate;
 ["staticAA", ["CUP_O_Igla_AA_pod_ChDKZ"]] call _fnc_saveToTemplate;
 ["staticMortars", ["CUP_O_2b14_82mm_RU"]] call _fnc_saveToTemplate;

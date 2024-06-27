@@ -38,8 +38,8 @@ class Params
     class limitedFT
     {
         title = $STR_params_allowFT;
-        values[] = {0,1};
-        texts[] = {$STR_params_allowFT_0, $STR_params_allowFT_1};
+        values[] = {0,1,2};
+        texts[] = {$STR_params_allowFT_0, $STR_params_allowFT_1,$STR_params_civ_traffic_none};
         default = 0;
     };
     class civTraffic
@@ -48,6 +48,13 @@ class Params
         values[] = {0,1,2,4};
         texts[] = {$STR_params_civ_traffic_none,$STR_params_civ_traffic_low,$STR_params_civ_traffic_medium,$STR_params_civ_traffic_high};
         default = 2;
+    };
+    class A3A_removeRestore
+    {
+        title = $STR_A3A_Params_removeRestore_title;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
     };
     class globalCivilianMax
     {

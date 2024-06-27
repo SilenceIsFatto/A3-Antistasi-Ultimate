@@ -119,7 +119,7 @@
     {
         addons[] = {"PRACS_Core", "PRACS_SLA_Core"};
         vehicles = "vehicles_racs";
-    };
+    }; // might be smart to split these into PRACS and PRACS SLA, not a big priority though
     class addons_bwa3 : addons_base
     {
         addons[] = {"bwa3_common"};
@@ -154,13 +154,13 @@
         addons[] = {"rhsgref_main", "rhssaf_c_vehicles", "rhs_c_tanks", "RHS_US_A2Port_Armor"};
         weapons = "weapons_rhs";
         vehicles = "vehicles_rhs";
-    };
+    }; // needs to be split into all 4 RHS mods, but only god knows the day that will happen
     class addons_optre : addons_base
     {
         addons[] = {"OPTRE_Core", "OPTRE_FC_Core"};
         weapons = "weapons_optre";
         vehicles = "vehicles_optre";
-    };
+    }; // should probably be split up to optre and optre_fc
     class addons_gm : addons_base
     {
         addons[] = {"gm_core"};
@@ -184,14 +184,12 @@
     };
     class addons_tmt : addons_base
     {
-        addons[] = {"TMT_Core", "CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core"};
-        weapons = "weapons_tmt";
+        addons[] = {"TMT_Core"};
         vehicles = "vehicles_tmt";
     };
     class addons_tfc : addons_base
     {
         addons[] = {"TFC_Core_Data", "TFC_CA_Characters", "TFC_SF_Characters", "tfc_rcaf_cc130j"};
-        weapons = "weapons_tfc";
         vehicles = "vehicles_tfc";
     };
     class addons_sma : addons_base
@@ -232,4 +230,20 @@
     {
         addons[] = {"SSV_Android", "SSV_Vanguard", "OPTRE_Core"};
         vehicles = "vehicles_android";
+    };
+    class addons_cwr : addons_base
+    {
+        addons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core", "cwr3_weapons"};
+        weapons = "weapons_cwriii";
+        vehicles = "vehicles_cwriii";
+    };
+    class addons_cwrbaf : addons_base
+    {
+        addons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core", "cwr3_weapons", "cwr3_expansion_uk"};
+        vehicles = "vehicles_cwriiibaf";
+    };
+    class addons_cwrusmc : addons_base
+    {
+        addons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core", "cwr3_weapons", "cwr3_expansion_usmc"};
+        vehicles = "vehicles_cwriiiusmc";
     };
