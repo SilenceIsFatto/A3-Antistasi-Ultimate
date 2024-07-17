@@ -320,6 +320,10 @@
                 <Chinesesimp>地平线群岛国防军（HIDF）。\n地平线群岛共和国的武装力量，他们使用大量的北约剩余装备。</Chinesesimp>
                 <Korean>호라이즌 제도 방위군(HIDF).\n호라이즌 제도 공화국의 군대이며, 많은 여분의 NATO 장비를 사용합니다.</Korean>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_CUP_LRI">
+                <Original>Local Resistance Initiative.\nA resistance led by local civilians, using military surplus and basic gear from ebay.</Original>
+                <Russian>Инициатива местного сопротивления.\nСопротивление, возглавляемое местными гражданами, использующее военные излишки и базовое снаряжение с eBay.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_exegermenos">
                 <Original>Exegerménos.\nStandard enemy guerilla faction.</Original>
                 <Russian>Exegerménos.\nСтандартная вражеская повстанческая фракция.</Russian>

@@ -7,11 +7,34 @@ class CfgMarkers {
         texture = QPATHTOFOLDER(Pictures\Markers\cdf_ca.paa);
     };
 
+<<<<<<< Updated upstream
     class a3a_flag_napa: flag_NATO {
         name = "NAPA";
         icon = QPATHTOFOLDER(Pictures\Markers\napa_ca.paa);
         texture = QPATHTOFOLDER(Pictures\Markers\napa_ca.paa);
     };
+=======
+	class a3a_flag_LRI_co: flag_NATO 
+	{
+		name = "LRI";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_flag_LRI.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_flag_LRI.paa);
+	};
+
+	class a3a_flag_cdf: flag_NATO 
+	{
+		name = "CDF";
+		icon = QPATHTOFOLDER(Pictures\Markers\cdf_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\cdf_ca.paa);
+	};
+
+	class a3a_flag_napa: flag_NATO 
+	{
+		name = "NAPA";
+		icon = QPATHTOFOLDER(Pictures\Markers\napa_ca.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\napa_ca.paa);
+	};
+>>>>>>> Stashed changes
 	
     class a3a_flag_serbia: flag_NATO {
         name = "Serbia";
