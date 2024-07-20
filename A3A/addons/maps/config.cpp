@@ -75,6 +75,7 @@ class CfgMissions
 		A3A_Mission(psyfx_pht, "Antistasi Ultimate - Phuoc Tuy")
 		A3A_Mission(yulakia, "Antistasi Ultimate - Yulakia")
     A3A_Mission(Gulfcoast, "Antistasi Ultimate - Gulfcoast Islands")
+    A3A_Mission(fapovo, "Antistasi Ultimate - Fapovo Island")
 #if __A3_DEBUG__
         A3A_Mission(Stratis, $STR_antistasi_mission_info_Stratis_mapname_text)
 #endif
