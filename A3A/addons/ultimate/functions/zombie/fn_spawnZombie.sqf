@@ -6,5 +6,7 @@ _zombie setPosATL _pos;
 
 uiSleep 1;
 
+_zombie setVariable ["A3U_isZombie", true];
+
 [_zombie, "WBK_Middle_GetUpUnconscious"] remoteExec ["switchMove", 0];
 _zombie hideObjectGlobal false;

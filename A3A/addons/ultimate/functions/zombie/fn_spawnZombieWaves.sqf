@@ -60,6 +60,12 @@ waitUntil {
 	deleteVehicle _x;
 } forEach _sources;
 
+{
+	if (_zombie getVariable ["A3U_isZombie", false]) then {
+		hideBody _x;
+	};
+} forEach allDeadMen;
+
 if (_taskID isNotEqualTo 0) then {
 	missionNamespace setVariable [_taskID+"_done", true];
 };
