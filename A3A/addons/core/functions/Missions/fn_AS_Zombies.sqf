@@ -62,35 +62,19 @@ private _taskId = "AS" + str A3A_taskCount;
 // Wait until players are close enough to the city to trigger mission
 waitUntil {
 	sleep 5;
-	((call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_positionX, 300, 300] isNotEqualTo []) || {dateToNumber date > _dateLimitNum}
+	((call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_positionX, 600, 600] isNotEqualTo []) || {dateToNumber date > _dateLimitNum}
 };
 
 if (dateToNumber date > _dateLimitNum) exitWith {};
 
 private _groupZombies = createGroup Invaders;
-private _zombieAmount = 15;
+[8, 3, (random [5,7,9]), _positionX, _groupZombies, _taskId] spawn A3U_fnc_spawnZombieWaves;
 
-if (_difficultX) then {
-	_zombieAmount = 30;
-};
-
-for "_i" from 0 to _zombieAmount do
-{
-	private _pos = _posTask getPos [random 10, random 360];
-
-	private _zombieType = (A3A_faction_civ get "unitSpecial");
-
-	private _zombie = [_groupZombies, _zombieType, _pos, [], 0, "NONE"] call A3A_fnc_createUnit;
-
-	uiSleep 0.5;
-};
-
-// Wait until the zombies are dead or mission is expired
+// Wait until all zombies are dead (waves fnc returns true) or mission is expired
 waitUntil {
 	sleep 10;
-	private _aliveZombies = {alive _x} count units _groupZombies;
-	private _aliveZombiesWin = (round (_zombieAmount / 3));
-	(_aliveZombies <= _aliveZombies) || {dateToNumber date > _dateLimitNum}
+	private _aliveZombies = {alive _x || {_x getVariable ["ACE_isUnconscious", false] isEqualTo false}} count units _groupZombies;
+	(missionNamespace getVariable [_taskID+"_done", false] isEqualTo true) || {dateToNumber date > _dateLimitNum}
 };
 
 if (dateToNumber date > _dateLimitNum) then {
@@ -123,7 +107,6 @@ if (dateToNumber date > _dateLimitNum) then {
 			[250, _x] call A3A_fnc_addMoneyPlayer;
 		} forEach (call SCRT_fnc_misc_getRebelPlayers);
 	};
-
 };
 
 [_taskId, "AS", 1200, true] spawn A3A_fnc_taskDelete;

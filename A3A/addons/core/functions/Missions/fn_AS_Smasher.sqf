@@ -56,7 +56,7 @@ private _taskId = "AS" + str A3A_taskCount;
 // Wait until players are close enough to the city, the idea being that they will see the SF groups fighting the smasher (+ helps perf)
 waitUntil {
 	sleep 5;
-	((call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_positionX, 300, 300] isNotEqualTo []) || {dateToNumber date > _dateLimitNum}
+	((call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_positionX, 600, 600] isNotEqualTo []) || {dateToNumber date > _dateLimitNum}
 };
 
 if (dateToNumber date > _dateLimitNum) exitWith {};
@@ -75,12 +75,13 @@ if (_difficultX) then {
 	_mutant = [_groupSmasher, "WBK_Goliaph_3", _posTask, [], 0, "NONE"] call A3A_fnc_createUnit; // goliath (OPF)
 
 	// Spawn attack helicopter
-	private _heliType = selectRandom (_faction getOrDefault ["vehiclesHelisAttack", []]);
-	private _heliPos = _posTask getPos [random [1000, 2000, 3000], random 360]; // replace this with an airbase or outpost, etc
-
-	if (_heliType isEqualTo []) then {
-		_heliType = _faction getOrDefault ["vehiclesHelisLightAttack", []]
+	private _heliType = if (_faction getOrDefault ["vehiclesHelisAttack", []] isNotEqualTo []) then {
+		selectRandom (_faction getOrDefault ["vehiclesHelisAttack", []]);
+	} else {
+		selectRandom (_faction getOrDefault ["vehiclesHelisLightAttack", []]);
 	};
+	
+	private _heliPos = _posTask getPos [random [1000, 2000, 3000], random 360]; // replace this with an airbase or outpost, etc
 
 	private _heliGroup = createGroup _groupSFSide;
 	private _attackHeli = [_heliPos, 0, _heliType, _groupSFSide] call A3A_fnc_spawnVehicle;
@@ -91,6 +92,7 @@ if (_difficultX) then {
 	} forEach crew _attackHeliVehicle;
 
 	[_attackHeliVehicle, _heliGroup, _positionX] spawn A3A_fnc_attackHeli;
+	[_attackHeliVehicle, _mutant] spawn A3U_fnc_attackHeli;
 } else {
 	_mutant = [_groupSmasher, "WBK_SpecialZombie_Smasher_3", _posTask, [], 0, "NONE"] call A3A_fnc_createUnit; // smasher (OPF)
 
@@ -114,6 +116,8 @@ if (_difficultX) then {
 		uiSleep 1;
 	};
 };
+
+[getPosATL _mutant] call A3U_fnc_spawnZombieRoar;
 
 // Wait until the smasher is dead or mission is expired
 waitUntil {

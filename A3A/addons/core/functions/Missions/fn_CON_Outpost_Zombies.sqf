@@ -62,7 +62,7 @@ private _taskId = "CON" + str A3A_taskCount;
 
 waitUntil {
 	sleep 5;
-	((call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_positionX, 300, 300] isNotEqualTo []) || {dateToNumber date > _dateLimitNum}
+	((call SCRT_fnc_misc_getRebelPlayers) inAreaArray [_positionX, 200, 200] isNotEqualTo []) || {dateToNumber date > _dateLimitNum}
 };
 
 if (dateToNumber date > _dateLimitNum) exitWith {};
@@ -73,23 +73,12 @@ if (_markerSide == Invaders) then {
 	_groupSide = Occupants;
 };
 
-private _groupZombies = createGroup Invaders;
-private _zombieAmount = round (random [10, 20, 30]);
-
-for "_i" from 0 to _zombieAmount do
-{
-	private _pos = _posTask getPos [random 2, random 360];
-
-	private _zombieType = (A3A_faction_civ get "unitSpecial");
-
-	private _zombie = [_groupZombies, _zombieType, _pos, [], 0, "NONE"] call A3A_fnc_createUnit;
-
-	uiSleep 0.5;
-};
+private _groupZombies = createGroup _groupSide;
+[3, 3, (random [5,7,9]), _positionX, _groupZombies] spawn A3U_fnc_spawnZombieWaves;
 
 waitUntil {
 	sleep 10;
-	{sidesX getVariable [_markerX,sideUnknown] == teamPlayer} || {dateToNumber date > _dateLimitNum}
+	(sidesX getVariable [_markerX,sideUnknown] == teamPlayer) || {dateToNumber date > _dateLimitNum}
 };
 
 if (dateToNumber date > _dateLimitNum) then {

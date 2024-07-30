@@ -58,6 +58,16 @@ class CfgFunctions
             class logisticsGrabSeats {};
             class weightTest {};
         };
+        class zombie
+        {
+            file = QPATHTOFOLDER(functions\zombie);
+            class attackHeli {};
+            class spawnZombie {};
+            class spawnZombieCrater {};
+            class spawnZombieRoar {};
+            class spawnZombieWave {};
+            class spawnZombieWaves {};
+        };
         class zones
         {
             file = QPATHTOFOLDER(functions\zones);
