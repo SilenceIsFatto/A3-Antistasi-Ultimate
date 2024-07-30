@@ -61,7 +61,7 @@ waitUntil {
 } forEach _sources;
 
 {
-	if (_zombie getVariable ["A3U_isZombie", false]) then {
+	if (_x getVariable ["A3U_isZombie", false]) then {
 		hideBody _x;
 	};
 } forEach allDeadMen;
