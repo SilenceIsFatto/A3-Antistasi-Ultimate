@@ -18,6 +18,7 @@
 #include "vehicles_unsung.hpp"
 #include "vehicles_nfts.hpp"
 #include "vehicles_cwriii.hpp"
+#include "vehicles_csla.hpp"
 #include "vehicles_amf.hpp"
 #include "vehicles_3cbbaf.hpp"
 #include "vehicles_bw.hpp"
