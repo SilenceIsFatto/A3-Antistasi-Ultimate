@@ -42,6 +42,8 @@
 ["vehiclesPlanesAA", ["3AS_Z95_Republic","3as_Vwing_base"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Republic_Transport_01"]] call _fnc_saveToTemplate;
 
+["vehiclesPlanesGunship", ["3AS_LAAT_Mk1","lsd_heli_laati"]] call _fnc_saveToTemplate;
+
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Republic"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["3AS_LAAT_Mk2", "3AS_LAAT_Mk2", "3AS_LAAT_Mk2", "3AS_Nu_REP_F","3AS_Rho_REP_F"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", ["3AS_LAAT_Mk1"]] call _fnc_saveToTemplate;

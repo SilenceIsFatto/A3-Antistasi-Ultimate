@@ -44,6 +44,8 @@
 ["vehiclesPlanesAA", ["WM_TieInterceptor","WM_TieInterceptor","3AS_VWing_Imperial","3AS_VWing_Imperial","WM_TieAdvanced"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Imperial_Transport_01"]] call _fnc_saveToTemplate;
 
+["vehiclesPlanesGunship", ["3AS_LAAT_Mk1_Imperial"]] call _fnc_saveToTemplate;
+
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Imperial"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["3AS_LAAT_Mk2_Imperial", "3AS_LAAT_Mk2_Imperial", "3AS_LAAT_Mk2_Imperial", "WM_Lambda", "3AS_Nu_IMP_F", "3AS_Rho_IMP_F"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", ["3AS_LAAT_Mk1_Imperial"]] call _fnc_saveToTemplate;

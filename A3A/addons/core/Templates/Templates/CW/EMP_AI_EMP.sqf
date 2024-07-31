@@ -44,6 +44,8 @@
 ["vehiclesPlanesAA", ["JMSLLTE_TIEinterceptor_veh_F"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Imperial_Transport_01"]] call _fnc_saveToTemplate;
 
+["vehiclesPlanesGunship", ["3AS_LAAT_Mk1_Imperial"]] call _fnc_saveToTemplate;
+
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Imperial"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["JMSLLTE_veh_IDT_inf_empire"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", ["442_laat_empire_ab"]] call _fnc_saveToTemplate;

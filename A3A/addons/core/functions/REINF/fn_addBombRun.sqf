@@ -60,7 +60,7 @@ if (_exit) exitWith {
 private _pointsX = 1;
 
 if (_typeX in FactionGet(all,"vehiclesHelisAttack")) then {_pointsX = 5};
-if (_typeX in (OccAndInv("vehiclesPlanesCAS") + OccAndInv("vehiclesPlanesAA"))) then {_pointsX = 10};
+if (_typeX in (OccAndInv("vehiclesPlanesCAS") + OccAndInv("vehiclesPlanesAA") + OccAndInv("vehiclesPlanesGunship"))) then {_pointsX = 10};
 
 deleteVehicle _veh;
 

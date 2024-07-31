@@ -42,6 +42,8 @@
 ["vehiclesPlanesAA", ["3AS_Z95_Blue"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Civilian_Transport_01"]] call _fnc_saveToTemplate;
 
+["vehiclesPlanesGunship", ["ls_cis_hmp","3AS_HMP_Gunship"]] call _fnc_saveToTemplate;
+
 ["vehiclesHelisLight", ["3AS_Patrol_LAAT_Police"]] call _fnc_saveToTemplate; 		//this line determines light helis -- Example: ["vehiclesHelisLight", ["B_Heli_Light_01_F"]] -- Array, can contain multiple assets
 ["vehiclesHelisTransport", ["3AS_HMP_Transport", "3AS_MAF_Transport_F"]] call _fnc_saveToTemplate; 	//this line determines transport helis -- Example: ["vehiclesHelisTransport", ["B_Heli_Transport_01_F"]] -- Array, can contain multiple assets
 ["vehiclesHelisLightAttack", ["3AS_MAF_Gunship_F"]] call _fnc_saveToTemplate;

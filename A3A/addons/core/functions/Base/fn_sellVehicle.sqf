@@ -83,16 +83,6 @@ private _costs = call {
     if (_rebAa isNotEqualTo [] && {_typeX isEqualTo _rebAa}) exitWith {([_typeX] call A3A_fnc_vehiclePrice) / 2};
 
     if (
-        (_typeX in FactionGet(riv,"vehiclesRivalsLightArmed"))
-        or (_typeX in FactionGet(riv,"vehiclesRivalsTrucks"))
-        or (_typeX in FactionGet(riv,"vehiclesRivalsCars"))
-        or (_typeX in FactionGet(riv,"vehiclesRivalsAPCs"))
-        or (_typeX in FactionGet(riv,"vehiclesRivalsTanks"))
-        or (_typeX in FactionGet(riv,"vehiclesRivalsHelis"))
-        or (_typeX in FactionGet(riv,"vehiclesRivalsUavs"))
-    ) exitWith {750};
-
-    if (
         (_typeX in arrayCivVeh)
         or (_typeX in civBoats)
         or (_typeX in (FactionGet(reb,"vehiclesCivBoat") + FactionGet(reb,"vehiclesCivCar") + FactionGet(reb,"vehiclesCivTruck")))
@@ -129,6 +119,7 @@ private _costs = call {
         or (_typeX in FactionGet(all,"vehiclesArtillery"))
     ) exitWith {6500};
     if (_typeX in (FactionGet(all,"vehiclesPlanesCAS") + FactionGet(all,"vehiclesPlanesAA"))) exitWith {7500};
+    if (_typeX in (FactionGet(all,"vehiclesPlanesGunship"))) exitWith {10000};
     0;
 };
 

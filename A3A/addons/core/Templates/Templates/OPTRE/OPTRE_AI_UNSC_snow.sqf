@@ -44,6 +44,8 @@
 ["vehiclesPlanesAA", ["OPTRE_YSS_1000_A"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["OPTRE_Pelican_unarmed"]] call _fnc_saveToTemplate; // I pray this works
 
+["vehiclesPlanesGunship", ["OPTRE_Pelican_armed_70mm","OPTRE_Pelican_armed_SOCOM"]] call _fnc_saveToTemplate;
+
 ["vehiclesHelisLight", ["OPTRE_UNSC_falcon"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["OPTRE_UNSC_falcon_s"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", ["OPTRE_UNSC_hornet_CAS"]] call _fnc_saveToTemplate;

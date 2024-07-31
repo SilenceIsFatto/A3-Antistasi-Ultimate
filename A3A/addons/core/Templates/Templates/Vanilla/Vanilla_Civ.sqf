@@ -71,7 +71,7 @@ if (_hasWs) then {
 };
 
 if (_hasGM) then {
-    _civHelicopter append ["gm_gc_civ_mi2p", "gm_gc_civ_mi2r", "gm_gc_civ_mi2sr", "gm_ge_adak_bo105m_vbh"];
+    _civHelicopter append ["gm_gc_civ_mi2p", "gm_gc_civ_mi2r", "gm_gc_civ_mi2sr", "gm_ge_adak_bo105m_vbh_noinsignia"];
     _civPlanes append ["gm_gc_civ_l410s_salon", "gm_gc_civ_l410s_passenger"];
     _civMedical append ["gm_ge_ff_u1300l_medic", 0.3, "gm_pl_army_ural375d_medic", 0.2];
     _civFuel append ["gm_pl_army_ural375d_refuel", 0.2];

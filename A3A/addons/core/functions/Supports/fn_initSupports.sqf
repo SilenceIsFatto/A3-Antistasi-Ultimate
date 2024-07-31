@@ -42,12 +42,13 @@ private _initData = [
     ["CASDIVE",       "TARGET", 0.8, 0.3,   0, 100,  "", "vehiclesPlanesCAS"],
     ["QRFLAND",       "TROOPS", 1.0, 1.4,   0,   0,  "", ""],
     ["QRFAIR",        "TROOPS", 0.5, 0.1,   0,   0,  "", ""],
-    ["QRFVEHAIRDROP", "TROOPS", 0.3, 0.1,   0,   0,  "", "vehiclesPlanesTransport"],
+    ["QRFVEHAIRDROP", "TROOPS", 0.4, 0.1,   0,   0,  "", "vehiclesPlanesTransport"],
     ["CARPETBOMBS",     "AREA", 0.5, 0.1, 200,   0, "u", ""],                            // balanced against airstrikes
-    ["SAM",           "TARGET", 1.0, 1.0,   0, 100, "u", ""],                             // balanced against ASF
-    ["ORBITALSTRIKE",   "AREA", 0.2, 0.0, 300,   0, "f", ""]
-//  ["UAV",           "TARGET", 1.0, 0.4,   0, 80,  "", "uavsAttack"],
-//  ["GUNSHIP",    ["AREA",   0.2,  50,   0]],                 // uh. Does AREA work for this? Only lasts 5 minutes so maybe...
+    ["GUNSHIP",         "AREA", 0.2, 0.1, 0, 80, "", "vehiclesPlanesGunship"],                   //u      // uh. Does AREA work for this? Only lasts 5 minutes so maybe...
+    ["SAM",           "TARGET", 1.0, 1.0,   0, 100, "u", ""],                            // balanced against ASF
+    ["CRUISEMISSILE", "TARGET", 0.2, 0.1, 200,   100, "", ""], //u
+    ["ORBITALSTRIKE",   "AREA", 0.2, 0.0, 300,   0, "f", ""],
+    ["UAV",           "TARGET", 1.0, 0.4,   0, 80,  "", "uavsAttack"]
 ];
 
 // Generate support type hashmap for a faction, suppType -> [baseType, weight, effRadius, strikepower]

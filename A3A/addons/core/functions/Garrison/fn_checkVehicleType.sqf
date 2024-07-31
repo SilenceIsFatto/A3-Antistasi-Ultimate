@@ -48,8 +48,9 @@ params ["_vehicle", "_preference"];
 #define plane \
     {_vehicle in FactionGet(occ,"vehiclesPlanesCAS")} \
     || {_vehicle in FactionGet(inv,"vehiclesPlanesCAS")} \
-    || {_vehicle in FactionGet(occ,"vehiclesPlanesAA")} \
-    || {_vehicle in FactionGet(inv,"vehiclesPlanesAA")}
+    || {_vehicle in FactionGet(inv,"vehiclesPlanesAA")} \
+    || {_vehicle in FactionGet(occ,"vehiclesPlanesGunship")} \
+    || {_vehicle in FactionGet(inv,"vehiclesPlanesGunship")}   
 
 //TODO this does not work properly (maybe even throws errors) as the template files arent
 //unified on how they work, await Pots Templates, then fix this

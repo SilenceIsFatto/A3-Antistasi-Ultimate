@@ -1,24 +1,33 @@
-params ["_sleepTime", "_timerIndex", "_airport", "_supportPos", "_supportName"];
 #include "..\..\script_component.hpp"
 FIX_LINE_NUMBERS()
 
-while {_sleepTime > 0} do
+params ["_suppData", "_side", "_oppositeSide", "_faction", "_vehType","_resPool", "_airport", "_sleepTime", "_reveal"];
+_suppData params ["_supportName", "_side", "_suppType", "_suppCenter", "_suppRadius", "_suppTarget"];
+/* while {_sleepTime > 0} do
 {
     sleep 1;
     _sleepTime = _sleepTime - 1;
     if((spawner getVariable _airport) != 2) exitWith {};
-};
+}; */
 
-private _gunshipData = [Invaders, _airport, _timerIndex, "O_T_VTOL_02_vehicle_dynamicLoadout_F", FactionGet(inv,"unitPilot"), _supportPos] call A3A_fnc_SUP_gunshipSpawn;
+private _gunshipData = [_side, _airport, _supportName, _vehType, _suppTarget, _resPool, _suppCenter, _faction get "unitPilot"] call A3A_fnc_SUP_gunshipSpawn;
 _gunshipData params ["_gunship", "_strikeGroup"];
 
-{
-    _gunship setPylonLoadout [_forEachIndex + 1, _x, true];
-} forEach ["PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire","PylonRack_19Rnd_Rocket_Skyfire"];
+private _crew = objNull;
 
-//Prepare crew units and spawn them in
-private _mainGunner = [_strikeGroup, FactionGet(inv,"unitPilot"), getPos _gunship] call A3A_fnc_createUnit;
-_mainGunner moveInAny _gunship;
+private _mainGunner = objNull;
+private _heavyGunner = objNull;
+
+for "_i" from 1 to 2 do {
+    _crew = [_strikeGroup, _faction get "unitPilot", getPos _gunship] call A3A_fnc_createUnit;
+    if(_i == 1) then {
+        _crew moveInTurret [_gunship, [1]];
+        _mainGunner = _crew;
+    } else {
+        _crew moveInTurret [_gunship, [2]];
+        _heavyGunner = _crew;
+    };
+};
 
 _gunship addEventHandler
 [
@@ -27,74 +36,13 @@ _gunship addEventHandler
         params ["_gunship", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile", "_gunner"];
 
         private _target = _gunship getVariable ["currentTarget", objNull];
-        if(_target isEqualTo objNull) exitWith {};
+        if(_target isEqualTo objNull) exitWith {}; //what?
 
         if(_target isEqualType objNull) then
         {
             _target = getPosASL _target;
         };
-
-        if(_weapon == "rockets_Skyfire") then
-        {
-            _target = _target apply {_x + (random 50) - 25};
-            [_projectile, _target] spawn
-            {
-                params ["_projectile", "_target"];
-                sleep 0.25;
-                private _speed = (speed _projectile)/3.6;
-                while {!(isNull _projectile) && {alive _projectile}} do
-                {
-                    /*
-                    The missile will do a sharp 90 degree turn to hit its target
-
-                    A smoother path is a bit more complex and not worth the work or computing time but here is the general idea
-                    Take the normalised current dir and the normalised target vector and split transform them as follows
-                    THIS IS NOT GUARANTEED TO BE RIGHT!!! CHECK BEFORE USING IT
-
-                    private _alpha = atan (y/x)
-                    private _beta = asin (z)
-
-                    Now you got the vectors in polar form, and you are now able to calculate the degree diff between them
-
-                    private _alphaDiff = (_alphaTarget - _alphaDir) % 180
-                    private _betaDiff = (_betaTarget - _betaDir) % 180
-
-                    To get a fixed turn rate, calculate the angle these two diff vectors are creating
-
-                    private _turnAngle = atan (_alphaDiff/_betaDiff)
-
-                    Now recalculate the actual lenght based on the turn limit (in degree)
-
-                    private _limitAlpha = cos (_turnAngle) * TURN_LIMIT
-                    private _limitBeta = sin (_turnAngle) * TURN_LIMIT
-
-                    Check if _limitAlpha and _limitBeta are bigger than their diff values, if so, continue with diff values
-
-                    Now create the new dir vector out of the data (make sure the _limit values has the right sign)
-
-                    private _newAlpha = _alphaDir + _limitAlpha
-                    private _newBeta = _betaDir + _limitBeta
-
-                    private _newVectorZ = sin (_newBeta)
-                    private _planeLength = cos (_newBeta)
-
-                    private _newVectorX = cos (_newAlpha) * _planeLength
-                    private _newVectorY = sin (_newAlpha) * _planeLength
-
-                    private _newDir = [_newVectorX, _newVectorY, _newVectorZ]
-
-                    This is the new dir vector which is also exact 1 long and therefor normalised
-
-                    This useless code part was sponsored by ComboTombo
-                    */
-                    sleep 0.25;
-                    private _dir = vectorNormalized (_target vectorDiff (getPosASL _projectile));
-                    _projectile setVelocity (_dir vectorMultiply _speed);
-                    _projectile setVectorDir _dir;
-                };
-            };
-        };
-        if(_weapon == "gatling_30mm_VTOL_02") then
+        if(_weapon == "vn_gunpod_twin_gau4" || _weapon == "vn_gunpod_gau2") then ///probably delete this check and pretend that every maingun on every gunship is the same
         {
             _target = (_target vectorAdd [0,0,20]) apply {_x + (random 10) - 5};
             private _speed = (speed _projectile)/3.6;
@@ -105,19 +53,22 @@ _gunship addEventHandler
     }
 ];
 
-private _targetList = server getVariable [format ["%1_targets", _supportName], []];
-private _reveal = _targetList select 0 select 1;
+/* private _targetList = server getVariable [format ["%1_targets", _supportName], []];
+private _reveal = _targetList select 0 select 1; */
 
 private _supportMarker = format ["%1_coverage", _supportName];
-private _supportPos = getMarkerPos _supportMarker;
+/* private _supportPos = getMarkerPos _supportMarker;
 
-private _textMarker = createMarker [format ["%1_text", _supportName], _supportPos];
+private _textMarker = createMarker [format ["%1_text", _supportName], _suppCenter];
 _textMarker setMarkerShape "ICON";
 _textMarker setMarkerType "mil_dot";
 _textMarker setMarkerText "Gunship";
-_textMarker setMarkerColor colorInvaders;
+_textMarker setMarkerColor colorOccupants;
 _textMarker setMarkerAlpha 0;
-[_reveal, _supportPos, Invaders, "GUNSHIP", format ["%1_coverage", _supportName], _textMarker] spawn A3A_fnc_showInterceptedSupportCall;
+//[_reveal, _suppCenter, Invaders, "GUNSHIP", format ["%1_coverage", _supportName], _textMarker] spawn A3A_fnc_showInterceptedSupportCall;
+private _delay = selectRandom [-1,1];
+if (_delay < 0) then { _delay = (0.5 + random 1) * (450 - 15*tierWar - 1*_aggro) };
+[_reveal, _side, "GUNSHIP", _suppCenter, _delay] spawn A3A_fnc_showInterceptedSetupCall; */
 
 waitUntil
 {
@@ -126,11 +77,12 @@ waitUntil
     {!(alive _gunship) ||
     (_gunship getVariable ["InArea", false])}
 };
-
+sleep 20; //maybe more to get plane in to the position
 if !(_gunship getVariable ["InArea", false]) exitWith
 {
     Debug_1("%1 has been destroyed before reaching the area", _supportName);
     //Gunship destroyed before reaching the area
+	[_gunship] spawn A3A_fnc_vehDespawner;
 };
 
 _gunship setVariable ["IsActive", true];
@@ -145,7 +97,7 @@ private _mainGunnerList = [];
 [_gunship, _mainGunnerList, _mainGunner, _supportName] spawn
 {
     #include "..\..\script_component.hpp"
-FIX_LINE_NUMBERS()
+    FIX_LINE_NUMBERS()
     params ["_gunship", "_mainGunnerList", "_mainGunner", "_supportName"];
 
     private _fnc_executeFireOrder =
@@ -182,6 +134,7 @@ FIX_LINE_NUMBERS()
         _gunner reveal [_target, 3];
         _gunner doTarget _target;
         _gunner doWatch _target;
+		[_gunship, "vn_v_launcher_mk24"] call BIS_fnc_fire;
 
         //Simulate targeting time (cause the fucking AI does not targets for real)
         sleep 0.3;
@@ -201,7 +154,6 @@ FIX_LINE_NUMBERS()
             };
             sleep 0.1;
         };
-
         _gunner doTarget objNull;
         _gunner doWatch objNull;
         _gunship setVariable ["currentTarget", nil];
@@ -275,31 +227,37 @@ FIX_LINE_NUMBERS()
         sleep 1;
     };
 };
-
-_gunship setVariable ["AP_Ammo", 250];
-_gunship setVariable ["HE_Ammo", 250];
-_gunship setVariable ["Rockets", 76];
+///"vn_gunpod_twin_gau4" gau-4 3000 ammo
+///"vn_gunpod_gau2" gau-2 14000 ammo
+///"SEARCHLIGHT" search light
+///"vn_v_launcher_mk24" fire flares when found new target
+_gunship setVariable ["AP_Ammo", 14000]; //change variables later
+_gunship setVariable ["HE_Ammo", 14000]; //change variables later
+_gunship setVariable ["Rockets", 3000]; //delete this one
 
 private _supportMarker = format ["%1_coverage", _supportName];
-private _supportPos = getMarkerPos _supportMarker;
+_gunship turretUnit [1] action ["SearchLightOn", _gunship];
+_strikeGroup setCombatMode "YELLOW";  ///seemengly doesn't want to fire without it(i.e. with "blue" combat mode)
 
-//_strikeGroup setCombatMode "YELLOW";
-
-private _lifeTime = 300;
+private _lifeTime = 400;
 while {_lifeTime > 0} do
 {
-    if !(_gunship getVariable ["CurrentlyFiring", false]) then
+    if
+    (
+        isNull (_gunship getVariable ["currentTarget", objNull])
+    ) then
+    ///if !(_gunship getVariable ["CurrentlyFiring", false]) then
     {
-        private _targets = _supportPos nearEntities [["Man", "LandVehicle", "Helicopter"], 250];
+        private _targets = _suppCenter nearEntities [["Man", "LandVehicle", "Helicopter", "Plane", "Ship"], 400];
         _targets = _targets select
         {
             if(_x isKindOf "Man") then
             {
-                ((side group _x) != Invaders) && {[_x] call A3A_fnc_canFight}
+                ((side group _x) in [teamPlayer, _oppositeSide]) && {[_x] call A3A_fnc_canFight}
             }
             else
             {
-                (alive _x) && {(isNull driver _x) || {side group driver _x != Invaders}}
+                (alive _x) && {(_x getVariable ["ownerSide", sideUnknown]) in [teamPlayer, _oppositeSide] || {(side group driver _x) in [teamPlayer, _oppositeSide]}} ////don't forget to change it to _oppositeSide or something
             }
         };
         Debug_2("%1 found %2 targets in its area", _supportName, count _targets);
@@ -315,40 +273,57 @@ while {_lifeTime > 0} do
                 }
                 else
                 {
-                    if(_target isKindOf "LandVehicle") then
+                    if(_target isKindOf "Plane" && (isTouchingGround _target)) then
                     {
-                        if(_target isKindOf "Tank") then
-                        {
-                            //MBT, breach with AP ammo
-                            _mainGunnerList pushBack [_target, 24, _antiTankBelt, 0];
-                        }
-                        else
-                        {
-                            if(_target in FactionGet(all,"vehiclesAPCs")) then
-                            {
-                                //APC, use mainly AP and rarely rockets
-                                _mainGunnerList pushBack [_target, 18, _antiAPCBelt, 4];
-                            }
-                            else
-                            {
-                                //Any kind of light vehicle, destroy with rockets and mixed belt
-                                _mainGunnerList pushBack [_target, 12, _antiLightVehicleBelt, 8];
-                            };
-                        };
+                        //parked or grounded plane, use minigun against it
+                        _mainGunnerList pushBack [_target, 12, _antiLightVehicleBelt, 0];
                     }
                     else
                     {
-                        //Infantry, if crowded use rockets too
-                        private _nearUnits = _targets select {(_x isKindOf "Man") && ([_x] call A3A_fnc_canFight) && {(_x distanceSqr _target) < 100}};
-                        private _rockets = 0;
-                        if(count _nearUnits > 2) then {_rockets = 4};
-                        _mainGunnerList pushBack [_target, 6, _antiInfBelt, _rockets];
-                    };
+                        if(_target isKindOf "LandVehicle") then
+                        {
+                            if(_target isKindOf "Tank") then
+                            {
+                                //MBT, breach with AP ammo
+                                _mainGunnerList pushBack [_target, 24, _antiTankBelt, 0];
+                            }
+                            else
+                            {
+                                if(_target in FactionGet(all,"vehiclesAPCs")) then
+                                {
+                                    //APC, use mainly AP and rarely rockets
+                                    _mainGunnerList pushBack [_target, 18, _antiAPCBelt, 4];
+                                }
+                                else
+                                {
+                                    //Any kind of light vehicle, destroy with rockets and mixed belt
+                                    _mainGunnerList pushBack [_target, 12, _antiLightVehicleBelt, 8];
+                                };
+                            };
+                        }
+                        else
+                        {
+                            if(_target isKindOf "Ship") then
+                            {
+                                //boat,probably light,use rockets and mixed belt
+                                _mainGunnerList pushBack [_target, 12, _antiLightVehicleBelt, 0];
+                            }
+                            else
+                            {
+                                //Infantry, if crowded use rockets too
+                                private _nearUnits = _targets select {(_x isKindOf "Man") && ([_x] call A3A_fnc_canFight) && {(_x distanceSqr _target) < 100}};
+                                private _rockets = 0;
+                                if(count _nearUnits > 2) then {_rockets = 4};
+                                _mainGunnerList pushBack [_target, 6, _antiInfBelt, _rockets];
+                            };
+                        };
+                    }; 
                 };
             } forEach _targets;
             _gunship setVariable ["CurrentlyFiring", true];
         };
     };
+
 
     //No ammo left
     if(_gunship getVariable ["OutOfAmmo", false]) exitWith
@@ -391,12 +366,6 @@ if (alive _gunship) then
     waitUntil {!(alive _gunship) || ((getMarkerPos _airport) distance2D _gunship) < 100};
     if(alive _gunship) then
     {
-        {
-            deleteVehicle _x;
-        } forEach (crew _gunship);
-        deleteVehicle _gunship;
+        [_gunship] spawn A3A_fnc_vehDespawner;
     };
 };
-
-//Deleting all the support data here
-[_supportName, Invaders] call A3A_fnc_endSupport;

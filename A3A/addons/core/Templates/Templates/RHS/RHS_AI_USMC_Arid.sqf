@@ -42,6 +42,13 @@
 ["vehiclesPlanesAA", ["rhsusf_f22"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["RHS_C130J"]] call _fnc_saveToTemplate;
 
+private _gunship = [];
+/// "USAF_AC130U"   USAF gunship
+if (isClass (configFile >> "cfgVehicles" >> "USAF_AC130U")) then {
+	_gunship pushBack "USAF_AC130U";
+};
+["vehiclesPlanesGunship", _gunship] call _fnc_saveToTemplate;
+
 ["vehiclesHelisTransport", ["rhsusf_CH53E_USMC_D", "rhsusf_CH53E_USMC_GAU21_D", "RHS_UH1Y_UNARMED_d", "RHS_UH1Y_d"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLight", ["RHS_UH1Y_UNARMED_d"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", ["RHS_UH1Y_d", "RHS_UH1Y_d_GS"]] call _fnc_saveToTemplate;
