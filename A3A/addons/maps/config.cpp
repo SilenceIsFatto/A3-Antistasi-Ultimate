@@ -77,6 +77,7 @@ class CfgMissions
     A3A_Mission(Gulfcoast, "Antistasi Ultimate - Gulfcoast Islands")
 	A3A_Mission(SPE_Mortain, "Antistasi Ultimate - Mortain")
 	A3A_Mission(tem_chernarus, "Antistasi Ultimate - Svartmarka")
+	A3A_Mission(tem_chernarusw, "Antistasi Ultimate - Svartmarka Winter")
 #if __A3_DEBUG__
         A3A_Mission(Stratis, $STR_antistasi_mission_info_Stratis_mapname_text)
 #endif

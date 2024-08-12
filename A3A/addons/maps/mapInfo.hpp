@@ -51,4 +51,5 @@ class mapInfo {
 	#include "Antistasi_Gulfcoast.Gulfcoast\mapInfo.hpp"
 	#include "Antistasi_SPE_Mortain.SPE_Mortain\mapInfo.hpp"
 	#include "Antistasi_tem_chernarus.tem_chernarus\mapInfo.hpp"
+	#include "Antistasi_tem_chernarusw.tem_chernarusw\mapInfo.hpp"
 };
