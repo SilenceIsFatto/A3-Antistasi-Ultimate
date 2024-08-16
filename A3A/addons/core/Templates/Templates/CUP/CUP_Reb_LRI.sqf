@@ -8,7 +8,7 @@
 
 ["flag", "Flag_LRI_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Templates\Templates\CUP\flag_LRI_co.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "a3a_flag_LRI_co"] call _fnc_saveToTemplate;
+["flagMarkerType", "a3a_flag_LRI"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["C_Quadbike_01_F", "CUP_C_Golf4_black_Civ"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["CUP_O_Hilux_unarmed_TK_CIV"]] call _fnc_saveToTemplate;
