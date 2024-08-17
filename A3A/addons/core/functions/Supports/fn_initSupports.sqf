@@ -40,9 +40,6 @@ private _initData = [
     ["ASF",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesAA"],            // balanced against SAMs (if available), 66/33 weighting
     ["CAS",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesCAS"],
     ["CASDIVE",       "TARGET", 0.8, 0.3,   0, 100,  "", "vehiclesPlanesCAS"],
-    ["ASFLarge",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesLargeAA"],            // balanced against SAMs (if available), 66/33 weighting
-    ["CASLarge",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesLargeCAS"],
-    ["CASLargeDIVE",       "TARGET", 0.8, 0.3,   0, 100,  "", "vehiclesPlanesLargeCAS"],
     ["QRFLAND",       "TROOPS", 1.0, 1.4,   0,   0,  "", ""],
     ["QRFAIR",        "TROOPS", 0.5, 0.1,   0,   0,  "", ""],
     ["QRFVEHAIRDROP", "TROOPS", 0.4, 0.1,   0,   0,  "", "vehiclesPlanesTransport"],

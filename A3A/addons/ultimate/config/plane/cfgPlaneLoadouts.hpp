@@ -176,6 +176,14 @@ class planeLoadouts
             bombRacks[] = {"BombCluster_01_F"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
+        class 3AS_ARC_170_Red
+        {
+            loadout[] = {"PylonRack_Missile_BIM9X_x2","PylonRack_Missile_BIM9X_x2","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","3as_PylonRack_ARC_6Rnd_Missile_AGM","3as_PylonRack_ARC_6Rnd_Missile_AGM"};
+            mainGun = "3as_ARC_Light_Canon";
+            missileLauncher[] = {"3as_ARC_Missile_AGM"};
+            bombRacks[] = {"Bomb_04_Plane_CAS_01_F"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
 
     class CAS
@@ -347,6 +355,14 @@ class planeLoadouts
             bombRacks[] = {"BombCluster_01_F"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
+        class 3AS_ARC_170_Red
+        {
+            loadout[] = {"PylonRack_Missile_BIM9X_x2","PylonRack_Missile_BIM9X_x2","PylonMissile_1Rnd_Bomb_04_F","PylonMissile_1Rnd_Bomb_04_F","3as_PylonRack_ARC_6Rnd_Missile_AGM","3as_PylonRack_ARC_6Rnd_Missile_AGM"};
+            mainGun = "3as_ARC_Light_Canon";
+            missileLauncher[] = {"3as_ARC_Missile_AGM"};
+            bombRacks[] = {"Bomb_04_Plane_CAS_01_F"};
+            diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
    
     class AA
@@ -493,6 +509,21 @@ class planeLoadouts
         {
             loadout[] = {"CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel"};
             mainGun = "CUP_Vacannon_GSh302K_veh";
+        };
+        class 3AS_Delta7_F
+        {
+            mainGun = "3AS_Delta7_20mm_AA_Cannon";
+        };
+        class 3as_V19_base
+        {
+            mainGun = "3as_V19_Medium_Cannon";
+			missileLauncher[] = {"3AS_ARC_Missile_AA","weapon_AMRAAMLauncher"};
+        };
+		class 3AS_ARC_170_Red
+        {
+            loadout[] = {"PylonRack_Missile_BIM9X_x2","PylonRack_Missile_BIM9X_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x1","PylonRack_Missile_AMRAAM_D_x1"};
+            mainGun = "3as_ARC_Light_Canon";
+			missileLauncher[] = {"weapon_BIM9xLauncher","weapon_AMRAAMLauncher"};
         };
     };
 };
