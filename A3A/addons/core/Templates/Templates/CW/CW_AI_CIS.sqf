@@ -38,7 +38,7 @@
 ["vehiclesGunBoats", ["442_boat_armed"]] call _fnc_saveToTemplate;
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
-["vehiclesPlanesCAS", ["3AS_Tri_Fighter_DynamicLoadout"]] call _fnc_saveToTemplate;
+["vehiclesPlanesCAS", ["3AS_BTLB_Bomber_Shadow"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", ["3AS_Z95_Blue"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["3AS_Civilian_Transport_01"]] call _fnc_saveToTemplate;
 
