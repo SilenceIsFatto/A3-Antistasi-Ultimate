@@ -660,7 +660,5 @@ if (fatigueEnabled isEqualTo false) then {
 if (staminaEnabled isEqualTo false) then { 
 	player enableStamina false; 
 }; 
- 
-if (swayEnabled isEqualTo false) then { 
-	player setCustomAimCoef 0; 
-};
+
+player setCustomAimCoef swayEnabled;

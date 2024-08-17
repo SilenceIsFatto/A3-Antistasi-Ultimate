@@ -4716,6 +4716,13 @@
                 <Korean>헤드샷 당할 시 헬멧을 잃을 확률</Korean>
                 <French>Risque de perte de casque lors des tirs à la tête</French>
             </Key>
+            <Key ID="STR_params_helmetLossSound">
+                <Original>Make sound on helmet loss</Original>
+                <Russian>Издать звук при потере шлема</Russian>
+                <Chinesesimp>头盔丢失时发出声音</Chinesesimp>
+                <Korean>헬멧 분실 시 소리 내기</Korean>
+                <French>Faites du bruit en cas de perte de casque</French>
+            </Key>
             <Key ID="STR_params_helmetLossChance_0">
                 <Original>Never</Original>
                 <Russian>Никогда</Russian>

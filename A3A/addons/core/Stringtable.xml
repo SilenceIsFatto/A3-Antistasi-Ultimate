@@ -5819,11 +5819,11 @@
                 <French>Activer la fatigue (Vanilla)</French>
             </Key>
             <Key ID="STR_A3AU_sway_enabled">
-                <Original>Enable Sway (Vanilla)</Original>
-                <English>Enable Sway (Vanilla)</English>
-                <Russian>Включить раскачку оружия (Vanilla)</Russian>
-                <Korean>무기 흔들림 활성화 (바닐라)</Korean>
-                <French>Activer l'oscillation (Vanilla)</French>
+                <Original>Weapon Sway % (Vanilla)</Original>
+                <English>Weapon Sway % (Vanilla)</English>
+                <Russian>раскачивание оружия % (Vanilla)</Russian>
+                <Korean>무기 흔들림 % (바닐라)</Korean>
+                <French>% de balancement de l'arme (Vanilla)</French>
             </Key>
         </Container>
     </Package>
