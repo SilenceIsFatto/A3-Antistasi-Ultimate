@@ -536,5 +536,9 @@ class planeLoadouts
             mainGun = "sab_fl_2x_hmg_weapon";
         };
 		class sab_fl_bf109k : sab_fl_bf109g {};
+		class sab_fl_yak3
+        {
+            mainGun = "sab_fl_2x_hmg_weapon";
+        };
     };
 };
