@@ -176,6 +176,16 @@ class planeLoadouts
             bombRacks[] = {"BombCluster_01_F"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
+		class sab_fl_bf109e
+        {
+            loadout[] = {"","sab_fl_bomb_axis_4rnd_100_bf109_mag",""};
+            mainGun = "sab_fl_1x_cannon_weapon";
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_bf109f : sab_fl_bf109e {};
+		class sab_fl_bf109g : sab_fl_bf109e {};
+		class sab_fl_bf109k : sab_fl_bf109e {};
     };
 
     class CAS
@@ -347,6 +357,26 @@ class planeLoadouts
             bombRacks[] = {"BombCluster_01_F"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
+		class sab_fl_bf109e
+        {
+            loadout[] = {"","sab_fl_bomb_axis_4rnd_100_bf109_mag",""};
+            mainGun = "sab_fl_1x_cannon_weapon";
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_bf109f : sab_fl_bf109e {};
+		class sab_fl_bf109g : sab_fl_bf109e {};
+		class sab_fl_bf109k : sab_fl_bf109e {};
+		class sab_fl_ju88a
+        {
+            loadout[] = {"sab_fl_bomb_axis_1rnd_100_mag","sab_fl_pod_bk37_ap_pylon_mag","sab_fl_pod_bk37_ap_pylon_mag","sab_fl_bomb_axis_1rnd_100_mag","sab_fl_bomb_axis_24rnd_100_mag"};
+            mainGun = "sab_fl_1x_lmg_turret_front_weapon";
+        };
+		class sab_fl_ju86
+        {
+            loadout[] = {"sab_fl_bomb_axis_8rnd_100_mag","sab_fl_bomb_axis_8rnd_100_mag",""};
+            mainGun = "sab_fl_1x_lmg_turret_front_weapon";
+        };
     };
    
     class AA
@@ -494,5 +524,17 @@ class planeLoadouts
             loadout[] = {"CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel","CUP_PylonPod_1Rnd_R73_Vympel"};
             mainGun = "CUP_Vacannon_GSh302K_veh";
         };
+		class sab_fl_bf109e
+        {
+            loadout[] = {"","",""};
+            mainGun = "sab_fl_2x_lmg_weapon";
+        };
+		class sab_fl_bf109f : sab_fl_bf109e {};
+		class sab_fl_bf109g
+        {
+            loadout[] = {"","",""};
+            mainGun = "sab_fl_2x_hmg_weapon";
+        };
+		class sab_fl_bf109k : sab_fl_bf109g {};
     };
 };
