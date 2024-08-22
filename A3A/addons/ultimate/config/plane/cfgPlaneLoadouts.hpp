@@ -186,6 +186,22 @@ class planeLoadouts
 		class sab_fl_bf109f : sab_fl_bf109e {};
 		class sab_fl_bf109g : sab_fl_bf109e {};
 		class sab_fl_bf109k : sab_fl_bf109e {};
+		class sab_fl_hurricane_2
+        {
+            loadout[] = {"sab_fl_bomb_raf_1rnd_250_mag","sab_fl_bomb_raf_1rnd_250_mag","sab_fl_bomb_raf_1rnd_250_mag","sab_fl_bomb_raf_1rnd_250_mag"};
+            mainGun = "sab_fl_4x_cannon_weapon";
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_tempest : sab_fl_hurricane_2 {};
+		class sab_fl_dh98
+        {
+            loadout[] = {"sab_fl_bomb_raf_1rnd_250_mag","sab_fl_bomb_raf_1rnd_250_mag","sab_fl_bomb_raf_2rnd_500_mag"};
+            mainGun = "sab_fl_4x_lmg_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
 
     class CAS
@@ -377,6 +393,23 @@ class planeLoadouts
             loadout[] = {"sab_fl_bomb_axis_8rnd_100_mag","sab_fl_bomb_axis_8rnd_100_mag",""};
             mainGun = "sab_fl_1x_lmg_turret_front_weapon";
         };
+		class sab_fl_hurricane_2
+        {
+            loadout[] = {"sab_fl_rocket_4rnd_rp3_mag","sab_fl_bomb_raf_1rnd_250_mag","sab_fl_bomb_raf_1rnd_250_mag","sab_fl_rocket_4rnd_rp3_mag"};
+            mainGun = "sab_fl_4x_cannon_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_tempest : sab_fl_hurricane_2 {};
+		class sab_fl_dh98
+        {
+            loadout[] = {"sab_fl_rocket_4rnd_rp3_mag","sab_fl_bomb_raf_1rnd_250_mag","sab_fl_bomb_raf_2rnd_500_mag"};
+            mainGun = "sab_fl_4x_lmg_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_bay_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
    
     class AA
@@ -537,6 +570,19 @@ class planeLoadouts
         };
 		class sab_fl_bf109k : sab_fl_bf109g {};
 		class sab_fl_yak3
+        {
+            mainGun = "sab_fl_2x_hmg_weapon";
+        };
+		class sab_fl_hurricane
+        {
+            mainGun = "sab_fl_8x_lmg_weapon";
+        };
+		class sab_fl_spitfire_mk1 : sab_fl_hurricane {};
+		class sab_fl_spitfire_mk5
+        {
+            mainGun = "sab_fl_fw190_4x_lmg_weapon";
+        };
+		class sab_fl_spitfire_mkxiv
         {
             mainGun = "sab_fl_2x_hmg_weapon";
         };
