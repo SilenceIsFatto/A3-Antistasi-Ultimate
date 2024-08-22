@@ -202,6 +202,30 @@ class planeLoadouts
 			bombRacks[] = {"sab_fl_bomb_weapon"};
 			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
+		class sab_fl_p51d
+        {
+            loadout[] = {"sab_fl_rocket_3rnd_m10_mag","sab_fl_bomb_allies_1rnd_500_mag","sab_fl_bomb_allies_1rnd_500_mag","sab_fl_rocket_3rnd_m10_mag"};
+            mainGun = "sab_fl_6x_hmg_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_p51b
+        {
+            loadout[] = {"sab_fl_rocket_3rnd_m10_mag","sab_fl_bomb_allies_1rnd_500_mag","sab_fl_bomb_allies_1rnd_500_mag","sab_fl_rocket_3rnd_m10_mag"};
+            mainGun = "sab_fl_4x_hmg_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_f4f
+        {
+            loadout[] = {"sab_fl_bomb_allies_1rnd_250_mag","sab_fl_rocket_3rnd_m10_mag"};
+            mainGun = "sab_fl_4x_hmg_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
     };
 
     class CAS
@@ -410,6 +434,35 @@ class planeLoadouts
 			bombRacks[] = {"sab_fl_bomb_bay_weapon"};
 			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
+		class sab_fl_p51d
+        {
+            loadout[] = {"sab_fl_rocket_3rnd_m10_mag","sab_fl_bomb_allies_1rnd_500_mag","sab_fl_bomb_allies_1rnd_500_mag","sab_fl_rocket_3rnd_m10_mag"};
+            mainGun = "sab_fl_6x_hmg_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_p51b
+        {
+            loadout[] = {"sab_fl_rocket_3rnd_m10_mag","sab_fl_bomb_allies_1rnd_500_mag","sab_fl_bomb_allies_1rnd_500_mag","sab_fl_rocket_3rnd_m10_mag"};
+            mainGun = "sab_fl_4x_hmg_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_f4f
+        {
+            loadout[] = {"sab_fl_bomb_allies_1rnd_250_mag","sab_fl_rocket_3rnd_m10_mag"};
+            mainGun = "sab_fl_4x_hmg_weapon";
+			rocketLauncher[] = {"sab_fl_rocket_weapon"};
+			bombRacks[] = {"sab_fl_bomb_weapon"};
+			diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+		class sab_fl_f4f
+        {
+            loadout[] = {"sab_fl_bomb_allies_1rnd_divebomber_500_mag","sab_fl_bomb_allies_1rnd_250_mag","sab_fl_bomb_allies_1rnd_250_mag"};
+            mainGun = "sab_fl_2x_lmg_turret_generic_weapon";
+        };
     };
    
     class AA
@@ -585,6 +638,14 @@ class planeLoadouts
 		class sab_fl_spitfire_mkxiv
         {
             mainGun = "sab_fl_2x_hmg_weapon";
+        };
+		class sab_fl_p51d
+        {
+            mainGun = "sab_fl_6x_hmg_weapon";
+        };
+		class sab_fl_p51b
+        {
+            mainGun = "sab_fl_4x_hmg_weapon";
         };
     };
 };
