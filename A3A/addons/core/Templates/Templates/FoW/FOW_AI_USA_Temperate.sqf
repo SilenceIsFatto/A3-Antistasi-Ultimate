@@ -50,7 +50,7 @@ private _vehiclesPlanesAA = ["fow_va_f6f_c"];
 ["vehiclesPlanesTransport", ["LIB_C47_Skytrain"]] call _fnc_saveToTemplate;
 
 if (isClass (configFile >> "CfgPatches" >> "sab_flyinglegends")) then {
-    _vehiclesPlanesCAS append ["sab_fl_p51d","sab_fl_p51b","sab_fl_f4f","sab_fl_sbd"];
+    _vehiclesPlanesCAS append ["sab_fl_p51d","sab_fl_p51b","sab_fl_f4f","sab_fl_sbd","sab_fl_f4u","sab_fl_f4u"];
 	_vehiclesPlanesAA append ["sab_fl_p51d","sab_fl_p51b"];
 };
 
