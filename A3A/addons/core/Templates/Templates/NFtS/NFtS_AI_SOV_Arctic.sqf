@@ -41,8 +41,13 @@
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
 ["vehiclesPlanesCAS", ["LIB_Pe2_w"]] call _fnc_saveToTemplate;
-["vehiclesPlanesAA", ["LIB_P39_w"]] call _fnc_saveToTemplate;
+private _vehiclesPlanesAA = ["LIB_P39_w"];
 ["vehiclesPlanesTransport", ["LIB_Li2"]] call _fnc_saveToTemplate;
+
+if (isClass (configFile >> "CfgPatches" >> "sab_flyinglegends")) then {
+	_vehiclesPlanesAA append ["sab_fl_yak3"];
+};
+["vehiclesPlanesAA", _vehiclesPlanesAA] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", []] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", []] call _fnc_saveToTemplate;
