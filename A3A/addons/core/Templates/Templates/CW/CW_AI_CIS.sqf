@@ -17,10 +17,10 @@
 ["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
-["vehiclesBasic", ["lsd_car_ast"]] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
+["vehiclesBasic", ["3AS_Fliknot_F"]] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
 ["vehiclesLightUnarmed", ["3AS_ISP_Transport"]] call _fnc_saveToTemplate; 		
 ["vehiclesLightArmed",["3AS_ISP", "3AS_ISP", "lsd_car_ast"]] call _fnc_saveToTemplate; 		
-["vehiclesTrucks", ["442_argon_covered_cis", "442_argon_transport_cis"]] call _fnc_saveToTemplate; 			
+["vehiclesTrucks", ["442_argon_covered_cis"]] call _fnc_saveToTemplate; 			
 ["vehiclesCargoTrucks", ["442_argon_covered_cis", "442_argon_transport_cis"]] call _fnc_saveToTemplate; 	
 ["vehiclesAmmoTrucks", ["442_argon_ammo_cis"]] call _fnc_saveToTemplate; 
 ["vehiclesRepairTrucks", ["3AS_SAC_Repair_F"]] call _fnc_saveToTemplate; 	
@@ -30,8 +30,8 @@
 ["vehiclesAirborne", ["3AS_Advanced_DSD", "3AS_ISP", "3AS_PAC_F"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["3AS_PAC_F"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["3AS_AAT_CIS"]] call _fnc_saveToTemplate;
-["vehiclesLightTanks",  ["3AS_n99","3AS_Advanced_DSD"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["3AS_AAT_CIS", "3AS_GAT", "3AS_n99"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks",  ["3AS_N99","3AS_Advanced_DSD"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["3AS_AAT_CIS", "3AS_GAT", "3AS_N99"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["3AS_GAT_Light"]] call _fnc_saveToTemplate;
 
 ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] call _fnc_saveToTemplate;
@@ -60,14 +60,14 @@
 ["uavsPortable", ["3as_CIS_ScavDroid"]] call _fnc_saveToTemplate;
 
 //Config special vehicles - militia vehicles are mostly used in the early game, police cars are being used by troops around cities -- Example:
-["vehiclesMilitiaLightArmed", ["lsd_car_ast"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["442_argon_covered_cis", "442_argon_transport_cis"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["3AS_ISP"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["442_argon_transport_cis"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["3AS_ISP_Transport"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaAPCs", ["3as_SAC_Trade"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaAPCs", ["3AS_SAC_F"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["3AS_ISP_Transport"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["3AS_HeavyRepeater_Unarmoured"]] call _fnc_saveToTemplate;
+["staticMGs", ["3AS_J10s_F"]] call _fnc_saveToTemplate;
 ["staticAT", ["3as_ParticleCannon"]] call _fnc_saveToTemplate;
 ["staticAA", ["AA_Turret"]] call _fnc_saveToTemplate;
 ["staticMortars", ["3AS_CIS_Mortar"]] call _fnc_saveToTemplate;

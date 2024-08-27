@@ -77,7 +77,7 @@
 ["staticHowitzers", []] call _fnc_saveToTemplate;
 
 ["vehicleRadar", "lsd_cis_radarDish"] call _fnc_saveToTemplate;
-["vehicleSam", "3as_XX9"] call _fnc_saveToTemplate;
+["vehicleSam", "3AS_Keeradak_Imperial"] call _fnc_saveToTemplate;
 
 ["howitzerMagazineHE", ""] call _fnc_saveToTemplate;
 
