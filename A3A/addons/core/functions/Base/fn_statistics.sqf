@@ -11,8 +11,6 @@ if (isNull (uiNameSpace getVariable "H8erHUD")) exitWith {};
 private _display = uiNameSpace getVariable "H8erHUD";
 if (isNil "_display") exitWith {};
 
-waitUntil {sleep 0.5;!(isNil "theBoss")};
-
 private _textX = nil;
 
 private _setText = _display displayCtrl 1001;
@@ -64,6 +62,25 @@ switch (gameMode) do {
 };
 
 _aggrString = _aggrString + _rivalsActivityTxt;
+
+if (isNil "theBoss") exitWith {
+	_textX = format [
+		"<t size='0.67' shadow='2'>" + (localize "STR_info_bar_final_string_2"), 
+		_rank, 
+		(server getVariable "hr") toFixed 0, 
+		A3A_faction_reb get "name", 
+		(server getVariable "resourcesFIA") toFixed 0, 
+		(_player getVariable "moneyX") toFixed 0, 
+		_aggrString, 
+		tierWar, 
+		_ucovertxt, 
+		_rallytxt, 
+		A3A_faction_civ get "currencySymbol"
+	];
+
+	_setText ctrlSetStructuredText (parseText format ["%1", _textX]);
+	_setText ctrlCommit 0;
+};
 
 if (_player != theBoss) then {
 	private _nameC = [
