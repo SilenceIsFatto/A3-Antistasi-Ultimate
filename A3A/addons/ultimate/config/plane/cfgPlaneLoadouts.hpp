@@ -416,6 +416,7 @@ class planeLoadouts
             loadout[] = {"PylonWeapon_LS1_Magazine"};
             mainGun = "LS93_Cannon";
             rocketLauncher[] = {"TS5_ProtonLauncher","TS5A_ProtonLauncher"};
+		};
 		class sab_fl_bf109e
         {
             loadout[] = {"","sab_fl_bomb_axis_4rnd_100_bf109_mag",""};
