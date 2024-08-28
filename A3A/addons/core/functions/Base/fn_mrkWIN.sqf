@@ -30,7 +30,11 @@ if (_caller isNotEqualTo player) exitWith {
 
 private _markerX = [airportsX + resourcesX + factories + outposts + seaports + milbases, getPosATL _flagX] call BIS_fnc_nearestPosition;
 
-// private _hideEnemyMarkers = missionNamespace getVariable ["A3U_setting_hideEnemyMarkers",false];
+private _vehicles = _flagX getVariable ["A3U_zoneVehicles", []];
+
+{
+    [_x, false] call A3U_fnc_setLock;
+} forEach _vehicles;
 
 if (hideEnemyMarkers) then {
     "Dum"+_markerX setMarkerAlpha 1;
