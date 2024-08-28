@@ -318,6 +318,8 @@ if (!_busy) then {
                     + (_faction get "vehiclesHelisTransport")
                     + (_faction get "vehiclesPlanesCAS")
                     + (_faction get "vehiclesPlanesAA")
+					+ (_faction get "vehiclesPlanesLargeCAS")
+                    + (_faction get "vehiclesPlanesLargeAA")
                     + (_faction get "vehiclesPlanesTransport");
 		    		+ (_faction getOrDefault ["vehiclesPlanesGunship", []]);
 					+ (_faction getOrDefault ["uavsAttack", []]);

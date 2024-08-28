@@ -164,7 +164,7 @@ class planeLoadouts
         class WM_TieBomber
         {
             mainGun = "LS1_Cannon";
-            missileLauncher[] = {"TS5_ProtonLauncher"};
+            rocketLauncher[] = {"TS5_ProtonLauncher"};
             bombRacks[] = {"VL61ProtonBomb"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
@@ -172,7 +172,7 @@ class planeLoadouts
         {
             loadout[] = {"PylonMissile_1Rnd_BombCluster_01_F", "PylonRack_2Rnd_BombCluster_01_F"};
             mainGun = "LS1_Cannon";
-            missileLauncher[] = {"TS5_ProtonLauncher"};
+            rocketLauncher[] = {"TS5_ProtonLauncher"};
             bombRacks[] = {"BombCluster_01_F"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
@@ -332,10 +332,16 @@ class planeLoadouts
             missileLauncher[] = {"missiles_SCALPEL", "Rocket_04_HE_Plane_CAS_01_F", "Missile_AGM_02_Plane_CAS_01_F"};
             diveParams[] = {1000, 600, 180, 55, 15, {0,0}};
         };
+        class 3AS_CIS_Vulture_CAS_F
+        {
+            loadout[] = {"3AS_PylonRack_Vulture_12Rnd_Rocket_HEAP","3AS_PylonRack_Vulture_12Rnd_Rocket_HEAP","3AS_PylonRack_Vulture_12Rnd_Rocket_HEAP","3AS_PylonRack_Vulture_12Rnd_Rocket_HEAP","3AS_PylonRack_Vulture_12Rnd_Rocket_HEAP","3AS_PylonRack_Vulture_12Rnd_Rocket_HEAP"};
+            mainGun = "3AS_Vulture_Cannon";
+            rocketLauncher[] = {"3AS_Vulture_Rocket_HEAP_F"};
+        };
         class WM_TieBomber
         {
             mainGun = "LS1_Cannon";
-            missileLauncher[] = {"TS5_ProtonLauncher"};
+            rocketLauncher[] = {"TS5_ProtonLauncher"};
             bombRacks[] = {"VL61ProtonBomb"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
         };
@@ -343,9 +349,15 @@ class planeLoadouts
         {
             loadout[] = {"PylonMissile_1Rnd_BombCluster_01_F", "PylonRack_2Rnd_BombCluster_01_F"};
             mainGun = "LS1_Cannon";
-            missileLauncher[] = {"TS5_ProtonLauncher"};
+            rocketLauncher[] = {"TS5_ProtonLauncher"};
             bombRacks[] = {"BombCluster_01_F"};
             diveParams[] = {1000, 300, 100, 55, 15, {0,0}};
+        };
+        class WM_TieDefender
+        {
+            loadout[] = {"PylonWeapon_LS1_Magazine"};
+            mainGun = "LS93_Cannon";
+            rocketLauncher[] = {"TS5_ProtonLauncher","TS5A_ProtonLauncher"};
         };
     };
    
@@ -471,12 +483,23 @@ class planeLoadouts
             mainGun = "Twin_Cannon_20mm_gunpod";
             missileLauncher[] = {"Missile_AA_04_Plane_CAS_01_F", "missiles_Zephyr"};
         };
+        class 3AS_CIS_Vulture_AA_F
+        {
+            loadout[] = {"3AS_PylonRack_Vulture_1Rnd_Missile_AA","3AS_PylonRack_Vulture_1Rnd_Missile_AA","3AS_PylonRack_Vulture_1Rnd_Missile_AA","3AS_PylonRack_Vulture_1Rnd_Missile_AA","3AS_PylonRack_Vulture_1Rnd_Missile_AA","3AS_PylonRack_Vulture_1Rnd_Missile_AA"};
+            mainGun = "3AS_Vulture_Cannon";
+            missileLauncher[] = {"3AS_Vulture_Missile_AA_F"};
+        };
         class WM_TieInterceptor
         {
             mainGun = "LS93_Cannon";
-			missileLauncher[] = {"TS5A_ProtonLauncher"};
+			rocketLauncher[] = {"TS5A_ProtonLauncher"};
         };
 		class WM_TieAdvanced : WM_TieInterceptor {};
+        class WM_Tiefighter
+        {
+            mainGun = "LS1_Cannon";
+			rocketLauncher[] = {"TS5A_ProtonLauncher"};
+        };
 		class cwr3_b_f4e
         {
             loadout[] = {"CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M","CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M","CUP_PylonPod_1Rnd_AIM_9L_LAU_Sidewinder_M","CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M","CUP_PylonPod_1Rnd_AIM_9L_LAU_Sidewinder_M","CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M","CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M"};

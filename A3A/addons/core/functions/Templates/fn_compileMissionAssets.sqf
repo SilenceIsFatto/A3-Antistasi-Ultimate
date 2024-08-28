@@ -112,6 +112,8 @@ setVar("vehiclesHelisAttack", OccAndInv("vehiclesHelisAttack") );
 setVar("vehiclesHelisTransport", OccAndInv("vehiclesHelisTransport") );
 setVar("vehiclesPlanesAA", OccAndInv("vehiclesPlanesAA") );
 setVar("vehiclesPlanesCAS", OccAndInv("vehiclesPlanesCAS") );
+setVar("vehiclesPlanesLargeAA", OccAndInv("vehiclesPlanesLargeAA") );
+setVar("vehiclesPlanesLargeCAS", OccAndInv("vehiclesPlanesLargeCAS") );
 setVar("vehiclesPlanesTransport", OccAndInv("vehiclesPlanesTransport"));
 setVar("staticMortars", OccAndInv("staticMortars") + Riv("staticMortars") + Reb("staticMortars") + ("STATICMORTAR" call _fnc_extractMarketClasses));
 setVar("staticAA", OccAndInv("staticAA") + Reb("staticAA") + ("STATICAA" call _fnc_extractMarketClasses));
@@ -178,6 +180,8 @@ setVar("vehiclesHelis", _vehHelis);
 private _vehFixedWing =
 OccAndInv("vehiclesPlanesCAS")
 + OccAndInv("vehiclesPlanesAA")
++ OccAndInv("vehiclesPlanesLargeAA")
++ OccAndInv("vehiclesPlanesLargeCAS")
 + OccAndInv("vehiclesPlanesTransport")
 + Reb("vehiclesPlane")
 + Reb("vehiclesCivPlane")
