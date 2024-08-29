@@ -11,14 +11,14 @@ class CfgDiscordRichPresence
 {
     applicationID="1270380812684230746";
     defaultDetails="In campaign";
-    defaultState="Livonia";
-    defaultLargeImageKey="livonia";
+    defaultState="Mehland";
+    defaultLargeImageKey="mehland";
     defaultLargeImageText="Rebelling in Mehland";
     defaultSmallImageKey="au-logo";
     defaultSmallImageText="Antistasi Ultimate";
     useTimeElapsed=1;
 };
-//DLC: https://store.steampowered.com/app/1021790/Arma_3_Contact/?snr=1_16_16_creator_curatorfeatureddiscount&curator_clanid=2799889
+//Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=3317364155
 class CfgNotifications
 {
     #include "..\missionDescription\CfgNotificationsContents.hpp"
