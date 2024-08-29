@@ -252,3 +252,8 @@
         addons[] = {"sab_flyinglegends"};
         vehicles = "vehicles_flyleg";
     };
+    class addons_scrtwpns : addons_base
+    {
+        addons[] = {"sab_flyinglegends","sab_sw_i16"};
+        vehicles = "vehicles_scrtwpns";
+    };
