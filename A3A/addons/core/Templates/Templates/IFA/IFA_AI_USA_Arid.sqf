@@ -41,6 +41,7 @@
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
 private _vehiclesPlanesCAS = ["LIB_P47"];
+private _vehiclesPlanesLargeCAS = [];
 private _vehiclesPlanesAA = ["LIB_US_NAC_P39"];
 ["vehiclesPlanesTransport", ["LIB_C47_Skytrain"]] call _fnc_saveToTemplate;
 
@@ -49,7 +50,14 @@ if (isClass (configFile >> "CfgPatches" >> "sab_flyinglegends")) then {
 	_vehiclesPlanesAA append ["sab_fl_p51d","sab_fl_p51b"];
 };
 
+if (isClass (configFile >> "CfgPatches" >> "sab_sw_i16")) then {
+    _vehiclesPlanesCAS append ["sab_sw_tbf","sab_sw_p40"];
+	_vehiclesPlanesLargeCAS append ["sab_sw_a26"];
+	_vehiclesPlanesAA append ["sab_sw_p40","sab_sw_p38"];
+};
+
 ["vehiclesPlanesCAS", _vehiclesPlanesCAS] call _fnc_saveToTemplate;
+["vehiclesPlanesLargeCAS", _vehiclesPlanesLargeCAS] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", _vehiclesPlanesAA] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", []] call _fnc_saveToTemplate;
