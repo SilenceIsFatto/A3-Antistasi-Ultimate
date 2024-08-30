@@ -236,3 +236,11 @@
         file = "CUP_Riv_CHDKZ";
         description = $STR_A3AP_setupFactionsTab_chdkz;
     };
+    class CUP_LRI : CUP_Base
+    {
+        side = "Reb";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CUP\flag_LRI_co.paa);
+        name = "CUP LRI";
+        file = "CUP_Reb_LRI";
+        description = $STR_A3AP_setupFactionsTab_CUP_LRI;
+    };
