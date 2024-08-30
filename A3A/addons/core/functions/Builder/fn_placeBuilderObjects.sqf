@@ -15,9 +15,11 @@ Arguments:
 params [["_objects",[],[[]]]];
 
 private _constructionObjects = [
-    ["Land_Pallets_F", 30],
-    ["Land_CinderBlocks_01_F", 100],
-    ["Land_WoodenPlanks_01_messy_pine_F", 999999]
+    ["Land_WoodenBox_F", 50],
+    ["Land_WoodenBox_02_F", 100],
+    ["Land_WoodenCrate_01_stack_x5_F", 250],
+    ["Land_PaperBox_closed_F", 400],
+    ["Land_WoodenCrate_01_F", 999999]
 ];
 
 // other options:

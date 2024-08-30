@@ -391,6 +391,10 @@
                 <Original>Remnants.\nRemnants of the AAF forces sponsored by CSAT, who want to regain control of the islands.</Original>
                 <Russian>Remnants.\nRemnants - остатки сил AAF спонсируемые CSAT, желающие вернуть контроль над островами.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_CUP_LRI">
+                <Original>Local Resistance Initiative.\nA resistance led by local civilians, using military surplus and basic gear from ebay.</Original>
+                <Russian>Инициатива местного сопротивления.\nСопротивление, возглавляемое местными гражданами, использующее военные излишки и базовое снаряжение с eBay.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_exegermenos">
                 <Original>Exegerménos.\nStandard enemy guerilla faction.</Original>
                 <Russian>Exegerménos.\nСтандартная вражеская повстанческая фракция.</Russian>
@@ -4715,6 +4719,13 @@
                 <Chinesesimp>爆头掉头盔的几率</Chinesesimp>
                 <Korean>헤드샷 당할 시 헬멧을 잃을 확률</Korean>
                 <French>Risque de perte de casque lors des tirs à la tête</French>
+            </Key>
+            <Key ID="STR_params_helmetLossSound">
+                <Original>Make sound on helmet loss</Original>
+                <Russian>Издать звук при потере шлема</Russian>
+                <Chinesesimp>头盔丢失时发出声音</Chinesesimp>
+                <Korean>헬멧 분실 시 소리 내기</Korean>
+                <French>Faites du bruit en cas de perte de casque</French>
             </Key>
             <Key ID="STR_params_helmetLossChance_0">
                 <Original>Never</Original>

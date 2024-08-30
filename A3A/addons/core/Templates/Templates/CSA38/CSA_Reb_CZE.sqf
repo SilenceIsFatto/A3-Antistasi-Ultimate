@@ -52,7 +52,7 @@ private _initialRebelEquipment = [
     "csa38_czvz22","CSA38_9mm_8xBrowning",
     ["LIB_Faustpatrone", 50],
     ["LIB_Ladung_Small_MINE_mag", 10], ["LIB_Ladung_Big_MINE_mag", 3],
-    "lib_shg24",
+    "LIB_Shg24",
     "V_csa38_equip_CZ01","V_csa38_equip_CZ02","V_csa38_equip_CZ12",
     "csa38_GeMedicbag", "csa38_pouzdrovz23",
     "CSA38_Binocular", "csa38_Binocular2"

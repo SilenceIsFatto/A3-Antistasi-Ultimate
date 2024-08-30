@@ -249,8 +249,8 @@ class Params
     class swayEnabled
     {
         title = $STR_A3AU_sway_enabled;
-        values[] = {0,1};
-        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        values[] = {0,0.25,0.5,0.75,1};
+        texts[] = {"0%","25%","50%","75%","100%"};
         default = 1;
     };
 
@@ -618,6 +618,13 @@ class Params
         values[] = {0,33,66,100};
         texts[] = {$STR_params_helmetLossChance_0,$STR_params_helmetLossChance_1,$STR_params_helmetLossChance_2,$STR_params_helmetLossChance_3};
         default = 33;
+    };
+    class helmetLossSound
+    {
+        title = $STR_params_helmetLossSound;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 1;
     };
     class reviveKitsEnabled
     {

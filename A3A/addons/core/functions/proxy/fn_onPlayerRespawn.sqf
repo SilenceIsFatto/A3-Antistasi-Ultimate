@@ -229,6 +229,4 @@ if (staminaEnabled isEqualTo false) then {
 	_newUnit enableStamina false; 
 }; 
  
-if (swayEnabled isEqualTo false) then { 
-	_newUnit setCustomAimCoef 0; 
-};
+player setCustomAimCoef swayEnabled;
