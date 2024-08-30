@@ -246,7 +246,8 @@ if (_spawnParameter isEqualType []) then {
 		} else {
 			(_faction get "vehiclesMilitiaTrucks") +
 			(_faction get "vehiclesMilitiaLightArmed") +
-			(_faction get "vehiclesMilitiaCars")
+			(_faction get "vehiclesMilitiaCars")+
+			(_faction get "vehiclesBasic") //we should use them somewhere at least
 		};
 		// _types = _types select { _x in FactionGet(all,"vehiclesCargoTrucks") };
 		if (count _types == 0) then { (_faction get "vehiclesCargoTrucks") } else { _types };

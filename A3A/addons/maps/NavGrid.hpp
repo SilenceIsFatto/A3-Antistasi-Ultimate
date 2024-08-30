@@ -51,4 +51,5 @@ class NavGrid {
 	Gulfcoast = QPATHTOFOLDER(Antistasi_Gulfcoast.Gulfcoast\navGrid.sqf);
 	SPE_Mortain = QPATHTOFOLDER(Antistasi_SPE_Mortain.SPE_Mortain\navGrid.sqf);
 	mehland = QPATHTOFOLDER(Antistasi_mehland.mehland\navGrid.sqf);
+	pulau = QPATHTOFOLDER(Antistasi_pulau.pulau\navGrid.sqf);
 };
