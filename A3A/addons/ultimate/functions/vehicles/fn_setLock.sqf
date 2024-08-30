@@ -22,7 +22,7 @@ params [
 ];
 
 if (_vehicle isEqualTo ObjNull || {isNil "_vehicle"}) exitWith {false};
-if (!(alive) _vehicle) exitWith {false};
+if (alive _vehicle isEqualTo false) exitWith {false};
 
 _vehicle lock _state;
 
