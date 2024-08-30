@@ -41,7 +41,10 @@ _items append [
     ["Land_PlasticCase_01_medium_F", 100, "buildboxsmall", "", ["place", "move", "build"]],
     ["Land_PlasticCase_01_large_F", 500, "buildboxlarge", "", ["place", "move", "build"]],
     ["Land_PlasticCase_01_medium_black_F", 1000, "buildboxhuge", "", ["place", "move", "build"]],
-    ["Land_PlasticCase_01_large_black_F", 5000, "buildboxgigantic", "", ["place", "move", "build"]]
+    ["Land_PlasticCase_01_large_black_F", 5000, "buildboxgigantic", "", ["place", "move", "build"]],
+    ["A3AU_Storage_Small", 500, "Storage (Small)", "", ["place", "move"]],
+    ["A3AU_Storage_Medium", 1000, "Storage (Medium)", "", ["place", "move"]],
+    ["A3AU_Storage_Large", 2000, "Storage (Large)", "", []]
     // TODO: get larger box from somewhere
 ];
 
