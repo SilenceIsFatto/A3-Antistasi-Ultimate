@@ -36,7 +36,7 @@ class CfgVehicles
 			verticalOffsetWorld = 0;
 			init = "''";
 		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_WpsLaunch_F.jpg";
+		editorPreview = QPATHTOFOLDER(Pictures\items\A3AU_Build_Box_Large_1.jpg);
 		_generalMacro = "Box_NATO_WpsLaunch_F";
 		scope = 2;
 		displayName = "Build Box (Large)";
