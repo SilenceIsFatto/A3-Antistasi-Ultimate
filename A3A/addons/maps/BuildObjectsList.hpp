@@ -1,12 +1,12 @@
 //Remmember to update the list @ A3A\addons\scrt\UI\fn_ui_setAvailableBuildingTypes.sqf
 //Era Modifiers (Depends on map not modset)
-#define BUILDABLES_MODERN_GREEN {"Land_GuardTower_01_F", 300}, {"Land_HBarrier_01_line_3_green_F", 100}, {"Land_HBarrier_01_line_5_green_F", 150}, {"Land_HBarrier_01_line_1_green_F", 50}, {"Land_HBarrier_01_big_4_green_F", 300}, {"Land_HBarrier_01_wall_corridor_green_F", 250}, {"Land_HBarrier_01_wall_corner_green_F", 250}, {"Land_HBarrier_01_wall_6_green_F", 450}, {"Land_HBarrier_01_wall_4_green_F", 400}, {"Land_HBarrier_01_big_tower_green_F", 500}
+#define BUILDABLES_MODERN_GREEN {"Land_GuardTower_01_F", 300}, {"Land_HBarrier_01_line_3_green_F", 100}, {"Land_HBarrier_01_line_5_green_F", 150}, {"Land_HBarrier_01_line_1_green_F", 50}, {"Land_HBarrier_01_big_4_green_F", 300}, {"Land_HBarrier_01_wall_corridor_green_F", 250}, {"Land_HBarrier_01_wall_corner_green_F", 250}, {"Land_HBarrier_01_wall_6_green_F", 450}, {"Land_HBarrier_01_wall_4_green_F", 400}, {"Land_HBarrier_01_big_tower_green_F", 500}, {"Land_Cargo_House_V1_F", 1500}, {"Land_Cargo_HQ_V1_F", 2500}, {"Land_Cargo_Patrol_V1_F", 2000}, {"Land_Cargo_Tower_V1_F", 3000}
 
-#define BUILDABLES_MODERN_SAND {"Land_GuardTower_01_F", 300}, {"Land_HBarrier_3_F", 100}, {"Land_HBarrier_5_F", 150}, {"Land_HBarrier_1_F", 50}, {"Land_HBarrier_Big_F", 300}, {"Land_HBarrierWall_corridor_F", 250}, {"Land_HBarrierWall_corner_F", 250}, {"Land_HBarrierWall6_F", 450}, {"Land_HBarrierWall4_F", 400}, {"Land_HBarrierTower_F", 500}
+#define BUILDABLES_MODERN_SAND {"Land_GuardTower_01_F", 300}, {"Land_HBarrier_3_F", 100}, {"Land_HBarrier_5_F", 150}, {"Land_HBarrier_1_F", 50}, {"Land_HBarrier_Big_F", 300}, {"Land_HBarrierWall_corridor_F", 250}, {"Land_HBarrierWall_corner_F", 250}, {"Land_HBarrierWall6_F", 450}, {"Land_HBarrierWall4_F", 400}, {"Land_HBarrierTower_F", 500}, {"Land_Cargo_House_V3_F", 1500}, {"Land_Cargo_HQ_V3_F", 2500}, {"Land_Cargo_Patrol_V3_F", 2000}, {"Land_Cargo_Tower_V3_F", 3000}
 
 #define BUILDABLES_HISTORIC {"Land_Tyres_F", 20}, {"Land_Barricade_01_10m_F", 50}, {"Land_Barricade_01_4m_F", 30}, {"Land_DeerStand_01_F", 100}
 
-#define BUILDABLES_SCIFI {"A3AU_Cargo_Post", 450}, {"A3AU_Cargo_Tower", 1000}, {"A3AU_Cargo_HQ", 500}, {"A3AU_Cargo_House", 350}
+#define BUILDABLES_SCIFI {"Land_Cargo_Patrol_V2_F", 450}, {"Land_Cargo_Tower_V2_F", 1000}, {"Land_Cargo_HQ_V2_F", 500}, {"Land_Cargo_House_V2_F", 350}
 
 //Map Climate Modifiers (What type of terrain is the biggest area of the map)
 #define BUILDABLES_ARID {"Land_BagFence_Corner_F", 10}, {"Land_BagFence_End_F", 10}, {"Land_BagFence_Long_F", 30}, {"Land_BagFence_Round_F", 30}, {"Land_BagFence_Short_F", 20}

@@ -391,6 +391,10 @@
                 <Original>Remnants.\nRemnants of the AAF forces sponsored by CSAT, who want to regain control of the islands.</Original>
                 <Russian>Remnants.\nRemnants - остатки сил AAF спонсируемые CSAT, желающие вернуть контроль над островами.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_CUP_LRI">
+                <Original>Local Resistance Initiative.\nA resistance led by local civilians, using military surplus and basic gear from ebay.</Original>
+                <Russian>Инициатива местного сопротивления.\nСопротивление, возглавляемое местными гражданами, использующее военные излишки и базовое снаряжение с eBay.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_exegermenos">
                 <Original>Exegerménos.\nStandard enemy guerilla faction.</Original>
                 <Russian>Exegerménos.\nСтандартная вражеская повстанческая фракция.</Russian>
