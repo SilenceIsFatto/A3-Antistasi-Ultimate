@@ -34,7 +34,7 @@ private _basic = ["B_T_Quadbike_01_F"];
 private _unarmedVehicles = ["B_T_MRAP_01_F"];
 private _armedVehicles = ["B_T_MRAP_01_gmg_F", "B_T_MRAP_01_hmg_F"];
 private _Trucks = ["B_T_Truck_01_covered_F", "B_T_Truck_01_transport_F"];
-private _cargoTrucks = ["B_T_Truck_01_flatbed_F", "B_T_Truck_01_cargo_F"];
+private _cargoTrucks = ["B_T_Truck_01_flatbed_F", "B_T_Truck_01_cargo_F","B_T_UGV_01_olive_F"];
 private _ammoTrucks = ["B_T_Truck_01_ammo_F"];
 private _repairTrucks = ["B_T_Truck_01_Repair_F","B_T_APC_Tracked_01_CRV_F"];
 private _fuelTrucks = ["B_T_Truck_01_fuel_F"];
@@ -43,8 +43,8 @@ private _lightAPCs = ["B_T_APC_Wheeled_01_cannon_F"];
 private _APCs = ["B_T_APC_Wheeled_01_cannon_F"];           // CRV has no cargo: "B_APC_Tracked_01_CRV_F"
 private _IFVs = ["B_T_APC_Tracked_01_rcws_F"];
 
-private _airborneVehicles = ["B_T_APC_Wheeled_01_cannon_F"];
-private _lightTanks = [];
+private _airborneVehicles = ["B_T_APC_Wheeled_01_cannon_F","B_T_UGV_01_rcws_olive_F"];
+private _lightTanks = ["B_T_UGV_01_rcws_olive_F"];
 private _tanks = ["B_T_MBT_01_cannon_F", "B_T_MBT_01_TUSK_F"];
 private _aa = ["B_T_APC_Tracked_01_AA_F"];
 
@@ -54,6 +54,7 @@ private _transportBoat = ["B_T_Boat_Transport_01_F"];
 private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F","B_UAV_02_dynamicLoadout_F"];
 private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F","B_UAV_02_dynamicLoadout_F"];
 ["vehiclesPlanesTransport", ["B_T_VTOL_01_infantry_F"]] call _fnc_saveToTemplate;
+["vehiclesPlanesGunship", ["B_T_VTOL_01_armed_F"]] call _fnc_saveToTemplate;
 
 private _transportHelicopters = ["B_Heli_Transport_01_F","B_CTRG_Heli_Transport_01_tropic_F"];
 
@@ -150,20 +151,25 @@ if (_hasRF) then {
 };
 
 if (_hasGM) then {
-    _lightTanks pushBack "gm_dk_army_Leopard1a3";
-    _militiaAPCs append ["gm_dk_army_m113a1dk_apc","gm_dk_army_m113a1dk_command","gm_dk_army_m113a1dk_engineer","gm_dk_army_m113a2dk"];
-    _IFVs pushBack "gm_dk_army_m113a2dk";
+    _aa pushBack "gm_ge_army_gepard1a1_noinsignia";
+    _basic append ["gm_ge_army_k125","gm_dk_army_bibera0_noinsignia"];
+    _lightTanks append ["gm_dk_army_Leopard1a3_noinsignia","gm_ge_army_Leopard1a1_noinsignia","gm_ge_army_Leopard1a1a2_noinsignia","gm_ge_army_Leopard1a3a1_noinsignia","gm_ge_army_Leopard1a5_noinsignia"];
+    _militiaAPCs append ["gm_ge_army_fuchsa0_reconnaissance_noinsignia","gm_ge_army_fuchsa0_engineer_noinsignia","gm_ge_army_fuchsa0_command_noinsignia","gm_ge_army_luchsa2_noinsignia","gm_ge_army_luchsa1_noinsignia","gm_dk_army_m113a1dk_apc_noinsignia","gm_dk_army_m113a1dk_command_noinsignia","gm_dk_army_m113a1dk_engineer_noinsignia","gm_dk_army_m113a2dk_noinsignia","gm_ge_army_m113a1g_apc_noinsignia","gm_ge_army_m113a1g_apc_milan_noinsignia","gm_ge_army_m113a1g_command_noinsignia"];
+    _IFVs append ["gm_dk_army_m113a2dk_noinsignia","gm_ge_army_marder1a1plus_noinsignia","gm_ge_army_marder1a1a_noinsignia","gm_ge_army_marder1a2_noinsignia"];
     _militiaTrucks append ["gm_pl_army_ural4320_cargo","gm_ge_army_u1300l_cargo"];
     _militiaCars append ["gm_ge_army_iltis_cargo","gm_pl_army_uaz469_cargo","gm_dk_army_typ253_cargo","gm_dk_army_typ247_cargo","gm_dk_army_typ1200_cargo"];
     _militiaLightArmed append ["gm_ge_army_iltis_milan","gm_ge_army_iltis_mg3"];
     _policeVehs append ["gm_gc_pol_p601","gm_ge_pol_typ1200","gm_ge_pol_typ253","gm_ge_pol_w123"];
-    _airborneVehicles pushBack "gm_dk_army_m113a2dk";
+    _airborneVehicles pushBack "gm_dk_army_m113a2dk_noinsignia";
     _Trucks append ["gm_ge_army_u1300l_cargo","gm_ge_army_kat1_451_cargo"];
     _cargoTrucks append ["gm_dk_army_u1300l_container","gm_ge_army_kat1_454_cargo","gm_ge_army_kat1_451_container","gm_ge_army_kat1_452_container"];
     _ammoTrucks append ["gm_ge_army_kat1_451_reammo","gm_ge_army_kat1_454_reammo"];
-    _repairTrucks append ["gm_ge_army_u1300l_repair","gm_dk_army_bpz2a0"];
+    _repairTrucks append ["gm_ge_army_u1300l_repair","gm_dk_army_bpz2a0_noinsignia"];
     _fuelTrucks pushBack "gm_ge_army_kat1_451_refuel";
-    _medicalTrucks append ["gm_dk_army_m113a1dk_medic","gm_ge_army_u1300l_medic"];
+    _medicalTrucks append ["gm_ge_army_m113a1g_medic_noinsignia","gm_ge_army_u1300l_medic","gm_dk_army_m113a1dk_medic_noinsignia"];
+    _helisLight append ["gm_ge_army_bo105m_vbh_noinsignia","gm_ge_army_bo105p1m_vbh_noinsignia","gm_ge_army_bo105p1m_vbh_swooper_noinsignia"];
+    _transportHelicopters append ["gm_ge_army_ch53g_noinsignia","gm_ge_army_ch53gs_noinsignia"];
+    _helisAttack append ["gm_ge_army_bo105p_pah1a1_noinsignia","gm_ge_army_bo105p_pah1_noinsignia"];
 };
 
 if (_hasCSLA) then {
@@ -257,7 +263,70 @@ if (_hasCSLA) then {
     ["B_T_APC_Wheeled_01_atgm_lxWS", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["B_T_APC_Wheeled_01_mortar_lxWS",["showBags",0.3,"showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
     ["B_T_APC_Wheeled_01_cannon_F", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3,"showSLATTurret",0.3]],
-    ["B_T_APC_Tracked_01_AA_F", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3]]
+    ["B_T_APC_Tracked_01_AA_F", ["showCamonetHull",0.3,"showCamonetTurret",0.3,"showSLATHull",0.3]],
+    ["gm_dk_army_m113a1dk_command_noinsignia", ["antennaMast_01_unhide",0.3,"antennamast_01_elev_trigger",0.3,"generator_01_unhide",0.3,"storageBox_01_unhide",0.3,"IceCleats_01_unhide",0.3,"IceCleats_02_unhide",0.3,"SupportPoles_01_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_dk_army_m113a2dk_noinsignia", ["camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3]],
+    ["gm_dk_army_Leopard1a3_noinsignia", ["CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_03_unhide",0.3,"sideskirt_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"camonet_MainTurret_elev_unhide",0.3]],
+    ["gm_dk_army_m113a1dk_medic_noinsignia", ["IceCleats_02_unhide",0.3,"SupportPoles_01_unhide",0.3,"storageBox_01_unhide",0.3,"generator_01_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_dk_army_m113a1dk_apc_noinsignia",["MachineGunTurret_01_addonarmor_01_unhide",0.3,"MachineGunTurret_01_addonarmor_02_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"ammo_01_unhide",0.3,"ammo_02_unhide",0.3,"ammo_03_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_dk_army_m113a1dk_engineer_noinsignia", ["ladder_01_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"Tarp_01_unhide",0.3,"ammo_01_unhide",0,"ammo_02_unhide",0.3,"ammo_03_unhide",0.3,"MachineGunTurret_01_addonarmor_01_unhide",0.3,"MachineGunTurret_01_addonarmor_02_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_dk_army_m109_noinsignia",["CamoNet_01_unhide",0.3,"ammo_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3]],
+    ["gm_dk_army_bpz2a0_noinsignia", ["beacon_01_org_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_dk_army_bibera0_noinsignia", ["beacon_01_org_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_dk_army_Leopard1a3_noinsignia",["CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_03_unhide",0.3,"beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"camonet_MainTurret_elev_unhide",0.3]],
+    ["gm_ge_army_gepard1a1_noinsignia",	["CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"beacon_01_org_unhide",0,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3]],
+    ["gm_ge_army_m113a1g_apc_noinsignia", ["IceCleats_01_unhide",0.3,"IceCleats_02_unhide",0.3,"SupportPoles_01_unhide",0.3,"storageBox_01_unhide",0.3,"CamoNet_02_unhide",0.3,"generator_01_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_ge_army_m113a1g_apc_milan_noinsignia", ["IceCleats_01_unhide",0.3,"IceCleats_02_unhide",0.3,"SupportPoles_01_unhide",0.3,"storageBox_01_unhide",0.3,"CamoNet_02_unhide",0.3,"generator_01_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_ge_army_m113a1g_command_noinsignia",["antennaMast_01_unhide",0.3,"antennamast_01_elev_trigger",0.3,"generator_01_unhide",0.3,"storageBox_01_unhide",0.3,"IceCleats_01_unhide",0.3,"IceCleats_02_unhide",0.3,"SupportPoles_01_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_ge_army_m113a1g_medic_noinsignia",["IceCleats_01_unhide",0.3,"IceCleats_02_unhide",0.3,"SupportPoles_01_unhide",0.3,"storageBox_01_unhide",0.3,"CamoNet_02_unhide",0.3,"generator_01_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_03_unhide",0.3,"Tarp_01_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_ge_army_luchsa1_noinsignia",["CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"radio_03_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3]],
+    ["gm_ge_army_luchsa2_noinsignia",["radio_03_unhide",0.3,"SignsExtraWide_unhide",0.3,"TurretBox_01_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3]],
+    ["gm_ge_army_marder1a1plus_noinsignia",["beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"CamoNet_01_unhide",0.3,"supply_01_unhide",0.3,"supply_02_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3]],
+    ["gm_ge_army_marder1a1a_noinsignia", ["beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"CamoNet_01_unhide",0.3,"supply_01_unhide",0.3,"supply_02_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3]],
+    ["gm_ge_army_marder1a2_noinsignia", ["beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"CamoNet_01_unhide",0.3,"supply_01_unhide",0.3,"supply_02_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3]],
+    ["gm_ge_army_fuchsa0_command_noinsignia", ["radio_04_unhide",0.3,"antennamast_01_elev_trigger",0.3,"beacon_01_org_unhide",0.3,"beacon_01_blu_unhide",0.3,"CamoNet_01_unhide",0.3,"CamoNet_02_rack_unhide",0.3,"StowingBox_01_unhide",0.3,"SignsExtraWide_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_ge_army_fuchsa0_engineer_noinsignia", ["ringbuoy_01_unhide",0.3,"beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"CamoNet_01_unhide",0.3,"CamoNet_02_rack_unhide",0.3,"SignsExtraWide_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_ge_army_fuchsa0_reconnaissance_noinsignia", ["beacon_01_org_unhide",0,"beacon_01_blu_unhide",0,"CamoNet_01_unhide",0.3,"CamoNet_02_rack_unhide",0.3,"StowingBox_01_unhide",0.3,"SignsExtraWide_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3]],
+    ["gm_ge_army_ch53gs_noinsignia", ["fueltank_1_1_unhide",0.3]],
+    ["gm_ge_army_bo105m_vbh_noinsignia", ["door_1_1_unhide",0.3,"door_1_2_unhide",0.3,"door_2_1_unhide",0.3,"door_2_2_unhide",0.3]],
+    ["gm_ge_army_bo105p1m_vbh_noinsignia", ["door_1_1_unhide",0.3,"door_1_2_unhide",0.3,"door_2_1_unhide",0.3,"door_2_2_unhide",0.3]],
+    ["gm_ge_army_bo105p1m_vbh_swooper_noinsignia", ["swooperRopes_unhide",0.3,"door_2_1_unhide",0.3,"door_2_2_unhide",0.3,"door_1_1_unhide",0.3,"door_1_2_unhide",0.3]],
+    ["gm_ge_army_Leopard1a1_noinsignia", ["CamoNet_01_unhide",0.3,"CamoNet_04_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_03_unhide",0.3,"SpareWheel_01_unhide",0.3,"SpareWheel_02_unhide",0.3,"SpareWheel_03_unhide",0.3,"SpareWheel_04_unhide",0.3,"AmmoBox_01_unhide",0.3,"AmmoBox_02_unhide",0.3,"FuelCanister_01_unhide",0.3,"FuelCanister_02_unhide",0.3,"FuelCanister_03_unhide",0.3,"beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"camonet_MainTurret_elev_unhide",0.3]],
+    ["gm_ge_army_Leopard1a1a2_noinsignia", ["CamoNet_01_unhide",0.3,"CamoNet_04_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_05_unhide",0.3,"CamoNet_03_unhide",0.3,"SpareWheel_01_unhide",0.3,"SpareWheel_02_unhide",0.3,"SpareWheel_03_unhide",0.3,"SpareWheel_04_unhide",0.3,"AmmoBox_01_unhide",0.3,"AmmoBox_02_unhide",0.3,"FuelCanister_01_unhide",0.3,"FuelCanister_02_unhide",0.3,"FuelCanister_03_unhide",0.3,"beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"camonet_MainTurret_elev_unhide",0.3]],
+    ["gm_ge_army_Leopard1a3a1_noinsignia",["CamoNet_01_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_03_unhide",0.3,"beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"camonet_MainTurret_elev_unhide",0.3]],
+    ["gm_ge_army_Leopard1a5_noinsignia", ["CamoNet_01_unhide",0.3,"CamoNet_04_unhide",0.3,"CamoNet_02_unhide",0.3,"CamoNet_05_unhide",0.3,"CamoNet_03_unhide",0.3,"SpareWheel_01_unhide",0.3,"SpareWheel_02_unhide",0.3,"SpareWheel_03_unhide",0.3,"SpareWheel_04_unhide",0.3,"AmmoBox_01_unhide",0.3,"AmmoBox_02_unhide",0.3,"FuelCanister_01_unhide",0.3,"FuelCanister_02_unhide",0.3,"FuelCanister_03_unhide",0.3,"beacon_01_org_unhide",0,"sideskirt_unhide",0.3,"camonet_hull_unhide",0.3,"camofoilage_hull_unhide",0.3,"camonet_MainTurret_trav_unhide",0.3,"camofoilage_MainTurret_trav_unhide",0.3,"camonet_MainTurret_elev_unhide",0.3]],
+    ["US85_M1A1", ["ADD_smallAmmobox",0.3,"ADD_medAmmoBox",0.3,"ADD_topStuff",0.3,"ADD_cardBoardBox",0.3,"ADD_trackLink",0.3,"ADD_spareWheel",0.3,"ADD_frontTowRings",0.3,"ADD_rearTowRings",0.3,"ADD_frontTowBar",0.3,"ADD_rearTowBar",0.3,"ADD_leftTowCable",0.3,"ADD_rightTowCable",0.3,"ADD_alice",0.3,"ADD_fuelCan",0.3,"ADD_camoNet",0.3]],
+    ["US85_M1IP", ["ADD_topStuff",0.3,"ADD_cardBoardBox",0.3,"ADD_trackLink",0.3,"ADD_spareWheel",0.3,"ADD_frontTowRings",0.3,"ADD_rearTowRings",0.3,"ADD_frontTowBar",0.3,"ADD_rearTowBar",0.3,"ADD_leftTowCable",0.3,"ADD_rightTowCable",0.3,"ADD_alice",0.3,"ADD_fuelCan",0.3,"ADD_camoNet",0.3]],
+    ["AFMC_M113A2ext",["AddBox",0.3,"AddBagsSide",0.3,"AddInt1",0.3,"AddTools",0.3,"AddSpareWheel",0.3,"AddKanister",0.3,"AddTop1",0.3,"AddTop2",0.3,"AddCamonet",0.3,"AddBarbwire",0.3,"AddMetalRope",0.3]],
+    ["US85_M163",["AddKanister",0.3,"AddTop1",0.3,"AddTop2",0.3,"AddCamonet",0.3,"AddMetalRope",0.3,"AddTools",0.3,"AddTurret1",0.3]],
+    ["US85_LAV25", ["addKanister_body",0.3,"addKanister_turret",0.3,"addBackpacks_turret",0.3,"addAmmo25mm_turret",0.3,"addTools",0.3,"addCamonet",0.3,"addBarbwire",0.3,"addRope",0.3]],
+    ["US85_M113_AMB",["AddBagsSide",0.3,"AddInt1",0.3,"AddTools",0.3,"AddKanister",0.3,"AddTop1",0.3,"AddTop2",0.3,"AddCamonet",0.3,"AddBarbwire",0.3,"AddMetalRope",0.3]],
+    ["US85_M113_DTP",["AddBagsSide",0.3,"AddInt1",0.3,"AddInt2",0.3,"AddTop2",0.3,"AddSpareWheel",0.3,"AddKanister",0.3,"AddTop1",0.3,"AddCamonet",0.3,"AddBarbwire",0.3,"AddMetalRope",0.3]],
+    ["US85_M113", ["AddBox",0.3,"AddBagsSide",0.3,"AddInt1",0.3,"AddTools",0.3,"AddKanister",0.3,"AddTop1",0.3,"AddTop2",0.3,"AddCamonet",0.3,"AddBarbwire",0.3,"AddMetalRope",0.3]],
+    ["US85_M1008c", ["addCanvas",0.3,"addCanvasFrame",0.3,"addBenches",0.3,"addRearFrame",0.3,"addFrontFrame",0.3]],
+    ["US85_M1008", ["addCanvas",0.3,"addCanvasFrame",0.3,"addBenches",0.3,"addRearFrame",0.3,"addFrontFrame",0.3]],
+    ["US85_M1008_S250", ["addFrontFrame",0.5]],
+    ["US85_M1025_ua", ["AddBarbwire",0.3,"AddSparewheel",0.3,"AddCamonet",0.3]],
+    ["US85_M1025_M2", ["AddBarbwire",0.3,"AddSparewheel",0.3,"AddCamonet",0.3]],
+    ["US85_M1025_M60", ["AddBarbwire",0.3,"AddSparewheel",0.3,"AddCamonet",0.3,"AddSandBags",0.3]],
+    ["US85_M1043_ua", ["AddBarbwire",0.3,"AddSparewheel",0.3,"AddCamonet",0.3]],
+    ["US85_M1043_M2", ["AddBarbwire",0.3,"AddSparewheel",0.3,"AddCamonet",0.3]],
+    ["US85_M1043_M60", ["AddBarbwire",0.3,"AddSparewheel",0.3,"AddCamonet",0.3,"AddSandBags",0.3]],
+    ["US85_M923a",["ADD_tailgate",0.3,"ADD_canvas",0.3,"ADD_frame",0.3,"ADD_reammo",0.3,"ADD_side_benches",0.3,"ADD_spareWheel",0.3,"ADD_fuelcan",0.3,"ADD_roof",0.3]],
+    ["US85_M923cargo", ["ADD_tailgate",0.3,"ADD_canvas",0.3,"ADD_frame",0.3,"ADD_reammo",0,"ADD_repair",0,"ADD_side_benches",0.3,"ADD_explosive",0.3,"ADD_explosive_tailgate",0.3,"ADD_spareWheel",0.3,"ADD_fuelcan",0.3,"ADD_roof",0.3]],
+    ["US85_M923f",["ADD_spareWheel",0.3,"ADD_fuelcan",0.3,"ADD_roof",0.3]],
+    ["US85_M923a1_r", ["ADD_repair",1,"ADD_tarpRoof",0.3,"ADD_roof",0.3,"ADD_tailgate",0.3,"ADD_canvas",0.3,"ADD_frame",0.3,"ADD_side_benches",0.3,"ADD_spareWheel",0.3,"ADD_fuelcan",0.3]],
+    ["US85_M923a1_s280", ["ADD_tarpRoof",0.3,"ADD_roof",0.3,"ADD_s280",0.3,"ADD_s280_ac",0.3,"ADD_s280_panel",0.3,"ADD_spareWheel",0.3,"ADD_fuelcan",0.3]],
+    ["US85_M923a1o", ["ADD_tarpRoof",0.3,"ADD_roof",0.3,"ADD_tailgate",0.3,"ADD_canvas",0.3,"ADD_frame",0.3,"ADD_spareWheel",0.3,"ADD_fuelcan",0.3]],
+    ["US85_M923a1om2", ["ADD_ammoBox",0.3,"ADD_tailgate",0.3,"ADD_canvas",0.3,"ADD_frame",0.3,"ADD_spareWheel",0.3,"ADD_fuelcan",0.3]],
+    ["US85_M923a1c", ["ADD_tarpRoof",0.3,"ADD_roof",0.3,"ADD_tailgate",0.3,"ADD_canvas",0.3,"ADD_frame",0.3,"ADD_spareWheel",0.3,"ADD_fuelcan",0.3]],
+    ["US85_M923a1cm2", ["ADD_ammoBox",0.3,"ADD_tailgate",0.3,"ADD_canvas",0.3,"ADD_frame",0.3,"ADD_spareWheel",0.3,"ADD_fuelcan",0.3]],
+    ["US85_M998SFGT",["AddBarbwire", 0.3,"AddBumper",0.3,"AddBackpacks",0.3,"AddRoofCover",0.3,"AddRearFrame",0.3]],
+    ["US85_AH1F",["addAirIntakeCovers",0.3,"addASO_Tail",0.3]],
+    ["US85_MH60M134", ["addWinch",0.5]],
+    ["US85_MH60FFAR", ["addWinch",0.5]],
+    ["US85_UH60", ["addESSS",0.5,"addWinch",0.5]],
+    ["US85_UH60M240", ["addWinch",0.5]]
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
@@ -288,9 +357,6 @@ if (_hasCSLA) then {
     ["B_T_LSV_01_AT_F", ["Black", 0.3, "Olive", 0.5, "Dazzle", 0.2]],
     ["a3a_Offroad_02_LMG_black_F", ["Black", 0.3, "Olive", 0.7]],
     ["I_C_Offroad_02_unarmed_F", ["Black", 0.3, "Olive", 0.7]],
-    ["gm_dk_army_bpz2a0", ["gm_merdc_grn",1]],
-    ["gm_dk_army_Leopard1a3", ["gm_merdc_grn",1]],
-    ["gm_dk_army_m113a2dk", ["gm_merdc_grn",1]],
     ["gm_ge_pol_w123", ["gm_darklblue",1]],
     ["gm_ge_pol_typ1200",["gm_saphireblue",1]],
     ["gm_gc_pol_p601", ["gm_kosmosblau",1]],
@@ -301,10 +367,6 @@ if (_hasCSLA) then {
     ["gm_ge_army_iltis_mg3", ["gm_merdc_grn",1]],
     ["gm_dk_army_typ247_cargo", ["gm_merdc_grn",1]],
     ["gm_ge_army_iltis_cargo", ["gm_merdc_grn",1]],
-    ["gm_dk_army_m113a1dk_engineer", ["gm_merdc_grn",1]],
-    ["gm_dk_army_m113a1dk_command", ["gm_merdc_grn",1]],
-    ["gm_dk_army_m113a1dk_apc", ["gm_merdc_grn",1]],
-    ["gm_dk_army_m113a1dk_medic", ["gm_merdc_grn",1]],
     ["gm_ge_army_u1300l_medic", ["gm_merdc_grn",1]],
     ["gm_ge_army_kat1_451_refuel", ["gm_merdc_grn",1]],
     ["gm_ge_army_u1300l_repair", ["gm_merdc_grn",1]],
@@ -316,6 +378,38 @@ if (_hasCSLA) then {
     ["gm_ge_army_kat1_452_container", ["gm_merdc_grn",1]],
     ["gm_ge_army_u1300l_cargo", ["gm_merdc_grn",1]],
     ["gm_ge_army_kat1_451_cargo", ["gm_merdc_grn",1]],
+    ["gm_dk_army_bpz2a0_noinsignia", ["gm_merdc_grn",1]],
+    ["gm_dk_army_Leopard1a3_noinsignia", ["gm_merdc_grn",1]],
+    ["gm_dk_army_m113a2dk_noinsignia", ["gm_merdc_grn",1]],
+    ["gm_ge_army_bo105p1m_vbh_swooper_noinsignia",["gm_ge_oli",0.8 ,"gm_ge_hornet",0.2]],
+    ["gm_ge_army_bo105p1m_vbh_noinsignia", ["gm_ge_oli",0.8 ,"gm_ge_hornet",0.2]],
+    ["gm_ge_army_bo105m_vbh_noinsignia", ["gm_ge_oli",0.8 ,"gm_ge_hornet",0.2]],
+    ["gm_ge_army_ch53gs_noinsignia",["gm_ge_oli",0.8 ,"gm_ge_olo",0.2 ,"gm_ge_olu",0.2]],
+    ["gm_ge_army_ch53g_noinsignia",["gm_ge_oli",0.8 ,"gm_ge_olo",0.2 ,"gm_ge_olu",0.2]],
+    ["gm_ge_army_fuchsa0_reconnaissance_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_fuchsa0_engineer_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_fuchsa0_command_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_marder1a2_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_marder1a1a_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_marder1a1plus_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_luchsa2_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_luchsa1_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_m113a1g_medic_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_m113a1g_command_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_m113a1g_apc_milan_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_m113a1g_apc_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_gepard1a1_noinsignia",["gm_merdc_grn",1]],
+    ["gm_dk_army_bibera0_noinsignia",["gm_merdc_grn",1]],
+    ["gm_dk_army_bpz2a0_noinsignia",["gm_merdc_grn",1]],
+    ["gm_dk_army_m109_noinsignia",["gm_merdc_grn",1]],
+    ["gm_dk_army_m113a1dk_engineer_noinsignia",["gm_merdc_grn",1]],
+    ["gm_dk_army_m113a1dk_command_noinsignia",["gm_merdc_grn",1]],
+    ["gm_dk_army_m113a1dk_apc_noinsignia",["gm_merdc_grn",1]],
+    ["gm_dk_army_m113a2dk_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_Leopard1a1_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_Leopard1a1a2_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_Leopard1a3a1_noinsignia",["gm_merdc_grn",1]],
+    ["gm_ge_army_Leopard1a5_noinsignia",["gm_merdc_grn",1]],
     ["CSLA_AZU_VB", ["vb2",1]],
     ["US85_MH60FFAR",["BLACK", 0.3, "NATO",0.3]],
     ["US85_MH60M134",["BLACK", 0.3, "NATO",0.3]],
@@ -584,7 +678,7 @@ if (_hasContact) then {
 };
 
 if (_hasWs) then {
-(_sfLoadoutData get "helmets") append ["lxWS_H_bmask_white","H_bmask_snake_lxws","H_turban_02_mask_snake_lxws","lxWS_H_bmask_base","H_turban_02_mask_black_lxws","lxWS_H_bmask_camo01","lxWS_H_Bandanna_blk_hs","lxWS_H_Headset"];
+(_sfLoadoutData get "helmets") append ["lxWS_H_bmask_white","H_bmask_snake_lxws","H_turban_02_mask_snake_lxws","lxWS_H_bmask_base","H_turban_02_mask_black_lxws","lxWS_H_bmask_camo01","lxWS_H_Bandanna_blk_hs","lxWS_H_Headset","H_Beret_Headset_lxWS"];
 (_sfLoadoutData get "backpacks") pushBack "B_shield_backpack_lxWS";
 };
 
@@ -732,6 +826,11 @@ if (_hasWs) then {
         ["arifle_XMS_Base_khk_lxWS","suppressor_l_khaki_lxWS","acc_pointer_IR","optic_MRCO",["30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red"],[],""],
         ["arifle_XMS_Shot_lxWS","suppressor_l_lxWS","acc_pointer_IR","optic_Hamr",["30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red"],["6Rnd_12Gauge_Pellets","6Rnd_12Gauge_Slug","6rnd_Smoke_Mag_lxWS","6Rnd_12Gauge_Pellets"],""],
         ["arifle_XMS_Shot_khk_lxWS","suppressor_l_khaki_lxWS","acc_pointer_IR","optic_Holosight_khk_F",["30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red"],["6Rnd_12Gauge_Pellets","6Rnd_12Gauge_Slug","6rnd_Smoke_Mag_lxWS","6Rnd_12Gauge_Pellets"],""]
+    ];
+    _carbines append [
+        ["arifle_VelkoR5_lxWS","suppressor_l_lxWS","acc_pointer_IR","optic_Hamr",["35Rnd_556x45_Velko_reload_tracer_red_lxWS","35Rnd_556x45_Velko_reload_tracer_red_lxWS","50Rnd_556x45_Velko_reload_tracer_red_lxWS"], ["1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Pellet_Grenade_shell_lxWS"], ""],
+        ["arifle_SLR_Para_lxWS", "suppressor_h_lxWS", "saber_light_lxWS", "optic_r1_high_black_sand_lxWS",  ["20Rnd_762x51_slr_lxWS", "30Rnd_762x51_slr_lxWS", "30Rnd_762x51_slr_lxWS"], [], ""],
+	    ["arifle_SLR_Para_snake_lxWS", "suppressor_h_lxWS", "saber_light_lxWS", "optic_r1_high_black_sand_lxWS",  ["20Rnd_762x51_slr_lxWS", "30Rnd_762x51_slr_lxWS", "30Rnd_762x51_slr_lxWS"], [], ""]
     ];
     _grenadeLaunchers append [
         ["arifle_XMS_GL_lxWS","suppressor_l_lxWS","acc_pointer_IR","optic_MRCO",["30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red"],["1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareRed_F","1Rnd_Smoke_Grenade_shell","UGL_FlareCIR_F","1Rnd_Pellet_Grenade_shell_lxWS"],""],
@@ -1024,6 +1123,11 @@ if (_hasWs) then {
         ["arifle_XMS_Base_khk_lxWS","","acc_pointer_IR","optic_MRCO",["30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red"],[],""],
         ["arifle_XMS_Shot_lxWS","","acc_pointer_IR","optic_Hamr",["30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red"],["6Rnd_12Gauge_Pellets","6Rnd_12Gauge_Slug","6rnd_Smoke_Mag_lxWS","6Rnd_12Gauge_Pellets"],""],
         ["arifle_XMS_Shot_khk_lxWS","","acc_pointer_IR","optic_Holosight_khk_F",["30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red"],["6Rnd_12Gauge_Pellets","6Rnd_12Gauge_Slug","6rnd_Smoke_Mag_lxWS","6Rnd_12Gauge_Pellets"],""]
+    ];
+    _carbines append [
+        ["arifle_VelkoR5_lxWS","","acc_pointer_IR","optic_Hamr",["35Rnd_556x45_Velko_reload_tracer_red_lxWS","35Rnd_556x45_Velko_reload_tracer_red_lxWS","50Rnd_556x45_Velko_reload_tracer_red_lxWS"], ["1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Pellet_Grenade_shell_lxWS"], ""],
+        ["arifle_SLR_Para_lxWS", "", "saber_light_lxWS", "optic_r1_high_black_sand_lxWS",  ["20Rnd_762x51_slr_lxWS", "30Rnd_762x51_slr_lxWS", "30Rnd_762x51_slr_lxWS"], [], ""],
+	    ["arifle_SLR_Para_snake_lxWS", "", "saber_light_lxWS", "optic_r1_high_black_sand_lxWS",  ["20Rnd_762x51_slr_lxWS", "30Rnd_762x51_slr_lxWS", "30Rnd_762x51_slr_lxWS"], [], ""]
     ];
     (_eliteLoadoutData get "grenadeLaunchers") append [
         ["arifle_XMS_GL_lxWS","","acc_pointer_IR","optic_MRCO",["30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_Tracer_Red"],["1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","UGL_FlareRed_F","1Rnd_Smoke_Grenade_shell","UGL_FlareCIR_F","1Rnd_Pellet_Grenade_shell_lxWS"],""],

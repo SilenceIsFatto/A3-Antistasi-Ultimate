@@ -42,7 +42,7 @@ if (isNil "specialVarLoads") then {
         "destroyedMilAdmins",
         "rebelLoadouts", "randomizeRebelLoadoutUniforms",
         "areRivalsDefeated", "areRivalsDiscovered", "inactivityRivals", "rivalsLocationsMap", "rivalsExcludedLocations",
-        "nextRivalsLocationReveal", "isRivalsDiscoveryQuestAssigned"
+        "nextRivalsLocationReveal", "isRivalsDiscoveryQuestAssigned", "revealedZones"
     ] createHashMapFromArray [];
 };
 
@@ -657,11 +657,31 @@ if (_varName in specialVarLoads) then {
 		};
 
         case 'isRivalsDiscoveryQuestAssigned': {
-            isRivalsDiscoveryQuestAssigned = _varvalue;  
+            isRivalsDiscoveryQuestAssigned = _varValue;  
             publicVariable "isRivalsDiscoveryQuestAssigned";
             if (isRivalsDiscoveryQuestAssigned && {!areRivalsDiscovered}) then {
                 [] call SCRT_fnc_rivals_prepareQuest;
             };
+        };
+
+        case 'revealedZones': {
+            revealedZones = _varValue;
+
+            if (isNil "revealedZones") then {
+                revealedZones = [];
+            };
+
+            publicVariable "revealedZones";
+        };
+
+        case 'unlockedVehicleTypes': {
+            unlockedVehicleTypes = _varValue;
+
+            if (isNil "unlockedVehicleTypes") then {
+                unlockedVehicleTypes = [];
+            };
+
+            publicVariable "unlockedVehicleTypes";
         };
     };
 } else {

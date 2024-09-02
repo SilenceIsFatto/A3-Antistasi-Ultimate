@@ -27,7 +27,7 @@ hasHeadlessClients = false;     //check if has headless clients
 //enables Discord Rich Presence if game client uses English language and mod is turned on
 private _richPresenceFunc = missionNamespace getVariable "DiscordRichPresence_fnc_update";
 private _isEnglish = ((localize "STR_antistasi_dialogs_generic_button_yes_text") isEqualTo "Yes");
-isDiscordRichPresenceActive = if (isNil "_richPresenceFunc" || {!_isEnglish}) then {false} else {true};
+isDiscordRichPresenceActive = if (isNil "_richPresenceFunc") then {false} else {true};
 Info_1("Discord Rich Presence: %1", str isDiscordRichPresenceActive);
 
 //Disables rabbits and snakes, because they cause the log to be filled with "20:06:39 Ref to nonnetwork object Agent 0xf3b4a0c0"
@@ -110,6 +110,11 @@ if (!isServer and !hasInterface) exitWith {
 waitUntil {local player};
 
 [] spawn A3A_fnc_briefing;
+
+if (enableSpectrumDevice) then {
+	[] execVM QPATHTOFOLDER(Scripts\SpectumDevice\spectrum_device.sqf);
+	[] execVM QPATHTOFOLDER(Scripts\SpectumDevice\sa_ewar.sqf);
+};
 
 // Placeholders, should get replaced globally by the server
 player setVariable ["score",0];
@@ -656,7 +661,5 @@ if (fatigueEnabled isEqualTo false) then {
 if (staminaEnabled isEqualTo false) then { 
 	player enableStamina false; 
 }; 
- 
-if (swayEnabled isEqualTo false) then { 
-	player setCustomAimCoef 0; 
-};
+
+player setCustomAimCoef swayEnabled;

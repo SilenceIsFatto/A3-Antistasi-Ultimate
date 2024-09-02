@@ -523,6 +523,36 @@
                 <Korean>위장복</Korean>
                 <French>Camouflage</French>
             </Key>
+            <Key ID="STR_A3AU_helmets">
+                <Original>Helmets</Original>
+                <English>Helmets</English>
+                <Russian>Шлемы</Russian>
+            </Key>
+            <Key ID="STR_A3AU_uniforms">
+                <Original>Uniforms</Original>
+                <English>Uniforms</English>
+                <Russian>Униформы</Russian>
+            </Key>
+            <Key ID="STR_A3AU_backpacks">
+                <Original>Backpacks</Original>
+                <English>Backpacks</English>
+                <Russian>Рюкзаки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_facewear">
+                <Original>Facewear</Original>
+                <English>Facewear</English>
+                <Russian>Очки/шарфы</Russian>
+            </Key>
+            <Key ID="STR_A3AU_vests">
+                <Original>Vests</Original>
+                <English>Vests</English>
+                <Russian>Разгрузки</Russian>
+            </Key>
+            <Key ID="STR_A3AU_utility">
+                <Original>Utility</Original>
+                <English>Utility</English>
+                <Russian>Служебные</Russian>
+            </Key>
         </Container>
         <!-- helpers -->
         <Container name="A3AU_hals_store_helpers">

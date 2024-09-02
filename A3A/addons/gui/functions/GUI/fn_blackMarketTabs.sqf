@@ -32,11 +32,10 @@ params[
 ];
 
 private _display = findDisplay A3A_IDD_BLACKMARKETVEHICLEDIALOG;
-private _selectedTab = -1;
 
 if (_tab isEqualTo "vehicles") then 
 {
-    _selectedTab = A3A_IDC_BLACKMARKETVEHICLESGROUP;
+    _params params ["_tab", "_selectedTab", "_category"];
     Debug("BuyVehicleTab starting...");
 
     // show the vehicle tab so that user don't freak out
@@ -48,12 +47,15 @@ if (_tab isEqualTo "vehicles") then
     _objPreview ctrlShow false;
 
     // Add stuff to the buyable vehicles list
-    private _buyableVehiclesList = [] call SCRT_fnc_ui_populateBlackMarket;
+    private _buyableVehiclesList = [_category] call SCRT_fnc_ui_populateBlackMarket;
     private _vehiclesControlsGroup = _display displayCtrl _selectedTab;
 
     private _added = 0;
     {
         _x params ["_className", "_price", "_canGoUndercover"];
+        private _configClass = (configFile >> "CfgVehicles" >> _className);
+        if (!isClass _configClass) then { continue };
+
         private _crewCount = [_className] call A3A_fnc_getVehicleCrewCount;
         _crewCount params ["_driver", "_coPilot", "_commander", "_gunners", "_passengers", "_passengersFFV"];
         
@@ -73,10 +75,10 @@ if (_tab isEqualTo "vehicles") then
         */
 
         // Add some extra padding to the top if there are 2 rows or less
-        private _topPadding = if (count _buyableVehiclesList < 7) then {5 * GRID_H} else {0};
+        private _topPadding = if (count _buyableVehiclesList < 7) then {5 * GRID_H} else {1 * GRID_H};
 
-        private _itemXpos = 7 * GRID_W + ((7 * GRID_W + 44 * GRID_W) * (_added mod 3));
-        private _itemYpos = (floor (_added / 3)) * (44 * GRID_H) + _topPadding;
+        private _itemXpos = 7 * GRID_W + ((7 * GRID_W + 44 * GRID_W) * (_added mod 3)); /// space between first row(?) and left border
+        private _itemYpos = (floor (_added / 3)) * (44 * GRID_H) + _topPadding; ///spacer between vehicles
 
         private _itemControlsGroup = _display ctrlCreate ["A3A_ControlsGroupNoScrollbars", -1, _vehiclesControlsGroup];
         _itemControlsGroup ctrlSetPosition[_itemXpos, _itemYpos, 44 * GRID_W, 37 * GRID_H];
@@ -153,6 +155,7 @@ if (_tab isEqualTo "vehicles") then
             }];
         };
 
+        // Handles showing price
         private _priceText = _display ctrlCreate ["A3A_InfoTextRight", -1, _itemControlsGroup];
         _priceText ctrlSetPosition[23 * GRID_W, 21 * GRID_H, 20 * GRID_W, 3 * GRID_H];
         _priceText ctrlSetText format ["%1 €",_price];
@@ -292,5 +295,3 @@ if (_tab isEqualTo "vehicles") then
 
     Debug("BuyVehicleTab complete.");
 };
-
-

@@ -26,7 +26,7 @@ private _cfg = _baseCfg call BIS_fnc_getCfgSubClasses;
 	};
 	
 	private _vehicle = getText (_baseCfg >> _x >> "vehicles");
-	if (_vehicle isEqualTo "") then {continue};
+	if (isNil "_vehicle" || {_vehicle isEqualTo ""}) then {continue};
 
 	private _vehicleCfg = (_baseCfg >> "traderVehicles" >> _vehicle);
 	private _vehicles = _vehicleCfg call BIS_fnc_getCfgSubClasses;

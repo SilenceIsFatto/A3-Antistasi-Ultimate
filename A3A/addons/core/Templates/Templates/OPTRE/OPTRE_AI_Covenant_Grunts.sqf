@@ -44,6 +44,8 @@
 ["vehiclesPlanesAA", ["OPTRE_FC_Type26N_Banshee"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["OPTRE_FC_Spirit"]] call _fnc_saveToTemplate; // I pray this works
 
+["vehiclesPlanesGunship", ["OPTRE_FC_Spirit"]] call _fnc_saveToTemplate;
+
 ["vehiclesHelisLight", ["OPTRE_FC_Spirit"]] call _fnc_saveToTemplate;
 
 if (["MEU_Covenant"] call A3U_fnc_hasAddon) then {

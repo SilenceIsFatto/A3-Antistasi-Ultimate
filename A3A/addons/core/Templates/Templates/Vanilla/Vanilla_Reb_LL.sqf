@@ -95,13 +95,13 @@ if (_hasGM) then {
     _staticMG append ["gm_dk_army_mg3_aatripod", "gm_gc_army_dshkm_aatripod", "gm_gc_bgs_searchlight_01"];
     _staticAT append ["gm_ge_army_milan_launcher_tripod", "gm_gc_army_fagot_launcher_tripod", "gm_gc_army_spg9_tripod"];
     _civHelicopters append ["gm_gc_civ_mi2p", "gm_ge_adak_bo105m_vbh"];
-    _vehiclePlane append ["gm_gc_civ_l410s_passenger", "gm_gc_civ_l410s_salon" , "gm_ge_airforce_do28d2"];
+    _vehiclePlane append ["gm_gc_civ_l410s_passenger", "gm_gc_civ_l410s_salon" , "gm_ge_airforce_do28d2_noinsignia"];
     _vehiclesCivCar append ["gm_ge_civ_typ1200","gm_gc_civ_p601","gm_ge_civ_typ253","gm_ge_civ_w123","gm_xx_civ_bicycle_01","gm_ge_dbp_bicycle_01_ylw"];
     _CivTruck append ["gm_gc_civ_ural375d_cargo", "gm_ge_civ_u1300l", "gm_ge_civ_typ247", "gm_ge_civ_typ251"];
     _VehTruck append ["gm_pl_army_ural4320_cargo","gm_ge_army_kat1_451_container","gm_dk_army_u1300l_container","gm_ge_army_kat1_451_cargo"];
     _vehiclesLightUnarmed append ["gm_ge_army_iltis_cargo","gm_pl_army_uaz469_cargo"];
     _vehiclesLightArmed append ["gm_pl_army_uaz469_dshkm","gm_ge_army_iltis_mg3"];
-    _vehiclesAt append ["gm_gc_bgs_uaz469_spg9","gm_ge_army_iltis_milan"];
+    _vehiclesAt append ["gm_gc_army_uaz469_spg9_noinsignia","gm_ge_army_iltis_milan"];
     _vehiclesBasic append ["gm_ge_army_k125"];
 };
 
@@ -112,8 +112,8 @@ if (_hasCSLA) then {
     _vehiclePlane pushBack "CSLA_CIV_An2_1";
     _vehiclesCivCar append ["CSLA_CIV_Sarka1200","CSLA_CIV_ADA1600","CSLA_CIV_AZU","CSLA_civ_CATOR"];
     _CivTruck append ["CSLA_CIV_V3S"];
-    _VehTruck append ["CSLA_F813o", "CSLA_F813"];
-    _vehiclesLightUnarmed append ["US85_M1008c","US85_M1008","US85_M1025_ua","US85_M1043_ua","FIA_AZU_para","CSLA_AZU_R2","CSLA_AZU"];
+    _VehTruck append ["CSLA_F813o_noinsignia", "CSLA_F813_noinsignia"];
+    _vehiclesLightUnarmed append ["US85_M1008c","US85_M1008","US85_M1025_ua","US85_M1043_ua","FIA_AZU_para","CSLA_AZU_para_noinsignia","CSLA_AZU_R2_noinsignia","CSLA_AZU_noinsignia"];
     _vehiclesLightArmed append ["US85_M1025_M2","US85_M1025_M60","US85_M1043_M2","US85_M1043_M60","US85_M998SFGT","FIA_AZU_DSKM"];
     _vehiclesAt pushback "FIA_AZU_T21";
     _vehiclesBasic append ["CSLA_CIV_JARA250","US85_TT650"];
@@ -130,6 +130,7 @@ if (_hasCSLA) then {
 ["vehiclesTruck", _VehTruck] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", _CivBoat] call _fnc_saveToTemplate;
 ["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
+["staticMortars", _staticMortars] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 ["vehiclesCivCar", _vehiclesCivCar] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", _vehiclesLightUnarmed] call _fnc_saveToTemplate;
@@ -139,197 +140,6 @@ if (_hasCSLA) then {
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
-
-//classname, price, type, availability condition
-///APC,UAV,AA,ARTILLERY,TANK,STATICMORTAR,STATICAA,STATICAT,STATICMG,HELI,PLANE,ARMEDCAR,UNARMEDCAR,
-private _shopTanks = if (_hasTanks) then {
-    [
-        ["I_LT_01_AA_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-        ["I_LT_01_scout_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-        ["I_LT_01_cannon_F", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-        ["I_LT_01_AT_F", 11000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}]
-    ]
-} else {
-    []
-};
-private _shopApex = if (_hasApex) then {
-    [
-        ["O_T_UAV_04_CAS_F", 20000, "UAV", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
-    ]
-} else {
-    []
-};
-private _shopWs = if (_hasWs) then {
-    [
-        ["I_UAV_02_lxWS", 3500, "UAV", {tierWar > 2}], 
-        ["I_G_UAV_02_IED_lxWS", 4500, "UAV", {tierWar > 3}],
-        ["B_D_APC_Wheeled_01_mortar_lxWS", 25000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-        ["B_ION_APC_Wheeled_01_command_lxWS", 6000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-        ["O_SFIA_APC_Wheeled_02_unarmed_lxWS", 2000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-        ["O_SFIA_APC_Wheeled_02_hmg_lxWS", 2500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-        ["B_ION_Heli_Light_02_dynamicLoadout_lxWS", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-        ["B_ION_Heli_Light_02_unarmed_lxWS", 12000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
-    ]
-} else {
-    []
-};
-private _shopRF = if (_hasRF) then {
-    [
-        ["I_UAV_RC40_SENSOR_RF", 1500, "UAV", {tierWar > 2}],
-        ["I_UAV_RC40_HE_RF", 3500, "UAV", {tierWar > 2}],
-        ["I_G_Pickup_mrl_rf", 25000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-        ["I_TwinMortar_RF", 40000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-        ["a3a_black_Heli_light_03_dynamicLoadout_RF", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-        ["B_Heli_EC_03_RF", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-        ["I_Heli_EC_02_RF", 35000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-        ["B_Heli_EC_04_military_RF", 12000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-        ["I_Heli_EC_01A_military_RF", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-        ["a3a_black_Heli_light_03_unarmed_RF", 8000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
-    ]
-} else {
-    []
-};
-private _shopLawsOfWar = if (_hasLawsOfWar) then {
-    [
-        ["I_UAV_06_F", 2500, "UAV", {tierWar > 2}], 
-        ["I_UAV_06_medical_F", 3500, "UAV", {tierWar > 3}],
-        ["C_IDAP_UAV_06_antimine_F", 3500, "UAV", {tierWar > 3}]
-    ]
-} else {
-    []
-};
-private _shopContact = if (_hasContact) then {
-    [
-        ["C_IDAP_UGV_02_Demining_F", 2500, "UAV", {tierWar > 2}],
-        ["I_UGV_02_Science_F", 2000, "UAV", {tierWar > 2}] 
-    ]
-} else {
-    []
-};
-private _shopJets = if (_hasJets) then {
-    [
-        ["a3a_Plane_Fighter_04_grey_F", 50000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 1}]
-    ]
-} else {
-    []
-};
-private _shopMarksman = if (_hasMarksman) then {
-    [
-        ["B_Static_Designator_01_F", 1500, "UAV", {tierWar > 2}],
-        ["O_Static_Designator_02_F", 1500, "UAV", {tierWar > 2}]
-    ]
-} else {
-    []
-};
-private _shopGM = if (_hasGM) then {
-    [
-    ["gm_ge_army_kat1_463_mlrs", 55000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_gc_army_2s1", 50000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_dk_army_m109", 50000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_gc_army_ural375d_mlrs", 52000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_gc_army_2p16", 250000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 2}],
-    ["gm_ge_army_gepard1a1", 7000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["gm_pl_army_zsu234v1", 7000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["gm_pl_army_pt76b", 8500, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_ge_army_Leopard1a1", 9000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_ge_army_Leopard1a1a1", 9500, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_ge_army_Leopard1a1a2", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_dk_army_Leopard1a3", 10500, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_ge_army_Leopard1a3a1", 11000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_ge_army_Leopard1a5", 11500, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],    
-    ["gm_pl_army_t55", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_pl_army_t55ak", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_gc_army_t55am2b", 10000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["gm_pl_army_ot64a", 5000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_pl_army_bmp1sp2", 10000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_dk_army_m113a1dk_command", 5000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_dk_army_m113a1dk_apc", 5500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_dk_army_m113a2dk", 12000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_gc_army_brdm2um", 3000, "UNARMEDCAR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_pl_army_brdm2", 4000, "ARMEDCAR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_gc_army_brdm2rkh", 4200, "ARMEDCAR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_gc_army_btr60pa", 3500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_gc_army_btr60pa_dshkm", 6000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_gc_army_btr60pb", 7000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_gc_army_btr60pu12", 4000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["gm_ge_army_ch53g", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_ge_army_ch53gs", 10500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_ge_army_bo105p_pah1", 15000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_ge_army_bo105p_pah1a1", 15500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_ge_army_bo105m_vbh", 7000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_ge_army_bo105p1m_vbh", 7500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_ge_army_bo105p1m_vbh_swooper", 8000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2ch", 7500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2p", 7500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2platan", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2t", 8000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2urn", 11000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2urp", 12000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2urpg", 13500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2urs", 11000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["gm_pl_airforce_mi2us", 9500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
-    ]
-} else {
-    []
-};
-
-private _shopCLSA = if (_hasCSLA) then {
-    [
-    ["AFMC_M252_Stat", 5000, "STATICMORTAR", {tierWar > 3}],
-    ["CSLA_M52_Stat", 4000, "STATICMORTAR", {tierWar > 3}],
-    ["CSLA_RM51", 35000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["CSLA_RM70", 40000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["CSLA_ShKH77", 50000, "ARTILLERY", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["AFMC_M163", 7000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["US85_M1A1", 18000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["US85_M1IP", 17000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["CSLA_T72", 14000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["CSLA_T72M", 15000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["CSLA_T72M1", 16000, "TANK", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 1}],
-    ["AFMC_LAV25", 9000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["AFMC_M113A1", 6000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["AFMC_M113A2ext", 6500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["CSLA_BVP1", 9000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["CSLA_BPzV", 10000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["CSLA_MU90", 8000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["CSLA_OT62", 7000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["CSLA_OT64C", 6000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["CSLA_OT65A", 6500, "ARMEDCAR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["CSLA_V3SLizard", 1000, "UNARMEDCAR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["FIA_BTR40", 1000, "UNARMEDCAR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["FIA_BTR40_DSKM", 2000, "ARMEDCAR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["CSLA_Mi24V", 28000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["AFMC_AH1F", 26000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["US85_MH60M134", 13000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["US85_MH60FFAR", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["US85_UH60", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["US85_UH60M240", 12000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["CSLA_Mi17", 9000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["CSLA_Mi17mg", 11000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["CSLA_Mi17pylons", 23000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
-    ]
-} else {
-    []
-};
-
-private _vehiclesBlackMarket = _shopTanks + _shopApex + _shopWs + _shopRF + _shopLawsOfWar + _shopContact + _shopJets + _shopMarksman + _shopGM + _shopCLSA + [
-    ["I_HMG_01_high_F", 1000, "STATICMG", {tierWar > 3}],
-    ["I_HMG_01_F", 700, "STATICMG", {tierWar > 3}],
-    ["I_GMG_01_high_F", 3000, "STATICMG", {tierWar > 3}],
-    ["I_GMG_01_F", 2500, "STATICMG", {tierWar > 3}],
-    ["a3a_Plane_Fighter_03_grey_F", 40000, "PLANE", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 1}],
-    ["I_UAV_01_F", 2000, "UAV", {true}],
-    ["I_HMG_01_A_F", 2500, "UAV", {tierWar > 3}],
-    ["I_GMG_01_A_F", 4500, "UAV", {tierWar > 3}],
-    ["I_UGV_01_F", 4000, "UAV", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["I_UGV_01_rcws_F", 7500, "UAV", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
-    ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["B_Heli_Light_01_F", 7000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["I_Heli_light_03_unarmed_F", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["B_Heli_Light_01_dynamicLoadout_F", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-    ["I_Heli_light_03_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
-];
-["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
 
 ["variants", [
     ["I_Heli_light_03_dynamicLoadout_F", ["Green",1]],
@@ -679,7 +489,8 @@ if (_hasWs) then {
         "lxWS_H_Bandanna_blk_hs",
         "H_Cap_headphones_ion_lxws",
         "lxWS_H_CapB_rvs_blk_ION",
-        "lxWS_H_Headset"
+        "lxWS_H_Headset",
+        "H_Beret_Headset_lxWS"
     ];
 };
 if (_hasApex) then {

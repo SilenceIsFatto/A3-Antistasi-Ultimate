@@ -29,10 +29,12 @@ switch (toLower worldname) do {
 
 enableSaving [false,false];
 
+/*
 //Disable VN music
 if (isClass (configFile/"CfgVehicles"/"vn_module_dynamicradiomusic_disable")) then {
     A3A_VN_MusicModule = (createGroup sideLogic) createUnit ["vn_module_dynamicradiomusic_disable", [worldSize, worldSize,0], [],0,"NONE"];
 };
+*/
 
 // Shouldn't be anything with dependencies in here
 call A3A_fnc_initVarCommon;
@@ -350,5 +352,10 @@ if(A3A_hasACE) then
 };
 
 call A3U_fnc_initZones;
+
+if (enableSpectrumDevice) then {
+    [] execVM QPATHTOFOLDER(Scripts\SpectumDevice\spectrum_device.sqf);
+    [] execVM QPATHTOFOLDER(Scripts\SpectumDevice\sa_ewar.sqf);
+};
 
 Info("initServer completed");

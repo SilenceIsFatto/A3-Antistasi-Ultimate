@@ -61,6 +61,10 @@ if (isServer) then {
 	["constructionsX"] call A3A_fnc_getStatVariable;
 	["isRivalsDiscoveryQuestAssigned"] call A3A_fnc_getStatVariable;
 
+	//Antistasi Ultimate variables
+	["revealedZones"] call A3A_fnc_getStatVariable; publicVariable "revealedZones";
+	["unlockedVehicleTypes"] call A3A_fnc_getStatVariable; publicVariable "unlockedVehicleTypes";
+
 	//===========================================================================
 
 	//RESTORE THE STATE OF THE 'UNLOCKED' VARIABLES USING JNA_DATALIST

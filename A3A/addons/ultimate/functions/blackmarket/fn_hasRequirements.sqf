@@ -14,8 +14,6 @@ if (_requirements isEqualType []) then {
     _requirementAmount = parseNumber (_requirementsSplit select 1); // select the required amount
 };
 
-diag_log [_requirement, _requirementAmount];
-
 private _rebelZones = call A3U_fnc_sidesX;
 private _warLevel = tierWar;
 

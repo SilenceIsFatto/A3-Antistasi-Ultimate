@@ -46,6 +46,8 @@ private _ignoreClasses = ["traderWeapons", "traderVehicles"];
 
     private _prefix = getText (_baseCfg >> "traderWeapons" >> _weapons >> "prefix");
 
+    if (isNil "_prefix" || {_prefix isEqualTo ""}) then {continue};
+
     if ([_addons] call A3U_fnc_hasAddon) then {
         _modsets pushBack _prefix;
         [format ["Added %1 to _modsets list.", _prefix]] call A3U_fnc_log;

@@ -37,7 +37,7 @@ if (_hasApex) then {
 ["vehiclesLightArmed", _lightArmed] call _fnc_saveToTemplate;
 
 ["vehiclesTrucks", ["O_R_Truck_03_covered_ard_F","O_R_Truck_03_transport_ard_F"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", ["O_R_Truck_02_flatbed_ard_F", "O_R_Truck_02_cargo_ard_F"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["O_R_Truck_02_flatbed_ard_F", "O_R_Truck_02_cargo_ard_F","O_R_UGV_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["O_R_Truck_03_ammo_ard_F"]] call _fnc_saveToTemplate;
 ["vehiclesRepairTrucks", ["O_R_Truck_02_box_ard_F", "O_R_Truck_02_box_ard_F"]] call _fnc_saveToTemplate;
 ["vehiclesFuelTrucks", ["O_R_Truck_03_fuel_ard_F", "O_R_Truck_02_fuel_ard_F"]] call _fnc_saveToTemplate;
@@ -45,8 +45,8 @@ if (_hasApex) then {
 ["vehiclesLightAPCs", ["O_R_APC_Wheeled_04_cannon_ard_F"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["Aegis_O_R_APC_Tracked_02_30mm_ard_lxWS"]] call _fnc_saveToTemplate;
 ["vehiclesIFVs", ["Aegis_O_R_APC_Tracked_02_30mm_ard_lxWS"]] call _fnc_saveToTemplate;
-["vehiclesAirborne", ["O_R_APC_Wheeled_04_cannon_ard_F"]] call _fnc_saveToTemplate;
-["vehiclesLightTanks", []] call _fnc_saveToTemplate;
+["vehiclesAirborne", ["O_R_APC_Wheeled_04_cannon_ard_F","O_R_UGV_01_rcws_F"]] call _fnc_saveToTemplate;
+["vehiclesLightTanks", ["O_R_UGV_01_rcws_F"]] call _fnc_saveToTemplate;
 private _tanks = ["O_R_MBT_02_cannon_ard_F"];
 if (_hasTanks) then {
     _tanks append ["O_R_MBT_04_cannon_ard_F", "O_R_MBT_04_command_ard_F"];

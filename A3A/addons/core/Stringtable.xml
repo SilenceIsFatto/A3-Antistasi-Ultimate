@@ -703,6 +703,12 @@
                 <Russian>Лидер команды</Russian>
                 <Korean>분대장</Korean>
             </Key>
+            <Key ID="STR_A3AU_downed_help">
+                <Original>I am injured comrades! Help!</Original>
+                <English>I am injured comrades! Help!</English>
+                <Russian>Placeholder</Russian>
+                <Korean>Placeholder</Korean>
+            </Key>
         </Container>
         <Container name="credits_generic">
             <Key ID="STR_antistasi_credits_generic_overview_text">
@@ -5758,7 +5764,7 @@
             <Key ID="STR_A3AU_vanilla_weapons_in_arms_dealer">
                 <Original>Include Vanilla Weapons In Arms Dealer</Original>
                 <English>Include Vanilla Weapons In Arms Dealer</English>
-                <Russian>Добавить ванильное оружие в ассортимент торговца оружием</Russian>
+                <Russian>Добавить ванильное оружие/снаряжение/технику в ассортимент торговца оружием</Russian>
                 <Korean>암거래상에 바닐라 무기 포함</Korean>
                 <French>Inclure les armes Vanilla dans les contrats de vente d'armes</French>
             </Key>
@@ -5793,6 +5799,11 @@
                 <English>Ignore Black Market Vehicle Requirements</English>
                 <Russian>Игнорировать условия разблокировки транспорта у черного торговца </Russian>
             </Key>
+            <Key ID="STR_A3AU_use_downed_notification">
+                <Original>Notify Players When Downed</Original>
+                <English>Notify Players When Downed</English>
+                <Russian>Placeholder</Russian>
+            </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>
                 <English>Enable Stamina (Vanilla)</English>
@@ -5808,11 +5819,11 @@
                 <French>Activer la fatigue (Vanilla)</French>
             </Key>
             <Key ID="STR_A3AU_sway_enabled">
-                <Original>Enable Sway (Vanilla)</Original>
-                <English>Enable Sway (Vanilla)</English>
-                <Russian>Включить раскачку оружия (Vanilla)</Russian>
-                <Korean>무기 흔들림 활성화 (바닐라)</Korean>
-                <French>Activer l'oscillation (Vanilla)</French>
+                <Original>Weapon Sway % (Vanilla)</Original>
+                <English>Weapon Sway % (Vanilla)</English>
+                <Russian>раскачивание оружия % (Vanilla)</Russian>
+                <Korean>무기 흔들림 % (바닐라)</Korean>
+                <French>% de balancement de l'arme (Vanilla)</French>
             </Key>
         </Container>
     </Package>

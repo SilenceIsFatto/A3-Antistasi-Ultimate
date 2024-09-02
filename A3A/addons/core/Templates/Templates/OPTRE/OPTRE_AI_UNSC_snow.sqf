@@ -44,6 +44,8 @@
 ["vehiclesPlanesAA", ["OPTRE_YSS_1000_A"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["OPTRE_Pelican_unarmed"]] call _fnc_saveToTemplate; // I pray this works
 
+["vehiclesPlanesGunship", ["OPTRE_Pelican_armed_70mm","OPTRE_Pelican_armed_SOCOM"]] call _fnc_saveToTemplate;
+
 ["vehiclesHelisLight", ["OPTRE_UNSC_falcon"]] call _fnc_saveToTemplate;
 ["vehiclesHelisTransport", ["OPTRE_UNSC_falcon_s"]] call _fnc_saveToTemplate;
 ["vehiclesHelisLightAttack", ["OPTRE_UNSC_hornet_CAS"]] call _fnc_saveToTemplate;
@@ -220,6 +222,7 @@ _sfLoadoutData set ["glVests", ["OPTRE_MJOLNIR_MkVBArmor", "OPTRE_MJOLNIR_MkVBAr
 _sfLoadoutData set ["backpacks", ["OPTRE_ANPRC_515_Spartan"]];
 _sfLoadoutData set ["slBackpacks", ["OPTRE_ANPRC_515_Spartan"]];
 _sfLoadoutData set ["atBackpacks", ["OPTRE_ANPRC_515_Spartan"]];
+_sfLoadoutData set ["longRangeRadios", ["OPTRE_ANPRC_515_Spartan"]];
 _sfLoadoutData set ["helmets", ["OPTRE_MJOLNIR_MkVBHelmet", "OPTRE_MJOLNIR_MkVBHelmet_UA_HUL", "OPTRE_MJOLNIR_EOD"]];
 _sfLoadoutData set ["slHat", ["OPTRE_MJOLNIR_CQC"]];
 _sfLoadoutData set ["sniHats", ["OPTRE_MJOLNIR_Commando", "OPTRE_MJOLNIR_Commando_HUL3"]];

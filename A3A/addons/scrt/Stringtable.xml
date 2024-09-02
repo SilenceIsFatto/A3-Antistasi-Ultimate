@@ -391,12 +391,20 @@
                 <Original>Remnants.\nRemnants of the AAF forces sponsored by CSAT, who want to regain control of the islands.</Original>
                 <Russian>Remnants.\nRemnants - остатки сил AAF спонсируемые CSAT, желающие вернуть контроль над островами.</Russian>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_CUP_LRI">
+                <Original>Local Resistance Initiative.\nA resistance led by local civilians, using military surplus and basic gear from ebay.</Original>
+                <Russian>Инициатива местного сопротивления.\nСопротивление, возглавляемое местными гражданами, использующее военные излишки и базовое снаряжение с eBay.</Russian>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_exegermenos">
                 <Original>Exegerménos.\nStandard enemy guerilla faction.</Original>
                 <Russian>Exegerménos.\nСтандартная вражеская повстанческая фракция.</Russian>
                 <Chinesesimp>Exegerménos.\n标准的敌方游击队派系。</Chinesesimp>
                 <Korean>엑세게르메노스.\n표준 적군 게릴라 팩션입니다.</Korean>
                 <French>Exegerménos.\nFaction de guérilla ennemie standard.</French>
+            </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_separatistsCSLA">
+                <Original>Separatists.\nStandard enemy guerilla faction.</Original>
+                <Russian>Separatists.\nСтандартная вражеская повстанческая фракция.</Russian>
             </Key>
             <Key ID="STR_A3AP_setupFactionsTab_le">
                 <Original>L'Ensemble.\nFormer Syndikat branch.</Original>
@@ -1234,6 +1242,9 @@
                 <Chinesesimp>&lt;t size='0.6'&gt;&lt;t size='0.6' color='%1'&gt;%2&lt;/t&gt; %3 上的部队投降。 他们的部队支援被关闭，他们不再对我们发动任何攻击。 恭喜！&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%3의 &lt;t size='0.6' color='%1'&gt;%2&lt;/t&gt;이 항복했습니다. 그들의 지원 경로는 차단될 것이고 더 이상 우리를 공격하지 않을 것입니다. 축하합니다!&lt;/t&gt;</Korean>
                 <French>&lt;t size='0.6'&gt;&lt;t size='0.6' color='%1'&gt;%2&lt;/t&gt; sur %3 se sont rendues. Leur axe de soutien sera fermé et elles ne lanceront plus d'attaque contre nous. Félicitations !&lt;/t&gt;</French>
+            </Key>
+            <Key ID="STR_comms_mp_faction_return">
+                <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='%1'&gt;%2&lt;/t&gt; forces on %3 have returned with help from an unknown force. Their support corridor will be re-opened and they will likely launch attacks on us!&lt;/t&gt;</Original>
             </Key>
             <Key ID="STR_comms_mp_recon_prisoner_success">
                 <Original>&lt;t size='0.6'&gt;&lt;t size='0.6' color='#988df7'&gt;Interrogated combatant&lt;/t&gt; shares approximate enemy positions.&lt;/t&gt;</Original>
@@ -4709,6 +4720,13 @@
                 <Korean>헤드샷 당할 시 헬멧을 잃을 확률</Korean>
                 <French>Risque de perte de casque lors des tirs à la tête</French>
             </Key>
+            <Key ID="STR_params_helmetLossSound">
+                <Original>Make sound on helmet loss</Original>
+                <Russian>Издать звук при потере шлема</Russian>
+                <Chinesesimp>头盔丢失时发出声音</Chinesesimp>
+                <Korean>헬멧 분실 시 소리 내기</Korean>
+                <French>Faites du bruit en cas de perte de casque</French>
+            </Key>
             <Key ID="STR_params_helmetLossChance_0">
                 <Original>Never</Original>
                 <Russian>Никогда</Russian>
@@ -5014,6 +5032,10 @@
                 <Chinesesimp>支援设置</Chinesesimp>
                 <Korean>지원 설정</Korean>
                 <French>PARAMÈTRES DE SOUTIEN</French>
+            </Key>
+            <Key ID="STR_params_enableSpectrumDevice">
+                <Original>Enable spectrum device hacking capability (conctact dlc required)</Original>
+                <Russian>Разрешить возможность взлома с помощью spectrum device (необходимо дополнение contact)</Russian>
             </Key>
             <Key ID="STR_params_allowUnfairSupports">
                 <Original>Allow unfair (unbalanced) supports to be used by the enemy</Original>
@@ -8164,7 +8186,7 @@
         </Container>
         <Container name="black_market">
             <Key ID="STR_trader_black_market_title">
-                <Original>Vehicle Black Market</Original>
+                <Original>Vehicle Black Market - Click the notepad for more info.</Original>
                 <Russian>Черный рынок техники</Russian>
                 <Chinesesimp>载具黑市</Chinesesimp>
                 <Korean>차량 암시장</Korean>
@@ -8172,7 +8194,7 @@
             </Key>
             <Key ID="STR_trader_black_market_requirements">
                 <Original>Vehicle requirements can be found by clicking the notepad in the top right corner.</Original>
-                <Russian>И соответственно, Условия разблокировки можно найти, кликнув на иконку книги/тетради в правом верхнем углу</Russian>
+                <Russian>Условия разблокировки можно найти, кликнув на иконку блокнота в правом верхнем углу</Russian>
             </Key>
         </Container>
         <Container name="intel_actions">
@@ -8846,6 +8868,18 @@
                 <Korean>배신자가 %2에서 %1과의 만남을 예약했습니다. 그가 우리에게 문제를 일으킬 만큼 충분한 정보를 제공하기 전에 그를 죽이십시오. %3 이전에 완료하십시오. 우린 이 만남이 어디서 일어날 지 모릅니다. 근처 차량 및 %1의 존재로 건물을 알아볼 수 있습니다.</Korean>
                 <French>Un traître a prévu de rencontrer %1 en %2. Tuez-le avant qu'il ne fournisse suffisamment d'informations pour nous causer des ennuis. Faites-le avant %3. Nous ne savons pas exactement où cette réunion aura lieu. Vous reconnaîtrez le bâtiment grâce à la présence d'Offroad et de %1 à proximité.</French>
             </Key>
+            <Key ID="STR_A3A_Missions_AS_Smasher_task_header">
+                <Original>Kill the Mutant</Original>
+            </Key>
+            <Key ID="STR_A3A_Missions_AS_Smasher_task_desc">
+                <Original>Reports from unknown sources suggest %1 Special Forces have engaged a rare Mutant in %2. Kill the Mutant before it causes major issues. Do this before %3. We don't know where this fight is happening.</Original>
+            </Key>
+            <Key ID="STR_A3A_Missions_AS_Zombies_task_header">
+                <Original>Stop City Infestation</Original>
+            </Key>
+            <Key ID="STR_A3A_Missions_AS_Zombies_task_desc">
+                <Original>%1 is in danger of becoming infested. If it falls, nobody will be able to live there in future. This will have permanent consequences, so we need to act quickly. Save %1 from infestation... Do this before %2.</Original>
+            </Key>
             <Key ID="STR_A3A_Missions_AS_RIV_Traitor_task_header">
                 <Original>Eliminate the Defector</Original>
                 <Russian>Устраните перебежчика</Russian>
@@ -9154,7 +9188,7 @@
             </Key>
             <Key ID="STR_A3A_Missions_SUPP_Supplies_enemynear">
                 <Original>Keep the area clear of hostiles for %1 more seconds.</Original>
-                <Russian>Не пускайте врагов к ящику в течение %2 секунд.</Russian>
+                <Russian>Не пускайте врагов к ящику в течение %1 секунд.</Russian>
                 <Chinesesimp>保持该区域没有敌人 %1 秒。</Chinesesimp>
                 <Korean>%1초 동안 적이 없도록 하십시오.</Korean>
                 <French>Gardez la zone exempte d'hostiles pendant %1 secondes supplémentaires.</French>
@@ -9468,6 +9502,14 @@
                 <Original>&lt;br/&gt;Press H to Withstand.</Original>
                 <French>&lt;br/&gt;Appuyez sur H pour résister.</French>
                 <Korean>&lt;br/&gt;H키를 눌러 스스로 일어나십시오.</Korean>
+            </Key>
+            <Key ID="STR_antistasi_actions_unconscious_self_withstand_countdown">
+                <Original>Self-Revive Cooldown</Original>
+                <Korean>자가소생 쿨다운</Korean>
+            </Key>
+            <Key ID="STR_antistasi_actions_unconscious_self_withstand_ready">
+                <Original>Available</Original>
+                <Korean>준비됨</Korean>
             </Key>
             <Key ID="STR_antistasi_actions_common_access_vehicle_marker_text">
                 <Original>Access Vehicle Market</Original>

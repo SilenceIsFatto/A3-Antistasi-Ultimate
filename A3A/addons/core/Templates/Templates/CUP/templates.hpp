@@ -200,6 +200,20 @@
         file = "CUP_Reb_NAPA";
         description = $STR_A3AP_setupFactionsTab_napa_3cbf;
     };
+    class CUP_Reb_EM : CUP_Reb
+    {
+        name = "Eastern Loyalists";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CUP\images\flag_old_soviet_co.paa);
+        file = "CUP_Reb_EM";
+        description = "A generic militarized militia using surplus or outdated Soviet technology. Loyal to the East. Consider this a more forgiving start than most.";
+    };
+    class CUP_Reb_WM : CUP_Reb
+    {
+        name = "Western Loyalists";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CUP\images\flag_old_nato_co.paa);
+        file = "CUP_Reb_WM";
+        description = "A generic militarized militia using surplus or outdated NATO technology. Loyal to the West. Consider this a more forgiving start than most.";
+    };
     class CUP_TKC : CUP_Base
     {
         side = "Civ";
@@ -221,4 +235,12 @@
         name = "CUP CHDKZ";
         file = "CUP_Riv_CHDKZ";
         description = $STR_A3AP_setupFactionsTab_chdkz;
+    };
+    class CUP_LRI : CUP_Base
+    {
+        side = "Reb";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\CUP\flag_LRI_co.paa);
+        name = "CUP LRI";
+        file = "CUP_Reb_LRI";
+        description = $STR_A3AP_setupFactionsTab_CUP_LRI;
     };

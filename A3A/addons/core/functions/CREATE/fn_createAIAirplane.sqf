@@ -133,7 +133,7 @@ if (_frontierX && {random 100 < (20 + tierWar * 3)}) then {
 	private _road = [_positionX] call A3A_fnc_findNearestGoodRoad;
 	if (_road distance2D _positionX > 800) exitWith {};
 
-	private _heavyVehPool =  (_faction get "vehiclesTanks") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs") + (_faction get "vehiclesLightTanks");
+	private _heavyVehPool =  (_faction get "vehiclesTanks") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesLightAPCs") + (_faction get "vehiclesIFVs") + (_faction get "vehiclesLightTanks");
 	private _type = selectRandom _heavyVehPool;
 
 	private _heavyVehicle = [_type, (position _road), 15, 10] call A3A_fnc_safeVehicleSpawn;
@@ -295,11 +295,12 @@ if (!_busy) then {
 	private _groupX = createGroup _sideX;
 	_groups pushBack _groupX;
 	_countX = 0;
-	while {_countX < 3} do {
+	private _vehCount = round (random [2, 4, 5]);
+	while {_countX < _vehCount} do {
 		private _veh = objNull;
 		private _spawnParameter = [_markerX, "Plane"] call A3A_fnc_findSpawnPosition;
 		if(_spawnParameter isEqualType []) then {
-			private _vehPool = (_faction get "vehiclesPlanesCAS") + (_faction get "vehiclesPlanesAA");
+			private _vehPool = (_faction get "vehiclesPlanesCAS") + (_faction get "vehiclesPlanesAA") + (_faction getOrDefault ["uavsAttack", []]);
 			if(count _vehPool > 0) then
 			{
 				_spawnsUsed pushBack _spawnParameter#2;
@@ -313,11 +314,13 @@ if (!_busy) then {
 			};
 		} else {
 			if !(_runwaySpawnLocation isEqualTo []) then {
-				private _airVehTypes = (_faction get "vehiclesHelisLight")
-                    + (_faction get "vehiclesHelisTransport")
-                    + (_faction get "vehiclesPlanesCAS")
+				private _airVehTypes = (_faction get "vehiclesPlanesCAS")
                     + (_faction get "vehiclesPlanesAA")
+					+ (_faction get "vehiclesPlanesLargeCAS")
+                    + (_faction get "vehiclesPlanesLargeAA")
                     + (_faction get "vehiclesPlanesTransport");
+		    		+ (_faction getOrDefault ["vehiclesPlanesGunship", []]);
+					+ (_faction getOrDefault ["uavsAttack", []]);
 				_typeVehX = selectRandom _airVehTypes;
 				if (!isNil "_typeVehX") then {
 					_veh = createVehicle [_typeVehX, _pos, [],50, "NONE"];
@@ -328,7 +331,7 @@ if (!_busy) then {
 				};
 			} else {
 				//No places found, neither hangar nor runway
-				_countX = 3;
+				_countX = _vehCount;
 			};
 		};
 		_countX = _countX + 1;
@@ -364,7 +367,7 @@ private _ammoBox = if (garrison getVariable [_markerX + "_lootCD", 0] == 0) then
 
 if (!_busy) then
 {
-	private _vehTypesHeavy = (_faction get "vehiclesAPCs") + (_faction get "vehiclesLightAPCs") + (_faction get "vehiclesTanks") +(_faction get "vehiclesLightTanks");
+	private _vehTypesHeavy = (_faction get "vehiclesAPCs") + (_faction get "vehiclesLightAPCs") + (_faction get "vehiclesIFVs") + (_faction get "vehiclesAirborne") + (_faction get "vehiclesTanks") +(_faction get "vehiclesLightTanks");
 	for "_i" from 1 to (round (random 2)) do {
 		_spawnParameter = [_markerX, "Vehicle"] call A3A_fnc_findSpawnPosition;
 		if (_spawnParameter isEqualType []) then

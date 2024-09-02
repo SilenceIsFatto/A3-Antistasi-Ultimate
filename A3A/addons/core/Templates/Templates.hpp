@@ -378,6 +378,69 @@ class Templates
         file = "VN_Civ";
         description = $STR_A3AP_setupFactionsTab_vietcivs;
     };
+
+    //***************************** CSLA *****************************
+    class CSLA_Base : Vanilla_Base
+    {
+        requiredAddons[] = {"CSLA"};
+	    logo = "\csla_cfg\Images\Logos\csla_logo_text.paa"; // csla\csla_cfg\Images\Logos\csla_logo_text.paa
+        basepath = QPATHTOFOLDER(Templates\Templates\CSLA);
+        priority = 50;
+        forceDLC[] = {"CSLA"};
+        climate[] = {"temperate","tropical","arid"};
+    };
+    class CSLA_CIV : CSLA_Base
+    {
+        side = "Civ";
+        flagTexture = "\csla_misc\signs\flags\cssr_flag.paa";
+        name = "CSLA Civs";
+        file = "CSLA_CIV";
+	//maps[] = {"stozec"};
+    };
+    class CSLA_FIA : CSLA_Base
+    {
+        side = "Reb";
+        flagTexture = "\csla_misc\signs\flags\fia_flag.paa";
+        name = "FIA";
+        file = "CSLA_FIA";
+	//maps[] = {"stozec"};
+    };
+    class CSLA_US : CSLA_Base
+    {
+        side = "Occ";
+        flagTexture = "\csla_misc\signs\flags\flag_us_co.paa";
+        name = "US85";
+        file = "CSLA_AI_US";
+	//maps[] = {"stozec"};
+    };
+
+    class CSLA_SEPARATISTS : CSLA_Base
+    {
+        side = "Riv";
+        flagTexture = "\A3\Data_F\Flags\Flag_red_CO.paa";
+        name = "CSLA Separatists";
+        file = "CSLA_Riv_Separatists";
+        climate[] = {"arid", "temperate", "arctic"};
+        description = $STR_A3AP_setupFactionsTab_separatistsCSLA;
+    };
+
+    class CSLA_CS : CSLA_Base
+    {
+        side = "Inv";
+        flagTexture = "\csla_misc\signs\flags\cssr_flag.paa";
+        name = "CSLA";
+        file = "CSLA_AI_CSLA";
+	//maps[] = {"stozec"};
+    };
+
+    class CSLA_AFMC : CSLA_Base
+    {
+        side = "Occ";
+        flagTexture = "\csla_misc\signs\flags\flag_afmc_co.paa";
+        name = "AFMC";
+        file = "CSLA_AI_AFMC";
+	//maps[] = {"stozec"};
+    };
 	
     // ***************************** CUP *****************************
 

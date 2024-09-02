@@ -32,6 +32,8 @@ _costs = if (isNil "_costs") then {
 */
 private _blackMarketPrice = [_typeX] call A3U_fnc_blackMarketVehiclePrice;
 
+if (isNil "_blackMarketPrice") then {_blackMarketPrice = 0};
+
 if (_costs isEqualTo 0 && {_blackMarketPrice isNotEqualTo 0}) then { // checking cost first should stop a potential money dupe glitch
 	_costs = _blackMarketPrice;
 };
