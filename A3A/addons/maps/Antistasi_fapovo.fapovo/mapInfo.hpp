@@ -70,4 +70,5 @@ class fapovo {
 		BUILDABLES_ARID,
 		BUILDABLES_CUP,
 		BUILDABLES_UNIVERSAL
+	};
 };
