@@ -1,8 +1,5 @@
 class vehicles_navleg : vehicles_base
 {
-    ITEM(sab_nl_enterprise_gun_127mm, 10000, "STATICAT", VEHICLE_CONDITION_STATICAA);
-    ITEM(sab_nl_enterprise_gun_20mm, 5000, "STATICAA", VEHICLE_CONDITION_STATICAA);
-    ITEM(sab_nl_enterprise_gun_40mm, 15000, "STATICAA", VEHICLE_CONDITION_STATICAA);
     ITEM(sab_nl_vessel_a, 1900, "BOAT", VEHICLE_CONDITION_BOAT);
     ITEM(sab_nl_vessel_b, 3400, "BOAT", VEHICLE_CONDITION_BOAT);
     ITEM(sab_nl_vessel_c, 1600, "BOAT", VEHICLE_CONDITION_BOAT);
