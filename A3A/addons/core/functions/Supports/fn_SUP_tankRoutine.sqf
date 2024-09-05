@@ -20,7 +20,7 @@ _suppData params ["_supportName", "_side", "_suppType", "_suppCenter", "_suppRad
 sleep _sleepTime;
 
 // Only spawn tanks
-private _data = [_side, _base, _suppCenter, _resPool, _vehCount, _vehCount, 2, true] call A3A_fnc_createAttackForceLand;
+private _data = [_side, _base, _suppCenter, _resPool, _vehCount, _vehCount, 2, "Normal", true] call A3A_fnc_createAttackForceLand;
 _data params ["_resources", "_vehicles", "_crewGroups", "_cargoGroups"];
 Info_1("Spawn performed: Vehicles %1", _vehicles apply { typeOf _x });
 
