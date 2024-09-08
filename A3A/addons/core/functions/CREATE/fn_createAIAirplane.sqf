@@ -456,7 +456,7 @@ for "_i" from 0 to (count _array - 1) do {
 	[_x, true] call A3U_fnc_setLock;
 } forEach _vehiclesX;
 
-flagX setVariable ["A3U_zoneVehicles", _vehiclesX];
+_flagX setVariable ["A3U_zoneVehicles", _vehiclesX];
 
 waitUntil {sleep 1; (spawner getVariable _markerX == 2)};
 
