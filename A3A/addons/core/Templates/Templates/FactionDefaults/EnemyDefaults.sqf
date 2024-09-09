@@ -21,6 +21,9 @@
 ["animations", []] call _fnc_saveToTemplate;
 ["variants", []] call _fnc_saveToTemplate;
 
+["vehiclesPlanesLargeCAS", []] call _fnc_saveToTemplate;
+["vehiclesPlanesLargeAA", []] call _fnc_saveToTemplate;
+
 ["flares", ["F_40mm_white", "F_40mm_Red", "F_40mm_Yellow", "F_40mm_Green"]] call _fnc_saveToTemplate;
 
 ["smallBunker", "Land_BagBunker_Small_F"] call _fnc_saveToTemplate;

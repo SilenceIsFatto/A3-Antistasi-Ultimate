@@ -33,3 +33,6 @@
 #include "vehicles_cwriiiusmc.hpp"
 #include "vehicles_csa38.hpp"
 #include "vehicles_eaw.hpp"
+#include "vehicles_navleg.hpp"
+#include "vehicles_flyleg.hpp"
+#include "vehicles_scrtwpns.hpp"

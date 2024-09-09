@@ -71,7 +71,7 @@ if (isPlayer _unit) then {
 	};
 
 	if (useDownedNotification) then {
-		_unit globalChat format [localize "STR_A3AU_downed_help", name _unit];
+		[_unit, localize "STR_A3AU_downed_help"] remoteExec ["globalChat", 0];
 	};
 
 	openMap false;

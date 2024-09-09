@@ -78,7 +78,7 @@ private _upKeyEH = _emptyDisplay displayAddEventHandler ["KeyUp", {
         if ((A3A_building_EHDB # BUILD_OBJECT_SELECTED_STRING) isEqualTo "Land_Can_V2_F") exitwith {};	// temp objects not built.
 
         if (_tempObject distance (A3A_building_EHDB # BUILD_RADIUS_OBJECT_CENTER) > (A3A_building_EHDB # BUILD_RADIUS)) exitwith {};
-        if (isOnRoad getPosATL _tempObject) exitwith {};	// can't build on roads
+        //if (isOnRoad getPosATL _tempObject) exitwith {};	// can't build on roads
         
         private _price = (A3A_building_EHDB # OBJECT_PRICE);
         private _supply = (A3A_building_EHDB # AVAILABLE_MONEY);

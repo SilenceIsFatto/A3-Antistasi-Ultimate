@@ -9,6 +9,13 @@ class CfgMarkers
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
 	};
 
+	class a3a_flag_LRI: flag_NATO 
+	{
+		name = "LRI";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_lri_co.paa); 
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_lri_co.paa);
+	};
+
 	class a3a_flag_cdf: flag_NATO 
 	{
 		name = "CDF";
