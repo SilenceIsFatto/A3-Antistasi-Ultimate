@@ -386,8 +386,9 @@ class RscDisplayMain: RscStandardDisplay //main menu
 			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\GitB_Hov.paa""";
 			onMouseButtonDown = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\GitB.paa""";
 		};
-		class ServerButton3: base_side_btn
+		class ServerButton3: base_side_btn 
         {
+			onLoad = "(_this # 0) ctrlEnable true";
 			y = "safeZoneY + safeZoneH - 0.4";
 			text = QPATHTOFOLDER(data\ServerB.paa); // No text needed for an image button
 			tooltip="Connect to our community server!";
@@ -409,9 +410,11 @@ class RscDisplayMain: RscStandardDisplay //main menu
 			onMouseButtonUp = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\ArmaCredits_Hov.paa""";
 			onMouseButtonDown = "(_this select 0) ctrlSetText ""\x\a3a\addons\main_menu\data\ArmaCredits.paa""";
 		};
-		class WebsiteButton5: ArmaCreditsButton4
+		class WebsiteButton5: base_side_btn
         {
+			onLoad = "(_this # 0) ctrlEnable true";
 			y = "safeZoneY + safeZoneH - 0.34";
+			x = "safeZoneX + 0.007";
 			text = QPATHTOFOLDER(data\WebsiteB.paa); // No text needed for an image button
 			tooltip="Official Website";
 			url = "https://antistasiultimate.com/Home/";
