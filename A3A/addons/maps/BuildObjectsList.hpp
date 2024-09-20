@@ -6,7 +6,7 @@
 
 #define BUILDABLES_HISTORIC {"Land_Tyres_F", 20}, {"Land_Barricade_01_10m_F", 50}, {"Land_Barricade_01_4m_F", 30}, {"Land_DeerStand_01_F", 100}
 
-#define BUILDABLES_SCIFI {"Land_Cargo_Patrol_V2_F", 450}, {"Land_Cargo_Tower_V2_F", 1000}, {"Land_Cargo_HQ_V2_F", 500}, {"Land_Cargo_House_V2_F", 350}
+#define BUILDABLES_SCIFI {"Land_Cargo_Patrol_V2_F", 1000}, {"Land_Cargo_Tower_V2_F", 2000}, {"Land_Cargo_HQ_V2_F", 1500}, {"Land_Cargo_House_V2_F", 500}
 
 //Map Climate Modifiers (What type of terrain is the biggest area of the map)
 #define BUILDABLES_ARID {"Land_BagFence_Corner_F", 10}, {"Land_BagFence_End_F", 10}, {"Land_BagFence_Long_F", 30}, {"Land_BagFence_Round_F", 30}, {"Land_BagFence_Short_F", 20}

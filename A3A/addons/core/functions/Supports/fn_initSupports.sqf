@@ -38,7 +38,8 @@ private _initData = [
     ["MORTAR",          "AREA", 0.5, 0.9, 100,  50,  "", "staticMortars"],
     ["HOWITZER",        "AREA", 0.5, 0.9, 125,  65,  "", "staticHowitzers"],
     ["ASF",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesAA"],            // balanced against SAMs (if available), 66/33 weighting
-    ["CAS",           "TARGET", 1.0, 0.4,   0, 100,  "", "vehiclesPlanesCAS"],
+    ["CAS",           "TARGET", 0.5, 0.3,   0, 100,  "", "vehiclesPlanesCAS"],
+    ["TANK",          "TARGET", 0.5, 0.7,   0, 100,  "", ""],                            // balanced against CAS, lowAir based
     ["CASDIVE",       "TARGET", 0.8, 0.3,   0, 100,  "", "vehiclesPlanesCAS"],
     ["QRFLAND",       "TROOPS", 1.0, 1.4,   0,   0,  "", ""],
     ["QRFAIR",        "TROOPS", 0.5, 0.1,   0,   0,  "", ""],

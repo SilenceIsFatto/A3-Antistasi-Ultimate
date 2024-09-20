@@ -4,7 +4,8 @@ params ["_unit","_part","_damage","_injurer","_projectile","_hitIndex","_instiga
 
 // Functionality unrelated to Antistasi revive
 // Helmet popping: use _hitpoint rather than _part to work around ACE calling its fake hitpoint "head"
-if (_damage >= 1 && {_hitPoint == "hithead"}) then 
+private _randomNumber = [1,100] call BIS_fnc_randomNum;
+if (_damage >= 1 && {_hitPoint == "hithead"} && {helmetLossChance >= _randomNumber}) then 
 {
 	if (headgear _unit isNotEqualTo "") then 
 	{

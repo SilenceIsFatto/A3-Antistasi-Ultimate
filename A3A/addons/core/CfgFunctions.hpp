@@ -654,6 +654,9 @@ class CfgFunctions
             class SUP_SAM {};
             class SUP_SAMAvailable {};
             class SUP_SAMRoutine {};
+            class SUP_tank {};
+            class SUP_tankAvailable {};
+            class SUP_tankRoutine {};
             class SUP_UAV {};
             class SUP_UAVRoutine {};
             class SUP_QRFVehAirdrop {};
