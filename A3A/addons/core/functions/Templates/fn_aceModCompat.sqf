@@ -57,7 +57,8 @@ aceMedItems = [
 aceMedItemsBlood = [
 	"ACE_bloodIV",
 	"ACE_bloodIV_250",
-	"ACE_bloodIV_500"
+	"ACE_bloodIV_500",
+	"ACE_painkillers"
 ];
 
 advItems = [
