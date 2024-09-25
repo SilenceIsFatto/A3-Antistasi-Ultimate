@@ -142,3 +142,7 @@
         {
             prefix = "cwrstock";
         };
+        class JCAArsenal_Compat : weapons_base
+        {
+            prefix = "JCA_Arsenal_Stock"
+        };
