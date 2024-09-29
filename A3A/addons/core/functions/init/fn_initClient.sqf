@@ -663,4 +663,4 @@ if (staminaEnabled isEqualTo false) then {
 }; 
 
 private _newWeaponSway = swayEnabled / 100;
-player setCustomAimCoef _newWeaponSway;
+_unit setCustomAimCoef _newWeaponSway;
