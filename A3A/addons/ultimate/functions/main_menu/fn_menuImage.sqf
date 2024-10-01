@@ -1,8 +1,5 @@
 enableEnvironment false;
 showCinemaBorder false;
-
-player setVariable ["menu_framework_canPlay", true];
-
 setViewDistance 500;
 setTerrainGrid 50;
 
@@ -16,9 +13,15 @@ private _display = uiNamespace getVariable _displayName;
 
 private _displayImage = _display ctrlCreate ["RscPicture", IDC_HIDDENTEXT];
 
+if (menu_framework_image isEqualTo "None") exitwith {
+    ctrlDelete _displayImage;
+};
+
 _displayImage ctrlEnable false;
 _displayImage ctrlSetPosition [safeZoneX, safezoneY, safeZoneW, safeZoneH];
 _displayImage ctrlSetText menu_framework_image;
 _displayImage ctrlCommit 0;
 
-[player, _displayImage] call A3U_fnc_removeImage;
+if !([player] call A3U_fnc_isInMenu) exitWith {
+    ctrlDelete _displayImage;
+};

@@ -335,6 +335,7 @@ class RscDisplayMain: RscStandardDisplay //main menu
 		};
 		class ServerButton3: base_side_btn
         {
+			onLoad = "(_this # 0) ctrlEnable true";
 			y = "safeZoneY + safeZoneH - 0.4";
 			text = QPATHTOFOLDER(data\buttons\ServerB.paa); // No text needed for an image button
 			tooltip="Connect to our community server!";

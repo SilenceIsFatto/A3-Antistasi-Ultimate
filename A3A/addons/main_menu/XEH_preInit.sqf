@@ -28,8 +28,8 @@ private _nameArray = [];
 
         profileNamespace setVariable ["menu_framework_image", _value];
 
-        if !([player] call A3U_fnc_isInMenu) exitWith {};
-
         call A3U_fnc_menuImage;
+
+        if !([player] call A3U_fnc_isInMenu) exitWith {};
     }
 ] call CBA_fnc_addSetting;

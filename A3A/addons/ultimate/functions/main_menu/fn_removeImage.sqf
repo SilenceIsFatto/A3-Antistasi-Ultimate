@@ -4,6 +4,6 @@ params [
 ];
 
 waitUntil{
-    [player] call A3U_fnc_isInMenu;
+    _unit getVariable "menu_framework_canPlay";
 };
 ctrlDelete _displayImage;
