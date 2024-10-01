@@ -1,13 +1,7 @@
     /*
-        the "path" value expects a string pointing to an .ogv video file.
+        the "path" value expects a string pointing to an .jpg image file.
 
         the "name" value is what gets used in the cba settings.
-
-        the "song" value expects a string pointing to a CfgMusic entry, though can also be set to "NONE" to not play any music at all.
-        > If no value is set, no song is forced and cba settings are used.
-
-        the "delay" value expects an integer. This will be the delay (in seconds) before a video starts playing again after completion.
-        > If no value is set, it will automatically loop when the video finishes.
     */
 
     class intro_empty
