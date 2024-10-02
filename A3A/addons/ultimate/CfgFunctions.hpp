@@ -34,7 +34,6 @@ class CfgFunctions
             file = QPATHTOFOLDER(functions\main_menu);
             class isInMenu {};
             class menuImage {};
-            class removeImage {};
         };
         class REINF
         {
