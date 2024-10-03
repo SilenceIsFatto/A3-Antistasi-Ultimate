@@ -5,9 +5,9 @@ setTerrainGrid 50;
 
 private _displayName = "RscTitleDisplayEmpty";
 
-#define IDC_HIDDENTEXT 10000
+#define IDC_HIDDENTEXT 11420919201199 // fun fact: spells antistasi if you assign each latter a number
 
-private _id = ["layer" + _displayName] call BIS_fnc_rscLayer;
+private _id = ["A3AU_layer" + _displayName] call BIS_fnc_rscLayer;
 _id cutRsc [_displayName, "PLAIN", 0, false, true];
 private _display = uiNamespace getVariable _displayName;
 
