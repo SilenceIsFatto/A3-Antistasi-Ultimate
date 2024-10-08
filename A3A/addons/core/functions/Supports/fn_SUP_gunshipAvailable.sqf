@@ -18,5 +18,5 @@ params ["_target", "_side", "_maxSpend", "_availTypes"];
 if (_target isKindOf "Air") exitWith { 0 };     // can't hit air. What about isTouchingGround though?
 
 // balance this one against airstrikes
-// if (tierWar < 5) exitWith { 0 };
+if (tierWar < 5) exitWith { 0 };
 (tierWar - 4) / 10;       // 10% at tier 5 to 50% at tier 10

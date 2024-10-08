@@ -47,8 +47,11 @@ else
         };
         case ("QRFVEHAIRDROP"): 
         {
-            _text = format [localize "STR_notifiers_SUP_execute_QRFAirdrop", _sideName];
-            _markerText = localize "STR_notifiers_SUP_execute_QRFAirdrop_marker";
+            _text = format [localize "STR_notifiers_SUP_setup_QRFVehAirdrop", _sideName];
+        };
+        case ("QRFORBITAL"): 
+        {
+            _text = format [localize "STR_notifiers_SUP_setup_QRFOrbital", _sideName];
         };
         case ("AIRSTRIKE"):
         {

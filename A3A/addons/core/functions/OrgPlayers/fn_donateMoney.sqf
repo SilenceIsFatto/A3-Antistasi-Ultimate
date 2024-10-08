@@ -28,4 +28,4 @@ if (!isPlayer _target) exitWith {
 [-_amount] call A3A_fnc_resourcesPlayer;
 [_amount] remoteExec ["A3A_fnc_resourcesPlayer", _target];
 
-[localize "STR_A3A_OrgPlayers_donateMoney_header", format [localize "STR_A3A_OrgPlayers_donateMoney_player", name _target, A3A_faction_civ get "currencySymbol"]] call A3A_fnc_customHint;
+[localize "STR_A3A_OrgPlayers_donateMoney_header", format [localize "STR_A3A_OrgPlayers_donateMoney_player", name _target, A3A_faction_civ get "currencySymbol",_amount]] call A3A_fnc_customHint;

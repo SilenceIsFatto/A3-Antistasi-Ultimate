@@ -596,6 +596,11 @@ class CfgVehicles
 		gm_InsigniasDefaultNation = "gm_insignia_none";
 		gm_InsigniasDefaultFlag = "gm_insignia_none";
 	};
+	class gm_pl_airforce_mi2urpg_noinsignia : gm_pl_airforce_mi2urpg
+	{
+		gm_InsigniasDefaultNation = "gm_insignia_none";
+		gm_InsigniasDefaultFlag = "gm_insignia_none";
+	};
 	class gm_pl_airforce_mi2urs_noinsignia : gm_pl_airforce_mi2urs
 	{
 		gm_InsigniasDefaultNation = "gm_insignia_none";

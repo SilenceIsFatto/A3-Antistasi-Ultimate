@@ -128,20 +128,10 @@ while {true} do {
 		};
 	} forEach citiesX;
 
-	if (_popKilled > (_popTotal / 3)) then {
-		isNil { ["ended", true] call A3A_fnc_writebackSaveVar };
-		["destroyedSites",false,true] remoteExec ["BIS_fnc_endMission"];
-	};
+	call A3A_fnc_checkWinCondition;
 
-	if (totalVictory isEqualTo false and (_popReb > _popGov) and {({sidesX getVariable [_x,sideUnknown] == teamPlayer} count (airportsX + milbases)) == count (airportsX + milbases)}) then {
-		isNil { ["ended", true] call A3A_fnc_writebackSaveVar };
-		["end1",true,true,true,true] remoteExec ["BIS_fnc_endMission",0];
-	};
-
-	private _victoryZones = airportsX + milbases + outposts + resourcesX + factories + seaports;
-	if ( (totalVictory isEqualTo true) && { (_popReb > _popGov) } && { ( {sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (_victoryZones) ) isEqualTo count (_victoryZones) } ) then {
-		isNil { ["ended", true] call A3A_fnc_writebackSaveVar };
-		["end1",true,true,true,true] remoteExec ["BIS_fnc_endMission",0];
+	if (lossCondition isNotEqualTo 1) then {
+		call A3A_fnc_checkLossCondition;
 	};
 
 	{

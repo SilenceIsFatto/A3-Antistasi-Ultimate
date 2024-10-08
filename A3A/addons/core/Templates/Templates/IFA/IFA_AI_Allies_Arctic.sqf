@@ -50,6 +50,7 @@ if (isClass (configFile >> "CfgPatches" >> "FA_WW2_Tanks")) then {
 ["vehiclesAmphibious", []] call _fnc_saveToTemplate;
 
 private _vehiclesPlanesCAS = ["LIB_P47"];
+private _vehiclesPlanesLargeCAS = [];
 private _vehiclesPlanesAA = ["LIB_US_P39","LIB_RAF_P39"];
 ["vehiclesPlanesTransport", ["LIB_C47_Skytrain","LIB_C47_RAF"]] call _fnc_saveToTemplate;
 
@@ -58,7 +59,14 @@ if (isClass (configFile >> "CfgPatches" >> "sab_flyinglegends")) then {
 	_vehiclesPlanesAA = ["sab_fl_hurricane","sab_fl_spitfire_mk1","sab_fl_spitfire_mk5","sab_fl_spitfire_mkxiv","sab_fl_p51d","sab_fl_p51b"];
 };
 
+if (isClass (configFile >> "CfgPatches" >> "sab_sw_i16")) then {
+    _vehiclesPlanesCAS append ["sab_sw_tbf","sab_sw_p40"];
+	_vehiclesPlanesLargeCAS append ["sab_sw_a26","sab_sw_halifax"];
+	_vehiclesPlanesAA append ["sab_sw_p40","sab_sw_p38"];
+};
+
 ["vehiclesPlanesCAS", _vehiclesPlanesCAS] call _fnc_saveToTemplate;
+["vehiclesPlanesLargeCAS", _vehiclesPlanesLargeCAS] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", _vehiclesPlanesAA] call _fnc_saveToTemplate;
 
 ["vehiclesHelisLight", []] call _fnc_saveToTemplate;

@@ -5,8 +5,9 @@ params ["_unit","_part","_damage","_injurer","_projectile","_hitIndex","_instiga
 // Functionality unrelated to Antistasi revive
 if (side group _injurer == teamPlayer) then
 {
+	private _randomNumber = [1,100] call BIS_fnc_randomNum;
 	// Helmet popping: use _hitpoint rather than _part to work around ACE calling its fake hitpoint "head"
-	if (_damage >= 1 && {_hitPoint == "hithead"}) then 
+	if (_damage >= 1 && {_hitPoint == "hithead"} && {helmetLossChance >= _randomNumber}) then
 	{
 		if (headgear _unit isNotEqualTo "") then 
 		{

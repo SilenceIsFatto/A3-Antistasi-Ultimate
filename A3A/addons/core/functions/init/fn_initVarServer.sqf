@@ -151,7 +151,7 @@ A3A_recentDamageInv = [];
 // Balance params updated by aggressionUpdateLoop
 A3A_balancePlayerScale = 1;					// Important due to load/save scaling to 1 playerScale
 A3A_balanceVehicleCost = 110;
-A3A_balanceResourceRate = A3A_balancePlayerScale * A3A_balanceVehicleCost;
+A3A_balanceResourceRate = A3A_balancePlayerScale * ([A3A_balanceVehicleCost, 140] select (gameMode == 1));
 
 // Current resources, overwritten by saved game
 A3A_resourcesDefenceOcc = A3A_balanceResourceRate * 3;													// 30% of max
@@ -538,11 +538,11 @@ private _vehicleResourceCosts = createHashMap;
 { _vehicleResourceCosts set [_x, 70] } forEach FactionGet(all, "vehiclesHelisLight");
 { _vehicleResourceCosts set [_x, 100] } forEach FactionGet(all, "vehiclesHelisTransport");
 { _vehicleResourceCosts set [_x, 130] } forEach FactionGet(all, "vehiclesHelisLightAttack") + FactionGet(all, "vehiclesPlanesTransport");
-{ _vehicleResourceCosts set [_x, 150] } forEach FactionGet(all, "vehiclesDropPod");
+{ _vehicleResourceCosts set [_x, 150] } forEach FactionGet(all, "vehiclesDropPod") + FactionGet(all, "uavsAttack");
 { _vehicleResourceCosts set [_x, 250] } forEach FactionGet(all, "vehiclesPlanesCAS") + FactionGet(all, "vehiclesPlanesAA");
 { _vehicleResourceCosts set [_x, 250] } forEach FactionGet(all, "vehiclesHelisAttack");
-{ _vehicleResourceCosts set [_x, 250] } forEach FactionGet(all, "vehiclesPlanesLargeCAS") + FactionGet(all, "vehiclesPlanesLargeAA") + FactionGet(all, "vehiclesPlanesGunship");
-
+{ _vehicleResourceCosts set [_x, 275] } forEach FactionGet(all, "vehiclesPlanesGunship");
+{ _vehicleResourceCosts set [_x, 250] } forEach FactionGet(all, "vehiclesPlanesLargeCAS") + FactionGet(all, "vehiclesPlanesLargeAA");
 
 // Threat table
 private _groundVehicleThreat = createHashMap;

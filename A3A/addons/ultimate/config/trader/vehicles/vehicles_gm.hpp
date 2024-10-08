@@ -50,8 +50,8 @@ class vehicles_gm : vehicles_base
     ITEM(gm_gc_army_ural375d_mlrs_noinsignia, 54900, "ARTILLERY", VEHICLE_CONDITION_ARTILLERY);
     ITEM(gm_gc_army_2s1_noinsignia, 40260, "ARTILLERY", VEHICLE_CONDITION_ARTILLERY);
     ITEM(gm_gc_army_2p16_noinsignia, 198000, "ARTILLERY", VEHICLE_CONDITION_ARTILLERY);
-    ITEM(gm_pl_army_2p16_noinsignia, 198000, "ARTILLERY", VEHICLE_CONDITION_ARTILLERY);
-    ITEM(gm_pl_army_2s1_noinsignia, 40260, "ARTILLERY", VEHICLE_CONDITION_ARTILLERY);
+    ITEM(gm_pl_army_2p16, 198000, "ARTILLERY", VEHICLE_CONDITION_ARTILLERY);
+    ITEM(gm_pl_army_2s1, 40260, "ARTILLERY", VEHICLE_CONDITION_ARTILLERY);
     ITEM(gm_pl_army_ural375d_mlrs, 60390, "ARTILLERY", VEHICLE_CONDITION_ARTILLERY);
     ITEM(gm_ge_army_ch53g_noinsignia, 11400, "HELI", VEHICLE_CONDITION_HELI);
     ITEM(gm_ge_army_ch53gs_noinsignia, 11400, "HELI", VEHICLE_CONDITION_HELI);
@@ -87,10 +87,10 @@ class vehicles_gm : vehicles_base
     ITEM(gm_ge_army_Leopard1a1a2_noinsignia, 43700, "TANK", VEHICLE_CONDITION_TANK);
     ITEM(gm_ge_army_Leopard1a3a1_noinsignia, 43700, "TANK", VEHICLE_CONDITION_TANK);
     ITEM(gm_ge_army_Leopard1a5_noinsignia, 46700, "TANK", VEHICLE_CONDITION_TANK);
-    ITEM(gm_pl_army_pt76b_noinsignia, 19800, "TANK", VEHICLE_CONDITION_TANK);
-    ITEM(gm_pl_army_t55_noinsignia, 40200, "TANK", VEHICLE_CONDITION_TANK);
-    ITEM(gm_pl_army_t55a_noinsignia, 43500, "TANK", VEHICLE_CONDITION_TANK);
-    ITEM(gm_pl_army_t55ak_noinsignia, 43500, "TANK", VEHICLE_CONDITION_TANK);
+    ITEM(gm_pl_army_pt76b, 19800, "TANK", VEHICLE_CONDITION_TANK);
+    ITEM(gm_pl_army_t55, 40200, "TANK", VEHICLE_CONDITION_TANK);
+    ITEM(gm_pl_army_t55a, 43500, "TANK", VEHICLE_CONDITION_TANK);
+    ITEM(gm_pl_army_t55ak, 43500, "TANK", VEHICLE_CONDITION_TANK);
     ITEM(gm_gc_army_t55am2_noinsignia, 46500, "TANK", VEHICLE_CONDITION_TANK);
     ITEM(gm_gc_army_t55am2b_noinsignia, 46500, "TANK", VEHICLE_CONDITION_TANK);
     ITEM(gm_ge_army_u1300l_medic, 7900, "UNARMEDCAR", VEHICLE_CONDITION_UNARMEDCAR);

@@ -121,4 +121,9 @@
             <French>Dismemberment</French>
         </Key>
     </Package>
+    <Package name="ported">
+        <Key ID="STR_A3A_fn_support_showIntStpCll_TANK">
+            <Original>%1 just sent a tank platoon.</Original>
+        </Key>
+    </Package>
 </Project>

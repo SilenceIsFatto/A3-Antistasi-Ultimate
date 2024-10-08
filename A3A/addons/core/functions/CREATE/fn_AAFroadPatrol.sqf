@@ -39,9 +39,9 @@ switch (true) do {
 
 	case (_base in milbases): {
 		if (random 10 < tierWar + aggressionOccupants/10) then {
-			_typeCar = selectRandom ((_faction get "vehiclesLightArmed") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs"));
+			_typeCar = selectRandom ((_faction get "vehiclesLightArmed") + (_faction get "vehiclesAPCs") + (_faction get "vehiclesIFVs") + (_faction get "vehiclesLightTanks"));
 		} else {
-			_typeCar = selectRandom ((_faction get "vehiclesLightArmed") + (_faction get "vehiclesLightTanks") + (_faction get "vehiclesLightAPCs"));
+			_typeCar = selectRandom ((_faction get "vehiclesLightArmed") + (_faction get "vehiclesLightAPCs") + (_faction get "vehiclesMilitiaAPCs"));
 		};
 	};
 
@@ -50,7 +50,7 @@ switch (true) do {
 			_typeCar = selectRandom (_faction get "vehiclesHelisLight");
 			_typePatrol = "AIR";
 		} else {
-			_typeCar = selectRandom (_faction get "vehiclesMilitiaLightArmed");	
+			_typeCar = selectRandom ((_faction get "vehiclesMilitiaLightArmed") + (_faction get "vehiclesMilitiaCars"));	
 		};
 	};
 
@@ -58,7 +58,7 @@ switch (true) do {
 		if (_sideX isEqualTo Invaders || {random 10 < tierWar + aggressionOccupants/10}) then {
 			_typeCar = selectRandom ((_faction get "vehiclesLightArmed") + (_faction get "vehiclesLightUnarmed"));
 		} else {
-			_typeCar = selectRandom ((_faction get "vehiclesPolice") + (_faction get "vehiclesMilitiaLightArmed"));
+			_typeCar = selectRandom ((_faction get "vehiclesPolice") + (_faction get "vehiclesMilitiaLightArmed") + (_faction get "vehiclesMilitiaCars") + (_faction get "vehiclesBasic"));
 		};
 	};
 };

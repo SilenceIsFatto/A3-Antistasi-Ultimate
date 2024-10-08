@@ -57,6 +57,12 @@ if (isClass (configFile >> "CfgPatches" >> "sab_flyinglegends")) then {
 	_vehiclesPlanesTransport = ["sab_fl_ju52"];
 };
 
+if (isClass (configFile >> "CfgPatches" >> "sab_sw_i16")) then {
+    _vehiclesPlanesCAS append ["sab_sw_bf110"];
+	_vehiclesPlanesLargeCAS append ["sab_sw_he111","sab_sw_he177"];
+	_vehiclesPlanesAA append ["sab_sw_me262","sab_sw_bf110"];
+};
+
 ["vehiclesPlanesCAS", _vehiclesPlanesCAS] call _fnc_saveToTemplate;
 ["vehiclesPlanesLargeCAS", _vehiclesPlanesLargeCAS] call _fnc_saveToTemplate;
 ["vehiclesPlanesAA", _vehiclesPlanesAA] call _fnc_saveToTemplate;

@@ -120,6 +120,7 @@ switch (true) do
     case (_strikePlane isKindOf "ls_hmp_base"): {_strikePlane flyInHeight 500;};
     case (_strikePlane isKindOf "3AS_HMP_Base"): {_strikePlane flyInHeight 500;};
     case (_strikePlane isKindOf "3AS_laat_Base"): {_strikePlane flyInHeight 500;};
+    case (_strikePlane isKindOf "UK3CB_AC47_Base"): {_strikePlane flyInHeight 500;};
 	default {_strikePlane flyInHeight 600;};
 };
 private _entryPos = _spawnPos getPos [_lenght, _startDir + _angle];
@@ -150,6 +151,7 @@ switch (true) do
     case (_strikePlane isKindOf "ls_hmp_base"): {_loiterWP setWaypointLoiterRadius 700;};
     case (_strikePlane isKindOf "3AS_HMP_Base"): {_loiterWP setWaypointLoiterRadius 700;};
     case (_strikePlane isKindOf "3AS_laat_Base"): {_loiterWP setWaypointLoiterRadius 700;};
+    case (_strikePlane isKindOf "UK3CB_AC47_Base"): {_loiterWP setWaypointLoiterRadius 700;};
 	default {_loiterWP setWaypointLoiterRadius 800;};
 };
 _strikePlane setDir (_startDir + _angle);

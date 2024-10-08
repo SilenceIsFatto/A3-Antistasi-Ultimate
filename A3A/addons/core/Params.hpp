@@ -38,8 +38,8 @@ class Params
     class limitedFT
     {
         title = $STR_params_allowFT;
-        values[] = {0,1,2};
-        texts[] = {$STR_params_allowFT_0, $STR_params_allowFT_1,$STR_params_civ_traffic_none};
+        values[] = {0,1,2,3};
+        texts[] = {$STR_params_allowFT_0, $STR_params_allowFT_1, $STR_params_allowFT_2, $STR_params_civ_traffic_none};
         default = 0;
     };
     class civTraffic
@@ -112,6 +112,13 @@ class Params
         texts[] = {"0","8","16","24","32","50"};
         default = 8;
     };
+    class limitHR
+    {
+        title = $STR_params_enable_HR_cap;
+        values[] = {0,25,50,75,100,200};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,"x0.25","x0.5","x0.75","x1.0","x2.0"};
+        default = 0;
+    };
     class A3A_idleTimeout
     {
         title = $STR_params_afk;
@@ -162,11 +169,53 @@ class Params
         texts[] = {""};
         default = "";
     };
+    class totalVictory //deprecated Dont Use
+    {
+        title = $STR_A3AU_total_victory_deprecated;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
+    };
+    class victoryCondition
+    {
+        title = $STR_A3AU_victory_condition;
+        values[] = {0,1,2,3,4};
+        texts[] = {$STR_A3AU_normal_victory,$STR_A3AU_total_victory,$STR_A3AU_economic_victory,$STR_A3AU_logistical_victory,$STR_A3AU_political_victory};
+        default = 0;
+    };
+    class lossCondition
+    {
+        title = $STR_A3AU_loss_condition;
+        values[] = {0,1,2,3};
+        texts[] = {$STR_A3AU_loss_condition_pop_death,$STR_A3AU_loss_condition_hr,$STR_A3AU_loss_condition_money,$STR_A3AU_loss_condition_all};
+        default = 0;
+    };
+    class loseHROnDeath
+    {
+        title = $STR_A3AU_hr_loss;
+        values[] = {0,1,2};
+        texts[] = {$STR_A3AU_no_hr_loss,$STR_A3AU_yes_hr_loss,$STR_A3AU_yes_hr_loss_w_msg};
+        default = 0;
+    };
     class cosmeticsEnabled
     {
         title = $STR_A3AU_cosmetics;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 1;
+    };
+    class playerRecruitAI
+    {
+        title = $STR_params_playerRecruitAI;
+        values[] = {1,0};
+        texts[] = {$STR_params_afk_enabled, $STR_params_afk_disabled};
+        default = 1;
+    };
+    class enablePunishments
+    {
+        title = $STR_params_enablePunishments;
+        values[] = {1,0};
+        texts[] = {$STR_params_afk_enabled, $STR_params_afk_disabled};
         default = 1;
     };
     class zombiesUncapped
@@ -211,13 +260,6 @@ class Params
         texts[] = {"100", "300", "500", "1000", "1500", "2000"};
         default = 500;
     };
-    class totalVictory
-    {
-        title = $STR_A3AU_total_victory;
-        values[] = {0,1};
-        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 0;
-    };
     class blackMarketIgnoreRequirements
     {
         title = $STR_A3AU_blackmarket_ignore_requirements;
@@ -228,6 +270,13 @@ class Params
     class useDownedNotification
     {
         title = $STR_A3AU_use_downed_notification;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
+    };
+    class disableTrader
+    {
+        title = $STR_A3AU_disable_trader;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
@@ -249,9 +298,9 @@ class Params
     class swayEnabled
     {
         title = $STR_A3AU_sway_enabled;
-        values[] = {0,0.25,0.5,0.75,1};
+        values[] = {0,25,50,75,100};
         texts[] = {"0%","25%","50%","75%","100%"};
-        default = 1;
+        default = 100;
     };
 
     class Spacer60
@@ -320,8 +369,8 @@ class Params
     class settingsTimeMultiplier
     {
         title = $STR_params_timeMultiplier;
-        values[] = {1, 4, 6, 8, 12, 24};
-        texts[] = {$STR_params_timeMultiplier_0, $STR_params_timeMultiplier_1, $STR_params_timeMultiplier_2,$STR_params_timeMultiplier_3,$STR_params_timeMultiplier_4,$STR_params_timeMultiplier_5};
+        values[] = {1, 2, 3, 4, 6, 8, 12, 24};
+        texts[] = {$STR_params_timeMultiplier_0, $STR_params_timeMultiplier_1, $STR_params_timeMultiplier_2,$STR_params_timeMultiplier_3,$STR_params_timeMultiplier_4,$STR_params_timeMultiplier_5,$STR_params_timeMultiplier_6,$STR_params_timeMultiplier_7};
         default = 1;
     };
     class unflipPersonCount
@@ -341,8 +390,8 @@ class Params
     class rallyPointSpawnCount
     {
         title = $STR_params_rallyPointSpawnCount;
-        values[] = {3, 5, 10, 15, 20, 30};
-        texts[] = {"3", "5", "10", "15", "20","30"};
+        values[] = {3, 5, 10, 15, 20, 30, 0};
+        texts[] = {"3", "5", "10", "15", "20", "30", $STR_params_afk_disabled};
         default = 10;
     };
     class aiControlTime
@@ -475,6 +524,14 @@ class Params
         texts[] =  {"1.0x","1.1x","1.2x","1.3x","1.4x","1.5x","1.6x","1.7x","1.8x","1.9x","2.0x"};
         default = 12;
     };
+    class A3A_enemyResponseTime
+    {
+        attr[] = {"server"};
+        title = $STR_A3A_Params_enemyResponseTime_title;
+        values[] = {20,15,10,7,5};
+        texts[] =  {$STR_A3A_Params_generic_veryslow, $STR_A3A_Params_generic_slow, $STR_A3A_Params_generic_normal, $STR_A3A_Params_generic_fast, $STR_A3A_Params_generic_veryfast};
+        default = 10;
+    };
     class A3A_attackHQProximityMul
     {
         attr[] = {"server"};
@@ -534,6 +591,14 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
     };
+    class allowFuturisticUnfairSupports
+    {
+        attr[] = {"server"};
+        title = $STR_params_allowFuturisticUnfairSupports;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
+    };
     class A3A_rebelGarrisonLimit
     {
         title = $STR_params_rebelGarrisonLimit;
@@ -585,7 +650,6 @@ class Params
         values[] = {1,0};
         texts[] = {$STR_antistasi_dialogs_generic_button_yes_text, $STR_antistasi_dialogs_generic_button_no_text};
         default = 1;
-
     };
     class allowUnlockedExplosives
     {
@@ -594,7 +658,6 @@ class Params
         values[] = {1,0};
         texts[] = {$STR_antistasi_dialogs_generic_button_yes_text,$STR_antistasi_dialogs_generic_button_no_text};
         default = 0;
-
     };
     class startWithLongRangeRadio
     {

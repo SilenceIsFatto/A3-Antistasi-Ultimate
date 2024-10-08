@@ -74,6 +74,9 @@ class cfgHALsStore
 		#include "config\fow.hpp"
 		#include "config\eaw.hpp"
 		#include "config\cwr.hpp"
+		#include "config\ffp.hpp"
+		#include "config\ProjInfAD.hpp"
+		#include "config\JCAArsenal.hpp"
 	};
 
 	class stores 
@@ -484,6 +487,7 @@ class cfgHALsStore
 				"muzzlesspe",
 				"magazinesspe", 
 				"specialweaponsspe",
+				"pointersspe",
 				"navigationspe",
 				"miscspe",
 				"underbarrelspe",
@@ -827,6 +831,61 @@ class cfgHALsStore
 				"launcherMagazinesCWR", 
 				"magazinesCWR", 
 				"opticsCWR"
+			};
+		};
+		class ffpstock		
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsffp", 
+				"mgffp", 
+				"riflesffp", 
+				"sniperriflesffp",
+				"launchersffp", 
+				"launchermagazinesffp",
+				"magazinesffp", 
+				"opticsffp"
+		class hafmstock		
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsHAFM", 
+				"smgHAFM", 
+				"mgHAFM", 
+				"riflesHAFM",
+				"sniperriflesHAFM", 
+				"launchersHAFM", 
+				"launchermagazinesHAFM", 
+				"muzzlesHAFM", 
+				"magazinesHAFM", 
+				"pointersHAFM",
+				"specialweaponsHAFM",
+				"opticsHAFM",
+				"underbarrelHAFM"
+		class projinf_stock
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsProjInfAD",
+				"riflesProjInfAD", 
+				"sniperRiflesProjInfAD",
+				"muzzlesProjInfAD",
+				"opticsProjInfAD",
+				"magazinesProjInfAD",
+				"underbarrelProjInfAD"
+		class jca_stock
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsJCA",
+				"riflesJCA", 
+				"sniperRiflesJCA", 
+				"smgJCA",
+				"underbarrelJCA",
+				"pointersJCA",
+				"muzzlesJCA",
+				"opticsJCA",
+				"magazinesJCA"
 			};
 		};
 	};

@@ -94,7 +94,7 @@ private _dlcUniforms = [];
 
 ["faces", ["LIB_aleksei_IF","LIB_boyartsev_IF","LIB_bykov_IF",
 "LIB_Otto_IF","LIB_Volker_IF", "LIB_Walter_IF", "LIB_Wolf_IF"]] call _fnc_saveToTemplate;
-["voices", ["Male01PL", "Male02PL", "Male03PL"]] call _fnc_saveToTemplate;
+["voices", ["Male01CZ", "Male02CZ", "Male03CZ", "Male04CZ", "Male05CZ"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //

@@ -22,7 +22,7 @@
 FIX_LINE_NUMBERS()
 params ["_side", "_vehicle"];
 
-private _sideIndex = [west, east, independent, civilian] find _side;
+private _sideIndex = [west, east, independent, civilian, opfor] find _side; //opfor
 private _typeX = typeOf _vehicle;
 
 A3A_vehClassToCrew getOrDefault [_typeX,
@@ -30,6 +30,7 @@ A3A_vehClassToCrew getOrDefault [_typeX,
         FactionGetTiered(occ,"unitRifle"), 
         FactionGetTiered(inv,"unitRifle"), 
         FactionGet(reb,"unitCrew"), 
-        FactionGet(civ,"unitMan")///"C_Man_1"
+        FactionGet(civ,"unitMan"),///"C_Man_1"
+        FactionGet(riv,"unitCrew")
     ]
 ] select _sideIndex;
