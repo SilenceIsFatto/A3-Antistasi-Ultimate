@@ -995,6 +995,6 @@ class planeLoadouts
             loadout[] = {"FIR_AIM120_P_1rnd_M","FIR_AIM9X_P_1rnd_M","FIR_AIM120_P_1rnd_M","","","FIR_Empty_P_1rnd_M","","FIR_AIM120_P_1rnd_M","FIR_AIM9X_P_1rnd_M","FIR_AIM120_P_1rnd_M"};
             mainGun = "FIR_M61A2";
             missileLauncher[] = {"FIR_AIM120","FIR_AIM9X"};
-        }
+        };
     };
 };
