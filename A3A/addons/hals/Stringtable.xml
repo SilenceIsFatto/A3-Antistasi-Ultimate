@@ -861,6 +861,13 @@
                 <Korean>Cold War ReArmed</Korean>
                 <French>Cold War ReArmed</French>
             </Key>
+            <Key ID="STR_A3AU_ffp">
+                <Original>FFP</Original>
+                <English>FFP</English>
+                <Russian>FFP</Russian>
+                <Korean>FFP</Korean>
+                <French>FFP</French>
+            </Key>
             <Key ID="STR_A3AU_hafm">
                 <Original>HAFM</Original>
                 <English>HAFM</English>

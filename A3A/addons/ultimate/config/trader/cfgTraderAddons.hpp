@@ -262,6 +262,16 @@
         addons[] = {"sab_navallegends"};
         vehicles = "vehicles_navleg";
     };
+    class addons_ffp : addons_base
+    {
+        addons[] = {"Finnish_Forces_Pack"};
+        weapons = "weapons_ffp";
+        vehicles = "vehicles_ffp";
+    };
+    class addons_ffpxa185 : addons_base
+    {
+        addons[] = {"XA_185"};
+        vehicles = "vehicles_ffpxa185";
     class addons_hafm : addons_base
     {
         addons[] = {"HAFM_Acc"};
