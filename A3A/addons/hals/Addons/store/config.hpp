@@ -415,21 +415,21 @@ class cfgHALsStore
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
 			categories[] = {
-			"handgunsCup", 
-			"launchersCup", 
-			"riflesCup", 
-			"sniperRiflesCup",
-			"specialWeaponsCup", 
-			"mgCup", 
-			"smgCup", 
-			"launcherMagazinesCup", 
-			"magazinesCup", 
-			"opticsCup", 
-			"muzzlesCup", 
-			"underbarrelCup", 
-			"pointersCup", 
-			"navigationCup", 
-			"miscCup"
+				"handgunsCup", 
+				"launchersCup", 
+				"riflesCup", 
+				"sniperRiflesCup",
+				"specialWeaponsCup", 
+				"mgCup", 
+				"smgCup", 
+				"launcherMagazinesCup", 
+				"magazinesCup", 
+				"opticsCup", 
+				"muzzlesCup", 
+				"underbarrelCup", 
+				"pointersCup", 
+				"navigationCup", 
+				"miscCup"
 			};
 		};
 
@@ -845,6 +845,8 @@ class cfgHALsStore
 				"launchermagazinesffp",
 				"magazinesffp", 
 				"opticsffp"
+			};
+		};
 		class hafmstock		
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -862,6 +864,8 @@ class cfgHALsStore
 				"specialweaponsHAFM",
 				"opticsHAFM",
 				"underbarrelHAFM"
+			};
+		};
 		class projinf_stock
 		{
 			displayName = $STR_ARMS_DEALER_STORE;
@@ -873,6 +877,8 @@ class cfgHALsStore
 				"opticsProjInfAD",
 				"magazinesProjInfAD",
 				"underbarrelProjInfAD"
+			};
+		};
 		class jca_stock
 		{
 			displayName = $STR_ARMS_DEALER_STORE;

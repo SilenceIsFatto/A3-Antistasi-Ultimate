@@ -278,6 +278,7 @@
         flagTexture = "\A3\ui_f\data\map\markers\flags\Greece_ca.paa";
         name = "CUP HAFM";
         file = "CUP_AI_HAFM";
+    };
     class CUP_NorAF_Temperate : NorAF_Base
     {
         side = "Occ";

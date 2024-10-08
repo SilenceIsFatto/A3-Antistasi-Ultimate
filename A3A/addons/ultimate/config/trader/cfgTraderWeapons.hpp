@@ -145,12 +145,15 @@
         class weapons_ffp : weapons_base
         {
             prefix = "ffpstock";
+        };
         class weapons_hafm : weapons_base
         {
             prefix = "hafmstock";
+        };
         class weapons_projinf : weapons_base
         {
             prefix = "projinf_stock"
+        };
         class weapons_jca : weapons_base
         {
             prefix = "jca_stock"
