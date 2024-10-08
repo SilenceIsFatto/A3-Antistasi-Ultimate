@@ -478,11 +478,11 @@ _militiaLoadoutData set ["rifles", [
     ["CUP_arifle_AK74M_top_rail", "", "", "", ["CUP_30Rnd_545x39_AK74M_M"], [], ""]
 ]];
 _militiaLoadoutData set ["carbines", [
-    ["CUP_arifle_M16A2", "", "", "", ["CUP_30Rnd_556x45_G36"], [], ""],
+    ["CUP_arifle_M16A2", "", "", "", ["CUP_30Rnd_556x45_Stanag"], [], ""],
 	["CUP_arifle_AUG_A1", "", "", "", ["CUP_30Rnd_556x45_AUG"], [], ""]
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
-    ["CUP_arifle_M16A2_GL", "", "", "", ["CUP_30Rnd_556x45_G36"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HEDP_M203", "CUP_1Rnd_Smoke_M203"], ""]
+    ["CUP_arifle_M16A2_GL", "", "", "", ["CUP_30Rnd_556x45_Stanag"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_HEDP_M203", "CUP_1Rnd_Smoke_M203"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
     ["CUP_smg_MP5A5", "", "", "CUP_optic_MicroT1", ["CUP_30Rnd_9x19_MP5"], [], ""]
