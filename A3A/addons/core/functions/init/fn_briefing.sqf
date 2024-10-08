@@ -107,10 +107,29 @@ switch (gameMode) do {
 	};
 };
 
-
+switch (victoryCondition) do
+{
+	case 0: {
+		player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_2"],format [localize "STR_antistasi_journal_entry_text_Default_2"]]];
+	};
+	case 1: {
+		player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_2"],format [localize "STR_antistasi_journal_entry_text_Default_total"]]];
+	};
+	case 2: {
+		player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_2"],format [localize "STR_antistasi_journal_entry_text_Default_economic"]]];
+	};
+	case 3: {
+		player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_2"],format [localize "STR_antistasi_journal_entry_text_Default_logistical"]]];
+	};
+	case 3: {
+		player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_2"],format [localize "STR_antistasi_journal_entry_text_Default_political"]]];
+	};
+	
+	default {diag_log format["Victory condition was not recognized. Condition given: %1", victoryCondition]};
+};
 // Default Welcome stuff.
 player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_3"],format [localize "STR_antistasi_journal_entry_text_Default_3",_nameInv]]];
-player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_2"],format [localize "STR_antistasi_journal_entry_text_Default_2"]]];
+
 
 player createDiaryRecord ["Diary",[format [localize "STR_antistasi_journal_entry_header_Default_1"],format [localize "STR_antistasi_journal_entry_text_Default_1",(call SCRT_fnc_misc_getMissionTitle)]]];
 

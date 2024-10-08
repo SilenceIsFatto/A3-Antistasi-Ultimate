@@ -504,7 +504,10 @@ boxX addAction [format ["<img image='\a3\ui_f\data\igui\cfg\simpletasks\types\co
 boxX addAction [localize "STR_antistasi_actions_move_this_asset", A3A_fnc_moveHQObject,nil,0,false,true,"","(_this == theBoss)", 4];
 if (A3A_hasACE) then { [boxX, boxX] call ace_common_fnc_claim;};	//Disables ALL Ace Interactions
 flagX allowDamage false;
-flagX addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_recruit_units"], {if ([getPosATL player] call A3A_fnc_enemyNearCheck) then {["Recruit Unit", "You cannot recruit units while there are enemies near you."] call A3A_fnc_customHint;} else { [] spawn A3A_fnc_unit_recruit; }},nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (side (group _this) == teamPlayer)"];
+if(playerRecruitAI isEqualTo 1) then 
+{
+    flagX addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\meet_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_recruit_units"], {if ([getPosATL player] call A3A_fnc_enemyNearCheck) then {["Recruit Unit", "You cannot recruit units while there are enemies near you."] call A3A_fnc_customHint;} else { [] spawn A3A_fnc_unit_recruit; }},nil,0,false,true,"","(isPlayer _this) and (_this == _this getVariable ['owner',objNull]) and (side (group _this) == teamPlayer)"];
+};
 flagX addAction [format ["<img image='\A3\ui_f\data\igui\cfg\simpleTasks\types\run_ca.paa' size='1.6' shadow=2 /> <t>%1</t>", localize "STR_antistasi_actions_rally_point_travel"], {[] spawn SCRT_fnc_rally_travelToRallyPoint},nil,0,false,true,"","(isPlayer _this) && (_this == _this getVariable ['owner',objNull]) && (side (group _this) == teamPlayer) && (!isNil 'isRallyPointPlaced' && {isRallyPointPlaced})",4];
 flagX addAction [localize "STR_antistasi_actions_move_this_asset", A3A_fnc_moveHQObject,nil,0,false,true,"","(_this == theBoss)", 4];
 
@@ -662,4 +665,5 @@ if (staminaEnabled isEqualTo false) then {
 	player enableStamina false; 
 }; 
 
-player setCustomAimCoef swayEnabled;
+private _newWeaponSway = swayEnabled / 100;
+player setCustomAimCoef _newWeaponSway;

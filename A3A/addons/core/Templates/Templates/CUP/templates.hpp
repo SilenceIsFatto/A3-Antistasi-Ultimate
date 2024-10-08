@@ -244,3 +244,18 @@
         file = "CUP_Reb_LRI";
         description = $STR_A3AP_setupFactionsTab_CUP_LRI;
     };
+	
+    class LDF_Base : CUP_Base
+    {
+        requiredAddons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core", "Flex_CUP_LDF_Faction"};        // units, weapons, vehicles
+        //requiredAddons[] = {"CUP_AirVehicles_Core"};        // vehicles requires units & weapons
+        priority = 61;
+    };
+	
+    class CUP_LDF : LDF_Base
+    {
+        side = "Occ";
+        flagTexture = "a3\data_f_enoch\flags\flag_enoch_co.paa";
+        name = "CUP LDF";
+        file = "CUP_AI_LDF";
+    };

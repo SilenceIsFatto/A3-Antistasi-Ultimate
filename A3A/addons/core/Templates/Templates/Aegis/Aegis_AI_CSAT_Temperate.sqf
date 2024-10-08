@@ -21,6 +21,8 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //       Vehicles       //
 //////////////////////////
 
+["vehiclesDropPod", ["Land_Pod_Heli_Transport_04_covered_F"]] call _fnc_saveToTemplate;
+
 ["ammobox", "O_T_supplyCrate_F"] call _fnc_saveToTemplate;     
 ["surrenderCrate", "Box_T_East_Wps_F"] call _fnc_saveToTemplate; 
 ["equipmentBox", "Box_T_CSAT_Equip_F"] call _fnc_saveToTemplate; 
@@ -156,6 +158,7 @@ if (_hasWs) then {
 ]] call _fnc_saveToTemplate;
 
 ["variants", [
+    ["Land_Pod_Heli_Transport_04_covered_F", ["Black",1]],
     ["O_R_APC_Wheeled_04_cannon_ard_F", ["GreenHex",1]],
     ["O_Heli_Light_02_unarmed_F", ["WoodlandHex",1]],
     ["O_Heli_Light_02_dynamicLoadout_F", ["WoodlandHex",1]]

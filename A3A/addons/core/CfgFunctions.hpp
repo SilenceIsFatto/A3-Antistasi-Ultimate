@@ -35,6 +35,7 @@ class CfgFunctions
             class guardDog {};
             class hasRadio {};
             class HeliDoors {};
+            class PodsDoors {};
             class help {};
             class hideInBuilding {};
             class inmuneConvoy {};
@@ -50,6 +51,8 @@ class CfgFunctions
             class napalmDamage {};
             class napalmParticles {};
             class nearEnemy {};
+            class orbitalLanding {};
+            class orbitalLandingSinglePod {};
             class paradrop {};
             class rearmCall {};
             class recallGroup {};
@@ -182,6 +185,8 @@ class CfgFunctions
             class unlockVehicle {};
             class updateRebelStatics {};
             class zoneCheck {};
+            class checkWinCondition {};
+            class checkLossCondition {};
         };
 
         class Builder {
@@ -243,7 +248,9 @@ class CfgFunctions
             class createAttackForceAir {};
             class createAttackForceLand {};
             class createAttackForceMixed {};
+            class createAttackForceOrbital {};
             class createAttackVehicle {};
+            class createAttackVehicleOrbital {};
             class createSDKGarrisons {};
             class createSDKgarrisonsTemp {};
             class createUnit {};
@@ -440,6 +447,7 @@ class CfgFunctions
             class addScorePlayer {};
             class addMoneyPlayer {};
             class donateMoney {};
+            class donateMoneyPercentage {};
             class isMember {};
             class makePlayerBossIfEligible {};
             class memberAdd {};
@@ -637,6 +645,7 @@ class CfgFunctions
             class SUP_gunshipRoutinePelican {};
             class SUP_gunshipRoutineStarWarsHMP {};
             class SUP_gunshipRoutineStarWarsLAAT {};
+            class SUP_gunshipRoutine3CBAC47 {};
             class SUP_gunshipSpawn {};
             class SUP_mortar {};
             class SUP_mortarAvailable {};
@@ -650,6 +659,8 @@ class CfgFunctions
             class SUP_QRFAirAvailable {};
             class SUP_QRFLand {};
             class SUP_QRFLandAvailable {};
+            class SUP_QRFOrbital {};
+            class SUP_QRFOrbitalAvailable {};
             class SUP_QRFRoutine {};
             class SUP_SAM {};
             class SUP_SAMAvailable {};

@@ -12,10 +12,10 @@
 
 ["vehiclesBasic", ["CUP_C_TT650_TK_CIV"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["a3u_cup_uaz_unarmed_convertible_1", "a3u_cup_uaz_unarmed_convertible_2", "CUP_B_UAZ_Open_CDF", "CUP_O_Hilux_unarmed_CHDKZ"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["CUP_B_UAZ_MG_CDF", "CUP_O_Hilux_DSHKM_CHDKZ", "CUP_O_Hilux_podnos_CHDKZ"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["CUP_B_UAZ_MG_CDF", "CUP_O_Hilux_DSHKM_CHDKZ"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["a3u_cup_kamaz_olive", "a3u_cup_kamaz_open_olive"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["CUP_B_UAZ_METIS_CDF", "CUP_O_Hilux_metis_CHDKZ", "CUP_O_Hilux_SPG9_CHDKZ"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["CUP_B_UAZ_SPG9_CDF", "CUP_O_Hilux_igla_CHDKZ", "CUP_O_Hilux_zu23_CHDKZ"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["CUP_O_Hilux_igla_CHDKZ", "CUP_O_Hilux_zu23_CHDKZ"]] call _fnc_saveToTemplate;
 ["vehiclesBoat", ["CUP_O_PBX_RU"]] call _fnc_saveToTemplate;
 
 ["vehiclesPlane", ["CUP_B_Su25_Dyn_CDF"]] call _fnc_saveToTemplate;       // replace from civ varient s

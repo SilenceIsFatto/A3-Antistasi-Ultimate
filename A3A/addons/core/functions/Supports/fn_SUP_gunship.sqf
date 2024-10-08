@@ -59,6 +59,7 @@ switch (true) do
     case (_planeTest isKindOf "ls_hmp_base"): {[_suppData, _side, _oppositeSide, _faction, _vehType, _resPool, _airport, _delay, _reveal] spawn A3A_fnc_SUP_gunshipRoutineStarWarsHMP;};
     case (_planeTest isKindOf "3AS_HMP_Base"): {[_suppData, _side, _oppositeSide, _faction, _vehType, _resPool, _airport, _delay, _reveal] spawn A3A_fnc_SUP_gunshipRoutineStarWarsHMP;};
     case (_planeTest isKindOf "3AS_laat_Base"): {[_suppData, _side, _oppositeSide, _faction, _vehType, _resPool, _airport, _delay, _reveal] spawn A3A_fnc_SUP_gunshipRoutineStarWarsLAAT;};
+    case (_planeTest isKindOf "UK3CB_AC47_Base"): {[_suppData, _side, _oppositeSide, _faction, _vehType, _resPool, _airport, _delay, _reveal] spawn A3A_fnc_SUP_gunshipRoutine3CBAC47;};
 	default {[_suppData, _side, _oppositeSide, _faction, _vehType, _resPool, _airport, _delay, _reveal] spawn A3A_fnc_SUP_gunshipRoutineDefault;};
 };
 

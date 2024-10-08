@@ -60,11 +60,11 @@ class green_sea
 	antennasBlacklistIndex[] = {};
 	banks[] = {}; //no suitable building available
 	garrison[] = {
-		{},{"outpost_22","outpost_24","outpost_25","outpost_26","seaport_5","milbase_2","airport_5","resource_10","resource_11","resource_12", "resource_13"},{},{}
+		{},{"outpost_22","outpost_24","outpost_25","outpost_26","seaport_5","milbase_2","airport_5","resource_10","resource_11","resource_12", "resource_13", "factory_5"},{},{}
 	};
 	fuelStationTypes[] = {"Land_A_FuelStation_Feed","Land_Ind_FuelStation_Feed_EP1","Land_FuelStation_Feed_PMC","Land_Fuelstation","Land_Fuelstation_army","Land_Benzina_schnell"};
 	milAdministrations[] = {
-		{9914.04,8561.59,0},{11489.5,15359.9,-3.8147e-006},{2493.91,11565.8,0}
+		{9914.04,8561.59,0},{11489.5,15359.9,-3.8147e-006},{2493.91,11565.8,0},{17076.549,18934.75,0}
 	};
 	climate = "temperate";
 	buildObjects[] = {

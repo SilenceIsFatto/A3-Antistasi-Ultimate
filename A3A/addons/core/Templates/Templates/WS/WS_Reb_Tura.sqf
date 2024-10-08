@@ -75,6 +75,8 @@ if (_hasRF) then {
     ["I_LT_01_AA_F", ["Indep_Olive",1]]
 ]] call _fnc_saveToTemplate;
 
+#include "WS_Reb_Vehicle_Attributes.sqf"
+
 ///////////////////////////
 //  Rebel Starting Gear  //
 ///////////////////////////

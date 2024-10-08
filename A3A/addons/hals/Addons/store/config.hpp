@@ -484,6 +484,7 @@ class cfgHALsStore
 				"muzzlesspe",
 				"magazinesspe", 
 				"specialweaponsspe",
+				"pointersspe",
 				"navigationspe",
 				"miscspe",
 				"underbarrelspe",
