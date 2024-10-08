@@ -707,7 +707,7 @@ class planeLoadouts
             loadout[] = {"CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M","PylonRack_1Rnd_Missile_AGM_02_F","","PylonRack_1Rnd_Missile_AGM_02_F","CUP_PylonPod_1Rnd_AIM_120_AMRAAM_M"};
             mainGun = "HAFM_DEFA_554_MG";
             missileLauncher[] = {"HAFM_GBU12_Launcher"};
-
+		}
         //CUP NorAF
         class Flex_CUP_NOR_F35B
         {
