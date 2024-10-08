@@ -300,7 +300,7 @@ class Params
         title = $STR_A3AU_sway_enabled;
         values[] = {0,25,50,75,100};
         texts[] = {"0%","25%","50%","75%","100%"};
-        default = 1;
+        default = 100;
     };
 
     class Spacer60
