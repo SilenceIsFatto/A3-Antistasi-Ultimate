@@ -6142,7 +6142,7 @@
             <Key ID="STR_info_bar_deployed">
                 <Original>&lt;t color='#43A047'&gt;Deployed&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#43A047'&gt;Развер-та&lt;/t&gt;</Russian>
-                <Chinesesimp>已部署</Chinesesimp>
+                <Chinesesimp>&lt;t color='#43A047'&gt;已部署&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#43A047'&gt;배치됨&lt;/t&gt;</Korean>
                 <French>&lt;t color='#43A047'&gt;Déployé&lt;/t&gt;</French>
             </Key>
@@ -6219,28 +6219,28 @@
             <Key ID="STR_info_bar_aggr_5">
                 <Original>&lt;t color='#AE1330'&gt;Extreme&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#AE1330'&gt;Экстремальная&lt;/t&gt;</Russian>
-                <Chinesesimp>草木皆兵</Chinesesimp>
+                <Chinesesimp>&lt;t color='#AE1330'&gt;草木皆兵&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#AE1330'&gt;최대&lt;/t&gt;</Korean>
                 <French>&lt;t color='#AE1330'&gt;Extrême&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_aggr_4">
                 <Original>&lt;t color='#CB5C30'&gt;Very High&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#CB5C30'&gt;Очень высокая&lt;/t&gt;</Russian>
-                <Chinesesimp>全面警戒</Chinesesimp>
+                <Chinesesimp>&lt;t color='#CB5C30'&gt;全面警戒&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#CB5C30'&gt;매우 높음&lt;/t&gt;</Korean>
                 <French>&lt;t color='#CB5C30'&gt;Très élevé&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_aggr_3">
                 <Original>&lt;t color='#E8A430'&gt;High&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#E8A430'&gt;Высокая&lt;/t&gt;</Russian>
-                <Chinesesimp>高度警戒</Chinesesimp>
+                <Chinesesimp>&lt;t color='#E8A430'&gt;高度警戒&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#E8A430'&gt;높음&lt;/t&gt;</Korean>
                 <French>&lt;t color='#E8A430'&gt;Élevé&lt;/t&gt;</French>
             </Key>
             <Key ID="STR_info_bar_aggr_2">
                 <Original>&lt;t color='#D5B276'&gt;Medium&lt;/t&gt;</Original>
                 <Russian>&lt;t color='#D5B276'&gt;Средняя&lt;/t&gt;</Russian>
-                <Chinesesimp>警戒</Chinesesimp>
+                <Chinesesimp>&lt;t color='#D5B276'&gt;警戒&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t color='#D5B276'&gt;중간&lt;/t&gt;</Korean>
                 <French>&lt;t color='#D5B276'&gt;Moyen&lt;/t&gt;</French>
             </Key>
@@ -10634,7 +10634,7 @@
             <Key ID="STR_rivals_activity_drone_strike_description">
                 <Original>&lt;t color='#800000'&gt;Drone strike&lt;/t&gt; is imminent, take cover!</Original>
                 <Russian>&lt;t color='#800000'&gt;Удар с БПЛА&lt;/t&gt; неизбежен, в укрытие!</Russian>
-                <Chinesesimp>无人机来袭，躲起来！</Chinesesimp>
+                <Chinesesimp>&lt;t color='#800000'&gt;无人机来袭&lt;/t&gt;，躲起来！</Chinesesimp>
                 <Korean>무인기 공격이 임박했습니다! 엄폐하십시오!</Korean>
                 <French>&lt;t color='#800000'&gt;Une attaque de drone&lt;/t&gt; est imminente, mettez-vous à l'abri!</French>
             </Key>
