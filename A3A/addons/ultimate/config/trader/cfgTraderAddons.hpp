@@ -262,3 +262,17 @@
         addons[] = {"sab_navallegends"};
         vehicles = "vehicles_navleg";
     };
+    class addons_jca : addons_base
+    {
+        addons[] = {"Weapons_F_JCA_IA","Weapons_F_JCA_IA_Accessories","Weapons_F_JCA_IA_LongRangeRifles_AWM","Weapons_F_JCA_IA_Pistols_P226","Weapons_F_JCA_IA_Pistols_P320","Weapons_F_JCA_IA_Rifles_M4A1","Weapons_F_JCA_IA_Rifles_M4A4","Weapons_F_JCA_IA_Rifles_SR10","Weapons_F_JCA_IA_Rifles_SR25","Weapons_F_JCA_IA_SMGs_MP5"};
+        weapons = "weapons_jca";
+    class addons_FlexNorAF : addons_base
+    {
+        addons[] = {"Flex_CUP_NOR_Faction"};
+        vehicles = "CUP_NorAF_Vehicles";
+    };
+    class addons_FlexNorAFF16 : addons_base
+    {
+        addons[] = {"F16_Norwegian_Reskin"};
+        vehicles = "CUP_NorAF_F16";
+    };

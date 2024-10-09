@@ -142,3 +142,7 @@
         {
             prefix = "cwrstock";
         };
+        class weapons_jca : weapons_base
+        {
+            prefix = "jca_stock"
+        };
