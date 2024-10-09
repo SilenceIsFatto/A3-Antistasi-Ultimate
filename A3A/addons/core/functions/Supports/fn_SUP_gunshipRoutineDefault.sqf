@@ -42,6 +42,7 @@ _gunship addEventHandler
         {
             params ["_projectile", "_target"];
             sleep 0.1;
+            _target = (_target vectorAdd [0,0,7.5]) apply {_x + (random 6) - 8};
             private _speed = (speed _projectile)/3.6;
             private _dir = vectorNormalized (_target vectorDiff (getPosASL _projectile));
             _projectile setVelocity (_dir vectorMultiply _speed);

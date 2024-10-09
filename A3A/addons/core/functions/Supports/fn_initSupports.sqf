@@ -43,11 +43,12 @@ private _initData = [
     ["CASDIVE",       "TARGET", 0.8, 0.3,   0, 100,  "", "vehiclesPlanesCAS"],
     ["QRFLAND",       "TROOPS", 1.0, 1.4,   0,   0,  "", ""],
     ["QRFAIR",        "TROOPS", 0.5, 0.1,   0,   0,  "", ""],
-    ["QRFVEHAIRDROP", "TROOPS", 0.4, 0.1,   0,   0,  "", "vehiclesPlanesTransport"],
+    ["QRFVEHAIRDROP", "TROOPS", 0.3, 0.1,   0,   0,  "", "vehiclesPlanesTransport"],
+    ["QRFORBITAL",        "TROOPS", 0.5, 0.1,   0,   0,  "f", "vehiclesDropPod"],     ///needs to be balanced
     ["CARPETBOMBS",     "AREA", 0.5, 0.1, 200,   0, "u", ""],                            // balanced against airstrikes
     ["GUNSHIP",         "AREA", 0.2, 0.1, 0, 80, "", "vehiclesPlanesGunship"],                   //u      // uh. Does AREA work for this? Only lasts 5 minutes so maybe...
     ["SAM",           "TARGET", 1.0, 1.0,   0, 100, "u", ""],                            // balanced against ASF
-    ["CRUISEMISSILE", "AREA", 0.3, 0.1, 300,   100, "u", ""],
+    ["CRUISEMISSILE", "AREA", 0.3, 0.1, 200,   100, "u", ""],
     ["ORBITALSTRIKE",   "AREA", 0.2, 0.0, 300,   0, "f", ""],
     ["UAV",           "TARGET", 1.0, 0.4,   0, 80,  "", "uavsAttack"]
 ];
@@ -63,6 +64,7 @@ private _fnc_buildSupportHM =
         if (_faction get _reqType isEqualTo []) then { continue };
         if ("u" in _flags and !allowUnfairSupports) then { continue };
         if ("f" in _flags and !allowFuturisticSupports) then { continue };
+        if ("fu" in _flags and !allowFuturisticUnfairSupports) then { continue };
 
         private _weight = [_weight, _lowAirWeight] select _lowAir;
         _suppHM set [_suppType, [_baseType, _weight, _effRadius, _strikepower]];

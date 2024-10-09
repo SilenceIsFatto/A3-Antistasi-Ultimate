@@ -249,7 +249,7 @@ while {_lifeTime > 0} do
     ) then
     ///if !(_gunship getVariable ["CurrentlyFiring", false]) then
     {
-        private _targets = _suppCenter nearEntities [["Man", "LandVehicle", "Helicopter", "Plane", "Ship"], 400];
+        private _targets = _suppCenter nearEntities [["Man", "LandVehicle", "Helicopter", "Plane", "Ship"], 600];
         _targets = _targets select
         {
             if(_x isKindOf "Man") then

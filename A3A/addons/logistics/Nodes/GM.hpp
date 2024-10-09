@@ -9,7 +9,6 @@ class gm_gm_vehicles_gm_land_gm_wheeled_gm_p601_gm_p601_patrol : TRIPLES(ADDON,N
     };
 };
 
-
 class gm_gm_vehicles_gm_land_gm_wheeled_gm_u1300l_gm_u1300l_container : TRIPLES(ADDON,Nodes,Base)
 {
     class Nodes

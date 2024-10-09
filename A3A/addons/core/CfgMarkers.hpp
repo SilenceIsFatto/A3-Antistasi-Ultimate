@@ -72,6 +72,48 @@ class CfgMarkers
 		icon = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
 		texture = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
 	};
+  
+	class a3a_flag_natoandaaf_co: flag_NATO 
+	{
+		name = "NATO&AAF";
+		icon = QPATHTOFOLDER(Pictures\Markers\NATO_AAF_Marker.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\NATO_AAF_Marker.paa);
+	};
+
+	class a3a_flag_natoandldf_co: flag_NATO 
+	{
+		name = "NATO&LDF";
+		icon = QPATHTOFOLDER(Pictures\Markers\NATO_LDF_Marker.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\NATO_LDF_Marker.paa);
+	};
+	
+	class a3a_flag_csatandaaf_co: flag_NATO 
+	{
+		name = "CSAT&AAF";
+		icon = QPATHTOFOLDER(Pictures\Markers\CSAT_AAF_Marker.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\CSAT_AAF_Marker.paa);
+	};
+
+	class a3a_flag_natoanduna_co: flag_NATO 
+	{
+		name = "NATO&UNA";
+		icon = QPATHTOFOLDER(Pictures\Markers\NATO_UNA_Marker.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\NATO_UNA_Marker.paa);
+	};
+
+	class a3a_flag_csatandsfia_co: flag_NATO 
+	{
+		name = "CSAT&SFIA";
+		icon = QPATHTOFOLDER(Pictures\Markers\CSAT_SFIA_Marker.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\CSAT_SFIA_Marker.paa);
+	};
+
+	class a3a_flag_FIN: flag_NATO 
+	{
+		name = "Finland";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_fin_co.paa); 
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_fin_co.paa);
+	};
 
 	class a3a_flag_LRI: flag_NATO 
 	{

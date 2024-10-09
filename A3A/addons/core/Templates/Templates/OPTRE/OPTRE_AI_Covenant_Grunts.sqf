@@ -91,6 +91,11 @@ if (["MEU_Covenant"] call A3U_fnc_hasAddon) then {
 ["minefieldAT", ["ATMine"]] call _fnc_saveToTemplate;
 ["minefieldAPERS", ["APERSMine"]] call _fnc_saveToTemplate;
 
+["vehiclesDropPod", ["Land_Pod_Heli_Transport_04_covered_F"]] call _fnc_saveToTemplate; 
+["variants", [
+    ["Land_Pod_Heli_Transport_04_covered_F", ["Black",1]]
+]] call _fnc_saveToTemplate;
+
 #include "OPTRE_Vehicle_Attributes.sqf"
 
 /////////////////////

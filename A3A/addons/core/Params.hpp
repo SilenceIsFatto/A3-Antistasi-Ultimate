@@ -204,6 +204,20 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
     };
+    class playerRecruitAI
+    {
+        title = $STR_params_playerRecruitAI;
+        values[] = {1,0};
+        texts[] = {$STR_params_afk_enabled, $STR_params_afk_disabled};
+        default = 1;
+    };
+    class enablePunishments
+    {
+        title = $STR_params_enablePunishments;
+        values[] = {1,0};
+        texts[] = {$STR_params_afk_enabled, $STR_params_afk_disabled};
+        default = 1;
+    };
     class zombiesUncapped
     {
         title = $STR_A3AU_uncap_zombie_spawn;
@@ -355,8 +369,8 @@ class Params
     class settingsTimeMultiplier
     {
         title = $STR_params_timeMultiplier;
-        values[] = {1, 4, 6, 8, 12, 24};
-        texts[] = {$STR_params_timeMultiplier_0, $STR_params_timeMultiplier_1, $STR_params_timeMultiplier_2,$STR_params_timeMultiplier_3,$STR_params_timeMultiplier_4,$STR_params_timeMultiplier_5};
+        values[] = {1, 2, 3, 4, 6, 8, 12, 24};
+        texts[] = {$STR_params_timeMultiplier_0, $STR_params_timeMultiplier_1, $STR_params_timeMultiplier_2,$STR_params_timeMultiplier_3,$STR_params_timeMultiplier_4,$STR_params_timeMultiplier_5,$STR_params_timeMultiplier_6,$STR_params_timeMultiplier_7};
         default = 1;
     };
     class unflipPersonCount
@@ -376,8 +390,8 @@ class Params
     class rallyPointSpawnCount
     {
         title = $STR_params_rallyPointSpawnCount;
-        values[] = {3, 5, 10, 15, 20, 30};
-        texts[] = {"3", "5", "10", "15", "20","30"};
+        values[] = {3, 5, 10, 15, 20, 30, 0};
+        texts[] = {"3", "5", "10", "15", "20", "30", $STR_params_afk_disabled};
         default = 10;
     };
     class aiControlTime
@@ -573,6 +587,14 @@ class Params
     {
         attr[] = {"server"};
         title = $STR_params_allowFuturisticSupports;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
+    };
+    class allowFuturisticUnfairSupports
+    {
+        attr[] = {"server"};
+        title = $STR_params_allowFuturisticUnfairSupports;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
