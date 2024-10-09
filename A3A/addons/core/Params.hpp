@@ -715,7 +715,7 @@ class Params
     {
         title = $STR_params_crateWepTypeMax;
         values[] = {0,2,4,6,8,12,16};
-        texts[] = {"1","3","5","7","9","13","17"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","6","8","12","16"};
         default = 8;
     };
     class crateWepNumMax
@@ -729,7 +729,7 @@ class Params
     {
         title = $STR_params_crateItemTypeMax;
         values[] = {0,2,4,9};
-        texts[] = {"1","3","5","10"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","9"};
         default = 4;
     };
     class crateItemNumMax
@@ -743,7 +743,7 @@ class Params
     {
         title = $STR_params_crateAmmoTypeMax;
         values[] = {0,2,4,6,9,14,19};
-        texts[] = {"1","3","5","7","10","15","20"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","6","9","14","19"};
         default = 6;
     };
     class crateAmmoNumMax
@@ -757,7 +757,7 @@ class Params
     {
         title = $STR_params_crateExplosiveTypeMax;
         values[] = {0,2,4,9};
-        texts[] = {"1","3","5","10"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","9"};
         default = 4;
     };
     class crateExplosiveNumMax
@@ -771,7 +771,7 @@ class Params
     {
         title = $STR_params_crateAttachmentTypeMax;
         values[] = {0,2,4,6,9,14,19};
-        texts[] = {"1","3","5","7","10","15","20"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","6","9","14","19"};
         default = 6;
     };
     class crateAttachmentNumMax
@@ -785,7 +785,7 @@ class Params
     {
         title = $STR_params_crateBackpackTypeMax;
         values[] = {0,2,4,9};
-        texts[] = {"1","3","5","10"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","9"};
         default = 0;
     };
     class crateBackpackNumMax
@@ -799,7 +799,7 @@ class Params
     {
         title = $STR_params_crateVestTypeMax;
         values[] = {0,2,4,9};
-        texts[] = {"1","3","5","10"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","9"};
         default = 0;
     };
     class crateVestNumMax
@@ -813,7 +813,7 @@ class Params
     {
         title = $STR_params_crateHelmetTypeMax;
         values[] = {0,2,4,9};
-        texts[] = {"1","3","5","10"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","9"};
         default = 0;
     };
     class crateHelmetNumMax
@@ -827,7 +827,7 @@ class Params
     {
         title = $STR_params_crateDeviceTypeMax;
         values[] = {0,2,4,9};
-        texts[] = {"1","3","5","10"};
+        texts[] = {$STR_params_civ_traffic_none,"2","4","9"};
         default = 2;
     };
     class crateDeviceNumMax
