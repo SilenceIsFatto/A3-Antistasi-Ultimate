@@ -262,3 +262,13 @@
         addons[] = {"sab_navallegends"};
         vehicles = "vehicles_navleg";
     };
+    class addons_FlexNorAF : addons_base
+    {
+        addons[] = {"Flex_CUP_NOR_Faction"};
+        vehicles = "CUP_NorAF_Vehicles";
+    };
+    class addons_FlexNorAFF16 : addons_base
+    {
+        addons[] = {"F16_Norwegian_Reskin"};
+        vehicles = "CUP_NorAF_F16";
+    };
