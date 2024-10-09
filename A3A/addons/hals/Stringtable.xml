@@ -861,6 +861,13 @@
                 <Korean>Cold War ReArmed</Korean>
                 <French>Cold War ReArmed</French>
             </Key>
+            <Key ID="STR_A3AU_ylarms">
+                <Original>YLArms</Original>
+                <English>YLArms</English>
+                <Russian>YLArms</Russian>
+                <Korean>YLArms</Korean>
+                <French>YLArms</French>
+            </Key>
         </Container>
     </Package>
 </Project>

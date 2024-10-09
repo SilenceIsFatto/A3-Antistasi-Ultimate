@@ -262,3 +262,8 @@
         addons[] = {"sab_navallegends"};
         vehicles = "vehicles_navleg";
     };
+    class addons_ylarms : addons_base
+    {
+        addons[] = {"YL_scripts"};
+        weapons = "weapons_ylarms";
+    };

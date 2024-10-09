@@ -142,3 +142,7 @@
         {
             prefix = "cwrstock";
         };
+        class weapons_ylarms : weapons_base
+        {
+            prefix = "ylarmsstock";
+        };
