@@ -48,7 +48,8 @@ if (canMove _veh) then {
 if (alive _veh && canMove _veh) then
 {   
 	[_veh] call A3A_fnc_smokeCoverAuto;
-	{
+	[_veh] call AR_Rappel_All_Cargo;
+	/* {
 	[_veh,_x,_xRef,_yRef] spawn
 		{
 		private ["_veh","_unit","_d","_xRef","_yRef"];
@@ -75,7 +76,7 @@ if (alive _veh && canMove _veh) then
 		sleep 0.5;
 		};
 	sleep (2 + random 2);
-	} forEach units _groupX;
+	} forEach units _groupX; */
 };
 
 waitUntil {sleep 1; (not alive _veh) or ((count assignedCargo _veh == 0) and (([_veh] call A3A_fnc_countAttachedObjects) == 0))};
