@@ -43,8 +43,7 @@ switch (_mode) do
                 _selectedTabIDC = A3A_IDC_BUYCIVVEHICLEMAIN;
             };
             case("rebel"): {
-                _selectedTabIDC = A3A_IDC_BUYREBVEHICLEMAIN;
-            };
+                _selectedTabIDC = A3A_IDC_BUYREBVEHICLEMAIN;};
             case ("static"): {
                 _selectedTabIDC = A3A_IDC_BUYSTATICMAIN;
             };

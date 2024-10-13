@@ -38,6 +38,10 @@ if (_tab isEqualTo "vehicles") then
     _params params ["_tab", "_selectedTab", "_category"];
     Debug("BuyVehicleTab starting...");
 
+    // show the vehicle tab so that user don't freak out
+    private _selectedTabCtrl = _display displayCtrl A3A_IDC_BUYCIVVEHICLEMAIN;
+    _selectedTabCtrl ctrlShow true;
+
     // Setup Object render
     private _objPreview = _display displayCtrl A3A_IDC_BUYOBJECTRENDER;  // 9303;
     _objPreview ctrlShow false;
