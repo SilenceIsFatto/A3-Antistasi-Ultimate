@@ -15,8 +15,8 @@
  */
 
 params ["_level",["_side",sideUnknown]];
-private _factionData = if (_side in [west, east, independent, civilian]) then {	// This is used in template loadout setting as well as rebel medic spawning. both are different environments.
-	[A3A_faction_occ, A3A_faction_inv, A3A_faction_reb, A3A_faction_civ] #([west, east, independent, civilian] find _side);
+private _factionData = if (_side in [west, east, independent, civilian, opfor]) then {	// This is used in template loadout setting as well as rebel medic spawning. both are different environments.
+	[A3A_faction_occ, A3A_faction_inv, A3A_faction_reb, A3A_faction_civ] #([west, east, independent, civilian, opfor] find _side);
 } else {
 	_dataStore;
 };
