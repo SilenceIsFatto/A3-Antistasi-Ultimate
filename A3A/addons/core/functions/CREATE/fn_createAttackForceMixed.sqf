@@ -36,6 +36,7 @@ private _resourcesSpent = 0;
 private _vehicles = [];
 private _crewGroups = [];
 private _cargoGroups = [];
+private _vehType = "";
 
 private _landRatio = if ("airboost" in _modifiers) then {     // punishment, HQ attack
     if (_lowAir) exitWith { 0.5 + random 0.5 };

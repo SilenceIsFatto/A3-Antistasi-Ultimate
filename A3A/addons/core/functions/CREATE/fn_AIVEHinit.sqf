@@ -250,9 +250,11 @@ if([typeOf _veh] call A3A_Logistics_fnc_isLoadable) then {[_veh] call A3A_Logist
 [_veh] spawn A3A_fnc_cleanserVeh;
 
 //initializes animiation sources and camo variants
-if (_side != teamPlayer) then {///might need to change that, tho I'm not sure
+if (_side != teamPlayer) then {  ///maybe allow player team to also have randomized vehicle look
 	[_veh, _side] call SCRT_fnc_misc_tryInitVehicle;
 };
+
+//if (_typeX in FactionGet(all,"vehiclesSAM")) then {}
 
 if (!isNull _veh) then {
     ["AIVehInit", [_veh, _side]] call EFUNC(Events,triggerEvent);

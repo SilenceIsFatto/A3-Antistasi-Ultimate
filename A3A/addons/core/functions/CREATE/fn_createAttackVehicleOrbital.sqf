@@ -56,7 +56,6 @@ private _cargoGroup = grpNull;
     {
         [_x, nil, nil, _resPool] call A3A_fnc_NATOinit;
     } forEach units _cargoGroup;
-
     
 //};
 

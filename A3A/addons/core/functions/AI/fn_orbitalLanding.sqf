@@ -17,17 +17,20 @@ _landpos = _positionX getPos [_dist,random 360];
 	_x allowDamage false;
 
 } forEach units _groupX;
+
 private _podseats = 0;
 
 _podseats = [typeOf _pod, true] call BIS_fnc_crewCount;
 
 private _groupcount = count (units _groupX);
+
 if (_podseats >= _groupcount) then {
 	{
 		_x assignAsCargo _pod;
 		_x moveInCargo _pod;
 	} forEach units _groupX;
 };
+
 private _wp2 = _groupX addWaypoint [(position (leader _groupX)), 0];
 _wp2 setWaypointType "MOVE";
 _wp2 setWaypointStatements ["true", "if !(local this) exitWith {}; (group this) spawn A3A_fnc_attackDrillAI"];

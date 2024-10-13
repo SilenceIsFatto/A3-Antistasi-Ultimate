@@ -79,5 +79,30 @@ class CfgFunctions
             class revealZones {};
             class revealZonesDistance {};
         };
+        class D37Dome
+        {
+            file = QPATHTOFOLDER(functions\D37\D37_dome);
+            class guidanceLaws {};
+            class handleDome {};
+            class handleMissile {};
+            class handleTargets {};
+            class handleUAV {};
+            class initMissile {};
+            class initShells {};
+            class pickTarget {};
+            class postInitEH {postInit	= 1;};
+            class watchQuality {};
+        };
+        class D37cram
+        {
+            file = QPATHTOFOLDER(functions\D37\D37_cram);
+            class handleCRAM {};
+            class handleCRAMinit {};
+            class handleTargetsCRAM {};
+            class initMissileCRAM {};
+            class initShellsCRAM {};
+            class pickTargetCRAM {};
+            class postInit {postInit = 1;};
+        };
     };
 };
