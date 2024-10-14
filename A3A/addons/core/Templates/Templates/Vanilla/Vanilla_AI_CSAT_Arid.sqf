@@ -203,6 +203,8 @@ if (_hasSOG) then {
 ["insignia", ["GryffinRegiment", "", ""]] call _fnc_saveToTemplate;
 ["milInsignia", ["CSAT_ScimitarRegiment", "", ""]] call _fnc_saveToTemplate;
 
+"ChineseMen" call _fnc_saveNames;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////

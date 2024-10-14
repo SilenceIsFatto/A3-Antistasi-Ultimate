@@ -242,6 +242,8 @@ if (_hasWS) then {
 ["faces", _faces] call _fnc_saveToTemplate;
 ["voices", ["Male01pol","Male02pol","Male03pol"]] call _fnc_saveToTemplate;
 
+"EnochMen" call _fnc_saveNames;
+
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
