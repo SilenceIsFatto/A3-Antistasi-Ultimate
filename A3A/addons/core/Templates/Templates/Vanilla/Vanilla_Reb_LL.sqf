@@ -159,6 +159,8 @@ private _dlcUniforms = [];
 
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
+"EnochMen" call _fnc_saveNames;
+
 private _headgear = [
     "H_Booniehat_khk_hs",
     "H_Booniehat_khk",
