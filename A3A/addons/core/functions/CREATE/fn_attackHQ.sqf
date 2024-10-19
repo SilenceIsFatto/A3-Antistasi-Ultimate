@@ -20,7 +20,7 @@ params ["_side", "_airbase", "_delay"];			// Side is now specified
 private _targPos = markerPos "Synd_HQ";
 private _faction = Faction(_side);
 
-bigAttackInProgress = true; publicVariable "bigAttackInProgress";
+//bigAttackInProgress = true; publicVariable "bigAttackInProgress";
 forcedSpawn pushBack "Synd_HQ"; publicVariable "forcedSpawn";
 
 private _taskId = "DEF_HQ" + str A3A_taskCount;
