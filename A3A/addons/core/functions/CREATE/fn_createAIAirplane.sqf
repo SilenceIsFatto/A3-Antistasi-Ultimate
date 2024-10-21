@@ -57,8 +57,6 @@ if (garrison getVariable [_markerX + "_samDestroyedCD", 0] == 0) then
 		{
 			private _aaVehicle = nil;
 			isNil {
-				// _aaVehicle = createVehicle [_x, (_spawnParameter select 0), [], 0, "CAN_COLLIDE"];
-				// _aaVehicle setDir (_spawnParameter select 1);
 				_aaVehicle = [_x, _spawnParameter select 0, 25, 10, true] call A3A_fnc_safeVehicleSpawn;
 				_aaVehicle setDir (_spawnParameter select 1);
 			};
@@ -298,6 +296,7 @@ if (!_busy) then {
 	private _vehCount = round (random [2, 4, 5]);
 	while {_countX < _vehCount} do {
 		private _veh = objNull;
+		private _hangar = objNull;
 		private _spawnParameter = [_markerX, "Plane"] call A3A_fnc_findSpawnPosition;
 		if(_spawnParameter isEqualType []) then {
 			private _vehPool = (_faction get "vehiclesPlanesCAS") + (_faction get "vehiclesPlanesAA") + (_faction getOrDefault ["uavsAttack", []]);
@@ -305,12 +304,26 @@ if (!_busy) then {
 			{
 				_spawnsUsed pushBack _spawnParameter#2;
 				_typeVehX = selectRandom _vehPool;
-				isNil {
+				/* isNil { */
 					_veh = createVehicle [_typeVehX, (_spawnParameter select 0), [], 0, "CAN_COLLIDE"];
 					_veh setDir (_spawnParameter select 1);
-				};
+					sleep 0.5;
+					if !(alive _veh) then {
+						_hangar = (nearestObjects [_veh, ["Static"], 20]) select 0;
+						deleteVehicle _hangar;
+						deleteVehicle _veh;
+						_veh = createVehicle [_typeVehX, (_spawnParameter select 0), [], 0, "CAN_COLLIDE"];
+						_veh setDir (_spawnParameter select 1);
+						_veh allowDamage false;
+						_veh enableSimulation false;
+						sleep 0.5;
+						_veh enableSimulation true;
+						_veh allowDamage true;
+					};
+				/* }; */
 				_vehiclesX pushBack _veh;
 				[_veh, _sideX] call A3A_fnc_AIVEHinit;
+				
 			};
 		} else {
 			if !(_runwaySpawnLocation isEqualTo []) then {

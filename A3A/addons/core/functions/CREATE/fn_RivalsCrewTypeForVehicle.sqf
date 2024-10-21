@@ -13,7 +13,7 @@
         Unit type [STRING]
 
     Dependences:
-        A3A_vehClassToCrew [HASHMAP]     // Should be declares in fn_initVarServer.sqf
+        A3A_RivalsVehClassToCrew [HASHMAP]     // Should be declares in fn_initVarServer.sqf
 
     Example(s):
         [west,cursorObject] call A3A_fnc_crewTypeForVehicle;  // Returns some NATO Crew Unit type
@@ -22,15 +22,7 @@
 FIX_LINE_NUMBERS()
 params ["_side", "_vehicle"];
 
-private _sideIndex = [west, east, independent, civilian,opfor] find _side; //opfor
+private _sideIndex = [opfor] find _side;
 private _typeX = typeOf _vehicle;
 
-A3A_vehClassToCrew getOrDefault [_typeX,
-    [
-        FactionGetTiered(occ,"unitRifle"), 
-        FactionGetTiered(inv,"unitRifle"), 
-        FactionGet(reb,"unitCrew"), 
-        FactionGet(civ,"unitMan"),///"C_Man_1"
-        FactionGet(riv,"unitCrew")
-    ]
-] select _sideIndex;
+A3A_RivalsVehClassToCrew getOrDefault [_typeX,[FactionGet(riv,"unitCrew")]] select _sideIndex;

@@ -34,22 +34,21 @@ FIX_LINE_NUMBERS()
 private _allVehClassToCrew = [
 // Vehicles categories at the top have higher priority than bellow.
 // So if "Tank_F" is in both NATOLand and NATOTanks, NATOTanks should be ABOVE NATOLand, as NATOTanks is a specialised child.
-    [FactionGet(all,"vehiclesMilitia"), [FactionGet(occ,"unitMilitiaGrunt"),FactionGet(inv,"unitMilitiaGrunt"),FactionGet(reb,"unitCrew"), FactionGet(civ,"unitMan")]],
-    [FactionGet(all,"vehiclesRivalsArmor"),[FactionGet(occ,"unitCrew"), FactionGet(inv,"unitCrew"), FactionGet(reb,"unitCrew"), FactionGet(civ,"unitMan")]],
-    [FactionGet(all,"vehiclesRivalsLight"),[FactionGet(occ,"unitRifle"), FactionGet(inv,"unitRifle"), /* FactionGet(riv,"unitRifle"), */ FactionGet(reb,"unitRifle"), FactionGet(civ,"unitMan")]],
-    [FactionGet(all,"vehiclesRivalsStatics"),[FactionGet(occ,"unitRifle"), FactionGet(inv,"unitRifle"), /* FactionGet(riv,"unitRifle"), */ FactionGet(reb,"unitRifle"), FactionGet(civ,"unitMan")]],
-    [FactionGet(riv,"vehiclesRivalsUavs"), ["B_UAV_AI", "O_UAV_AI", "I_UAV_AI", "C_UAV_AI"]],
-    [FactionGet(all,"vehiclesRivalsHelis"),[FactionGet(occ,"unitRifle"), FactionGet(inv,"unitRifle"), /* FactionGet(riv,"unitRifle"), */ FactionGet(reb,"unitRifle"), FactionGet(civ,"unitMan")]],    ///why FactionGet(all and not riv? why c_man and not  FactionGet(civ,"unitMan")? why no FactionGet(inv ?
-    [FactionGet(all,"vehiclesRivals"),[FactionGet(occ,"unitRifle"), FactionGet(inv,"unitRifle"), /* FactionGet(riv,"unitRifle"), */ FactionGet(reb,"unitRifle"), FactionGet(civ,"unitMan")]],
+    //[FactionGet(all,"vehiclesMilitia"), [FactionGet(riv,"unitRifle")]],
+    [FactionGet(all,"vehiclesRivalsArmor"),[FactionGet(riv,"unitCrew")]],
+    [FactionGet(all,"vehiclesRivalsLight"),[FactionGet(riv,"unitRifle")]],
+    [FactionGet(all,"vehiclesRivalsStatics"),[FactionGet(riv,"unitRifle")]],
+    [FactionGet(riv,"vehiclesRivalsUavs"), ["O_UAV_AI"]],
+    [FactionGet(all,"vehiclesRivalsHelis"),[FactionGet(riv,"unitRifle")]],    ///why FactionGet(all and not riv? why c_man and not  FactionGet(civ,"unitMan")? why no FactionGet(inv ?
+    [FactionGet(all,"vehiclesRivals"),[FactionGet(riv,"unitRifle")]]/* ,
 
-    [FactionGet(all,"vehiclesFixedWing"),[FactionGet(occ,"unitPilot"), FactionGet(inv,"unitPilot"), FactionGet(reb,"unitCrew"), FactionGet(civ,"unitMan")]],
-    [FactionGet(all,"vehiclesArmor"), [FactionGet(occ,"unitCrew"), FactionGet(inv,"unitCrew"), FactionGet(reb,"unitCrew"), FactionGet(civ,"unitMan")]],          // <- vehiclesArmor has nested arrays; therefore, it needs to be flattened. (will change with arty template change)
-    [FactionGet(all,"vehiclesHelis"), [FactionGet(occ,"unitPilot"), FactionGet(inv,"unitPilot"), FactionGet(reb,"unitCrew"), FactionGet(civ,"unitMan")]],
-    [FactionGet(all,"vehicleRadars"), ["B_UAV_AI", "O_UAV_AI", "I_UAV_AI", "C_UAV_AI"]],
-    [FactionGet(all,"vehicleSams"), ["B_UAV_AI", "O_UAV_AI", "I_UAV_AI", "C_UAV_AI"]],
-    [FactionGet(all,"vehiclesUAVs"), ["B_UAV_AI", "O_UAV_AI", "I_UAV_AI", "C_UAV_AI"]],
-    [FactionGet(all, "vehiclesPolice"), [FactionGet(occ,"unitPoliceGrunt"), FactionGet(inv,"unitPoliceGrunt"), FactionGet(reb,"unitCrew"), FactionGet(civ,"unitMan")]]       // < vehiclesPolice is a single classname; therefore, it needs to be put into an array.
-
+    [FactionGet(all,"vehiclesFixedWing"),[FactionGet(riv,"unitCrew")]],
+    [FactionGet(all,"vehiclesArmor"), [FactionGet(riv,"unitCrew")]],          // <- vehiclesArmor has nested arrays; therefore, it needs to be flattened. (will change with arty template change)
+    [FactionGet(all,"vehiclesHelis"), [FactionGet(riv,"unitCrew")]],
+    [FactionGet(all,"vehicleRadars"), ["O_UAV_AI"]],
+    [FactionGet(all,"vehicleSams"), ["O_UAV_AI"]],
+    [FactionGet(all,"vehiclesUAVs"), ["O_UAV_AI"]],
+    [FactionGet(all, "vehiclesPolice"), [FactionGet(riv,"unitRifle")]]       // < vehiclesPolice is a single classname; therefore, it needs to be put into an array. */
 ];
 // ⬆ STOP EDITING HERE 👋 THANK YOU, COME AGAIN ⬆
 

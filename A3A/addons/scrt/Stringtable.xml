@@ -234,10 +234,6 @@
                 <Korean>알티스군(AAF).\n퇴역되었고 구식이지만 여전히 효과적인 서방 장비를 광범위하게 효과적으로 사용하는 작지만 사기가 높은 군대입니다.</Korean>
                 <French>Forces armées d'Altis (AAF).\nPetite force, mais très motivée, qui utilise efficacement une large gamme d'équipements occidentaux déclassés et obsolètes, mais toujours efficaces.</French>
             </Key>
-            <Key ID="STR_A3AP_setupFactionsTab_ldf">
-                <Original>Livonian Defense Force (LDF).\nStructured around defending the tiny NATO member state's territory, the bulk of its forces consist of light infantry and motorised/mechanised elements. Its air force, while not significant, is still a sizeable presence to be reckoned with.</Original>
-                <Russian>Вооруженные Силы Ливонии (ВСЛ).\Основная часть её сил, созданных для защиты территории крошечного государства-члена НАТО, состоит из легкой пехоты и моторизованных подразделений. Ее военно-воздушные силы, хотя и не являются значительными, все же являются значительным контингентом, с которым следует считаться.</Russian>
-            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_natoandldf">
                 <Original>North Atlantic Treaty Organization and Livonian Defense Force (NATO and LDF).\nAfter successful combined training in Livonia, tension between CSAT and NATO increased. LDF decided to let NATO build more of their bases to increase their chances if their eastern neighbor will make it's move.</Original>
                 <Russian>Организация Североатлантического договора и Вооруженные Силы Ливонии (НАТО и ВСЛ).\После успешных совместных учений в Ливонии напряженность в отношениях между CSAT и НАТО возросла. Вооруженные силы Ливии решили позволить НАТО построить больше своих баз, чтобы увеличить свои шансы, если их восточный сосед начнёт действовать.</Russian>

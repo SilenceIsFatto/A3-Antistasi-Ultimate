@@ -280,6 +280,11 @@ class CfgFunctions
             class spawnVehicle {};
             class spawnVehicleAtMarker {};
             class spawnVehiclePrecise {};
+            class RivalsCreateUnit {};
+            class RivalsCreateVehicleCrew {};
+            class RivalsCrewTypeForVehicle {};
+            class RivalsSpawnGroup {};
+            class RivalsSpawnVehicle {};
             class VEHdespawner {};
             class vehKilledOrCaptured {};
             class wavedAttack {};
@@ -368,6 +373,7 @@ class CfgFunctions
             class initVarServer {};
 
             class initVehClassToCrew {};
+            class initRivalsVehClassToCrew {};
             class initZones {};
             class initZeusLogging {};
             class modBlacklist {};
@@ -670,6 +676,7 @@ class CfgFunctions
             class SUP_tankRoutine {};
             class SUP_UAV {};
             class SUP_UAVRoutine {};
+            class SUP_UAVAvailable {};
             class SUP_QRFVehAirdrop {};
             class SUP_QRFVehAirdropAvailable {};
             class SUP_howitzer {};

@@ -221,7 +221,7 @@ if (dateToNumber date < _dateLimitNum) then {
             [], //blacklist positions
             [_hideoutPosition, _hideoutPosition] //default position
         ] call BIS_fnc_findSafePos;
-        private _patrolGroup = [_position, Rivals, (selectRandom _patrolPool)] call A3A_fnc_spawnGroup;
+        private _patrolGroup = [_position, Rivals, (selectRandom _patrolPool)] call A3A_fnc_RivalsSpawnGroup;
         {[_x] call A3A_fnc_NATOinit;} forEach (units _patrolGroup);
         
         [_patrolGroup, "Patrol_Area", 25, 100, 250, true, _positionX, false] call A3A_fnc_patrolLoop;
@@ -241,7 +241,7 @@ if (dateToNumber date < _dateLimitNum) then {
             [], //blacklist positions
             [_hideoutPosition, _hideoutPosition] //default position
         ] call BIS_fnc_findSafePos;
-        private _sentry = [_position, Rivals, (selectRandom (A3A_faction_riv get "groupsSentry"))] call A3A_fnc_spawnGroup;
+        private _sentry = [_position, Rivals, (selectRandom (A3A_faction_riv get "groupsSentry"))] call A3A_fnc_RivalsSpawnGroup;
         {[_x] call A3A_fnc_NATOinit} forEach (units _sentry);
         [_sentry, _hideoutPosition, 100] call bis_fnc_taskPatrol;
         _groups pushBack _sentry;
@@ -257,7 +257,7 @@ if (dateToNumber date < _dateLimitNum) then {
     };
 
     private _vehiclePosAndDir = [_hideoutPosition, _vehicleClass, 250, true] call SCRT_fnc_common_findSafePositionForVehicle; 
-    private _patrolVehicleData = [(_vehiclePosAndDir select 0), 0, _vehicleClass, Rivals] call A3A_fnc_spawnVehicle;
+    private _patrolVehicleData = [(_vehiclePosAndDir select 0), 0, _vehicleClass, Rivals] call A3A_fnc_RivalsSpawnVehicle;
     private _patrolVeh = _patrolVehicleData select 0;
     _patrolVeh setDir (_vehiclePosAndDir select 1);
     private _patrolVehCrew = _patrolVehicleData select 1;

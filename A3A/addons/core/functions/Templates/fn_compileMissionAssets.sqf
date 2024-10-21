@@ -149,12 +149,16 @@ setVar("vehiclesRivalsLight", _vehRivalsLight);
 private _vehRivalsStatics = Riv("staticMGs") + Riv("staticAT") + Riv("staticAA");
 setVar("vehiclesRivalsStatics", _vehRivalsStatics);
 
+private _vehRivalsAir = Riv("vehiclesRivalsHelis");
+setVar("vehiclesRivalsAir", _vehRivalsAir);
+
 private _vehRivals = Riv("vehiclesRivalsAPCs") 
 + Riv("vehiclesRivalsTanks") 
 + Riv("vehiclesRivalsTrucks") 
 + Riv("vehiclesRivalsCars") 
 + Riv("vehiclesRivalsLightArmed") 
-+ Riv("vehiclesRivalsUavs");
++ Riv("vehiclesRivalsUavs")
++ Riv("vehiclesRivalsHelis");
 setVar("vehiclesRivals", _vehRivals);
 
 private _vehMilitia = OccAndInv("vehiclesMilitiaCars")

@@ -350,7 +350,7 @@ Debug_1("Extra equip mod paths: %1", A3A_extraEquipMods);
 Info("Reading templates");
 
 {
-    private _side = [west, east, resistance, civilian, east] # _forEachIndex;
+    private _side = [west, east, resistance, civilian, opfor] # _forEachIndex;
     Info_2("Loading template %1 for side %2", _x, _side);
 
 	private _cfg = configFile/"A3A"/"Templates"/_x;
@@ -517,11 +517,12 @@ ONLY_DECLARE_SERVER_VAR(A3A_utilityItemHM);
 //fastrope needs to be rewritten and then we can get get ridd of this
 
 private _vehFastRope = (FactionGet(all,"vehiclesHelisTransport") + FactionGet(all,"vehiclesHelisLight") + FactionGet(all,"vehiclesHelisAttack") + FactionGet(all,"vehiclesHelisLightAttack"));
-diag_log _vehFastRope;
+
 //private _vehFastRope = ["O_Heli_Light_02_unarmed_F","B_Heli_Transport_01_camo_F","RHS_UH60M_d","UK3CB_BAF_Merlin_HC3_18_GPMG_DDPM_RM","UK3CB_BAF_Merlin_HC3_18_GPMG_Tropical_RM","RHS_Mi8mt_vdv","RHS_Mi8mt_vv","RHS_Mi8mt_Cargo_vv"];
 DECLARE_SERVER_VAR(vehFastRope, _vehFastRope);
 DECLARE_SERVER_VAR(A3A_vehClassToCrew,call A3A_fnc_initVehClassToCrew);
 
+DECLARE_SERVER_VAR(A3A_RivalsVehClassToCrew,call A3A_fnc_initRivalsVehClassToCrew);
 
 // Default vehicle resource costs
 private _vehicleResourceCosts = createHashMap;
