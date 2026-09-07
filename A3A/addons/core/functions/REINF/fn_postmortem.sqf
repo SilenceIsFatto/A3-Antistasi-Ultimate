@@ -22,8 +22,8 @@ Author:
 ---------------------------------------------------------------------------- */
 Trace_1(QFUNCMAIN(postmortem),_this);
 
-if !assert(isServer) exitWith {
-    Warning("Function can only be called on the server.");
+if !(isServer) exitWith {
+    Debug("Function can only be called on the server.");
     _this remoteExecCall[QFUNCMAIN(postmortem), 2];
 };
 
@@ -34,7 +34,7 @@ if (isNull _victim) exitWith {};
 
 if (isNil { _victim getVariable QGVAR(postMortemEventSent) }) then {
     _victim setVariable[QGVAR(postMortemEventSent), true];
-    [CBA_EVENT_SERVER_ENTITY_POSTMORTEM, _this] call FUNCMAIN(triggerLocalEvent);
+    [CBA_EVENT_SERVER_ENTITY_POSTMORTEM, _this] spawn FUNCMAIN(triggerLocalEvent);
 };
 
 [_victim] call FUNCMAIN(despawnQueueEntity);
