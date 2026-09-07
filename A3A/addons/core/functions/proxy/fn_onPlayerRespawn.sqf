@@ -20,7 +20,7 @@ if (isServer) then {
 };
 
 removeAllActions _oldUnit;
-[_oldUnit] remoteExecCall[QFUNCMAIN(despawnQueueEntity), 2];
+[_oldUnit] remoteExecCall[QFUNCMAIN(postmortem), 2];
 
 _oldUnit setVariable ["incapacitated",false,true];
 _newUnit setVariable ["incapacitated",false,true];
