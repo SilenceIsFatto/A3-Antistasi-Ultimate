@@ -245,8 +245,8 @@ if (side group _newUnit == teamPlayer) then
 	}];
 
 	_newUnit addEventHandler ["WeaponDisassembled", {
-		[_this select 1] remoteExecCall[QFUNCMAIN(postmortem), 2];
-		[_this select 2] remoteExecCall[QFUNCMAIN(postmortem), 2];
+		[_this select 1, true] remoteExecCall[QFUNCMAIN(despawnQueueEntity), 2];
+		[_this select 2, true] remoteExecCall[QFUNCMAIN(despawnQueueEntity), 2];
 	}];
 
 	if (areRivalsDiscovered) then {
@@ -276,4 +276,4 @@ if (staminaEnabled isEqualTo false) then {
 }; 
  
 private _newWeaponSway = swayEnabled / 100;
-_newunit setCustomAimCoef _newWeaponSway;
+_newUnit setCustomAimCoef _newWeaponSway;

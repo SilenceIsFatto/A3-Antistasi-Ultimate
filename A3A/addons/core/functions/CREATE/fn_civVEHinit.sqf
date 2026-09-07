@@ -9,8 +9,7 @@ if (_veh isKindOf "Car") then {
 };
 
 [_veh] spawn A3A_fnc_cleanserVeh;
-
-_veh addEventHandler["Killed", FUNCMAIN(postmortem)];
+[_veh] call FUNCMAIN(preparePostMortem);
 
 if (count _vehCrew == 0) then { //and {("vanilla" in A3A_factionEquipFlags)}
 	sleep 10;
