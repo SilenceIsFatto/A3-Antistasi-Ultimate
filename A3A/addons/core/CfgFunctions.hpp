@@ -51,6 +51,7 @@ class CfgFunctions
             class liberaterefugee {};
             class liberatePOW {};
             class liberateFlee {};
+            class liberateVIP {};
             class mineSweep {};
             class mortyAI {};
             class napalm {};
@@ -122,9 +123,11 @@ class CfgFunctions
             class blackout {};
             class buildHQ {};
             class calculateAggression {};
+            class canAIMountVehicle {};
             class canMoveHQ {};
             class chooseAttack {};
             class citiesToCivPatrol {};
+            class cityChangeSide {};
             class citySupportChange {};
             class commsMP {};
             class createBreachChargeText {};
@@ -269,8 +272,10 @@ class CfgFunctions
             class createAIMilAdmin {};
             class createAttackForceAir {};
             class createAttackForceLand {};
+            class createAttackForceLandMilitia {};
             class createAttackForceMixed {};
             class createAttackForceOrbital {};
+            class createAttackForcePolice {};
             class createAttackVehicle {};
             class createAttackVehicleOrbital {};
             class createSDKGarrisons {};
@@ -304,6 +309,7 @@ class CfgFunctions
             class spawnVehicle {};
             class spawnVehicleAtMarker {};
             class spawnVehiclePrecise {};
+            class townBattle {};
             class RivalsCargoSeats {};
             class RivalsCreateUnit {};
             class RivalsCreateVehicleCrew {};
@@ -389,6 +395,7 @@ class CfgFunctions
             file = QPATHTOFOLDER(functions\init);
             //Main initialisation functions.
             class initServer {};
+            class initCities {};
             class initClient {};
             class setupMonitor {};
             class startGame {};
@@ -398,6 +405,8 @@ class CfgFunctions
             class cityinfo {};
             class clientIdleChecker {};
             class credits {};
+            class getCityData {};
+            class getMapInfo {};
             class initACE {};
             class initACEUnconsciousHandler {};
             class initBases {};
