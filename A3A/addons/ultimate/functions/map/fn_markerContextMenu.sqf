@@ -448,6 +448,15 @@ _contextMenu apply {
     _button setVariable[QGVAR(contextMenuEntry), _entry];
     _button setVariable[QGVAR(contextMenuParams), [_markerName, player]];
     _button ctrlAddEventHandler["ButtonClick", { call A3A_ultimate_dynamic_hover_menu_fnc_onContextMenuEntryClick }];
+
+    if !(_entry get "active") then {
+        _button ctrlEnable false;
+        _button ctrlSetTextColor[1, 1, 1, 0.35];
+
+        if (_entry get "tooltipDisabled" isNotEqualTo "") then {
+            _button ctrlSetTooltip(_entry get "tooltipDisabled");
+        };
+    };
 };
 
 

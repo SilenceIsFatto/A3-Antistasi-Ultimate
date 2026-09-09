@@ -5,6 +5,8 @@ class CfgMapContextMenu {
             title = "";
             // Context menu action tooltip
             tooltip = "";
+            // Context menu action tooltip when the action is disabled
+            tooltipDisabled = "";
             // Context menu action condition; signature [String marker, Object player[, Array params]] -> Boolean
             condition = "true";
             // Context menu action statement; signature [String marker, Object player[, Array params]] -> Void
@@ -26,6 +28,7 @@ class CfgMapContextMenu {
 
         class GVAR(FastTravel): ContextBase {
             title = "$STR_antistasi_dialogs_main_fast_travel";
+            tooltipDisabled = "$STR_A3U_CONTEXT_FASTTRAVEL_PLAYER_ONLY";
             showIfDisabled = 1;
             condition = QUOTE(call FUNC(canFastTravel));
             statement = QUOTE(_this spawn FUNCMAIN(fastTravelRadio));
