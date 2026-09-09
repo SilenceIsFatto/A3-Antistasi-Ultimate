@@ -57,7 +57,6 @@ class CfgMapContextMenu {
 
         class GVAR(Close): ContextBase {
             title = "$STR_antistasi_dialogs_hq_button_close_text";
-            tooltip = "Close this overlay";
             statement = QUOTE(call FUNC(closeContextMenu));
             closeContextMenu = 0; // no infinite loop, plz
             priority = 255;
