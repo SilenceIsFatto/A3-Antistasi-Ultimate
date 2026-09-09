@@ -838,6 +838,7 @@ class CfgFunctions
             class getAdmin {};
             class isEmplacementMarker {};
             class isEngineer {};
+            class isSiteDestroyed {};
             class isTeardownEnabled {};
             class isWithinMarkerArea {};
             class isWithinNearestFriendlyMarker {};
