@@ -1,3 +1,4 @@
+#define FUNCTION_NAME_INSERT fn
 #define SUBCOMPONENT tracklist_editor
 #include "..\plugin.hpp"
 
