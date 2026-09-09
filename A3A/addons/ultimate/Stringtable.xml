@@ -517,20 +517,6 @@
             <Spanish>Sitio destruido: población eliminada (sin apoyo)</Spanish>
             <Polish>Zniszczone miejsce: populacja wyeliminowana (brak wsparcia)</Polish>
         </Key>
-        <Key ID="STR_A3U_HOVER_DESTROYED_MILADMIN">
-            <Original>Cannot fast travel to a destroyed military administration.</Original>
-            <English>Cannot fast travel to a destroyed military administration.</English>
-            <German>Zu einer zerstörten Militärverwaltung ist keine Schnellreise möglich.</German>
-            <French>Impossible de voyager rapidement vers une administration militaire détruite.</French>
-            <Spanish>No se puede viajar rápido a una administración militar destruida.</Spanish>
-            <Italian>Impossibile viaggiare rapidamente verso un’amministrazione militare distrutta.</Italian>
-            <Polish>Nie można odbyć szybkiej podróży do zniszczonej administracji wojskowej.</Polish>
-            <Russian>Нельзя быстро переместиться к разрушенной военной администрации.</Russian>
-            <Czech>Nelze rychle cestovat do zničené vojenské správy.</Czech>
-            <Turkish>Yok edilmiş bir askerî idareye hızlı seyahat edilemez.</Turkish>
-            <ChineseSimplified>无法快速前往已被摧毁的军事管理区。</ChineseSimplified>
-            <Japanese>破壊された軍政施設にはファストトラベルできません。</Japanese>
-        </Key>
         <Key ID="STR_A3U_HOVER_CITY_SUPPORT">
             <Original>Population: %1&lt;br /&gt;Support — Rebels: %2%% (%3)&lt;br /&gt;Support — Government: %4%% (%5)&lt;br /&gt;To gain more support capture surrounding zones and/or deliver supplies</Original>
             <French>Population : %1&lt;br /&gt;Soutien — Rebelles : %2%% (%3)&lt;br /&gt;Soutien — Gouvernement : %4%% (%5)&lt;br /&gt;Pour augmenter le soutien, capturez les zones voisines et/ou livrez des fournitures</French>
