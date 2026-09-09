@@ -44,7 +44,9 @@ class CfgMapContextMenu {
 
         class GVAR(DeliverSupplies): ContextBase {
             title = "$STR_A3U_CONTEXT_DELIVER_SUPPLIES";
-            statement = "diag_log text str _this";
+            tooltip = "$STR_A3U_CONTEXT_DELIVER_SUPPLIES_DESC";
+            condition = QUOTE(_isCommander && !_isDestroyed && { isNil QQUOTE(A3A_supplyMissionActive) } && { _this select 0 in citiesX });
+            statement = QUOTE([ARR_2(_this,'A3A_fnc_SUPP_Supplies')] remoteExec[ARR_2('A3A_fnc_scheduler',2)]);
         };
 
         class GVAR(RebuildAssets): ContextBase {

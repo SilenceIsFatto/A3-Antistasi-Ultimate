@@ -466,34 +466,6 @@ if true exitWith {};
 _buttonPositionY = _buttonPositionY + _buttonHeight + _buttonGap;
 
 if (_originalMarkerName in citiesX && {!_isDestroyed}) then {
-
-    // DELIVER SUPPLIES
-    private _suppliesButton = _mapDisplay ctrlCreate ["A3U_RscContextButton", -1, _menuGroup];
-    _suppliesButton ctrlSetPosition [_buttonPositionX, _buttonPositionY, _buttonWidth, _buttonHeight];
-    _suppliesButton ctrlSetText localize "STR_A3U_CONTEXT_DELIVER_SUPPLIES";
-    _suppliesButton ctrlCommit 0;
-
-    private _suppliesAllowed = _isCommander;
-    private _suppliesTooltip = if (!_isCommander) then { localize "STR_A3U_CONTEXT_COMMANDER_ONLY" } else { localize "STR_A3U_CONTEXT_DELIVER_SUPPLIES_DESC" };
-    [_suppliesButton, _suppliesAllowed, _suppliesTooltip] call _setButtonState;
-
-    _suppliesButton ctrlAddEventHandler ["ButtonClick", {
-        params ["_control"];
-        private _display = ctrlParent _control;
-        private _markerName = _display getVariable ["A3U_mrkMenu_markerOrig", ""];
-        if (_markerName == "") exitWith {};
-        
-        [[_markerName], "A3A_fnc_SUPP_Supplies"] remoteExec ["A3A_fnc_scheduler", 2];
-        
-        private _menuGroup = _display getVariable ["A3U_mrkMenu_grp", controlNull];
-        private _garrisonGroup = _display getVariable ["A3U_mrkMenu_garrGrp", controlNull];
-        if (!isNull _menuGroup) then { ctrlDelete _menuGroup; };
-        if (!isNull _garrisonGroup) then { ctrlDelete _garrisonGroup; };
-        _display setVariable ["A3U_mrkMenu_grp", controlNull];
-        _display setVariable ["A3U_mrkMenu_garrGrp", controlNull];
-        _display setVariable ["A3U_mrkMenu_marker", ""];
-    }];
-
 } else {
 
     // REBUILD ASSETS

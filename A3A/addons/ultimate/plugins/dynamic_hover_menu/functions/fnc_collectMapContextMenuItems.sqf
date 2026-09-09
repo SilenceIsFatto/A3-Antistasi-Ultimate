@@ -32,6 +32,7 @@ if !assert(params[
 
 private _isBlackMarketTrader = toLowerANSI _marker isEqualTo "tradermarker";
 private _isCommander = _player isEqualTo theBoss;
+private _isDestroyed = [_marker] call A3A_fnc_isSiteDestroyed;
 private _isRallyPoint = toLowerANSI _marker isEqualTo "rallypointmarker";
 private _isMilitaryAdministration = _marker in milAdministrationsX;
 private _isPlayerControlled = sidesX getVariable[_marker, sideUnknown] isEqualTo teamPlayer;
