@@ -378,6 +378,16 @@ class A3U_Pallet: ThingX {
     };
 };
 
+class A3U_Pallet_Crate: A3U_Pallet {
+    displayName = "Pallet (Crate)";
+
+    model = QPATHTOFOLDER(data\models\A3U_Large_Pallet\A3U_Pallet_Crate.p3d);
+    hiddenSelections[] = {"camo1"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOFOLDER(data\models\Textures\A3U_Pallet_co.paa)
+    };
+};
+
 class A3U_Pallet_Boxes: A3U_Pallet {
     displayName = "Pallet (Boxes)";
 
@@ -428,6 +438,16 @@ class A3U_Small_Pallet: A3U_Pallet {
     };
 };
 
+class A3U_Small_Pallet_Crate: A3U_Small_Pallet {
+    displayName = "Small Pallet (Crate)";
+
+    model = QPATHTOFOLDER(data\models\A3U_Small_Pallet\A3U_Small_Pallet_Crate.p3d);
+    hiddenSelections[] = {"camo1"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOFOLDER(data\models\Textures\A3U_Pallet_co.paa)
+    };
+};
+
 class A3U_Small_Pallet_Boxes: A3U_Small_Pallet {
     displayName = "Small Pallet (Boxes)";
 
@@ -436,16 +456,5 @@ class A3U_Small_Pallet_Boxes: A3U_Small_Pallet {
     hiddenSelectionsTextures[] = {
         QPATHTOFOLDER(data\models\Textures\A3U_Pallet_co.paa),
         QPATHTOFOLDER(data\models\Textures\A3U_Pallet_Boxes_co.paa)
-    };
-};
-
-class A3U_Small_Pallet_Barrels: A3U_Small_Pallet {
-    displayName = "Small Pallet (Barrels)";
-
-    model = QPATHTOFOLDER(data\models\A3U_Small_Pallet\A3U_Small_Pallet_Barrels.p3d);
-    hiddenSelections[] = {"camo1","camo2"};
-    hiddenSelectionsTextures[] = {
-        QPATHTOFOLDER(data\models\Textures\A3U_Pallet_co.paa),
-        QPATHTOFOLDER(data\models\Textures\A3U_Pallet_Barrels_co.paa)
     };
 };
