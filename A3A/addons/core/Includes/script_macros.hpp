@@ -30,8 +30,13 @@ Author:
     #define COMPONENT_PATH_FRAGMENT COMPONENT
     #define COMPONENT_PATH_FRAGMENT_F COMPONENT_F
 #else // SUBCOMPONENT
-    #define COMPONENT_PATH_FRAGMENT COMPONENT\SUBCOMPONENT
-    #define COMPONENT_PATH_FRAGMENT_F COMPONENT_F\SUBCOMPONENT
+    #ifndef SUBCOMPONENT_PATH_BASE
+        #define COMPONENT_PATH_FRAGMENT COMPONENT\SUBCOMPONENT
+        #define COMPONENT_PATH_FRAGMENT_F COMPONENT_F\SUBCOMPONENT
+    #else
+        #define COMPONENT_PATH_FRAGMENT COMPONENT\SUBCOMPONENT_PATH_BASE\SUBCOMPONENT
+        #define COMPONENT_PATH_FRAGMENT_F COMPONENT_F\SUBCOMPONENT_PATH_BASE\SUBCOMPONENT
+    #endif // SUBCOMPONENT_PATH_BASE
 
     #undef COMPILE_FILE
     #define COMPILE_FILE(var1) COMPILE_FILE_SYS(PREFIX,COMPONENT_PATH_FRAGMENT_F,var1)
@@ -130,3 +135,21 @@ Author:
     Bohemia Interactive (https://community.bistudio.com/wiki/Operators)
 ------------------------------------------- */
 #define XOR(VAR1,VAR2) (((VAR1) || (VAR2)) && !((VAR1) && (VAR2)))
+
+/* -------------------------------------------
+Macro: MARKER_EXISTS
+    Evaluates to true if the given marker exists.
+
+Parameters:
+    VAR1 - the name of the marker to check for existence
+
+Example:
+    (begin example)
+        // return "true" if the marker "airport_2" exists
+        MARKER_EXISTS("airport_2");
+    (end)
+
+Author:
+    UnseenKill/gor3Splatter
+------------------------------------------- */
+#define MARKER_EXISTS(VAR1) (((VAR1) isEqualType "") && { (VAR1) in allMapMarkers })
