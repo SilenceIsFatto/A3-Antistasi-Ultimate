@@ -39,19 +39,7 @@ private _mapControl = _mapDisplay displayCtrl 51;
 if (isNull _mapControl) exitWith {};
 
 private _originalMarkerName = _markerName;
-if ((_originalMarkerName find "Dum") == 0) then { _originalMarkerName = _originalMarkerName select [3, (count _originalMarkerName) - 3]; };
-
-private _setButtonState = {
-    params ["_buttonControl", "_enabled", ["_tooltipText", "", [""]]];
-    _buttonControl ctrlEnable _enabled;
-    if (_enabled) then {
-        _buttonControl ctrlSetTextColor [1, 1, 1, 1];
-        _buttonControl ctrlSetTooltip "";
-    } else {
-        _buttonControl ctrlSetTextColor [1, 1, 1, 0.35];
-        if (_tooltipText != "") then { _buttonControl ctrlSetTooltip _tooltipText; };
-    };
-};
+if ((_originalMarkerName find "Dum") == 0) then { _originalMarkerName = _originalMarkerName select [3] };
 
 private _deleteGarrisonPanel = {
     params ["_display"];
@@ -427,7 +415,6 @@ _informationControl ctrlSetPosition [
 _informationControl ctrlSetStructuredText (parseText _informationText);
 _informationControl ctrlCommit 0;
 
-private _isCommander = player isEqualTo theBoss;
 private _topBottomPadding = _paddingY * 0.5;
 
 private _buttonPositionX = _leftColumnPositionX + (_paddingX * 0.5);
@@ -459,25 +446,4 @@ _contextMenu apply {
     };
 };
 
-if true exitWith {};
-
-// --- BUTTON 4: CLOSE ---
-private _closeButtonPositionY = _contentPositionY + _contentHeight - _topBottomPadding - _buttonHeight;
-private _closeButton = _mapDisplay ctrlCreate ["A3U_RscContextButton", -1, _menuGroup];
-_closeButton ctrlSetPosition [_buttonPositionX, _closeButtonPositionY, _buttonWidth, _buttonHeight];
-_closeButton ctrlSetText "Close";
-_closeButton ctrlCommit 0;
-
-_closeButton ctrlAddEventHandler ["ButtonClick", {
-    params ["_control"];
-    private _display = ctrlParent _control;
-    private _menuGroup = _display getVariable ["A3U_mrkMenu_grp", controlNull];
-    private _garrisonGroup = _display getVariable ["A3U_mrkMenu_garrGrp", controlNull];
-    
-    if (!isNull _menuGroup) then { ctrlDelete _menuGroup; };
-    if (!isNull _garrisonGroup) then { ctrlDelete _garrisonGroup; };
-
-    _display setVariable ["A3U_mrkMenu_grp", controlNull];
-    _display setVariable ["A3U_mrkMenu_garrGrp", controlNull];
-    _display setVariable ["A3U_mrkMenu_marker", ""];
-}];
+nil;
