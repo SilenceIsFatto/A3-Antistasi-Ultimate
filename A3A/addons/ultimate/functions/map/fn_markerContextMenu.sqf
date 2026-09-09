@@ -25,6 +25,7 @@ Environment:
 Author:
     Maxx
 ---------------------------------------------------------------------------- */
+Trace_1(QFUNCMAIN(markerContextMenu),_this);
 
 if !assert(params [["_markerName", nil, [""]]]) exitWith {};
 
@@ -192,24 +193,17 @@ if (_resolvedScreenPosition isEqualTo []) then {
 
 if (_resolvedScreenPosition isEqualTo []) then { _resolvedScreenPosition = getMousePosition; };
 
+private _contextMenu = [_markerName, player] call A3U_fnc_collectMapContextMenuItems;
 
 // --- DYNAMIC WIDTH CALCULATION FOR LOCALIZATIONS ---
 private _paddingX = 0.006 * safeZoneW;
 private _paddingY = 0.006 * safeZoneH;
 
 private _dummyCtrl = _mapDisplay ctrlCreate ["A3U_RscContextButton", -1];
-private _maxTextWidth = 0;
-{
-    _dummyCtrl ctrlSetText _x;
-    _dummyCtrl ctrlCommit 0;
-    _maxTextWidth = _maxTextWidth max (ctrlTextWidth _dummyCtrl);
-} forEach [
-    localize "STR_antistasi_dialogs_main_fast_travel",
-    localize "STR_A3A_garrison_header",
-    localize "STR_A3U_CONTEXT_DELIVER_SUPPLIES",
-    localize "STR_antistasi_dialogs_hq_garrisons_rebuild_assets_button",
-    "Close"
-];
+private _maxTextWidth = [_contextMenu, 0, {
+    _dummyCtrl ctrlSetText(_x get "title");
+    _accumulator max ctrlTextWidth _dummyCtrl;
+}] call CBA_fnc_inject;
 ctrlDelete _dummyCtrl;
 
 private _buttonWidth = _maxTextWidth + (0.024 * safeZoneW); // Padding inside button
@@ -437,8 +431,27 @@ private _availableHeight = _contentHeight - (_topBottomPadding * 2);
 private _buttonHeight = (_availableHeight - (_buttonGap * (_buttonCount - 1))) / _buttonCount;
 
 private _buttonPositionX = _leftColumnPositionX + (_paddingX * 0.5);
-private _buttonPositionY = _contentPositionY + _topBottomPadding;
+private _buttonPositionY = _contentPositionY + _topBottomPadding - _buttonHeight - _buttonGap;
 
+_contextMenu apply {
+    Trace_1(QFUNCMAIN(markerContextMenu),_x);
+    ADD(_buttonPositionY,_buttonHeight + _buttonGap);
+
+    private _entry = _x;
+    private _button = _mapDisplay ctrlCreate["A3U_RscContextButton", -1, _menuGroup];
+
+    _button ctrlSetPosition[_buttonPositionX, _buttonPositionY, _buttonWidth, _buttonHeight];
+    _button ctrlSetText(_entry get "title");
+    _button ctrlSetTooltip(_entry get "tooltip");
+    _button ctrlCommit 0;
+
+    _button setVariable[QGVAR(contextMenuEntry), _entry];
+    _button setVariable[QGVAR(contextMenuParams), [_markerName, player]];
+    _button ctrlAddEventHandler["ButtonClick", { call A3U_fnc_onContextMenuEntryClick }];
+};
+
+
+if true exitWith {};
 
 // --- BUTTON 1: FAST TRAVEL ---
 private _fastTravelButton = _mapDisplay ctrlCreate ["A3U_RscContextButton", -1, _menuGroup];
