@@ -32,6 +32,7 @@ class CfgMapContextMenu {
             showIfDisabled = 1;
             condition = QUOTE(call FUNC(canFastTravel));
             statement = QUOTE(_this spawn FUNCMAIN(fastTravelRadio));
+            closeMap = 1;
         };
 
         class GVAR(Garrison): ContextBase {
