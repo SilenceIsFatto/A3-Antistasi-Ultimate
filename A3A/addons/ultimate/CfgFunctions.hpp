@@ -49,7 +49,6 @@ class CfgFunctions
         class map
         {
             file = QPATHTOFOLDER(functions\map);
-            class collectMapContextMenuItems {};
             class handleMrkUpdate {};
             class isMarkerHidden {};
             class mapHover {};
@@ -58,7 +57,6 @@ class CfgFunctions
             class markerBrowser {};
             class markerContextMenu {};
             class mrkUpdateBulk {};
-            class onContextMenuEntryClick {};
             class tooltipCreate {};
         };
         class REINF

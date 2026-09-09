@@ -33,6 +33,8 @@ private _screenPosition = param [1, [], [[]]];
 private _mapDisplay = findDisplay 12;
 if (isNull _mapDisplay || {_markerName == ""}) exitWith {};
 
+uiNamespace setVariable[QGVAR(mapDisplay), _mapDisplay];
+
 private _mapControl = _mapDisplay displayCtrl 51;
 if (isNull _mapControl) exitWith {};
 
@@ -193,7 +195,7 @@ if (_resolvedScreenPosition isEqualTo []) then {
 
 if (_resolvedScreenPosition isEqualTo []) then { _resolvedScreenPosition = getMousePosition; };
 
-private _contextMenu = [_markerName, player] call A3U_fnc_collectMapContextMenuItems;
+private _contextMenu = [_markerName, player] call A3A_ultimate_dynamic_hover_menu_fnc_collectMapContextMenuItems;
 
 // --- DYNAMIC WIDTH CALCULATION FOR LOCALIZATIONS ---
 private _paddingX = 0.006 * safeZoneW;
@@ -447,7 +449,7 @@ _contextMenu apply {
 
     _button setVariable[QGVAR(contextMenuEntry), _entry];
     _button setVariable[QGVAR(contextMenuParams), [_markerName, player]];
-    _button ctrlAddEventHandler["ButtonClick", { call A3U_fnc_onContextMenuEntryClick }];
+    _button ctrlAddEventHandler["ButtonClick", { call A3A_ultimate_dynamic_hover_menu_fnc_onContextMenuEntryClick }];
 };
 
 
