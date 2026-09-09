@@ -30,6 +30,12 @@ if !assert(params[
     ["_player", nil, [objNull]]
 ]) exitWith {};
 
+private _isBlackMarketTrader = toLowerANSI _marker isEqualTo "tradermarker";
+private _isCommander = _player isEqualTo theBoss;
+private _isRallyPoint = toLowerANSI _marker isEqualTo "rallypointmarker";
+private _isMilitaryAdministration = _marker in milAdministrationsX;
+private _isPlayerControlled = sidesX getVariable[_marker, sideUnknown] isEqualTo teamPlayer;
+
 private _activeItems = createHashMap;
 private _index = -1;
 private _items = QUOTE(getText(_x >> 'statement') isNotEqualTo '') configClasses(configFile >> "A3U" >> "CfgMapContextMenu" >> "Location") select {
@@ -55,7 +61,8 @@ private _items = QUOTE(getText(_x >> 'statement') isNotEqualTo '') configClasses
             ["showIfDisabled", getNumber(_x >> "showIfDisabled") != 0],
             ["statement", compile getText(_x >> "statement")],
             ["title", getText(_x >> "title")],
-            ["tooltip", getText(_x >> "tooltip")]
+            ["tooltip", getText(_x >> "tooltip")],
+            ["tooltipDisabled", getText(_x >> "tooltipDisabled")]
         ]
     ];
 };
