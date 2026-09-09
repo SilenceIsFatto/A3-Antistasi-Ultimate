@@ -8,6 +8,14 @@ class CfgMapContextMenu {
             // Context menu action tooltip when the action is disabled
             tooltipDisabled = "";
             // Context menu action condition; signature [String marker, Object player[, Array params]] -> Boolean
+            //
+            // Variables available in condition statement:
+            //   * `_isBlackMarketTrader`: Boolean indicating if the location is a black market trader
+            //   * `_isCommander`: Boolean indicating if the player is the commander
+            //   * `_isDestroyed`: Boolean indicating if the location is destroyed
+            //   * `_isMilitaryAdministration`: Boolean indicating if the location is a military administration
+            //   * `_isPlayerControlled`: Boolean indicating if rebels control the location
+            //   * `_isRallyPoint`: Boolean indicating if the location is a rally point
             condition = "true";
             // Context menu action statement; signature [String marker, Object player[, Array params]] -> Void
             statement = "";
@@ -15,8 +23,8 @@ class CfgMapContextMenu {
             parameters[] = {};
             // Context menu action icon
             icon = "";
-            // Context menu action priority; higher numbers are shown first, capped at 255
-            priority = 0;
+            // Context menu action priority; lower numbers are shown first
+            priority = 20;
             // Close context menu prior to statement being executed
             closeContextMenu = 1;
             // Close map prior to statement being executed
