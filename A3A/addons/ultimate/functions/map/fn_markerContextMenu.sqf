@@ -456,25 +456,6 @@ _contextMenu apply {
 
 if true exitWith {};
 
-// --- BUTTON 1: FAST TRAVEL ---
-private _fastTravelButton = _mapDisplay ctrlCreate ["A3U_RscContextButton", -1, _menuGroup];
-_fastTravelButton ctrlSetPosition [_buttonPositionX, _buttonPositionY, _buttonWidth, _buttonHeight];
-_fastTravelButton ctrlSetText localize "STR_antistasi_dialogs_main_fast_travel";
-_fastTravelButton ctrlCommit 0;
-
-_fastTravelButton ctrlAddEventHandler ["ButtonClick", {
-    params ["_control"];
-    private _display = ctrlParent _control;
-    private _markerName = _display getVariable ["A3U_mrkMenu_markerOrig", ""];
-    if (_markerName == "") exitWith {};
-    [_markerName] spawn A3A_fnc_fastTravelRadio;
-}];
-
-private _fastTravelAllowed = _isPlayerControlled && {!_isDestroyed && !_isMilitaryAdministration};
-private _fastTravelTooltip = if (_isDestroyed && _isMilitaryAdministration) then { localize "STR_A3U_HOVER_DESTROYED_MILADMIN" } else { localize "STR_A3U_CONTEXT_FASTTRAVEL_PLAYER_ONLY" };
-[_fastTravelButton, _fastTravelAllowed, _fastTravelTooltip] call _setButtonState;
-
-
 // --- BUTTON 2: GARRISON ---
 _buttonPositionY = _buttonPositionY + _buttonHeight + _buttonGap;
 private _garrisonButton = _mapDisplay ctrlCreate ["A3U_RscContextButton", -1, _menuGroup];

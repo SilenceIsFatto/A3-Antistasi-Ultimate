@@ -27,7 +27,8 @@ class CfgMapContextMenu {
         class GVAR(FastTravel): ContextBase {
             title = "$STR_antistasi_dialogs_main_fast_travel";
             showIfDisabled = 1;
-            statement = "diag_log text str _this";
+            condition = QUOTE(call FUNC(canFastTravel));
+            statement = QUOTE(_this spawn FUNCMAIN(fastTravelRadio));
         };
 
         class GVAR(Garrison): ContextBase {
