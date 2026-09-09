@@ -17,7 +17,7 @@ Returns:
     Nothing
 
 Environment:
-    Client, Unscheduled
+    Client, Scheduled
 
 Author:
     UnseenKill/gor3Splatter
@@ -31,6 +31,9 @@ if !assert(params[
 
 if !assert(MARKER_EXISTS(_marker)) exitWith {};
 if !assert(!isNull _player) exitWith {};
+
+// BIS_fnc_guiMessage needs scheduled env
+if !(canSuspend) exitWith { _this spawn FUNC(doRebuildAssets) };
 
 private _cost = 5000;
 if (_marker in mrkAntennas) then { _cost = 3500; };
