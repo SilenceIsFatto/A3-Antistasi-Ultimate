@@ -51,7 +51,8 @@ class CfgMapContextMenu {
 
         class GVAR(RebuildAssets): ContextBase {
             title = "$STR_antistasi_dialogs_hq_garrisons_rebuild_assets_button";
-            statement = "diag_log text str _this";
+            condition = QUOTE(call FUNC(canRebuildAssets));
+            statement = QUOTE(call FUNC(doRebuildAssets));
         };
 
         class GVAR(Close): ContextBase {
