@@ -462,34 +462,6 @@ _contextMenu apply {
 
 if true exitWith {};
 
-// --- BUTTON 2: GARRISON ---
-_buttonPositionY = _buttonPositionY + _buttonHeight + _buttonGap;
-private _garrisonButton = _mapDisplay ctrlCreate ["A3U_RscContextButton", -1, _menuGroup];
-_garrisonButton ctrlSetPosition [_buttonPositionX, _buttonPositionY, _buttonWidth, _buttonHeight];
-_garrisonButton ctrlSetText localize "STR_A3A_garrison_header";
-_garrisonButton ctrlCommit 0;
-
-_garrisonButton ctrlAddEventHandler ["ButtonClick", {
-    params ["_control"];
-    private _display = ctrlParent _control;
-    private _markerName = _display getVariable ["A3U_mrkMenu_markerOrig", ""];
-    if (_markerName == "") exitWith {};
-    ["add", _markerName] spawn A3A_fnc_garrisonDialog;
-    ["off"] call SCRT_fnc_ui_toggleMenuBlur;
-}];
-
-private _isBlackMarketTrader = (toLowerANSI _originalMarkerName) isEqualTo "tradermarker";
-private _garrisonAllowed = _isPlayerControlled && {_isCommander} && {!_isRallyPoint} && {!_isBlackMarketTrader} && {!_isMilitaryAdministration};
-
-private _garrisonTooltip = localize (switch true do {
-    case _isRallyPoint: { "STR_A3U_CONTEXT_GARRISON_RALLYPOINT_BLOCKED" };
-    case _isBlackMarketTrader: { "STR_A3U_CONTEXT_GARRISON_TRADER_BLOCKED" };
-    default { "STR_A3U_CONTEXT_GARRISON_REQUIREMENTS" };
-});
-
-[_garrisonButton, _garrisonAllowed, _garrisonTooltip] call _setButtonState;
-
-
 // --- BUTTON 3: DELIVER SUPPLIES OR REBUILD ASSETS ---
 _buttonPositionY = _buttonPositionY + _buttonHeight + _buttonGap;
 

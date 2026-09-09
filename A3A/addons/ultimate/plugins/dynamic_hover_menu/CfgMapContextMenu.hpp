@@ -37,7 +37,9 @@ class CfgMapContextMenu {
 
         class GVAR(Garrison): ContextBase {
             title = "$STR_A3A_garrison_header";
-            statement = "diag_log text str _this";
+            tooltipDisabled = "$STR_A3U_CONTEXT_GARRISON_REQUIREMENTS";
+            condition = QUOTE(_isPlayerControlled && _isCommander && !_isRallyPoint && !_isBlackMarketTrader && !_isMilitaryAdministration);
+            statement = QUOTE(call FUNC(doGarrison));
         };
 
         class GVAR(DeliverSupplies): ContextBase {
