@@ -27,6 +27,7 @@ class A3U
     #include "config\plane\cfgPlaneLoadouts.hpp"
     #include "config\cfgForbiddenItems.hpp"
     #include "config\trader\cfgTraderMods.hpp"
+    #include "CfgMapContextMenu.hpp"
 };
 
 class CfgMagazines
