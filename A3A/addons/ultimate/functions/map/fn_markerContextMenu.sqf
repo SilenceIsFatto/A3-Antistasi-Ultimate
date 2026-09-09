@@ -208,6 +208,8 @@ private _maxTextWidth = [_contextMenu, 0, {
 }] call CBA_fnc_inject;
 ctrlDelete _dummyCtrl;
 
+private _buttonGap = 0.004 * safeZoneH;
+private _buttonHeight = 0.025 * safeZoneH;
 private _buttonWidth = _maxTextWidth + (0.024 * safeZoneW); // Padding inside button
 private _leftColumnWidth = _buttonWidth + _paddingX;
 private _rightColumnWidth = (0.22 * safeZoneW - (3 * _paddingX)) * 0.666; // Retain original right column size
@@ -215,6 +217,8 @@ private _rightColumnWidth = (0.22 * safeZoneW - (3 * _paddingX)) * 0.666; // Ret
 private _groupWidth = _leftColumnWidth + _rightColumnWidth + (3 * _paddingX);
 private _groupHeight = 0.19 * safeZoneH;
 private _titleBarHeight = 0.028 * safeZoneH;
+
+_groupHeight = _groupHeight max(_titleBarHeight + _paddingY + (count(_contextMenu) * (_buttonHeight + _buttonGap)));
 // ---------------------------------------------------
 
 
@@ -424,13 +428,10 @@ _informationControl ctrlSetStructuredText (parseText _informationText);
 _informationControl ctrlCommit 0;
 
 private _isCommander = player isEqualTo theBoss;
-private _buttonCount = 4;
-private _buttonGap = 0.004 * safeZoneH;
 private _topBottomPadding = _paddingY * 0.5;
 
 // Dynamically scale button height to ensure they never overlap, utilizing the exact available space
 private _availableHeight = _contentHeight - (_topBottomPadding * 2);
-private _buttonHeight = (_availableHeight - (_buttonGap * (_buttonCount - 1))) / _buttonCount;
 
 private _buttonPositionX = _leftColumnPositionX + (_paddingX * 0.5);
 private _buttonPositionY = _contentPositionY + _topBottomPadding - _buttonHeight - _buttonGap;
