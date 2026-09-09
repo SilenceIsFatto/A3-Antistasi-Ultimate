@@ -1,3 +1,9 @@
+#include "..\..\script_component.hpp"
+FIX_LINE_NUMBERS()
+
+Trace_1(QFUNCMAIN(fastTravelRadio),_this);
+#define HIDEMAP() (if (visibleMap) then {openMap false})
+
 params [
     ["_quickMarker", "", [""]]
 ];
@@ -85,7 +91,7 @@ if (count _positionTel > 0) then {
 	private _base = [_markersX, _positionTel] call BIS_fnc_nearestPosition;
 	if (!isNil "rallyPointMarker" && {_base == rallyPointMarker}) then {
 		[] spawn SCRT_fnc_rally_travelToRallyPoint;
-		openMap false;
+		HIDEMAP();
 		_earlyEscape = true;
 	};
 };
@@ -141,16 +147,16 @@ if (_checkForPlayer && limitedFT == 2 && (!_isValidTargetLocation or !_withinBou
 
 if ((sidesX getVariable [_base,sideUnknown]) in [Occupants, Invaders]) exitWith {
 	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_no_enemy_zone"] call SCRT_fnc_misc_deniedHint; 
-	openMap [false,false];
+	HIDEMAP();
 };
 if (_base in forcedSpawn) exitWith {
 	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_no_enemy_attack"] call SCRT_fnc_misc_deniedHint; 
-	openMap [false,false];
+	HIDEMAP();
 };
 
 if ([getMarkerPos _base] call A3A_fnc_enemyNearCheck) exitWith {
 	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_no_enemy_surrounding"] call A3A_fnc_customHint; 
-	openMap [false,false];
+	HIDEMAP();
 };
 
 if (_positionTel distance getMarkerPos _base < 500) then {
@@ -246,4 +252,4 @@ if (_positionTel distance getMarkerPos _base < 500) then {
 	[localize "STR_A3A_Dialogs_fast_travel_header", localize "STR_A3A_Dialogs_fast_travel_missclick"] call SCRT_fnc_misc_deniedHint;
 };
 
-if (!_esHC) then { openMap false };
+if (!_esHC) then { HIDEMAP() };
