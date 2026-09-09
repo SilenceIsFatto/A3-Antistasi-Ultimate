@@ -430,9 +430,6 @@ _informationControl ctrlCommit 0;
 private _isCommander = player isEqualTo theBoss;
 private _topBottomPadding = _paddingY * 0.5;
 
-// Dynamically scale button height to ensure they never overlap, utilizing the exact available space
-private _availableHeight = _contentHeight - (_topBottomPadding * 2);
-
 private _buttonPositionX = _leftColumnPositionX + (_paddingX * 0.5);
 private _buttonPositionY = _contentPositionY + _topBottomPadding - _buttonHeight - _buttonGap;
 
