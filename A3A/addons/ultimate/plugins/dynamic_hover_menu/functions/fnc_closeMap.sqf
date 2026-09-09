@@ -25,7 +25,7 @@ Trace_1(QFUNC(closeMap),_this);
 [] call FUNC(closeContextMenu);
 
 if (visibleMap) then {
-    showMap false;
+    openMap false;
 };
 
 nil;
