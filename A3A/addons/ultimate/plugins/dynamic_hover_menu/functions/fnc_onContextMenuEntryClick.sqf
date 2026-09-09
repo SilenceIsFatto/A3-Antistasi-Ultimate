@@ -31,7 +31,7 @@ if !assert(params[
 private _entry = _control getVariable QEGVAR(ultimate,contextMenuEntry);
 private _params = _control getVariable QEGVAR(ultimate,contextMenuParams);
 
-if !(assert(!(isNil "_entry")) && assert(!(isNil "_params"))) exitWith {};
+if (!assert(!(isNil "_entry")) || !assert(!(isNil "_params"))) exitWith {};
 if !(_entry get "active") exitWith {};
 
 private _arguments = +_params;
