@@ -65,4 +65,51 @@ _button ctrlAddEventHandler["ButtonClick", {
     while { dialog } do { closeDialog 0 };
 }];
 
+// Populate extenders listbox
+private _control = uiNamespace getVariable QGVAR(extendersWarningDialog)
+    displayCtrl IDC_ANTISTASI_EXTENDERS_WARNING_DIALOG_LISTEXTENDERS;
+
+// Extender title column
+_control lnbAddColumn 0.4;
+// Extender author column
+_control lnbAddColumn 0.75;
+// Extender version column
+_control lnbAddColumn 0.85;
+// Extender compatibility column
+_control lnbAddColumn 0.9;
+
+private _index = _control lnbAddRow[
+    localize "STR_antistasi_extenders_warning_dialog_ListExtenders_ColumnTitle",
+    localize "STR_antistasi_extenders_warning_dialog_ListExtenders_ColumnAuthor",
+    localize "STR_antistasi_extenders_warning_dialog_ListExtenders_ColumnVersion",
+    localize "STR_antistasi_extenders_warning_dialog_ListExtenders_ColumnCompatibility"
+];
+
+EGVAR(core,extendersLoaded) apply {
+    private _extender = _x;
+
+    _index = _control lnbAddRow[
+        _extender get "name",
+        _extender get "author",
+        str(_extender get "version"),
+        str(_extender get "compatDeclared")
+    ];
+
+    switch true do {
+        case (_extender get "compatDeclared" isEqualTo 0): {
+            _control lnbSetText[[_index, 3], "No information"];
+            _control lnbSetColor[[_index, 0], [0.8, 0, 0, 1]];
+        };
+        case (_extender get "compatStatus" isEqualTo 0): {
+            //_control lnbSetColor[[_index, 0], [0, 0.8, 0, 1]];
+        };
+        case (_extender get "compatStatus" isEqualTo 1): {
+            _control lnbSetColor[[_index, 0], [0.8, 0, 0, 1]];
+        };
+        case (_extender get "compatStatus" isEqualTo 2): {
+            _control lnbSetColor[[_index, 0], [0.8, 0.6, 0, 1]];
+        };
+    }
+};
+
 nil;

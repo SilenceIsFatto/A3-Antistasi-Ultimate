@@ -4411,6 +4411,42 @@
                 <French>Continuer</French>
                 <Turkish>Devam Et</Turkish>
             </Key>
+            <Key ID="STR_antistasi_extenders_warning_dialog_ListExtenders_ColumnTitle">
+                <Original>Title</Original>
+                <German>Titel</German>
+                <Russian>Заголовок</Russian>
+                <Chinesesimp>标题</Chinesesimp>
+                <Korean>제목</Korean>
+                <French>Titre</French>
+                <Turkish>Başlık</Turkish>
+            </Key>
+            <Key ID="STR_antistasi_extenders_warning_dialog_ListExtenders_ColumnAuthor">
+                <Original>Author</Original>
+                <German>Autor</German>
+                <Russian>Автор</Russian>
+                <Chinesesimp>作者</Chinesesimp>
+                <Korean>작성자</Korean>
+                <French>Auteur</French>
+                <Turkish>Yazar</Turkish>
+            </Key>
+            <Key ID="STR_antistasi_extenders_warning_dialog_ListExtenders_ColumnVersion">
+                <Original>Version</Original>
+                <German>Version</German>
+                <Russian>Версия</Russian>
+                <Chinesesimp>版本</Chinesesimp>
+                <Korean>버전</Korean>
+                <French>Version</French>
+                <Turkish>Sürüm</Turkish>
+            </Key>
+            <Key ID="STR_antistasi_extenders_warning_dialog_ListExtenders_ColumnCompatibility">
+                <Original>Compatibility</Original>
+                <German>Kompatibilität</German>
+                <Russian>Совместимость</Russian>
+                <Chinesesimp>兼容性</Chinesesimp>
+                <Korean>호환성</Korean>
+                <French>Compatibilité</French>
+                <Turkish>Uyumluluk</Turkish>
+            </Key>
         </Container>
         <Container name="hqpos_dialog">
             <Key ID="STR_antistasi_dialogs_hqpos_close">
