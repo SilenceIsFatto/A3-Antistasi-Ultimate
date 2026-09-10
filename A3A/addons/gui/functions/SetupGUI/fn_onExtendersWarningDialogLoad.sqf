@@ -91,8 +91,8 @@ EGVAR(core,extendersLoaded) apply {
     _index = _control lnbAddRow[
         _extender get "name",
         _extender get "author",
-        str(_extender get "version"),
-        str(_extender get "compatDeclared")
+        [_extender get "version", 1, 1] call CBA_fnc_formatNumber,
+        [_extender get "compatDeclared", 1, 1] call CBA_fnc_formatNumber
     ];
 
     switch true do {
