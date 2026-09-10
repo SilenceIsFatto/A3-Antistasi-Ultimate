@@ -89,6 +89,7 @@ class GVAR(ExtendersWarningDialog) {
 			y = QUOTE(0.302 * safezoneH + safezoneY);
 			w = QUOTE(0.489844 * safezoneW);
 			h = QUOTE(0.319 * safezoneH);
+			UI_FONT_DEFAULT;
 		};
 		class CheckConfirm: RscCheckbox
 		{
