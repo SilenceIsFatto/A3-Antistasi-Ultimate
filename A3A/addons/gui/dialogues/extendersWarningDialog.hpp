@@ -13,14 +13,14 @@ class GVAR(RscText): RscText {
 	UI_FONT_DEFAULT;
 };
 
-/* #Qabame
+/* #Lecuwa
 $[
 	1.063,
 	["antistasi_extenders_warning_dialog",[[0,0,1,1],0.025,0.04,"GUI_GRID"],2,1,1],
 	[-1000,"StaticTitle",[1,"ANTISTASI ULTIMATE SETUP - EXTENDERS COMPATIBILITY NOTICE",["0.257656 * safezoneW + safezoneX","0.192 * safezoneH + safezoneY","0.500156 * safezoneW","0.033 * safezoneH"],[-1,-1,-1,-1],[0,0.8,0,1],[-1,-1,-1,-1],"","-1"],["moving = 1;"]],
 	[-1002,"StaticBackground",[1,"",["0.257656 * safezoneW + safezoneX","0.225 * safezoneH + safezoneY","0.500156 * safezoneW","0.55 * safezoneH"],[-1,-1,-1,-1],[0,0,0,0.8],[-1,-1,-1,-1],"","-1"],[]],
-	[1001,"StaticTextWarning",[1,"WARNING: You have loaded extenders. Some of them failed the compatibility check to this version of Antistasi Ultimate.",["0.262812 * safezoneW + safezoneX","0.236 * safezoneH + safezoneY","0.489844 * safezoneW","0.055 * safezoneH"],[0.8,0,0,1],[0,0,0,1],[-1,-1,-1,-1],"","-1"],["style = QUOTE(ST_CENTER + ST_MULTI);"]],
-	[1500,"ListExtenders",[1,"",["0.262812 * safezoneW + safezoneX","0.302 * safezoneH + safezoneY","0.489844 * safezoneW","0.319 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],["type = CT_LISTNBOX;","idcLeft = -1;","idcRight = -1;","drawSideArrows = 0;"]],
+	[1001,"StaticTextWarning",[1,"WARNING: You have loaded extenders. Some of them failed the compatibility check to this version of Antistasi Ultimate.",["0.262812 * safezoneW + safezoneX","0.236 * safezoneH + safezoneY","0.489844 * safezoneW","0.11 * safezoneH"],[0.8,0,0,1],[0,0,0,1],[-1,-1,-1,-1],"","-1"],["style = QUOTE(ST_CENTER + ST_MULTI);"]],
+	[1500,"ListExtenders",[1,"",["0.262812 * safezoneW + safezoneX","0.357 * safezoneH + safezoneY","0.489844 * safezoneW","0.264 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],["type = CT_LISTNBOX;","idcLeft = -1;","idcRight = -1;","drawSideArrows = 0;"]],
 	[2800,"CheckConfirm",[1,"",["0.262812 * safezoneW + safezoneX","0.654 * safezoneH + safezoneY","0.0257812 * safezoneW","0.044 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1003,"LabelConfirm",[1,"I understand and I know what I am doing; let me continue setting up the game.",["0.288594 * safezoneW + safezoneX","0.654 * safezoneH + safezoneY","0.458906 * safezoneW","0.044 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[1600,"BtnContinue",[1,"Continue",["0.45875 * safezoneW + safezoneX","0.709 * safezoneH + safezoneY","0.0825 * safezoneW","0.044 * safezoneH"],[-1,-1,-1,-1],[0,1,0,0.8],[-1,-1,-1,-1],"","-1"],[]]
@@ -74,7 +74,7 @@ class GVAR(ExtendersWarningDialog) {
 			x = QUOTE(0.262812 * safezoneW + safezoneX);
 			y = QUOTE(0.236 * safezoneH + safezoneY);
 			w = QUOTE(0.489844 * safezoneW);
-			h = QUOTE(0.055 * safezoneH);
+			h = QUOTE(0.11 * safezoneH);
 			colorText[] = {0.8,0,0,1};
 		};
 		class ListExtenders: RscListbox
@@ -86,9 +86,9 @@ class GVAR(ExtendersWarningDialog) {
 
 			idc = IDC_ANTISTASI_EXTENDERS_WARNING_DIALOG_LISTEXTENDERS;
 			x = QUOTE(0.262812 * safezoneW + safezoneX);
-			y = QUOTE(0.302 * safezoneH + safezoneY);
+			y = QUOTE(0.357 * safezoneH + safezoneY);
 			w = QUOTE(0.489844 * safezoneW);
-			h = QUOTE(0.319 * safezoneH);
+			h = QUOTE(0.264 * safezoneH);
 			UI_FONT_DEFAULT;
 		};
 		class CheckConfirm: RscCheckbox
