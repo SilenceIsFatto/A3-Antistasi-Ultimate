@@ -44,7 +44,7 @@ Trace_1(QFUNCMAIN(despawnQueueEntity),_this);
 
 if !assert(isServer) exitWith { Error("Function can only be called on the server.") };
 
-spawn {
+_this spawn {
     if !assert(params[
         ["_entity", nil, [objNull]]
     ]) exitWith {};
