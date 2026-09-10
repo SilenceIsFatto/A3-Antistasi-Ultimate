@@ -28,12 +28,15 @@ if !assert(params[
     ["_config", nil, [configNull]]
 ]) exitWith {};
 
+private _ourVersion = parseNumber([VERSION_AR_FULL] select[0, 2] joinString ".");
 private _extender = createHashMapFromArray[
     ["author", getText(_config >> "author")],
+    ["compatDeclared", 0],
     ["compatReason", ""],
     ["compatStatus", 0], // 0=all good, 1=incompatible, 2=might be compatible
     ["extender", configName _config],
-    ["name", getText(_config >> "name")]
+    ["name", getText(_config >> "name")],
+    ["version", getNumber(_config >> "version")]
 ];
 
 try {
@@ -50,12 +53,23 @@ try {
         throw ["A3A_compatibility needs to be an array with two integer elements", 1];
     };
 
+    _compatVersion = parseNumber format["%1.%2", _major, _minor];
+    _extender set["compatDeclared", _compatVersion];
+
     if (_major > MAJOR) then {
         throw ["can't declare compatibility for a higher major version", 1];
     };
 
     if (_minor > MINOR) then {
-        throw ["can't declare compatibility for a higher minor version", 2];
+        throw ["can't declare compatibility for a higher minor version", 1];
+    };
+
+    if (_minor isEqualTo 0) then {
+        throw ["only declared compatibility for major versions", 2];
+    };
+
+    if (_compatVersion < _ourVersion) then {
+        throw ["compatibility version is lower than our version", 1];
     };
 } catch {
     _exception params["_reason","_status"];
