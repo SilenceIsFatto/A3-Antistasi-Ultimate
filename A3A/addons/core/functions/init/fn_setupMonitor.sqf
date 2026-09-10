@@ -101,6 +101,8 @@ while {isNil "A3A_saveData"} do {
     // Get server OS / platform for new / old save file usage
     private _platform = productVersion select 6;
 
+    missionNamespace setVariable[QGVAR(extendersLoaded), GVAR(extendersLoaded), owner A3A_setupPlayer];
+    missionNamespace setVariable[QGVAR(extendersLoadedInvalid), GVAR(extendersLoadedInvalid), owner A3A_setupPlayer];
     ["sendData", [_saveData, _loadedPatches, _loadedDLC, _platform]] remoteExec ["A3A_fnc_setupDialog", A3A_setupPlayer];
 };
 

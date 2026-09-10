@@ -118,6 +118,8 @@ switch (_mode) do
     {
         _params params ["_saveData", "_loadedPatches", "_loadedDLC", "_platform"];
 
+        if !([_params] call A3A_fnc_setupCheckExtenders) then { break };
+
         // Generate user map names
         private _prettyMapHM = createHashMapFromArray [
             ["vt7", "Virolahti"]

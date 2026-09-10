@@ -7,6 +7,7 @@ Description:
     Check loaded extenders, open dismissal dialog, if necessary
 
 Parameters:
+    0: _params - Array of parameters originally passed to `A3A_fnc_setupDialog`
 
 Optional:
 
@@ -30,7 +31,7 @@ if (!assert(!isNil QEGVAR(core,extendersLoaded)) || { !assert(!isNil QEGVAR(core
 };
 
 // Warnings already dismissed by this dialog
-if (!isNil QEGVAR(core,extendersWarningDismissed)) exitWith {
+if (!isNil QGVAR(extendersWarningDismissed)) exitWith {
     true;
 };
 
@@ -38,6 +39,8 @@ if (!isNil QEGVAR(core,extendersWarningDismissed)) exitWith {
 if (QEGVAR(core,extendersLoadedInvalid) isEqualTo []) exitWith {
     true;
 };
+
+missionNamespace setVariable[QGVAR(setupDialogParams), _params];
 
 [{ createDialog QGVAR(ExtendersWarningDialog) }] call CBA_fnc_execNextFrame;
 

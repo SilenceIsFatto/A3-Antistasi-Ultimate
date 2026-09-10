@@ -40,4 +40,17 @@ if (_exitCode isEqualTo MB_BUTTON_CANCEL) exitWith {
     [{ createDialog QGVAR(ExtendersWarningDialog) }] call CBA_fnc_execNextFrame;
 };
 
+GVAR(extendersWarningDismissed) = true;
+
+[{
+    private _params = missionNamespace getVariable QGVAR(setupDialogParams);
+
+    if !assert(!isNil "_params") exitWith {
+        Error("Something went horribly wrong; we forgot the setup dialog parameters");
+    };
+
+    missionNamespace setVariable[QGVAR(setupDialogParams), nil];
+    ["sendData", _params] call A3A_fnc_setupDialog;
+}] call CBA_fnc_execNextFrame;
+
 nil;
