@@ -45,10 +45,7 @@ private _extenders = QUOTE(QUOTE(QADDON) in getArray(_x >> 'requiredAddons')) co
     [_x] call A3A_fnc_validateExtenderCompat;
 };
 
-GVAR(extendersLoaded) = _extenders;
-GVAR(extendersLoadedInvalid) = _extenders select {
-    (_x get "compatStatus" isNotEqualTo 0)
-} apply {
+GVAR(extendersLoaded) = _extenders apply {
     [
         _x get "author",
         _x get "name",
@@ -57,8 +54,12 @@ GVAR(extendersLoadedInvalid) = _extenders select {
     ]
 };
 
-GVAR(extendersLoadedInvalid) sort true;
-GVAR(extendersLoadedInvalid) = GVAR(extendersLoadedInvalid) apply { _x select - 1 };
+GVAR(extendersLoaded) sort true;
+GVAR(extendersLoaded) = GVAR(extendersLoaded) apply { _x select - 1 };
+
+GVAR(extendersLoadedInvalid) = GVAR(extendersLoaded) select {
+    (_x get "compatStatus" isNotEqualTo 0)
+};
 
 Info("Extender detection completed.");
 
