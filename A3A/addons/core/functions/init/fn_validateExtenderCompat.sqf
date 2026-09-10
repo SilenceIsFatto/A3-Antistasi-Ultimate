@@ -64,7 +64,7 @@ try {
         throw ["can't declare compatibility for a higher minor version", 1];
     };
 
-    if (_minor isEqualTo 0) then {
+    if (MINOR > 0 && {_minor isEqualTo 0}) then {
         throw ["only declared compatibility for major versions", 2];
     };
 
