@@ -203,6 +203,29 @@
 #define CBA_EVENT_CLIENT_TEARDOWN_MODE_CHANGED QUOTE(TRIPLES(PREFIX_CONST,event,clientTeardownModeChanged))
 
 /* -------------------------------------------
+    Event: CBA_EVENT_CLIENT_UNDERCOVER_CHANGED
+        Triggered when the player changes undercover status.
+
+    Parameters:
+        0: undercoverStatus - the player's undercover status <BOOL>
+        1: undercoverBrokenReason - the reason why the player's undercover
+            status was broken <STRING> (optional)
+
+    Broadcast:
+        No
+
+    Sent by:
+        Client
+    
+    Recipients:
+        Client
+
+    Replaces:
+        "Undercover" event
+------------------------------------------- */
+#define CBA_EVENT_CLIENT_UNDERCOVER_CHANGED QUOTE(TRIPLES(PREFIX_CONST,event,clientUndercoverChanged))
+
+/* -------------------------------------------
     Event: CBA_EVENT_CLIENT_VEHICLE_BOX_RESTORE
         Triggered when a client restores a vehicle box.
 
