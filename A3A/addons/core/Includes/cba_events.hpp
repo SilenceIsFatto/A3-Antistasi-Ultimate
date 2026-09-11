@@ -108,7 +108,6 @@
 ------------------------------------------- */
 #define CBA_EVENT_CLIENT_INIT_DONE QUOTE(TRIPLES(PREFIX_CONST,event,clientInitDone))
 
-// Client-only event; on personal save loaded; params=[Hashmap saveData]
 /* -------------------------------------------
     Event: CBA_EVENT_CLIENT_PLAYER_LOAD
         Triggered when the server loads players' personal save data.
@@ -132,7 +131,7 @@
 
             player setVariable["MyCustomVar1", _saveData get "MyCustomVar1"];
             player setVariable["MyCustomVar2", _saveData get "MyCustomVar2"];
-        }] call FUNCMAIN(addEventHandler);
+        }] call A3A_fnc_addEventHandler;
         (end example)
 
     Broadcast:
@@ -169,7 +168,7 @@
 
             _saveData set["MyCustomVar1", player getVariable "MyCustomVar1"];
             _saveData set["MyCustomVar2", player getVariable "MyCustomVar2"];
-        }] call FUNCMAIN(addEventHandler);
+        }] call A3A_fnc_addEventHandler;
         (end example)
 
     Broadcast:
@@ -227,7 +226,8 @@
 
 /* -------------------------------------------
     Event: CBA_EVENT_CLIENT_VEHICLE_BOX_RESTORE
-        Triggered when a client restores a vehicle box.
+        Triggered when a client triggers "restore nearby vehicles" at the
+        vehicle box.
 
     Parameters:
         0: position - the position of the vehicle box <ARRAY>
@@ -253,7 +253,7 @@
 /* -------------------------------------------
     Event: CBA_EVENT_SERVER_CREATE_REBEL_CONTROL
         Triggered when a rebel control (watchpost, emplacements, etc.) is
-        created on the server.
+        established (i.e.: HC moved to task point and control is built).
 
     Parameters:
         0: marker - the marker of the rebel control <STRING>
