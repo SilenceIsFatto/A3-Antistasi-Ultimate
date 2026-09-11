@@ -1,6 +1,6 @@
 class Events {
     class AIVehInit {
-        CBA_Event = CBA_EVENT_SERVER_AI_VEHICLE_INIT;
+        CBA_Event = CBA_EVENT_SERVER_INIT_AI_VEHICLE;
     };
     class HQPlaced {
         CBA_Event = CBA_EVENT_CLIENT_HQ_BUILT;

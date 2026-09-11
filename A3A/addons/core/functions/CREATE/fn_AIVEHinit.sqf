@@ -290,5 +290,5 @@ if (_side != teamPlayer) then {///might need to change that, tho I'm not sure
 };
 
 if (!isNull _veh) then {
-    [CBA_EVENT_SERVER_AI_VEHICLE_INIT, [_veh, _side]] call FUNCMAIN(triggerServerEvent);
+    [CBA_EVENT_SERVER_INIT_AI_VEHICLE, [_veh, _side]] call FUNCMAIN(triggerServerEvent);
 };

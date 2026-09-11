@@ -228,28 +228,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 /* -------------------------------------------
-    Event: CBA_EVENT_SERVER_AI_VEHICLE_INIT
-        Triggered when an AI vehicle is initialized on the server.
-
-    Parameters:
-        0: vehicle - the AI vehicle object <OBJECT>
-        1: side - the side the vehicle belongs to <SIDE>
-
-    Broadcast:
-        No
-
-    Sent by:
-        Server
-    
-    Recipients:
-        Server
-    
-    Replaces:
-        "AIVehInit" event
-------------------------------------------- */
-#define CBA_EVENT_SERVER_AI_VEHICLE_INIT QUOTE(TRIPLES(PREFIX_CONST,event,serverAiVehicleInit))
-
-/* -------------------------------------------
     Event: CBA_EVENT_SERVER_CREATE_REBEL_CONTROL
         Triggered when a rebel control (watchpost, emplacements, etc.) is
         created on the server.
@@ -271,6 +249,28 @@
         "RebelControlCreated" event
 ------------------------------------------- */
 #define CBA_EVENT_SERVER_CREATE_REBEL_CONTROL QUOTE(TRIPLES(PREFIX_CONST,event,serverCreateRebelControl))
+
+/* -------------------------------------------
+    Event: CBA_EVENT_SERVER_INIT_AI_VEHICLE
+        Triggered when an AI vehicle is initialized on the server.
+
+    Parameters:
+        0: vehicle - the AI vehicle object <OBJECT>
+        1: side - the side the vehicle belongs to <SIDE>
+
+    Broadcast:
+        No
+
+    Sent by:
+        Server
+    
+    Recipients:
+        Server
+    
+    Replaces:
+        "AIVehInit" event
+------------------------------------------- */
+#define CBA_EVENT_SERVER_INIT_AI_VEHICLE QUOTE(TRIPLES(PREFIX_CONST,event,serverInitAiVehicle))
 
 /* -------------------------------------------
     Event: CBA_EVENT_SERVER_INIT_DONE
