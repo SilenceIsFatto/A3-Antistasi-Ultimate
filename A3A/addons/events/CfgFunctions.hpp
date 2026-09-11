@@ -5,7 +5,6 @@ class CfgFunctions {
 			class addEventListener {};
 			class removeEventListener {};
 			class triggerEvent {};
-			class validateEventArguments {};
 		};
 	};
 };
