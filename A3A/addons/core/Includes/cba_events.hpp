@@ -69,6 +69,28 @@
 #define CBA_EVENT_CLIENT_BUILDER_START QUOTE(TRIPLES(PREFIX_CONST,event,clientBuilderStart))
 
 /* -------------------------------------------
+    Event: CBA_EVENT_CLIENT_HQ_PLACED
+        Triggered when moving HQ is complete.
+
+    Parameters:
+        0: position - the new HQ position <ARRAY>
+        1: player - the player who placed the HQ <OBJECT>
+
+    Broadcast:
+        No
+
+    Sent by:
+        Client
+    
+    Recipients:
+        All machines including sender
+    
+    Replaces:
+        "HQPlaced" event
+------------------------------------------- */
+#define CBA_EVENT_CLIENT_HQ_PLACED QUOTE(TRIPLES(PREFIX_CONST,event,clientHqPlaced))
+
+/* -------------------------------------------
     Event: CBA_EVENT_CLIENT_INIT_DONE
         Triggered after `A3A_fnc_clientInit` finished and client is fully set up.
 

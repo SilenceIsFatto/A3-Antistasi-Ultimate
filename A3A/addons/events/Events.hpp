@@ -3,14 +3,7 @@ class Events {
         CBA_Event = CBA_EVENT_SERVER_AI_VEHICLE_INIT;
     };
     class HQPlaced {
-        isLocal = 1;
-        class params {
-            class _0 {
-                description = "Position of new HQ";
-                types[] = {"ARRAY"};
-                optional = 0;
-            };
-        };
+        CBA_Event = CBA_EVENT_CLIENT_HQ_BUILT;
     };
     class RebelControlCreated {
         isLocal = 1;
