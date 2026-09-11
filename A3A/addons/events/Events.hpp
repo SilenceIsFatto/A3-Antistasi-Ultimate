@@ -21,24 +21,7 @@ class Events {
         CBA_Event = CBA_EVENT_SERVER_INIT_CIVILIAN_VEHICLE;
     };
     class locationSpawned {
-        isLocal = 1;
-        class params {
-            class _0 {
-                description = "Marker";
-                types[] = {"STRING"};
-                optional = 0;
-            };
-            class _1 {
-                description = "Location type";
-                types[] = {"STRING"};
-                optional = 0;
-            };
-            class _2 {
-                description = "Is spawning";
-                types[] = {"BOOL"};
-                optional = 0;
-            };
-        };
+        CBA_Event = CBA_EVENT_SERVER_SPAWN_LOCATION;
     };
     class AIInit {
         isLocal = 1;

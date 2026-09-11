@@ -363,4 +363,28 @@
 // UNUSED
 #define CBA_EVENT_SERVER_GAME_SAVED QUOTE(TRIPLES(PREFIX_CONST,event,serverGameSaved))
 
+/* -------------------------------------------
+    Event: CBA_EVENT_SERVER_SPAWN_LOCATION
+        Triggered when a location is spawned on the server.
+
+    Parameters:
+        0: location - the spawn location marker <STRING>
+        1: locationType - the type of location being spawned <STRING>
+        2: isSpawning - whether the location is currently being spawned (true)
+            or despawned (false) <BOOL>
+
+    Broadcast:
+        No
+
+    Sent by:
+        Server
+    
+    Recipients:
+        Server
+    
+    Replaces:
+        "locationSpawned" event
+------------------------------------------- */
+#define CBA_EVENT_SERVER_SPAWN_LOCATION QUOTE(TRIPLES(PREFIX_CONST,event,serverSpawnLocation))
+
 #endif // __HAVE_CBA_EVENTS_HPP__
