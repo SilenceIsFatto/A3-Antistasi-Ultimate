@@ -6,19 +6,7 @@ class Events {
         CBA_Event = CBA_EVENT_CLIENT_HQ_BUILT;
     };
     class RebelControlCreated {
-        isLocal = 1;
-        class params {
-            class _0 {
-                description = "Marker";
-                types[] = {"STRING"};
-                optional = 0;
-            };
-            class _1 {
-                description = "Control Type";
-                types[] = {"STRING"};
-                optional = 0;
-            };
-        };
+        CBA_Event = CBA_EVENT_SERVER_CREATE_REBEL_CONTROL;
     };
     class markerChange {
         CBA_Event = CBA_EVENT_SERVER_MARKER_CHANGE;

@@ -229,6 +229,29 @@
 #define CBA_EVENT_SERVER_AI_VEHICLE_INIT QUOTE(TRIPLES(PREFIX_CONST,event,serverAiVehicleInit))
 
 /* -------------------------------------------
+    Event: CBA_EVENT_SERVER_CREATE_REBEL_CONTROL
+        Triggered when a rebel control (watchpost, emplacements, etc.) is
+        created on the server.
+
+    Parameters:
+        0: marker - the marker of the rebel control <STRING>
+        1: controlType - the type of control <STRING>
+
+    Broadcast:
+        No
+
+    Sent by:
+        Server
+    
+    Recipients:
+        Server
+    
+    Replaces:
+        "RebelControlCreated" event
+------------------------------------------- */
+#define CBA_EVENT_SERVER_CREATE_REBEL_CONTROL QUOTE(TRIPLES(PREFIX_CONST,event,serverCreateRebelControl))
+
+/* -------------------------------------------
     Event: CBA_EVENT_SERVER_INIT_DONE
         Triggered early after server has completed its preliminary
         initialization.
