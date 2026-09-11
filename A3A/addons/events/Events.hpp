@@ -21,19 +21,7 @@ class Events {
         };
     };
     class markerChange {
-        isLocal = 1;
-        class params {
-            class _0 {
-                description = "Marker";
-                types[] = {"String"};
-                optional = 0;
-            };
-            class _1 {
-                description = "Side of winner";
-                types[] = {"SIDE"};
-                optional = 0;
-            };
-        };
+        CBA_Event = CBA_EVENT_SERVER_MARKER_CHANGE;
     };
     class vehicleBoxRestore {
         isLocal = 1;

@@ -251,6 +251,29 @@
 ------------------------------------------- */
 #define CBA_EVENT_SERVER_INIT_DONE QUOTE(TRIPLES(PREFIX_CONST,event,serverInitDone))
 
+/* -------------------------------------------
+    Event: CBA_EVENT_SERVER_MARKER_CHANGE
+        Triggered when marker ownership changes on the server.
+
+    Parameters:
+        0: marker - the marker that changed <STRING>
+        1: winner - side of new owner <SIDE>
+        2: loser - side of previous owner <SIDE>
+
+    Broadcast:
+        No
+
+    Sent by:
+        Server
+    
+    Recipients:
+        Server
+    
+    Replaces:
+        "markerChange" event
+------------------------------------------- */
+#define CBA_EVENT_SERVER_MARKER_CHANGE QUOTE(TRIPLES(PREFIX_CONST,event,serverMarkerChange))
+
 // UNUSED
 #define CBA_EVENT_SERVER_GAME_SAVED QUOTE(TRIPLES(PREFIX_CONST,event,serverGameSaved))
 
