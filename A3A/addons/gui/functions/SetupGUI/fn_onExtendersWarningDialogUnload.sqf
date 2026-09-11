@@ -40,8 +40,7 @@ if (_exitCode isEqualTo MB_BUTTON_CANCEL) exitWith {
     [{ createDialog QGVAR(ExtendersWarningDialog) }] call CBA_fnc_execNextFrame;
 };
 
-GVAR(extendersWarningDismissed) = true;
-
+// Dialog terminated w/ checkbox acknowledged. Run setup dialog.
 [{
     private _params = missionNamespace getVariable QGVAR(setupDialogParams);
 

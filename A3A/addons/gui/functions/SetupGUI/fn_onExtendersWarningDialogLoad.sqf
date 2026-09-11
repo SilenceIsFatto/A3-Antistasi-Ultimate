@@ -61,7 +61,7 @@ private _button = uiNamespace getVariable QGVAR(extendersWarningDialog)
 _button ctrlEnable false;
 _button ctrlAddEventHandler["ButtonClick", {
     Trace_1(QFUNCMAIN(onExtendersWarningDialogLoad_BtnContinueClick),_this);
-    GVAR(extendersWarningsDismissed) = true;
+    GVAR(extendersWarningDismissed) = true;
     while { dialog } do { closeDialog 0 };
 }];
 
@@ -94,6 +94,8 @@ EGVAR(core,extendersLoaded) apply {
         [_extender get "version", 1, 1] call CBA_fnc_formatNumber,
         [_extender get "compatDeclared", 1, 1] call CBA_fnc_formatNumber
     ];
+
+    _control lnbSetTooltip[[_index, 0], format ["%1\nby %2\ncompat status: %3", _extender get "extender", _extender get "author", _extender get "compatReason"]];
 
     switch true do {
         case (_extender get "compatDeclared" isEqualTo 0): {
