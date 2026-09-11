@@ -18,14 +18,7 @@ class Events {
         CBA_Event = CBA_EVENT_SERVER_INIT_CIVILIAN_UNIT;
     };
     class civVehInit {
-        isLocal = 1;
-        class params {
-            class _0 {
-                description = "civ vehicle being initialized";
-                types[] = {"OBJECT"};
-                optional = 0;
-            };
-        };
+        CBA_Event = CBA_EVENT_SERVER_INIT_CIVILIAN_VEHICLE;
     };
     class locationSpawned {
         isLocal = 1;
