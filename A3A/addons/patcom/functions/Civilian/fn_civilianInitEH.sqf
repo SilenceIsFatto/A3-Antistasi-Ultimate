@@ -55,7 +55,7 @@ if (_civNotHuman) exitWith
         params ["_victim", "_killer"];
         [_victim] spawn A3A_fnc_postmortem;
     }];
-    [CBA_EVENT_SERVER_INIT_CIVILIAN_UNIT, [_unit]] call FUNCMAIN(triggerLocalEvent);
+    [CBA_EVENT_SERVER_INIT_CIVILIAN_UNIT, [_unit]] call FUNCMAIN(triggerServerEvent);
 };
 
 _unit addEventHandler["FiredNear", {
@@ -102,6 +102,6 @@ _unit addEventHandler ["Killed", {
     [_victim] spawn A3A_fnc_postmortem;
 }];
 
-[CBA_EVENT_SERVER_INIT_CIVILIAN_UNIT, [_unit]] call FUNCMAIN(triggerLocalEvent);
+[CBA_EVENT_SERVER_INIT_CIVILIAN_UNIT, [_unit]] call FUNCMAIN(triggerServerEvent);
 
 nil;
