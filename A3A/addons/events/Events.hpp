@@ -24,29 +24,7 @@ class Events {
         CBA_Event = CBA_EVENT_SERVER_SPAWN_LOCATION;
     };
     class AIInit {
-        isLocal = 1;
-        class params {
-            class _0 {
-                description = "Unit being initialized";
-                types[] = {"OBJECT"};
-                optional = 0;
-            };
-            class _1 {
-                description = "Side of the unit";
-                types[] = {"SIDE"};
-                optional = 0;
-            };
-            class _2 {
-                description = "Marker the unit belongs to";
-                types[] = {"STRING"};
-                optional = 1;
-            };
-            class _3 {
-                description = "If the unit is a spawner";
-                types[] = {"BOOL"};
-                optional = 0;
-            };
-        };
+        CBA_Event = CBA_EVENT_SERVER_INIT_AI_UNIT;
     };
     class Undercover {
         isLocal = 1;

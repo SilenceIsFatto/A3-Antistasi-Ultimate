@@ -251,6 +251,30 @@
 #define CBA_EVENT_SERVER_CREATE_REBEL_CONTROL QUOTE(TRIPLES(PREFIX_CONST,event,serverCreateRebelControl))
 
 /* -------------------------------------------
+    Event: CBA_EVENT_SERVER_INIT_AI_UNIT
+        Triggered when an AI unit is initialized on the server.
+
+    Parameters:
+        0: unit - the AI unit object <OBJECT>
+        1: side - the side the unit belongs to <SIDE>
+        2: marker - the marker associated with the AI unit <STRING>
+        3: isSpawner - if the unit is a spawner <BOOL>
+
+    Broadcast:
+        No
+
+    Sent by:
+        Server
+    
+    Recipients:
+        Server
+    
+    Replaces:
+        "AIInit" event
+------------------------------------------- */
+#define CBA_EVENT_SERVER_INIT_AI_UNIT QUOTE(TRIPLES(PREFIX_CONST,event,serverInitAiUnit))
+
+/* -------------------------------------------
     Event: CBA_EVENT_SERVER_INIT_AI_VEHICLE
         Triggered when an AI vehicle is initialized on the server.
 
