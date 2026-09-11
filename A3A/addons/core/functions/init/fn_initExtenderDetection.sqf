@@ -36,11 +36,14 @@ private _ignore = [
     QUOTE(DOUBLES(PREFIX,scrt)),
     QUOTE(DOUBLES(PREFIX,ultimate)),
     QUOTE(DOUBLES(PREFIX,zeus))
-];
+] apply { toLowerANSI _x };
 
-private _extenders = QUOTE(QUOTE(QADDON) in getArray(_x >> 'requiredAddons')) configClasses(configFile >> "CfgPatches") select {
+private _extenders = QUOTE(
+    (getArray(_x >> 'requiredAddons') apply { toLowerANSI _x } arrayIntersect _ignore) isNotEqualTo []
+) configClasses(configFile >> "CfgPatches") select {
     // Ignore our own cross-dependencies
-    !(configName _x in _ignore);
+    private _addon = toLowerANSI configName _x;
+    _ignore findIf { _addon find _x isEqualTo 0 } isEqualTo -1;
 } apply {
     [_x] call A3A_fnc_validateExtenderCompat;
 };
