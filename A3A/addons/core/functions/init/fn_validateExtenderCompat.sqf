@@ -28,23 +28,41 @@ if !assert(params[
     ["_config", nil, [configNull]]
 ]) exitWith {};
 
+#define AUGMENT_PROPERTY(type,name,defaultValue) (if (is##type(_config >> QUOTE(name))) then { \
+    _extender set[QUOTE(name), get##type(_config >> QUOTE(name))]; \
+} else { \
+    if (!isNil "_addonRootConfig" && { is##type(_addonRootConfig >> QUOTE(name)) }) then { \
+        _extender set[QUOTE(name), get##type(_addonRootConfig >> QUOTE(name))]; \
+    } else { \
+        _extender set[QUOTE(name), defaultValue]; \
+    }; \
+})
+
 private _ourVersion = parseNumber([VERSION_AR_FULL] select[0, 2] joinString ".");
 private _extender = createHashMapFromArray[
-    ["author", getText(_config >> "author")],
     ["compatDeclared", 0],
-    ["compatReason", ""],
+    ["compatReason", "compatible"],
     ["compatStatus", 0], // 0=all good, 1=incompatible, 2=might be compatible
-    ["extender", configName _config],
-    ["name", getText(_config >> "name")],
-    ["version", getNumber(_config >> "version")]
+    ["extender", configName _config]
 ];
 
+private _addonRootConfig = if !(isText(_config >> "addonRootClass")) then {
+    nil;
+} else {
+    configFile >> "CfgPatches" >> getText(_config >> "addonRootClass");
+};
+
+AUGMENT_PROPERTY(Text,author,"Unknown");
+AUGMENT_PROPERTY(Text,name,configName _config);
+AUGMENT_PROPERTY(Number,version,0);
+AUGMENT_PROPERTY(Array,A3A_compatibility,configNull);
+
 try {
-    if !(isArray(_config >> "A3A_compatibility")) then {
+    if !(_extender get "A3A_compatibility" isEqualType []) then {
         throw ["missing A3A_compatibility information or it's not an array", 1];
     };
 
-    private _compatVersion = getArray(_config >> "A3A_compatibility");
+    private _compatVersion = _extender get "A3A_compatibility";
 
     if !assert(_compatVersion params[
         ["_major", nil, [0]],
