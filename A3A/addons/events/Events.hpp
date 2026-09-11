@@ -15,14 +15,7 @@ class Events {
         CBA_Event = CBA_EVENT_CLIENT_VEHICLE_BOX_RESTORE;
     };
     class civInit {
-        isLocal = 1;
-        class params {
-            class _0 {
-                description = "Unit being initialized";
-                types[] = {"OBJECT"};
-                optional = 0;
-            };
-        };
+        CBA_Event = CBA_EVENT_SERVER_INIT_CIVILIAN_UNIT;
     };
     class civVehInit {
         isLocal = 1;

@@ -273,6 +273,27 @@
 #define CBA_EVENT_SERVER_INIT_AI_VEHICLE QUOTE(TRIPLES(PREFIX_CONST,event,serverInitAiVehicle))
 
 /* -------------------------------------------
+    Event: CBA_EVENT_SERVER_INIT_CIVILIAN_UNIT
+        Triggered when a civilian unit is initialized on the server.
+
+    Parameters:
+        0: unit - the civilian unit object <OBJECT>
+
+    Broadcast:
+        No
+
+    Sent by:
+        Server
+    
+    Recipients:
+        Server
+    
+    Replaces:
+        "civInit" event
+------------------------------------------- */
+#define CBA_EVENT_SERVER_INIT_CIVILIAN_UNIT QUOTE(TRIPLES(PREFIX_CONST,event,serverInitCivilianUnit))
+
+/* -------------------------------------------
     Event: CBA_EVENT_SERVER_INIT_DONE
         Triggered early after server has completed its preliminary
         initialization.
