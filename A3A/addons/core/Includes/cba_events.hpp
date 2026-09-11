@@ -202,6 +202,27 @@
 ------------------------------------------- */
 #define CBA_EVENT_CLIENT_TEARDOWN_MODE_CHANGED QUOTE(TRIPLES(PREFIX_CONST,event,clientTeardownModeChanged))
 
+/* -------------------------------------------
+    Event: CBA_EVENT_CLIENT_VEHICLE_BOX_RESTORE
+        Triggered when a client restores a vehicle box.
+
+    Parameters:
+        0: position - the position of the vehicle box <ARRAY>
+
+    Broadcast:
+        No
+
+    Sent by:
+        Client
+    
+    Recipients:
+        Client
+    
+    Replaces:
+        "vehicleBoxRestore" event
+------------------------------------------- */
+#define CBA_EVENT_CLIENT_VEHICLE_BOX_RESTORE QUOTE(TRIPLES(PREFIX_CONST,event,clientVehicleBoxRestore))
+
 ////////////////////////////////////////////////////////////////////////////////
 ///  SERVER CBA EVENTS /////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

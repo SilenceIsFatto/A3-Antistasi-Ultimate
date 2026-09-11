@@ -12,14 +12,7 @@ class Events {
         CBA_Event = CBA_EVENT_SERVER_MARKER_CHANGE;
     };
     class vehicleBoxRestore {
-        isLocal = 1;
-        class params {
-            class _0 {
-                description = "Position of effect center";
-                types[] = {"ARRAY"};
-                optional = 0;
-            };
-        };
+        CBA_Event = CBA_EVENT_CLIENT_VEHICLE_BOX_RESTORE;
     };
     class civInit {
         isLocal = 1;
