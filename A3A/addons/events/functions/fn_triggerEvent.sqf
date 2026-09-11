@@ -39,4 +39,4 @@ Warning("please update your event system implementation. The old event system WI
 // actually used and broadcast events were always local.
 [_cbaEvent, _arguments] call FUNCMAIN(triggerLocalEvent);
 
-nil;
+true;

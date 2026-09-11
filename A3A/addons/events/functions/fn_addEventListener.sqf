@@ -64,4 +64,4 @@ if (isNil QGVAR(cbaEventIdMapper)) then {
 
 GVAR(cbaEventIdMapper) set[_id, [_cbaEvent, _cbaId]];
 
-nil;
+[_event, _id];
