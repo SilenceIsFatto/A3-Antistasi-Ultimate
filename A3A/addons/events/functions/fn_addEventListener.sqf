@@ -43,6 +43,10 @@ _cbaEvent = getText(_cbaEvent >> "CBA_Event");
 Warning_2("backwards compatibility for old event ""%1"" invoked; subscribing CBA event ""%2"" instead",_event,_cbaEvent);
 Warning("please update your event system implementation. The old event system WILL be removed.");
 
+if (!isNil QGVAR(cbaEventIdMapper) && { _id in GVAR(cbaEventIdMapper) }) then {
+    [_event, _id] call FUNC(removeEventListener);
+};
+
 if (_callback isEqualType "") then {
     private _function = missionNamespace getVariable[_callback, uiNamespace getVariable[_callback, {}]];
     if !assert(_function isEqualType {}) then {
