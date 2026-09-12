@@ -410,6 +410,7 @@ class CfgFunctions
             class initACE {};
             class initACEUnconsciousHandler {};
             class initBases {};
+            class initExtenderDetection {};
             class initUtilityItems {};
             class initGarrisons {};
             class initPreJIP { preInit = 1; };
@@ -428,6 +429,7 @@ class CfgFunctions
             class prepareMarkerArrays {};
             class resourcecheck {};
             class tags {};
+            class validateExtenderCompat {};
         };
 
         class Intel {
