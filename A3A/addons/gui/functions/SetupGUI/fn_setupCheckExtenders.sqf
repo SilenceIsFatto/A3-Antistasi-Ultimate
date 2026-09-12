@@ -24,7 +24,11 @@ Author:
 ---------------------------------------------------------------------------- */
 Trace_1(QFUNCMAIN(setupCheckExtenders),_this);
 
-// Should not happen but we can't game setup abort
+if !assert(params[
+    ["_params", nil, [[]]]
+]) exitWith {};
+
+// Should not happen but we can't abort game setup
 if (!assert(!isNil QEGVAR(core,extendersLoaded)) || { !assert(!isNil QEGVAR(core,extendersLoadedInvalid)) }) exitWith {
     Error_1("Client never got extender information. %1 doesn't exist.",QEGVAR(core,extendersLoaded));
     true;
@@ -39,6 +43,8 @@ if (!isNil QGVAR(extendersWarningDismissed)) exitWith {
 if (EGVAR(core,extendersLoadedInvalid) isEqualTo []) exitWith {
     true;
 };
+
+Info("There are invalid extenders loaded. Showing extenders warning dialog.");
 
 missionNamespace setVariable[QGVAR(setupDialogParams), _params];
 
