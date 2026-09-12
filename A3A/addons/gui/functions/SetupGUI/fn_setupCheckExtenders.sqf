@@ -36,7 +36,7 @@ if (!isNil QGVAR(extendersWarningDismissed)) exitWith {
 };
 
 // Nothing to nag about
-if (QEGVAR(core,extendersLoadedInvalid) isEqualTo []) exitWith {
+if (EGVAR(core,extendersLoadedInvalid) isEqualTo []) exitWith {
     true;
 };
 
