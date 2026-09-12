@@ -45,6 +45,7 @@ private _fnc_getTimeDiffString = {
     format ["%1%2 %3%4", _diffTime#_nzi, _text#_nzi, _diffTime#(_nzi+1), _text#(_nzi+1)];
 };
 
+if (_mode isEqualTo "sendData" && { !([_params] call A3A_fnc_setupCheckExtenders) }) exitWith {};
 
 // Get display
 private _display = findDisplay A3A_IDD_SETUPDIALOG;
@@ -117,8 +118,6 @@ switch (_mode) do
     case ("sendData"):
     {
         _params params ["_saveData", "_loadedPatches", "_loadedDLC", "_platform"];
-
-        if !([_params] call A3A_fnc_setupCheckExtenders) then { break };
 
         // Generate user map names
         private _prettyMapHM = createHashMapFromArray [
